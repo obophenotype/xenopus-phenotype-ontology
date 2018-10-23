@@ -1,0 +1,1211 @@
+format-version: 1.2
+data-version: releases/2018-10-23
+remark: Xenopus Phenotype Ontology
+import: http://purl.obolibrary.org/obo/xpo/imports/bfo_import.owl
+import: http://purl.obolibrary.org/obo/xpo/imports/chebi_import.owl
+import: http://purl.obolibrary.org/obo/xpo/imports/cl_import.owl
+import: http://purl.obolibrary.org/obo/xpo/imports/go_import.owl
+import: http://purl.obolibrary.org/obo/xpo/imports/iao_import.owl
+import: http://purl.obolibrary.org/obo/xpo/imports/pato_import.owl
+import: http://purl.obolibrary.org/obo/xpo/imports/ro_import.owl
+import: http://purl.obolibrary.org/obo/xpo/imports/xao_import.owl
+ontology: xpo
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CHEBI_24431>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/GO_0004872>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/GO_0005575>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/GO_0048018>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001062>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/XPO_00000000>))\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000001> (entity)\n\nSubClassOf(<http://purl.obolibrary.org/obo/BFO_0000001> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000003> (occurrent)\n\nSubClassOf(<http://purl.obolibrary.org/obo/BFO_0000003> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/CHEBI_24431> (chemical entity)\n\nSubClassOf(<http://purl.obolibrary.org/obo/CHEBI_24431> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/GO_0004872> (<http://purl.obolibrary.org/obo/GO_0004872>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/GO_0004872> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/GO_0005575> (cellular_component)\n\nSubClassOf(<http://purl.obolibrary.org/obo/GO_0005575> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/GO_0048018> (<http://purl.obolibrary.org/obo/GO_0048018>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/GO_0048018> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0001062> (anatomical entity)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001062> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/XPO_00000000> (xpo)\n\nSubClassOf(<http://purl.obolibrary.org/obo/XPO_00000000> owl:Thing)\n\n\n)
+
+[Term]
+id: BFO:0000002
+is_a: BFO:0000001
+
+[Term]
+id: BFO:0000004
+is_a: BFO:0000002
+
+[Term]
+id: BFO:0000015
+is_a: BFO:0000003
+
+[Term]
+id: BFO:0000020
+is_a: BFO:0000002
+
+[Term]
+id: BFO:0000031
+is_a: BFO:0000002
+
+[Term]
+id: BFO:0000040
+is_a: BFO:0000004
+
+[Term]
+id: CARO:0000000
+is_a: CARO:0030000
+
+[Term]
+id: CARO:0000003
+is_a: CARO:0000006
+
+[Term]
+id: CARO:0000006
+is_a: BFO:0000040
+is_a: CARO:0000000
+
+[Term]
+id: CARO:0000014
+is_a: CARO:0000003
+
+[Term]
+id: CARO:0030000
+is_a: BFO:0000004
+
+[Term]
+id: CL:0000000
+is_a: CARO:0000003
+is_a: GO:0005575
+
+[Term]
+id: CL:0000003
+is_a: CL:0000000
+is_a: GO:0005623
+
+[Term]
+id: CL:0000031
+is_a: CL:0000047
+is_a: CL:0000055
+
+[Term]
+id: CL:0000034
+is_a: CL:0011115
+
+[Term]
+id: CL:0000047
+is_a: CL:0000048
+is_a: CL:0002319
+
+[Term]
+id: CL:0000048
+is_a: CL:0000034
+is_a: CL:0002371
+
+[Term]
+id: CL:0000055
+is_a: CL:0011115
+
+[Term]
+id: CL:0000066
+is_a: CL:0000548
+
+[Term]
+id: CL:0000075
+is_a: CL:0000066
+is_a: CL:0002371
+
+[Term]
+id: CL:0000082
+is_a: CL:0000066
+
+[Term]
+id: CL:0000133
+is_a: CL:0000221
+
+[Term]
+id: CL:0000211
+is_a: CL:0000003
+
+[Term]
+id: CL:0000221
+is_a: CL:0002321
+
+[Term]
+id: CL:0000223
+is_a: CL:0002321
+
+[Term]
+id: CL:0000225
+is_a: CL:0000003
+
+[Term]
+id: CL:0000255
+is_a: CL:0000003
+
+[Term]
+id: CL:0000362
+is_a: CL:0002159
+
+[Term]
+id: CL:0000393
+is_a: CL:0000211
+
+[Term]
+id: CL:0000404
+is_a: CL:0000211
+
+[Term]
+id: CL:0000540
+is_a: CL:0000393
+is_a: CL:0000404
+is_a: CL:0002319
+
+[Term]
+id: CL:0000548
+is_a: CL:0000255
+
+[Term]
+id: CL:0000710
+is_a: CL:0000075
+is_a: CL:0002077
+
+[Term]
+id: CL:0001061
+is_a: CL:0000000
+is_a: GO:0005623
+
+[Term]
+id: CL:0002076
+is_a: CL:0000066
+is_a: CL:0002371
+
+[Term]
+id: CL:0002077
+is_a: CL:0000066
+is_a: CL:0002371
+
+[Term]
+id: CL:0002159
+is_a: CL:0002077
+
+[Term]
+id: CL:0002242
+is_a: CL:0000003
+
+[Term]
+id: CL:0002251
+is_a: CL:0002076
+
+[Term]
+id: CL:0002319
+is_a: CL:0000548
+is_a: CL:0002371
+
+[Term]
+id: CL:0002320
+is_a: CL:0000548
+is_a: CL:0002371
+
+[Term]
+id: CL:0002321
+is_a: CL:0000548
+
+[Term]
+id: CL:0002368
+is_a: CL:0002076
+
+[Term]
+id: CL:0002371
+is_a: CL:0000003
+
+[Term]
+id: CL:0002632
+is_a: CL:0002368
+
+[Term]
+id: CL:0011115
+is_a: CL:0000003
+
+[Term]
+id: CL:2000029
+is_a: CL:0000540
+
+[Term]
+id: CL:2000032
+is_a: CL:0000540
+
+[Term]
+id: GO:0003008
+is_a: GO:0032501
+
+[Term]
+id: GO:0003674
+is_a: BFO:0000015
+
+[Term]
+id: GO:0003824
+is_a: GO:0003674
+
+[Term]
+id: GO:0005623
+is_a: CARO:0000003
+is_a: GO:0005575
+
+[Term]
+id: GO:0005634
+is_a: GO:0043231
+
+[Term]
+id: GO:0008150
+is_a: BFO:0000015
+
+[Term]
+id: GO:0009987
+is_a: GO:0008150
+
+[Term]
+id: GO:0016301
+is_a: GO:0016772
+
+[Term]
+id: GO:0016740
+is_a: GO:0003824
+
+[Term]
+id: GO:0016772
+is_a: GO:0016740
+
+[Term]
+id: GO:0017145
+is_a: GO:0051301
+
+[Term]
+id: GO:0019226
+is_a: GO:0035637
+is_a: GO:0050877
+
+[Term]
+id: GO:0023052
+is_a: GO:0008150
+
+[Term]
+id: GO:0030154
+is_a: GO:0048869
+
+[Term]
+id: GO:0032501
+is_a: GO:0008150
+
+[Term]
+id: GO:0032502
+is_a: GO:0008150
+
+[Term]
+id: GO:0035637
+is_a: GO:0023052
+is_a: GO:0032501
+
+[Term]
+id: GO:0043226
+is_a: GO:0005575
+
+[Term]
+id: GO:0043227
+is_a: GO:0043226
+
+[Term]
+id: GO:0043229
+is_a: GO:0043226
+is_a: GO:0044424
+
+[Term]
+id: GO:0043231
+is_a: GO:0043227
+is_a: GO:0043229
+
+[Term]
+id: GO:0044424
+is_a: GO:0044464
+
+[Term]
+id: GO:0044464
+is_a: CARO:0000014
+is_a: GO:0005575
+
+[Term]
+id: GO:0048869
+is_a: GO:0009987
+is_a: GO:0032502
+
+[Term]
+id: GO:0050877
+is_a: GO:0003008
+
+[Term]
+id: GO:0051301
+is_a: GO:0009987
+
+[Term]
+id: IAO:0000027
+is_a: IAO:0000030
+
+[Term]
+id: IAO:0000030
+is_a: BFO:0000031
+
+[Term]
+id: IAO:0000078
+is_a: IAO:0000102
+
+[Term]
+id: IAO:0000102
+is_a: IAO:0000027
+
+[Term]
+id: IAO:0000225
+is_a: IAO:0000102
+
+[Term]
+id: IAO:0000409
+is_a: IAO:0000102
+
+[Term]
+id: PATO:0000001
+is_a: BFO:0000020
+
+[Term]
+id: PATO:0000068
+is_a: PATO:0000001
+
+[Term]
+id: PATO:0000069
+is_a: PATO:0000068
+
+[Term]
+id: PATO:0000460
+is_a: PATO:0000069
+
+[Term]
+id: PATO:0001241
+is_a: PATO:0000001
+
+[Term]
+id: PATO:0001396
+is_a: PATO:0001241
+
+[Term]
+id: PATO:0001397
+is_a: PATO:0001396
+
+[Term]
+id: PATO:0001402
+is_a: PATO:0001397
+
+[Term]
+id: PATO:0001404
+is_a: PATO:0001396
+
+[Term]
+id: PATO:0001405
+is_a: PATO:0001404
+
+[Term]
+id: PATO:0002505
+is_a: PATO:0001404
+
+[Term]
+id: Subset
+is_a: IAO:0000102
+
+[Term]
+id: UBERON:0000010
+is_a: UBERON:0011216
+
+[Term]
+id: UBERON:0000025
+is_a: UBERON:0004111
+
+[Term]
+id: UBERON:0000060
+is_a: UBERON:0000064
+
+[Term]
+id: UBERON:0000061
+is_a: UBERON:0000465
+
+[Term]
+id: UBERON:0000062
+is_a: UBERON:0010000
+
+[Term]
+id: UBERON:0000064
+is_a: UBERON:0010000
+
+[Term]
+id: UBERON:0000065
+is_a: UBERON:0001005
+is_a: UBERON:0004119
+
+[Term]
+id: UBERON:0000072
+is_a: UBERON:0004119
+is_a: UBERON:0013522
+
+[Term]
+id: UBERON:0000075
+is_a: UBERON:0011216
+
+[Term]
+id: UBERON:0000076
+is_a: BFO:0000004
+is_a: UBERON:0000490
+is_a: UBERON:0005291
+
+[Term]
+id: UBERON:0000077
+is_a: UBERON:0004119
+is_a: UBERON:0004120
+
+[Term]
+id: UBERON:0000078
+is_a: UBERON:0000077
+is_a: UBERON:0004121
+
+[Term]
+id: UBERON:0000114
+is_a: UBERON:0000077
+is_a: UBERON:0003580
+is_a: UBERON:0003837
+
+[Term]
+id: UBERON:0000115
+is_a: UBERON:0004815
+
+[Term]
+id: UBERON:0000117
+is_a: UBERON:0000025
+is_a: UBERON:0004119
+
+[Term]
+id: UBERON:0000118
+is_a: UBERON:0005153
+is_a: UBERON:0005911
+
+[Term]
+id: UBERON:0000170
+is_a: CARO:0000003
+is_a: UBERON:0034925
+
+[Term]
+id: UBERON:0000171
+is_a: UBERON:0000062
+
+[Term]
+id: UBERON:0000307
+is_a: BFO:0000004
+is_a: UBERON:0000922
+
+[Term]
+id: UBERON:0000328
+is_a: UBERON:0000060
+
+[Term]
+id: UBERON:0000383
+is_a: CARO:0000003
+is_a: UBERON:0011216
+
+[Term]
+id: UBERON:0000464
+is_a: UBERON:0000466
+
+[Term]
+id: UBERON:0000465
+is_a: UBERON:0001062
+
+[Term]
+id: UBERON:0000466
+is_a: UBERON:0001062
+
+[Term]
+id: UBERON:0000467
+is_a: UBERON:0000061
+
+[Term]
+id: UBERON:0000468
+is_a: UBERON:0010000
+
+[Term]
+id: UBERON:0000475
+is_a: UBERON:0010000
+
+[Term]
+id: UBERON:0000476
+is_a: UBERON:0000061
+
+[Term]
+id: UBERON:0000477
+is_a: UBERON:0001062
+
+[Term]
+id: UBERON:0000479
+is_a: UBERON:0010000
+
+[Term]
+id: UBERON:0000483
+is_a: UBERON:0000479
+
+[Term]
+id: UBERON:0000485
+is_a: UBERON:0000490
+is_a: UBERON:0012274
+
+[Term]
+id: UBERON:0000486
+is_a: UBERON:0000483
+
+[Term]
+id: UBERON:0000490
+is_a: UBERON:0000483
+
+[Term]
+id: UBERON:0000915
+is_a: CARO:0000003
+is_a: UBERON:0009569
+is_a: UBERON:0011676
+
+[Term]
+id: UBERON:0000922
+is_a: UBERON:0000468
+
+[Term]
+id: UBERON:0000923
+is_a: UBERON:0010316
+
+[Term]
+id: UBERON:0000924
+is_a: UBERON:0000923
+
+[Term]
+id: UBERON:0000925
+is_a: UBERON:0000923
+
+[Term]
+id: UBERON:0000926
+is_a: UBERON:0000923
+
+[Term]
+id: UBERON:0000982
+is_a: UBERON:0004905
+
+[Term]
+id: UBERON:0001004
+is_a: UBERON:0000467
+
+[Term]
+id: UBERON:0001005
+is_a: UBERON:0003103
+
+[Term]
+id: UBERON:0001007
+is_a: UBERON:0000467
+
+[Term]
+id: UBERON:0001009
+is_a: UBERON:0000467
+
+[Term]
+id: UBERON:0001015
+is_a: CARO:0000003
+is_a: UBERON:0011216
+
+[Term]
+id: UBERON:0001016
+is_a: UBERON:0000467
+
+[Term]
+id: UBERON:0001017
+is_a: UBERON:0004121
+is_a: UBERON:0011216
+
+[Term]
+id: UBERON:0001041
+is_a: UBERON:0004921
+
+[Term]
+id: UBERON:0001048
+is_a: UBERON:0005423
+
+[Term]
+id: UBERON:0001434
+is_a: UBERON:0011216
+
+[Term]
+id: UBERON:0001555
+is_a: UBERON:0000025
+
+[Term]
+id: UBERON:0001558
+is_a: CARO:0000003
+is_a: UBERON:0000072
+
+[Term]
+id: UBERON:0001630
+is_a: CARO:0000003
+is_a: UBERON:0000062
+is_a: UBERON:0005090
+
+[Term]
+id: UBERON:0002048
+is_a: UBERON:0000171
+is_a: UBERON:0004119
+is_a: UBERON:0005178
+is_a: UBERON:0015212
+
+[Term]
+id: UBERON:0002050
+is_a: UBERON:0005423
+
+[Term]
+id: UBERON:0002090
+is_a: BFO:0000004
+is_a: UBERON:0010912
+
+[Term]
+id: UBERON:0002100
+is_a: UBERON:0011676
+
+[Term]
+id: UBERON:0002167
+is_a: UBERON:0002048
+
+[Term]
+id: UBERON:0002168
+is_a: UBERON:0002048
+
+[Term]
+id: UBERON:0002204
+is_a: CARO:0000003
+is_a: UBERON:0000467
+
+[Term]
+id: UBERON:0002217
+is_a: UBERON:0000982
+
+[Term]
+id: UBERON:0002329
+is_a: BFO:0000004
+is_a: UBERON:0005423
+is_a: UBERON:0007503
+
+[Term]
+id: UBERON:0002384
+is_a: UBERON:0000479
+
+[Term]
+id: UBERON:0002385
+is_a: UBERON:0000479
+is_a: UBERON:0004120
+
+[Term]
+id: UBERON:0002416
+is_a: CARO:0000003
+is_a: UBERON:0000467
+
+[Term]
+id: UBERON:0002532
+is_a: UBERON:0002050
+
+[Term]
+id: UBERON:0003059
+is_a: UBERON:0006598
+
+[Term]
+id: UBERON:0003077
+is_a: UBERON:0005291
+is_a: UBERON:0007524
+is_a: UBERON:0015212
+
+[Term]
+id: UBERON:0003081
+is_a: UBERON:0002050
+is_a: UBERON:0004120
+is_a: UBERON:0005291
+is_a: UBERON:0007524
+
+[Term]
+id: UBERON:0003089
+is_a: BFO:0000004
+is_a: UBERON:0005856
+is_a: UBERON:0007530
+
+[Term]
+id: UBERON:0003102
+is_a: CARO:0000003
+is_a: UBERON:0000061
+
+[Term]
+id: UBERON:0003103
+is_a: UBERON:0000062
+
+[Term]
+id: UBERON:0003104
+is_a: UBERON:0000479
+
+[Term]
+id: UBERON:0003258
+is_a: UBERON:0000490
+is_a: UBERON:0005911
+is_a: UBERON:0015833
+
+[Term]
+id: UBERON:0003364
+is_a: UBERON:0000115
+
+[Term]
+id: UBERON:0003365
+is_a: UBERON:0000115
+
+[Term]
+id: UBERON:0003570
+is_a: UBERON:0002384
+
+[Term]
+id: UBERON:0003580
+is_a: UBERON:0003570
+is_a: UBERON:0004119
+
+[Term]
+id: UBERON:0003586
+is_a: UBERON:0002384
+
+[Term]
+id: UBERON:0003831
+is_a: UBERON:0001630
+
+[Term]
+id: UBERON:0003837
+is_a: UBERON:0003586
+
+[Term]
+id: UBERON:0003914
+is_a: UBERON:0000025
+is_a: UBERON:0000483
+
+[Term]
+id: UBERON:0003929
+is_a: UBERON:0000483
+
+[Term]
+id: UBERON:0004111
+is_a: UBERON:0010000
+
+[Term]
+id: UBERON:0004119
+is_a: BFO:0000004
+is_a: UBERON:0000061
+
+[Term]
+id: UBERON:0004120
+is_a: BFO:0000004
+is_a: UBERON:0000061
+
+[Term]
+id: UBERON:0004121
+is_a: BFO:0000004
+is_a: UBERON:0000061
+
+[Term]
+id: UBERON:0004185
+is_a: UBERON:0004119
+is_a: UBERON:0004921
+
+[Term]
+id: UBERON:0004253
+is_a: UBERON:0001630
+
+[Term]
+id: UBERON:0004288
+is_a: UBERON:0034925
+
+[Term]
+id: UBERON:0004464
+is_a: UBERON:0004479
+
+[Term]
+id: UBERON:0004479
+is_a: UBERON:0001015
+
+[Term]
+id: UBERON:0004765
+is_a: UBERON:0000062
+
+[Term]
+id: UBERON:0004770
+is_a: UBERON:0034925
+
+[Term]
+id: UBERON:0004802
+is_a: UBERON:0004807
+is_a: UBERON:0005911
+is_a: UBERON:0010499
+
+[Term]
+id: UBERON:0004807
+is_a: UBERON:0000483
+
+[Term]
+id: UBERON:0004815
+is_a: UBERON:0004802
+
+[Term]
+id: UBERON:0004873
+is_a: CARO:0000003
+is_a: UBERON:0002050
+
+[Term]
+id: UBERON:0004883
+is_a: UBERON:0000077
+is_a: UBERON:0003104
+
+[Term]
+id: UBERON:0004905
+is_a: UBERON:0034921
+
+[Term]
+id: UBERON:0004906
+is_a: UBERON:0004121
+is_a: UBERON:0004921
+
+[Term]
+id: UBERON:0004921
+is_a: UBERON:0013522
+
+[Term]
+id: UBERON:0004923
+is_a: UBERON:0000064
+
+[Term]
+id: UBERON:0005090
+is_a: UBERON:0000061
+
+[Term]
+id: UBERON:0005153
+is_a: UBERON:0005157
+
+[Term]
+id: UBERON:0005157
+is_a: UBERON:0000483
+
+[Term]
+id: UBERON:0005177
+is_a: UBERON:0000062
+
+[Term]
+id: UBERON:0005178
+is_a: UBERON:0005181
+
+[Term]
+id: UBERON:0005181
+is_a: UBERON:0005177
+
+[Term]
+id: UBERON:0005256
+is_a: UBERON:0003104
+is_a: UBERON:0005291
+
+[Term]
+id: UBERON:0005291
+is_a: UBERON:0000479
+
+[Term]
+id: UBERON:0005423
+is_a: UBERON:0000465
+
+[Term]
+id: UBERON:0005597
+is_a: BFO:0000004
+is_a: UBERON:0001048
+
+[Term]
+id: UBERON:0005598
+is_a: UBERON:0002329
+
+[Term]
+id: UBERON:0005764
+is_a: UBERON:0000476
+
+[Term]
+id: UBERON:0005769
+is_a: UBERON:0005764
+
+[Term]
+id: UBERON:0005856
+is_a: UBERON:0007524
+is_a: UBERON:0011585
+
+[Term]
+id: UBERON:0005911
+is_a: UBERON:0000483
+is_a: UBERON:0004119
+
+[Term]
+id: UBERON:0005944
+is_a: BFO:0000004
+is_a: UBERON:0010912
+
+[Term]
+id: UBERON:0006595
+is_a: BFO:0000004
+is_a: UBERON:0006598
+
+[Term]
+id: UBERON:0006598
+is_a: UBERON:0002050
+
+[Term]
+id: UBERON:0006601
+is_a: BFO:0000004
+is_a: UBERON:0006598
+
+[Term]
+id: UBERON:0006603
+is_a: BFO:0000004
+is_a: UBERON:0006598
+
+[Term]
+id: UBERON:0007010
+is_a: UBERON:0000922
+
+[Term]
+id: UBERON:0007026
+is_a: UBERON:0006598
+
+[Term]
+id: UBERON:0007282
+is_a: BFO:0000004
+is_a: UBERON:0006598
+
+[Term]
+id: UBERON:0007285
+is_a: BFO:0000004
+is_a: UBERON:0006598
+
+[Term]
+id: UBERON:0007376
+is_a: UBERON:0003102
+is_a: UBERON:0010371
+
+[Term]
+id: UBERON:0007383
+is_a: UBERON:0000490
+is_a: UBERON:0005291
+is_a: UBERON:0010371
+
+[Term]
+id: UBERON:0007499
+is_a: UBERON:0003914
+is_a: UBERON:0009856
+
+[Term]
+id: UBERON:0007503
+is_a: UBERON:0000483
+
+[Term]
+id: UBERON:0007524
+is_a: UBERON:0003104
+
+[Term]
+id: UBERON:0007530
+is_a: UBERON:0003104
+
+[Term]
+id: UBERON:0007592
+is_a: UBERON:0000485
+is_a: UBERON:0007601
+
+[Term]
+id: UBERON:0007601
+is_a: UBERON:0000483
+
+[Term]
+id: UBERON:0007690
+is_a: UBERON:0003258
+is_a: UBERON:0005291
+
+[Term]
+id: UBERON:0008814
+is_a: UBERON:0000477
+
+[Term]
+id: UBERON:0008947
+is_a: BFO:0000004
+is_a: UBERON:0001048
+
+[Term]
+id: UBERON:0009142
+is_a: UBERON:0000477
+
+[Term]
+id: UBERON:0009145
+is_a: UBERON:0005423
+
+[Term]
+id: UBERON:0009569
+is_a: UBERON:0000475
+
+[Term]
+id: UBERON:0009602
+is_a: UBERON:0004883
+
+[Term]
+id: UBERON:0009603
+is_a: UBERON:0004883
+
+[Term]
+id: UBERON:0009618
+is_a: UBERON:0005256
+
+[Term]
+id: UBERON:0009722
+is_a: UBERON:0005291
+is_a: UBERON:0005911
+is_a: UBERON:0015833
+
+[Term]
+id: UBERON:0009854
+is_a: UBERON:0004921
+is_a: UBERON:0009856
+
+[Term]
+id: UBERON:0009856
+is_a: UBERON:0000061
+
+[Term]
+id: UBERON:0010000
+is_a: UBERON:0000061
+
+[Term]
+id: UBERON:0010316
+is_a: BFO:0000004
+is_a: UBERON:0002050
+is_a: UBERON:0005291
+
+[Term]
+id: UBERON:0010371
+is_a: UBERON:0000483
+is_a: UBERON:0004121
+
+[Term]
+id: UBERON:0010378
+is_a: UBERON:0004120
+is_a: UBERON:0005291
+is_a: UBERON:0007524
+
+[Term]
+id: UBERON:0010498
+is_a: UBERON:0000485
+
+[Term]
+id: UBERON:0010499
+is_a: UBERON:0007592
+is_a: UBERON:0010498
+
+[Term]
+id: UBERON:0010912
+is_a: UBERON:0011216
+
+[Term]
+id: UBERON:0011134
+is_a: UBERON:0000982
+
+[Term]
+id: UBERON:0011137
+is_a: CARO:0000003
+is_a: UBERON:0000075
+
+[Term]
+id: UBERON:0011138
+is_a: BFO:0000004
+is_a: UBERON:0000075
+
+[Term]
+id: UBERON:0011216
+is_a: UBERON:0010000
+
+[Term]
+id: UBERON:0011585
+is_a: UBERON:0000061
+
+[Term]
+id: UBERON:0011676
+is_a: UBERON:0000475
+
+[Term]
+id: UBERON:0012274
+is_a: UBERON:0000483
+
+[Term]
+id: UBERON:0012275
+is_a: UBERON:0000483
+is_a: UBERON:0004120
+
+[Term]
+id: UBERON:0013522
+is_a: UBERON:0000064
+
+[Term]
+id: UBERON:0013686
+is_a: UBERON:0000464
+
+[Term]
+id: UBERON:0013701
+is_a: UBERON:0000475
+
+[Term]
+id: UBERON:0013702
+is_a: UBERON:0000475
+
+[Term]
+id: UBERON:0013754
+is_a: UBERON:0004923
+
+[Term]
+id: UBERON:0013765
+is_a: UBERON:0000062
+
+[Term]
+id: UBERON:0014477
+is_a: BFO:0000004
+is_a: UBERON:0010912
+
+[Term]
+id: UBERON:0015212
+is_a: UBERON:0000061
+
+[Term]
+id: UBERON:0015329
+is_a: UBERON:0005769
+
+[Term]
+id: UBERON:0015833
+is_a: UBERON:0003929
+
+[Term]
+id: UBERON:0016879
+is_a: BFO:0000004
+is_a: UBERON:0006598
+
+[Term]
+id: UBERON:0016880
+is_a: UBERON:0006598
+
+[Term]
+id: UBERON:0034921
+is_a: UBERON:0010000
+
+[Term]
+id: UBERON:0034925
+is_a: UBERON:0000465
+
+[Term]
+id: UBERON:0036072
+is_a: UBERON:0004185
+is_a: UBERON:0005911
+is_a: UBERON:0007499
+is_a: UBERON:0009854
+is_a: UBERON:0015833
+
+[Term]
+id: UBERON:0036073
+is_a: UBERON:0000077
+is_a: UBERON:0003104
+
+[Term]
+id: XPO:00000000
+name: xpo
+
