@@ -167,6 +167,8 @@ DOSDP_TEMP_ONTOLOGIES=$(DOSDP_TEMP)/ontologies
 
 .PHONY patterns: ../patterns/pattern.owl ../patterns/definitions.owl
 
+.PHONY: .FORCE
+
 pattern_clean:
 	rm -r $(DOSDP_TEMP)
 
@@ -193,11 +195,15 @@ $(DOSDP_TEMP_PATTERN_AUTO): $(DOSDP_TEMP_PATTERN)
 # ----------------------------------------
 # The pattern.owl ontology contains the OWL versions of all the patterns currently in the patterns directory
 
-../patterns/pattern.owl: pattern_schema_checks
+../patterns/pattern.owl: pattern_schema_checks ../patterns/dosdp-patterns
 	$(DOSDPT) prototype --obo-prefixes --template=../patterns/dosdp-patterns --outfile=$@
 
-pattern_schema_checks:
+pattern_schema_checks: ../patterns/dosdp-patterns
 	simple_pattern_tester.py ../patterns/dosdp-patterns/ # 2>&1 | tee $@
+
+../patterns/dosdp-patterns: .FORCE
+	wget -N -P ../patterns/dosdp-patterns -i ../patterns/dosdp-patterns/external.txt
+	#echo 'external.txt'
 
 # ----------------------------------------
 # Build definitions.owl
@@ -235,3 +241,9 @@ imports_all_pattern := $(patsubst %, mirror/%.owl,$(IMPORTS))
 $(DOSDP_TEMP_ONTOLOGIES)/all_imports.owl: $(imports_all_pattern)
 	echo 'imports: '$(imports_all_pattern) &&\
 	$(ROBOT) merge $(addprefix -i , $^) annotate --ontology-iri $(DOSDP_TEMP_ONTOLOGIES)/all_imports.owl -o $@
+	
+# 
+# Code for automatically populating patterns with anatomy terms
+#
+
+

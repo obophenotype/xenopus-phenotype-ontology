@@ -10,6 +10,14 @@ def: "A dependent entity that inheres in a bearer by virtue of how the bearer is
 synonym: "trait" EXACT []
 
 [Term]
+id: PATO:0000051
+name: morphology
+namespace: quality
+def: "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure." [PATOC:GVG]
+subset: attribute_slim
+is_a: PATO:0001241 ! physical object quality
+
+[Term]
 id: PATO:0000068
 name: qualitative
 namespace: quality
@@ -37,7 +45,93 @@ synonym: "atypia" RELATED []
 synonym: "atypical" RELATED []
 synonym: "defective" RELATED []
 is_a: PATO:0000069 ! deviation(from_normal)
-property_value: RO:0002604 PATO:0000461
+relationship: is_opposite_of PATO:0000461 ! normal
+
+[Term]
+id: PATO:0000461
+name: normal
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the bearer's exhibiting no deviation from normal or average." [PATOC:GVG]
+subset: abnormal_slim
+subset: mpath_slim
+subset: value_slim
+synonym: "average" RELATED []
+is_a: PATO:0000069 ! deviation(from_normal)
+relationship: is_opposite_of PATO:0000460 ! abnormal
+
+[Term]
+id: PATO:0001241
+name: physical object quality
+namespace: quality
+alt_id: PATO:0001237
+alt_id: PATO:0001238
+def: "A quality which inheres in a continuant." [PATOC:GVG]
+comment: Relational qualities are qualities that hold between multiple entities. Normal (monadic) qualities such as the shape of a eyeball exist purely as a quality of that eyeball. A relational quality such as sensitivity to light is a quality of that eyeball (and connecting nervous system) as it relates to incoming light waves/particles.
+synonym: "monadic quality of a continuant" EXACT []
+synonym: "monadic quality of an object" NARROW []
+synonym: "monadic quality of continuant" NARROW []
+synonym: "multiply inhering quality of a physical entity" EXACT []
+synonym: "quality of a continuant" EXACT []
+synonym: "quality of a single physical entity" EXACT []
+synonym: "quality of an object" EXACT []
+synonym: "quality of continuant" EXACT []
+xref: snap:Quality
+is_a: PATO:0000001 ! quality
+
+[Term]
+id: PATO:0001396
+name: cellular quality
+namespace: quality
+def: "A monadic quality of continuant that exists at the cellular level of organisation." [PATOC:GVG]
+is_a: PATO:0001241 ! physical object quality
+
+[Term]
+id: PATO:0001397
+name: cellular potency
+namespace: quality
+def: "A cellular quality that arises by virtue of whether the bearer's disposition to differentiate into one or more mature cell types." [PATOC:GVG]
+subset: attribute_slim
+subset: disposition_slim
+is_a: PATO:0001396 ! cellular quality
+
+[Term]
+id: PATO:0001402
+name: multipotent
+namespace: quality
+def: "A cellular potency that is the capacity to form multiple differentiated cell types." [Wikipedia:http\://en.wikipedia.org/wiki/Multipotent]
+subset: cell_quality
+subset: disposition_slim
+subset: value_slim
+is_a: PATO:0001397 ! cellular potency
+
+[Term]
+id: PATO:0001404
+name: nucleate quality
+namespace: quality
+def: "A cellular quality inhering in a bearer by virtue of bearer's number of nuclei." [PATOC:GVG]
+subset: attribute_slim
+is_a: PATO:0001396 ! cellular quality
+
+[Term]
+id: PATO:0001405
+name: anucleate
+namespace: quality
+def: "A nucleate quality inhering in a bearer by virtue of the bearer's having no nucleus." [Biology-online:Biology-online]
+subset: cell_quality
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0001404 ! nucleate quality
+
+[Term]
+id: PATO:0002505
+name: nucleated
+namespace: quality
+def: "A nucleate quality inhering in a bearer by virtue of the bearer's having one or more nucleus." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0001404 ! nucleate quality
+created_by: gkoutos
+creation_date: 2013-10-21T05:44:34Z
 
 [Typedef]
 id: has_part
@@ -46,6 +140,14 @@ namespace: quality
 def: "Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2." [PATOC:CJM]
 comment: We use the has_part relation to relate complex qualities to more primitive ones. A complex quality is a collection of qualities. The complex quality cannot exist without the sub-qualities. For example, the quality 'swollen' necessarily comes with the qualities of 'protruding' and 'increased size'.
 xref: BFO:0000051
+
+[Typedef]
+id: is_opposite_of
+name: is opposite of
+namespace: quality
+xref: RO:0002604
+is_metadata_tag: true
+is_class_level: true
 
 [Typedef]
 id: part_of

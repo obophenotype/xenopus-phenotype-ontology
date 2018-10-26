@@ -7,17 +7,19 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/xpo.owl>
-Import(<http://purl.obolibrary.org/obo/xpo/imports/iao_import.owl>)
-Import(<http://purl.obolibrary.org/obo/xpo/imports/go_import.owl>)
-Import(<http://purl.obolibrary.org/obo/xpo/imports/ro_import.owl>)
-Import(<http://purl.obolibrary.org/obo/xpo/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/xpo/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/xpo/imports/chebi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/xpo/imports/cl_import.owl>)
+Import(<http://purl.obolibrary.org/obo/xpo/imports/go_import.owl>)
+Import(<http://purl.obolibrary.org/obo/xpo/imports/iao_import.owl>)
+Import(<http://purl.obolibrary.org/obo/xpo/imports/pato_import.owl>)
+Import(<http://purl.obolibrary.org/obo/xpo/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/xpo/imports/xao_import.owl>)
+Import(<http://purl.obolibrary.org/obo/xpo/patterns/definitions.owl>)
 Annotation(rdfs:comment "Xenopus Phenotype Ontology")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_00000000>))
+
 
 
 ############################
@@ -27,6 +29,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/XPO_00000000>))
 # Class: <http://purl.obolibrary.org/obo/XPO_00000000> (xpo)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_00000000> "xpo"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_00000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000019> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> owl:Thing))))
 
 
 )
