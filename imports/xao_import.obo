@@ -467,13 +467,6 @@ relationship: part_of XAO:0000036 ! animal cap
 relationship: start_stage XAO:1000017 ! NF stage 7
 
 [Term]
-id: XAO:0000039
-name: anatomical site
-namespace: xenopus_anatomy
-is_obsolete: true
-consider: XAO:0003186
-
-[Term]
 id: XAO:0000040
 name: head region
 namespace: xenopus_anatomy
@@ -711,20 +704,6 @@ relationship: part_of XAO:0000050 ! mesoderm
 relationship: start_stage XAO:1000027 ! NF stage 17
 
 [Term]
-id: XAO:0000059
-name: pronephros
-namespace: xenopus_anatomy
-is_obsolete: true
-replaced_by: XAO:0002000
-
-[Term]
-id: XAO:0000061
-name: pronephric capsule
-namespace: xenopus_anatomy
-is_obsolete: true
-consider: XAO:0000318
-
-[Term]
 id: XAO:0000062
 name: pronephric nephrostome
 namespace: xenopus_anatomy
@@ -860,12 +839,6 @@ xref: UBERON:0003062
 is_a: XAO:0000068 ! marginal zone
 relationship: end_stage XAO:1000022 ! NF stage 12
 relationship: start_stage XAO:1000001 ! NF stage 1
-
-[Term]
-id: XAO:0000073
-name: deep (mesenchymal) layer
-namespace: xenopus_anatomy
-is_obsolete: true
 
 [Term]
 id: XAO:0000074
@@ -1712,12 +1685,6 @@ relationship: part_of XAO:0000292 ! mesonephric nephron
 relationship: start_stage XAO:1000057 ! NF stage 45
 
 [Term]
-id: XAO:0000147
-name: glomerus
-namespace: xenopus_anatomy
-is_obsolete: true
-
-[Term]
 id: XAO:0000148
 name: mesonephric tubule
 namespace: xenopus_anatomy
@@ -1730,19 +1697,6 @@ relationship: part_of XAO:0000292 ! mesonephric nephron
 relationship: start_stage XAO:1000057 ! NF stage 45
 
 [Term]
-id: XAO:0000149
-name: renal proximal convoluted tubule
-namespace: xenopus_anatomy
-is_obsolete: true
-consider: XAO:0000331
-
-[Term]
-id: XAO:0000150
-name: loop of Henle
-namespace: xenopus_anatomy
-is_obsolete: true
-
-[Term]
 id: XAO:0000151
 name: mesonephric collecting duct
 namespace: xenopus_anatomy
@@ -1753,13 +1707,6 @@ is_a: XAO:0004000 ! duct
 relationship: end_stage XAO:0000437 ! death
 relationship: part_of XAO:0000148 ! mesonephric tubule
 relationship: start_stage XAO:1000057 ! NF stage 45
-
-[Term]
-id: XAO:0000152
-name: renal distal convoluted tubule
-namespace: xenopus_anatomy
-is_obsolete: true
-consider: XAO:0000334
 
 [Term]
 id: XAO:0000153
@@ -2314,13 +2261,6 @@ relationship: part_of XAO:0000202 ! animal hemisphere
 relationship: start_stage XAO:1000014 ! NF stage 4 (8-cell)
 
 [Term]
-id: XAO:0000201
-name: olfactory apparatus
-namespace: xenopus_anatomy
-is_obsolete: true
-consider: XAO:0000273
-
-[Term]
 id: XAO:0000202
 name: animal hemisphere
 namespace: xenopus_anatomy
@@ -2330,12 +2270,6 @@ is_a: XAO:0003186 ! anatomical region
 relationship: end_stage XAO:1000021 ! NF stage 11
 relationship: part_of XAO:0000113 ! embryo
 relationship: start_stage XAO:1000001 ! NF stage 1
-
-[Term]
-id: XAO:0000203
-name: archencephalic region
-namespace: xenopus_anatomy
-is_obsolete: true
 
 [Term]
 id: XAO:0000204
@@ -2465,14 +2399,6 @@ relationship: end_stage XAO:0000437 ! death
 relationship: start_stage XAO:1000038 ! NF stage 22
 
 [Term]
-id: XAO:0000216
-name: cortex
-namespace: xenopus_anatomy
-is_obsolete: true
-consider: XAO:0004467
-consider: XAO:0004468
-
-[Term]
 id: XAO:0000217
 name: dermis
 namespace: xenopus_anatomy
@@ -2494,12 +2420,6 @@ xref: UBERON:0000026
 is_a: XAO:0003013 ! organism subdivision
 relationship: end_stage XAO:0000437 ! death
 relationship: start_stage XAO:1000066 ! NF stage 54
-
-[Term]
-id: XAO:0000219
-name: superficial (epithelial) layer
-namespace: xenopus_anatomy
-is_obsolete: true
 
 [Term]
 id: XAO:0000220
@@ -2533,19 +2453,6 @@ relationship: develops_from XAO:0004528 ! tail somite 18
 relationship: end_stage XAO:1000059 ! NF stage 47
 relationship: part_of XAO:0005080 ! dermomyotome
 relationship: start_stage XAO:1000027 ! NF stage 17
-
-[Term]
-id: XAO:0000221
-name: deuterencephalic region
-namespace: xenopus_anatomy
-is_obsolete: true
-
-[Term]
-id: XAO:0000222
-name: ear placode
-namespace: xenopus_anatomy
-is_obsolete: true
-replaced_by: XAO:0000223
 
 [Term]
 id: XAO:0000223
@@ -3351,12 +3258,6 @@ relationship: part_of XAO:0004519 ! distal tubule
 relationship: start_stage XAO:1000045 ! NF stage 29 and 30
 
 [Term]
-id: XAO:0000290
-name: pronephric nephron segment S1
-namespace: xenopus_anatomy
-is_obsolete: true
-
-[Term]
 id: XAO:0000291
 name: mesonephric mesenchyme
 namespace: xenopus_anatomy
@@ -3381,13 +3282,6 @@ relationship: develops_from XAO:0000291 ! mesonephric mesenchyme
 relationship: end_stage XAO:0000437 ! death
 relationship: part_of XAO:0000141 ! mesonephric kidney
 relationship: start_stage XAO:1000057 ! NF stage 45
-
-[Term]
-id: XAO:0000293
-name: neural fold
-namespace: xenopus_anatomy
-is_obsolete: true
-replaced_by: XAO:0004087
 
 [Term]
 id: XAO:0000294
@@ -3917,12 +3811,6 @@ relationship: develops_from XAO:0000051 ! dorsal aorta
 relationship: develops_from XAO:0000344 ! aortic arch 3
 relationship: end_stage XAO:1000078 ! NF stage 66
 relationship: start_stage XAO:1000059 ! NF stage 47
-
-[Term]
-id: XAO:0000351
-name: secondary vessel
-namespace: xenopus_anatomy
-is_obsolete: true
 
 [Term]
 id: XAO:0000352
@@ -5655,13 +5543,6 @@ relationship: end_stage XAO:0000437 ! death
 relationship: start_stage XAO:1000071 ! NF stage 59
 
 [Term]
-id: XAO:0003021
-name: spinal cord neuron
-namespace: xenopus_anatomy
-is_obsolete: true
-replaced_by: XAO:0005018
-
-[Term]
 id: XAO:0003022
 name: Rohon-Beard neuron
 namespace: xenopus_anatomy
@@ -6081,12 +5962,6 @@ subset: sectional_anatomy_items
 is_a: XAO:0003185 ! anatomical direction
 
 [Term]
-id: XAO:0003058
-name: larval structure
-namespace: xenopus_anatomy
-is_obsolete: true
-
-[Term]
 id: XAO:0003059
 name: chondrocranium
 namespace: xenopus_anatomy
@@ -6178,48 +6053,6 @@ xref: UBERON:0005418
 is_a: XAO:0003161 ! limb bud
 relationship: end_stage XAO:1000068 ! NF stage 56
 relationship: start_stage XAO:1000058 ! NF stage 46
-
-[Term]
-id: XAO:0003067
-name: fore epipodium
-namespace: xenopus_anatomy
-is_obsolete: true
-replaced_by: XAO:0004297
-
-[Term]
-id: XAO:0003068
-name: fore mesopodium
-namespace: xenopus_anatomy
-is_obsolete: true
-replaced_by: XAO:0003207
-
-[Term]
-id: XAO:0003069
-name: hind propodium
-namespace: xenopus_anatomy
-is_obsolete: true
-replaced_by: XAO:0004296
-
-[Term]
-id: XAO:0003070
-name: hind metapodium
-namespace: xenopus_anatomy
-is_obsolete: true
-replaced_by: XAO:0003212
-
-[Term]
-id: XAO:0003071
-name: fore propodium
-namespace: xenopus_anatomy
-is_obsolete: true
-replaced_by: XAO:0004295
-
-[Term]
-id: XAO:0003072
-name: hind epipodium
-namespace: xenopus_anatomy
-is_obsolete: true
-replaced_by: XAO:0004298
 
 [Term]
 id: XAO:0003073
@@ -6338,13 +6171,6 @@ is_a: XAO:0003165 ! cavitated compound organ
 relationship: end_stage XAO:0000437 ! death
 relationship: part_of XAO:0000117 ! respiratory system
 relationship: start_stage XAO:1000059 ! NF stage 47
-
-[Term]
-id: XAO:0003082
-name: sucker
-namespace: xenopus_anatomy
-is_obsolete: true
-consider: XAO:0000033
 
 [Term]
 id: XAO:0003083
@@ -7276,20 +7102,6 @@ xref: UBERON:0002091
 is_a: XAO:0004289 ! skeletal subdivision
 relationship: end_stage XAO:0000437 ! death
 relationship: start_stage XAO:1000057 ! NF stage 45
-
-[Term]
-id: XAO:0003167
-name: fore metapodium
-namespace: xenopus_anatomy
-is_obsolete: true
-replaced_by: XAO:0003208
-
-[Term]
-id: XAO:0003168
-name: hind mesopodium
-namespace: xenopus_anatomy
-is_obsolete: true
-replaced_by: XAO:0003211
 
 [Term]
 id: XAO:0003169
@@ -18991,13 +18803,6 @@ synonym: "tadpole" EXACT []
 xref: UBERON:0009849
 is_a: XAO:1000095 ! post-embryonic stage
 relationship: preceded_by XAO:1000007 ! tailbud stage
-
-[Term]
-id: XAO:1000009
-name: frog
-namespace: xenopus_developmental_stage
-is_obsolete: true
-replaced_by: XAO:1000093
 
 [Term]
 id: XAO:1000010
