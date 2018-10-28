@@ -1,7 +1,14 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
 SELECT DISTINCT ?term
 WHERE {
   { ?s1 ?p1 ?term . }
   UNION
   { ?term ?p2 ?o2 . }
-  FILTER(isIRI(?term) && regex(str(?term), "XAO_"))
+  FILTER(
+      isIRI(?term) && 
+      regex(str(?term), "XAO_") && 
+      !EXISTS { ?term owl:deprecated "true"^^xsd:boolean }
+      )
 }
