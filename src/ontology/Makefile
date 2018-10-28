@@ -29,14 +29,16 @@ IMPORTS = iao go ro pato bfo chebi cl xao
 # Top-level targets
 # ----------------------------------------
 
-all: patterns all_imports sparql_test $(ONT).owl $(ONT).obo
+all: patterns all_imports sparql_test $(ONT).owl $(ONT).obo $(ONT)-base.owl
 	echo 'Release files created successfully.'
 test: sparql_test all
 prepare_release: all
-	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
+	cp $(ONT).owl $(ONT).obo $(ONT)-base.owl $(RELEASEDIR) &&\
 	mkdir -p $(RELEASEDIR)/imports &&\
+	mkdir -p $(RELEASEDIR)/patterns &&\
 	cp imports/*.owl $(RELEASEDIR)/imports &&\
 	cp imports/*.obo $(RELEASEDIR)/imports &&\
+	cp ../patterns/definitions.owl $(RELEASEDIR)/patterns &&\
 	git add $(RELEASEDIR)/imports/*.obo &&\
 	git add $(RELEASEDIR)/imports/*.owl &&\
 	(test -f subsets/*owl && cp subsets/* $(RELEASEDIR)/subsets && git add $(RELEASEDIR)/subsets/* || echo "no subsets") &&\
@@ -56,6 +58,10 @@ $(ONT).obo: $(ONT).owl
 	$(ROBOT) convert --check false -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@ &&\
 	echo "$(ONT).obo successfully created."
 
+$(ONT)-base.owl: $(SRC) ../patterns/definitions.owl
+	$(ROBOT) remove --input $< --select imports --output $@ &&\
+	$(ROBOT) merge -i $@ -i ../patterns/definitions.owl -o $@ &&\
+	echo "$(ONT)-base.owl successfully created."
 # ----------------------------------------
 # Import modules
 # ----------------------------------------
@@ -102,7 +108,7 @@ mirror/%.owl:
 # Release
 # ----------------------------------------
 # copy from staging area (this directory) to top-level
-release: $(ONT).owl $(ONT).obo
+release: $(ONT).owl $(ONT).obo $(ONT)-base.owl
 	cp $^ $(RELEASEDIR) && cp imports/* $(RELEASEDIR)/imports
 
 # ----------------------------------------
