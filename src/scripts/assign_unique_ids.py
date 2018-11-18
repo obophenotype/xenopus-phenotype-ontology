@@ -1,7 +1,6 @@
 import sys
 import pandas as pd
 import os
-import math
 
 tsv = sys.argv[1]
 id_map = sys.argv[2]
@@ -10,8 +9,8 @@ accession = int(sys.argv[4])
 prefix = sys.argv[5]
 
 # tsv = "/ws/xenopus-phenotype-ontology/src/patterns/data/auto/abnormal.tsv"
-# id_map = "/ws/xenopus-phenotype-ontology/src/scripts/id_map.tsv"
-# reserved_ids = "/ws/xenopus-phenotype-ontology/src/ontology/reserved_iris.txt"
+# id_map = "/ws/xenopus-phenotype-ontology/src/patterns/id_map.tsv"
+# reserved_ids = "/ws/xenopus-phenotype-ontology/src/patterns/reserved_iris.txt"
 # accession = int("9898")
 # prefix = "http://purl.obolibrary.org/obo/XPO_"
 
@@ -39,26 +38,51 @@ def generate_id(i):
     id = prefix+str(startid).zfill(7)
     return id
 
+# For the following function to work properly it is important to note that there should be absolutely no columns in teh tsv file other than the defi
+# defined_class and columns whos names end with _label other than the ones that contribute to the identity of the entity in question
 
 def add_id_column(df):
     global df_ids, pattern
-    if 'defined_class' in df.columns:
-        df = df.drop(['defined_class'], axis=1)
-    if 'iri' in df.columns:
-        df = df.drop(['iri'], axis=1)
+    #df = pd.read_csv(tsv, sep='\t')
+    if 'defined_class' not in df.columns:
+        df['defined_class'] = ''
+
+    df_ids['iritemp001'] = df_ids['iri'] #we change the iri column name here temporarily to make merging and amending easier. Is changed back to normal at the end of the function
+    df_ids = df_ids.drop("iri", axis=1)
+
+    if 'iritemp001' in df.columns:
+        df = df.drop(['iritemp001'], axis=1)
+        print("Warning: There was a colum labelled iritemp001, which is reserved vocabulary and will be overwritten")
+
     df['pattern'] = pattern
-    df['id'] = df.apply('-'.join, axis=1)
+    cols = df.columns
+    idcolumns = [i for i in cols if not i.endswith('label')]
+    idcolumns.remove("defined_class")
+
+    df['id'] = df[idcolumns].apply('-'.join, axis=1)
     if df_ids.empty:
-        df['iri'] = ""
+        df['iritemp001'] = ""
     else:
         df = pd.merge(df, df_ids, on='id', how='left')
-    df['defined_class'] = [generate_id(i) for i in df['iri']]
+
+    df = df.replace(pd.np.nan, '', regex=True)
+    #df.loc[(df['defined_class'] != '') & (df['iritemp001'] == ''), 'iritemp001'] = df['']
+    broken = pd.np.where((df['defined_class'] != '') & (df['iritemp001'] != '' )& (df['iritemp001'] != df['defined_class']), df[['defined_class','iritemp001']].apply('-'.join, axis=1),"OK")
+    print(broken)
+
+    df['iritemp001'] = pd.np.where(df['defined_class'] != '', df['defined_class'], df['iritemp001'])
+
+    df['defined_class'] = [generate_id(i) for i in df['iritemp001']]
     x = df[['defined_class','id']]
-    x.columns = ['iri','id']
+    x.columns = ['iritemp001','id']
     df_ids = pd.concat([df_ids,x])
     df_ids = df_ids.drop_duplicates()
-    df = df.drop(['pattern', 'id','iri'], axis=1)
+    df = df.drop(['pattern', 'id','iritemp001'], axis=1)
+    df_ids['iri'] = df_ids['iritemp001']
+    df_ids = df_ids.drop("iritemp001", axis=1)
+    #print(df.head(4))
     return df
+
 
 
 # Load data
