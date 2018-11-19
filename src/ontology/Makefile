@@ -29,11 +29,11 @@ IMPORTS = iao go ro pato bfo chebi cl xao
 # Top-level targets
 # ----------------------------------------
 
-all: patterns all_imports sparql_test $(ONT).owl $(ONT).obo $(ONT)-base.owl
+all: patterns all_imports sparql_test $(ONT).owl $(ONT).obo $(ONT)-base.owl $(ONT)-merged.owl $(ONT)-merged.obo
 	echo 'Release files created successfully.'
 test: sparql_test all
 prepare_release: all
-	cp $(ONT).owl $(ONT).obo $(ONT)-base.owl $(RELEASEDIR) &&\
+	cp $(ONT).owl $(ONT).obo $(ONT)-base.owl $(ONT)-merged.owl $(ONT)-merged.obo $(RELEASEDIR) &&\
 	mkdir -p $(RELEASEDIR)/imports &&\
 	mkdir -p $(RELEASEDIR)/patterns &&\
 	cp imports/*.owl $(RELEASEDIR)/imports &&\
@@ -41,6 +41,7 @@ prepare_release: all
 	cp ../patterns/definitions.owl $(RELEASEDIR)/patterns &&\
 	git add $(RELEASEDIR)/imports/*.obo &&\
 	git add $(RELEASEDIR)/imports/*.owl &&\
+	git add $(RELEASEDIR)/patterns/*.owl &&\
 	(test -f subsets/*owl && cp subsets/* $(RELEASEDIR)/subsets && git add $(RELEASEDIR)/subsets/* || echo "no subsets") &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on github"
 
@@ -50,18 +51,23 @@ prepare_release: all
 
 # by default we use Elk to perform a reason-relax-reduce chain
 # after that we annotate the ontology with the release versionInfo
+# Equivalence checking deactived.. -e none
 $(ONT).owl: $(SRC)
-	$(ROBOT)  reason -i $< -r ELK -e none relax reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@ &&\
-	echo "$(ONT).owl successfully created."
+	$(ROBOT)  reason -i $< -r ELK relax reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
 
 $(ONT).obo: $(ONT).owl
-	$(ROBOT) convert --check false -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@ &&\
-	echo "$(ONT).obo successfully created."
+	$(ROBOT) convert --check false -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@ 
 
 $(ONT)-base.owl: $(SRC) ../patterns/definitions.owl
 	$(ROBOT) remove --input $< --select imports --output $@ &&\
-	$(ROBOT) merge -i $@ -i ../patterns/definitions.owl -o $@ &&\
-	echo "$(ONT)-base.owl successfully created."
+	$(ROBOT) merge -i $@ -i ../patterns/definitions.owl annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT)-base.owl annotate --ontology-iri $(BASE)/$(ONT)-base.owl -o $@	
+
+$(ONT)-merged.owl: $(ONT).owl
+	$(ROBOT) merge -i $< annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT)-merged.owl annotate --ontology-iri $(BASE)/$(ONT)-merged.owl -o $@ 
+	
+$(ONT)-merged.obo: $(ONT)-merged.owl
+	$(ROBOT) convert --check false -i $< -f obo -o $(ONT)-merged.obo.tmp && mv $(ONT)-merged.obo.tmp $@ 
+
 # ----------------------------------------
 # Import modules
 # ----------------------------------------
@@ -108,7 +114,7 @@ mirror/%.owl:
 # Release
 # ----------------------------------------
 # copy from staging area (this directory) to top-level
-release: $(ONT).owl $(ONT).obo $(ONT)-base.owl
+release: $(ONT).owl $(ONT).obo $(ONT)-base.owl $(ONT)-merged.owl $(ONT)-merged.obo
 	cp $^ $(RELEASEDIR) && cp imports/* $(RELEASEDIR)/imports
 
 # ----------------------------------------
