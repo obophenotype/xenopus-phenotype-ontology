@@ -2,6 +2,17 @@ format-version: 1.2
 ontology: xpo/imports/go_import
 
 [Term]
+id: GO:0000235
+name: astral microtubule
+namespace: cellular_component
+def: "Any of the spindle microtubules that radiate in all directions from the spindle poles and are thought to contribute to the forces that separate the poles and position them in relation to the rest of the cell." [ISBN:0815316194]
+is_a: GO:0005876 ! spindle microtubule
+is_a: GO:0005881 ! cytoplasmic microtubule
+intersection_of: GO:0005876 ! spindle microtubule
+intersection_of: part_of GO:0005818 ! aster
+relationship: part_of GO:0005818 ! aster
+
+[Term]
 id: GO:0001508
 name: action potential
 namespace: biological_process
@@ -181,6 +192,104 @@ synonym: "horsetail nucleus" NARROW [GOC:al, GOC:mah, GOC:vw, PMID:15030757]
 xref: NIF_Subcellular:sao1702920020
 xref: Wikipedia:Cell_nucleus
 is_a: GO:0043231 ! intracellular membrane-bounded organelle
+
+[Term]
+id: GO:0005737
+name: cytoplasm
+namespace: cellular_component
+def: "All of the contents of a cell excluding the plasma membrane and nucleus, but including other subcellular structures." [ISBN:0198547684]
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+xref: Wikipedia:Cytoplasm
+is_a: GO:0044424 ! intracellular part
+
+[Term]
+id: GO:0005818
+name: aster
+namespace: cellular_component
+def: "An array of microtubules emanating from a spindle pole MTOC that do not connect to kinetochores." [GOC:clt]
+is_a: GO:0043232 ! intracellular non-membrane-bounded organelle
+is_a: GO:0044430 ! cytoskeletal part
+is_a: GO:0099080 ! supramolecular complex
+relationship: part_of GO:0005819 ! spindle
+
+[Term]
+id: GO:0005819
+name: spindle
+namespace: cellular_component
+def: "The array of microtubules and associated molecules that forms between opposite poles of a eukaryotic cell during mitosis or meiosis and serves to move the duplicated chromosomes apart." [ISBN:0198547684]
+xref: Wikipedia:Spindle_apparatus
+is_a: GO:0043232 ! intracellular non-membrane-bounded organelle
+is_a: GO:0044430 ! cytoskeletal part
+relationship: part_of GO:0015630 ! microtubule cytoskeleton
+
+[Term]
+id: GO:0005856
+name: cytoskeleton
+namespace: cellular_component
+def: "Any of the various filamentous elements that form the internal framework of cells, and typically remain after treatment of the cells with mild detergent to remove membrane constituents and soluble components of the cytoplasm. The term embraces intermediate filaments, microfilaments, microtubules, the microtrabecular lattice, and other structures characterized by a polymeric filamentous nature and long-range order within the cell. The various elements of the cytoskeleton not only serve in the maintenance of cellular shape but also have roles in other cellular functions, including cellular movement, cell division, endocytosis, and movement of organelles." [GOC:mah, ISBN:0198547684, PMID:16959967]
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_flybase_ribbon
+subset: goslim_generic
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+xref: Wikipedia:Cytoskeleton
+is_a: GO:0043232 ! intracellular non-membrane-bounded organelle
+
+[Term]
+id: GO:0005874
+name: microtubule
+namespace: cellular_component
+def: "Any of the long, generally straight, hollow tubes of internal diameter 12-15 nm and external diameter 24 nm found in a wide variety of eukaryotic cells; each consists (usually) of 13 protofilaments of polymeric tubulin, staggered in such a manner that the tubulin monomers are arranged in a helical pattern on the microtubular surface, and with the alpha/beta axes of the tubulin subunits parallel to the long axis of the tubule; exist in equilibrium with pool of tubulin monomers and can be rapidly assembled or disassembled in response to physiological stimuli; concerned with force generation, e.g. in the spindle." [ISBN:0879693568]
+subset: goslim_metagenomics
+synonym: "microtubuli" EXACT []
+synonym: "microtubulus" EXACT []
+synonym: "neurotubule" NARROW [NIF_Subcellular:sao248349196]
+xref: NIF_Subcellular:sao1846835077
+xref: Wikipedia:Microtubule
+is_a: GO:0099513 ! polymeric cytoskeletal fiber
+relationship: part_of GO:0015630 ! microtubule cytoskeleton
+
+[Term]
+id: GO:0005876
+name: spindle microtubule
+namespace: cellular_component
+def: "Any microtubule that is part of a mitotic or meiotic spindle; anchored at one spindle pole." [ISBN:0815316194]
+is_a: GO:0005874 ! microtubule
+intersection_of: GO:0005874 ! microtubule
+intersection_of: part_of GO:0005819 ! spindle
+relationship: part_of GO:0005819 ! spindle
+
+[Term]
+id: GO:0005880
+name: nuclear microtubule
+namespace: cellular_component
+def: "Any microtubule in the nucleus of a cell." [GOC:mah]
+is_a: GO:0005874 ! microtubule
+is_a: GO:0044428 ! nuclear part
+intersection_of: GO:0005874 ! microtubule
+intersection_of: part_of GO:0005634 ! nucleus
+
+[Term]
+id: GO:0005881
+name: cytoplasmic microtubule
+namespace: cellular_component
+def: "Any microtubule in the cytoplasm of a cell." [GOC:mah]
+synonym: "non-spindle-associated astral microtubule" NARROW []
+is_a: GO:0005874 ! microtubule
+is_a: GO:0044444 ! cytoplasmic part
+intersection_of: GO:0005874 ! microtubule
+intersection_of: part_of GO:0005737 ! cytoplasm
 
 [Term]
 id: GO:0006793
@@ -487,6 +596,14 @@ is_a: GO:0048523 ! negative regulation of cellular process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0007154 ! cell communication
 relationship: negatively_regulates GO:0007154 ! cell communication
+
+[Term]
+id: GO:0015630
+name: microtubule cytoskeleton
+namespace: cellular_component
+def: "The part of the cytoskeleton (the internal framework of a cell) composed of microtubules and associated proteins." [GOC:jl, ISBN:0395825172]
+subset: goslim_aspergillus
+is_a: GO:0005856 ! cytoskeleton
 
 [Term]
 id: GO:0016301
@@ -1032,6 +1149,15 @@ xref: NIF_Subcellular:sao414196390
 is_a: GO:0043226 ! organelle
 
 [Term]
+id: GO:0043228
+name: non-membrane-bounded organelle
+namespace: cellular_component
+def: "Organized structure of distinctive morphology and function, not bounded by a lipid bilayer membrane. Includes ribosomes, the cytoskeleton and chromosomes." [GOC:go_curators]
+synonym: "non-membrane-enclosed organelle" EXACT []
+xref: NIF_Subcellular:sao1456184038
+is_a: GO:0043226 ! organelle
+
+[Term]
 id: GO:0043229
 name: intracellular organelle
 namespace: cellular_component
@@ -1051,6 +1177,19 @@ subset: goslim_pir
 synonym: "intracellular membrane-enclosed organelle" EXACT []
 is_a: GO:0043227 ! membrane-bounded organelle
 is_a: GO:0043229 ! intracellular organelle
+
+[Term]
+id: GO:0043232
+name: intracellular non-membrane-bounded organelle
+namespace: cellular_component
+def: "Organized structure of distinctive morphology and function, not bounded by a lipid bilayer membrane and occurring within the cell. Includes ribosomes, the cytoskeleton and chromosomes." [GOC:go_curators]
+subset: goslim_mouse
+subset: goslim_pir
+synonym: "intracellular non-membrane-enclosed organelle" EXACT []
+is_a: GO:0043228 ! non-membrane-bounded organelle
+is_a: GO:0043229 ! intracellular organelle
+intersection_of: GO:0043228 ! non-membrane-bounded organelle
+intersection_of: part_of GO:0005622 ! intracellular
 
 [Term]
 id: GO:0043393
@@ -1155,6 +1294,34 @@ is_a: GO:0044446 ! intracellular organelle part
 intersection_of: GO:0005575 ! cellular_component
 intersection_of: part_of GO:0005634 ! nucleus
 relationship: part_of GO:0005634 ! nucleus
+
+[Term]
+id: GO:0044430
+name: cytoskeletal part
+namespace: cellular_component
+def: "Any constituent part of the cytoskeleton, a cellular scaffolding or skeleton that maintains cell shape, enables some cell motion (using structures such as flagella and cilia), and plays important roles in both intra-cellular transport (e.g. the movement of vesicles and organelles) and cellular division. Includes constituent parts of intermediate filaments, microfilaments, microtubules, and the microtrabecular lattice." [GOC:jl]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_annotate
+synonym: "cytoskeletal element" EXACT [NIF_Subcellular:sao1635329413]
+synonym: "cytoskeleton component" EXACT []
+xref: NIF_Subcellular:sao1635329413
+is_a: GO:0044446 ! intracellular organelle part
+intersection_of: GO:0005575 ! cellular_component
+intersection_of: part_of GO:0005856 ! cytoskeleton
+relationship: part_of GO:0005856 ! cytoskeleton
+
+[Term]
+id: GO:0044444
+name: cytoplasmic part
+namespace: cellular_component
+def: "Any constituent part of the cytoplasm, all of the contents of a cell excluding the plasma membrane and nucleus, but including other subcellular structures." [GOC:jl]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_annotate
+synonym: "cytoplasm component" EXACT []
+is_a: GO:0044424 ! intracellular part
+intersection_of: GO:0005575 ! cellular_component
+intersection_of: part_of GO:0005737 ! cytoplasm
+relationship: part_of GO:0005737 ! cytoplasm
 
 [Term]
 id: GO:0044446
@@ -1922,6 +2089,20 @@ def: "Cell-cell signaling from pre to post-synapse, across the synaptic cleft" [
 is_a: GO:0099537 ! trans-synaptic signaling
 
 [Term]
+id: GO:0099080
+name: supramolecular complex
+namespace: cellular_component
+def: "A cellular component that consists of an indeterminate number of proteins or macromolecular complexes, organized into a regular, higher-order structure such as a polymer, sheet, network or a fiber." [GOC:dos]
+is_a: GO:0005575 ! cellular_component
+
+[Term]
+id: GO:0099081
+name: supramolecular polymer
+namespace: cellular_component
+def: "A polymeric supramolecular structure." [GOC:dos]
+is_a: GO:0099080 ! supramolecular complex
+
+[Term]
 id: GO:0099177
 name: regulation of trans-synaptic signaling
 namespace: biological_process
@@ -1931,6 +2112,23 @@ is_a: GO:0023051 ! regulation of signaling
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0099537 ! trans-synaptic signaling
 relationship: regulates GO:0099537 ! trans-synaptic signaling
+
+[Term]
+id: GO:0099512
+name: supramolecular fiber
+namespace: cellular_component
+alt_id: GO:0043205
+def: "A polymer consisting of an indefinite number of protein or protein complex subunits that have polymerised to form a fiber-shaped structure." [GOC:dos]
+synonym: "fibril" RELATED []
+is_a: GO:0099081 ! supramolecular polymer
+
+[Term]
+id: GO:0099513
+name: polymeric cytoskeletal fiber
+namespace: cellular_component
+def: "A component of the cytoskeleton consisting of a homo or heteropolymeric fiber constructed from an indeterminate number of protein subunits." [GOC:dos]
+is_a: GO:0044430 ! cytoskeletal part
+is_a: GO:0099512 ! supramolecular fiber
 
 [Term]
 id: GO:0099536
@@ -1959,6 +2157,16 @@ is_a: GO:0050804 ! modulation of chemical synaptic transmission
 is_a: GO:0099537 ! trans-synaptic signaling
 intersection_of: GO:0099537 ! trans-synaptic signaling
 intersection_of: regulates GO:0007268 ! chemical synaptic transmission
+
+[Term]
+id: GO:0099568
+name: cytoplasmic region
+namespace: cellular_component
+def: "Any (proper) part of the cytoplasm of a single cell of sufficient size to still be considered cytoplasm\"" [GOC:dos]
+is_a: GO:0005737 ! cytoplasm
+is_a: GO:0044444 ! cytoplasmic part
+intersection_of: GO:0005737 ! cytoplasm
+intersection_of: part_of GO:0005737 ! cytoplasm
 
 [Term]
 id: GO:1900120
