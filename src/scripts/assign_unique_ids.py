@@ -107,7 +107,11 @@ df = add_id_column(df)
 
 ids=list(set(ids+df_ids['iri'].tolist()))
 # wherever there is NULL assign new id starting with start id, make sure that value is then appended to df_ids and ids
-
+defclass = df['defined_class']
+df.drop(labels=['defined_class'], axis=1,inplace = True)
+df.insert(0, 'defined_class', defclass)
+df = df.sort_values('defined_class')
+df_ids = df_ids.sort_values('iri')
 df.to_csv(tsv, sep = '\t', index=False)
 df_ids.to_csv(id_map, sep = '\t', index=False)
 with open(reserved_ids, 'w') as f:
