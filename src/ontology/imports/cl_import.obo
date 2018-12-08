@@ -511,6 +511,18 @@ created_by: TermGenie
 creation_date: 2014-06-25T02:28:17Z
 
 [Term]
+id: CP:0000037
+name: increased nucleus size
+namespace: cell
+def: "A nucleus size quality which is relatively high compared to the amount of cytoplasm present in the same cell." [GOC:tfm]
+is_a: GO:0005634 ! nucleus
+intersection_of: GO:0005634 ! nucleus
+intersection_of: RO:0000053 PATO:0000586 ! bearer of increased size
+relationship: RO:0000053 PATO:0000586 ! bearer of increased size
+created_by: tmeehan
+creation_date: 2009-12-23T10:53:24Z
+
+[Term]
 id: GO:0003008
 name: system process
 is_a: GO:0032501 ! multicellular organismal process
@@ -549,6 +561,11 @@ id: GO:0005634
 name: nucleus
 is_a: GO:0043231 ! intracellular membrane-bounded organelle
 is_a: GO:0044464 ! cell part
+
+[Term]
+id: GO:0005737
+name: cytoplasm
+is_a: GO:0044424 ! intracellular part
 
 [Term]
 id: GO:0008150
@@ -642,6 +659,11 @@ name: membrane-bounded organelle
 is_a: GO:0043226 ! organelle
 
 [Term]
+id: GO:0043228
+name: non-membrane-bounded organelle
+is_a: GO:0043226 ! organelle
+
+[Term]
 id: GO:0043229
 name: intracellular organelle
 is_a: GO:0043226 ! organelle
@@ -651,6 +673,12 @@ is_a: GO:0044424 ! intracellular part
 id: GO:0043231
 name: intracellular membrane-bounded organelle
 is_a: GO:0043227 ! membrane-bounded organelle
+is_a: GO:0043229 ! intracellular organelle
+
+[Term]
+id: GO:0043232
+name: intracellular non-membrane-bounded organelle
+is_a: GO:0043228 ! non-membrane-bounded organelle
 is_a: GO:0043229 ! intracellular organelle
 
 [Term]
@@ -678,6 +706,11 @@ is_a: GO:0044464 ! cell part
 id: GO:0044428
 name: nuclear part
 is_a: GO:0044446 ! intracellular organelle part
+
+[Term]
+id: GO:0044444
+name: cytoplasmic part
+is_a: GO:0044424 ! intracellular part
 
 [Term]
 id: GO:0044446
@@ -843,9 +876,26 @@ name: deviation(from_normal)
 is_a: PATO:0000068 ! qualitative
 
 [Term]
+id: PATO:0000117
+name: size
+is_a: PATO:0000051 ! morphology
+
+[Term]
 id: PATO:0000460
 name: abnormal
 is_a: PATO:0000069 ! deviation(from_normal)
+
+[Term]
+id: PATO:0000586
+name: increased size
+is_a: PATO:0000117 ! size
+is_a: PATO:0002305 ! increased object quality
+
+[Term]
+id: PATO:0000587
+name: decreased size
+is_a: PATO:0000117 ! size
+is_a: PATO:0002303 ! decreased object quality
 
 [Term]
 id: PATO:0001241
@@ -876,6 +926,28 @@ is_a: PATO:0001396 ! cellular quality
 id: PATO:0001405
 name: anucleate
 is_a: PATO:0001404 ! nucleate quality
+
+[Term]
+id: PATO:0002300
+name: increased quality
+is_a: PATO:0000069 ! deviation(from_normal)
+
+[Term]
+id: PATO:0002301
+name: decreased quality
+is_a: PATO:0000069 ! deviation(from_normal)
+
+[Term]
+id: PATO:0002303
+name: decreased object quality
+is_a: PATO:0001241 ! physical object quality
+is_a: PATO:0002301 ! decreased quality
+
+[Term]
+id: PATO:0002305
+name: increased object quality
+is_a: PATO:0001241 ! physical object quality
+is_a: PATO:0002300 ! increased quality
 
 [Term]
 id: PATO:0002505
