@@ -1,0 +1,6 @@
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?sub WHERE {
+  	VALUES ?o { <http://purl.obolibrary.org/obo/FBbt_00057175> <http://purl.obolibrary.org/obo/FBbt_00005289> } 
+    ?sub rdfs:subClassOf* ?o .
+}
