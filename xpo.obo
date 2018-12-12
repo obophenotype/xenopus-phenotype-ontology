@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2018-11-19
+data-version: releases/2018-12-08
 remark: Xenopus Phenotype Ontology
 import: http://purl.obolibrary.org/obo/xpo/imports/bfo_import.owl
 import: http://purl.obolibrary.org/obo/xpo/imports/chebi_import.owl
@@ -233,6 +233,15 @@ id: CL:2000032
 is_a: CL:0000540
 
 [Term]
+id: CP:0000037
+is_a: GO:0005634
+
+[Term]
+id: GO:0000235
+is_a: GO:0005876
+is_a: GO:0005881
+
+[Term]
 id: GO:0001508
 is_a: GO:0042391
 
@@ -280,6 +289,43 @@ is_a: GO:0005575
 [Term]
 id: GO:0005634
 is_a: GO:0043231
+
+[Term]
+id: GO:0005737
+is_a: GO:0044424
+
+[Term]
+id: GO:0005818
+is_a: GO:0043232
+is_a: GO:0044430
+is_a: GO:0099080
+
+[Term]
+id: GO:0005819
+is_a: GO:0043232
+is_a: GO:0044430
+
+[Term]
+id: GO:0005856
+is_a: GO:0043232
+
+[Term]
+id: GO:0005874
+is_a: GO:0099513
+
+[Term]
+id: GO:0005876
+is_a: GO:0005874
+
+[Term]
+id: GO:0005880
+is_a: GO:0005874
+is_a: GO:0044428
+
+[Term]
+id: GO:0005881
+is_a: GO:0005874
+is_a: GO:0044444
 
 [Term]
 id: GO:0006793
@@ -377,6 +423,10 @@ is_a: GO:0048522
 id: GO:0010648
 is_a: GO:0010646
 is_a: GO:0048523
+
+[Term]
+id: GO:0015630
+is_a: GO:0005856
 
 [Term]
 id: GO:0016301
@@ -549,6 +599,10 @@ id: GO:0043227
 is_a: GO:0043226
 
 [Term]
+id: GO:0043228
+is_a: GO:0043226
+
+[Term]
 id: GO:0043229
 is_a: GO:0043226
 is_a: GO:0044424
@@ -556,6 +610,11 @@ is_a: GO:0044424
 [Term]
 id: GO:0043231
 is_a: GO:0043227
+is_a: GO:0043229
+
+[Term]
+id: GO:0043232
+is_a: GO:0043228
 is_a: GO:0043229
 
 [Term]
@@ -595,6 +654,14 @@ is_a: GO:0044464
 [Term]
 id: GO:0044428
 is_a: GO:0044446
+
+[Term]
+id: GO:0044430
+is_a: GO:0044446
+
+[Term]
+id: GO:0044444
+is_a: GO:0044424
 
 [Term]
 id: GO:0044446
@@ -854,9 +921,26 @@ id: GO:0098916
 is_a: GO:0099537
 
 [Term]
+id: GO:0099080
+is_a: GO:0005575
+
+[Term]
+id: GO:0099081
+is_a: GO:0099080
+
+[Term]
 id: GO:0099177
 is_a: GO:0010646
 is_a: GO:0023051
+
+[Term]
+id: GO:0099512
+is_a: GO:0099081
+
+[Term]
+id: GO:0099513
+is_a: GO:0044430
+is_a: GO:0099512
 
 [Term]
 id: GO:0099536
@@ -870,6 +954,11 @@ is_a: GO:0099536
 id: GO:0099550
 is_a: GO:0050804
 is_a: GO:0099537
+
+[Term]
+id: GO:0099568
+is_a: GO:0005737
+is_a: GO:0044444
 
 [Term]
 id: GO:1900120
@@ -959,6 +1048,10 @@ id: PATO:0000070
 is_a: PATO:0000068
 
 [Term]
+id: PATO:0000117
+is_a: PATO:0000051
+
+[Term]
 id: PATO:0000460
 is_a: PATO:0000069
 
@@ -973,6 +1066,21 @@ is_a: PATO:0000070
 [Term]
 id: PATO:0000467
 is_a: PATO:0000070
+
+[Term]
+id: PATO:0000470
+is_a: PATO:0000467
+is_a: PATO:0002300
+
+[Term]
+id: PATO:0000586
+is_a: PATO:0000117
+is_a: PATO:0002305
+
+[Term]
+id: PATO:0000587
+is_a: PATO:0000117
+is_a: PATO:0002303
 
 [Term]
 id: PATO:0001236
@@ -1015,6 +1123,11 @@ id: PATO:0001564
 is_a: PATO:0001236
 
 [Term]
+id: PATO:0001997
+is_a: PATO:0000467
+is_a: PATO:0002301
+
+[Term]
 id: PATO:0001999
 is_a: PATO:0002083
 
@@ -1023,8 +1136,46 @@ id: PATO:0002000
 is_a: PATO:0001999
 
 [Term]
+id: PATO:0002001
+is_a: PATO:0001999
+is_a: PATO:0002303
+
+[Term]
+id: PATO:0002002
+is_a: PATO:0002083
+is_a: PATO:0002305
+
+[Term]
 id: PATO:0002083
 is_a: PATO:0001555
+
+[Term]
+id: PATO:0002300
+is_a: PATO:0000069
+
+[Term]
+id: PATO:0002301
+is_a: PATO:0000069
+
+[Term]
+id: PATO:0002302
+is_a: PATO:0001236
+is_a: PATO:0002301
+
+[Term]
+id: PATO:0002303
+is_a: PATO:0001241
+is_a: PATO:0002301
+
+[Term]
+id: PATO:0002304
+is_a: PATO:0001236
+is_a: PATO:0002300
+
+[Term]
+id: PATO:0002305
+is_a: PATO:0001241
+is_a: PATO:0002300
 
 [Term]
 id: PATO:0002505
@@ -8370,14 +8521,6 @@ id: XPO:00000000
 name: xpo
 
 [Term]
-id: XPO:0100000
-is_a: XPO:0100001
-
-[Term]
-id: XPO:0100001
-is_a: XPO:0100019
-
-[Term]
 id: XPO:0100002
 is_a: XPO:0100003
 
@@ -8390,16 +8533,8 @@ id: XPO:0100004
 is_a: XPO:0100006
 
 [Term]
-id: XPO:0100005
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100006
-is_a: XPO:0100066
-
-[Term]
-id: XPO:0100007
-is_a: XPO:0100019
+is_a: XPO:00000000 ! xpo
 
 [Term]
 id: XPO:0100008
@@ -8418,10 +8553,6 @@ id: XPO:0100011
 is_a: XPO:0100014
 
 [Term]
-id: XPO:0100012
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100013
 is_a: XPO:0100201
 is_a: XPO:0100387
@@ -8431,32 +8562,12 @@ id: XPO:0100014
 is_a: XPO:0100010
 
 [Term]
-id: XPO:0100015
-is_a: XPO:0100001
-
-[Term]
-id: XPO:0100016
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100017
 is_a: XPO:0100014
 
 [Term]
-id: XPO:0100018
-is_a: XPO:0100001
-
-[Term]
-id: XPO:0100019
-is_a: XPO:00000000 ! xpo
-
-[Term]
 id: XPO:0100020
 is_a: XPO:0100014
-
-[Term]
-id: XPO:0100021
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100022
@@ -8465,10 +8576,6 @@ is_a: XPO:0100023
 [Term]
 id: XPO:0100023
 is_a: XPO:0100014
-
-[Term]
-id: XPO:0100024
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100025
@@ -8485,14 +8592,6 @@ is_a: XPO:0100028
 [Term]
 id: XPO:0100028
 is_a: XPO:0100084
-
-[Term]
-id: XPO:0100029
-is_a: XPO:0100001
-
-[Term]
-id: XPO:0100030
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100031
@@ -8523,10 +8622,6 @@ id: XPO:0100037
 is_a: XPO:0100201
 
 [Term]
-id: XPO:0100038
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100039
 is_a: XPO:0100009
 
@@ -8535,20 +8630,12 @@ id: XPO:0100040
 is_a: XPO:0100004
 
 [Term]
-id: XPO:0100041
-is_a: XPO:0100019
-
-[Term]
 id: XPO:0100042
 is_a: XPO:0100043
 
 [Term]
 id: XPO:0100043
 is_a: XPO:0100054
-
-[Term]
-id: XPO:0100044
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100045
@@ -8591,10 +8678,6 @@ id: XPO:0100054
 is_a: XPO:0100009
 
 [Term]
-id: XPO:0100055
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100056
 is_a: XPO:0100192
 
@@ -8615,28 +8698,12 @@ id: XPO:0100060
 is_a: XPO:0100014
 
 [Term]
-id: XPO:0100061
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100062
-is_a: XPO:0100066
-
-[Term]
-id: XPO:0100063
-is_a: XPO:0100001
-
-[Term]
-id: XPO:0100064
-is_a: XPO:0100001
+is_a: XPO:00000000 ! xpo
 
 [Term]
 id: XPO:0100065
 is_a: XPO:0100014
-
-[Term]
-id: XPO:0100066
-is_a: XPO:00000000 ! xpo
 
 [Term]
 id: XPO:0100067
@@ -8644,7 +8711,7 @@ is_a: XPO:0100068
 
 [Term]
 id: XPO:0100068
-is_a: XPO:0100066
+is_a: XPO:00000000 ! xpo
 
 [Term]
 id: XPO:0100069
@@ -8655,20 +8722,8 @@ id: XPO:0100070
 is_a: XPO:0100084
 
 [Term]
-id: XPO:0100071
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100072
 is_a: XPO:0100146
-
-[Term]
-id: XPO:0100073
-is_a: XPO:0100001
-
-[Term]
-id: XPO:0100074
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100075
@@ -8696,7 +8751,7 @@ is_a: XPO:0100076
 
 [Term]
 id: XPO:0100081
-is_a: XPO:0100066
+is_a: XPO:00000000 ! xpo
 
 [Term]
 id: XPO:0100082
@@ -8715,48 +8770,12 @@ id: XPO:0100085
 is_a: XPO:0100062
 
 [Term]
-id: XPO:0100086
-is_a: XPO:0100087
-
-[Term]
-id: XPO:0100087
-is_a: XPO:0100019
-
-[Term]
-id: XPO:0100088
-is_a: XPO:0100089
-
-[Term]
-id: XPO:0100089
-is_a: XPO:0100066
-
-[Term]
-id: XPO:0100090
-is_a: XPO:0100091
-
-[Term]
-id: XPO:0100091
-is_a: XPO:0100506
-
-[Term]
 id: XPO:0100092
 is_a: XPO:0100093
 
 [Term]
 id: XPO:0100093
 is_a: XPO:0100612
-
-[Term]
-id: XPO:0100094
-is_a: XPO:0100001
-
-[Term]
-id: XPO:0100095
-is_a: XPO:0100001
-
-[Term]
-id: XPO:0100096
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100097
@@ -8775,14 +8794,6 @@ id: XPO:0100100
 is_a: XPO:0100014
 
 [Term]
-id: XPO:0100101
-is_a: XPO:0100001
-
-[Term]
-id: XPO:0100102
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100103
 is_a: XPO:0100003
 
@@ -8795,20 +8806,12 @@ id: XPO:0100105
 is_a: XPO:0100146
 
 [Term]
-id: XPO:0100106
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100107
 is_a: XPO:0100014
 
 [Term]
 id: XPO:0100108
 is_a: XPO:0100006
-
-[Term]
-id: XPO:0100109
-is_a: XPO:0100087
 
 [Term]
 id: XPO:0100110
@@ -8823,16 +8826,8 @@ id: XPO:0100112
 is_a: XPO:0100054
 
 [Term]
-id: XPO:0100113
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100114
 is_a: XPO:0100032
-
-[Term]
-id: XPO:0100115
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100116
@@ -8843,14 +8838,6 @@ id: XPO:0100117
 is_a: XPO:0100076
 
 [Term]
-id: XPO:0100118
-is_a: XPO:0100001
-
-[Term]
-id: XPO:0100119
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100120
 is_a: XPO:0100070
 
@@ -8859,20 +8846,12 @@ id: XPO:0100121
 is_a: XPO:0100124
 
 [Term]
-id: XPO:0100122
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100123
 is_a: XPO:0100228
 
 [Term]
 id: XPO:0100124
 is_a: XPO:0100597
-
-[Term]
-id: XPO:0100125
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100126
@@ -8893,10 +8872,6 @@ is_a: XPO:0100078
 [Term]
 id: XPO:0100130
 is_a: XPO:0100009
-
-[Term]
-id: XPO:0100131
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100132
@@ -8927,16 +8902,8 @@ id: XPO:0100138
 is_a: XPO:0100009
 
 [Term]
-id: XPO:0100139
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100140
 is_a: XPO:0100014
-
-[Term]
-id: XPO:0100141
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100142
@@ -8945,14 +8912,6 @@ is_a: XPO:0100080
 [Term]
 id: XPO:0100143
 is_a: XPO:0100014
-
-[Term]
-id: XPO:0100144
-is_a: XPO:0100001
-
-[Term]
-id: XPO:0100145
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100146
@@ -8967,10 +8926,6 @@ id: XPO:0100148
 is_a: XPO:0100076
 
 [Term]
-id: XPO:0100149
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100150
 is_a: XPO:0100151
 
@@ -8981,14 +8936,6 @@ is_a: XPO:0100104
 [Term]
 id: XPO:0100152
 is_a: XPO:0100070
-
-[Term]
-id: XPO:0100153
-is_a: XPO:0100001
-
-[Term]
-id: XPO:0100154
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100155
@@ -9005,14 +8952,6 @@ is_a: XPO:0100009
 [Term]
 id: XPO:0100158
 is_a: XPO:0100003
-
-[Term]
-id: XPO:0100159
-is_a: XPO:0100001
-
-[Term]
-id: XPO:0100160
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100161
@@ -9067,10 +9006,6 @@ id: XPO:0100173
 is_a: XPO:0100028
 
 [Term]
-id: XPO:0100174
-is_a: XPO:0100089
-
-[Term]
 id: XPO:0100175
 is_a: XPO:0100004
 
@@ -9089,14 +9024,6 @@ is_a: XPO:0100028
 [Term]
 id: XPO:0100179
 is_a: XPO:0100058
-
-[Term]
-id: XPO:0100180
-is_a: XPO:0100001
-
-[Term]
-id: XPO:0100181
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100182
@@ -9180,7 +9107,7 @@ is_a: XPO:0100231
 
 [Term]
 id: XPO:0100202
-is_a: XPO:0100066
+is_a: XPO:00000000 ! xpo
 
 [Term]
 id: XPO:0100203
@@ -9207,16 +9134,8 @@ id: XPO:0100208
 is_a: XPO:0100080
 
 [Term]
-id: XPO:0100209
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100210
 is_a: XPO:0100076
-
-[Term]
-id: XPO:0100211
-is_a: XPO:0100041
 
 [Term]
 id: XPO:0100212
@@ -9323,10 +9242,6 @@ id: XPO:0100237
 is_a: XPO:0100239
 
 [Term]
-id: XPO:0100238
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100239
 is_a: XPO:0100006
 
@@ -9341,14 +9256,6 @@ is_a: XPO:0100060
 [Term]
 id: XPO:0100242
 is_a: XPO:0100201
-
-[Term]
-id: XPO:0100243
-is_a: XPO:0100001
-
-[Term]
-id: XPO:0100244
-is_a: XPO:0100352
 
 [Term]
 id: XPO:0100245
@@ -9447,10 +9354,6 @@ id: XPO:0100268
 is_a: XPO:0100070
 
 [Term]
-id: XPO:0100269
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100270
 is_a: XPO:0100014
 
@@ -9473,10 +9376,6 @@ is_a: XPO:0100070
 [Term]
 id: XPO:0100275
 is_a: XPO:0100100
-
-[Term]
-id: XPO:0100276
-is_a: XPO:0100300
 
 [Term]
 id: XPO:0100277
@@ -9515,16 +9414,8 @@ id: XPO:0100285
 is_a: XPO:0100004
 
 [Term]
-id: XPO:0100286
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100287
 is_a: XPO:0100151
-
-[Term]
-id: XPO:0100288
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100289
@@ -9547,10 +9438,6 @@ id: XPO:0100293
 is_a: XPO:0100009
 
 [Term]
-id: XPO:0100294
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100295
 is_a: XPO:0100239
 
@@ -9559,20 +9446,8 @@ id: XPO:0100296
 is_a: XPO:0100068
 
 [Term]
-id: XPO:0100297
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100298
 is_a: XPO:0100121
-
-[Term]
-id: XPO:0100299
-is_a: XPO:0100300
-
-[Term]
-id: XPO:0100300
-is_a: XPO:0100041
 
 [Term]
 id: XPO:0100301
@@ -9611,10 +9486,6 @@ id: XPO:0100309
 is_a: XPO:0100068
 
 [Term]
-id: XPO:0100310
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100311
 is_a: XPO:0100312
 
@@ -9622,10 +9493,6 @@ is_a: XPO:0100312
 id: XPO:0100312
 is_a: XPO:0100250
 is_a: XPO:0100346
-
-[Term]
-id: XPO:0100313
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100314
@@ -9642,10 +9509,6 @@ is_a: XPO:0100040
 [Term]
 id: XPO:0100317
 is_a: XPO:0100070
-
-[Term]
-id: XPO:0100318
-is_a: XPO:0100087
 
 [Term]
 id: XPO:0100319
@@ -9674,10 +9537,6 @@ is_a: XPO:0100054
 [Term]
 id: XPO:0100325
 is_a: XPO:0100228
-
-[Term]
-id: XPO:0100326
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100327
@@ -9749,11 +9608,7 @@ is_a: XPO:0100104
 
 [Term]
 id: XPO:0100344
-is_a: XPO:0100066
-
-[Term]
-id: XPO:0100345
-is_a: XPO:0100001
+is_a: XPO:00000000 ! xpo
 
 [Term]
 id: XPO:0100346
@@ -9778,10 +9633,6 @@ is_a: XPO:0100228
 [Term]
 id: XPO:0100351
 is_a: XPO:0100336
-
-[Term]
-id: XPO:0100352
-is_a: XPO:0100091
 
 [Term]
 id: XPO:0100353
@@ -9846,10 +9697,6 @@ is_a: XPO:0100377
 [Term]
 id: XPO:0100368
 is_a: XPO:0100014
-
-[Term]
-id: XPO:0100369
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100370
@@ -10068,10 +9915,6 @@ id: XPO:0100423
 is_a: XPO:0100006
 
 [Term]
-id: XPO:0100424
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100425
 is_a: XPO:0100222
 
@@ -10126,18 +9969,6 @@ is_a: XPO:0100285
 [Term]
 id: XPO:0100438
 is_a: XPO:0100201
-
-[Term]
-id: XPO:0100439
-is_a: XPO:0100087
-
-[Term]
-id: XPO:0100440
-is_a: XPO:0100087
-
-[Term]
-id: XPO:0100441
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100442
@@ -10249,10 +10080,6 @@ id: XPO:0100468
 is_a: XPO:0100070
 
 [Term]
-id: XPO:0100469
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100470
 is_a: XPO:0100014
 
@@ -10298,7 +10125,7 @@ is_a: XPO:0100481
 
 [Term]
 id: XPO:0100481
-is_a: XPO:0100066
+is_a: XPO:00000000 ! xpo
 
 [Term]
 id: XPO:0100482
@@ -10333,10 +10160,6 @@ id: XPO:0100489
 is_a: XPO:0100043
 
 [Term]
-id: XPO:0100490
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100491
 is_a: XPO:0100009
 
@@ -10351,10 +10174,6 @@ is_a: XPO:0100070
 [Term]
 id: XPO:0100494
 is_a: XPO:0100104
-
-[Term]
-id: XPO:0100495
-is_a: XPO:0100041
 
 [Term]
 id: XPO:0100496
@@ -10391,14 +10210,6 @@ is_a: XPO:0100307
 [Term]
 id: XPO:0100504
 is_a: XPO:0100076
-
-[Term]
-id: XPO:0100505
-is_a: XPO:0100506
-
-[Term]
-id: XPO:0100506
-is_a: XPO:0100019
 
 [Term]
 id: XPO:0100507
@@ -10473,10 +10284,6 @@ is_a: XPO:0100104
 id: XPO:0100524
 is_a: XPO:0100201
 is_a: XPO:0100387
-
-[Term]
-id: XPO:0100525
-is_a: XPO:0100041
 
 [Term]
 id: XPO:0100526
@@ -10573,10 +10380,6 @@ is_a: XPO:0100177
 [Term]
 id: XPO:0100549
 is_a: XPO:0100004
-
-[Term]
-id: XPO:0100550
-is_a: XPO:0100041
 
 [Term]
 id: XPO:0100551
@@ -10905,10 +10708,6 @@ id: XPO:0100631
 is_a: XPO:0100129
 
 [Term]
-id: XPO:0100632
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100633
 is_a: XPO:0100046
 
@@ -10931,10 +10730,6 @@ is_a: XPO:0100199
 [Term]
 id: XPO:0100638
 is_a: XPO:0100004
-
-[Term]
-id: XPO:0100639
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100640
@@ -11017,10 +10812,6 @@ id: XPO:0100659
 is_a: XPO:0100043
 
 [Term]
-id: XPO:0100660
-is_a: XPO:0100089
-
-[Term]
 id: XPO:0100661
 is_a: XPO:0100151
 
@@ -11051,10 +10842,6 @@ is_a: XPO:0100014
 [Term]
 id: XPO:0100668
 is_a: XPO:0100246
-
-[Term]
-id: XPO:0100669
-is_a: XPO:0100087
 
 [Term]
 id: XPO:0100670
@@ -11143,10 +10930,6 @@ is_a: XPO:0100305
 [Term]
 id: XPO:0100691
 is_a: XPO:0100004
-
-[Term]
-id: XPO:0100692
-is_a: XPO:0100506
 
 [Term]
 id: XPO:0100693
@@ -11414,10 +11197,6 @@ id: XPO:0100758
 is_a: XPO:0100009
 
 [Term]
-id: XPO:0100759
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0100760
 is_a: XPO:0100009
 
@@ -11662,10 +11441,6 @@ is_a: XPO:0100058
 [Term]
 id: XPO:0100820
 is_a: XPO:0100151
-
-[Term]
-id: XPO:0100821
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0100822
@@ -11951,10 +11726,6 @@ id: XPO:0100891
 is_a: XPO:0100320
 
 [Term]
-id: XPO:0100892
-is_a: XPO:0100352
-
-[Term]
 id: XPO:0100893
 is_a: XPO:0100591
 
@@ -12127,10 +11898,6 @@ id: XPO:0100935
 is_a: XPO:0100028
 
 [Term]
-id: XPO:0100936
-is_a: XPO:0100087
-
-[Term]
 id: XPO:0100937
 is_a: XPO:0100004
 
@@ -12215,10 +11982,6 @@ id: XPO:0100957
 is_a: XPO:0100406
 
 [Term]
-id: XPO:0100958
-is_a: XPO:0100089
-
-[Term]
 id: XPO:0100959
 is_a: XPO:0100712
 is_a: XPO:0100713
@@ -12226,10 +11989,6 @@ is_a: XPO:0100713
 [Term]
 id: XPO:0100960
 is_a: XPO:0100004
-
-[Term]
-id: XPO:0100961
-is_a: XPO:0100089
 
 [Term]
 id: XPO:0100962
@@ -12398,10 +12157,6 @@ is_a: XPO:0100068
 [Term]
 id: XPO:0101002
 is_a: XPO:0100104
-
-[Term]
-id: XPO:0101003
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0101004
@@ -12580,10 +12335,6 @@ id: XPO:0101047
 is_a: XPO:0100327
 
 [Term]
-id: XPO:0101048
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0101049
 is_a: XPO:0100009
 
@@ -12730,10 +12481,6 @@ is_a: XPO:0100192
 [Term]
 id: XPO:0101085
 is_a: XPO:0100014
-
-[Term]
-id: XPO:0101086
-is_a: XPO:0100001
 
 [Term]
 id: XPO:0101087
@@ -12927,10 +12674,6 @@ is_a: XPO:0100196
 [Term]
 id: XPO:0101134
 is_a: XPO:0100164
-
-[Term]
-id: XPO:0101135
-is_a: XPO:0100089
 
 [Term]
 id: XPO:0101136
@@ -13341,10 +13084,6 @@ id: XPO:0101237
 is_a: XPO:0100004
 
 [Term]
-id: XPO:0101238
-is_a: XPO:0100001
-
-[Term]
 id: XPO:0101239
 is_a: XPO:0100004
 
@@ -13401,10 +13140,6 @@ id: XPO:0101252
 is_a: XPO:0100058
 
 [Term]
-id: XPO:0101253
-is_a: XPO:0100089
-
-[Term]
 id: XPO:0101254
 is_a: XPO:0100014
 
@@ -13423,10 +13158,6 @@ is_a: XPO:0100076
 [Term]
 id: XPO:0101258
 is_a: XPO:0100430
-
-[Term]
-id: XPO:0101259
-is_a: XPO:0100089
 
 [Term]
 id: XPO:0101260
@@ -13604,10 +13335,6 @@ is_a: XPO:0100108
 [Term]
 id: XPO:0101303
 is_a: XPO:0100009
-
-[Term]
-id: XPO:0101304
-is_a: XPO:0100089
 
 [Term]
 id: XPO:0101305
@@ -13944,10 +13671,6 @@ id: XPO:0101387
 is_a: XPO:0101278
 
 [Term]
-id: XPO:0101388
-is_a: XPO:0100089
-
-[Term]
 id: XPO:0101389
 is_a: XPO:0100108
 
@@ -14052,10 +13775,6 @@ id: XPO:0101414
 is_a: XPO:0100065
 
 [Term]
-id: XPO:0101415
-is_a: XPO:0100089
-
-[Term]
 id: XPO:0101416
 is_a: XPO:0100135
 
@@ -14124,28 +13843,12 @@ id: XPO:0101432
 is_a: XPO:0100014
 
 [Term]
-id: XPO:0101433
-is_a: XPO:0100019
-
-[Term]
-id: XPO:0101434
-is_a: XPO:0100066
-
-[Term]
 id: XPO:0101435
 is_a: XPO:0100004
 
 [Term]
-id: XPO:0101436
-is_a: XPO:0100089
-
-[Term]
 id: XPO:0101437
 is_a: XPO:0100014
-
-[Term]
-id: XPO:0101438
-is_a: XPO:0100089
 
 [Term]
 id: XPO:0101439
@@ -14336,10 +14039,6 @@ id: XPO:0101485
 is_a: XPO:0100336
 
 [Term]
-id: XPO:0101486
-is_a: XPO:0100089
-
-[Term]
 id: XPO:0101487
 is_a: XPO:0100076
 
@@ -14354,10 +14053,6 @@ is_a: XPO:0100270
 [Term]
 id: XPO:0101490
 is_a: XPO:0100004
-
-[Term]
-id: XPO:0101491
-is_a: XPO:0100089
 
 [Term]
 id: XPO:0101492
@@ -14426,10 +14121,6 @@ is_a: XPO:0100043
 [Term]
 id: XPO:0101508
 is_a: XPO:0100293
-
-[Term]
-id: XPO:0101509
-is_a: XPO:0100089
 
 [Term]
 id: XPO:0101510
@@ -14805,16 +14496,6 @@ id: XPO:0101602
 is_a: XPO:0101096
 
 [Term]
-id: XPO:0101632
-is_a: XPO:0100000
-is_a: XPO:0101633
-
-[Term]
-id: XPO:0101633
-is_a: XPO:0100001
-is_a: XPO:0101651
-
-[Term]
 id: XPO:0101634
 is_a: XPO:0100002
 is_a: XPO:0101635
@@ -14830,19 +14511,8 @@ is_a: XPO:0100004
 is_a: XPO:0101638
 
 [Term]
-id: XPO:0101637
-is_a: XPO:0100005
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101638
 is_a: XPO:0100006
-is_a: XPO:0101698
-
-[Term]
-id: XPO:0101639
-is_a: XPO:0100007
-is_a: XPO:0101651
 
 [Term]
 id: XPO:0101640
@@ -14865,11 +14535,6 @@ is_a: XPO:0100011
 is_a: XPO:0101646
 
 [Term]
-id: XPO:0101644
-is_a: XPO:0100012
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101645
 is_a: XPO:0100013
 is_a: XPO:0101833
@@ -14881,38 +14546,14 @@ is_a: XPO:0100014
 is_a: XPO:0101642
 
 [Term]
-id: XPO:0101647
-is_a: XPO:0100015
-is_a: XPO:0101633
-
-[Term]
-id: XPO:0101648
-is_a: XPO:0100016
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101649
 is_a: XPO:0100017
 is_a: XPO:0101646
 
 [Term]
-id: XPO:0101650
-is_a: XPO:0100018
-is_a: XPO:0101633
-
-[Term]
-id: XPO:0101651
-is_a: XPO:0100019
-
-[Term]
 id: XPO:0101652
 is_a: XPO:0100020
 is_a: XPO:0101646
-
-[Term]
-id: XPO:0101653
-is_a: XPO:0100021
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0101654
@@ -14923,11 +14564,6 @@ is_a: XPO:0101655
 id: XPO:0101655
 is_a: XPO:0100023
 is_a: XPO:0101646
-
-[Term]
-id: XPO:0101656
-is_a: XPO:0100024
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0101657
@@ -14948,16 +14584,6 @@ is_a: XPO:0101660
 id: XPO:0101660
 is_a: XPO:0100028
 is_a: XPO:0101716
-
-[Term]
-id: XPO:0101661
-is_a: XPO:0100029
-is_a: XPO:0101633
-
-[Term]
-id: XPO:0101662
-is_a: XPO:0100030
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0101663
@@ -14995,11 +14621,6 @@ is_a: XPO:0100037
 is_a: XPO:0101833
 
 [Term]
-id: XPO:0101670
-is_a: XPO:0100038
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101671
 is_a: XPO:0100039
 is_a: XPO:0101641
@@ -15010,11 +14631,6 @@ is_a: XPO:0100040
 is_a: XPO:0101636
 
 [Term]
-id: XPO:0101673
-is_a: XPO:0100041
-is_a: XPO:0101651
-
-[Term]
 id: XPO:0101674
 is_a: XPO:0100042
 is_a: XPO:0101675
@@ -15023,11 +14639,6 @@ is_a: XPO:0101675
 id: XPO:0101675
 is_a: XPO:0100043
 is_a: XPO:0101686
-
-[Term]
-id: XPO:0101676
-is_a: XPO:0100044
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0101677
@@ -15080,11 +14691,6 @@ is_a: XPO:0100054
 is_a: XPO:0101641
 
 [Term]
-id: XPO:0101687
-is_a: XPO:0100055
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101688
 is_a: XPO:0100056
 is_a: XPO:0101824
@@ -15110,33 +14716,13 @@ is_a: XPO:0100060
 is_a: XPO:0101646
 
 [Term]
-id: XPO:0101693
-is_a: XPO:0100061
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101694
 is_a: XPO:0100062
-is_a: XPO:0101698
-
-[Term]
-id: XPO:0101695
-is_a: XPO:0100063
-is_a: XPO:0101633
-
-[Term]
-id: XPO:0101696
-is_a: XPO:0100064
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0101697
 is_a: XPO:0100065
 is_a: XPO:0101646
-
-[Term]
-id: XPO:0101698
-is_a: XPO:0100066
 
 [Term]
 id: XPO:0101699
@@ -15146,7 +14732,6 @@ is_a: XPO:0101700
 [Term]
 id: XPO:0101700
 is_a: XPO:0100068
-is_a: XPO:0101698
 
 [Term]
 id: XPO:0101701
@@ -15159,24 +14744,9 @@ is_a: XPO:0100070
 is_a: XPO:0101716
 
 [Term]
-id: XPO:0101703
-is_a: XPO:0100071
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101704
 is_a: XPO:0100072
 is_a: XPO:0101778
-
-[Term]
-id: XPO:0101705
-is_a: XPO:0100073
-is_a: XPO:0101633
-
-[Term]
-id: XPO:0101706
-is_a: XPO:0100074
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0101707
@@ -15211,7 +14781,6 @@ is_a: XPO:0101708
 [Term]
 id: XPO:0101713
 is_a: XPO:0100081
-is_a: XPO:0101698
 
 [Term]
 id: XPO:0101714
@@ -15234,36 +14803,6 @@ is_a: XPO:0100085
 is_a: XPO:0101694
 
 [Term]
-id: XPO:0101718
-is_a: XPO:0100086
-is_a: XPO:0101719
-
-[Term]
-id: XPO:0101719
-is_a: XPO:0100087
-is_a: XPO:0101651
-
-[Term]
-id: XPO:0101720
-is_a: XPO:0100088
-is_a: XPO:0101721
-
-[Term]
-id: XPO:0101721
-is_a: XPO:0100089
-is_a: XPO:0101698
-
-[Term]
-id: XPO:0101722
-is_a: XPO:0100090
-is_a: XPO:0101723
-
-[Term]
-id: XPO:0101723
-is_a: XPO:0100091
-is_a: XPO:0102138
-
-[Term]
 id: XPO:0101724
 is_a: XPO:0100092
 is_a: XPO:0101725
@@ -15272,21 +14811,6 @@ is_a: XPO:0101725
 id: XPO:0101725
 is_a: XPO:0100093
 is_a: XPO:0102244
-
-[Term]
-id: XPO:0101726
-is_a: XPO:0100094
-is_a: XPO:0101633
-
-[Term]
-id: XPO:0101727
-is_a: XPO:0100095
-is_a: XPO:0101633
-
-[Term]
-id: XPO:0101728
-is_a: XPO:0100096
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0101729
@@ -15309,16 +14833,6 @@ is_a: XPO:0100100
 is_a: XPO:0101646
 
 [Term]
-id: XPO:0101733
-is_a: XPO:0100101
-is_a: XPO:0101633
-
-[Term]
-id: XPO:0101734
-is_a: XPO:0100102
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101735
 is_a: XPO:0100103
 is_a: XPO:0101635
@@ -15334,11 +14848,6 @@ is_a: XPO:0100105
 is_a: XPO:0101778
 
 [Term]
-id: XPO:0101738
-is_a: XPO:0100106
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101739
 is_a: XPO:0100107
 is_a: XPO:0101646
@@ -15347,11 +14856,6 @@ is_a: XPO:0101646
 id: XPO:0101740
 is_a: XPO:0100108
 is_a: XPO:0101638
-
-[Term]
-id: XPO:0101741
-is_a: XPO:0100109
-is_a: XPO:0101719
 
 [Term]
 id: XPO:0101742
@@ -15369,19 +14873,9 @@ is_a: XPO:0100112
 is_a: XPO:0101686
 
 [Term]
-id: XPO:0101745
-is_a: XPO:0100113
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101746
 is_a: XPO:0100114
 is_a: XPO:0101664
-
-[Term]
-id: XPO:0101747
-is_a: XPO:0100115
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0101748
@@ -15394,16 +14888,6 @@ is_a: XPO:0100117
 is_a: XPO:0101708
 
 [Term]
-id: XPO:0101750
-is_a: XPO:0100118
-is_a: XPO:0101633
-
-[Term]
-id: XPO:0101751
-is_a: XPO:0100119
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101752
 is_a: XPO:0100120
 is_a: XPO:0101702
@@ -15414,11 +14898,6 @@ is_a: XPO:0100121
 is_a: XPO:0101756
 
 [Term]
-id: XPO:0101754
-is_a: XPO:0100122
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101755
 is_a: XPO:0100123
 is_a: XPO:0101860
@@ -15427,11 +14906,6 @@ is_a: XPO:0101860
 id: XPO:0101756
 is_a: XPO:0100124
 is_a: XPO:0102229
-
-[Term]
-id: XPO:0101757
-is_a: XPO:0100125
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0101758
@@ -15457,11 +14931,6 @@ is_a: XPO:0101710
 id: XPO:0101762
 is_a: XPO:0100130
 is_a: XPO:0101641
-
-[Term]
-id: XPO:0101763
-is_a: XPO:0100131
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0101764
@@ -15499,19 +14968,9 @@ is_a: XPO:0100138
 is_a: XPO:0101641
 
 [Term]
-id: XPO:0101771
-is_a: XPO:0100139
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101772
 is_a: XPO:0100140
 is_a: XPO:0101646
-
-[Term]
-id: XPO:0101773
-is_a: XPO:0100141
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0101774
@@ -15522,16 +14981,6 @@ is_a: XPO:0101712
 id: XPO:0101775
 is_a: XPO:0100143
 is_a: XPO:0101646
-
-[Term]
-id: XPO:0101776
-is_a: XPO:0100144
-is_a: XPO:0101633
-
-[Term]
-id: XPO:0101777
-is_a: XPO:0100145
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0101778
@@ -15549,11 +14998,6 @@ is_a: XPO:0100148
 is_a: XPO:0101708
 
 [Term]
-id: XPO:0101781
-is_a: XPO:0100149
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101782
 is_a: XPO:0100150
 is_a: XPO:0101783
@@ -15567,16 +15011,6 @@ is_a: XPO:0101736
 id: XPO:0101784
 is_a: XPO:0100152
 is_a: XPO:0101702
-
-[Term]
-id: XPO:0101785
-is_a: XPO:0100153
-is_a: XPO:0101633
-
-[Term]
-id: XPO:0101786
-is_a: XPO:0100154
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0101787
@@ -15597,16 +15031,6 @@ is_a: XPO:0101641
 id: XPO:0101790
 is_a: XPO:0100158
 is_a: XPO:0101635
-
-[Term]
-id: XPO:0101791
-is_a: XPO:0100159
-is_a: XPO:0101633
-
-[Term]
-id: XPO:0101792
-is_a: XPO:0100160
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0101793
@@ -15674,11 +15098,6 @@ is_a: XPO:0100173
 is_a: XPO:0101660
 
 [Term]
-id: XPO:0101806
-is_a: XPO:0100174
-is_a: XPO:0101721
-
-[Term]
 id: XPO:0101807
 is_a: XPO:0100175
 is_a: XPO:0101636
@@ -15702,16 +15121,6 @@ is_a: XPO:0101660
 id: XPO:0101811
 is_a: XPO:0100179
 is_a: XPO:0101690
-
-[Term]
-id: XPO:0101812
-is_a: XPO:0100180
-is_a: XPO:0101633
-
-[Term]
-id: XPO:0101813
-is_a: XPO:0100181
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0101814
@@ -15816,7 +15225,6 @@ is_a: XPO:0101863
 [Term]
 id: XPO:0101834
 is_a: XPO:0100202
-is_a: XPO:0101698
 
 [Term]
 id: XPO:0101835
@@ -15849,19 +15257,9 @@ is_a: XPO:0100208
 is_a: XPO:0101712
 
 [Term]
-id: XPO:0101841
-is_a: XPO:0100209
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101842
 is_a: XPO:0100210
 is_a: XPO:0101708
-
-[Term]
-id: XPO:0101843
-is_a: XPO:0100211
-is_a: XPO:0101673
 
 [Term]
 id: XPO:0101844
@@ -15994,11 +15392,6 @@ is_a: XPO:0100237
 is_a: XPO:0101871
 
 [Term]
-id: XPO:0101870
-is_a: XPO:0100238
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101871
 is_a: XPO:0100239
 is_a: XPO:0101638
@@ -16017,16 +15410,6 @@ is_a: XPO:0101692
 id: XPO:0101874
 is_a: XPO:0100242
 is_a: XPO:0101833
-
-[Term]
-id: XPO:0101875
-is_a: XPO:0100243
-is_a: XPO:0101633
-
-[Term]
-id: XPO:0101876
-is_a: XPO:0100244
-is_a: XPO:0101984
 
 [Term]
 id: XPO:0101877
@@ -16149,11 +15532,6 @@ is_a: XPO:0100268
 is_a: XPO:0101702
 
 [Term]
-id: XPO:0101901
-is_a: XPO:0100269
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101902
 is_a: XPO:0100270
 is_a: XPO:0101646
@@ -16182,11 +15560,6 @@ is_a: XPO:0101702
 id: XPO:0101907
 is_a: XPO:0100275
 is_a: XPO:0101732
-
-[Term]
-id: XPO:0101908
-is_a: XPO:0100276
-is_a: XPO:0101932
 
 [Term]
 id: XPO:0101909
@@ -16234,19 +15607,9 @@ is_a: XPO:0100285
 is_a: XPO:0101636
 
 [Term]
-id: XPO:0101918
-is_a: XPO:0100286
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101919
 is_a: XPO:0100287
 is_a: XPO:0101783
-
-[Term]
-id: XPO:0101920
-is_a: XPO:0100288
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0101921
@@ -16274,11 +15637,6 @@ is_a: XPO:0100293
 is_a: XPO:0101641
 
 [Term]
-id: XPO:0101926
-is_a: XPO:0100294
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101927
 is_a: XPO:0100295
 is_a: XPO:0101871
@@ -16289,24 +15647,9 @@ is_a: XPO:0100296
 is_a: XPO:0101700
 
 [Term]
-id: XPO:0101929
-is_a: XPO:0100297
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101930
 is_a: XPO:0100298
 is_a: XPO:0101753
-
-[Term]
-id: XPO:0101931
-is_a: XPO:0100299
-is_a: XPO:0101932
-
-[Term]
-id: XPO:0101932
-is_a: XPO:0100300
-is_a: XPO:0101673
 
 [Term]
 id: XPO:0101933
@@ -16354,11 +15697,6 @@ is_a: XPO:0100309
 is_a: XPO:0101700
 
 [Term]
-id: XPO:0101942
-is_a: XPO:0100310
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0101943
 is_a: XPO:0100311
 is_a: XPO:0101944
@@ -16368,11 +15706,6 @@ id: XPO:0101944
 is_a: XPO:0100312
 is_a: XPO:0101882
 is_a: XPO:0101978
-
-[Term]
-id: XPO:0101945
-is_a: XPO:0100313
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0101946
@@ -16393,11 +15726,6 @@ is_a: XPO:0101672
 id: XPO:0101949
 is_a: XPO:0100317
 is_a: XPO:0101702
-
-[Term]
-id: XPO:0101950
-is_a: XPO:0100318
-is_a: XPO:0101719
 
 [Term]
 id: XPO:0101951
@@ -16433,11 +15761,6 @@ is_a: XPO:0101686
 id: XPO:0101957
 is_a: XPO:0100325
 is_a: XPO:0101860
-
-[Term]
-id: XPO:0101958
-is_a: XPO:0100326
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0101959
@@ -16527,12 +15850,6 @@ is_a: XPO:0101736
 [Term]
 id: XPO:0101976
 is_a: XPO:0100344
-is_a: XPO:0101698
-
-[Term]
-id: XPO:0101977
-is_a: XPO:0100345
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0101978
@@ -16563,11 +15880,6 @@ is_a: XPO:0101860
 id: XPO:0101983
 is_a: XPO:0100351
 is_a: XPO:0101968
-
-[Term]
-id: XPO:0101984
-is_a: XPO:0100352
-is_a: XPO:0101723
 
 [Term]
 id: XPO:0101985
@@ -16648,11 +15960,6 @@ is_a: XPO:0102009
 id: XPO:0102000
 is_a: XPO:0100368
 is_a: XPO:0101646
-
-[Term]
-id: XPO:0102001
-is_a: XPO:0100369
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0102002
@@ -16925,11 +16232,6 @@ is_a: XPO:0100423
 is_a: XPO:0101638
 
 [Term]
-id: XPO:0102056
-is_a: XPO:0100424
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0102057
 is_a: XPO:0100425
 is_a: XPO:0101854
@@ -16998,21 +16300,6 @@ is_a: XPO:0101917
 id: XPO:0102070
 is_a: XPO:0100438
 is_a: XPO:0101833
-
-[Term]
-id: XPO:0102071
-is_a: XPO:0100439
-is_a: XPO:0101719
-
-[Term]
-id: XPO:0102072
-is_a: XPO:0100440
-is_a: XPO:0101719
-
-[Term]
-id: XPO:0102073
-is_a: XPO:0100441
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0102074
@@ -17151,11 +16438,6 @@ is_a: XPO:0100468
 is_a: XPO:0101702
 
 [Term]
-id: XPO:0102101
-is_a: XPO:0100469
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0102102
 is_a: XPO:0100470
 is_a: XPO:0101646
@@ -17213,7 +16495,6 @@ is_a: XPO:0102113
 [Term]
 id: XPO:0102113
 is_a: XPO:0100481
-is_a: XPO:0101698
 
 [Term]
 id: XPO:0102114
@@ -17256,11 +16537,6 @@ is_a: XPO:0100489
 is_a: XPO:0101675
 
 [Term]
-id: XPO:0102122
-is_a: XPO:0100490
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0102123
 is_a: XPO:0100491
 is_a: XPO:0101641
@@ -17279,11 +16555,6 @@ is_a: XPO:0101702
 id: XPO:0102126
 is_a: XPO:0100494
 is_a: XPO:0101736
-
-[Term]
-id: XPO:0102127
-is_a: XPO:0100495
-is_a: XPO:0101673
 
 [Term]
 id: XPO:0102128
@@ -17329,16 +16600,6 @@ is_a: XPO:0101939
 id: XPO:0102136
 is_a: XPO:0100504
 is_a: XPO:0101708
-
-[Term]
-id: XPO:0102137
-is_a: XPO:0100505
-is_a: XPO:0102138
-
-[Term]
-id: XPO:0102138
-is_a: XPO:0100506
-is_a: XPO:0101651
 
 [Term]
 id: XPO:0102139
@@ -17431,11 +16692,6 @@ id: XPO:0102156
 is_a: XPO:0100524
 is_a: XPO:0101833
 is_a: XPO:0102019
-
-[Term]
-id: XPO:0102157
-is_a: XPO:0100525
-is_a: XPO:0101673
 
 [Term]
 id: XPO:0102158
@@ -17556,11 +16812,6 @@ is_a: XPO:0101809
 id: XPO:0102181
 is_a: XPO:0100549
 is_a: XPO:0101636
-
-[Term]
-id: XPO:0102182
-is_a: XPO:0100550
-is_a: XPO:0101673
 
 [Term]
 id: XPO:0102183
@@ -17970,11 +17221,6 @@ is_a: XPO:0100631
 is_a: XPO:0101761
 
 [Term]
-id: XPO:0102264
-is_a: XPO:0100632
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0102265
 is_a: XPO:0100633
 is_a: XPO:0101678
@@ -18003,11 +17249,6 @@ is_a: XPO:0101831
 id: XPO:0102270
 is_a: XPO:0100638
 is_a: XPO:0101636
-
-[Term]
-id: XPO:0102271
-is_a: XPO:0100639
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0102272
@@ -18110,11 +17351,6 @@ is_a: XPO:0100659
 is_a: XPO:0101675
 
 [Term]
-id: XPO:0102292
-is_a: XPO:0100660
-is_a: XPO:0101721
-
-[Term]
 id: XPO:0102293
 is_a: XPO:0100661
 is_a: XPO:0101783
@@ -18153,11 +17389,6 @@ is_a: XPO:0101646
 id: XPO:0102300
 is_a: XPO:0100668
 is_a: XPO:0101878
-
-[Term]
-id: XPO:0102301
-is_a: XPO:0100669
-is_a: XPO:0101719
 
 [Term]
 id: XPO:0102302
@@ -18268,11 +17499,6 @@ is_a: XPO:0101937
 id: XPO:0102323
 is_a: XPO:0100691
 is_a: XPO:0101636
-
-[Term]
-id: XPO:0102324
-is_a: XPO:0100692
-is_a: XPO:0102138
 
 [Term]
 id: XPO:0102325
@@ -18606,11 +17832,6 @@ is_a: XPO:0100758
 is_a: XPO:0101641
 
 [Term]
-id: XPO:0102391
-is_a: XPO:0100759
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0102392
 is_a: XPO:0100760
 is_a: XPO:0101641
@@ -18916,11 +18137,6 @@ is_a: XPO:0101690
 id: XPO:0102452
 is_a: XPO:0100820
 is_a: XPO:0101783
-
-[Term]
-id: XPO:0102453
-is_a: XPO:0100821
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0102454
@@ -19276,11 +18492,6 @@ is_a: XPO:0100891
 is_a: XPO:0101952
 
 [Term]
-id: XPO:0102524
-is_a: XPO:0100892
-is_a: XPO:0101984
-
-[Term]
 id: XPO:0102525
 is_a: XPO:0100893
 is_a: XPO:0102223
@@ -19496,11 +18707,6 @@ is_a: XPO:0100935
 is_a: XPO:0101660
 
 [Term]
-id: XPO:0102568
-is_a: XPO:0100936
-is_a: XPO:0101719
-
-[Term]
 id: XPO:0102569
 is_a: XPO:0100937
 is_a: XPO:0101636
@@ -19606,11 +18812,6 @@ is_a: XPO:0100957
 is_a: XPO:0102038
 
 [Term]
-id: XPO:0102590
-is_a: XPO:0100958
-is_a: XPO:0101721
-
-[Term]
 id: XPO:0102591
 is_a: XPO:0100959
 is_a: XPO:0102344
@@ -19620,11 +18821,6 @@ is_a: XPO:0102345
 id: XPO:0102592
 is_a: XPO:0100960
 is_a: XPO:0101636
-
-[Term]
-id: XPO:0102593
-is_a: XPO:0100961
-is_a: XPO:0101721
 
 [Term]
 id: XPO:0102594
@@ -19834,11 +19030,6 @@ is_a: XPO:0101700
 id: XPO:0102634
 is_a: XPO:0101002
 is_a: XPO:0101736
-
-[Term]
-id: XPO:0102635
-is_a: XPO:0101003
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0102636
@@ -20061,11 +19252,6 @@ is_a: XPO:0101047
 is_a: XPO:0101959
 
 [Term]
-id: XPO:0102680
-is_a: XPO:0101048
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0102681
 is_a: XPO:0101049
 is_a: XPO:0101641
@@ -20249,11 +19435,6 @@ is_a: XPO:0101824
 id: XPO:0102717
 is_a: XPO:0101085
 is_a: XPO:0101646
-
-[Term]
-id: XPO:0102718
-is_a: XPO:0101086
-is_a: XPO:0101633
 
 [Term]
 id: XPO:0102719
@@ -20495,11 +19676,6 @@ is_a: XPO:0101828
 id: XPO:0102766
 is_a: XPO:0101134
 is_a: XPO:0101796
-
-[Term]
-id: XPO:0102767
-is_a: XPO:0101135
-is_a: XPO:0101721
 
 [Term]
 id: XPO:0102768
@@ -21012,11 +20188,6 @@ is_a: XPO:0101237
 is_a: XPO:0101636
 
 [Term]
-id: XPO:0102870
-is_a: XPO:0101238
-is_a: XPO:0101633
-
-[Term]
 id: XPO:0102871
 is_a: XPO:0101239
 is_a: XPO:0101636
@@ -21087,11 +20258,6 @@ is_a: XPO:0101252
 is_a: XPO:0101690
 
 [Term]
-id: XPO:0102885
-is_a: XPO:0101253
-is_a: XPO:0101721
-
-[Term]
 id: XPO:0102886
 is_a: XPO:0101254
 is_a: XPO:0101646
@@ -21115,11 +20281,6 @@ is_a: XPO:0101708
 id: XPO:0102890
 is_a: XPO:0101258
 is_a: XPO:0102062
-
-[Term]
-id: XPO:0102891
-is_a: XPO:0101259
-is_a: XPO:0101721
 
 [Term]
 id: XPO:0102892
@@ -21341,11 +20502,6 @@ is_a: XPO:0101740
 id: XPO:0102935
 is_a: XPO:0101303
 is_a: XPO:0101641
-
-[Term]
-id: XPO:0102936
-is_a: XPO:0101304
-is_a: XPO:0101721
 
 [Term]
 id: XPO:0102937
@@ -21765,11 +20921,6 @@ is_a: XPO:0101387
 is_a: XPO:0102910
 
 [Term]
-id: XPO:0103020
-is_a: XPO:0101388
-is_a: XPO:0101721
-
-[Term]
 id: XPO:0103021
 is_a: XPO:0101389
 is_a: XPO:0101740
@@ -21900,11 +21051,6 @@ is_a: XPO:0101414
 is_a: XPO:0101697
 
 [Term]
-id: XPO:0103047
-is_a: XPO:0101415
-is_a: XPO:0101721
-
-[Term]
 id: XPO:0103048
 is_a: XPO:0101416
 is_a: XPO:0101767
@@ -21990,34 +21136,14 @@ is_a: XPO:0101432
 is_a: XPO:0101646
 
 [Term]
-id: XPO:0103065
-is_a: XPO:0101433
-is_a: XPO:0101651
-
-[Term]
-id: XPO:0103066
-is_a: XPO:0101434
-is_a: XPO:0101698
-
-[Term]
 id: XPO:0103067
 is_a: XPO:0101435
 is_a: XPO:0101636
 
 [Term]
-id: XPO:0103068
-is_a: XPO:0101436
-is_a: XPO:0101721
-
-[Term]
 id: XPO:0103069
 is_a: XPO:0101437
 is_a: XPO:0101646
-
-[Term]
-id: XPO:0103070
-is_a: XPO:0101438
-is_a: XPO:0101721
 
 [Term]
 id: XPO:0103071
@@ -22255,11 +21381,6 @@ is_a: XPO:0101485
 is_a: XPO:0101968
 
 [Term]
-id: XPO:0103118
-is_a: XPO:0101486
-is_a: XPO:0101721
-
-[Term]
 id: XPO:0103119
 is_a: XPO:0101487
 is_a: XPO:0101708
@@ -22278,11 +21399,6 @@ is_a: XPO:0101902
 id: XPO:0103122
 is_a: XPO:0101490
 is_a: XPO:0101636
-
-[Term]
-id: XPO:0103123
-is_a: XPO:0101491
-is_a: XPO:0101721
 
 [Term]
 id: XPO:0103124
@@ -22368,11 +21484,6 @@ is_a: XPO:0101675
 id: XPO:0103140
 is_a: XPO:0101508
 is_a: XPO:0101925
-
-[Term]
-id: XPO:0103141
-is_a: XPO:0101509
-is_a: XPO:0101721
 
 [Term]
 id: XPO:0103142
@@ -22847,6 +21958,7 @@ is_a: XPO:0100835
 [Term]
 id: XPO:0103236
 is_a: XPO:0101572
+is_a: XPO:0103271
 
 [Term]
 id: XPO:0103237
@@ -22855,4 +21967,449 @@ is_a: XPO:0100626
 [Term]
 id: XPO:0103238
 is_a: XPO:0100170
+
+[Term]
+id: XPO:0103264
+is_a: XPO:0103265
+
+[Term]
+id: XPO:0103265
+is_a: XPO:00000000 ! xpo
+
+[Term]
+id: XPO:0103266
+is_a: XPO:0101044
+
+[Term]
+id: XPO:0103267
+is_a: XPO:0100458
+
+[Term]
+id: XPO:0103268
+is_a: XPO:0100722
+
+[Term]
+id: XPO:0103269
+is_a: XPO:0100741
+
+[Term]
+id: XPO:0103270
+is_a: XPO:0100169
+
+[Term]
+id: XPO:0103271
+is_a: XPO:0100047
+
+[Term]
+id: XPO:0103272
+is_a: XPO:0101129
+
+[Term]
+id: XPO:0103273
+is_a: XPO:0100444
+
+[Term]
+id: XPO:0103274
+is_a: XPO:0100031
+
+[Term]
+id: XPO:0103275
+is_a: XPO:0100185
+
+[Term]
+id: XPO:0103276
+is_a: XPO:0100401
+
+[Term]
+id: XPO:0103277
+is_a: XPO:0100403
+
+[Term]
+id: XPO:0103278
+is_a: XPO:0101189
+
+[Term]
+id: XPO:0103279
+is_a: XPO:0101114
+
+[Term]
+id: XPO:0103280
+is_a: XPO:0100966
+
+[Term]
+id: XPO:0103281
+is_a: XPO:0100897
+
+[Term]
+id: XPO:0103282
+is_a: XPO:0101155
+
+[Term]
+id: XPO:0103283
+is_a: XPO:0100342
+
+[Term]
+id: XPO:0103284
+is_a: XPO:0101386
+
+[Term]
+id: XPO:0103285
+is_a: XPO:0100341
+is_a: XPO:0103267
+
+[Term]
+id: XPO:0103286
+is_a: XPO:0100002
+
+[Term]
+id: XPO:0103287
+is_a: XPO:0100846
+
+[Term]
+id: XPO:0103288
+is_a: XPO:0100182
+
+[Term]
+id: XPO:0103289
+is_a: XPO:0100177
+
+[Term]
+id: XPO:0103290
+is_a: XPO:0100419
+is_a: XPO:0103289
+
+[Term]
+id: XPO:0103291
+is_a: XPO:0100548
+is_a: XPO:0103289
+
+[Term]
+id: XPO:0103292
+is_a: XPO:0101244
+is_a: XPO:0103289
+
+[Term]
+id: XPO:0103293
+is_a: XPO:0101316
+is_a: XPO:0103289
+
+[Term]
+id: XPO:0103294
+is_a: XPO:0100898
+
+[Term]
+id: XPO:0103295
+is_a: XPO:0100822
+
+[Term]
+id: XPO:0103296
+is_a: XPO:0100645
+
+[Term]
+id: XPO:0103297
+is_a: XPO:0100536
+
+[Term]
+id: XPO:0103298
+is_a: XPO:0100866
+
+[Term]
+id: XPO:0103299
+is_a: XPO:0100662
+
+[Term]
+id: XPO:0103300
+is_a: XPO:0101387
+
+[Term]
+id: XPO:0103301
+is_a: XPO:0100766
+is_a: XPO:0103271
+
+[Term]
+id: XPO:0103302
+is_a: XPO:0100136
+
+[Term]
+id: XPO:0103303
+is_a: XPO:0100422
+
+[Term]
+id: XPO:0103304
+is_a: XPO:0101334
+
+[Term]
+id: XPO:0103305
+is_a: XPO:0100698
+
+[Term]
+id: XPO:0103306
+is_a: XPO:0100995
+
+[Term]
+id: XPO:0103307
+is_a: XPO:0101017
+
+[Term]
+id: XPO:0103308
+is_a: XPO:0100577
+is_a: XPO:0103271
+
+[Term]
+id: XPO:0103309
+is_a: XPO:0100942
+
+[Term]
+id: XPO:0103310
+is_a: XPO:0101181
+
+[Term]
+id: XPO:0103311
+is_a: XPO:0100059
+
+[Term]
+id: XPO:0103312
+is_a: XPO:0101233
+
+[Term]
+id: XPO:0103313
+is_a: XPO:0100166
+
+[Term]
+id: XPO:0103314
+is_a: XPO:0100782
+is_a: XPO:0103271
+
+[Term]
+id: XPO:0103315
+is_a: XPO:0100726
+
+[Term]
+id: XPO:0103316
+is_a: XPO:0100758
+
+[Term]
+id: XPO:0103317
+is_a: XPO:0100400
+
+[Term]
+id: XPO:0103318
+is_a: XPO:0100212
+is_a: XPO:0103271
+
+[Term]
+id: XPO:0103319
+is_a: XPO:0100126
+
+[Term]
+id: XPO:0103320
+is_a: XPO:0100718
+
+[Term]
+id: XPO:0103321
+is_a: XPO:0101784
+
+[Term]
+id: XPO:0103322
+is_a: XPO:0102041
+
+[Term]
+id: XPO:0103323
+is_a: XPO:0101801
+
+[Term]
+id: XPO:0103324
+is_a: XPO:0102204
+is_a: XPO:0103357
+
+[Term]
+id: XPO:0103325
+is_a: XPO:0102552
+
+[Term]
+id: XPO:0103326
+is_a: XPO:0102076
+
+[Term]
+id: XPO:0103327
+is_a: XPO:0103085
+
+[Term]
+id: XPO:0103328
+is_a: XPO:0102571
+
+[Term]
+id: XPO:0103329
+is_a: XPO:0102850
+
+[Term]
+id: XPO:0103330
+is_a: XPO:0103042
+
+[Term]
+id: XPO:0103331
+is_a: XPO:0103204
+
+[Term]
+id: XPO:0103332
+is_a: XPO:0101681
+
+[Term]
+id: XPO:0103333
+is_a: XPO:0102642
+
+[Term]
+id: XPO:0103334
+is_a: XPO:0102953
+
+[Term]
+id: XPO:0103335
+is_a: XPO:0102521
+is_a: XPO:0103353
+
+[Term]
+id: XPO:0103336
+is_a: XPO:0101817
+
+[Term]
+id: XPO:0103337
+is_a: XPO:0102194
+
+[Term]
+id: XPO:0103338
+is_a: XPO:0101937
+
+[Term]
+id: XPO:0103339
+is_a: XPO:0101788
+
+[Term]
+id: XPO:0103340
+is_a: XPO:0102035
+
+[Term]
+id: XPO:0103341
+is_a: XPO:0102249
+
+[Term]
+id: XPO:0103342
+is_a: XPO:0101634
+
+[Term]
+id: XPO:0103343
+is_a: XPO:0101645
+
+[Term]
+id: XPO:0103344
+is_a: XPO:0101793
+
+[Term]
+id: XPO:0103345
+is_a: XPO:0102478
+
+[Term]
+id: XPO:0103346
+is_a: XPO:0101814
+
+[Term]
+id: XPO:0103347
+is_a: XPO:0102563
+
+[Term]
+id: XPO:0103348
+is_a: XPO:0103089
+is_a: XPO:0103353
+
+[Term]
+id: XPO:0103349
+is_a: XPO:0102103
+is_a: XPO:0103357
+
+[Term]
+id: XPO:0103350
+is_a: XPO:0102398
+
+[Term]
+id: XPO:0103351
+is_a: XPO:0101972
+
+[Term]
+id: XPO:0103352
+is_a: XPO:0102279
+
+[Term]
+id: XPO:0103353
+is_a: XPO:0101732
+
+[Term]
+id: XPO:0103354
+is_a: XPO:0101697
+
+[Term]
+id: XPO:0103355
+is_a: XPO:0102054
+
+[Term]
+id: XPO:0103356
+is_a: XPO:0102240
+
+[Term]
+id: XPO:0103357
+is_a: XPO:0102223
+
+[Term]
+id: XPO:0103358
+is_a: XPO:0102259
+
+[Term]
+id: XPO:0103359
+is_a: XPO:0102647
+
+[Term]
+id: XPO:0103360
+is_a: XPO:0102428
+
+[Term]
+id: XPO:0103361
+is_a: XPO:0102574
+
+[Term]
+id: XPO:0103362
+is_a: XPO:0102813
+
+[Term]
+id: XPO:0103363
+is_a: XPO:0102070
+
+[Term]
+id: XPO:0103364
+is_a: XPO:0102479
+
+[Term]
+id: XPO:0103365
+is_a: XPO:0102358
+
+[Term]
+id: XPO:0103366
+is_a: XPO:0101928
+
+[Term]
+id: XPO:0103367
+is_a: XPO:0102032
+
+[Term]
+id: XPO:0103368
+is_a: XPO:0101735
+
+[Term]
+id: XPO:0103369
+is_a: XPO:0102981
+
+[Term]
+id: XPO:0103370
+is_a: XPO:0101678
+
+[Term]
+id: XPO:0103371
+is_a: XPO:0102178
 
