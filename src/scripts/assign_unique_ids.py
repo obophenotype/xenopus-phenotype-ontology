@@ -75,7 +75,7 @@ def add_id_column(df):
     df['defined_class'] = [generate_id(i) for i in df['iritemp001']]
     x = df[['defined_class','id']]
     x.columns = ['iritemp001','id']
-    df_ids = pd.concat([df_ids,x])
+    df_ids = pd.concat([df_ids,x],sort=True)
     df_ids = df_ids.drop_duplicates()
     df = df.drop(['pattern', 'id','iritemp001'], axis=1)
     df_ids['iri'] = df_ids['iritemp001']

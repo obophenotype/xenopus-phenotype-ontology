@@ -1,6 +1,6 @@
 #!/bin/sh
 # Wrapper script to execute the XPO pipeline
 
-make -B reserved_iris.txt
-make -B auto_patterns
-make -B pattern_iris
+sh run.sh make -B reserved_iris.txt
+sh run.sh make -B auto_patterns
+sh run.sh make -B pattern_iris
