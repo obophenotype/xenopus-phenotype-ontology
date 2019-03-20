@@ -217,6 +217,11 @@ pattern_schema_checks: ../patterns/dosdp-patterns
 	wget -N -P ../patterns/dosdp-patterns -i ../patterns/dosdp-patterns/external.txt
 	#echo 'external.txt'
 
+xyz: .FORCE
+	cat ../patterns/dosdp-patterns/external.txt | sed 's!.*/!!' | sed 's! !!g' |  xargs -I{} rm -f ../patterns/dosdp-patterns/{}
+	cat ../patterns/dosdp-patterns/external.txt | sed 's! !!g' | xargs -I{} wget -q {} -P ../patterns/dosdp-patterns
+
+
 # ----------------------------------------
 # Build definitions.owl
 # ----------------------------------------
