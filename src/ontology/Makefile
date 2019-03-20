@@ -213,11 +213,7 @@ $(DOSDP_TEMP_PATTERN_AUTO): $(DOSDP_TEMP_PATTERN)
 pattern_schema_checks: ../patterns/dosdp-patterns
 	simple_pattern_tester.py ../patterns/dosdp-patterns/ # 2>&1 | tee $@
 
-../patterns/dosdp-patterns: .FORCE
-	wget -N -P ../patterns/dosdp-patterns -i ../patterns/dosdp-patterns/external.txt
-	#echo 'external.txt'
-
-xyz: .FORCE
+../patterns/dosdp-patterns:
 	cat ../patterns/dosdp-patterns/external.txt | sed 's!.*/!!' | sed 's! !!g' |  xargs -I{} rm -f ../patterns/dosdp-patterns/{}
 	cat ../patterns/dosdp-patterns/external.txt | sed 's! !!g' | xargs -I{} wget -q {} -P ../patterns/dosdp-patterns
 
