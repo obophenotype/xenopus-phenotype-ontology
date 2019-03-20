@@ -21,12 +21,74 @@ comment: Action potentials typically propagate across excitable membranes. This 
 is_a: GO:0042391 ! regulation of membrane potential
 
 [Term]
+id: GO:0001667
+name: ameboidal-type cell migration
+namespace: biological_process
+def: "Cell migration that is accomplished by extension and retraction of a pseudopodium." [GOC:dph]
+comment: Note that this term refer to a mode of migration rather than to any particular cell type.
+synonym: "ameboid cell migration" EXACT []
+synonym: "amoeboid cell migration" EXACT []
+synonym: "amoeboidal cell migration" EXACT []
+is_a: GO:0016477 ! cell migration
+
+[Term]
+id: GO:0001704
+name: formation of primary germ layer
+namespace: biological_process
+def: "The formation of the ectoderm, mesoderm and endoderm during gastrulation." [GOC:go_curators]
+is_a: GO:0048646 ! anatomical structure formation involved in morphogenesis
+relationship: part_of GO:0007369 ! gastrulation
+
+[Term]
+id: GO:0001705
+name: ectoderm formation
+namespace: biological_process
+def: "The formation of ectoderm during gastrulation." [GOC:go_curators]
+is_a: GO:0001704 ! formation of primary germ layer
+relationship: part_of GO:0007398 ! ectoderm development
+
+[Term]
+id: GO:0001706
+name: endoderm formation
+namespace: biological_process
+def: "The formation of the endoderm during gastrulation." [GOC:go_curators]
+synonym: "endoblast formation" NARROW [GOC:dph, GOC:sdb_2009, GOC:tb]
+is_a: GO:0001704 ! formation of primary germ layer
+relationship: part_of GO:0007492 ! endoderm development
+
+[Term]
+id: GO:0001707
+name: mesoderm formation
+namespace: biological_process
+def: "The process that gives rise to the mesoderm. This process pertains to the initial formation of the structure from unspecified parts." [GOC:go_curators]
+is_a: GO:0001704 ! formation of primary germ layer
+relationship: part_of GO:0048332 ! mesoderm morphogenesis
+
+[Term]
+id: GO:0003002
+name: regionalization
+namespace: biological_process
+def: "The pattern specification process that results in the subdivision of an axis or axes in space to define an area or volume in which specific patterns of cell differentiation will take place or in which cells interpret a specific environment." [GOC:dph, GOC:isa_complete]
+synonym: "pattern formation" RELATED [GOC:dph]
+is_a: GO:0007389 ! pattern specification process
+
+[Term]
 id: GO:0003008
 name: system process
 namespace: biological_process
 def: "A multicellular organismal process carried out by any of the organs or tissues in an organ system. An organ system is a regularly interacting or interdependent group of organs or tissues that work together to carry out a biological objective." [GOC:mtg_cardio]
 synonym: "organ system process" EXACT []
 is_a: GO:0032501 ! multicellular organismal process
+
+[Term]
+id: GO:0003401
+name: axis elongation
+namespace: biological_process
+def: "The developmental growth that results in the elongation of a line that defines polarity or symmetry in an anatomical structure." [GOC:ascb_2009, GOC:dph, GOC:tb]
+synonym: "elongation of an axis" RELATED [GOC:ascb_2009, GOC:dph, GOC:tb]
+is_a: GO:0060560 ! developmental growth involved in morphogenesis
+created_by: dph
+creation_date: 2009-12-21T01:12:15Z
 
 [Term]
 id: GO:0003674
@@ -316,6 +378,19 @@ synonym: "phosphate metabolism" EXACT []
 is_a: GO:0006793 ! phosphorus metabolic process
 
 [Term]
+id: GO:0006928
+name: movement of cell or subcellular component
+namespace: biological_process
+def: "The directed, self-propelled movement of a cell or subcellular component without the involvement of an external agent such as a transporter or a pore." [GOC:dgh, GOC:dph, GOC:jl, GOC:mlg]
+comment: Note that in GO cellular components include whole cells (cell is_a cellular component).
+subset: gocheck_do_not_annotate
+subset: goslim_pir
+synonym: "cell movement" RELATED []
+synonym: "cellular component motion" EXACT [GOC:dph, GOC:jl]
+synonym: "cellular component movement" EXACT []
+is_a: GO:0009987 ! cellular process
+
+[Term]
 id: GO:0007154
 name: cell communication
 namespace: biological_process
@@ -374,6 +449,59 @@ xref: Wikipedia:Neurotransmission
 is_a: GO:0098916 ! anterograde trans-synaptic signaling
 
 [Term]
+id: GO:0007275
+name: multicellular organism development
+namespace: biological_process
+def: "The biological process whose specific outcome is the progression of a multicellular organism over time from an initial condition (e.g. a zygote or a young adult) to a later condition (e.g. a multicellular animal or an aged adult)." [GOC:dph, GOC:ems, GOC:isa_complete, GOC:tb]
+comment: Note that this term was 'developmental process'.
+subset: goslim_chembl
+subset: goslim_plant
+is_a: GO:0032501 ! multicellular organismal process
+is_a: GO:0048856 ! anatomical structure development
+
+[Term]
+id: GO:0007369
+name: gastrulation
+namespace: biological_process
+def: "A complex and coordinated series of cellular movements that occurs at the end of cleavage during embryonic development of most animals. The details of gastrulation vary from species to species, but usually result in the formation of the three primary germ layers, ectoderm, mesoderm and endoderm." [GOC:curators, ISBN:9780878933846]
+xref: Wikipedia:Gastrulation
+is_a: GO:0048598 ! embryonic morphogenesis
+relationship: has_part GO:0001705 ! ectoderm formation
+relationship: has_part GO:0001706 ! endoderm formation
+relationship: has_part GO:0001707 ! mesoderm formation
+
+[Term]
+id: GO:0007389
+name: pattern specification process
+namespace: biological_process
+def: "Any developmental process that results in the creation of defined areas or spaces within an organism to which cells respond and eventually are instructed to differentiate." [GOC:go_curators, GOC:isa_complete, ISBN:0521436125]
+synonym: "pattern biosynthesis" RELATED []
+synonym: "pattern formation" RELATED []
+is_a: GO:0032501 ! multicellular organismal process
+relationship: part_of GO:0007275 ! multicellular organism development
+
+[Term]
+id: GO:0007398
+name: ectoderm development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the ectoderm over time, from its formation to the mature structure. In animal embryos, the ectoderm is the outer germ layer of the embryo, formed during gastrulation." [GOC:dph, GOC:tb]
+is_a: GO:0009888 ! tissue development
+
+[Term]
+id: GO:0007492
+name: endoderm development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the endoderm over time, from its formation to the mature structure. The endoderm is the innermost germ layer that develops into the gastrointestinal tract, the lungs and associated tissues." [GOC:dph, GOC:tb]
+is_a: GO:0009888 ! tissue development
+
+[Term]
+id: GO:0007498
+name: mesoderm development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the mesoderm over time, from its formation to the mature structure. The mesoderm is the middle germ layer that develops into muscle, bone, cartilage, blood and connective tissue." [GOC:dph, GOC:tb]
+is_a: GO:0009888 ! tissue development
+
+[Term]
 id: GO:0008150
 name: biological_process
 namespace: biological_process
@@ -423,6 +551,53 @@ created_by: janelomax
 creation_date: 2012-10-17T15:46:40Z
 
 [Term]
+id: GO:0009653
+name: anatomical structure morphogenesis
+namespace: biological_process
+def: "The process in which anatomical structures are generated and organized. Morphogenesis pertains to the creation of form." [GOC:go_curators, ISBN:0521436125]
+subset: goslim_plant
+synonym: "anatomical structure organization" EXACT []
+synonym: "embryogenesis and morphogenesis" BROAD []
+synonym: "morphogenesis" EXACT []
+xref: Wikipedia:Morphogenesis
+is_a: GO:0032502 ! developmental process
+relationship: part_of GO:0048856 ! anatomical structure development
+
+[Term]
+id: GO:0009790
+name: embryo development
+namespace: biological_process
+alt_id: GO:0009795
+def: "The process whose specific outcome is the progression of an embryo from its formation until the end of its embryonic life stage. The end of the embryonic stage is organism-specific. For example, for mammals, the process would begin with zygote formation and end with birth. For insects, the process would begin at zygote formation and end with larval hatching. For plant zygotic embryos, this would be from zygote formation to the end of seed dormancy. For plant vegetative embryos, this would be from the initial determination of the cell or group of cells to form an embryo until the point when the embryo becomes independent of the parent plant." [GOC:go_curators, GOC:isa_complete, GOC:mtg_sensu]
+subset: gocheck_do_not_manually_annotate
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_plant
+synonym: "embryogenesis" EXACT []
+synonym: "embryogenesis and morphogenesis" BROAD []
+synonym: "embryonal development" EXACT []
+xref: Wikipedia:Embryogenesis
+is_a: GO:0007275 ! multicellular organism development
+
+[Term]
+id: GO:0009798
+name: axis specification
+namespace: biological_process
+def: "The establishment, maintenance and elaboration of a pattern along a line or around a point." [GOC:dph, GOC:go_curators, GOC:isa_complete]
+synonym: "axis determination" RELATED []
+is_a: GO:0007389 ! pattern specification process
+
+[Term]
+id: GO:0009888
+name: tissue development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of a tissue over time, from its formation to the mature structure." [ISBN:0471245208]
+synonym: "histogenesis" EXACT []
+synonym: "histogenesis and organogenesis" BROAD []
+xref: Wikipedia:Histogenesis
+is_a: GO:0048856 ! anatomical structure development
+
+[Term]
 id: GO:0009892
 name: negative regulation of metabolic process
 namespace: biological_process
@@ -463,6 +638,62 @@ is_a: GO:0048518 ! positive regulation of biological process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0008152 ! metabolic process
 relationship: positively_regulates GO:0008152 ! metabolic process
+
+[Term]
+id: GO:0009946
+name: proximal/distal axis specification
+namespace: biological_process
+def: "The establishment, maintenance and elaboration of the proximal/distal axis. The proximal/distal axis is defined by a line that runs from main body (proximal end) of an organism outward (distal end)." [GOC:dph, GOC:go_curators, GOC:tb]
+synonym: "proximal/distal axis determination" RELATED [GOC:dph]
+synonym: "proximodistal axis specification" EXACT []
+is_a: GO:0009798 ! axis specification
+relationship: part_of GO:0009954 ! proximal/distal pattern formation
+
+[Term]
+id: GO:0009948
+name: anterior/posterior axis specification
+namespace: biological_process
+def: "The establishment, maintenance and elaboration of the anterior/posterior axis. The anterior-posterior axis is defined by a line that runs from the head or mouth of an organism to the tail or opposite end of the organism." [GOC:dph, GOC:go_curators, GOC:tb]
+synonym: "anterior/posterior axis determination" RELATED [GOC:dph]
+is_a: GO:0009798 ! axis specification
+relationship: part_of GO:0009952 ! anterior/posterior pattern specification
+
+[Term]
+id: GO:0009950
+name: dorsal/ventral axis specification
+namespace: biological_process
+def: "The establishment, maintenance and elaboration of the dorsal/ventral axis. The dorsal/ventral axis is defined by a line that runs orthogonal to both the anterior/posterior and left/right axes. The dorsal end is defined by the upper or back side of an organism. The ventral end is defined by the lower or front side of an organism." [GOC:dph, GOC:go_curators, GOC:tb]
+synonym: "dorsal-ventral axis specification" EXACT [GOC:mah]
+synonym: "dorsal/ventral axis determination" RELATED [GOC:dph]
+synonym: "dorsoventral axis specification" EXACT [GOC:mah]
+is_a: GO:0009798 ! axis specification
+relationship: part_of GO:0009953 ! dorsal/ventral pattern formation
+
+[Term]
+id: GO:0009952
+name: anterior/posterior pattern specification
+namespace: biological_process
+def: "The regionalization process in which specific areas of cell differentiation are determined along the anterior-posterior axis. The anterior-posterior axis is defined by a line that runs from the head or mouth of an organism to the tail or opposite end of the organism." [GOC:dph, GOC:go_curators, GOC:isa_complete, GOC:tb]
+synonym: "anterior/posterior pattern formation" RELATED []
+is_a: GO:0003002 ! regionalization
+
+[Term]
+id: GO:0009953
+name: dorsal/ventral pattern formation
+namespace: biological_process
+def: "The regionalization process in which the areas along the dorsal/ventral axis are established that will lead to differences in cell differentiation. The dorsal/ventral axis is defined by a line that runs orthogonal to both the anterior/posterior and left/right axes. The dorsal end is defined by the upper or back side of an organism. The ventral end is defined by the lower or front side of an organism." [GOC:dph, GOC:go_curators, GOC:isa_complete, GOC:tb]
+synonym: "dorsal-ventral pattern formation" EXACT [GOC:mah]
+synonym: "dorsal/ventral pattern specification" NARROW []
+synonym: "dorsoventral pattern formation" EXACT [GOC:mah]
+is_a: GO:0003002 ! regionalization
+
+[Term]
+id: GO:0009954
+name: proximal/distal pattern formation
+namespace: biological_process
+def: "The regionalization process in which specific areas of cell differentiation are determined along a proximal/distal axis. The proximal/distal axis is defined by a line that runs from main body (proximal end) of an organism outward (distal end)." [GOC:dph, GOC:go_curators, GOC:isa_complete]
+synonym: "proximal/distal pattern specification" NARROW []
+is_a: GO:0003002 ! regionalization
 
 [Term]
 id: GO:0009966
@@ -548,6 +779,17 @@ is_a: GO:0065009 ! regulation of molecular function
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0038023 ! signaling receptor activity
 relationship: regulates GO:0038023 ! signaling receptor activity
+
+[Term]
+id: GO:0010470
+name: regulation of gastrulation
+namespace: biological_process
+def: "Any process that modulates the rate or extent of gastrulation. Gastrulation is the complex and coordinated series of cellular movements that occurs at the end of cleavage during embryonic development of most animals." [GOC:dph, GOC:tb]
+is_a: GO:0022603 ! regulation of anatomical structure morphogenesis
+is_a: GO:0045995 ! regulation of embryonic development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0007369 ! gastrulation
+relationship: regulates GO:0007369 ! gastrulation
 
 [Term]
 id: GO:0010562
@@ -714,6 +956,14 @@ xref: Wikipedia:Phosphorylation
 is_a: GO:0006796 ! phosphate-containing compound metabolic process
 
 [Term]
+id: GO:0016477
+name: cell migration
+namespace: biological_process
+def: "The controlled self-propelled movement of a cell from one site to a destination guided by molecular cues. Cell migration is a central process in the development and maintenance of multicellular organisms." [GOC:cjm, GOC:dph, GOC:ems, GOC:pf, http://en.wikipedia.org/wiki/Cell_migration]
+xref: Wikipedia:Cell_migration
+is_a: GO:0048870 ! cell motility
+
+[Term]
 id: GO:0016740
 name: transferase activity
 namespace: molecular_function
@@ -793,6 +1043,17 @@ relationship: has_part GO:0007268 ! chemical synaptic transmission
 relationship: part_of GO:0007154 ! cell communication
 
 [Term]
+id: GO:0022603
+name: regulation of anatomical structure morphogenesis
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of anatomical structure morphogenesis." [GOC:mah]
+synonym: "regulation of morphogenesis" EXACT []
+is_a: GO:0050793 ! regulation of developmental process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0009653 ! anatomical structure morphogenesis
+relationship: regulates GO:0009653 ! anatomical structure morphogenesis
+
+[Term]
 id: GO:0023051
 name: regulation of signaling
 namespace: biological_process
@@ -867,6 +1128,47 @@ subset: goslim_mouse
 subset: goslim_plant
 xref: Wikipedia:Cellular_differentiation
 is_a: GO:0048869 ! cellular developmental process
+
+[Term]
+id: GO:0030334
+name: regulation of cell migration
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of cell migration." [GOC:go_curators]
+is_a: GO:2000145 ! regulation of cell motility
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0016477 ! cell migration
+relationship: regulates GO:0016477 ! cell migration
+
+[Term]
+id: GO:0030335
+name: positive regulation of cell migration
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of cell migration." [GOC:go_curators]
+synonym: "activation of cell migration" NARROW []
+synonym: "stimulation of cell migration" NARROW []
+synonym: "up regulation of cell migration" EXACT []
+synonym: "up-regulation of cell migration" EXACT []
+synonym: "upregulation of cell migration" EXACT []
+is_a: GO:0030334 ! regulation of cell migration
+is_a: GO:2000147 ! positive regulation of cell motility
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0016477 ! cell migration
+relationship: positively_regulates GO:0016477 ! cell migration
+
+[Term]
+id: GO:0030336
+name: negative regulation of cell migration
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of cell migration." [GOC:go_curators]
+synonym: "down regulation of cell migration" EXACT []
+synonym: "down-regulation of cell migration" EXACT []
+synonym: "downregulation of cell migration" EXACT []
+synonym: "inhibition of cell migration" NARROW []
+is_a: GO:0030334 ! regulation of cell migration
+is_a: GO:2000146 ! negative regulation of cell motility
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0016477 ! cell migration
+relationship: negatively_regulates GO:0016477 ! cell migration
 
 [Term]
 id: GO:0030545
@@ -1032,6 +1334,17 @@ created_by: janelomax
 creation_date: 2012-12-19T12:21:31Z
 
 [Term]
+id: GO:0032879
+name: regulation of localization
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of any process in which a cell, a substance, or a cellular entity is transported to, or maintained in, a specific location." [GOC:mah]
+synonym: "regulation of localisation" EXACT [GOC:mah]
+is_a: GO:0050789 ! regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0051179 ! localization
+relationship: regulates GO:0051179 ! localization
+
+[Term]
 id: GO:0033673
 name: negative regulation of kinase activity
 namespace: biological_process
@@ -1119,6 +1432,110 @@ synonym: "receptor activity involved in signal transduction" EXACT [GOC:bf]
 is_a: GO:0060089 ! molecular transducer activity
 created_by: rfoulger
 creation_date: 2011-08-01T02:45:27Z
+
+[Term]
+id: GO:0040007
+name: growth
+namespace: biological_process
+alt_id: GO:0048590
+def: "The increase in size or mass of an entire organism, a part of an organism or a cell." [GOC:bf, GOC:ma]
+comment: See also the biological process term 'cell growth ; GO:0016049'.
+subset: gocheck_do_not_annotate
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_pir
+subset: goslim_plant
+synonym: "growth pattern" RELATED []
+synonym: "non-developmental growth" RELATED [GOC:mah]
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0040008
+name: regulation of growth
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of the growth of all or part of an organism so that it occurs at its proper speed, either globally or in a specific part of the organism's development." [GOC:ems, GOC:mah]
+is_a: GO:0050789 ! regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0040007 ! growth
+relationship: regulates GO:0040007 ! growth
+
+[Term]
+id: GO:0040011
+name: locomotion
+namespace: biological_process
+def: "Self-propelled movement of a cell or organism from one location to another." [GOC:dgh]
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_pir
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0040012
+name: regulation of locomotion
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of locomotion of a cell or organism." [GOC:ems]
+is_a: GO:0050789 ! regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0040011 ! locomotion
+relationship: regulates GO:0040011 ! locomotion
+
+[Term]
+id: GO:0040013
+name: negative regulation of locomotion
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of locomotion of a cell or organism." [GOC:go_curators]
+synonym: "down regulation of locomotion" EXACT []
+synonym: "down-regulation of locomotion" EXACT []
+synonym: "downregulation of locomotion" EXACT []
+synonym: "inhibition of locomotion" NARROW []
+is_a: GO:0040012 ! regulation of locomotion
+is_a: GO:0048519 ! negative regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0040011 ! locomotion
+relationship: negatively_regulates GO:0040011 ! locomotion
+
+[Term]
+id: GO:0040017
+name: positive regulation of locomotion
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of locomotion of a cell or organism." [GOC:go_curators]
+synonym: "activation of locomotion" NARROW []
+synonym: "stimulation of locomotion" NARROW []
+synonym: "up regulation of locomotion" EXACT []
+synonym: "up-regulation of locomotion" EXACT []
+synonym: "upregulation of locomotion" EXACT []
+is_a: GO:0040012 ! regulation of locomotion
+is_a: GO:0048518 ! positive regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0040011 ! locomotion
+relationship: positively_regulates GO:0040011 ! locomotion
+
+[Term]
+id: GO:0040019
+name: positive regulation of embryonic development
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of embryonic development." [GOC:go_curators]
+synonym: "activation of embryonic development" NARROW []
+synonym: "stimulation of embryonic development" NARROW []
+synonym: "up regulation of embryonic development" EXACT []
+synonym: "up-regulation of embryonic development" EXACT []
+synonym: "upregulation of embryonic development" EXACT []
+is_a: GO:0045995 ! regulation of embryonic development
+is_a: GO:0051094 ! positive regulation of developmental process
+is_a: GO:0051240 ! positive regulation of multicellular organismal process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0009790 ! embryo development
+relationship: positively_regulates GO:0009790 ! embryo development
+
+[Term]
+id: GO:0042074
+name: cell migration involved in gastrulation
+namespace: biological_process
+def: "The migration of individual cells within the blastocyst to help establish the multi-layered body plan of the organism (gastrulation). For example, the migration of cells from the surface to the interior of the embryo (ingression)." [GOC:jl, http://www.cellmigration.org/, ISBN:0878932437]
+is_a: GO:0001667 ! ameboidal-type cell migration
+intersection_of: GO:0016477 ! cell migration
+intersection_of: part_of GO:0007369 ! gastrulation
+relationship: part_of GO:0007369 ! gastrulation
 
 [Term]
 id: GO:0042325
@@ -1514,6 +1931,37 @@ intersection_of: positively_regulates GO:0001508 ! action potential
 relationship: positively_regulates GO:0001508 ! action potential
 
 [Term]
+id: GO:0045926
+name: negative regulation of growth
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the rate or extent of growth, the increase in size or mass of all or part of an organism." [GOC:go_curators]
+synonym: "down regulation of growth" EXACT []
+synonym: "down-regulation of growth" EXACT []
+synonym: "downregulation of growth" EXACT []
+synonym: "inhibition of growth" NARROW []
+is_a: GO:0040008 ! regulation of growth
+is_a: GO:0048519 ! negative regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0040007 ! growth
+relationship: negatively_regulates GO:0040007 ! growth
+
+[Term]
+id: GO:0045927
+name: positive regulation of growth
+namespace: biological_process
+def: "Any process that activates or increases the rate or extent of growth, the increase in size or mass of all or part of an organism." [GOC:go_curators]
+synonym: "activation of growth" NARROW []
+synonym: "stimulation of growth" NARROW []
+synonym: "up regulation of growth" EXACT []
+synonym: "up-regulation of growth" EXACT []
+synonym: "upregulation of growth" EXACT []
+is_a: GO:0040008 ! regulation of growth
+is_a: GO:0048518 ! positive regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0040007 ! growth
+relationship: positively_regulates GO:0040007 ! growth
+
+[Term]
 id: GO:0045936
 name: negative regulation of phosphate metabolic process
 namespace: biological_process
@@ -1547,6 +1995,32 @@ intersection_of: positively_regulates GO:0006796 ! phosphate-containing compound
 relationship: positively_regulates GO:0006796 ! phosphate-containing compound metabolic process
 
 [Term]
+id: GO:0045992
+name: negative regulation of embryonic development
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of embryonic development." [GOC:go_curators]
+synonym: "down regulation of embryonic development" EXACT []
+synonym: "down-regulation of embryonic development" EXACT []
+synonym: "downregulation of embryonic development" EXACT []
+synonym: "inhibition of embryonic development" NARROW []
+is_a: GO:0045995 ! regulation of embryonic development
+is_a: GO:0051093 ! negative regulation of developmental process
+is_a: GO:0051241 ! negative regulation of multicellular organismal process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0009790 ! embryo development
+relationship: negatively_regulates GO:0009790 ! embryo development
+
+[Term]
+id: GO:0045995
+name: regulation of embryonic development
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of embryonic development." [GOC:go_curators]
+is_a: GO:2000026 ! regulation of multicellular organismal development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0009790 ! embryo development
+relationship: regulates GO:0009790 ! embryo development
+
+[Term]
 id: GO:0048018
 name: receptor ligand activity
 namespace: molecular_function
@@ -1561,6 +2035,14 @@ is_a: GO:0005102 ! signaling receptor binding
 is_a: GO:0030545 ! receptor regulator activity
 created_by: midori
 creation_date: 2010-09-13T04:51:59Z
+
+[Term]
+id: GO:0048332
+name: mesoderm morphogenesis
+namespace: biological_process
+def: "The process in which the anatomical structures of the mesoderm are generated and organized." [GOC:go_curators]
+is_a: GO:0048729 ! tissue morphogenesis
+relationship: part_of GO:0007498 ! mesoderm development
 
 [Term]
 id: GO:0048518
@@ -1680,12 +2162,119 @@ intersection_of: negatively_regulates GO:0050896 ! response to stimulus
 relationship: negatively_regulates GO:0050896 ! response to stimulus
 
 [Term]
+id: GO:0048589
+name: developmental growth
+namespace: biological_process
+def: "The increase in size or mass of an entire organism, a part of an organism or a cell, where the increase in size or mass has the specific outcome of the progression of the organism over time from one condition to another." [GOC:go_curators]
+is_a: GO:0032502 ! developmental process
+is_a: GO:0040007 ! growth
+
+[Term]
+id: GO:0048598
+name: embryonic morphogenesis
+namespace: biological_process
+alt_id: GO:0048828
+def: "The process in which anatomical structures are generated and organized during the embryonic phase. The embryonic phase begins with zygote formation. The end of the embryonic phase is organism-specific. For example, it would be at birth for mammals, larval hatching for insects and seed dormancy in plants." [GOC:jid, GOC:mtg_sensu]
+synonym: "embryonic anatomical structure morphogenesis" EXACT [GOC:dph, GOC:tb]
+is_a: GO:0009653 ! anatomical structure morphogenesis
+relationship: part_of GO:0009790 ! embryo development
+
+[Term]
+id: GO:0048638
+name: regulation of developmental growth
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of developmental growth." [GOC:go_curators]
+is_a: GO:0040008 ! regulation of growth
+is_a: GO:0050793 ! regulation of developmental process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0048589 ! developmental growth
+relationship: regulates GO:0048589 ! developmental growth
+
+[Term]
+id: GO:0048639
+name: positive regulation of developmental growth
+namespace: biological_process
+def: "Any process that activates, maintains or increases the rate of developmental growth." [GOC:go_curators]
+synonym: "activation of developmental growth" NARROW []
+synonym: "stimulation of developmental growth" NARROW []
+synonym: "up regulation of developmental growth" EXACT []
+synonym: "up-regulation of developmental growth" EXACT []
+synonym: "upregulation of developmental growth" EXACT []
+is_a: GO:0045927 ! positive regulation of growth
+is_a: GO:0048638 ! regulation of developmental growth
+is_a: GO:0051094 ! positive regulation of developmental process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0048589 ! developmental growth
+relationship: positively_regulates GO:0048589 ! developmental growth
+
+[Term]
+id: GO:0048640
+name: negative regulation of developmental growth
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of developmental growth." [GOC:go_curators]
+synonym: "down regulation of developmental growth" EXACT []
+synonym: "down-regulation of developmental growth" EXACT []
+synonym: "downregulation of developmental growth" EXACT []
+synonym: "inhibition of developmental growth" NARROW []
+is_a: GO:0045926 ! negative regulation of growth
+is_a: GO:0048638 ! regulation of developmental growth
+is_a: GO:0051093 ! negative regulation of developmental process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0048589 ! developmental growth
+relationship: negatively_regulates GO:0048589 ! developmental growth
+
+[Term]
+id: GO:0048646
+name: anatomical structure formation involved in morphogenesis
+namespace: biological_process
+def: "The developmental process pertaining to the initial formation of an anatomical structure from unspecified parts. This process begins with the specific processes that contribute to the appearance of the discrete structure and ends when the structural rudiment is recognizable. An anatomical structure is any biological entity that occupies space and is distinguished from its surroundings. Anatomical structures can be macroscopic such as a carpel, or microscopic such as an acrosome." [GOC:dph, GOC:jid, GOC:tb]
+comment: Note that, for example, the formation of a pseudopod in an amoeba would not be considered formation involved in morphogenesis because it would not be thought of as the formation of an anatomical structure that was part of the shaping of the amoeba during its development. The formation of an axon from a neuron would be considered the formation of an anatomical structure involved in morphogenesis because it contributes to the creation of the form of the neuron in a developmental sense.
+subset: goslim_chembl
+subset: goslim_generic
+synonym: "formation of an anatomical structure involved in morphogenesis" EXACT [GOC:dph, GOC:tb]
+is_a: GO:0032502 ! developmental process
+relationship: part_of GO:0009653 ! anatomical structure morphogenesis
+
+[Term]
+id: GO:0048729
+name: tissue morphogenesis
+namespace: biological_process
+def: "The process in which the anatomical structures of a tissue are generated and organized." [GOC:dph, GOC:jid]
+is_a: GO:0009653 ! anatomical structure morphogenesis
+relationship: part_of GO:0009888 ! tissue development
+
+[Term]
+id: GO:0048856
+name: anatomical structure development
+namespace: biological_process
+def: "The biological process whose specific outcome is the progression of an anatomical structure from an initial condition to its mature state. This process begins with the formation of the structure and ends with the mature structure, whatever form that may be including its natural destruction. An anatomical structure is any biological entity that occupies space and is distinguished from its surroundings. Anatomical structures can be macroscopic such as a carpel, or microscopic such as an acrosome." [GO_REF:0000021, GOC:mtg_15jun06]
+comment: This term was added by GO_REF:0000021.
+subset: goslim_chembl
+subset: goslim_generic
+synonym: "development of an anatomical structure" EXACT []
+is_a: GO:0032502 ! developmental process
+
+[Term]
 id: GO:0048869
 name: cellular developmental process
 namespace: biological_process
 def: "A biological process whose specific outcome is the progression of a cell over time from an initial condition to a later condition." [GOC:isa_complete]
 is_a: GO:0009987 ! cellular process
 is_a: GO:0032502 ! developmental process
+
+[Term]
+id: GO:0048870
+name: cell motility
+namespace: biological_process
+def: "Any process involved in the controlled self-propelled movement of a cell that results in translocation of the cell from one place to another." [GOC:dgh, GOC:dph, GOC:isa_complete, GOC:mlg]
+subset: goslim_chembl
+subset: goslim_generic
+synonym: "cell locomotion" EXACT []
+synonym: "cell movement" RELATED []
+synonym: "movement of a cell" EXACT []
+is_a: GO:0006928 ! movement of cell or subcellular component
+is_a: GO:0040011 ! locomotion
+relationship: part_of GO:0051674 ! localization of cell
 
 [Term]
 id: GO:0050789
@@ -1902,6 +2491,25 @@ intersection_of: regulates GO:0006793 ! phosphorus metabolic process
 relationship: regulates GO:0006793 ! phosphorus metabolic process
 
 [Term]
+id: GO:0051179
+name: localization
+namespace: biological_process
+alt_id: GO:1902578
+def: "Any process in which a cell, a substance, or a cellular entity, such as a protein complex or organelle, is transported, tethered to or otherwise maintained in a specific location. In the case of substances, localization may also be achieved via selective degradation." [GOC:ai, GOC:dos]
+subset: goslim_pir
+synonym: "establishment and maintenance of cellular component location" NARROW []
+synonym: "establishment and maintenance of localization" EXACT []
+synonym: "establishment and maintenance of position" EXACT []
+synonym: "establishment and maintenance of substance location" NARROW []
+synonym: "establishment and maintenance of substrate location" NARROW []
+synonym: "localisation" EXACT [GOC:mah]
+synonym: "single organism localization" RELATED [GOC:TermGenie]
+synonym: "single-organism localization" RELATED []
+is_a: GO:0008150 ! biological_process
+created_by: jl
+creation_date: 2013-12-18T13:51:04Z
+
+[Term]
 id: GO:0051239
 name: regulation of multicellular organismal process
 namespace: biological_process
@@ -1941,6 +2549,54 @@ is_a: GO:0051239 ! regulation of multicellular organismal process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0032501 ! multicellular organismal process
 relationship: negatively_regulates GO:0032501 ! multicellular organismal process
+
+[Term]
+id: GO:0051270
+name: regulation of cellular component movement
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of the movement of a cellular component." [GOC:ai, GOC:dph, GOC:jl]
+synonym: "regulation of cell movement" RELATED []
+synonym: "regulation of cellular component motion" EXACT [GOC:mah]
+is_a: GO:0032879 ! regulation of localization
+is_a: GO:0050794 ! regulation of cellular process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0006928 ! movement of cell or subcellular component
+relationship: regulates GO:0006928 ! movement of cell or subcellular component
+
+[Term]
+id: GO:0051271
+name: negative regulation of cellular component movement
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of the movement of a cellular component." [GOC:ai, GOC:dph, GOC:jl]
+synonym: "down regulation of cell motility" EXACT []
+synonym: "down-regulation of cell motility" EXACT []
+synonym: "downregulation of cell motility" EXACT []
+synonym: "inhibition of cell motility" NARROW []
+synonym: "negative regulation of cell movement" RELATED []
+synonym: "negative regulation of cellular component motion" EXACT [GOC:mah]
+is_a: GO:0048523 ! negative regulation of cellular process
+is_a: GO:0051270 ! regulation of cellular component movement
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0006928 ! movement of cell or subcellular component
+relationship: negatively_regulates GO:0006928 ! movement of cell or subcellular component
+
+[Term]
+id: GO:0051272
+name: positive regulation of cellular component movement
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of the movement of a cellular component." [GOC:ai, GOC:dph, GOC:jl]
+synonym: "activation of cell motility" NARROW []
+synonym: "positive regulation of cell movement" RELATED []
+synonym: "positive regulation of cellular component motion" EXACT [GOC:mah]
+synonym: "stimulation of cell motility" NARROW []
+synonym: "up regulation of cell motility" EXACT []
+synonym: "up-regulation of cell motility" EXACT []
+synonym: "upregulation of cell motility" EXACT []
+is_a: GO:0048522 ! positive regulation of cellular process
+is_a: GO:0051270 ! regulation of cellular component movement
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0006928 ! movement of cell or subcellular component
+relationship: positively_regulates GO:0006928 ! movement of cell or subcellular component
 
 [Term]
 id: GO:0051301
@@ -2013,6 +2669,17 @@ is_a: GO:0051338 ! regulation of transferase activity
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0016740 ! transferase activity
 relationship: negatively_regulates GO:0016740 ! transferase activity
+
+[Term]
+id: GO:0051674
+name: localization of cell
+namespace: biological_process
+def: "Any process in which a cell is transported to, and/or maintained in, a specific location." [GOC:ai]
+synonym: "cell localization" EXACT []
+synonym: "establishment and maintenance of cell localization" EXACT []
+synonym: "establishment and maintenance of localization of cell" EXACT []
+synonym: "localisation of cell" EXACT [GOC:mah]
+is_a: GO:0051179 ! localization
 
 [Term]
 id: GO:0051716
@@ -2115,6 +2782,28 @@ subset: goslim_pir
 is_a: GO:0003674 ! molecular_function
 
 [Term]
+id: GO:0060560
+name: developmental growth involved in morphogenesis
+namespace: biological_process
+def: "The increase in size or mass of an anatomical structure that contributes to the structure attaining its shape." [GOC:dph]
+synonym: "differential growth" EXACT [GOC:dph]
+is_a: GO:0048589 ! developmental growth
+intersection_of: GO:0048589 ! developmental growth
+intersection_of: part_of GO:0009653 ! anatomical structure morphogenesis
+relationship: part_of GO:0009653 ! anatomical structure morphogenesis
+created_by: dph
+creation_date: 2009-04-28T08:42:53Z
+
+[Term]
+id: GO:0060972
+name: left/right pattern formation
+namespace: biological_process
+def: "The pattern specification process that results in the subdivision of the left/right axis in space to define an area or volume in which specific patterns of cell differentiation will take place or in which cells interpret a specific environment." [GOC:mtg_heart]
+is_a: GO:0003002 ! regionalization
+created_by: dph
+creation_date: 2009-10-06T10:25:58Z
+
+[Term]
 id: GO:0065007
 name: biological regulation
 namespace: biological_process
@@ -2147,6 +2836,18 @@ is_a: GO:0065007 ! biological regulation
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0003674 ! molecular_function
 relationship: regulates GO:0003674 ! molecular_function
+
+[Term]
+id: GO:0070986
+name: left/right axis specification
+namespace: biological_process
+def: "The establishment, maintenance and elaboration of the left/right axis. The left/right axis is defined by a line that runs orthogonal to both the anterior/posterior and dorsal/ventral axes. Each side is defined from the viewpoint of the organism rather of the observer (as per anatomical axes)." [GOC:dph, GOC:gvg, GOC:mah]
+synonym: "left-right axis specification" EXACT [GOC:mah]
+synonym: "left/right axis determination" RELATED [GOC:dph]
+is_a: GO:0009798 ! axis specification
+relationship: part_of GO:0060972 ! left/right pattern formation
+created_by: midori
+creation_date: 2009-10-29T01:43:34Z
 
 [Term]
 id: GO:0098772
@@ -2423,6 +3124,68 @@ created_by: bf
 creation_date: 2013-12-02T11:33:10Z
 
 [Term]
+id: GO:1905902
+name: regulation of mesoderm formation
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of mesoderm formation." [GO_REF:0000058, GOC:BHF, GOC:BHF_miRNA, GOC:rph, GOC:TermGenie, PMID:23939491]
+is_a: GO:0010470 ! regulation of gastrulation
+is_a: GO:2000380 ! regulation of mesoderm development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0001707 ! mesoderm formation
+relationship: regulates GO:0001707 ! mesoderm formation
+created_by: rachhuntley
+creation_date: 2017-02-03T12:28:20Z
+
+[Term]
+id: GO:1905903
+name: negative regulation of mesoderm formation
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of mesoderm formation." [GO_REF:0000058, GOC:BHF, GOC:BHF_miRNA, GOC:rph, GOC:TermGenie, PMID:23939491]
+synonym: "down regulation of mesoderm formation" EXACT [GOC:TermGenie]
+synonym: "down-regulation of mesoderm formation" EXACT [GOC:TermGenie]
+synonym: "downregulation of mesoderm formation" EXACT [GOC:TermGenie]
+synonym: "inhibition of mesoderm formation" NARROW [GOC:TermGenie]
+is_a: GO:1905902 ! regulation of mesoderm formation
+is_a: GO:2000381 ! negative regulation of mesoderm development
+is_a: GO:2000542 ! negative regulation of gastrulation
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0001707 ! mesoderm formation
+relationship: negatively_regulates GO:0001707 ! mesoderm formation
+created_by: rachhuntley
+creation_date: 2017-02-03T12:28:29Z
+
+[Term]
+id: GO:1905904
+name: positive regulation of mesoderm formation
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of mesoderm formation." [GO_REF:0000058, GOC:BHF, GOC:BHF_miRNA, GOC:rph, GOC:TermGenie, PMID:23939491]
+synonym: "activation of mesoderm formation" NARROW [GOC:TermGenie]
+synonym: "up regulation of mesoderm formation" EXACT [GOC:TermGenie]
+synonym: "up-regulation of mesoderm formation" EXACT [GOC:TermGenie]
+synonym: "upregulation of mesoderm formation" EXACT [GOC:TermGenie]
+is_a: GO:1905902 ! regulation of mesoderm formation
+is_a: GO:2000382 ! positive regulation of mesoderm development
+is_a: GO:2000543 ! positive regulation of gastrulation
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0001707 ! mesoderm formation
+relationship: positively_regulates GO:0001707 ! mesoderm formation
+created_by: rachhuntley
+creation_date: 2017-02-03T12:28:38Z
+
+[Term]
+id: GO:2000026
+name: regulation of multicellular organismal development
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of multicellular organismal development." [GOC:obol]
+is_a: GO:0050793 ! regulation of developmental process
+is_a: GO:0051239 ! regulation of multicellular organismal process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0007275 ! multicellular organism development
+relationship: regulates GO:0007275 ! multicellular organism development
+created_by: tanyaberardini
+creation_date: 2010-08-05T11:25:59Z
+
+[Term]
 id: GO:2000035
 name: regulation of stem cell division
 namespace: biological_process
@@ -2434,6 +3197,56 @@ intersection_of: regulates GO:0017145 ! stem cell division
 relationship: regulates GO:0017145 ! stem cell division
 created_by: tanyaberardini
 creation_date: 2010-08-05T11:34:53Z
+
+[Term]
+id: GO:2000145
+name: regulation of cell motility
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of cell motility." [GOC:mah]
+synonym: "regulation of cell locomotion" EXACT [GOC:obol]
+synonym: "regulation of cell movement" RELATED [GOC:obol]
+synonym: "regulation of movement of a cell" EXACT [GOC:obol]
+is_a: GO:0040012 ! regulation of locomotion
+is_a: GO:0051270 ! regulation of cellular component movement
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0048870 ! cell motility
+relationship: regulates GO:0048870 ! cell motility
+created_by: midori
+creation_date: 2010-10-01T09:41:21Z
+
+[Term]
+id: GO:2000146
+name: negative regulation of cell motility
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of cell motility." [GOC:mah]
+synonym: "negative regulation of cell locomotion" EXACT [GOC:obol]
+synonym: "negative regulation of cell movement" RELATED [GOC:obol]
+synonym: "negative regulation of movement of a cell" EXACT [GOC:obol]
+is_a: GO:0040013 ! negative regulation of locomotion
+is_a: GO:0051271 ! negative regulation of cellular component movement
+is_a: GO:2000145 ! regulation of cell motility
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0048870 ! cell motility
+relationship: negatively_regulates GO:0048870 ! cell motility
+created_by: midori
+creation_date: 2010-10-01T09:41:26Z
+
+[Term]
+id: GO:2000147
+name: positive regulation of cell motility
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of cell motility." [GOC:mah]
+synonym: "positive regulation of cell locomotion" EXACT [GOC:obol]
+synonym: "positive regulation of cell movement" RELATED [GOC:obol]
+synonym: "positive regulation of movement of a cell" EXACT [GOC:obol]
+is_a: GO:0040017 ! positive regulation of locomotion
+is_a: GO:0051272 ! positive regulation of cellular component movement
+is_a: GO:2000145 ! regulation of cell motility
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0048870 ! cell motility
+relationship: positively_regulates GO:0048870 ! cell motility
+created_by: midori
+creation_date: 2010-10-01T09:41:30Z
 
 [Term]
 id: GO:2000272
@@ -2461,6 +3274,108 @@ intersection_of: positively_regulates GO:0038023 ! signaling receptor activity
 relationship: positively_regulates GO:0038023 ! signaling receptor activity
 created_by: rfoulger
 creation_date: 2010-12-02T09:28:50Z
+
+[Term]
+id: GO:2000380
+name: regulation of mesoderm development
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of mesoderm development." [GOC:BHF]
+is_a: GO:0050793 ! regulation of developmental process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0007498 ! mesoderm development
+relationship: regulates GO:0007498 ! mesoderm development
+created_by: vk
+creation_date: 2011-02-15T03:09:46Z
+
+[Term]
+id: GO:2000381
+name: negative regulation of mesoderm development
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of mesoderm development." [GOC:BHF]
+is_a: GO:0051093 ! negative regulation of developmental process
+is_a: GO:2000380 ! regulation of mesoderm development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0007498 ! mesoderm development
+relationship: negatively_regulates GO:0007498 ! mesoderm development
+created_by: vk
+creation_date: 2011-02-15T03:10:02Z
+
+[Term]
+id: GO:2000382
+name: positive regulation of mesoderm development
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of mesoderm development." [GOC:BHF]
+is_a: GO:0051094 ! positive regulation of developmental process
+is_a: GO:2000380 ! regulation of mesoderm development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0007498 ! mesoderm development
+relationship: positively_regulates GO:0007498 ! mesoderm development
+created_by: vk
+creation_date: 2011-02-15T03:10:12Z
+
+[Term]
+id: GO:2000383
+name: regulation of ectoderm development
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of ectoderm development." [GOC:BHF]
+is_a: GO:0050793 ! regulation of developmental process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0007398 ! ectoderm development
+relationship: regulates GO:0007398 ! ectoderm development
+created_by: vk
+creation_date: 2011-02-15T03:17:10Z
+
+[Term]
+id: GO:2000384
+name: negative regulation of ectoderm development
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of ectoderm development." [GOC:BHF]
+is_a: GO:0051093 ! negative regulation of developmental process
+is_a: GO:2000383 ! regulation of ectoderm development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0007398 ! ectoderm development
+relationship: negatively_regulates GO:0007398 ! ectoderm development
+created_by: vk
+creation_date: 2011-02-15T03:17:27Z
+
+[Term]
+id: GO:2000385
+name: positive regulation of ectoderm development
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of ectoderm development." [GOC:BHF]
+is_a: GO:0051094 ! positive regulation of developmental process
+is_a: GO:2000383 ! regulation of ectoderm development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0007398 ! ectoderm development
+relationship: positively_regulates GO:0007398 ! ectoderm development
+created_by: vk
+creation_date: 2011-02-15T03:17:39Z
+
+[Term]
+id: GO:2000542
+name: negative regulation of gastrulation
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of gastrulation." [GOC:obol]
+is_a: GO:0010470 ! regulation of gastrulation
+is_a: GO:0045992 ! negative regulation of embryonic development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0007369 ! gastrulation
+relationship: negatively_regulates GO:0007369 ! gastrulation
+created_by: yaf
+creation_date: 2011-04-01T04:10:08Z
+
+[Term]
+id: GO:2000543
+name: positive regulation of gastrulation
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of gastrulation." [GOC:obol]
+is_a: GO:0010470 ! regulation of gastrulation
+is_a: GO:0040019 ! positive regulation of embryonic development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0007369 ! gastrulation
+relationship: positively_regulates GO:0007369 ! gastrulation
+created_by: yaf
+creation_date: 2011-04-01T04:10:15Z
 
 [Typedef]
 id: has_part
