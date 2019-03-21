@@ -15,9 +15,14 @@ Import(<http://purl.obolibrary.org/obo/xpo/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/xpo/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/xpo/imports/xao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/xpo/patterns/definitions.owl>)
-Annotation(rdfs:comment "Xenopus Phenotype Ontology")
+Annotation(<http://purl.org/dc/elements/1.1/description> "Ontology about Xenopus."^^xsd:string)
+Annotation(<http://purl.org/dc/elements/1.1/title> "Xenopus Phenotype Ontology"^^xsd:string)
+Annotation(<http://purl.org/dc/terms/license> "CC-BY"^^xsd:string)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_00000000>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 
 
 
