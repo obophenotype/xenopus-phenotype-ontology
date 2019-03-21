@@ -1045,10 +1045,6 @@
       "type" : "CLASS",
       "lbl" : "decreased occurrence"
     }, {
-      "id" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
-      "type" : "PROPERTY",
-      "lbl" : "has_alternative_id"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/PATO_0002051",
       "meta" : {
         "definition" : {
@@ -1076,6 +1072,10 @@
       },
       "type" : "CLASS",
       "lbl" : "increased occurrence"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+      "type" : "PROPERTY",
+      "lbl" : "has_alternative_id"
     }, {
       "id" : "http://purl.obolibrary.org/obo/PATO_0000608",
       "meta" : {
@@ -2734,13 +2734,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/PATO_0000052"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/PATO_0002251",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/PATO_0002303"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/PATO_0000609",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/PATO_0000610"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PATO_0002251",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0002303"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/PATO_0000462",
       "pred" : "http://purl.obolibrary.org/obo/pato#reciprocal_of",
