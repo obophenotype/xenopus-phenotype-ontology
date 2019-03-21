@@ -1,5 +1,5 @@
 XAO = xenopus_anatomy.owl
-AUTOPATTERNS = ../patterns/data/auto/
+AUTOPATTERNS = ../patterns/data/anatomy/
 AUTOPATTERNACCESSION = 99999
 PURL=http://purl.obolibrary.org/obo/XPO_
 OBOPURL=http://purl.obolibrary.org/obo/
@@ -12,16 +12,16 @@ $(XAO):
 
 
 MANUALPATTERNS=$(patsubst %.tsv, $(MANUALPATTERNDIR)/%.tsv, $(notdir $(wildcard ../patterns/data/manual/*.tsv)))
-AUTOPATTERNS=$(patsubst %.tsv, $(AUTOPATTERNDIR)/%.tsv, $(notdir $(wildcard ../patterns/data/auto/*.tsv)))
-AUTOPATTERNDIR=../patterns/data/auto
+AUTOPATTERNS=$(patsubst %.tsv, $(AUTOPATTERNDIR)/%.tsv, $(notdir $(wildcard ../patterns/data/anatomy/*.tsv)))
+AUTOPATTERNDIR=../patterns/data/anatomy
 MANUALPATTERNDIR=../patterns/data/manual
-pattern_term_lists_auto := $(patsubst %.tsv, $(AUTOPATTERNDIR)/%.txt, $(notdir $(wildcard ../patterns/data/auto/*.tsv)))
+pattern_term_lists_auto := $(patsubst %.tsv, $(AUTOPATTERNDIR)/%.txt, $(notdir $(wildcard ../patterns/data/anatomy/*.tsv)))
 pattern_term_lists_manual := $(patsubst %.tsv, $(MANUALPATTERNDIR)/%.txt, $(notdir $(wildcard ../patterns/data/manual/*.tsv)))
 
 ../patterns/data/manual/%.txt: ../patterns/data/manual/%.tsv
 	grep -Eo '($(PURL))[^[:space:]"]+' $< | sort | uniq > $@
 
-../patterns/data/auto/%.txt: ../patterns/data/auto/%.tsv
+../patterns/data/anatomy/%.txt: ../patterns/data/anatomy/%.tsv
 	grep -Eo '($(PURL))[^[:space:]"]+' $< | sort | uniq > $@
 
 reserved_iris.txt: $(pattern_term_lists_auto) $(pattern_term_lists_manual)

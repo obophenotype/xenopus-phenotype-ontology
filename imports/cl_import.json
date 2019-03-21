@@ -1,0 +1,1299 @@
+{
+  "graphs" : [ {
+    "nodes" : [ {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasSynonymType",
+      "type" : "PROPERTY",
+      "lbl" : "has_synonym_type"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000404",
+      "meta" : {
+        "definition" : {
+          "val" : "A cell that initiates an electrical signal and passes that signal to another cell.",
+          "xrefs" : [ "FB:ma" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "electrically signaling cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_2000032",
+      "meta" : {
+        "definition" : {
+          "val" : "Any neuron that is part of a peripheral nervous system.",
+          "xrefs" : [ "GOC:TermGenie" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2014-06-25T02:28:17Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "TermGenie"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "peripheral nervous system neuron"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000362",
+      "meta" : {
+        "definition" : {
+          "val" : "An epithelial cell of the integument (the outer layer of an organism).",
+          "xrefs" : [ "Flybase:dsj", "MA:ma" ]
+        },
+        "xrefs" : [ {
+          "val" : "CALOHA:TS-0283"
+        }, {
+          "val" : "FMA:62411"
+        }, {
+          "val" : "BTO:0001470"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasNarrowSynonym",
+          "val" : "epithelial cell of skin",
+          "xrefs" : [ "FMA:62411" ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "cell of epidermis",
+          "xrefs" : [ "FMA:62411" ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "CL:1000396"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "epidermal cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000000",
+      "meta" : {
+        "definition" : {
+          "val" : "A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.",
+          "xrefs" : [ "CARO:mah" ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ubprop#_upper_level" ],
+        "xrefs" : [ {
+          "val" : "GO:0005623"
+        }, {
+          "val" : "VHOG:0001533"
+        }, {
+          "val" : "CALOHA:TS-2035"
+        }, {
+          "val" : "FMA:68646"
+        }, {
+          "val" : "KUPO:0000002"
+        }, {
+          "val" : "XAO:0003012"
+        }, {
+          "val" : "WBbt:0004017"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "The definition of cell is intended to represent all cells, and thus a cell is defined as a material entity and not an anatomical structure, which implies that it is part of an organism (or the entirety of one)."
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000047",
+      "meta" : {
+        "definition" : {
+          "val" : "Neural stem cell is characterized as an undifferentiated cell that originates from the neuroectoderm and has the capacity both to perpetually self-renew without differentiating and to generate multiple types of lineage-restricted progenitors.",
+          "xrefs" : [ "GOC:tfm", "MESH:D058953", "PMID:15247488", "http://en.wikipedia.org/wiki/Neural_stem_cell" ]
+        },
+        "xrefs" : [ {
+          "val" : "CALOHA:TS-2360"
+        }, {
+          "val" : "FMA:86684"
+        }, {
+          "val" : "BTO:0002881"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "NSC",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "neural stem cell",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "neuronal stem cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000003",
+      "meta" : {
+        "definition" : {
+          "val" : "A cell that is found in a natural setting, which includes multicellular organism cells 'in vivo' (i.e. part of an organism), and unicellular organisms 'in environment' (i.e. part of a natural environment).",
+          "xrefs" : [ "CARO:mah" ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ubprop#_upper_level" ],
+        "xrefs" : [ {
+          "val" : "CARO:0000013"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasNarrowSynonym",
+          "val" : "cell in vivo",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "To accommodate unicellular organisms better, 'cell in vivo' has been re-labeled 'native cell' to better represent its intended meaning - that is, that it is a cell in the context of a multicellular organism or in a natural environment. 'Native' is intended to contrast with 'in vitro', which refers to cells or other biological entities that have been intentionally placed in a controlled, non-natural setting for the purpose of study or manipulation. (MAH 1.12.12)."
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "native cell"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#inSubset",
+      "type" : "PROPERTY",
+      "lbl" : "in_subset"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000048",
+      "meta" : {
+        "definition" : {
+          "val" : "A stem cell that can give rise to multiple lineages of cells.",
+          "xrefs" : [ "GOC:add" ]
+        },
+        "xrefs" : [ {
+          "val" : "FMA:84789"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "multipotent cell",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "multifate stem cell",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "multi-fate stem cell",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "multipotent stem cell",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "multi fate stem cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+      "type" : "PROPERTY",
+      "lbl" : "definition"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000082",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "BTO:0004299"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "lung epithelial cell",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "epithelial cell of lung"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/ubprop#_upper_level",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "abstract upper-level terms not directly useful for analysis"
+        } ]
+      },
+      "type" : "PROPERTY"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0002319",
+      "meta" : {
+        "definition" : {
+          "val" : "A cell that is part of the nervous system.",
+          "xrefs" : [ "GOC:tfm", "ISBN:0618947256" ]
+        },
+        "xrefs" : [ {
+          "val" : "CALOHA:TS-2040"
+        }, {
+          "val" : "FMA:70333"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "tmeehan"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2010-09-15T01:34:57Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "neural cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000219",
+      "meta" : {
+        "definition" : {
+          "val" : "A cell that moves by its own activities.",
+          "xrefs" : [ "FB:ma" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "motile cell"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#consider",
+      "type" : "PROPERTY",
+      "lbl" : "consider"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0002077",
+      "meta" : {
+        "definition" : {
+          "val" : "An epithelial cell derived from ectoderm.",
+          "xrefs" : [ "FMA:69074", "GOC:tfm" ]
+        },
+        "xrefs" : [ {
+          "val" : "FMA:69074"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2010-06-29T03:38:22Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "tmeehan"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "ecto-epithelial cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000055",
+      "meta" : {
+        "definition" : {
+          "val" : "A precursor cell with a limited number of potential fates.",
+          "xrefs" : [ "SANBI:mhl" ]
+        },
+        "xrefs" : [ {
+          "val" : "BTO:0000125"
+        }, {
+          "val" : "FMA:84782"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "blast cell",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "define using PATO mulit-potent or oligopotent?"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "non-terminally differentiated cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000133",
+      "meta" : {
+        "definition" : {
+          "val" : "Ectoderm destined to be nervous tissue.",
+          "xrefs" : [ "GOC:tfm", "ISBN:068340007X" ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "neurectoderm cell",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "neurectodermal cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0002159",
+      "meta" : {
+        "definition" : {
+          "val" : "Epithelial cells derived from general body ectoderm and ectoderm placodes.",
+          "xrefs" : [ "GOC:tfm" ]
+        },
+        "xrefs" : [ {
+          "val" : "FMA:70556"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2010-08-26T08:31:08Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "tmeehan"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "general ecto-epithelial cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0002632",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2011-06-21T12:29:31Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "tmeehan"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "epithelial cell of lower respiratory tract"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000211",
+      "meta" : {
+        "definition" : {
+          "val" : "A cell whose function is determined by the generation or the reception of an electric signal.",
+          "xrefs" : [ "FB:ma" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "electrically active cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000255",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "eukaryotic cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_2000029",
+      "meta" : {
+        "definition" : {
+          "val" : "Any neuron that is part of a central nervous system.",
+          "xrefs" : [ "GOC:TermGenie" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2014-06-25T01:17:43Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "TermGenie"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "central nervous system neuron"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym",
+      "type" : "PROPERTY",
+      "lbl" : "has_related_synonym"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym",
+      "type" : "PROPERTY",
+      "lbl" : "has_broad_synonym"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym",
+      "type" : "PROPERTY",
+      "lbl" : "has_narrow_synonym"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0001061",
+      "meta" : {
+        "definition" : {
+          "val" : "A cell found in an organism or derived from an organism exhibiting a phenotype that deviates from the expected phenotype of any native cell type of that organism. Abnormal cells are typically found in disease states or disease models.",
+          "xrefs" : [ "GOC:add", "GOC:cg", "GOC:wdd" ]
+        },
+        "xrefs" : [ {
+          "val" : "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C12913"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2017-01-30T18:53:32Z"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "https://github.com/obophenotype/cell-ontology/issues/448"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "http://orcid.org/0000-0001-9990-8331"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "abnormal cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0002076",
+      "meta" : {
+        "definition" : {
+          "val" : "An epithelial cell derived from endoderm.",
+          "xrefs" : [ "FMA:69075", "GOC:tfm" ]
+        },
+        "xrefs" : [ {
+          "val" : "FMA:69075"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2010-06-29T03:38:14Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "tmeehan"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "endo-epithelial cell"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
+      "type" : "PROPERTY",
+      "lbl" : "has_exact_synonym"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+      "type" : "PROPERTY",
+      "lbl" : "database_cross_reference"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000548",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/ubprop#_upper_level" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "animal cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0002320",
+      "meta" : {
+        "definition" : {
+          "val" : "A cell of the supporting or framework tissue of the body, arising chiefly from the embryonic mesoderm and including adipose tissue, cartilage, and bone.",
+          "xrefs" : [ "GOC:tfm", "ISBN:0618947256" ]
+        },
+        "xrefs" : [ {
+          "val" : "CALOHA:TS-2096"
+        }, {
+          "val" : "FMA:63875"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "CL:1000406"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "tmeehan"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2010-09-15T03:01:54Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "connective tissue cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0002242",
+      "meta" : {
+        "definition" : {
+          "val" : "A cell containing at least one nucleus.",
+          "xrefs" : [ "GOC:tfm" ]
+        },
+        "xrefs" : [ {
+          "val" : "FMA:67513"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2010-09-07T03:32:33Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "tmeehan"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "nucleate cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000066",
+      "meta" : {
+        "definition" : {
+          "val" : "A cell that is usually found in a two-dimensional sheet with a free surface. The cell has a cytoskeleton that allows for tight cell to cell contact and for cell polarity where apical part is directed towards the lumen and the basal part to the basal lamina.",
+          "xrefs" : [ "FB:ma", "GOC:tfm", "MESH:A11.436" ]
+        },
+        "xrefs" : [ {
+          "val" : "FMA:66768"
+        }, {
+          "val" : "CARO:0000077"
+        }, {
+          "val" : "CALOHA:TS-2026"
+        }, {
+          "val" : "FBbt:00000124"
+        }, {
+          "val" : "BTO:0000414"
+        }, {
+          "val" : "WBbt:0003672"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "epitheliocyte",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "epithelial cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000540",
+      "meta" : {
+        "definition" : {
+          "val" : "The basic cellular unit of nervous tissue. Each neuron consists of a body, an axon, and dendrites. Their purpose is to receive, conduct, and transmit impulses in the nervous system.",
+          "xrefs" : [ "MESH:A08.663", "MESH:D009474", "http://en.wikipedia.org/wiki/Neuron" ]
+        },
+        "xrefs" : [ {
+          "val" : "FMA:54527"
+        }, {
+          "val" : "VHOG:0001483"
+        }, {
+          "val" : "FBbt:00005106"
+        }, {
+          "val" : "CALOHA:TS-0683"
+        }, {
+          "val" : "BTO:0000938"
+        }, {
+          "val" : "WBbt:0003679"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "nerve cell",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "These cells are also reportedly CD4-negative and CD200-positive. They are also capable of producing CD40L and IFN-gamma."
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "neuron"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+      "type" : "PROPERTY",
+      "lbl" : "shorthand"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000221",
+      "meta" : {
+        "definition" : {
+          "val" : "A cell of the outer of the three germ layers of the embryo.",
+          "xrefs" : [ "MESH:A16.254.425.273" ]
+        },
+        "xrefs" : [ {
+          "val" : "FMA:72549"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "ectoderm cell",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "ectodermal cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0002321",
+      "meta" : {
+        "definition" : {
+          "val" : "A cell of the embryo.",
+          "xrefs" : [ "FMA:0618947256" ]
+        },
+        "xrefs" : [ {
+          "val" : "WBbt:0007028"
+        }, {
+          "val" : "FMA:82841"
+        }, {
+          "val" : "CALOHA:TS-0263"
+        }, {
+          "val" : "FMA:82840"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "tmeehan"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2010-09-15T03:39:21Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "embryonic cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0002368",
+      "meta" : {
+        "definition" : {
+          "val" : "An endo-epithelial cell of the respiratory tract.",
+          "xrefs" : [ "GOC:tfm" ]
+        },
+        "xrefs" : [ {
+          "val" : "BTO:0004533"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "airway epithelial cell",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "tmeehan"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2010-09-23T04:38:49Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "respiratory epithelial cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000223",
+      "meta" : {
+        "definition" : {
+          "val" : "A cell of the inner of the three germ layers of the embryo.",
+          "xrefs" : [ "MESH:A16.254.425.407" ]
+        },
+        "xrefs" : [ {
+          "val" : "FMA:72555"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "endoderm cell",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "endodermal cell"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+      "type" : "PROPERTY",
+      "lbl" : "has_obo_namespace"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000225",
+      "meta" : {
+        "definition" : {
+          "val" : "A cell that lacks a nucleus.",
+          "xrefs" : [ "FB:ma" ]
+        },
+        "xrefs" : [ {
+          "val" : "FMA:68647"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "non-nucleated cell",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "anucleate cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CP_0000037",
+      "meta" : {
+        "definition" : {
+          "val" : "A nucleus size quality which is relatively high compared to the amount of cytoplasm present in the same cell.",
+          "xrefs" : [ "GOC:tfm" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "tmeehan"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2009-12-23T10:53:24Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "increased nucleus size"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000412",
+      "type" : "PROPERTY",
+      "lbl" : "imported from"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0100001",
+      "type" : "PROPERTY",
+      "lbl" : "term replaced by"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0011115",
+      "meta" : {
+        "definition" : {
+          "val" : "A cell that, by division or terminal differentiation, can give rise to other cell types.",
+          "xrefs" : [ "GOC:dos" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "Work is needed on GO 'cell differentiation' before it is clear whether the equivalent class definition 'native cell' that capable_of some 'cell differentiation' works. Also, may want to consider merging this with non-terminally differentiated cell. "
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "precursor cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000710",
+      "meta" : {
+        "definition" : {
+          "val" : "Epithelial cells derived from neural plate and neural crest.",
+          "xrefs" : [ "GOC:tfm" ]
+        },
+        "xrefs" : [ {
+          "val" : "BTO:0004301"
+        }, {
+          "val" : "FMA:70557"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasBroadSynonym",
+          "val" : "neuroepithelial cell",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "The term \"neuroepithelial cell\" is used to describe both this cell type and sensory epithelial cell (CL:0000098)."
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "neurecto-epithelial cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000031",
+      "meta" : {
+        "definition" : {
+          "val" : "A cell that will develop into a neuron often after a migration phase.",
+          "xrefs" : [ "GOC:NV", "http://en.wikipedia.org/wiki/Neuroblast" ]
+        },
+        "xrefs" : [ {
+          "val" : "FBbt:00005146"
+        }, {
+          "val" : "BTO:0000930"
+        }, {
+          "val" : "FMA:70563"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "neuroblast"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000075",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "columnar/cuboidal epithelial cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000034",
+      "meta" : {
+        "definition" : {
+          "val" : "A relatively undifferentiated cell that retains the ability to divide and proliferate throughout life to provide progenitor cells that can differentiate into specialized cells.",
+          "xrefs" : [ "GOC:tfm", "MESH:A11.872" ]
+        },
+        "xrefs" : [ {
+          "val" : "CALOHA:TS-2086"
+        }, {
+          "val" : "FMA:63368"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "stem cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000424",
+      "type" : "PROPERTY",
+      "lbl" : "expand expression to"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0002371",
+      "meta" : {
+        "definition" : {
+          "val" : "A cell of an organism that does not pass on its genetic material to the organism's offspring (i.e. a non-germ line cell).",
+          "xrefs" : [ "GOC:tfm", "ISBN:0721662544" ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ubprop#_upper_level" ],
+        "xrefs" : [ {
+          "val" : "WBbt:0008378"
+        }, {
+          "val" : "FMA:72300"
+        }, {
+          "val" : "BTO:0001268"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2010-09-24T09:44:42Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "tmeehan"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "somatic cell"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+      "type" : "PROPERTY",
+      "lbl" : "has_alternative_id"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0002251",
+      "meta" : {
+        "definition" : {
+          "val" : "An epithelial cell of the musculomembranous digestive tube extending from the mouth to the anus.",
+          "xrefs" : [ "GOC:tfm", "ISBN:0721662544" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "tmeehan"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2010-09-08T09:26:53Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "epithelial cell of alimentary canal"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000393",
+      "meta" : {
+        "definition" : {
+          "val" : "A cell whose function is determined by its response to an electric signal.",
+          "xrefs" : [ "FB:ma" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "electrically responsive cell"
+    } ],
+    "edges" : [ {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000223",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "obj" : "http://purl.obolibrary.org/obo/UBERON_0000925"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000133",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000221"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0002319",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000548"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0002251",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0002076"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000540",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002202",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000031"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0011115",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000003"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000221",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "obj" : "http://purl.obolibrary.org/obo/UBERON_0000924"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CP_0000037",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GO_0005634"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000003",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000000"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000034",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002215",
+      "obj" : "http://purl.obolibrary.org/obo/GO_0030154"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000540",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000404"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000055",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000003"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000221",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0002321"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000082",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "obj" : "http://purl.obolibrary.org/obo/UBERON_0000115"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000362",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0002159"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000031",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000047"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000211",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000003"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000075",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000066"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0002076",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0002371"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000540",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0002319"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000075",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0002371"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000031",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000055"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000710",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000075"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000255",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000003"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0002077",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0002371"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0002319",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0002371"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0002632",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0002368"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000540",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000393"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000047",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002202",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000133"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0002076",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002202",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000223"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0002368",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0002076"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000362",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0002371"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000540",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002215",
+      "obj" : "http://purl.obolibrary.org/obo/GO_0019226"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000223",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0002321"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0002076",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000066"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0001061",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GO_0005623"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000548",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000255"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000055",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002215",
+      "obj" : "http://purl.obolibrary.org/obo/GO_0030154"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000047",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000048"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000066",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000548"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0002320",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0002371"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0002321",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000548"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000393",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000211"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0000404",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000211"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0002320",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000548"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0002371",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0000003"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CL_0002159",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CL_0002077"
+    } ],
+    "id" : "http://purl.obolibrary.org/obo/xpo/imports/cl_import.owl",
+    "meta" : {
+      "subsets" : [ ],
+      "xrefs" : [ ],
+      "basicPropertyValues" : [ ],
+      "version" : "http://purl.obolibrary.org/obo/xpo/releases/2019-03-21/imports/cl_import.owl"
+    },
+    "equivalentNodesSets" : [ {
+      "nodeIds" : [ "http://purl.obolibrary.org/obo/CL_0000000", "http://purl.obolibrary.org/obo/GO_0005623" ]
+    } ],
+    "logicalDefinitionAxioms" : [ {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CL_2000032",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/CL_0000540" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000050",
+        "fillerId" : "http://purl.obolibrary.org/obo/UBERON_0000010"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CL_0002632",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/CL_0002368" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000050",
+        "fillerId" : "http://purl.obolibrary.org/obo/UBERON_0001558"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CL_0001061",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/GO_0005623" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0000053",
+        "fillerId" : "http://purl.obolibrary.org/obo/PATO_0000460"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CL_0000034",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/CL_0000003" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0002215",
+        "fillerId" : "http://purl.obolibrary.org/obo/GO_0017145"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CL_0000362",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/CL_0000066" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000050",
+        "fillerId" : "http://purl.obolibrary.org/obo/UBERON_0007376"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CL_0002077",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/CL_0000066" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0002202",
+        "fillerId" : "http://purl.obolibrary.org/obo/CL_0000221"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CL_0000066",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/CL_0000548" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000050",
+        "fillerId" : "http://purl.obolibrary.org/obo/UBERON_0000483"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CL_0002320",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/CL_0002371" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000050",
+        "fillerId" : "http://purl.obolibrary.org/obo/UBERON_0002384"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CL_0011115",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/CL_0000003" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0002215",
+        "fillerId" : "http://purl.obolibrary.org/obo/GO_0030154"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CP_0000037",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/GO_0005634" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0000053",
+        "fillerId" : "http://purl.obolibrary.org/obo/PATO_0000586"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CL_0000219",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/CL_0000003" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0002215",
+        "fillerId" : "http://purl.obolibrary.org/obo/GO_0048870"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CL_2000029",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/CL_0000540" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000050",
+        "fillerId" : "http://purl.obolibrary.org/obo/UBERON_0001017"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CL_0002368",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/CL_0002076" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000050",
+        "fillerId" : "http://purl.obolibrary.org/obo/UBERON_0000065"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CL_0000082",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/CL_0000066" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000050",
+        "fillerId" : "http://purl.obolibrary.org/obo/UBERON_0002048"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CL_0000225",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/CL_0000003" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0000053",
+        "fillerId" : "http://purl.obolibrary.org/obo/PATO_0001405"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CL_0000048",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/CL_0002371" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0000053",
+        "fillerId" : "http://purl.obolibrary.org/obo/PATO_0001402"
+      }, {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0002215",
+        "fillerId" : "http://purl.obolibrary.org/obo/GO_0017145"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CL_0000710",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/CL_0002077" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0002202",
+        "fillerId" : "http://purl.obolibrary.org/obo/CL_0000133"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CL_0000047",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/CL_0000048" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000050",
+        "fillerId" : "http://purl.obolibrary.org/obo/UBERON_0001017"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CL_0002319",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/CL_0000548" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000050",
+        "fillerId" : "http://purl.obolibrary.org/obo/UBERON_0001016"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CL_0002242",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/CL_0000003" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000051",
+        "fillerId" : "http://purl.obolibrary.org/obo/GO_0005634"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CL_0002251",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/CL_0000066" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000050",
+        "fillerId" : "http://purl.obolibrary.org/obo/UBERON_0001555"
+      } ]
+    } ],
+    "domainRangeAxioms" : [ ],
+    "propertyChainAxioms" : [ ]
+  } ]
+}
