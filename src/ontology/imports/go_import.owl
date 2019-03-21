@@ -282,7 +282,9 @@
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasScope -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasScope"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasScope">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_scope</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
