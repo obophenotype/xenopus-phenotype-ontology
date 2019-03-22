@@ -29714,8 +29714,14 @@
       "lbl" : "abnormal rib"
     }, {
       "id" : "http://purl.obolibrary.org/obo/XPO_00000000",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype of the Xenopus African clawed frog.",
+          "xrefs" : [ ]
+        }
+      },
       "type" : "CLASS",
-      "lbl" : "xpo"
+      "lbl" : "Xenopus Phenotype"
     }, {
       "id" : "http://purl.obolibrary.org/obo/XPO_0101079",
       "meta" : {
@@ -53185,10 +53191,16 @@
       "subsets" : [ ],
       "xrefs" : [ ],
       "basicPropertyValues" : [ {
-        "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pred" : "http://purl.org/dc/elements/1.1/description",
+        "val" : "Ontology about Xenopus."
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/title",
         "val" : "Xenopus Phenotype Ontology"
+      }, {
+        "pred" : "http://purl.org/dc/terms/license",
+        "val" : "CC-BY"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/xpo/releases/2019-03-21/xpo-base.json"
+      "version" : "http://purl.obolibrary.org/obo/xpo/releases/2019-03-22/xpo-base.json"
     },
     "equivalentNodesSets" : [ ],
     "logicalDefinitionAxioms" : [ ],

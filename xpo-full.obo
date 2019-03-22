@@ -1,7 +1,9 @@
 format-version: 1.2
-data-version: xpo/releases/2019-03-21/xpo-full.obo
-remark: Xenopus Phenotype Ontology
+data-version: xpo/releases/2019-03-22/xpo-full.obo
 ontology: xpo/xpo-full.obo
+property_value: http://purl.org/dc/elements/1.1/description "Ontology about Xenopus." xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Xenopus Phenotype Ontology" xsd:string
+property_value: http://purl.org/dc/terms/license "CC-BY" xsd:string
 
 [Term]
 id: BFO:0000001
@@ -25216,7 +25218,8 @@ relationship: preceded_by XAO:1000012 ! embryonic stage
 
 [Term]
 id: XPO:00000000
-name: xpo
+name: Xenopus Phenotype
+def: "Phenotype of the Xenopus African clawed frog." []
 
 [Term]
 id: XPO:0100002
@@ -25245,7 +25248,7 @@ id: XPO:0100006
 name: abnormal anatomical structure
 def: "Abnormality of anatomical structure." []
 synonym: "abnormality of anatomical structure" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0100008
@@ -25647,7 +25650,7 @@ id: XPO:0100081
 name: abnormal anatomical entity in vitro
 def: "Abnormality of anatomical entity in vitro." []
 synonym: "abnormality of anatomical entity in vitro" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0100082
@@ -26319,7 +26322,7 @@ id: XPO:0100202
 name: abnormal embryo
 def: "Abnormality of embryo." []
 synonym: "abnormality of embryo" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0100203
@@ -27257,7 +27260,7 @@ id: XPO:0100344
 name: abnormal portion of organism substance
 def: "Abnormality of portion of organism substance." []
 synonym: "abnormality of portion of organism substance" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0100346
@@ -28223,7 +28226,7 @@ id: XPO:0100481
 name: abnormal anatomical line
 def: "Abnormality of anatomical line." []
 synonym: "abnormality of anatomical line" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0100482
@@ -48360,7 +48363,7 @@ id: XPO:0103265
 name: absent spindle microtubule
 def: "Absence of spindle microtubule." []
 synonym: "missing spindle microtubule" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103266
@@ -49542,14 +49545,14 @@ id: XPO:0103429
 name: decreased size of the anterior-posterior axis
 def: "An abnormal reduction in the size of the anterior-posterior axis." []
 synonym: "abnormally small anterior-posterior axis" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103430
 name: decreased size of the apical junction complex
 def: "An abnormal reduction in the size of the apical junction complex." []
 synonym: "abnormally small apical junction complex" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103431
@@ -49598,28 +49601,28 @@ id: XPO:0103437
 name: decreased size of the left part of branchial arch skeleton
 def: "An abnormal reduction in the size of the left part of branchial arch skeleton." []
 synonym: "abnormally small left part of branchial arch skeleton" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103438
 name: decreased size of the proximal-distal axis
 def: "An abnormal reduction in the size of the proximal-distal axis." []
 synonym: "abnormally small proximal-distal axis" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103439
 name: decreased size of the right part of branchial arch skeleton
 def: "An abnormal reduction in the size of the right part of branchial arch skeleton." []
 synonym: "abnormally small right part of branchial arch skeleton" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103440
 name: increased height of the dorsal-ventral axis
 def: "An increase in the height of the dorsal-ventral axis." []
 synonym: "higher dorsal-ventral axis" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103441
@@ -49631,37 +49634,37 @@ is_a: XPO:0103642 ! increased cell population proliferation
 id: XPO:0103442
 name: increased oviduct development in female organism
 def: "Increased oviduct development in female organism." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103443
 name: abnormal dorsal/ventral axis specification
 def: "Abnormal dorsal/ventral axis specification." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103444
 name: abnormal gastrulation
 def: "Abnormal gastrulation." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103445
 name: abnormal left/right axis specification
 def: "Abnormal left/right axis specification." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103446
 name: abnormal proximal/distal axis specification
 def: "Abnormal proximal/distal axis specification." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103447
 name: abnormal anterior/posterior axis specification
 def: "Abnormal anterior/posterior axis specification." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103448
@@ -49710,28 +49713,28 @@ id: XPO:0103454
 name: bifurcated left hindlimb
 def: "Bifurcation of the left hindlimb." []
 synonym: "left hindlimb bifurcation" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103455
 name: bifurcated right hindlimb
 def: "Bifurcation of the right hindlimb." []
 synonym: "right hindlimb bifurcation" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103456
 name: bifurcated left forelimb
 def: "Bifurcation of the left forelimb." []
 synonym: "left forelimb bifurcation" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103457
 name: bifurcated right forelimb
 def: "Bifurcation of the right forelimb." []
 synonym: "right forelimb bifurcation" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103458
@@ -49815,7 +49818,7 @@ id: XPO:0103469
 name: bifurcated anterior-posterior axis
 def: "Bifurcation of the anterior-posterior axis." []
 synonym: "anterior-posterior axis bifurcation" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103470
@@ -49865,13 +49868,13 @@ is_a: XPO:0103499 ! abnormal developmental process in alimentary system
 id: XPO:0103477
 name: abnormal developmental process in thymus
 def: "An abnormality of the developmental process in thymus." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103478
 name: abnormal developmental process in muscle
 def: "An abnormality of the developmental process in muscle." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103479
@@ -49927,7 +49930,7 @@ is_a: XPO:0103485 ! abnormal developmental process in eye
 id: XPO:0103487
 name: abnormal developmental process in embryo
 def: "An abnormality of the developmental process in embryo." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103488
@@ -49963,7 +49966,7 @@ is_a: XPO:0103490 ! abnormal developmental process in mesoderm
 id: XPO:0103493
 name: abnormal developmental process in skeleton
 def: "An abnormality of the developmental process in skeleton." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103494
@@ -49981,7 +49984,7 @@ is_a: XPO:0103519 ! abnormal developmental process in vertebra
 id: XPO:0103496
 name: abnormal developmental process in cardiovascular system
 def: "An abnormality of the developmental process in cardiovascular system." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103497
@@ -49993,13 +49996,13 @@ is_a: XPO:0103485 ! abnormal developmental process in eye
 id: XPO:0103498
 name: abnormal developmental process in respiratory system
 def: "An abnormality of the developmental process in respiratory system." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103499
 name: abnormal developmental process in alimentary system
 def: "An abnormality of the developmental process in alimentary system." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103500
@@ -50029,7 +50032,7 @@ is_a: XPO:0103473 ! abnormal developmental process in blood vessel
 id: XPO:0103504
 name: abnormal developmental process in adrenal medulla
 def: "An abnormality of the developmental process in adrenal medulla." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103505
@@ -50048,7 +50051,7 @@ is_a: XPO:0103533 ! abnormal developmental process in head
 id: XPO:0103507
 name: abnormal developmental process in nervous system
 def: "An abnormality of the developmental process in nervous system." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103508
@@ -50072,13 +50075,13 @@ is_a: XPO:0103493 ! abnormal developmental process in skeleton
 id: XPO:0103511
 name: abnormal developmental process in skin
 def: "An abnormality of the developmental process in skin." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103512
 name: abnormal developmental process in urinary system
 def: "An abnormality of the developmental process in urinary system." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103513
@@ -50133,7 +50136,7 @@ is_a: XPO:0103474 ! abnormal developmental process in heart
 id: XPO:0103521
 name: abnormal developmental process in limb
 def: "An abnormality of the developmental process in limb." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103522
@@ -50145,7 +50148,7 @@ is_a: XPO:0103521 ! abnormal developmental process in limb
 id: XPO:0103523
 name: abnormal developmental process in tail
 def: "An abnormality of the developmental process in tail." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103524
@@ -50157,7 +50160,7 @@ is_a: XPO:0103488 ! abnormal developmental process in primary germ layer
 id: XPO:0103525
 name: abnormal developmental process in spleen
 def: "An abnormality of the developmental process in spleen." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103526
@@ -50205,7 +50208,7 @@ is_a: XPO:0103509 ! abnormal developmental process in pancreas
 id: XPO:0103533
 name: abnormal developmental process in head
 def: "An abnormality of the developmental process in head." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103534
@@ -50243,19 +50246,19 @@ is_a: XPO:0103511 ! abnormal developmental process in skin
 id: XPO:0103539
 name: abnormal developmental process in B cell
 def: "An abnormality of the developmental process in B cell." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103540
 name: abnormal developmental process in T cell
 def: "An abnormality of the developmental process in T cell." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103541
 name: abnormal cell differentiation in neutrophil
 def: "An abnormality of the cell differentiation in neutrophil." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103542
@@ -50269,7 +50272,7 @@ is_a: XPO:0103543 ! abnormal cell differentiation in cell
 id: XPO:0103543
 name: abnormal cell differentiation in cell
 def: "An abnormality of the cell differentiation in cell." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103544
@@ -50363,7 +50366,7 @@ is_a: XPO:0103507 ! abnormal developmental process in nervous system
 id: XPO:0103557
 name: abnormal anatomical structure morphogenesis in neural fold
 def: "An abnormality of the anatomical structure morphogenesis in neural fold." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103558
@@ -50531,14 +50534,14 @@ id: XPO:0103581
 name: decreased length of posterior region
 def: "Decreased length or shortening of the posterior region." []
 synonym: "short posterior region" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103582
 name: decreased length of dorsal-ventral axis
 def: "Decreased length or shortening of the dorsal-ventral axis." []
 synonym: "short dorsal-ventral axis" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103583
@@ -50692,7 +50695,7 @@ id: XPO:0103602
 name: abnormal anterior-posterior axis, curved dorsal 
 def: "Any abnormal anterior-posterior axis that is curved dorsally." []
 synonym: "curved dorsal anterior-posterior axis" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103603
@@ -50868,19 +50871,19 @@ is_a: XPO:0103611 ! abnormal number of anatomical enitites of type forelimb digi
 id: XPO:0103623
 name: absent axon regeneration in optic nerve
 def: "Absent or undetectable axon regeneration in optic nerve." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103624
 name: absent anterior/posterior pattern specification in midgut
 def: "Absent or undetectable anterior/posterior pattern specification in midgut." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103625
 name: absent mitotic cytokinesis in primary spermatogonium
 def: "Absent or undetectable mitotic cytokinesis in primary spermatogonium." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103626
@@ -50996,7 +50999,7 @@ is_a: XPO:0103914 ! increased thickness of the epidermis
 id: XPO:0103642
 name: increased cell population proliferation
 def: "Increased cell population proliferation." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103643
@@ -51106,112 +51109,112 @@ id: XPO:0103656
 name: abnormally formed left part of branchial arch skeleton
 def: "An abnormally formed/malformed left part of branchial arch skeleton." []
 synonym: "malformed left part of branchial arch skeleton" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103657
 name: abnormally formed right part of branchial arch skeleton
 def: "An abnormally formed/malformed right part of branchial arch skeleton." []
 synonym: "malformed right part of branchial arch skeleton" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103658
 name: abnormally formed left eye
 def: "An abnormally formed/malformed left eye." []
 synonym: "malformed left eye" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103659
 name: abnormally formed right eye
 def: "An abnormally formed/malformed right eye." []
 synonym: "malformed right eye" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103660
 name: abnormally formed left inner ear
 def: "An abnormally formed/malformed left inner ear." []
 synonym: "malformed left inner ear" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103661
 name: abnormally formed right inner ear
 def: "An abnormally formed/malformed right inner ear." []
 synonym: "malformed right inner ear" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103662
 name: abnormally formed left olfactory pit
 def: "An abnormally formed/malformed left olfactory pit." []
 synonym: "malformed left olfactory pit" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103663
 name: abnormally formed right olfactory pit
 def: "An abnormally formed/malformed right olfactory pit." []
 synonym: "malformed right olfactory pit" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103664
 name: abnormally formed left optic vesicle
 def: "An abnormally formed/malformed left optic vesicle." []
 synonym: "malformed left optic vesicle" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103665
 name: abnormally formed right optic vesicle
 def: "An abnormally formed/malformed right optic vesicle." []
 synonym: "malformed right optic vesicle" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103666
 name: abnormally formed posterior region
 def: "An abnormally formed/malformed posterior region." []
 synonym: "malformed posterior region" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103667
 name: abnormally formed ventral trunk
 def: "An abnormally formed/malformed ventral trunk." []
 synonym: "malformed ventral trunk" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103668
 name: abnormally formed ventral region
 def: "An abnormally formed/malformed ventral region." []
 synonym: "malformed ventral region" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103669
 name: abnormally formed left part of brain
 def: "An abnormally formed/malformed left part of brain." []
 synonym: "malformed left part of brain" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103670
 name: abnormally formed right part of brain
 def: "An abnormally formed/malformed right part of brain." []
 synonym: "malformed right part of brain" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103671
 name: abnormally formed dorsal region
 def: "An abnormally formed/malformed dorsal region." []
 synonym: "malformed dorsal region" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103672
@@ -51430,7 +51433,7 @@ name: abnormal bending of anterior-posterior axis
 def: "Any abnormal bending of the anterior-posterior axis." []
 synonym: "abnormal bending of anterior-posterior axis" EXACT []
 synonym: "abnormally bending anterior-posterior axis" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103700
@@ -51462,7 +51465,7 @@ name: abnormal bending of dorsal tail
 def: "Any abnormal bending of the dorsal tail." []
 synonym: "abnormal bending of dorsal tail" EXACT []
 synonym: "abnormally bending dorsal tail" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103704
@@ -51470,7 +51473,7 @@ name: abnormal bending of dorsal trunk
 def: "Any abnormal bending of the dorsal trunk." []
 synonym: "abnormal bending of dorsal trunk" EXACT []
 synonym: "abnormally bending dorsal trunk" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103705
@@ -51478,7 +51481,7 @@ name: abnormal bending of left-right axis
 def: "Any abnormal bending of the left-right axis." []
 synonym: "abnormal bending of left-right axis" EXACT []
 synonym: "abnormally bending left-right axis" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103706
@@ -51518,7 +51521,7 @@ name: increased pigmentation in the antero-ventral region
 def: "Increased or increasing of pigmentation of antero-ventral region." []
 synonym: "antero-ventral region hyperpigmentation" EXACT []
 synonym: "increasing of pigment in the antero-ventral region" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103711
@@ -51816,14 +51819,14 @@ id: XPO:0103752
 name: increased size of the anterior-posterior axis
 def: "An increase in the size of the anterior-posterior axis." []
 synonym: "enlarged anterior-posterior axis" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103753
 name: increased size of the apical junction complex
 def: "An increase in the size of the apical junction complex." []
 synonym: "enlarged apical junction complex" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103754
@@ -51872,42 +51875,42 @@ id: XPO:0103760
 name: increased size of the left part of branchial arch skeleton
 def: "An increase in the size of the left part of branchial arch skeleton." []
 synonym: "enlarged left part of branchial arch skeleton" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103761
 name: increased size of the proximal-distal axis
 def: "An increase in the size of the proximal-distal axis." []
 synonym: "enlarged proximal-distal axis" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103762
 name: increased size of the right part of branchial arch skeleton
 def: "An increase in the size of the right part of branchial arch skeleton." []
 synonym: "enlarged right part of branchial arch skeleton" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103763
 name: increased size of the anterior region
 def: "An increase in the size of the anterior region." []
 synonym: "enlarged anterior region" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103764
 name: increased size of the antero-ventral region
 def: "An increase in the size of the antero-ventral region." []
 synonym: "enlarged antero-ventral region" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103765
 name: increased size of the dorsal region
 def: "An increase in the size of the dorsal region." []
 synonym: "enlarged dorsal region" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103766
@@ -51922,28 +51925,28 @@ id: XPO:0103767
 name: increased size of the left eye
 def: "An increase in the size of the left eye." []
 synonym: "enlarged left eye" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103768
 name: increased size of the postero-ventral region
 def: "An increase in the size of the postero-ventral region." []
 synonym: "enlarged postero-ventral region" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103769
 name: increased size of the right eye
 def: "An increase in the size of the right eye." []
 synonym: "enlarged right eye" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103770
 name: increased size of the ventral trunk
 def: "An increase in the size of the ventral trunk." []
 synonym: "enlarged ventral trunk" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103771
@@ -51955,7 +51958,7 @@ is_a: XPO:0103772 ! arrested developmental process
 id: XPO:0103772
 name: arrested developmental process
 def: "Arrested developmental process." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103773
@@ -52040,13 +52043,13 @@ is_a: XPO:0101640 ! abnormal morphology of epidermis
 id: XPO:0103783
 name: absent hatching behavior
 def: "Absence of hatching behavior." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103784
 name: absent swimming
 def: "Absence of swimming." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103785
@@ -52067,14 +52070,14 @@ id: XPO:0103787
 name: abnormally blistered anterior dorsal fin
 def: "An abnormally blistered anterior dorsal fin." []
 synonym: "anterior dorsal fin with blister" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103788
 name: abnormally blistered ventral trunk
 def: "An abnormally blistered ventral trunk." []
 synonym: "ventral trunk with blister" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103814
@@ -52339,7 +52342,7 @@ is_a: XPO:0101301 ! abnormal utricle
 id: XPO:0103884
 name: decreased qualitatively muscle cell differentiation
 def: "Decreased qualitatively muscle cell differentiation." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103885
@@ -52395,7 +52398,7 @@ id: XPO:0103892
 name: Decreased number of sarcomere
 def: "The presence of a reduced number of sarcomere." []
 synonym: "Reduced number of sarcomere" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103893
@@ -52409,7 +52412,7 @@ id: XPO:0103894
 name: Decreased number of spindle microtubule
 def: "The presence of a reduced number of spindle microtubule." []
 synonym: "Reduced number of spindle microtubule" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103895
@@ -52432,42 +52435,42 @@ id: XPO:0103901
 name: absent left eye
 def: "Absence of left eye." []
 synonym: "missing left eye" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103902
 name: absent left inner ear
 def: "Absence of left inner ear." []
 synonym: "missing left inner ear" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103903
 name: absent left olfactory pit
 def: "Absence of left olfactory pit." []
 synonym: "missing left olfactory pit" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103904
 name: absent right eye
 def: "Absence of right eye." []
 synonym: "missing right eye" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103905
 name: absent right inner ear
 def: "Absence of right inner ear." []
 synonym: "missing right inner ear" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103906
 name: absent right olfactory pit
 def: "Absence of right olfactory pit." []
 synonym: "missing right olfactory pit" EXACT []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103907
@@ -52551,31 +52554,31 @@ is_a: XPO:0102330 ! abnormal morphology of optic stalk
 id: XPO:0103920
 name: decreased qualitatively cell migration in cranial neural crest
 def: "Decreased qualitatively cell migration in cranial neural crest." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103921
 name: decreased qualitatively cell population proliferation in marginal zone
 def: "Decreased qualitatively cell population proliferation in marginal zone." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103922
 name: decreased qualitatively cell population proliferation in foregut primordium
 def: "Decreased qualitatively cell population proliferation in foregut primordium." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103923
 name: decreased qualitatively mitotic nuclear division in proximal tubule
 def: "Decreased qualitatively mitotic nuclear division in proximal tubule." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103924
 name: decreased qualitatively neural precursor cell proliferation in optic tectum
 def: "Decreased qualitatively neural precursor cell proliferation in optic tectum." []
-is_a: XPO:00000000 ! xpo
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103925
