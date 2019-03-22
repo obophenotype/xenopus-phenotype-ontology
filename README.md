@@ -3,7 +3,7 @@
 
 # xenopus-phenotype-ontology
 
-This ontology... YOUR DESCRIPTION HERE
+This ontology... YOUR DESCRIPTION HERE 
 
 ## Versions
 
