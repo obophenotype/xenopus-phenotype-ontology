@@ -44,12 +44,12 @@ anatomy_seed.txt: $(XAO) ../patterns/tmp/blacklist.txt
 	python3 ../scripts/blacklist.py ../patterns/tmp/anatomy_seed.txt ../patterns/tmp/blacklist.txt anatomy_seed.txt
 
 
-$(AUTOPATTERNDIR)/abnormal.tsv: anatomy_seed.txt
+$(AUTOPATTERNDIR)/abnormalAnatomicalEntity.tsv: anatomy_seed.txt
 	cp $< $@
 	sed -i "1s/.*/anatomical_entity/" $@
 	python3 ../scripts/assign_unique_ids.py $@ id_map.tsv reserved_iris.txt $(AUTOPATTERNACCESSION) $(PURL)
 
-$(AUTOPATTERNDIR)/abnormalMorphology.tsv: anatomy_seed.txt
+$(AUTOPATTERNDIR)/abnormalMorphologyOfAnatomicalEntity.tsv: anatomy_seed.txt
 	cp $< $@
 	sed -i "1s/.*/anatomical_entity/" $@
 	python3 ../scripts/assign_unique_ids.py $@ id_map.tsv reserved_iris.txt $(AUTOPATTERNACCESSION) $(PURL)
@@ -57,7 +57,7 @@ $(AUTOPATTERNDIR)/abnormalMorphology.tsv: anatomy_seed.txt
 $(MANUALPATTERNDIR)/%.tsv:
 	python3 ../scripts/assign_unique_ids.py $@ id_map.tsv reserved_iris.txt $(AUTOPATTERNACCESSION) $(PURL)
 
-auto_patterns: $(AUTOPATTERNDIR)/abnormal.tsv $(AUTOPATTERNDIR)/abnormalMorphology.tsv
+auto_patterns: $(AUTOPATTERNDIR)/abnormalAnatomicalEntity.tsv $(AUTOPATTERNDIR)/abnormalMorphologyOfAnatomicalEntity.tsv
 
 pattern_iris: $(MANUALPATTERNS)
 
