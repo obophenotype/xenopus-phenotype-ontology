@@ -60,11 +60,14 @@ def add_id_column(df):
     idcolumns = [i for i in cols if not i.endswith('label')]
     idcolumns.remove("defined_class")
 
-    for col in idcolumns:
-        df[col] = [i.replace(obo_prefix,"") for i in df[col]]
-        df[col] = [i.replace(":", "_") for i in df[col]]
+    df_copy = df.copy()
 
-    df['id'] = df[idcolumns].apply('-'.join, axis=1)
+    for col in idcolumns:
+        df_copy[col] = [i.replace(obo_prefix,"") for i in df_copy[col]]
+        df_copy[col] = [i.replace("_", ":") for i in df_copy[col]]
+
+    df['id'] = df_copy[idcolumns].apply('-'.join, axis=1)
+
     if df_ids.empty:
         df['iritemp001'] = ""
     else:
