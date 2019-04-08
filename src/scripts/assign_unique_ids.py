@@ -8,11 +8,12 @@ reserved_ids = sys.argv[3]
 accession = int(sys.argv[4])
 prefix = sys.argv[5]
 
-# tsv = "/ws/xenopus-phenotype-ontology/src/patterns/data/auto/abnormal.tsv"
-# id_map = "/ws/xenopus-phenotype-ontology/src/patterns/id_map.tsv"
-# reserved_ids = "/ws/xenopus-phenotype-ontology/src/patterns/reserved_iris.txt"
-# accession = int("9898")
-# prefix = "http://purl.obolibrary.org/obo/XPO_"
+#tsv = "/ws/xenopus-phenotype-ontology/src/patterns/data/manual/decreasedProcessQualityInLocation.tsv"
+#id_map = "/ws/xenopus-phenotype-ontology/src/patterns/id_map.tsv"
+#reserved_ids = "/ws/xenopus-phenotype-ontology/src/patterns/reserved_iris.txt"
+#accession = int("9898")
+#prefix = "http://purl.obolibrary.org/obo/XPO_"
+obo_prefix = "http://purl.obolibrary.org/obo/"
 
 maxid = 9999999
 pattern = os.path.basename(tsv)
@@ -58,6 +59,10 @@ def add_id_column(df):
     cols = df.columns
     idcolumns = [i for i in cols if not i.endswith('label')]
     idcolumns.remove("defined_class")
+
+    for col in idcolumns:
+        df[col] = [i.replace(obo_prefix,"") for i in df[col]]
+        df[col] = [i.replace(":", "_") for i in df[col]]
 
     df['id'] = df[idcolumns].apply('-'.join, axis=1)
     if df_ids.empty:
