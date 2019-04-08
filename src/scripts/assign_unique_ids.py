@@ -121,6 +121,11 @@ df.insert(0, 'defined_class', defclass)
 df = df.sort_values('defined_class')
 df_ids = df_ids.sort_values('iri')
 df.drop_duplicates().to_csv(tsv, sep = '\t', index=False)
+idstest = df_ids['iri']
+if len(idstest) != len(set(idstest)):
+    print("ERROR DUPLICATE IRIS")
+else:
+    print("ID map consistent.")
 df_ids.to_csv(id_map, sep = '\t', index=False)
 with open(reserved_ids, 'w') as f:
     for item in ids:
