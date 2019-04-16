@@ -1,5 +1,6 @@
 import sys
 import pandas as pd
+import yaml
 import os
 
 tsv = sys.argv[1]
@@ -7,6 +8,7 @@ id_map = sys.argv[2]
 reserved_ids = sys.argv[3]
 accession = int(sys.argv[4])
 prefix = sys.argv[5]
+pattern_dir = sys.argv[6]
 
 #tsv = "/ws/xenopus-phenotype-ontology/src/patterns/data/manual/decreasedProcessQualityInLocation.tsv"
 #id_map = "/ws/xenopus-phenotype-ontology/src/patterns/id_map.tsv"
@@ -17,6 +19,7 @@ obo_prefix = "http://purl.obolibrary.org/obo/"
 
 maxid = 9999999
 pattern = os.path.basename(tsv)
+pattern_file = os.path.join(pattern_dir,pattern.replace(".tsv",".yaml"))
 
 def get_highest_id(ids):
     global prefix
@@ -42,7 +45,7 @@ def generate_id(i):
 # For the following function to work properly it is important to note that there should be absolutely no columns in teh tsv file other than the defi
 # defined_class and columns whos names end with _label other than the ones that contribute to the identity of the entity in question
 
-def add_id_column(df):
+def add_id_column(df,idcolumns):
     global df_ids, pattern
     #df = pd.read_csv(tsv, sep='\t')
     if 'defined_class' not in df.columns:
@@ -57,8 +60,7 @@ def add_id_column(df):
 
     df['pattern'] = pattern
     cols = df.columns
-    idcolumns = [i for i in cols if not i.endswith('label')]
-    idcolumns.remove("defined_class")
+	if "defined_class" in idcolumns: idcolumns.remove("defined_class")
 
     df_copy = df.copy()
 
@@ -91,7 +93,14 @@ def add_id_column(df):
     #print(df.head(4))
     return df
 
-
+def get_id_columns(pattern_file):
+	with open(pattern_file, 'r') as stream:
+	    try:
+	        pattern_json = yaml.safe_load(stream)
+	    except yaml.YAMLError as exc:
+	        print(exc)
+	idcolumns = list(pattern_json['vars'].keys())
+	return idcolumns
 
 # Load data
 df = pd.read_csv(tsv, sep='\t')
@@ -111,7 +120,8 @@ if startid<accession:
     startid=accession
 
 # create ids in df
-df = add_id_column(df)
+idcolumns = get_id_columns(pattern_file) # Parses the var fillers from the pattern
+df = add_id_column(df, idcolumns)
 
 ids=list(set(ids+df_ids['iri'].tolist()))
 # wherever there is NULL assign new id starting with start id, make sure that value is then appended to df_ids and ids

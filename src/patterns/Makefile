@@ -3,6 +3,7 @@ AUTOPATTERNS = ../patterns/data/anatomy/
 AUTOPATTERNACCESSION = 99999
 PURL=http://purl.obolibrary.org/obo/XPO_
 OBOPURL=http://purl.obolibrary.org/obo/
+PATTERNDIR=../patterns/dosdp-patterns/
 
 $(XAO):
 	curl -L -O https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.owl
@@ -47,15 +48,15 @@ anatomy_seed.txt: $(XAO) ../patterns/tmp/blacklist.txt
 $(AUTOPATTERNDIR)/abnormalAnatomicalEntity.tsv: anatomy_seed.txt
 	cp $< $@
 	sed -i "1s/.*/anatomical_entity/" $@
-	python3 ../scripts/assign_unique_ids.py $@ id_map.tsv reserved_iris.txt $(AUTOPATTERNACCESSION) $(PURL)
+	python3 ../scripts/assign_unique_ids.py $@ id_map.tsv reserved_iris.txt $(AUTOPATTERNACCESSION) $(PURL) $(PATTERNDIR)
 
 $(AUTOPATTERNDIR)/abnormalMorphologyOfAnatomicalEntity.tsv: anatomy_seed.txt
 	cp $< $@
 	sed -i "1s/.*/anatomical_entity/" $@
-	python3 ../scripts/assign_unique_ids.py $@ id_map.tsv reserved_iris.txt $(AUTOPATTERNACCESSION) $(PURL)
+	python3 ../scripts/assign_unique_ids.py $@ id_map.tsv reserved_iris.txt $(AUTOPATTERNACCESSION) $(PURL) $(PATTERNDIR)
 
 $(MANUALPATTERNDIR)/%.tsv:
-	python3 ../scripts/assign_unique_ids.py $@ id_map.tsv reserved_iris.txt $(AUTOPATTERNACCESSION) $(PURL)
+	python3 ../scripts/assign_unique_ids.py $@ id_map.tsv reserved_iris.txt $(AUTOPATTERNACCESSION) $(PURL) $(PATTERNDIR)
 
 auto_patterns: $(AUTOPATTERNDIR)/abnormalAnatomicalEntity.tsv $(AUTOPATTERNDIR)/abnormalMorphologyOfAnatomicalEntity.tsv
 
