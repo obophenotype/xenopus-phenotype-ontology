@@ -1,0 +1,28 @@
+pattern_name: xpoAnatomyTEMP
+pattern_iri: http://purl.obolibrary.org/obo/xpo/src/patterns/dosdp-patterns/xpoAnatomyTEMP.yaml
+
+classes:
+  quality: owl:Thing
+  abnormal: PATO:0000460
+  entity: owl:Thing
+
+relations:
+  inheres_in: RO:0000052
+  qualifier: RO:0002573
+  has_part: BFO:0000051
+
+vars:
+  anatomical_entity: "'entity'"
+  quality: "'quality'"
+  
+name:
+  text: "abnormal(ly) %s of %s (T)"
+  vars:
+   - quality
+   - anatomical_entity
+
+equivalentTo:
+  text: "'has_part' some (%s and ('inheres_in' some %s) and ('qualifier' some 'abnormal'))"
+  vars:
+    - quality
+    - anatomical_entity
