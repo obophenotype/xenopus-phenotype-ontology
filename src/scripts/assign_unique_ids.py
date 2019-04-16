@@ -60,7 +60,7 @@ def add_id_column(df,idcolumns):
 
     df['pattern'] = pattern
     cols = df.columns
-	if "defined_class" in idcolumns: idcolumns.remove("defined_class")
+    if "defined_class" in idcolumns: idcolumns.remove("defined_class")
 
     df_copy = df.copy()
 
