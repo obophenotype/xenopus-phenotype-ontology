@@ -2,6 +2,7 @@ import sys
 import pandas as pd
 import yaml
 import os
+import collections
 
 tsv = sys.argv[1]
 id_map = sys.argv[2]
@@ -64,11 +65,14 @@ def add_id_column(df,idcolumns):
 
     df_copy = df.copy()
 
+    idcolumns_incl_patterns = idcolumns.copy()
+	idcolumns_incl_patterns.append('pattern')
+	
     for col in idcolumns:
         df_copy[col] = [str(i).replace(obo_prefix,"") for i in df_copy[col]]
         df_copy[col] = [str(i).replace("_", ":") for i in df_copy[col]]
 
-    df['id'] = df_copy[idcolumns].apply('-'.join, axis=1)
+    df['id'] = df_copy[idcolumns_incl_patterns].apply('-'.join, axis=1)
 
     if df_ids.empty:
         df['iritemp001'] = ""
@@ -130,10 +134,12 @@ df.drop(labels=['defined_class'], axis=1,inplace = True)
 df.insert(0, 'defined_class', defclass)
 df = df.sort_values('defined_class')
 df_ids = df_ids.sort_values('iri')
+df_ids = df_ids.drop_duplicates()
 df.drop_duplicates().to_csv(tsv, sep = '\t', index=False)
 idstest = df_ids['iri']
 if len(idstest) != len(set(idstest)):
-    print("ERROR DUPLICATE IRIS")
+    duplicates = [item for item, count in collections.Counter(idstest).items() if count > 1]
+    raise ValueError('An id was assigned more than once, aborting')
 else:
     print("ID map consistent.")
 df_ids.to_csv(id_map, sep = '\t', index=False)
