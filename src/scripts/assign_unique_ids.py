@@ -139,7 +139,7 @@ df.drop_duplicates().to_csv(tsv, sep = '\t', index=False)
 idstest = df_ids['iri']
 if len(idstest) != len(set(idstest)):
     duplicates = [item for item, count in collections.Counter(idstest).items() if count > 1]
-    raise ValueError('An id was assigned more than once, aborting')
+    raise ValueError('An id was assigned more than once, aborting.. ('+str(duplicates)+')')
 else:
     print("ID map consistent.")
 df_ids.to_csv(id_map, sep = '\t', index=False)
