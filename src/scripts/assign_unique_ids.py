@@ -66,8 +66,8 @@ def add_id_column(df,idcolumns):
     df_copy = df.copy()
 
     idcolumns_incl_patterns = idcolumns.copy()
-	idcolumns_incl_patterns.append('pattern')
-	
+    idcolumns_incl_patterns.append('pattern')
+
     for col in idcolumns:
         df_copy[col] = [str(i).replace(obo_prefix,"") for i in df_copy[col]]
         df_copy[col] = [str(i).replace("_", ":") for i in df_copy[col]]
