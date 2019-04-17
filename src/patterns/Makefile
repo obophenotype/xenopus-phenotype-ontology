@@ -64,3 +64,7 @@ pattern_iris: $(MANUALPATTERNS)
 
 xpo.csv:
 	robot query -f csv -i ../patterns/definitions.owl --query ../sparql/xpol_terms.sparql $@
+
+xrefs:
+	robot template --template xrefs.csv --output xpo-xrefs.owl && \
+	robot annotate --input xpo-xrefs.owl --ontology-iri $(OBOPURL)xpo/patterns/xpo-xrefs.owl -o xpo-xrefs.owl

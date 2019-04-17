@@ -1,0 +1,257 @@
+Prefix(:=<urn:unnamed:ontology#ont1#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont1>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000460>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001473>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003035>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003064>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003065>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003066>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003211>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003213>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003214>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004106>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004107>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004121>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004239>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004264>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004265>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004276>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004412>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004413>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004414>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004415>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004417>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004418>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004419>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004420>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004421>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004478>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004479>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004480>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004481>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005202>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005216>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005221>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115771>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115772>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115773>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115774>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115775>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115776>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115777>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115778>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115779>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115780>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115781>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115782>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115783>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115784>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115785>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115786>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115787>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115788>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115789>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115790>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115791>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115792>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115793>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115794>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0115795>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002573>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115771> (abnormal duplication of bone element )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115771> "Any abnormal duplication of the bone element."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115771> "abnormally duplicated bone element"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115771> "abnormal duplication of bone element "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115771> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004276> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004417>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115772> (abnormal duplication of bone element )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115772> "Any abnormal duplication of the bone element."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115772> "abnormally duplicated bone element"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115772> "abnormal duplication of bone element "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115772> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004276> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004418>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115773> (abnormal duplication of bone element )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115773> "Any abnormal duplication of the bone element."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115773> "abnormally duplicated bone element"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115773> "abnormal duplication of bone element "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115773> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004276> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004419>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115774> (abnormal duplication of bone element )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115774> "Any abnormal duplication of the bone element."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115774> "abnormally duplicated bone element"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115774> "abnormal duplication of bone element "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115774> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004276> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004420>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115775> (abnormal duplication of bone element )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115775> "Any abnormal duplication of the bone element."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115775> "abnormally duplicated bone element"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115775> "abnormal duplication of bone element "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115775> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004276> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004421>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115776> (abnormal duplication of apical ectodermal ridge )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115776> "Any abnormal duplication of the apical ectodermal ridge."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115776> "abnormally duplicated apical ectodermal ridge"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115776> "abnormal duplication of apical ectodermal ridge "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115776> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004121> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0003066>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115777> (abnormal duplication of apical ectodermal ridge )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115777> "Any abnormal duplication of the apical ectodermal ridge."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115777> "abnormally duplicated apical ectodermal ridge"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115777> "abnormal duplication of apical ectodermal ridge "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115777> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004121> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0003065>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115778> (abnormal duplication of autopod )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115778> "Any abnormal duplication of the autopod."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115778> "abnormally duplicated autopod"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115778> "abnormal duplication of autopod "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115778> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004265> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115779> (abnormal duplication of hindlimb digit )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115779> "Any abnormal duplication of the hindlimb digit."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115779> "abnormally duplicated hindlimb digit"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115779> "abnormal duplication of hindlimb digit "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115779> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0003035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115780> (abnormal duplication of femur )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115780> "Any abnormal duplication of the femur."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115780> "abnormally duplicated femur"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115780> "abnormal duplication of femur "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115780> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0003214> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115781> (abnormal duplication of hindlimb digit 1 )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115781> "Any abnormal duplication of the hindlimb digit 1."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115781> "abnormally duplicated hindlimb digit 1"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115781> "abnormal duplication of hindlimb digit 1 "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115781> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004239> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115782> (abnormal duplication of hindlimb digit 2 )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115782> "Any abnormal duplication of the hindlimb digit 2."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115782> "abnormally duplicated hindlimb digit 2"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115782> "abnormal duplication of hindlimb digit 2 "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115782> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004412> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115783> (abnormal duplication of hindlimb digit 3 )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115783> "Any abnormal duplication of the hindlimb digit 3."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115783> "abnormally duplicated hindlimb digit 3"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115783> "abnormal duplication of hindlimb digit 3 "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115783> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004413> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115784> (abnormal duplication of hindlimb digit 4 )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115784> "Any abnormal duplication of the hindlimb digit 4."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115784> "abnormally duplicated hindlimb digit 4"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115784> "abnormal duplication of hindlimb digit 4 "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115784> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004414> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115785> (abnormal duplication of hindlimb digit 5 )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115785> "Any abnormal duplication of the hindlimb digit 5."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115785> "abnormally duplicated hindlimb digit 5"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115785> "abnormal duplication of hindlimb digit 5 "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115785> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004415> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115786> (abnormal duplication of forelimb digit 2 )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115786> "Any abnormal duplication of the forelimb digit 2."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115786> "abnormally duplicated forelimb digit 2"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115786> "abnormal duplication of forelimb digit 2 "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115786> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004478> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004106>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115787> (abnormal duplication of forelimb digit 3 )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115787> "Any abnormal duplication of the forelimb digit 3."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115787> "abnormally duplicated forelimb digit 3"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115787> "abnormal duplication of forelimb digit 3 "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115787> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004479> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004106>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115788> (abnormal duplication of forelimb digit 4 )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115788> "Any abnormal duplication of the forelimb digit 4."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115788> "abnormally duplicated forelimb digit 4"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115788> "abnormal duplication of forelimb digit 4 "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115788> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004480> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004106>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115789> (abnormal duplication of forelimb digit 5 )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115789> "Any abnormal duplication of the forelimb digit 5."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115789> "abnormally duplicated forelimb digit 5"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115789> "abnormal duplication of forelimb digit 5 "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115789> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004481> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004106>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115790> (abnormal duplication of pelvic girdle )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115790> "Any abnormal duplication of the pelvic girdle."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115790> "abnormally duplicated pelvic girdle"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115790> "abnormal duplication of pelvic girdle "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115790> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0003064> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115791> (abnormal duplication of tarsus )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115791> "Any abnormal duplication of the tarsus."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115791> "abnormally duplicated tarsus"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115791> "abnormal duplication of tarsus "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115791> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0003211> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115792> (abnormal duplication of tibia-fibula )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115792> "Any abnormal duplication of the tibia-fibula."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115792> "abnormally duplicated tibia-fibula"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115792> "abnormal duplication of tibia-fibula "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115792> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0003213> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115793> (abnormal duplication of zeugopod )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115793> "Any abnormal duplication of the zeugopod."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115793> "abnormally duplicated zeugopod"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115793> "abnormal duplication of zeugopod "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115793> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004264> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115794> (abnormal duplication of anterior-posterior axis )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115794> "Any abnormal duplication of the anterior-posterior axis."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115794> "abnormally duplicated anterior-posterior axis"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115794> "abnormal duplication of anterior-posterior axis "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115794> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0005202> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0005216>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0115795> (abnormal duplication of anterior-posterior axis )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0115795> "Any abnormal duplication of the anterior-posterior axis."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0115795> "abnormally duplicated anterior-posterior axis"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0115795> "abnormal duplication of anterior-posterior axis "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0115795> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0005202> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0005221>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+
+)

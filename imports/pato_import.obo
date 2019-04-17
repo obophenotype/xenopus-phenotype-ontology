@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: xpo/releases/2019-04-11/imports/pato_import.owl
+data-version: xpo/releases/2019-04-17/imports/pato_import.owl
 ontology: xpo/imports/pato_import
 
 [Term]
@@ -11,6 +11,17 @@ def: "A dependent entity that inheres in a bearer by virtue of how the bearer is
 synonym: "trait" EXACT []
 
 [Term]
+id: PATO:0000004
+name: mobility
+namespace: quality
+def: "A quality of inhering in a bearer by virtue of the bearer's disposition to move freely." [PATOC:GVG]
+comment: Should be defined using translocation.
+subset: attribute_slim
+subset: disposition_slim
+subset: scalar_slim
+is_a: PATO:0001018 ! physical quality
+
+[Term]
 id: PATO:0000014
 name: color
 namespace: quality
@@ -20,6 +31,39 @@ subset: attribute_slim
 synonym: "colour" EXACT []
 synonym: "relative color" EXACT []
 is_a: PATO:0001300 ! optical quality
+
+[Term]
+id: PATO:0000025
+name: composition
+namespace: quality
+alt_id: PATO:0002015
+def: "A single physical entity inhering in an bearer by virtue of the bearer's quantities or relative ratios of subparts." [PATOC:GVG]
+comment: For example calcium composition (which may inhere in bone), haemoglobin composition (which may inhere in blood).
+subset: attribute_slim
+subset: scalar_slim
+synonym: "composed of" EXACT []
+synonym: "compositionality" EXACT []
+synonym: "content" EXACT []
+synonym: "structure, composition" EXACT []
+is_a: PATO:0000141 ! structure
+
+[Term]
+id: PATO:0000040
+name: distance
+namespace: quality
+def: "A quality that is the extent of space between two entities." [PATOC:GVG]
+subset: attribute_slim
+subset: relational_slim
+subset: scalar_slim
+is_a: PATO:0001018 ! physical quality
+
+[Term]
+id: PATO:0000047
+name: biological sex
+namespace: quality
+def: "An organismal quality inhering in a bearer by virtue of the bearer's ability to undergo sexual reproduction in order to differentiate the individuals or types involved." [MGED:MGED]
+subset: attribute_slim
+is_a: PATO:0001995 ! organismal quality
 
 [Term]
 id: PATO:0000051
@@ -52,6 +96,19 @@ subset: hpo_slim
 synonym: "incidence" EXACT []
 synonym: "temporal" BROAD []
 is_a: PATO:0002323 ! temporal distribution quality
+
+[Term]
+id: PATO:0000060
+name: spatial pattern
+namespace: quality
+alt_id: PATO:0000132
+alt_id: PATO:0001565
+def: "A spatial quality inhering in a bearer by virtue of the bearer's exhibiting repetition of placement of its parts." [PATOC:GVG]
+subset: attribute_slim
+subset: hpo_slim
+synonym: "distribution" EXACT []
+synonym: "pattern" RELATED []
+is_a: PATO:0000140 ! position
 
 [Term]
 id: PATO:0000068
@@ -89,6 +146,14 @@ is_a: PATO:0000068 ! qualitative
 relationship: reciprocal_of PATO:0001555 ! has number of
 
 [Term]
+id: PATO:0000083
+name: phase
+namespace: quality
+def: "A quality that exists by virtue of being a particular point in the time of a cycle." [PATOC:GVG]
+subset: attribute_slim
+is_a: PATO:0002323 ! temporal distribution quality
+
+[Term]
 id: PATO:0000117
 name: size
 namespace: quality
@@ -115,6 +180,31 @@ subset: attribute_slim
 subset: mpath_slim
 subset: scalar_slim
 is_a: PATO:0001708 ! 1-D extent
+
+[Term]
+id: PATO:0000125
+name: mass
+namespace: quality
+def: "A physical quality that inheres in a bearer by virtue of the proportion of the bearer's amount of matter." [PATOC:GVG]
+subset: attribute_slim
+subset: relational_slim
+subset: scalar_slim
+is_a: PATO:0001018 ! physical quality
+
+[Term]
+id: PATO:0000133
+name: orientation
+namespace: quality
+alt_id: PATO:0000137
+def: "A spatial quality inhering in a bearer by virtue of the bearer's placement which is defined by the angle between the bearer and an axis, or the angle between the bearer and another object." [PATOC:JE]
+subset: attribute_slim
+subset: relational_slim
+synonym: "amount of rotation" RELATED []
+synonym: "angle" RELATED []
+synonym: "angular magnitude" RELATED []
+synonym: "angular placement" EXACT []
+synonym: "plane angle" RELATED []
+is_a: PATO:0000140 ! position
 
 [Term]
 id: PATO:0000136
@@ -166,6 +256,32 @@ subset: scalar_slim
 is_a: PATO:0002062 ! physical quality of a process
 
 [Term]
+id: PATO:0000169
+name: viability
+namespace: quality
+def: "An organismal quality inhering in a bearer or a population by virtue of the bearer's disposition to survive and develop normally or the number of surviving individuals in a given population." [PATOC:GVG]
+subset: attribute_slim
+subset: disposition_slim
+is_a: PATO:0001995 ! organismal quality
+
+[Term]
+id: PATO:0000186
+name: behavioral quality
+namespace: quality
+alt_id: PATO:0001722
+def: "An organismal quality inhering in a bearer by virtue of the bearer's behavior aggregate of the responses or reactions or movements in a given situation." [PATOC:GVG]
+synonym: "behavioural quality" EXACT []
+is_a: PATO:0001995 ! organismal quality
+
+[Term]
+id: PATO:0000261
+name: maturity
+namespace: quality
+def: "A quality of a single physical entity which is held by a bearer when the latter exhibits a state of growth, differentiation, or development." [Merriam-Webster:Merriam-Webster]
+subset: attribute_slim
+is_a: PATO:0001995 ! organismal quality
+
+[Term]
 id: PATO:0000297
 name: arrested
 namespace: quality
@@ -177,6 +293,67 @@ synonym: "abolished" EXACT []
 synonym: "incomplete" RELATED []
 is_a: PATO:0002052 ! decreased occurrence
 is_a: PATO:0002324 ! offset quality
+
+[Term]
+id: PATO:0000299
+name: mobile
+namespace: quality
+def: "A mobility quality of inhering in a bearer by virtue of the bearer's disposition to move freely." [PATOC:GVG]
+subset: disposition_slim
+subset: value_slim
+is_a: PATO:0000004 ! mobility
+disjoint_from: PATO:0000300 ! immobile
+relationship: is_opposite_of PATO:0000300 ! immobile
+
+[Term]
+id: PATO:0000300
+name: immobile
+namespace: quality
+def: "A mobility quality inhering in a bearer by virtue of the bearer's being incapable to move freely." [PATOC:GVG]
+subset: disposition_slim
+subset: value_slim
+synonym: "fixed" RELATED []
+is_a: PATO:0000004 ! mobility
+relationship: is_opposite_of PATO:0000299 ! mobile
+
+[Term]
+id: PATO:0000330
+name: irregular spatial pattern
+namespace: quality
+def: "A spatial pattern inhering in a bearer by virtue of the bearer's magnitude of or the relationships between its repeated parts lack consistency." [PATOC:GVG]
+subset: cell_quality
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0000060 ! spatial pattern
+relationship: is_opposite_of PATO:0000440 ! regular spatial pattern
+
+[Term]
+id: PATO:0000374
+name: increased distance
+namespace: quality
+def: "A distance which is greater relative to the normal or average." [PATOC:GVG]
+subset: relational_slim
+subset: value_slim
+synonym: "long distance" RELATED []
+is_a: PATO:0000040 ! distance
+is_a: PATO:0002305 ! increased object quality
+intersection_of: PATO:0000040 ! distance
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0000375 ! decreased distance
+
+[Term]
+id: PATO:0000375
+name: decreased distance
+namespace: quality
+def: "A distance which is lesser relative to the normal or average." [PATOC:GVG]
+subset: relational_slim
+subset: value_slim
+synonym: "short distance" RELATED []
+is_a: PATO:0000040 ! distance
+is_a: PATO:0002303 ! decreased object quality
+intersection_of: PATO:0000040 ! distance
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0000374 ! increased distance
 
 [Term]
 id: PATO:0000402
@@ -193,6 +370,23 @@ disjoint_from: PATO:0000414 ! unbranched
 relationship: is_opposite_of PATO:0000414 ! unbranched
 
 [Term]
+id: PATO:0000404
+name: coiled
+namespace: quality
+alt_id: PATO:0001363
+def: "A shape quality inhering in a bearer by virtue of the bearer's being curled or wound (especially in concentric rings or spirals)." [WordNet:WordNet]
+subset: cell_quality
+subset: mpath_slim
+subset: value_slim
+synonym: "helical" RELATED []
+synonym: "helicoid" RELATED []
+synonym: "helicoidal" RELATED []
+synonym: "helix-shaped" RELATED []
+synonym: "spiral" EXACT []
+is_a: PATO:0001794 ! coiling
+relationship: is_opposite_of PATO:0000415 ! uncoiled
+
+[Term]
 id: PATO:0000406
 name: curved
 namespace: quality
@@ -204,6 +398,18 @@ synonym: "curled" RELATED []
 is_a: PATO:0001591 ! curvature
 
 [Term]
+id: PATO:0000411
+name: circular
+namespace: quality
+def: "A shape quality inhering in a bearer by virtue of the bearer's being such that every part of the surface or the circumference is equidistant from the center." [thefreedictionary.com:thefreedictionary.com]
+subset: cell_quality
+subset: mpath_slim
+subset: value_slim
+synonym: "round" RELATED []
+synonym: "rounded" RELATED []
+is_a: PATO:0000947 ! elliptic
+
+[Term]
 id: PATO:0000414
 name: unbranched
 namespace: quality
@@ -213,6 +419,28 @@ subset: mpath_slim
 subset: value_slim
 is_a: PATO:0002009 ! branchiness
 relationship: is_opposite_of PATO:0000402 ! branched
+
+[Term]
+id: PATO:0000415
+name: uncoiled
+namespace: quality
+def: "A shape quality inhering in a bearer by virtue of the bearer's being not curled or wound (especially in concentric rings or spirals)." [WordNet:WordNet]
+subset: cell_quality
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0001794 ! coiling
+relationship: is_opposite_of PATO:0000404 ! coiled
+
+[Term]
+id: PATO:0000440
+name: regular spatial pattern
+namespace: quality
+def: "A pattern quality inhering in a bearer by virtue of the bearer's having a repeatable or predictable placement." [PATOC:GVG]
+subset: mpath_slim
+subset: relational_slim
+subset: value_slim
+is_a: PATO:0000060 ! spatial pattern
+relationship: is_opposite_of PATO:0000330 ! irregular spatial pattern
 
 [Term]
 id: PATO:0000460
@@ -290,6 +518,15 @@ intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
 relationship: is_opposite_of PATO:0001997 ! decreased amount
 
 [Term]
+id: PATO:0000502
+name: delayed
+namespace: quality
+def: "A quality of a process which starts later than the natural start time or the reference process." [PATOC:LC]
+subset: value_slim
+synonym: "late" RELATED []
+is_a: PATO:0002325 ! onset quality
+
+[Term]
 id: PATO:0000569
 name: decreased height
 namespace: quality
@@ -342,6 +579,29 @@ is_a: PATO:0000587 ! decreased size
 intersection_of: PATO:0000122 ! length
 intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
 relationship: is_opposite_of PATO:0000573 ! increased length
+
+[Term]
+id: PATO:0000584
+name: hypertrophic
+namespace: quality
+def: "An increased size quality inhering in a bearer by virtue of the bearer's exhibiting enlargement of a cell or constituent group of cells (for example, organ)." [PATOC:MAH]
+subset: mpath_slim
+subset: value_slim
+synonym: "hypertrophy" NARROW []
+is_a: PATO:0000595 ! increased volume
+relationship: is_opposite_of PATO:0000585 ! hypotrophic
+
+[Term]
+id: PATO:0000585
+name: hypotrophic
+namespace: quality
+alt_id: PATO:0000412
+def: "A decreased size quality inhering in a bearer by virtue of the bearer's exhibiting reduced size of a cell or constituent group of cells (for example, organ)." [PATOC:MAH]
+subset: mpath_slim
+subset: value_slim
+synonym: "shrunken" EXACT []
+is_a: PATO:0000596 ! decreased volume
+relationship: is_opposite_of PATO:0000584 ! hypertrophic
 
 [Term]
 id: PATO:0000586
@@ -412,6 +672,36 @@ intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
 relationship: is_opposite_of PATO:0000591 ! increased thickness
 
 [Term]
+id: PATO:0000595
+name: increased volume
+namespace: quality
+def: "A volume which is relatively high." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+synonym: "high volume" EXACT []
+synonym: "large volume" RELATED []
+is_a: PATO:0000586 ! increased size
+is_a: PATO:0000918 ! volume
+intersection_of: PATO:0000918 ! volume
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0000596 ! decreased volume
+
+[Term]
+id: PATO:0000596
+name: decreased volume
+namespace: quality
+def: "A volume which is relatively low." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+synonym: "low volume" EXACT []
+synonym: "small volume" RELATED []
+is_a: PATO:0000587 ! decreased size
+is_a: PATO:0000918 ! volume
+intersection_of: PATO:0000918 ! volume
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0000595 ! increased volume
+
+[Term]
 id: PATO:0000599
 name: decreased width
 namespace: quality
@@ -468,6 +758,33 @@ is_a: PATO:0000136 ! closure
 relationship: is_opposite_of PATO:0000608 ! closed
 
 [Term]
+id: PATO:0000613
+name: disoriented
+namespace: quality
+def: "A spatial pattern inhering in a bearer by virtue of the bearer's lacking orientation." [PATOC:GVG]
+subset: value_slim
+is_a: PATO:0000330 ! irregular spatial pattern
+relationship: is_opposite_of PATO:0000614 ! oriented
+
+[Term]
+id: PATO:0000614
+name: oriented
+namespace: quality
+def: "A pattern where all the repeated elements are oriented in the same direction." [PATOC:MAH]
+subset: value_slim
+is_a: PATO:0000440 ! regular spatial pattern
+relationship: is_opposite_of PATO:0000613 ! disoriented
+
+[Term]
+id: PATO:0000615
+name: wholly anterioralized
+namespace: quality
+def: "An anterioralized quality inhering in a bearer by virtue of the bearer's gross morphology containing only what are normally anterior structures." [PATOC:GVG]
+subset: value_slim
+synonym: "anterioralized" RELATED []
+is_a: PATO:0030000 ! anterioralized
+
+[Term]
 id: PATO:0000617
 name: bent
 namespace: quality
@@ -475,6 +792,36 @@ def: "A shape quality inhering in a bearer by virtue of the bearer's having one 
 subset: value_slim
 synonym: "angled" EXACT []
 is_a: PATO:0000052 ! shape
+
+[Term]
+id: PATO:0000620
+name: wholly dorsalized
+namespace: quality
+def: "A dorsalized quality inhering in a bearer by virtue of the bearer's gross morphology containing only what are normally dorsal structures." [PATOC:melissa]
+subset: mpath_slim
+subset: value_slim
+synonym: "dorsalized" RELATED []
+is_a: PATO:0030001 ! dorsalized
+
+[Term]
+id: PATO:0000622
+name: erect
+namespace: quality
+def: "A positional quality inhering in a bearer by virtue of the bearer's being upright in position or posture." [WordNet:WordNet]
+subset: value_slim
+synonym: "upright" EXACT []
+is_a: PATO:0000140 ! position
+
+[Term]
+id: PATO:0000625
+name: inverted
+namespace: quality
+def: "An oriented quality inhering in a bearer by virtue of the bearer's being reversed in position, order, or condition." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+synonym: "backward" RELATED []
+synonym: "reversed" RELATED []
+is_a: PATO:0000614 ! oriented
 
 [Term]
 id: PATO:0000628
@@ -489,6 +836,78 @@ synonym: "mislocalized" EXACT []
 is_a: PATO:0002181 ! displaced
 
 [Term]
+id: PATO:0000630
+name: wholly posterioralized
+namespace: quality
+def: "A posterioralized quality inhering in a bearer by virtue of the bearer's gross morphology containing only what are normally posterior structures." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+synonym: "posterioralized" RELATED []
+is_a: PATO:0030002 ! posterioralized
+
+[Term]
+id: PATO:0000636
+name: wholly ventralized
+namespace: quality
+def: "A ventralized quality inhering in a bearer by virtue of the bearer's gross morphology containing only what are normally ventral structures." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+synonym: "ventralized" RELATED []
+is_a: PATO:0030003 ! ventralized
+
+[Term]
+id: PATO:0000638
+name: apoptotic
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's consisting of blebbing of the nucleus and DNA fragmentation due to the cell undergoing a specific form of programmed cell death termed apoptosis." [PATOC:GVG]
+subset: value_slim
+xref: GO:0006915
+is_a: PATO:0000141 ! structure
+
+[Term]
+id: PATO:0000642
+name: fused with
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's being merged with another entity." [PATOC:GVG]
+subset: mpath_slim
+subset: relational_slim
+subset: value_slim
+synonym: "coalesced" RELATED []
+synonym: "fused" EXACT []
+synonym: "fused to" EXACT []
+synonym: "joined with" RELATED []
+synonym: "merged with" RELATED []
+is_a: PATO:0000141 ! structure
+relationship: is_opposite_of PATO:0000651 ! unfused from
+
+[Term]
+id: PATO:0000644
+name: hyperplastic
+namespace: quality
+alt_id: PATO:0000943
+def: "A increased size quality inhering in an organ or tissue by virtue of the bearer's exhibiting increased number of cells." [Wikipedia:http\://en.wikipedia.org/wiki/Hyperplastic]
+subset: mpath_slim
+subset: value_slim
+synonym: "hyperplasia" EXACT []
+synonym: "overdeveloped" RELATED []
+is_a: PATO:0000586 ! increased size
+relationship: is_opposite_of PATO:0000645 ! hypoplastic
+
+[Term]
+id: PATO:0000645
+name: hypoplastic
+namespace: quality
+alt_id: PATO:0000942
+def: "A decreased size quality inhering in a bearer by virtue of the bearer's exhibiting reduced number of cells within an organ or tissue." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+synonym: "hypoplasia" EXACT []
+synonym: "underdeveloped" RELATED []
+is_a: PATO:0000587 ! decreased size
+is_a: PATO:0002290 ! aplastic/hypoplastic
+relationship: is_opposite_of PATO:0000644 ! hyperplastic
+
+[Term]
 id: PATO:0000646
 name: malformed
 namespace: quality
@@ -497,6 +916,35 @@ subset: mpath_slim
 subset: value_slim
 synonym: "malformation" NARROW []
 is_a: PATO:0001617 ! deformed
+
+[Term]
+id: PATO:0000647
+name: necrotic
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's undergoing unprogrammed cell death." [Wikipedia:http\://en.wikipedia.org/wiki/Necrotic]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0000141 ! structure
+
+[Term]
+id: PATO:0000651
+name: unfused from
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's being no longer merged with another entity." [PATOC:nw]
+subset: relational_slim
+subset: value_slim
+synonym: "unfused" EXACT []
+is_a: PATO:0000141 ! structure
+relationship: is_opposite_of PATO:0000642 ! fused with
+
+[Term]
+id: PATO:0000763
+name: paralysed
+namespace: quality
+def: "A behavioral quality inhering in a bearer by virtue of the bearer's being affected by loss of the ability to move a body part." [PATOC:GVG]
+subset: value_slim
+synonym: "palsy" NARROW []
+is_a: PATO:0002076 ! movement behavioral quality
 
 [Term]
 id: PATO:0000911
@@ -537,6 +985,16 @@ subset: scalar_slim
 is_a: PATO:0001708 ! 1-D extent
 
 [Term]
+id: PATO:0000918
+name: volume
+namespace: quality
+def: "A 3-D extent quality inhering in a bearer by virtue of the bearer's amount of 3-dimensional space it occupies." [PATOC:GVG]
+subset: attribute_slim
+subset: mpath_slim
+subset: scalar_slim
+is_a: PATO:0001710 ! 3-D extent
+
+[Term]
 id: PATO:0000921
 name: width
 namespace: quality
@@ -545,6 +1003,69 @@ subset: attribute_slim
 subset: scalar_slim
 synonym: "breadth" RELATED []
 is_a: PATO:0001708 ! 1-D extent
+
+[Term]
+id: PATO:0000936
+name: truncated
+namespace: quality
+def: "A shape quality inhering in a bearer by virtue of the bearer's terminating abruptly by having or as if having an end or point cut off." [thefreedictionary.com:thefreedictionary.com]
+subset: value_slim
+synonym: "truncate" EXACT []
+is_a: PATO:0000052 ! shape
+
+[Term]
+id: PATO:0000937
+name: disorganized
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's lacking organisation." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0002264 ! organization quality
+disjoint_from: PATO:0000938 ! organized
+relationship: is_opposite_of PATO:0000938 ! organized
+
+[Term]
+id: PATO:0000938
+name: organized
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's exhibiting organisation." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0002264 ! organization quality
+relationship: is_opposite_of PATO:0000937 ! disorganized
+
+[Term]
+id: PATO:0000947
+name: elliptic
+namespace: quality
+def: "A spheroid quality inhering in a bearer by virtue of the bearer's being oval with two axes of symmetry, as produced by a conical section." [PATOC:GVG]
+subset: cell_quality
+subset: mpath_slim
+subset: value_slim
+synonym: "ellipse-shaped" EXACT []
+synonym: "ellipsoid" EXACT []
+synonym: "elliptical" EXACT []
+synonym: "oval" RELATED []
+synonym: "ovoid" RELATED []
+is_a: PATO:0002318 ! superelliptic
+
+[Term]
+id: PATO:0000967
+name: undulate
+namespace: quality
+alt_id: PATO:0001610
+alt_id: PATO:0001939
+def: "A shape quality inhering in a bearer by virtue of the bearer's having a sinuate margin and rippled surface." [PATOC:GVG]
+subset: cell_quality
+subset: mpath_slim
+subset: value_slim
+synonym: "rippled" RELATED []
+synonym: "sinuate" RELATED []
+synonym: "undulated" EXACT []
+synonym: "undulating" EXACT []
+synonym: "waved" EXACT []
+synonym: "wavy" EXACT []
+is_a: PATO:0000052 ! shape
 
 [Term]
 id: PATO:0001018
@@ -556,6 +1077,33 @@ subset: attribute_slim
 synonym: "relational physical quality" EXACT []
 xref: Wikipedia:Physical_property
 is_a: PATO:0001241 ! physical object quality
+
+[Term]
+id: PATO:0001052
+name: obtuse angle to
+namespace: quality
+def: "An angle which is between 90 degrees and 180 degrees to another entity." [thesaurus.maths:thesaurus.maths]
+subset: relational_slim
+subset: value_slim
+is_a: PATO:0002326 ! angle
+
+[Term]
+id: PATO:0001154
+name: elongated
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the bearer's length being notably higher than its width." [WordNet:WordNet]
+subset: value_slim
+is_a: PATO:0000052 ! shape
+relationship: is_opposite_of PATO:0002364 ! shortened
+
+[Term]
+id: PATO:0001201
+name: Y-shaped
+namespace: quality
+def: "A concave 3-D shape quality inhering in a bearer by virtue of the bearer's being shaped in the form of the letter Y." [WordNet:WordNet]
+subset: cell_quality
+subset: value_slim
+is_a: PATO:0001890 ! tripartite
 
 [Term]
 id: PATO:0001236
@@ -607,6 +1155,45 @@ subset: attribute_slim
 is_a: PATO:0001291 ! electromagnetic (EM) radiation quality
 
 [Term]
+id: PATO:0001303
+name: variability
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the bearer's disposition to varying or changing." [Dictionary:http\://dictionary.reference.com/]
+subset: attribute_slim
+synonym: "variability of a physical quality" RELATED []
+is_a: PATO:0001236 ! process quality
+
+[Term]
+id: PATO:0001323
+name: area
+namespace: quality
+def: "A 2-D extent quality inhering in a bearer by virtue of the bearer's two dimensional extent." [Wikipedia:http\://en.wikipedia.org/wiki/Area]
+subset: attribute_slim
+subset: mpath_slim
+subset: scalar_slim
+is_a: PATO:0001709 ! 2-D extent
+
+[Term]
+id: PATO:0001334
+name: diameter
+namespace: quality
+def: "A length quality which is equal to the length of any straight line segment that passes through the center of a circle and whose endpoints are on the circular boundary." [Wikipedia:http\://en.wikipedia.org/wiki/Diameter]
+subset: attribute_slim
+subset: mpath_slim
+subset: scalar_slim
+is_a: PATO:0000122 ! length
+
+[Term]
+id: PATO:0001355
+name: convex
+namespace: quality
+def: "A shape quality that obtains by virtue of the bearer having inward facing edges; having a surface or boundary that curves or bulges outward, as the exterior of a sphere." [PATOC:GVG]
+subset: cell_quality
+subset: value_slim
+is_a: PATO:0002005 ! concavity
+relationship: is_opposite_of PATO:0001857 ! concave
+
+[Term]
 id: PATO:0001396
 name: cellular quality
 namespace: quality
@@ -651,6 +1238,52 @@ subset: value_slim
 is_a: PATO:0001404 ! nucleate quality
 
 [Term]
+id: PATO:0001422
+name: dead
+namespace: quality
+def: "A viability quality inhering in a bearer by virtue of the cessation of the bearer's life." [PATOC:GVG]
+subset: value_slim
+is_a: PATO:0000169 ! viability
+
+[Term]
+id: PATO:0001431
+name: adhesivity
+namespace: quality
+def: "An emergent molecular quality that arises by virtue of the bearer's disposition to exhibit molecular attraction to another entity in contact." [PATOC:GVG]
+comment: The definition is general enough to cover adhesion arising from different kinds of chemical bonding/forces, although for PATO this term will most commonly used for cellular adhesion. See also GO:0031589 "cell-substrate adhesion".
+subset: attribute_slim
+subset: disposition_slim
+subset: relational_slim
+synonym: "adhesiveness" EXACT []
+synonym: "stickiness" RELATED []
+is_a: PATO:0001018 ! physical quality
+
+[Term]
+id: PATO:0001433
+name: growth quality of occurrent
+namespace: quality
+alt_id: PATO:0001489
+def: "A quality of a single process which describes the growth of an organism, structure, or group of organisms." [PATOC:MAH]
+subset: attribute_slim
+synonym: "growth quality of a process" RELATED []
+synonym: "growth timing quality" RELATED []
+is_a: PATO:0001236 ! process quality
+
+[Term]
+id: PATO:0001450
+name: edematous
+namespace: quality
+def: "A structural quality which is held by a bearer when the latter exhibits an excessive accumulation of extracellular fluid." [thefreedictionary.com:thefreedictionary.com]
+subset: mpath_slim
+subset: value_slim
+synonym: "edema" NARROW []
+synonym: "edemic" EXACT []
+synonym: "oedema" NARROW []
+synonym: "oedematous" EXACT []
+synonym: "oedemic" EXACT []
+is_a: PATO:0000025 ! composition
+
+[Term]
 id: PATO:0001468
 name: curved dorsal
 namespace: quality
@@ -658,6 +1291,16 @@ def: "A curvature quality inhering in a bearer by virtue of the bearer's being c
 subset: value_slim
 synonym: "curved posterior (human torso)" EXACT []
 synonym: "curved superior (human head)" EXACT []
+is_a: PATO:0000406 ! curved
+
+[Term]
+id: PATO:0001469
+name: curved ventral
+namespace: quality
+def: "A curvature quality inhering in a bearer by virtue of the bearer's being curved towards the abdomen of an organism." [PATOC:GVG]
+subset: value_slim
+synonym: "curved anterior (human torso)" EXACT []
+synonym: "curved inferior (human head)" EXACT []
 is_a: PATO:0000406 ! curved
 
 [Term]
@@ -697,6 +1340,115 @@ intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
 relationship: is_opposite_of PATO:0001475 ! increased position
 
 [Term]
+id: PATO:0001483
+name: aplastic
+namespace: quality
+def: "Absence of an organ, tissue or cell due to failure to develop from a primordium or precursor cell." [PATOC:GVG, PATOC:PortlandMeetingFeb2015]
+comment: With aplasia, the primordium or precursor develops, but does not proceed in its development to a mature structure
+subset: mpath_slim
+subset: value_slim
+synonym: "aplasia" EXACT []
+synonym: "undeveloped" EXACT []
+is_a: PATO:0002290 ! aplastic/hypoplastic
+is_a: PATO:0002291 ! agenesis
+intersection_of: PATO:0002290 ! aplastic/hypoplastic
+intersection_of: PATO:0002291 ! agenesis
+
+[Term]
+id: PATO:0001485
+name: condensed
+namespace: quality
+alt_id: PATO:0001840
+def: "A structural quality inhering in a bearer by virtue of the bearer's being thicker or more closely packed together; pressed tightly together." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+synonym: "compact" BROAD []
+synonym: "compressed" EXACT []
+synonym: "dense" RELATED []
+synonym: "squashed" EXACT []
+is_a: PATO:0000141 ! structure
+relationship: is_opposite_of PATO:0002452 ! decondensed
+
+[Term]
+id: PATO:0001490
+name: heterochronic growth
+namespace: quality
+def: "A growth quality of a process inhering in an organism, structure, or group of organisms by virtue of the bearer's reduced or increased growth." [PATOC:MAH]
+subset: value_slim
+is_a: PATO:0001433 ! growth quality of occurrent
+
+[Term]
+id: PATO:0001499
+name: spherical
+namespace: quality
+alt_id: PATO:0000408
+def: "A spheroid quality inhering in a bearer by virtue of the bearer's resembling a ball (a sphere whose equatorial diameter is equal to the polar diameter)." [WordNet:WordNet]
+subset: cell_quality
+subset: mpath_slim
+subset: value_slim
+synonym: "globular" EXACT []
+synonym: "rotund" RELATED []
+is_a: PATO:0001865 ! spheroid
+relationship: has_cross_section PATO:0000411 ! circular
+
+[Term]
+id: PATO:0001501
+name: immature
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the bearer's lacking complete growth, differentiation, or development." [Merriam-Webster:Merriam-Webster]
+subset: value_slim
+synonym: "underdeveloped" RELATED []
+is_a: PATO:0000261 ! maturity
+relationship: is_opposite_of PATO:0001701 ! mature
+
+[Term]
+id: PATO:0001502
+name: complexity
+namespace: quality
+def: "A monadic quality of continuant inhering in a bearer by virtue of the bearer's being intricate and compounded." [WordNet:WordNet]
+comment: TODO: obsolete this.
+subset: attribute_slim
+is_a: PATO:0000141 ! structure
+
+[Term]
+id: PATO:0001503
+name: simple
+namespace: quality
+def: "A complexity quality in a bearer by virtue of the bearer's having few parts or being complicated or compound." [WordNet:WordNet]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0001502 ! complexity
+
+[Term]
+id: PATO:0001505
+name: separated from
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's not being in contact with another entity, or of no longer being connected or joined with another entity." [WordNet:WordNet]
+subset: relational_slim
+subset: value_slim
+synonym: "discontiguous" RELATED []
+synonym: "divided_from" RELATED []
+synonym: "splitted from" RELATED []
+is_a: PATO:0000141 ! structure
+
+[Term]
+id: PATO:0001507
+name: disrupted
+namespace: quality
+def: "A quality of a single process inhering in a bearer by virtue of the bearer's being interrupted of its normal course." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0000057 ! occurrence
+
+[Term]
+id: PATO:0001542
+name: delayed phase
+namespace: quality
+def: "A phase which starts later than natural start point." [PATOC:GVG]
+subset: value_slim
+is_a: PATO:0000083 ! phase
+
+[Term]
 id: PATO:0001555
 name: has number of
 namespace: quality
@@ -722,12 +1474,73 @@ subset: value_slim
 is_a: PATO:0001564 ! extra or missing processual parts
 
 [Term]
+id: PATO:0001562
+name: decreased mass
+namespace: quality
+alt_id: PATO:0000579
+def: "A mass which is lower than normal or average." [PATO:GVG]
+subset: value_slim
+synonym: "low mass" EXACT []
+synonym: "small mass" EXACT []
+is_a: PATO:0000125 ! mass
+is_a: PATO:0002303 ! decreased object quality
+intersection_of: PATO:0000125 ! mass
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0001563 ! increased mass
+
+[Term]
+id: PATO:0001563
+name: increased mass
+namespace: quality
+alt_id: PATO:0000578
+def: "A mass which is higher than normal or average." [PATO:GVG]
+subset: value_slim
+synonym: "high mass" EXACT []
+synonym: "large mass" EXACT []
+is_a: PATO:0000125 ! mass
+is_a: PATO:0002305 ! increased object quality
+intersection_of: PATO:0000125 ! mass
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0001562 ! decreased mass
+
+[Term]
 id: PATO:0001564
 name: extra or missing processual parts
 namespace: quality
 def: "A quality of a process inhering in a bearer by virtue of the bearer's processual parts." [PATOC:GVG]
 subset: relational_slim
 is_a: PATO:0001236 ! process quality
+
+[Term]
+id: PATO:0001566
+name: distributed
+namespace: quality
+alt_id: PATO:0001513
+def: "A spatial pattern inhering in a bearer by virtue of the bearer's being spread out or scattered about or divided up." [WordNet:WordNet]
+subset: mpath_slim
+subset: value_slim
+synonym: "diffuse" EXACT []
+synonym: "scattered" EXACT []
+is_a: PATO:0000060 ! spatial pattern
+relationship: is_opposite_of PATO:0001567 ! undistributed
+
+[Term]
+id: PATO:0001567
+name: undistributed
+namespace: quality
+def: "A spatial pattern inhering in a bearer by virtue of the bearer's not being spread out or scattered about or divided up." [WordNet:WordNet]
+subset: value_slim
+is_a: PATO:0000060 ! spatial pattern
+relationship: is_opposite_of PATO:0001566 ! distributed
+
+[Term]
+id: PATO:0001571
+name: dilated
+namespace: quality
+def: "A size quality inhering in a bearer by virtue of the bearer's being made wider or larger in all dimensions." [WordNet:WordNet]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0000586 ! increased size
 
 [Term]
 id: PATO:0001591
@@ -762,6 +1575,17 @@ intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
 relationship: is_opposite_of PATO:0001592 ! increased curvature
 
 [Term]
+id: PATO:0001598
+name: protruding
+namespace: quality
+alt_id: PATO:0001644
+def: "A quality inhering in a bearer by virtue of the bearer's extending out above or beyond a surface or boundary." [WordNet:WordNet]
+subset: value_slim
+synonym: "protruding" EXACT []
+synonym: "relational protruding quality" EXACT []
+is_a: PATO:0000140 ! position
+
+[Term]
 id: PATO:0001617
 name: deformed
 namespace: quality
@@ -770,6 +1594,104 @@ subset: value_slim
 synonym: "disfigured" RELATED []
 synonym: "distorted" RELATED []
 is_a: PATO:0000051 ! morphology
+
+[Term]
+id: PATO:0001645
+name: protruding into
+namespace: quality
+def: "A quality inhering into a bearer by virtue of the bearer's extending out above or beyond its surface or boundary into the surface or boundary of another entity." [PATOC:nc]
+subset: relational_slim
+subset: value_slim
+is_a: PATO:0001598 ! protruding
+
+[Term]
+id: PATO:0001646
+name: protruding out of
+namespace: quality
+def: "A quality inhering into a bearer by virtue of the bearer's extending out above or beyond its surface or boundary and outwards in relation to the physical space occupied by another entity." [PATOC:nc]
+subset: relational_slim
+subset: value_slim
+synonym: "exits through" RELATED []
+synonym: "exposed" RELATED []
+synonym: "extruding from" EXACT []
+is_a: PATO:0001598 ! protruding
+
+[Term]
+id: PATO:0001649
+name: curved lateral
+namespace: quality
+def: "A curvature quality inhering in a bearer by virtue of the bearer's being curved towards the side." [PATOC:GVG]
+subset: value_slim
+is_a: PATO:0000406 ! curved
+
+[Term]
+id: PATO:0001652
+name: alignment
+namespace: quality
+def: "A spatial quality inhering in a bearer by virtue of the bearer's spatial positioning with respect to an additional entity." [PATOC:GVG]
+subset: attribute_slim
+subset: relational_slim
+is_a: PATO:0000140 ! position
+relationship: has_part PATO:0000133 ! orientation
+
+[Term]
+id: PATO:0001653
+name: aligned with
+namespace: quality
+def: "An alignment quality inhering in a bearer by virtue of the bearer's being in a proper spatial positioning with respect to an additional entity." [PATO:GVG]
+subset: relational_slim
+subset: value_slim
+synonym: "aligned" EXACT []
+synonym: "aligned to" RELATED []
+is_a: PATO:0001652 ! alignment
+relationship: is_opposite_of PATO:0001654 ! misaligned with
+
+[Term]
+id: PATO:0001654
+name: misaligned with
+namespace: quality
+def: "An alignment quality inhering in a bearer by virtue of the bearer's being in a improper spatial positioning with respect to an additional entity." [PATOC:GVG]
+subset: relational_slim
+subset: value_slim
+synonym: "misaligned" EXACT []
+synonym: "unaligned with" EXACT []
+is_a: PATO:0001652 ! alignment
+relationship: is_opposite_of PATO:0001653 ! aligned with
+
+[Term]
+id: PATO:0001671
+name: increased distribution
+namespace: quality
+def: "A distribution which is relatively high." [PATOC:GVG]
+subset: value_slim
+synonym: "high distribution" EXACT []
+is_a: PATO:0001475 ! increased position
+is_a: PATO:0001566 ! distributed
+intersection_of: PATO:0001566 ! distributed
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0001672 ! decreased distribution
+
+[Term]
+id: PATO:0001672
+name: decreased distribution
+namespace: quality
+def: "A distribution which is relatively low." [PATOC:GVG]
+subset: value_slim
+synonym: "low distribution" EXACT []
+is_a: PATO:0001476 ! decreased position
+is_a: PATO:0001566 ! distributed
+intersection_of: PATO:0001566 ! distributed
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0001671 ! increased distribution
+
+[Term]
+id: PATO:0001701
+name: mature
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the bearer's exhibiting complete growth, differentiation, or development." [Merriam-Webster:Merriam-Webster]
+subset: value_slim
+is_a: PATO:0000261 ! maturity
+relationship: is_opposite_of PATO:0001501 ! immature
 
 [Term]
 id: PATO:0001708
@@ -781,12 +1703,115 @@ synonym: "1-D size" EXACT []
 is_a: PATO:0000117 ! size
 
 [Term]
+id: PATO:0001709
+name: 2-D extent
+namespace: quality
+def: "A size quality inhering in an bearer by virtue of the bearer's extension in two dimensions." [PATOC:GVG]
+subset: attribute_slim
+synonym: "2-D size" EXACT []
+is_a: PATO:0000117 ! size
+
+[Term]
+id: PATO:0001710
+name: 3-D extent
+namespace: quality
+def: "A size quality inhering in an bearer by virtue of the bearer's extension in three dimensions." [PATOC:GVG]
+subset: attribute_slim
+synonym: "3D size" EXACT []
+is_a: PATO:0000117 ! size
+
+[Term]
+id: PATO:0001714
+name: increased diameter
+namespace: quality
+def: "A diameter which is relatively large." [PATOC:GVG]
+subset: value_slim
+is_a: PATO:0000573 ! increased length
+is_a: PATO:0001334 ! diameter
+intersection_of: PATO:0001334 ! diameter
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0001715 ! decreased diameter
+
+[Term]
+id: PATO:0001715
+name: decreased diameter
+namespace: quality
+def: "A diameter which is relatively small." [PATOC:GVG]
+subset: value_slim
+is_a: PATO:0000574 ! decreased length
+is_a: PATO:0001334 ! diameter
+intersection_of: PATO:0001334 ! diameter
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0001714 ! increased diameter
+
+[Term]
+id: PATO:0001738
+name: dissociated from
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's lacking physically interaction with another entity." [PATOC:GVG]
+subset: relational_slim
+subset: value_slim
+synonym: "dissociated" EXACT []
+is_a: PATO:0000141 ! structure
+
+[Term]
 id: PATO:0001739
 name: radiation quality
 namespace: quality
 def: "A quality that inheres in an bearer by virtue of how that bearer interacts with radiation." [PATOC:GVG]
 subset: attribute_slim
 is_a: PATO:0001018 ! physical quality
+
+[Term]
+id: PATO:0001749
+name: paedomorphic growth
+namespace: quality
+def: "A heterochronic growth quality inhering in an organism, structure, or group of organisms by virtue of the bearer's reduced growth." [PATOC:mh]
+subset: value_slim
+synonym: "hypoplastic growth" EXACT []
+synonym: "pedomorphic growth" EXACT []
+is_a: PATO:0001490 ! heterochronic growth
+relationship: is_opposite_of PATO:0001752 ! peramorphic growth
+
+[Term]
+id: PATO:0001752
+name: peramorphic growth
+namespace: quality
+def: "A heterochronic growth quality inhering in an organism, structure, or group of organisms by virtue of the bearer's increased growth." [PATOC:mh]
+subset: attribute_slim
+synonym: "hyperplastic growth" EXACT []
+is_a: PATO:0001490 ! heterochronic growth
+relationship: is_opposite_of PATO:0001749 ! paedomorphic growth
+
+[Term]
+id: PATO:0001755
+name: hypermorphic growth
+namespace: quality
+def: "A peramorphic growth quality which is due to a delayed offset." [PATOC:mh]
+subset: value_slim
+is_a: PATO:0001752 ! peramorphic growth
+
+[Term]
+id: PATO:0001770
+name: semi-viable
+namespace: quality
+def: "A viability quality inhering in a population by virtue of some of it's members' ability to survive." [PATOC:CVC]
+subset: disposition_slim
+subset: value_slim
+is_a: PATO:0000169 ! viability
+
+[Term]
+id: PATO:0001772
+name: surrounding
+namespace: quality
+def: "A spatial quality inhering in a bearer by virtue of the bearer's being extended on all sides of another entity simultaneously." [thefreedictionary.com:thefreedictionary.com]
+comment: Nedd to add reciprocal of relationship to 'surrounded by' PATO:0005016.
+subset: relational_slim
+subset: value_slim
+synonym: "encircling" EXACT []
+synonym: "enclosing" EXACT []
+synonym: "wrapping" EXACT []
+is_a: PATO:0000140 ! position
 
 [Term]
 id: PATO:0001784
@@ -815,6 +1840,215 @@ synonym: "forked" RELATED []
 synonym: "septate" NARROW []
 synonym: "subdivided" RELATED []
 is_a: PATO:0000052 ! shape
+disjoint_from: PATO:0002034 ! undivided
+
+[Term]
+id: PATO:0001794
+name: coiling
+namespace: quality
+def: "A shape quality inhering in a bearer by virtue of the bearer's being wound in a continuous series of loops." [Online_Dictionary:Online_Dictionary]
+subset: attribute_slim
+is_a: PATO:0000052 ! shape
+
+[Term]
+id: PATO:0001795
+name: increased coiling
+namespace: quality
+def: "A coiling which is relatively high." [PATOC:GVG]
+subset: cell_quality
+subset: value_slim
+synonym: "high coiling" EXACT []
+is_a: PATO:0000404 ! coiled
+is_a: PATO:0002305 ! increased object quality
+intersection_of: PATO:0000404 ! coiled
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0001796 ! decreased coiling
+
+[Term]
+id: PATO:0001796
+name: decreased coiling
+namespace: quality
+def: "A coiling which is relatively low." [PATOC:GVG]
+subset: cell_quality
+subset: value_slim
+synonym: "low coiling" EXACT []
+is_a: PATO:0000404 ! coiled
+is_a: PATO:0002303 ! decreased object quality
+intersection_of: PATO:0000404 ! coiled
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0001795 ! increased coiling
+
+[Term]
+id: PATO:0001798
+name: kinked
+namespace: quality
+def: "A shape quality inhering in a bearer by virtue of the bearer's having multiple angles in its length." [thefreedictionary.com:thefreedictionary.com]
+subset: cell_quality
+subset: value_slim
+synonym: "tightly curled" RELATED []
+synonym: "twisted" RELATED []
+is_a: PATO:0000617 ! bent
+
+[Term]
+id: PATO:0001799
+name: ruffled
+namespace: quality
+def: "A shape quality inhering in a bearer by virtue of the bearer's exhibiting disturbance of its smoothness or regularity." [.thefreedictionary.com:.thefreedictionary.com]
+subset: cell_quality
+subset: value_slim
+is_a: PATO:0000052 ! shape
+
+[Term]
+id: PATO:0001802
+name: loose
+namespace: quality
+def: "A pattern quality inhering in a bearer by virtue of the bearer's not being compact or dense in arrangement." [answers.com:answers.com]
+subset: value_slim
+is_a: PATO:0000330 ! irregular spatial pattern
+
+[Term]
+id: PATO:0001847
+name: constricted
+namespace: quality
+alt_id: PATO:0001837
+def: "A structural quality inhering in a bearer by virtue of the bearer's being drawn together, compressed or squeezed physically." [WordNet:WordNet]
+subset: value_slim
+synonym: "stenosis" EXACT []
+synonym: "stenotic" EXACT []
+synonym: "stricture" EXACT []
+is_a: PATO:0000141 ! structure
+
+[Term]
+id: PATO:0001857
+name: concave
+namespace: quality
+def: "A shape quality in a bearer by virtue of the bearer's curving inward." [WordNet:WordNet]
+subset: cell_quality
+subset: value_slim
+is_a: PATO:0002005 ! concavity
+relationship: is_opposite_of PATO:0001355 ! convex
+
+[Term]
+id: PATO:0001861
+name: fasciculated
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's forming a bundle of aligned anatomical fibers, as of muscle or nerve." [answers.com:answers.com]
+subset: mpath_slim
+subset: value_slim
+synonym: "fascicled" EXACT []
+is_a: PATO:0002013 ! fasciculation
+disjoint_from: PATO:0001959 ! defasciculated
+relationship: is_opposite_of PATO:0001959 ! defasciculated
+
+[Term]
+id: PATO:0001865
+name: spheroid
+namespace: quality
+alt_id: PATO:0001864
+def: "A convex 3-D shape quality inhering in a bearer by virtue of the bearer's having a quadric surface in three dimensions obtained by rotating an ellipse about one of its principal axes. Includes spheres and oblate/prolate spheroids." [Wikipedia:http\://en.wikipedia.org/wiki/Spheroid]
+subset: cell_quality
+subset: mpath_slim
+subset: value_slim
+synonym: "sphericality" RELATED []
+is_a: PATO:0002007 ! convex 3-D shape
+
+[Term]
+id: PATO:0001873
+name: cylindrical
+namespace: quality
+alt_id: PATO:0001203
+def: "A convex 3-D shape quality inhering in a bearer by virtue of the bearer's exhibiting a consistently-sized round cross section." [PATOC:MAH]
+subset: cell_quality
+subset: value_slim
+synonym: "rod-like" EXACT []
+synonym: "rod-shaped" EXACT []
+synonym: "tubulate" NARROW []
+is_a: PATO:0002007 ! convex 3-D shape
+relationship: has_cross_section PATO:0000411 ! circular
+
+[Term]
+id: PATO:0001875
+name: triangular
+namespace: quality
+def: "A shape quality inhering in a bearer by virtue of the bearer's having three angles." [wordreference:wordreference]
+subset: cell_quality
+subset: value_slim
+synonym: "delta shaped" RELATED []
+synonym: "deltoid" EXACT []
+synonym: "triangle" RELATED []
+synonym: "triangle-shaped" RELATED []
+is_a: PATO:0002006 ! 2-D shape
+
+[Term]
+id: PATO:0001879
+name: U-shaped
+namespace: quality
+def: "A concave 3-D shape quality inhering in a bearer by virtue of the bearer's being shaped in the form of the letter U." [WordNet:WordNet]
+subset: cell_quality
+subset: value_slim
+synonym: "horseshoe" NARROW []
+synonym: "horseshoe shaped" EXACT []
+is_a: PATO:0002008 ! concave 3-D shape
+
+[Term]
+id: PATO:0001890
+name: tripartite
+namespace: quality
+def: "A concave 3-D shape quality inhering in a bearer by virtue of the bearer's being divided into three branches." [InfoVisual:InfoVisual]
+subset: cell_quality
+subset: value_slim
+synonym: "trifurcate" EXACT []
+is_a: PATO:0000402 ! branched
+is_a: PATO:0002008 ! concave 3-D shape
+
+[Term]
+id: PATO:0001894
+name: phenotypic sex
+namespace: quality
+def: "An organismal quality inhering in a bearer by virtue of the bearer's physical expression of sexual characteristics." []
+subset: attribute_slim
+is_a: PATO:0000047 ! biological sex
+
+[Term]
+id: PATO:0001905
+name: has normal numbers of parts of type
+namespace: quality
+def: "The bearer of this quality has_part = n, where n is the normal amount for a comparable organism. Note that the bearer of the quality is the whole, not the part." [PATOC:CJM]
+subset: relational_slim
+synonym: "having physical part" EXACT []
+is_a: PATO:0001555 ! has number of
+
+[Term]
+id: PATO:0001920
+name: mislocalised ventrally
+namespace: quality
+def: "A positional quality inhering in a bearer by virtue of the bearer's being positioned towards the abdomen of an organism." [PATOC:mb]
+subset: value_slim
+is_a: PATO:0000628 ! mislocalised
+
+[Term]
+id: PATO:0001921
+name: mislocalised anteriorly
+namespace: quality
+def: "A positional quality inhering in a bearer by virtue of the bearer's being positioned towards the front of an organism." [PATOC:mb]
+subset: value_slim
+is_a: PATO:0000628 ! mislocalised
+
+[Term]
+id: PATO:0001922
+name: mislocalised posteriorly
+namespace: quality
+def: "A positional quality inhering in a bearer by virtue of the bearer's being positioned towards the rear of an organism." [PATOC:mb]
+subset: value_slim
+is_a: PATO:0000628 ! mislocalised
+
+[Term]
+id: PATO:0001924
+name: mislocalised medially
+namespace: quality
+def: "A positional quality inhering in a bearer by virtue of the bearer's being positioned towards the middle of an organism." [PATOC:mb]
+subset: value_slim
+is_a: PATO:0000628 ! mislocalised
 
 [Term]
 id: PATO:0001928
@@ -825,6 +2059,95 @@ subset: mpath_slim
 subset: value_slim
 synonym: "blistering" NARROW []
 is_a: PATO:0000150 ! texture
+
+[Term]
+id: PATO:0001929
+name: variability of shape
+namespace: quality
+def: "A variability quality inhering in a bearer by virtue of whether the bearer exhibits shape variation or change." [PATOC:GVG]
+subset: attribute_slim
+is_a: PATO:0001303 ! variability
+relationship: towards PATO:0000052 ! shape
+
+[Term]
+id: PATO:0001930
+name: variant shape
+namespace: quality
+def: "A quality inhering in a bearer by virtue the bearer's having or exhibiting variation its shape." [PATOC:GVG]
+subset: value_slim
+is_a: PATO:0001929 ! variability of shape
+relationship: is_opposite_of PATO:0001931 ! invariant shape
+
+[Term]
+id: PATO:0001931
+name: invariant shape
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the bearer's lacking or not exhibiting variation of shape." [PATOC:GVG]
+subset: value_slim
+is_a: PATO:0001929 ! variability of shape
+relationship: is_opposite_of PATO:0001930 ! variant shape
+
+[Term]
+id: PATO:0001935
+name: obtuse
+namespace: quality
+def: "A shape quality inhering in a bearer by virtue of the bearer's being roundish, a little inclining to be oblong." [ISBN:0881923214]
+subset: value_slim
+synonym: "roundish" EXACT []
+is_a: PATO:0000411 ! circular
+
+[Term]
+id: PATO:0001956
+name: variability of size
+namespace: quality
+def: "A variability quality inhering in a bearer by virtue of whether the bearer exhibits size variation or change." [PATOC:GVG]
+subset: attribute_slim
+is_a: PATO:0001303 ! variability
+relationship: towards PATO:0000117 ! size
+
+[Term]
+id: PATO:0001957
+name: decreased variability of size
+namespace: quality
+def: "A variability of size which is relatively low." [PATOC:GVG]
+subset: value_slim
+synonym: "low variability of size" EXACT []
+is_a: PATO:0001956 ! variability of size
+is_a: PATO:0002302 ! decreased process quality
+is_a: PATO:0002303 ! decreased object quality
+intersection_of: PATO:0001956 ! variability of size
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0001958 ! increased variability of size
+
+[Term]
+id: PATO:0001958
+name: increased variability of size
+namespace: quality
+def: "A variability of size which is relatively high." [PATOC:GVG]
+subset: value_slim
+synonym: "high variability of size" EXACT []
+is_a: PATO:0001956 ! variability of size
+is_a: PATO:0002304 ! increased process quality
+is_a: PATO:0002305 ! increased object quality
+intersection_of: PATO:0001956 ! variability of size
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0001957 ! decreased variability of size
+
+[Term]
+id: PATO:0001959
+name: defasciculated
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's in which bundles of aligned anatomical fibers have become separated." [PATOC:mw]
+subset: value_slim
+is_a: PATO:0002013 ! fasciculation
+relationship: is_opposite_of PATO:0001861 ! fasciculated
+
+[Term]
+id: PATO:0001995
+name: organismal quality
+namespace: quality
+def: "A quality that inheres in an entire organism or part of an organism." [PATOC:CJM]
+is_a: PATO:0001241 ! physical object quality
 
 [Term]
 id: PATO:0001997
@@ -903,6 +2226,47 @@ intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
 relationship: is_opposite_of PATO:0002001 ! has fewer parts of type
 
 [Term]
+id: PATO:0002005
+name: concavity
+namespace: quality
+def: "Surface shape that refers to the inward or outward curvature of the surface." [PATOC:MAH]
+subset: attribute_slim
+is_a: PATO:0000052 ! shape
+
+[Term]
+id: PATO:0002006
+name: 2-D shape
+namespace: quality
+def: "A shape that inheres in a 2 dimensional entity, such as a cross section or projection of a 3 dimensional entity." [PATOC:CJM]
+subset: attribute_slim
+synonym: "2-D projection" RELATED []
+synonym: "cross-sectional" RELATED []
+is_a: PATO:0000052 ! shape
+
+[Term]
+id: PATO:0002007
+name: convex 3-D shape
+namespace: quality
+def: "A complete three dimensional shape in which for every line connecting pair of points on the object is within the object. Or: a shape lacking cavities. Contrast: concave." [PATOC:CJM]
+comment: Use this term or an is_a child of this term when the entire shape of the object is known.
+subset: attribute_slim
+xref: Image:http\://upload.wikimedia.org/wikipedia/commons/0/06/Convex_polygon_illustration1.png
+is_a: PATO:0002266 ! 3-D shape
+relationship: has_cross_section PATO:0002006 ! 2-D shape
+relationship: is_opposite_of PATO:0002008 ! concave 3-D shape
+
+[Term]
+id: PATO:0002008
+name: concave 3-D shape
+namespace: quality
+def: "A complete three dimensional shape in which there is a line connecting pair of points on the object that lies outside the object. Or: a shape with cavities. Contrast: concave." [PATOC:CJM]
+subset: attribute_slim
+xref: Image:http\://en.wikipedia.org/wiki/Image\:Convex_polygon_illustration2.png
+is_a: PATO:0002266 ! 3-D shape
+relationship: has_part PATO:0001857 ! concave
+relationship: is_opposite_of PATO:0002007 ! convex 3-D shape
+
+[Term]
 id: PATO:0002009
 name: branchiness
 namespace: quality
@@ -910,6 +2274,76 @@ def: "A shape quality inhering in a bearer by virtue of the degree to which ther
 subset: attribute_slim
 subset: cell_quality
 is_a: PATO:0000052 ! shape
+
+[Term]
+id: PATO:0002011
+name: neoplastic
+namespace: quality
+def: "A structural quality which is held by a bearer when the latter's disposition the presence of abnormally proliferating masses of cells." [PATOC:MAH]
+subset: disposition_slim
+subset: mpath_slim
+subset: value_slim
+synonym: "tumorous" EXACT []
+is_a: PATO:0000141 ! structure
+
+[Term]
+id: PATO:0002013
+name: fasciculation
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of whether the bearer forms a bundle of anatomical fibers, as of muscle or nerve." [answers.com:http\://www.answers.com/]
+subset: attribute_slim
+is_a: PATO:0000141 ! structure
+
+[Term]
+id: PATO:0002019
+name: aplastic growth
+namespace: quality
+def: "A growth quality of occurrent in which the growth of an organism, structure or group of organisms does not occur." [PATOC:MAH]
+synonym: "agenesis" NARROW []
+is_a: PATO:0001433 ! growth quality of occurrent
+
+[Term]
+id: PATO:0002021
+name: conical
+namespace: quality
+def: "A convex 3-D shape quality inhering in a bearer by virtue of the bearer's resembling a cone (a 3-D shape with a round cross section that tapers)." [Wikipedia:http\://en.wikipedia.org/wiki/Cone_(geometry)]
+subset: value_slim
+synonym: "cone-shaped" EXACT []
+xref: Image:http\://upload.wikimedia.org/wikipedia/commons/d/d2/Cone_3d.png
+is_a: PATO:0002007 ! convex 3-D shape
+
+[Term]
+id: PATO:0002034
+name: undivided
+namespace: quality
+def: "A shape quality inhering in a bearer by virtue of the bearer's being unseparated into parts or divisions." [PATOC:GVG]
+subset: value_slim
+synonym: "unseparated" RELATED []
+is_a: PATO:0000052 ! shape
+created_by: george
+creation_date: 2009-01-27T11:53:46Z
+
+[Term]
+id: PATO:0002037
+name: degeneration
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer exhibiting deterioration of its structure." [PATOC:GVG]
+subset: attribute_slim
+subset: scalar_slim
+is_a: PATO:0000141 ! structure
+created_by: george
+creation_date: 2009-02-03T11:13:19Z
+
+[Term]
+id: PATO:0002050
+name: normal amount
+namespace: quality
+def: "An amount which normal." [PATOC:GVG]
+synonym: "present in normal numbers in organism" EXACT []
+is_a: PATO:0000467 ! present
+relationship: reciprocal_of PATO:0001905 ! has normal numbers of parts of type
+created_by: george
+creation_date: 2009-03-20T11:16:22Z
 
 [Term]
 id: PATO:0002051
@@ -940,6 +2374,44 @@ created_by: George Gkoutos
 creation_date: 2009-03-26T11:12:35Z
 
 [Term]
+id: PATO:0002053
+name: dorso-ventrally flattened
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the bearer's being flattened along dorso-ventral axis." [PATOC:MSP]
+subset: value_slim
+is_a: PATO:0002254 ! flattened
+created_by: George Gkoutos
+creation_date: 2009-03-26T03:02:38Z
+
+[Term]
+id: PATO:0002057
+name: increased area
+namespace: quality
+def: "An area which is relatively high." [PATOC:GVG]
+subset: value_slim
+is_a: PATO:0000586 ! increased size
+is_a: PATO:0001323 ! area
+intersection_of: PATO:0001323 ! area
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0002058 ! decreased area
+created_by: George Gkoutos
+creation_date: 2009-03-30T04:11:43Z
+
+[Term]
+id: PATO:0002058
+name: decreased area
+namespace: quality
+def: "An area which is relatively low." [PATOC:GVG]
+subset: value_slim
+is_a: PATO:0000587 ! decreased size
+is_a: PATO:0001323 ! area
+intersection_of: PATO:0001323 ! area
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0002057 ! increased area
+created_by: George Gkoutos
+creation_date: 2009-03-30T04:12:11Z
+
+[Term]
 id: PATO:0002062
 name: physical quality of a process
 namespace: quality
@@ -947,6 +2419,17 @@ subset: attribute_slim
 is_a: PATO:0001236 ! process quality
 created_by: george
 creation_date: 2009-06-05T09:16:46Z
+
+[Term]
+id: PATO:0002076
+name: movement behavioral quality
+namespace: quality
+def: "A behavioral quality inhering in a bearer by virtue of the bearer's movement." [PATOC:GVG]
+subset: attribute_slim
+synonym: "movement behavioural quality" EXACT []
+is_a: PATO:0000186 ! behavioral quality
+created_by: George Gkoutos
+creation_date: 2009-09-18T02:04:48Z
 
 [Term]
 id: PATO:0002083
@@ -958,6 +2441,114 @@ subset: relational_slim
 is_a: PATO:0001555 ! has number of
 created_by: George Gkoutos
 creation_date: 2009-09-21T10:41:58Z
+
+[Term]
+id: PATO:0002099
+name: differentiated
+namespace: quality
+def: "A cellular quality inhering in a bearer by virtue of its stable specialization to a particular cell type." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0001397 ! cellular potency
+relationship: is_opposite_of PATO:0002100 ! undifferentiated
+created_by: george
+creation_date: 2009-10-05T12:58:54Z
+
+[Term]
+id: PATO:0002100
+name: undifferentiated
+namespace: quality
+def: "A cellular quality inhering in a bearer by virtue of having not yet acquired a special structure of function." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0001397 ! cellular potency
+relationship: is_opposite_of PATO:0002099 ! differentiated
+created_by: george
+creation_date: 2009-10-05T12:59:21Z
+
+[Term]
+id: PATO:0002105
+name: hemorrhagic
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's exhibiting excessive discharge of blood from the blood vessels." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0000141 ! structure
+created_by: george
+creation_date: 2009-10-05T01:55:53Z
+
+[Term]
+id: PATO:0002106
+name: poorly differentiated
+namespace: quality
+def: "A cellular quality inhering in a bearer by virtue of its lacking most of the cellular characteristics which would allow it to be fully differentiated." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0002099 ! differentiated
+created_by: george
+creation_date: 2009-10-05T02:53:43Z
+
+[Term]
+id: PATO:0002118
+name: multiple
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the bearer's being present in more than two copies." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0000470 ! increased amount
+created_by: george
+creation_date: 2009-10-06T03:28:38Z
+
+[Term]
+id: PATO:0002125
+name: nodular
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the bearer's consisting a knot-like mass." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0000141 ! structure
+created_by: george
+creation_date: 2009-10-06T04:40:06Z
+
+[Term]
+id: PATO:0002135
+name: delayed closure
+namespace: quality
+def: "A duration quality of a process inhering in a bearer by virtue of the bearer's delay to complete the closure of the opening of an anatomical entity." [PATOC:GVG]
+is_a: PATO:0000502 ! delayed
+created_by: george
+creation_date: 2009-10-26T01:03:17Z
+
+[Term]
+id: PATO:0002168
+name: displaced to
+namespace: quality
+def: "An angular placement quality inhering in a bearer by virtue of the bearer being changed in position in relation to another entity." [PATOC:GVG]
+subset: relational_slim
+synonym: "mislocalised to" RELATED []
+is_a: PATO:0000133 ! orientation
+created_by: george
+creation_date: 2010-01-14T04:45:18Z
+
+[Term]
+id: PATO:0002175
+name: deviation
+namespace: quality
+def: "A spatial quality inhering in a bearer by virtue of the bearer's changed direction of position towards another entity." [PATO:GVG]
+subset: attribute_slim
+is_a: PATO:0000060 ! spatial pattern
+created_by: George Gkoutos
+creation_date: 2010-02-25T09:14:42Z
+
+[Term]
+id: PATO:0002177
+name: deviation towards the medial side
+namespace: quality
+def: "A deviation quality inhering in a bearer by virtue of the bearer's changed direction of position towards the middle." [PATOC:GVG]
+subset: value_slim
+is_a: PATO:0002175 ! deviation
+created_by: George Gkoutos
+creation_date: 2010-02-25T09:16:56Z
 
 [Term]
 id: PATO:0002181
@@ -1040,6 +2631,130 @@ created_by: george
 creation_date: 2010-08-09T04:17:37Z
 
 [Term]
+id: PATO:0002254
+name: flattened
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the bearer's surface becoming more extended in a plane." [PATOC:CVS]
+comment: Becoming flat but not necessarily completely flat.
+subset: value_slim
+synonym: "compressed" RELATED []
+is_a: PATO:0001591 ! curvature
+created_by: george
+creation_date: 2010-08-16T03:59:34Z
+
+[Term]
+id: PATO:0002259
+name: adjacent to
+namespace: quality
+alt_id: PATO:0001771
+def: "A spatial quality inhering in a bearer by virtue of the bearer's being located near in space in relation to another entity." [PATOC:GVG]
+subset: relational_slim
+subset: value_slim
+synonym: "approaches" EXACT []
+synonym: "close to" EXACT []
+synonym: "near to" EXACT []
+synonym: "vicinity of" EXACT []
+is_a: PATO:0000140 ! position
+created_by: george
+creation_date: 2010-09-08T03:20:06Z
+
+[Term]
+id: PATO:0002260
+name: semi erect
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the bearer's being partially upright in position or posture." [PATOC:GVG]
+synonym: "semi upright" EXACT []
+is_a: PATO:0000622 ! erect
+created_by: george
+creation_date: 2010-09-08T03:27:21Z
+
+[Term]
+id: PATO:0002264
+name: organization quality
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's being arranged in a systematic fashion." [PATOC:GVG]
+subset: attribute_slim
+is_a: PATO:0000141 ! structure
+created_by: george
+creation_date: 2010-09-16T10:22:52Z
+
+[Term]
+id: PATO:0002266
+name: 3-D shape
+namespace: quality
+def: "A shape that inheres in a 3 dimensional entity." [PATOC:OREGON]
+is_a: PATO:0000052 ! shape
+created_by: george
+creation_date: 2010-10-05T12:31:16Z
+
+[Term]
+id: PATO:0002282
+name: increased mobility
+namespace: quality
+def: "A mobility which is relative high." [PATO:GVG]
+subset: value_slim
+is_a: PATO:0000299 ! mobile
+is_a: PATO:0002305 ! increased object quality
+intersection_of: PATO:0000299 ! mobile
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0002283 ! decreased mobility
+created_by: george
+creation_date: 2011-03-09T09:16:03Z
+
+[Term]
+id: PATO:0002283
+name: decreased mobility
+namespace: quality
+def: "A mobility which is relative low." [PATOC:GVG]
+subset: value_slim
+is_a: PATO:0000299 ! mobile
+is_a: PATO:0002303 ! decreased object quality
+intersection_of: PATO:0000299 ! mobile
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0002282 ! increased mobility
+created_by: george
+creation_date: 2011-03-09T09:16:47Z
+
+[Term]
+id: PATO:0002285
+name: increased branchiness
+namespace: quality
+def: "Branchiness quality inhering in a bearer by virtue of increasing the degree to which there are subdivisions or offshoots in a bearer entity." [PATOC:CVS]
+subset: value_slim
+is_a: PATO:0000402 ! branched
+relationship: is_opposite_of PATO:0002286 ! decreased branchiness
+created_by: george
+creation_date: 2011-03-10T09:07:57Z
+
+[Term]
+id: PATO:0002286
+name: decreased branchiness
+namespace: quality
+def: "Branchiness quality inhering in a bearer by virtue of decreasing the degree to which there are subdivisions or offshoots in a bearer entity." [PATOC:CVS]
+subset: value_slim
+is_a: PATO:0000402 ! branched
+relationship: is_opposite_of PATO:0002285 ! increased branchiness
+created_by: george
+creation_date: 2011-03-10T09:08:37Z
+
+[Term]
+id: PATO:0002290
+name: aplastic/hypoplastic
+namespace: quality
+is_a: PATO:0001241 ! physical object quality
+created_by: George Gkoutos
+creation_date: 2011-04-18T05:11:33Z
+
+[Term]
+id: PATO:0002291
+name: agenesis
+namespace: quality
+def: "Absence of a tissue or organ due to failure to develop." [PATO:GVG]
+is_a: PATO:0000462 ! absent
+created_by: George Gkoutos
+creation_date: 2011-04-18T05:17:34Z
+
+[Term]
 id: PATO:0002300
 name: increased quality
 namespace: quality
@@ -1118,6 +2833,27 @@ created_by: George Gkoutos
 creation_date: 2011-06-16T06:54:01Z
 
 [Term]
+id: PATO:0002312
+name: segmented
+namespace: quality
+def: "Consisting of segments or similar parts arranged in a longitudinal series." [OED:]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0000141 ! structure
+created_by: George Gkoutos
+creation_date: 2011-10-03T03:42:23Z
+
+[Term]
+id: PATO:0002318
+name: superelliptic
+namespace: quality
+def: "A shape constituting a transition between a rectangle and a circle; a closed curve, of which the circle and ellipse are special cases, whose parametric equation is x = a.cos2/rt, y = b.cos2/rt" [wiktionary:superellipse]
+synonym: "Lamé curve" EXACT []
+is_a: PATO:0002006 ! 2-D shape
+created_by: George Gkoutos
+creation_date: 2011-10-12T12:45:16Z
+
+[Term]
 id: PATO:0002323
 name: temporal distribution quality
 namespace: quality
@@ -1140,6 +2876,172 @@ created_by: George Gkoutos
 creation_date: 2011-11-23T11:46:00Z
 
 [Term]
+id: PATO:0002325
+name: onset quality
+namespace: quality
+def: "The temporal relation between the start of the process with respect to a reference process." [PATOC:LC]
+subset: attribute_slim
+synonym: "initiation" RELATED []
+is_a: PATO:0002323 ! temporal distribution quality
+created_by: George Gkoutos
+creation_date: 2011-11-23T11:47:34Z
+
+[Term]
+id: PATO:0002326
+name: angle
+namespace: quality
+def: "An orientation inhering in a bearer by virtue of the bearer's placement at an angle." [PATOC:GVG]
+subset: attribute_slim
+subset: relational_slim
+is_a: PATO:0000133 ! orientation
+created_by: George Gkoutos
+creation_date: 2011-11-23T12:06:09Z
+
+[Term]
+id: PATO:0002327
+name: increased angle to
+namespace: quality
+def: "An angle which is relatively high." [PATOC:GVG]
+subset: relational_slim
+subset: value_slim
+is_a: PATO:0001475 ! increased position
+is_a: PATO:0002326 ! angle
+intersection_of: PATO:0002326 ! angle
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0002328 ! decreased angle to
+created_by: George Gkoutos
+creation_date: 2011-11-23T12:06:38Z
+
+[Term]
+id: PATO:0002328
+name: decreased angle to
+namespace: quality
+def: "An angle which is relatively low." [PATOC:GVG]
+subset: relational_slim
+subset: value_slim
+is_a: PATO:0001476 ! decreased position
+is_a: PATO:0002326 ! angle
+intersection_of: PATO:0002326 ! angle
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0002327 ! increased angle to
+created_by: George Gkoutos
+creation_date: 2011-11-23T12:06:54Z
+
+[Term]
+id: PATO:0002331
+name: adhesive
+namespace: quality
+def: "A physical quality inhering in a bearer by virtue of the bearer exhibiting molecular attraction to another entity in contact." [PATOC:GVG]
+subset: value_slim
+synonym: "resinous" RELATED []
+is_a: PATO:0001431 ! adhesivity
+relationship: is_opposite_of PATO:0002332 ! non-adhesive
+created_by: gkoutos
+creation_date: 2012-01-31T12:28:16Z
+
+[Term]
+id: PATO:0002332
+name: non-adhesive
+namespace: quality
+def: "A physical quality inhering in a bearer by virtue of the bearer not exhibiting molecular attraction to another entity in contact." [PATOC:GVG]
+subset: value_slim
+synonym: "non-resinous" RELATED []
+is_a: PATO:0001431 ! adhesivity
+relationship: is_opposite_of PATO:0002331 ! adhesive
+created_by: gkoutos
+creation_date: 2012-01-31T12:28:57Z
+
+[Term]
+id: PATO:0002333
+name: increased adhesivity
+namespace: quality
+def: "A adhesivity which is relatively high." [PATOC:GVG]
+subset: value_slim
+is_a: PATO:0002305 ! increased object quality
+is_a: PATO:0002331 ! adhesive
+intersection_of: PATO:0002331 ! adhesive
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0002334 ! decreased adhesivity
+created_by: gkoutos
+creation_date: 2012-01-31T12:32:43Z
+
+[Term]
+id: PATO:0002334
+name: decreased adhesivity
+namespace: quality
+def: "A adhesivity which is relatively low." [PATOC:GVG]
+is_a: PATO:0002303 ! decreased object quality
+is_a: PATO:0002331 ! adhesive
+intersection_of: PATO:0002331 ! adhesive
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0002333 ! increased adhesivity
+created_by: gkoutos
+creation_date: 2012-01-31T12:42:22Z
+
+[Term]
+id: PATO:0002364
+name: shortened
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the bearer's length being notably lower than its width." [PATOC:GVG]
+subset: value_slim
+is_a: PATO:0000052 ! shape
+relationship: is_opposite_of PATO:0001154 ! elongated
+created_by: gkoutos
+creation_date: 2012-04-18T06:31:29Z
+
+[Term]
+id: PATO:0002395
+name: mislocalized abaxially
+namespace: quality
+def: "A positional quality inhering in a bearer by virtue of the bearer's being positioned away from the axis of an organism." [PATOC:EH]
+subset: value_slim
+is_a: PATO:0000628 ! mislocalised
+created_by: gkoutos
+creation_date: 2012-11-20T04:13:32Z
+
+[Term]
+id: PATO:0002452
+name: decondensed
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer being thinner or more losely packed." [PATOC:JL]
+subset: value_slim
+is_a: PATO:0000141 ! structure
+relationship: is_opposite_of PATO:0001485 ! condensed
+created_by: gkoutos
+creation_date: 2013-04-08T08:43:31Z
+
+[Term]
+id: PATO:0002463
+name: extends to
+namespace: quality
+def: "A positional quality inhering in a bearer by virtue of some aspect of the bearer extending to the position of another entity." [PATOC:WD]
+subset: relational_slim
+is_a: PATO:0000140 ! position
+created_by: gkoutos
+creation_date: 2013-09-15T11:41:00Z
+
+[Term]
+id: PATO:0002470
+name: transformed to
+namespace: quality
+def: "A morphological quality between two bearers inhering that one bearer is subject to change the nature, function, or condition of itself to become the other." [PATOC:LC]
+subset: relational_slim
+subset: value_slim
+is_a: PATO:0000051 ! morphology
+created_by: gkoutos
+creation_date: 2013-09-15T12:01:57Z
+
+[Term]
+id: PATO:0002481
+name: oblique orientation
+namespace: quality
+def: "An orientation quality inhering in a bearer by virtue of the bearer having a slanting direction or position : neither perpendicular nor parallel." [merriam-wester:http\://www.merriam-webster.com/dictionary/oblique]
+subset: value_slim
+is_a: PATO:0000133 ! orientation
+created_by: gkoutos
+creation_date: 2013-09-30T05:49:50Z
+
+[Term]
 id: PATO:0002505
 name: nucleated
 namespace: quality
@@ -1149,6 +3051,91 @@ subset: value_slim
 is_a: PATO:0001404 ! nucleate quality
 created_by: gkoutos
 creation_date: 2013-10-21T05:44:34Z
+
+[Term]
+id: PATO:0002508
+name: concealed
+namespace: quality
+def: "A positional quality inhering in a bearer by virtue of the bearer being hidden from view." [PATOC:EJS]
+subset: value_slim
+is_a: PATO:0000140 ! position
+created_by: segerdel
+creation_date: 2014-02-04T01:30:21Z
+
+[Term]
+id: PATO:0002516
+name: concealed by
+namespace: quality
+def: "A positional quality inhering in a bearer by virtue of the bearer being hidden from view or covered by another entity." [PATOC:EJS]
+subset: relational_slim
+subset: value_slim
+is_a: PATO:0000140 ! position
+created_by: segerdel
+creation_date: 2014-02-10T01:13:53Z
+
+[Term]
+id: PATO:0005012
+name: complete structure
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer being fully formed compared to entities lacking parts." [PATOC:WD]
+subset: value_slim
+is_a: PATO:0000141 ! structure
+relationship: is_opposite_of PATO:0005013 ! incomplete structure
+created_by: wasila.dahdul
+creation_date: 2014-09-25T15:11:47Z
+
+[Term]
+id: PATO:0005013
+name: incomplete structure
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's lacking parts or having a reduced form compared to fully formed entities." [PATOC:WD]
+subset: value_slim
+is_a: PATO:0000141 ! structure
+relationship: is_opposite_of PATO:0005012 ! complete structure
+created_by: wasila.dahdul
+creation_date: 2014-09-25T15:12:35Z
+
+[Term]
+id: PATO:0005020
+name: irregularly shaped
+namespace: quality
+def: "A shape quality inhering on a bearer by virtue of a bearer's shape lacking in pattern or uniformity; for example, it may have sides of different lengths, different curvatures, or unequal angles." [PATOC:WD]
+subset: value_slim
+is_a: PATO:0000052 ! shape
+created_by: wasila.dahdul
+creation_date: 2014-10-03T10:23:17Z
+
+[Term]
+id: PATO:0030000
+name: anterioralized
+namespace: quality
+def: "A malformed quality inhering in a bearer by virtue of the bearer's gross morphology containing what are normally anterior structures and missing some or all of what are normally posterior structures." [PATOC:EJS]
+is_a: PATO:0000646 ! malformed
+created_by: segerdel
+
+[Term]
+id: PATO:0030001
+name: dorsalized
+namespace: quality
+def: "A malformed quality inhering in a bearer by virtue of the bearer's gross morphology containing what are normally dorsal structures and missing some or all of what are normally ventral structures." [PATOC:EJS]
+is_a: PATO:0000646 ! malformed
+created_by: segerdel
+
+[Term]
+id: PATO:0030002
+name: posterioralized
+namespace: quality
+def: "A malformed quality inhering in a bearer by virtue of the bearer's gross morphology containing what are normally posterior structures and missing some or all of what are normally anterior structures." [PATOC:EJS]
+is_a: PATO:0000646 ! malformed
+created_by: segerdel
+
+[Term]
+id: PATO:0030003
+name: ventralized
+namespace: quality
+def: "A malformed quality inhering in a bearer by virtue of the bearer's gross morphology containing what are normally ventral structures and missing some or all of what are normally dorsal structures." [PATOC:EJS]
+is_a: PATO:0000646 ! malformed
+created_by: segerdel
 
 [Typedef]
 id: correlates_with
@@ -1173,6 +3160,13 @@ namespace: quality
 def: "q1 different_in_magnitude_relative_to q2 if and only if magnitude(q1) NOT =~ magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale." [PATOC:CJM]
 domain: PATO:0000001 ! quality
 range: PATO:0000001 ! quality
+
+[Typedef]
+id: has_cross_section
+name: has_cross_section
+namespace: quality
+def: "s3 has_cross_section s3 if and only if : there exists some 2d plane that intersects the bearer of s3, and the impression of s3 upon that plane has shape quality s2." [PATOC:CJM]
+comment: Example: a spherical object has the quality of being spherical, and the spherical quality has_cross_section round.
 
 [Typedef]
 id: has_part
@@ -1214,4 +3208,10 @@ name: reciprocal_of
 namespace: quality
 def: "q1 reciprocal_of q2 if and only if : q1 and q2 are relational qualities and a phenotype e q1 e2 mutually implies a phenotype e2 q2 e." [PATOC:CJM]
 comment: There are frequently two ways to state the same thing: we can say 'spermatocyte lacks asters' or 'asters absent from spermatocyte'. In this case the quality is 'lacking all parts of type' - it is a (relational) quality of the spermatocyte, and it is with respect to instances of 'aster'. One of the popular requirements of PATO is that it continue to support 'absent', so we need to relate statements which use this quality to the 'lacking all parts of type' quality.
+
+[Typedef]
+id: towards
+name: towards
+namespace: quality
+comment: Relation binding a relational quality or disposition to the relevant type of entity.
 

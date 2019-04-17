@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: xpo/releases/2019-04-11/imports/go_import.owl
+data-version: xpo/releases/2019-04-17/imports/go_import.owl
 ontology: xpo/imports/go_import
 
 [Term]
@@ -571,6 +571,22 @@ synonym: "single-organism organelle organization" RELATED []
 is_a: GO:0016043 ! cellular component organization
 created_by: jl
 creation_date: 2013-12-19T15:25:51Z
+
+[Term]
+id: GO:0007010
+name: cytoskeleton organization
+namespace: biological_process
+def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of cytoskeletal structures." [GOC:dph, GOC:jl, GOC:mah]
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_yeast
+synonym: "cytoskeletal organization and biogenesis" RELATED [GOC:mah]
+synonym: "cytoskeletal regulator activity" RELATED []
+synonym: "cytoskeleton organisation" EXACT [GOC:curators]
+synonym: "cytoskeleton organization and biogenesis" RELATED [GOC:mah]
+is_a: GO:0006996 ! organelle organization
 
 [Term]
 id: GO:0007049
@@ -1229,6 +1245,17 @@ intersection_of: negatively_regulates GO:0048468 ! cell development
 relationship: negatively_regulates GO:0048468 ! cell development
 
 [Term]
+id: GO:0010927
+name: cellular component assembly involved in morphogenesis
+namespace: biological_process
+def: "The cellular component assembly that is part of the initial shaping of the component during its developmental progression." [GOC:dph, GOC:tb]
+is_a: GO:0022607 ! cellular component assembly
+is_a: GO:0048646 ! anatomical structure formation involved in morphogenesis
+intersection_of: GO:0022607 ! cellular component assembly
+intersection_of: part_of GO:0009653 ! anatomical structure morphogenesis
+relationship: part_of GO:0032989 ! cellular component morphogenesis
+
+[Term]
 id: GO:0010948
 name: negative regulation of cell cycle process
 namespace: biological_process
@@ -1625,6 +1652,20 @@ intersection_of: regulates GO:0009653 ! anatomical structure morphogenesis
 relationship: regulates GO:0009653 ! anatomical structure morphogenesis
 
 [Term]
+id: GO:0022607
+name: cellular component assembly
+namespace: biological_process
+alt_id: GO:0071844
+def: "The aggregation, arrangement and bonding together of a cellular component." [GOC:isa_complete]
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_pir
+synonym: "cell structure assembly" EXACT []
+synonym: "cellular component assembly at cellular level" EXACT []
+is_a: GO:0016043 ! cellular component organization
+relationship: part_of GO:0044085 ! cellular component biogenesis
+
+[Term]
 id: GO:0023051
 name: regulation of signaling
 namespace: biological_process
@@ -1707,6 +1748,14 @@ is_a: GO:0044449 ! contractile fiber part
 relationship: part_of GO:0030016 ! myofibril
 
 [Term]
+id: GO:0030029
+name: actin filament-based process
+namespace: biological_process
+def: "Any cellular process that depends upon or alters the actin cytoskeleton, that part of the cytoskeleton comprising actin filaments and their associated proteins." [GOC:mah]
+synonym: "microfilament-based process" RELATED []
+is_a: GO:0009987 ! cellular process
+
+[Term]
 id: GO:0030030
 name: cell projection organization
 namespace: biological_process
@@ -1715,6 +1764,18 @@ synonym: "cell projection organisation" EXACT [GOC:curators]
 synonym: "cell projection organization and biogenesis" RELATED [GOC:mah]
 synonym: "cell surface structure organization and biogenesis" RELATED [GOC:mah]
 is_a: GO:0016043 ! cellular component organization
+
+[Term]
+id: GO:0030036
+name: actin cytoskeleton organization
+namespace: biological_process
+def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of cytoskeletal structures comprising actin filaments and their associated proteins." [GOC:dph, GOC:jl, GOC:mah]
+subset: goslim_pombe
+synonym: "actin cytoskeleton organisation" EXACT [GOC:curators]
+synonym: "actin cytoskeleton organization and biogenesis" RELATED [GOC:mah]
+synonym: "actin modulating activity" RELATED []
+is_a: GO:0007010 ! cytoskeleton organization
+is_a: GO:0030029 ! actin filament-based process
 
 [Term]
 id: GO:0030141
@@ -1746,6 +1807,17 @@ namespace: biological_process
 def: "The process in which a relatively unspecialized cell acquires specialized features of a neuron." [GOC:mah]
 is_a: GO:0030154 ! cell differentiation
 relationship: part_of GO:0048699 ! generation of neurons
+
+[Term]
+id: GO:0030239
+name: myofibril assembly
+namespace: biological_process
+def: "Formation of myofibrils, the repeating units of striated muscle." [GOC:mah]
+is_a: GO:0010927 ! cellular component assembly involved in morphogenesis
+is_a: GO:0031032 ! actomyosin structure organization
+is_a: GO:0070925 ! organelle assembly
+is_a: GO:0097435 ! supramolecular fiber organization
+relationship: part_of GO:0055002 ! striated muscle cell development
 
 [Term]
 id: GO:0030334
@@ -1795,6 +1867,17 @@ namespace: molecular_function
 def: "The function of interacting (directly or indirectly) with receptors such that the proportion of receptors in the active form is changed." [GOC:ceb]
 is_a: GO:0098772 ! molecular function regulator
 relationship: part_of GO:0010469 ! regulation of signaling receptor activity
+
+[Term]
+id: GO:0031032
+name: actomyosin structure organization
+namespace: biological_process
+def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of cytoskeletal structures containing both actin and myosin or paramyosin. The myosin may be organized into filaments." [GOC:dph, GOC:jl, GOC:mah]
+comment: Note that this term is a child of 'actin cytoskeleton organization and biogenesis ; GO:0030036' because the actin cytoskeleton is defined as actin filaments and associated proteins.
+synonym: "actomyosin organization" EXACT []
+synonym: "actomyosin structure organisation" EXACT [GOC:curators]
+synonym: "actomyosin structure organization and biogenesis" RELATED [GOC:mah]
+is_a: GO:0030036 ! actin cytoskeleton organization
 
 [Term]
 id: GO:0031045
@@ -2211,6 +2294,40 @@ is_a: GO:0050789 ! regulation of biological process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0051179 ! localization
 relationship: regulates GO:0051179 ! localization
+
+[Term]
+id: GO:0032956
+name: regulation of actin cytoskeleton organization
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of the formation, arrangement of constituent parts, or disassembly of cytoskeletal structures comprising actin filaments and their associated proteins." [GOC:mah]
+synonym: "regulation of actin cytoskeleton organisation" EXACT [GOC:mah]
+synonym: "regulation of actin cytoskeleton organization and biogenesis" RELATED [GOC:mah]
+is_a: GO:0032970 ! regulation of actin filament-based process
+is_a: GO:0051493 ! regulation of cytoskeleton organization
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0030036 ! actin cytoskeleton organization
+relationship: regulates GO:0030036 ! actin cytoskeleton organization
+
+[Term]
+id: GO:0032970
+name: regulation of actin filament-based process
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of any cellular process that depends upon or alters the actin cytoskeleton." [GOC:mah]
+is_a: GO:0050794 ! regulation of cellular process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0030029 ! actin filament-based process
+relationship: regulates GO:0030029 ! actin filament-based process
+
+[Term]
+id: GO:0032989
+name: cellular component morphogenesis
+namespace: biological_process
+def: "The process in which cellular structures, including whole cells or cell parts, are generated and organized." [GOC:dph, GOC:mah, GOC:tb]
+subset: goslim_pir
+synonym: "cellular structure morphogenesis" EXACT [GOC:dph, GOC:tb]
+is_a: GO:0009653 ! anatomical structure morphogenesis
+is_a: GO:0016043 ! cellular component organization
+is_a: GO:0048869 ! cellular developmental process
 
 [Term]
 id: GO:0032991
@@ -2706,6 +2823,37 @@ intersection_of: regulates GO:0003008 ! system process
 relationship: regulates GO:0003008 ! system process
 
 [Term]
+id: GO:0044085
+name: cellular component biogenesis
+namespace: biological_process
+alt_id: GO:0071843
+def: "A process that results in the biosynthesis of constituent macromolecules, assembly, and arrangement of constituent parts of a cellular component. Includes biosynthesis of constituent macromolecules, and those macromolecular modifications that are involved in synthesis or assembly of the cellular component." [GOC:jl, GOC:mah]
+subset: goslim_pir
+synonym: "cellular component biogenesis at cellular level" EXACT []
+is_a: GO:0071840 ! cellular component organization or biogenesis
+
+[Term]
+id: GO:0044087
+name: regulation of cellular component biogenesis
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of cellular component biogenesis, a process that results in the biosynthesis of constituent macromolecules, assembly, and arrangement of constituent parts of a cellular component." [GOC:jl]
+is_a: GO:0050789 ! regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0044085 ! cellular component biogenesis
+relationship: regulates GO:0044085 ! cellular component biogenesis
+
+[Term]
+id: GO:0044089
+name: positive regulation of cellular component biogenesis
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of cellular component biogenesis, a process that results in the biosynthesis of constituent macromolecules, assembly, and arrangement of constituent parts of a cellular component." [GOC:jl]
+is_a: GO:0044087 ! regulation of cellular component biogenesis
+is_a: GO:0048518 ! positive regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0044085 ! cellular component biogenesis
+relationship: positively_regulates GO:0044085 ! cellular component biogenesis
+
+[Term]
 id: GO:0044092
 name: negative regulation of molecular function
 namespace: biological_process
@@ -2900,6 +3048,17 @@ is_a: GO:0005575 ! cellular_component
 intersection_of: GO:0005575 ! cellular_component
 intersection_of: part_of GO:0005623 ! cell
 relationship: part_of GO:0005623 ! cell
+
+[Term]
+id: GO:0045214
+name: sarcomere organization
+namespace: biological_process
+alt_id: GO:0006938
+def: "The myofibril assembly process that results in the organization of muscle actomyosin into sarcomeres. The sarcomere is the repeating unit of a myofibril in a muscle cell, composed of an array of overlapping thick and thin filaments between two adjacent Z discs." [GOC:bf]
+synonym: "sarcomere alignment" EXACT []
+synonym: "sarcomere organisation" EXACT [GOC:curators]
+is_a: GO:0031032 ! actomyosin structure organization
+relationship: part_of GO:0030239 ! myofibril assembly
 
 [Term]
 id: GO:0045595
@@ -3588,6 +3747,16 @@ is_a: GO:0048856 ! anatomical structure development
 relationship: part_of GO:0007275 ! multicellular organism development
 
 [Term]
+id: GO:0048747
+name: muscle fiber development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the muscle fiber over time, from its formation to the mature structure. In skeletal muscle, fibers are formed by the maturation of myotubes. They can be classed as slow, intermediate/fast or fast." [GOC:dph, GOC:jid, GOC:lm, GOC:mtg_muscle]
+synonym: "muscle fibre development" EXACT []
+synonym: "myofiber development" EXACT []
+synonym: "myofibre development" EXACT []
+is_a: GO:0055002 ! striated muscle cell development
+
+[Term]
 id: GO:0048856
 name: anatomical structure development
 namespace: biological_process
@@ -3929,6 +4098,14 @@ intersection_of: positively_regulates GO:0016043 ! cellular component organizati
 relationship: positively_regulates GO:0016043 ! cellular component organization
 
 [Term]
+id: GO:0051146
+name: striated muscle cell differentiation
+namespace: biological_process
+def: "The process in which a relatively unspecialized cell acquires specialized features of a striated muscle cell; striated muscle fibers are divided by transverse bands into striations, and cardiac and voluntary muscle are types of striated muscle." [CL:0000737, GOC:ai]
+synonym: "voluntary muscle cell differentiation" NARROW []
+is_a: GO:0042692 ! muscle cell differentiation
+
+[Term]
 id: GO:0051147
 name: regulation of muscle cell differentiation
 namespace: biological_process
@@ -3968,6 +4145,47 @@ is_a: GO:0051147 ! regulation of muscle cell differentiation
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0042692 ! muscle cell differentiation
 relationship: positively_regulates GO:0042692 ! muscle cell differentiation
+
+[Term]
+id: GO:0051153
+name: regulation of striated muscle cell differentiation
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of striated muscle cell differentiation." [CL:0000737, GOC:ai]
+is_a: GO:0051147 ! regulation of muscle cell differentiation
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0051146 ! striated muscle cell differentiation
+relationship: regulates GO:0051146 ! striated muscle cell differentiation
+
+[Term]
+id: GO:0051154
+name: negative regulation of striated muscle cell differentiation
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of striated muscle cell differentiation." [CL:0000737, GOC:ai]
+synonym: "down regulation of striated muscle cell differentiation" EXACT []
+synonym: "down-regulation of striated muscle cell differentiation" EXACT []
+synonym: "downregulation of striated muscle cell differentiation" EXACT []
+synonym: "inhibition of striated muscle cell differentiation" NARROW []
+is_a: GO:0051148 ! negative regulation of muscle cell differentiation
+is_a: GO:0051153 ! regulation of striated muscle cell differentiation
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0051146 ! striated muscle cell differentiation
+relationship: negatively_regulates GO:0051146 ! striated muscle cell differentiation
+
+[Term]
+id: GO:0051155
+name: positive regulation of striated muscle cell differentiation
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of striated muscle cell differentiation." [CL:0000737, GOC:ai]
+synonym: "activation of striated muscle cell differentiation" NARROW []
+synonym: "stimulation of striated muscle cell differentiation" NARROW []
+synonym: "up regulation of striated muscle cell differentiation" EXACT []
+synonym: "up-regulation of striated muscle cell differentiation" EXACT []
+synonym: "upregulation of striated muscle cell differentiation" EXACT []
+is_a: GO:0051149 ! positive regulation of muscle cell differentiation
+is_a: GO:0051153 ! regulation of striated muscle cell differentiation
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0051146 ! striated muscle cell differentiation
+relationship: positively_regulates GO:0051146 ! striated muscle cell differentiation
 
 [Term]
 id: GO:0051174
@@ -4159,6 +4377,53 @@ is_a: GO:0051338 ! regulation of transferase activity
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0016740 ! transferase activity
 relationship: negatively_regulates GO:0016740 ! transferase activity
+
+[Term]
+id: GO:0051493
+name: regulation of cytoskeleton organization
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of the formation, arrangement of constituent parts, or disassembly of cytoskeletal structures." [GOC:ai]
+synonym: "regulation of cytoskeleton organisation" EXACT [GOC:mah]
+synonym: "regulation of cytoskeleton organization and biogenesis" RELATED [GOC:mah]
+is_a: GO:0033043 ! regulation of organelle organization
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0007010 ! cytoskeleton organization
+relationship: regulates GO:0007010 ! cytoskeleton organization
+
+[Term]
+id: GO:0051494
+name: negative regulation of cytoskeleton organization
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of the formation, arrangement of constituent parts, or disassembly of cytoskeletal structures." [GOC:ai]
+synonym: "down regulation of cytoskeleton organization" EXACT []
+synonym: "down-regulation of cytoskeleton organization" EXACT []
+synonym: "downregulation of cytoskeleton organization" EXACT []
+synonym: "inhibition of cytoskeleton organization" NARROW []
+synonym: "negative regulation of cytoskeleton organisation" EXACT [GOC:mah]
+synonym: "negative regulation of cytoskeleton organization and biogenesis" RELATED [GOC:mah]
+is_a: GO:0010639 ! negative regulation of organelle organization
+is_a: GO:0051493 ! regulation of cytoskeleton organization
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0007010 ! cytoskeleton organization
+relationship: negatively_regulates GO:0007010 ! cytoskeleton organization
+
+[Term]
+id: GO:0051495
+name: positive regulation of cytoskeleton organization
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of the formation, arrangement of constituent parts, or disassembly of cytoskeletal structures." [GOC:ai]
+synonym: "activation of cytoskeleton organization" NARROW []
+synonym: "positive regulation of cytoskeleton organisation" EXACT [GOC:mah]
+synonym: "positive regulation of cytoskeleton organization and biogenesis" RELATED [GOC:mah]
+synonym: "stimulation of cytoskeleton organization" NARROW []
+synonym: "up regulation of cytoskeleton organization" EXACT []
+synonym: "up-regulation of cytoskeleton organization" EXACT []
+synonym: "upregulation of cytoskeleton organization" EXACT []
+is_a: GO:0010638 ! positive regulation of organelle organization
+is_a: GO:0051493 ! regulation of cytoskeleton organization
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0007010 ! cytoskeleton organization
+relationship: positively_regulates GO:0007010 ! cytoskeleton organization
 
 [Term]
 id: GO:0051641
@@ -4400,6 +4665,22 @@ intersection_of: positively_regulates GO:0019226 ! transmission of nerve impulse
 relationship: positively_regulates GO:0019226 ! transmission of nerve impulse
 
 [Term]
+id: GO:0055001
+name: muscle cell development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of a muscle cell over time, from its formation to the mature structure. Muscle cell development does not include the steps involved in committing an unspecified cell to the muscle cell fate." [CL:0000187, GOC:devbiol]
+is_a: GO:0048468 ! cell development
+relationship: part_of GO:0042692 ! muscle cell differentiation
+
+[Term]
+id: GO:0055002
+name: striated muscle cell development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of a striated muscle cell over time, from its formation to the mature structure. Striated muscle cells contain fibers that are divided by transverse bands into striations, and cardiac and skeletal muscle are types of striated muscle." [CL:0000737, GOC:devbiol]
+is_a: GO:0055001 ! muscle cell development
+relationship: part_of GO:0051146 ! striated muscle cell differentiation
+
+[Term]
 id: GO:0060066
 name: oviduct development
 namespace: biological_process
@@ -4427,6 +4708,54 @@ is_a: GO:0045595 ! regulation of cell differentiation
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0048468 ! cell development
 relationship: regulates GO:0048468 ! cell development
+
+[Term]
+id: GO:0060297
+name: regulation of sarcomere organization
+namespace: biological_process
+def: "Any process that modulates the rate, frequency or extent of myofibril assembly by organization of muscle actomyosin into sarcomeres. The sarcomere is the repeating unit of a myofibril in a muscle cell, composed of an array of overlapping thick and thin filaments between two adjacent Z discs." [GOC:BHF, GOC:dph, GOC:tb]
+synonym: "regulation of sarcomere organisation" EXACT [GOC:mah]
+is_a: GO:0022603 ! regulation of anatomical structure morphogenesis
+is_a: GO:0051153 ! regulation of striated muscle cell differentiation
+is_a: GO:0060284 ! regulation of cell development
+is_a: GO:0110020 ! regulation of actomyosin structure organization
+is_a: GO:1902115 ! regulation of organelle assembly
+is_a: GO:1902903 ! regulation of supramolecular fiber organization
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0045214 ! sarcomere organization
+relationship: regulates GO:0045214 ! sarcomere organization
+
+[Term]
+id: GO:0060298
+name: positive regulation of sarcomere organization
+namespace: biological_process
+def: "Any process that increases the rate, frequency or extent of myofibril assembly by organization of muscle actomyosin into sarcomeres. The sarcomere is the repeating unit of a myofibril in a muscle cell, composed of an array of overlapping thick and thin filaments between two adjacent Z discs." [GOC:BHF, GOC:dph, GOC:tb]
+synonym: "positive regulation of sarcomere organisation" EXACT [GOC:mah]
+is_a: GO:0010720 ! positive regulation of cell development
+is_a: GO:0051155 ! positive regulation of striated muscle cell differentiation
+is_a: GO:0051495 ! positive regulation of cytoskeleton organization
+is_a: GO:0060297 ! regulation of sarcomere organization
+is_a: GO:1902117 ! positive regulation of organelle assembly
+is_a: GO:1902905 ! positive regulation of supramolecular fiber organization
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0045214 ! sarcomere organization
+relationship: positively_regulates GO:0045214 ! sarcomere organization
+
+[Term]
+id: GO:0060299
+name: negative regulation of sarcomere organization
+namespace: biological_process
+def: "Any process that decreases the rate, frequency or extent of myofibril assembly by organization of muscle actomyosin into sarcomeres. The sarcomere is the repeating unit of a myofibril in a muscle cell, composed of an array of overlapping thick and thin filaments between two adjacent Z discs." [GOC:BHF, GOC:dph, GOC:tb]
+synonym: "negative regulation of sarcomere organisation" EXACT [GOC:mah]
+is_a: GO:0010721 ! negative regulation of cell development
+is_a: GO:0051154 ! negative regulation of striated muscle cell differentiation
+is_a: GO:0051494 ! negative regulation of cytoskeleton organization
+is_a: GO:0060297 ! regulation of sarcomere organization
+is_a: GO:1902116 ! negative regulation of organelle assembly
+is_a: GO:1902904 ! negative regulation of supramolecular fiber organization
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0045214 ! sarcomere organization
+relationship: negatively_regulates GO:0045214 ! sarcomere organization
 
 [Term]
 id: GO:0060341
@@ -4603,6 +4932,17 @@ created_by: midori
 creation_date: 2009-04-15T01:45:27Z
 
 [Term]
+id: GO:0070925
+name: organelle assembly
+namespace: biological_process
+def: "The aggregation, arrangement and bonding together of a set of components to form an organelle. An organelle is an organized structure of distinctive morphology and function. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton. Excludes the plasma membrane." [GOC:mah]
+subset: goslim_yeast
+is_a: GO:0006996 ! organelle organization
+is_a: GO:0022607 ! cellular component assembly
+created_by: midori
+creation_date: 2009-09-15T03:00:51Z
+
+[Term]
 id: GO:0070986
 name: left/right axis specification
 namespace: biological_process
@@ -4697,6 +5037,21 @@ synonym: "membrane scission" EXACT []
 is_a: GO:0061024 ! membrane organization
 created_by: tanyaberardini
 creation_date: 2009-12-08T03:06:36Z
+
+[Term]
+id: GO:0097435
+name: supramolecular fiber organization
+namespace: biological_process
+alt_id: GO:0043206
+def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of a supramolecular fiber, a polymer consisting of an indefinite number of protein or protein complex subunits that have polymerised to form a fiber-shaped structure." [GOC:pr]
+synonym: "extracellular fibril organisation" NARROW [GOC:curators]
+synonym: "extracellular fibril organization" NARROW []
+synonym: "extracellular fibril organization and biogenesis" NARROW [GOC:mah]
+synonym: "fibril organisation" RELATED []
+synonym: "fibril organization" RELATED []
+is_a: GO:0016043 ! cellular component organization
+created_by: paola
+creation_date: 2012-11-27T15:46:25Z
 
 [Term]
 id: GO:0097708
@@ -4862,6 +5217,18 @@ intersection_of: GO:0005737 ! cytoplasm
 intersection_of: part_of GO:0005737 ! cytoplasm
 
 [Term]
+id: GO:0110020
+name: regulation of actomyosin structure organization
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of the assembly, arrangement of constituent parts, or disassembly of cytoskeletal structures containing both actin and myosin or paramyosin." [GOC:lf, PMID:22790195]
+is_a: GO:0032956 ! regulation of actin cytoskeleton organization
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0031032 ! actomyosin structure organization
+relationship: regulates GO:0031032 ! actomyosin structure organization
+created_by: kmv
+creation_date: 2017-06-20T19:28:58Z
+
+[Term]
 id: GO:0120035
 name: regulation of plasma membrane bounded cell projection organization
 namespace: biological_process
@@ -4943,6 +5310,54 @@ intersection_of: positively_regulates GO:0005102 ! signaling receptor binding
 relationship: positively_regulates GO:0005102 ! signaling receptor binding
 created_by: bf
 creation_date: 2012-02-22T11:41:00Z
+
+[Term]
+id: GO:1902115
+name: regulation of organelle assembly
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of organelle assembly." [GOC:pr, GOC:TermGenie]
+is_a: GO:0033043 ! regulation of organelle organization
+is_a: GO:0044087 ! regulation of cellular component biogenesis
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0070925 ! organelle assembly
+relationship: regulates GO:0070925 ! organelle assembly
+created_by: pr
+creation_date: 2013-05-14T09:43:21Z
+
+[Term]
+id: GO:1902116
+name: negative regulation of organelle assembly
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of organelle assembly." [GOC:pr, GOC:TermGenie]
+synonym: "down regulation of organelle assembly" EXACT [GOC:TermGenie]
+synonym: "down-regulation of organelle assembly" EXACT [GOC:TermGenie]
+synonym: "downregulation of organelle assembly" EXACT [GOC:TermGenie]
+synonym: "inhibition of organelle assembly" NARROW [GOC:TermGenie]
+is_a: GO:0010639 ! negative regulation of organelle organization
+is_a: GO:1902115 ! regulation of organelle assembly
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0070925 ! organelle assembly
+relationship: negatively_regulates GO:0070925 ! organelle assembly
+created_by: pr
+creation_date: 2013-05-14T09:43:31Z
+
+[Term]
+id: GO:1902117
+name: positive regulation of organelle assembly
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of organelle assembly." [GOC:pr, GOC:TermGenie]
+synonym: "activation of organelle assembly" NARROW [GOC:TermGenie]
+synonym: "up regulation of organelle assembly" EXACT [GOC:TermGenie]
+synonym: "up-regulation of organelle assembly" EXACT [GOC:TermGenie]
+synonym: "upregulation of organelle assembly" EXACT [GOC:TermGenie]
+is_a: GO:0010638 ! positive regulation of organelle organization
+is_a: GO:0044089 ! positive regulation of cellular component biogenesis
+is_a: GO:1902115 ! regulation of organelle assembly
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0070925 ! organelle assembly
+relationship: positively_regulates GO:0070925 ! organelle assembly
+created_by: pr
+creation_date: 2013-05-14T09:43:36Z
 
 [Term]
 id: GO:1902412
@@ -5098,6 +5513,66 @@ intersection_of: positively_regulates GO:0035556 ! intracellular signal transduc
 relationship: positively_regulates GO:0035556 ! intracellular signal transduction
 created_by: bf
 creation_date: 2013-12-02T11:33:10Z
+
+[Term]
+id: GO:1902903
+name: regulation of supramolecular fiber organization
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of supramolecular fiber organization." [GO_REF:0000058, GOC:PARL, GOC:rl, GOC:TermGenie, PMID:23921388]
+comment: HSPA8, human, P11142 in PMID:23921388 inferred from direct assay to negatively regulate fibrillation of alpha-Syn in vitro
+synonym: "regulation of fibril organisation" RELATED [GOC:TermGenie]
+is_a: GO:0051128 ! regulation of cellular component organization
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0097435 ! supramolecular fiber organization
+relationship: regulates GO:0097435 ! supramolecular fiber organization
+created_by: rl
+creation_date: 2014-04-15T16:46:36Z
+
+[Term]
+id: GO:1902904
+name: negative regulation of supramolecular fiber organization
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of fibril organization." [GO_REF:0000058, GOC:PARL, GOC:rl, GOC:TermGenie, PMID:23921388]
+comment: HSPA8, human, P11142 in PMID:23921388 inferred from direct assay to negatively regulate fibrillation of alpha-Syn in vitro
+synonym: "down regulation of fibril organisation" RELATED [GOC:TermGenie]
+synonym: "down regulation of fibril organization" RELATED [GOC:TermGenie]
+synonym: "down-regulation of fibril organisation" RELATED [GOC:TermGenie]
+synonym: "down-regulation of fibril organization" RELATED [GOC:TermGenie]
+synonym: "downregulation of fibril organisation" RELATED [GOC:TermGenie]
+synonym: "downregulation of fibril organization" RELATED [GOC:TermGenie]
+synonym: "inhibition of fibril organisation" NARROW [GOC:TermGenie]
+synonym: "inhibition of fibril organization" NARROW [GOC:TermGenie]
+synonym: "negative regulation of fibril organisation" RELATED [GOC:TermGenie]
+is_a: GO:0051129 ! negative regulation of cellular component organization
+is_a: GO:1902903 ! regulation of supramolecular fiber organization
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0097435 ! supramolecular fiber organization
+relationship: negatively_regulates GO:0097435 ! supramolecular fiber organization
+created_by: rl
+creation_date: 2014-04-15T16:46:42Z
+
+[Term]
+id: GO:1902905
+name: positive regulation of supramolecular fiber organization
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of supramolecular fiber organization." [GO_REF:0000058, GOC:PARL, GOC:rl, GOC:TermGenie, PMID:23921388]
+comment: HSPA8, human, P11142 in PMID:23921388 inferred from direct assay to negatively regulate fibrillation of alpha-Syn in vitro
+synonym: "activation of fibril organisation" NARROW [GOC:TermGenie]
+synonym: "activation of fibril organization" NARROW [GOC:TermGenie]
+synonym: "positive regulation of fibril organisation" RELATED [GOC:TermGenie]
+synonym: "up regulation of fibril organisation" RELATED [GOC:TermGenie]
+synonym: "up regulation of fibril organization" RELATED [GOC:TermGenie]
+synonym: "up-regulation of fibril organisation" RELATED [GOC:TermGenie]
+synonym: "up-regulation of fibril organization" RELATED [GOC:TermGenie]
+synonym: "upregulation of fibril organisation" RELATED [GOC:TermGenie]
+synonym: "upregulation of fibril organization" RELATED [GOC:TermGenie]
+is_a: GO:0051130 ! positive regulation of cellular component organization
+is_a: GO:1902903 ! regulation of supramolecular fiber organization
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0097435 ! supramolecular fiber organization
+relationship: positively_regulates GO:0097435 ! supramolecular fiber organization
+created_by: rl
+creation_date: 2014-04-15T16:46:48Z
 
 [Term]
 id: GO:1903034
