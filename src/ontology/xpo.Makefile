@@ -1,1 +1,1 @@
-OTHER_SRC = $(PATTERNDIR)/definitions.owl OTHER_SRC = $(PATTERNDIR)/xpo-xrefs.owl
+OTHER_SRC = $(PATTERNDIR)/definitions.owl $(PATTERNDIR)/xpo-xrefs.owl
