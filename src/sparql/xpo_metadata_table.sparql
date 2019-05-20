@@ -1,0 +1,13 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?term ?label ?definition ?exact_synonym
+WHERE {
+  { ?s1 ?p1 ?term . 
+  }
+  UNION
+  { ?term ?p2 ?o2 . 
+  ?term rdfs:label ?label .
+  ?term <http://purl.obolibrary.org/obo/IAO_0000115> ?definition .
+  ?term <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ?exact_synonym .
+  }
+  FILTER(isIRI(?term) && regex(str(?term), "XPO_"))
+}
