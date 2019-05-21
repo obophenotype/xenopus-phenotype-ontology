@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: xpo/releases/2019-05-02/xpo-full.owl
+data-version: xpo/releases/2019-05-21/xpo-full.owl
 ontology: xpo/xpo-full
 property_value: http://purl.org/dc/elements/1.1/description "Ontology about Xenopus." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Xenopus Phenotype Ontology" xsd:string
@@ -312,6 +312,8 @@ subset: goslim_chembl
 subset: goslim_generic
 subset: goslim_yeast
 synonym: "mitosis" RELATED []
+xref: MIPS_funcat:10.03.01
+xref: MIPS_funcat:10.03.01.01
 xref: Wikipedia:Mitosis
 is_a: GO:0007049 ! cell cycle
 intersection_of: GO:0007049 ! cell cycle
@@ -325,6 +327,8 @@ namespace: biological_process
 def: "The division of a cell nucleus into two nuclei, with DNA and other nuclear contents distributed between the daughter nuclei." [GOC:mah]
 subset: goslim_pir
 synonym: "karyokinesis" RELATED []
+xref: MIPS_funcat:10.03.04
+xref: MIPS_funcat:10.03.04.07
 is_a: GO:0048285 ! organelle fission
 
 [Term]
@@ -354,6 +358,7 @@ subset: goslim_candida
 subset: goslim_yeast
 synonym: "cell cycle cytokinesis" EXACT []
 synonym: "cytokinesis involved in cell cycle" EXACT [GOC:dph, GOC:tb]
+xref: MIPS_funcat:10.03.03
 xref: Wikipedia:Cytokinesis
 is_a: GO:0022402 ! cell cycle process
 relationship: has_part GO:0090148 ! membrane fission
@@ -365,6 +370,7 @@ name: action potential
 namespace: biological_process
 def: "A process in which membrane potential cycles through a depolarizing spike, triggered in response to depolarization above some threshold, followed by repolarization. This cycle is driven by the flow of ions through various voltage gated channels with different thresholds and ion specificities." [GOC:dph, GOC:go_curators, GOC:tb, ISBN:978-0-07-139011-8]
 comment: Action potentials typically propagate across excitable membranes. This class covers both action potentials that propagate and those that fail to do so.
+xref: MIPS_funcat:34.03.03
 is_a: GO:0042391 ! regulation of membrane potential
 
 [Term]
@@ -541,12 +547,10 @@ subset: goslim_pir
 subset: goslim_plant
 synonym: "glycoprotein binding" NARROW []
 synonym: "protein amino acid binding" EXACT []
-xref: reactome:R-HSA-170835 "An anchoring protein, ZFYVE9 (SARA), recruits SMAD2/3"
-xref: reactome:R-HSA-170846 "TGFBR2 recruits TGFBR1"
-xref: reactome:R-HSA-3645786 "TGFBR2 mutant dimers recruit TGFBR1"
-xref: reactome:R-HSA-3656484 "TGFBR2 recruits TGFBR1 KD Mutants"
-xref: reactome:R-HSA-3702153 "An anchoring protein, ZFYVE9 (SARA), recruits SMAD2/3 MH2 domain mutants"
-xref: reactome:R-HSA-3713560 "An anchoring protein, ZFYVE9 (SARA), recruits SMAD2/3 phosphorylation motif mutants"
+xref: MIPS_funcat:16.01
+xref: MIPS_funcat:18.01.07
+xref: Reactome:R-HSA-170835 "An anchoring protein, ZFYVE9 (SARA), recruits SMAD2/3"
+xref: Reactome:R-HSA-170846 "TGFBR2 recruits TGFBR1"
 is_a: GO:0005488 ! binding
 
 [Term]
@@ -618,6 +622,7 @@ subset: goslim_plant
 subset: goslim_yeast
 synonym: "cell nucleus" EXACT []
 synonym: "horsetail nucleus" NARROW [GOC:al, GOC:mah, GOC:vw, PMID:15030757]
+xref: MIPS_funcat:70.10
 xref: NIF_Subcellular:sao1702920020
 xref: Wikipedia:Cell_nucleus
 is_a: GO:0043231 ! intracellular membrane-bounded organelle
@@ -635,6 +640,7 @@ subset: goslim_metagenomics
 subset: goslim_pir
 subset: goslim_plant
 subset: goslim_yeast
+xref: MIPS_funcat:70.03
 xref: Wikipedia:Cytoplasm
 is_a: GO:0044424 ! intracellular part
 
@@ -654,6 +660,7 @@ subset: goslim_pir
 subset: goslim_plant
 subset: goslim_yeast
 synonym: "vacuolar carboxypeptidase Y" RELATED []
+xref: MIPS_funcat:70.25
 xref: Wikipedia:Vacuole
 is_a: GO:0043231 ! intracellular membrane-bounded organelle
 is_a: GO:0044444 ! cytoplasmic part
@@ -693,6 +700,7 @@ subset: goslim_mouse
 subset: goslim_pir
 subset: goslim_plant
 subset: goslim_yeast
+xref: MIPS_funcat:70.04
 xref: Wikipedia:Cytoskeleton
 is_a: GO:0043232 ! intracellular non-membrane-bounded organelle
 
@@ -798,6 +806,7 @@ namespace: biological_process
 def: "The chemical reactions and pathways involving the phosphate group, the anion or salt of any phosphoric acid." [GOC:ai]
 synonym: "phosphate metabolic process" RELATED []
 synonym: "phosphate metabolism" EXACT []
+xref: MIPS_funcat:01.04
 is_a: GO:0006793 ! phosphorus metabolic process
 
 [Term]
@@ -811,6 +820,8 @@ subset: goslim_pir
 synonym: "cell movement" RELATED []
 synonym: "cellular component motion" EXACT [GOC:dph, GOC:jl]
 synonym: "cellular component movement" EXACT []
+xref: MIPS_funcat:02.45.11
+xref: MIPS_funcat:34.05
 is_a: GO:0009987 ! cellular process
 
 [Term]
@@ -828,6 +839,7 @@ subset: goslim_metagenomics
 subset: goslim_plant
 synonym: "response to abiotic stress" RELATED []
 synonym: "response to biotic stress" RELATED []
+xref: MIPS_funcat:32.01
 is_a: GO:0050896 ! response to stimulus
 
 [Term]
@@ -861,6 +873,7 @@ synonym: "cytoskeletal organization and biogenesis" RELATED [GOC:mah]
 synonym: "cytoskeletal regulator activity" RELATED []
 synonym: "cytoskeleton organisation" EXACT [GOC:curators]
 synonym: "cytoskeleton organization and biogenesis" RELATED [GOC:mah]
+xref: MIPS_funcat:42.04
 is_a: GO:0006996 ! organelle organization
 
 [Term]
@@ -878,6 +891,8 @@ subset: goslim_generic
 subset: goslim_pir
 subset: goslim_plant
 synonym: "cell-division cycle" EXACT []
+xref: MIPS_funcat:10
+xref: MIPS_funcat:10.03
 xref: Wikipedia:Cell_cycle
 is_a: GO:0009987 ! cellular process
 
@@ -921,6 +936,7 @@ synonym: "signaling cascade" NARROW []
 synonym: "signaling pathway" RELATED []
 synonym: "signalling cascade" NARROW []
 synonym: "signalling pathway" RELATED [GOC:mah]
+xref: MIPS_funcat:30
 xref: Wikipedia:Signal_transduction
 is_a: GO:0009987 ! cellular process
 is_a: GO:0050794 ! regulation of cellular process
@@ -949,6 +965,7 @@ subset: goslim_synapse
 synonym: "neurotransmission" RELATED [GOC:dph]
 synonym: "signal transmission across a synapse" BROAD []
 synonym: "synaptic transmission" BROAD []
+xref: MIPS_funcat:34.03.01
 xref: Wikipedia:Neurotransmission
 is_a: GO:0098916 ! anterograde trans-synaptic signaling
 
@@ -960,6 +977,7 @@ def: "The biological process whose specific outcome is the progression of a mult
 comment: Note that this term was 'developmental process'.
 subset: goslim_chembl
 subset: goslim_plant
+xref: MIPS_funcat:41
 is_a: GO:0032501 ! multicellular organismal process
 is_a: GO:0048856 ! anatomical structure development
 
@@ -984,6 +1002,7 @@ id: GO:0007369
 name: gastrulation
 namespace: biological_process
 def: "A complex and coordinated series of cellular movements that occurs at the end of cleavage during embryonic development of most animals. The details of gastrulation vary from species to species, but usually result in the formation of the three primary germ layers, ectoderm, mesoderm and endoderm." [GOC:curators, ISBN:9780878933846]
+xref: MIPS_funcat:41.05.09
 xref: Wikipedia:Gastrulation
 is_a: GO:0048598 ! embryonic morphogenesis
 relationship: has_part GO:0001705 ! ectoderm formation
@@ -997,6 +1016,7 @@ namespace: biological_process
 def: "Any developmental process that results in the creation of defined areas or spaces within an organism to which cells respond and eventually are instructed to differentiate." [GOC:go_curators, GOC:isa_complete, ISBN:0521436125]
 synonym: "pattern biosynthesis" RELATED []
 synonym: "pattern formation" RELATED []
+xref: MIPS_funcat:41.01.03
 is_a: GO:0032501 ! multicellular organismal process
 relationship: part_of GO:0007275 ! multicellular organism development
 
@@ -1013,6 +1033,8 @@ name: nervous system development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of nervous tissue over time, from its formation to its mature state." [GOC:dgh]
 synonym: "pan-neural process" RELATED []
+xref: MIPS_funcat:45.03.17
+xref: MIPS_funcat:47.03.01
 is_a: GO:0048731 ! system development
 
 [Term]
@@ -1094,6 +1116,7 @@ synonym: "metabolism" EXACT []
 synonym: "metabolism resulting in cell growth" NARROW []
 synonym: "multicellular organism metabolic process" NARROW []
 synonym: "single-organism metabolic process" RELATED []
+xref: MIPS_funcat:01
 xref: Wikipedia:Metabolism
 is_a: GO:0008150 ! biological_process
 created_by: janelomax
@@ -1156,6 +1179,7 @@ comment: Note that this term is in the subset of terms that should not be used f
 subset: gocheck_do_not_manually_annotate
 subset: goslim_plant
 synonym: "response to environmental stimulus" EXACT []
+xref: MIPS_funcat:36.20.35
 is_a: GO:0050896 ! response to stimulus
 
 [Term]
@@ -1172,7 +1196,6 @@ id: GO:0009653
 name: anatomical structure morphogenesis
 namespace: biological_process
 def: "The process in which anatomical structures are generated and organized. Morphogenesis pertains to the creation of form." [GOC:go_curators, ISBN:0521436125]
-subset: goslim_plant
 synonym: "anatomical structure organization" EXACT []
 synonym: "embryogenesis and morphogenesis" BROAD []
 synonym: "morphogenesis" EXACT []
@@ -1202,6 +1225,7 @@ name: axis specification
 namespace: biological_process
 def: "The establishment, maintenance and elaboration of a pattern along a line or around a point." [GOC:dph, GOC:go_curators, GOC:isa_complete]
 synonym: "axis determination" RELATED []
+xref: MIPS_funcat:41.05.19
 is_a: GO:0007389 ! pattern specification process
 
 [Term]
@@ -1272,6 +1296,7 @@ name: anterior/posterior axis specification
 namespace: biological_process
 def: "The establishment, maintenance and elaboration of the anterior/posterior axis. The anterior-posterior axis is defined by a line that runs from the head or mouth of an organism to the tail or opposite end of the organism." [GOC:dph, GOC:go_curators, GOC:tb]
 synonym: "anterior/posterior axis determination" RELATED [GOC:dph]
+xref: MIPS_funcat:41.05.19.05
 is_a: GO:0009798 ! axis specification
 relationship: part_of GO:0009952 ! anterior/posterior pattern specification
 
@@ -1283,6 +1308,7 @@ def: "The establishment, maintenance and elaboration of the dorsal/ventral axis.
 synonym: "dorsal-ventral axis specification" EXACT [GOC:mah]
 synonym: "dorsal/ventral axis determination" RELATED [GOC:dph]
 synonym: "dorsoventral axis specification" EXACT [GOC:mah]
+xref: MIPS_funcat:41.05.19.07
 is_a: GO:0009798 ! axis specification
 relationship: part_of GO:0009953 ! dorsal/ventral pattern formation
 
@@ -1618,6 +1644,7 @@ name: actin cytoskeleton
 namespace: cellular_component
 def: "The part of the cytoskeleton (the internal framework of a cell) composed of actin and associated proteins. Includes actin cytoskeleton-associated complexes." [GOC:jl, ISBN:0395825172, ISBN:0815316194]
 subset: goslim_aspergillus
+xref: MIPS_funcat:70.04.03
 is_a: GO:0005856 ! cytoskeleton
 
 [Term]
@@ -1626,6 +1653,7 @@ name: microtubule cytoskeleton
 namespace: cellular_component
 def: "The part of the cytoskeleton (the internal framework of a cell) composed of microtubules and associated proteins." [GOC:jl, ISBN:0395825172]
 subset: goslim_aspergillus
+xref: MIPS_funcat:70.04.05
 is_a: GO:0005856 ! cytoskeleton
 
 [Term]
@@ -1663,6 +1691,7 @@ synonym: "cellular component organisation at cellular level" EXACT [GOC:mah]
 synonym: "cellular component organisation in other organism" EXACT [GOC:mah]
 synonym: "cellular component organization at cellular level" EXACT []
 synonym: "cellular component organization in other organism" EXACT []
+xref: MIPS_funcat:42
 is_a: GO:0009987 ! cellular process
 is_a: GO:0071840 ! cellular component organization or biogenesis
 
@@ -1678,79 +1707,8 @@ subset: goslim_metagenomics
 subset: goslim_plant
 subset: goslim_yeast
 synonym: "phosphokinase activity" EXACT []
-xref: reactome:R-HSA-109822 "MAPK3,(MAPK1) phosphorylates GRB2-1:SOS1:p-Y427-SHC1"
-xref: reactome:R-HSA-109823 "MAPK3,(MAPK1) phosphorylates GRB2-1:SOS1:p-Y-IRS1,p-Y-IRS2"
-xref: reactome:R-HSA-111898 "Phosphorylation of cPLA2 by ERK-2"
-xref: reactome:R-HSA-112381 "Hyperphosphorylation (Ser2) of RNA Pol II CTD by P-TEFb complex"
-xref: reactome:R-HSA-139908 "Phosphorylation of DLC2 by MAPK8"
-xref: reactome:R-HSA-139918 "Phosphorylation of BIM by JNK"
-xref: reactome:R-HSA-165692 "Phosphorylation of 4E-BP1 by activated mTORC1"
-xref: reactome:R-HSA-165718 "mTORC1 phosphorylation of RPS6KB1 (S6K)"
-xref: reactome:R-HSA-165726 "Phosphorylation of Ribosomal protein S6 by activated S6K1"
-xref: reactome:R-HSA-165758 "Phosphorylation and inactivation of eEF2K by activated S6K1"
-xref: reactome:R-HSA-165766 "Phosphorylation and activation of eIF4G by activated S6K1"
-xref: reactome:R-HSA-165777 "Phosphorylation and activation of eIF4B by activated S6K1"
-xref: reactome:R-HSA-167084 "Hyperphosphorylation (Ser2) of RNA Pol II CTD by P-TEFb complex"
-xref: reactome:R-HSA-167098 "Phosphorylation (Ser5) of RNA pol II CTD"
-xref: reactome:R-HSA-167191 "Hyperphosphorylation (Ser2) of RNA Pol II CTD by the P-TEFb(Cyclin T1:Cdk9) complex"
-xref: reactome:R-HSA-170055 "Myt-1 mediated phosphorylation of Cyclin B:Cdc2 complexes"
-xref: reactome:R-HSA-170070 "Wee1-mediated phosphorylation of Cyclin B1:phospho-Cdc2 complexes"
-xref: reactome:R-HSA-170076 "CAK-mediated phosphorylation of Cyclin B1:Cdc2 complexes"
-xref: reactome:R-HSA-170087 "CAK-mediated phosphorylation of Cyclin A:Cdc2 complexes"
-xref: reactome:R-HSA-170116 "Myt-1 mediated phosphorylation of Cyclin A:Cdc2"
-xref: reactome:R-HSA-170126 "Phosphorylation of Cyclin B1 in the CRS domain"
-xref: reactome:R-HSA-170156 "Wee1-mediated phosphorylation of Cyclin A:phospho-Cdc2 complexes"
-xref: reactome:R-HSA-170704 "Phosphorylation of DSIF by the P-TEFb(Cyclin T1:Cdk9) complex"
-xref: reactome:R-HSA-170706 "Phosphorylation of  NEFL by the P-TEFb(Cyclin T1:Cdk9) complex"
-xref: reactome:R-HSA-174164 "Phosphorylation of Cyclin A:Cdk2 at Tyr 15"
-xref: reactome:R-HSA-1839091 "Cytosolic FGFR1 fusion protein-associated PI3K phosphorylates PIP2 to PIP3"
-xref: reactome:R-HSA-1839107 "BCR-FGFR1-associated PI3K phosphorylates PIP2 to PIP3."
-xref: reactome:R-HSA-1839110 "p-BCR-p-FGFR1 phosphorylates GAB2"
-xref: reactome:R-HSA-187949 "CAK-mediated phosphorylation of Cyclin A:Cdk2"
-xref: reactome:R-HSA-188350 "CAK-mediated phosphorylation of Cyclin E:Cdk2"
-xref: reactome:R-HSA-191636 "Phosphorylation of Cx43 by c-src"
-xref: reactome:R-HSA-195275 "Phosphorylation of APC component of the destruction complex"
-xref: reactome:R-HSA-195283 "Phosphorylation of phospho- (Ser45, Thr41) beta-catenin  at Ser37 by GSK-3"
-xref: reactome:R-HSA-195287 "Phosphorylation of phospho-(Ser45 ) at Thr 41 by GSK-3"
-xref: reactome:R-HSA-195300 "Phosphorylation of phospho-(Ser45,Thr41,Ser37) at Ser33 by GSK-3"
-xref: reactome:R-HSA-195318 "Phosphorylation of beta-catenin at Ser45 by CK1 alpha"
-xref: reactome:R-HSA-201717 "CSNK2-mediated phosphorylation of DVL"
-xref: reactome:R-HSA-211583 "Partial autophosphorylation of PAK-2 at  Ser-19, Ser-20, Ser-55, Ser-192, and Ser-197"
-xref: reactome:R-HSA-211650 "Autophosphorylation of PAK-2p34 in the activation loop"
-xref: reactome:R-HSA-2214351 "PLK1 phosphorylates GORASP1"
-xref: reactome:R-HSA-2294580 "PLK1 hyperphosphorylates Condensin II complex"
-xref: reactome:R-HSA-2529020 "CK2 phosphorylates condensin I subunits"
-xref: reactome:R-HSA-389762 "Phosphorylation of PD-1"
-xref: reactome:R-HSA-392752 "Phosphorylation of L1 by CK-II"
-xref: reactome:R-HSA-442724 "Phosphorylation of CREB1 by ribosomal protein S6 kinases (RSKs)"
-xref: reactome:R-HSA-445079 "Phosphorylation of L1 by ERK"
-xref: reactome:R-HSA-5654690 "FGFR1-associated PI3K phosphorylates PIP2 to PIP3"
-xref: reactome:R-HSA-5654692 "FGFR1- and PTPN11- associated PI3K phosphorylates PIP2 to PIP3"
-xref: reactome:R-HSA-5654697 "FGFR2- and PTPN11- associated PI3K phosphorylates PIP2 to PIP3"
-xref: reactome:R-HSA-5654701 "FGFR2-associated PI3K phosphorylates PIP2 to PIP3"
-xref: reactome:R-HSA-5654705 "FGFR3-associated PI3K phosphorylates PIP2 to PIP3"
-xref: reactome:R-HSA-5654709 "FGFR3- and PTPN11-associated PI3K phosphorylates PIP2 to PIP3"
-xref: reactome:R-HSA-5654714 "FGFR4- and PTPN11-associated PI3K phosphorylates PIP2 to PIP3"
-xref: reactome:R-HSA-5654717 "FGFR4-associated PI3K phosphorylates PIP2 to PIP3"
-xref: reactome:R-HSA-5655235 "Activated FGFR4 mutant-associated PI3K phosphorylates PIP2 to PIP3"
-xref: reactome:R-HSA-5655289 "Activated FGFR3 mutant-associated PI3K phosphorylates PIP2 to PIP3"
-xref: reactome:R-HSA-5655290 "Activated FGFR1 mutant-associated PI3K phosphorylates PIP2 to PIP3"
-xref: reactome:R-HSA-5655323 "Activated FGFR2 mutant-associated PI3K phosphorylates PIP2 to PIP3"
-xref: reactome:R-HSA-5668545 "NIK autophosphorylates on T559"
-xref: reactome:R-HSA-6788855 "FN3KRP phosphorylates PsiAm, RibAm"
-xref: reactome:R-HSA-6788867 "FN3K phosphorylates ketosamines"
-xref: reactome:R-HSA-6814409 "CK2 phosphorylates PDCL"
-xref: reactome:R-HSA-68954 "Mcm2-7 is phosphorylated by DDK"
-xref: reactome:R-HSA-69195 "Phosphorylation of Cyclin E:CDK2 complexes by WEE1"
-xref: reactome:R-HSA-69604 "Phosphorylation of Cdc25A at Ser-123 by Chk1"
-xref: reactome:R-HSA-75028 "Phosphorylation of Wee1 kinase by Chk1"
-xref: reactome:R-HSA-75809 "Phosphorylation of Cdc25C at Ser216 by CHEK2"
-xref: reactome:R-HSA-77071 "Phosphorylation (Ser5) of RNA pol II CTD"
-xref: reactome:R-HSA-8853323 "Activated FGFR3 fusion-associated PI3K phosphorylates PIP2 to PIP3"
-xref: reactome:R-HSA-8942836 "CDK4/6:CCND complexes are activated by T-loop phosphorylation of CDK4/6"
-xref: reactome:R-HSA-8948039 "FUNDC1 is phosphorylated by CK2"
-xref: reactome:R-HSA-8948143 "p-S13, FUNDC1 is phosphorylated by CK2 at Tyr18"
-xref: reactome:R-HSA-8948146 "FUNDC1 is phosphorylated by ULK1 at Ser17"
+xref: Reactome:R-HSA-6788855 "FN3KRP phosphorylates PsiAm, RibAm"
+xref: Reactome:R-HSA-6788867 "FN3K phosphorylates ketosamines"
 is_a: GO:0016772 ! transferase activity, transferring phosphorus-containing groups
 relationship: part_of GO:0016310 ! phosphorylation
 
@@ -1769,6 +1727,7 @@ id: GO:0016477
 name: cell migration
 namespace: biological_process
 def: "The controlled self-propelled movement of a cell from one site to a destination guided by molecular cues. Cell migration is a central process in the development and maintenance of multicellular organisms." [GOC:cjm, GOC:dph, GOC:ems, GOC:pf, http://en.wikipedia.org/wiki/Cell_migration]
+xref: MIPS_funcat:34.05.01
 xref: Wikipedia:Cell_migration
 is_a: GO:0048870 ! cell motility
 
@@ -1787,11 +1746,11 @@ subset: goslim_pir
 subset: goslim_plant
 subset: goslim_yeast
 xref: EC:2
-xref: reactome:R-HSA-1483089 "PE is converted to PS by PTDSS2"
-xref: reactome:R-HSA-1483186 "PC is converted to PS by PTDSS1"
-xref: reactome:R-HSA-5668414 "TRAF2 ubiquitinates cIAP1,2 in cIAP1,2:TRAF1:TRAF2:TRAF3:NIK"
-xref: reactome:R-HSA-6787403 "GTPBP3 and MTO1 transform uridine-34 yielding 5-taurinomethyluridine-34 in tRNA"
-xref: reactome:R-HSA-8868783 "TSR3 transfers aminocarboxypropyl group from S-adenosylmethionine to N(1)-methylpseudouridine-1248 of 18SE rRNA yielding N(1)-methyl-N(3)-aminocarboxypropylpseudouridine-1248"
+xref: Reactome:R-HSA-1483089 "PE is converted to PS by PTDSS2"
+xref: Reactome:R-HSA-1483186 "PC is converted to PS by PTDSS1"
+xref: Reactome:R-HSA-5668414 "TRAF2 ubiquitinates cIAP1,2 in cIAP1,2:TRAF1:TRAF2:TRAF3:NIK"
+xref: Reactome:R-HSA-6787403 "GTPBP3 and MTO1 transform uridine-34 yielding 5-taurinomethyluridine-34 in tRNA"
+xref: Reactome:R-HSA-8868783 "TSR3 transfers aminocarboxypropyl group from S-adenosylmethionine to N(1)-methylpseudouridine-1248 of 18SE rRNA yielding N(1)-methyl-N(3)-aminocarboxypropylpseudouridine-1248"
 is_a: GO:0003824 ! catalytic activity
 
 [Term]
@@ -2052,6 +2011,7 @@ subset: goslim_pombe
 synonym: "actin cytoskeleton organisation" EXACT [GOC:curators]
 synonym: "actin cytoskeleton organization and biogenesis" RELATED [GOC:mah]
 synonym: "actin modulating activity" RELATED []
+xref: MIPS_funcat:42.04.03
 is_a: GO:0007010 ! cytoskeleton organization
 is_a: GO:0030029 ! actin filament-based process
 
@@ -2059,7 +2019,7 @@ is_a: GO:0030029 ! actin filament-based process
 id: GO:0030141
 name: secretory granule
 namespace: cellular_component
-def: "A small subcellular vesicle, surrounded by a membrane, that is formed from the Golgi apparatus and contains a highly concentrated protein destined for secretion. Secretory granules move towards the periphery of the cell and upon stimulation, their membranes fuse with the cell membrane, and their protein load is exteriorized. Processing of the contained protein may take place in secretory granules." [GOC:mah, ISBN:0198596732]
+def: "A small subcellular vesicle, surrounded by a membrane, that is formed from the Golgi apparatus and contains a highly concentrated protein destined for secretion. Secretory granules move towards the periphery of the cell and upon stimulation, their membranes fuse with the cell membrane, and their protein load is exteriorized. Processing of the contained protein may take place in secretory granules." [GOC:mah, ISBN:0198506732]
 comment: Note that the term 'secretory vesicle' is sometimes used in this sense, but can also mean 'transport vesicle ; GO:0030133'.
 synonym: "secretory vesicle" BROAD []
 is_a: GO:0099503 ! secretory vesicle
@@ -2075,6 +2035,7 @@ subset: goslim_chembl
 subset: goslim_generic
 subset: goslim_mouse
 subset: goslim_plant
+xref: MIPS_funcat:40.02
 xref: Wikipedia:Cellular_differentiation
 is_a: GO:0048869 ! cellular developmental process
 
@@ -2083,6 +2044,7 @@ id: GO:0030182
 name: neuron differentiation
 namespace: biological_process
 def: "The process in which a relatively unspecialized cell acquires specialized features of a neuron." [GOC:mah]
+xref: MIPS_funcat:43.03.13
 is_a: GO:0030154 ! cell differentiation
 relationship: part_of GO:0048699 ! generation of neurons
 
@@ -2143,8 +2105,16 @@ id: GO:0030545
 name: receptor regulator activity
 namespace: molecular_function
 def: "The function of interacting (directly or indirectly) with receptors such that the proportion of receptors in the active form is changed." [GOC:ceb]
+xref: MIPS_funcat:18.02.07
 is_a: GO:0098772 ! molecular function regulator
-relationship: part_of GO:0010469 ! regulation of signaling receptor activity
+
+[Term]
+id: GO:0030546
+name: signaling receptor activator activity
+namespace: molecular_function
+def: "The function of interacting (directly or indirectly) with receptors such that the proportion of receptors in the active form is increased." [GOC:ceb]
+synonym: "receptor activator activity" BROAD []
+is_a: GO:0030545 ! receptor regulator activity
 
 [Term]
 id: GO:0031032
@@ -2808,6 +2778,7 @@ def: "Self-propelled movement of a cell or organism from one location to another
 subset: goslim_chembl
 subset: goslim_generic
 subset: goslim_pir
+xref: MIPS_funcat:02.45.11
 is_a: GO:0008150 ! biological_process
 
 [Term]
@@ -2965,6 +2936,7 @@ synonym: "up-regulation of enzyme activity" EXACT []
 synonym: "up-regulation of metalloenzyme activity" NARROW []
 synonym: "upregulation of enzyme activity" EXACT []
 synonym: "upregulation of metalloenzyme activity" NARROW []
+xref: MIPS_funcat:18.02.01.01
 is_a: GO:0044093 ! positive regulation of molecular function
 is_a: GO:0050790 ! regulation of catalytic activity
 intersection_of: GO:0008150 ! biological_process
@@ -3664,9 +3636,11 @@ comment: Definition discussed in https://github.com/geneontology/go-ontology/iss
 subset: goslim_chembl
 synonym: "receptor agonist activity" BROAD [GOC:molecular_function_refactoring]
 synonym: "signaling molecule" EXACT []
+synonym: "signaling receptor ligand activity" EXACT []
 synonym: "vitamin D receptor activator activity" NARROW []
 is_a: GO:0005102 ! signaling receptor binding
-is_a: GO:0030545 ! receptor regulator activity
+is_a: GO:0030546 ! signaling receptor activator activity
+relationship: part_of GO:0007165 ! signal transduction
 created_by: midori
 creation_date: 2010-09-13T04:51:59Z
 
@@ -3869,6 +3843,7 @@ id: GO:0048608
 name: reproductive structure development
 namespace: biological_process
 def: "The reproductive developmental process whose specific outcome is the progression of structures that will be used in the process of creating new individuals from one or more parents, from their formation to the mature structures." [GOC:dph, GOC:isa_complete, GOC:jid]
+xref: MIPS_funcat:45.03.15
 is_a: GO:0003006 ! developmental process involved in reproduction
 is_a: GO:0048856 ! anatomical structure development
 relationship: part_of GO:0061458 ! reproductive system development
@@ -4007,6 +3982,7 @@ name: generation of neurons
 namespace: biological_process
 def: "The process in which nerve cells are generated. This includes the production of neuroblasts and their differentiation into neurons." [GOC:nln]
 synonym: "neuron generation" EXACT [GOC:curators]
+xref: MIPS_funcat:41.05.13
 is_a: GO:0022008 ! neurogenesis
 
 [Term]
@@ -4044,6 +4020,7 @@ def: "The biological process whose specific outcome is the progression of an ana
 comment: This term was added by GO_REF:0000021.
 subset: goslim_chembl
 subset: goslim_generic
+subset: goslim_plant
 synonym: "development of an anatomical structure" EXACT []
 is_a: GO:0032502 ! developmental process
 
@@ -4140,6 +4117,7 @@ def: "Any process that modulates the activity of an enzyme." [GOC:ai, GOC:ebc, G
 subset: goslim_chembl
 synonym: "regulation of enzyme activity" EXACT []
 synonym: "regulation of metalloenzyme activity" NARROW []
+xref: MIPS_funcat:18.02.01
 is_a: GO:0065009 ! regulation of molecular function
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0003824 ! catalytic activity
@@ -4239,6 +4217,7 @@ subset: goslim_pir
 synonym: "neurological system process" EXACT []
 synonym: "neurophysiological process" EXACT []
 synonym: "pan-neural process" RELATED []
+xref: MIPS_funcat:36.25.03
 is_a: GO:0003008 ! system process
 
 [Term]
@@ -4254,6 +4233,7 @@ subset: goslim_flybase_ribbon
 subset: goslim_mouse
 subset: goslim_pir
 synonym: "physiological response to stimulus" EXACT []
+xref: MIPS_funcat:34.11
 is_a: GO:0008150 ! biological_process
 
 [Term]
@@ -5163,6 +5143,7 @@ def: "Any process that modulates the frequency, rate or extent of a molecular fu
 subset: gocheck_do_not_annotate
 subset: goslim_agr
 subset: goslim_pir
+subset: goslim_plant
 synonym: "regulation of a molecular function" EXACT []
 is_a: GO:0065007 ! biological regulation
 intersection_of: GO:0008150 ! biological_process
