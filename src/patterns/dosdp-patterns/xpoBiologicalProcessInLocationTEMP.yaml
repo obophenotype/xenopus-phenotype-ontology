@@ -12,6 +12,9 @@ relations:
   has_part: BFO:0000051
   occurs_in: BFO:0000066
 
+annotationProperties:
+  exact_synonym: oio:hasExactSynonym
+
 vars:
   biological_process: "'entity'"
   quality: "'quality'"
@@ -19,6 +22,13 @@ vars:
   
 name:
   text: "abnormal(ly) %s of %s in %s (T)"
+  vars:
+   - quality
+   - biological_process
+   - location
+
+def:
+  text: "Abnormal(ly) %s of %s in %s (Temporary definition)."
   vars:
    - quality
    - biological_process

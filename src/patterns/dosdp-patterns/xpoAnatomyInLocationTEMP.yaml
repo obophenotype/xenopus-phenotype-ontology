@@ -12,17 +12,27 @@ relations:
   has_part: BFO:0000051
   part_of: BFO:0000050
 
+annotationProperties:
+  exact_synonym: oio:hasExactSynonym
+
 vars:
   anatomical_entity: "'entity'"
   quality: "'quality'"
   location: "'entity'"
-  
+    
 name:
   text: "abnormal(ly) %s of %s in %s (T)"
   vars:
    - quality
    - anatomical_entity
    - location
+
+def:
+  text: "Abnormal(ly) %s of %s in %s (Temporary definition)."
+  vars:
+  - quality
+  - anatomical_entity
+  - location
 
 equivalentTo:
   text: "'has_part' some (%s and ('inheres_in' some (%s and ('part_of' some %s))) and ('qualifier' some 'abnormal'))"
