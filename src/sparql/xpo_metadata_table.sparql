@@ -1,11 +1,15 @@
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?term ?label ?definition ?exact_synonym
 WHERE {
+	OPTIONAL
   { 
-    ?term rdfs:label ?label .
-    ?term <http://purl.obolibrary.org/obo/IAO_0000115> ?definition .
+		?term rdfs:label ?label .
   }
-  OPTIONAL
+	OPTIONAL
+  { 
+		?term <http://purl.obolibrary.org/obo/IAO_0000115> ?definition .
+  }
+	OPTIONAL
   { 
 		?term <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ?exact_synonym .
   }
