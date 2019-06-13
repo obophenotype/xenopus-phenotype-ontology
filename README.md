@@ -1,9 +1,11 @@
 [![Build Status](https://travis-ci.org/obophenotype/xenopus-phenotype-ontology.svg?branch=master)](https://travis-ci.org/obophenotype/xenopus-phenotype-ontology)
 [![DOI](https://zenodo.org/badge/13996/obophenotype/xenopus-phenotype-ontology.svg)](https://zenodo.org/badge/latestdoi/13996/obophenotype/xenopus-phenotype-ontology)
 
-# xenopus-phenotype-ontology
+# Xenopus Phenotype Ontology
 
-This ontology... YOUR DESCRIPTION HERE 
+The Xenopus Phenotype Ontology (XPO) represents phenotypes occurring throughout the development of the African frogs *Xenopus laevis* and *tropicalis*. It is being designed to support curation of phenotype data in [Xenbase](http://www.xenbase.org/) and integrate *Xenopus* data with information about other model organism phenotypes and human disease.
+
+Please note, currently the XPO is in a draft/beta version and is subject to substantial further revision.
 
 ## Versions
 
