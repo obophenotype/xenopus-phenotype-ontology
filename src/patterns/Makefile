@@ -3,7 +3,7 @@ AUTOPATTERNS = ../patterns/data/anatomy/
 AUTOPATTERNACCESSION = 99999
 PURL=http://purl.obolibrary.org/obo/XPO_
 OBOPURL=http://purl.obolibrary.org/obo/
-PATTERNDIR=../patterns/dosdp-patterns/
+PATTERNDIR=../patterns/dosdp-patterns
 
 $(XAO):
 	curl -L -O https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.owl
@@ -16,6 +16,7 @@ MANUALPATTERNS=$(patsubst %.tsv, $(MANUALPATTERNDIR)/%.tsv, $(notdir $(wildcard 
 AUTOPATTERNS=$(patsubst %.tsv, $(AUTOPATTERNDIR)/%.tsv, $(notdir $(wildcard ../patterns/data/anatomy/*.tsv)))
 AUTOPATTERNDIR=../patterns/data/anatomy
 MANUALPATTERNDIR=../patterns/data/manual
+TODOPATTERNDIR=../patterns/data/todo
 pattern_term_lists_auto := $(patsubst %.tsv, $(AUTOPATTERNDIR)/%.txt, $(notdir $(wildcard ../patterns/data/anatomy/*.tsv)))
 pattern_term_lists_manual := $(patsubst %.tsv, $(MANUALPATTERNDIR)/%.txt, $(notdir $(wildcard ../patterns/data/manual/*.tsv)))
 
@@ -57,6 +58,11 @@ $(AUTOPATTERNDIR)/abnormalMorphologyOfAnatomicalEntity.tsv: anatomy_seed.txt
 
 $(MANUALPATTERNDIR)/%.tsv:
 	python3 ../scripts/assign_unique_ids.py $@ id_map.tsv reserved_iris.txt $(AUTOPATTERNACCESSION) $(PURL) $(PATTERNDIR)
+
+$(TODOPATTERNDIR)/obsoleteTerm.ofn: $(TODOPATTERNDIR)/obsoleteTerm.tsv $(PATTERNDIR)/obsoleteTerm.yaml $(SRC)
+		dosdp-tools generate --catalog=catalog-v001.xml --infile=$< --template=$(word 2, $^) --obo-prefixes=true --outfile=$@
+
+obsolete: $(TODOPATTERNDIR)/obsoleteTerm.ofn
 
 auto_patterns: $(AUTOPATTERNDIR)/abnormalAnatomicalEntity.tsv $(AUTOPATTERNDIR)/abnormalMorphologyOfAnatomicalEntity.tsv
 

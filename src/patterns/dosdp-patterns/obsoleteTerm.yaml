@@ -3,6 +3,7 @@ pattern_iri: http://purl.obolibrary.org/obo/xpo/src/patterns/dosdp-patterns/obso
 
 classes:
   term: owl:Thing
+  thing: owl:Thing
 
 annotationProperties:
   term_replaced_by: IAO:0100001
@@ -10,23 +11,27 @@ annotationProperties:
   id: oio:id
   label: rdfs:label
 
-vars:
-  term: "'term'"
-  
-name:
-  text: "abnormal(ly) %s of %s (T)"
-  vars:
-   - quality
-   - anatomical_entity
+data_vars:
+  term_replaced_by: "'term_replaced_by'"
+  id: "'id'"
+  label: "'label'"
 
-def:
-  text: "Abnormal(ly) %s of %s (Temporary definition)."
-  vars:
-  - quality
-  - anatomical_entity
+annotations:
+  - annotationProperty: label
+    text: "%s"
+    vars:
+      - label
+  - annotationProperty: is_obsolete
+    text: "true"
+    type: boolean
+  - annotationProperty: id
+    text: "%s"
+    vars:
+      - id
+  - annotationProperty: term_replaced_by
+    text: "%s"
+    vars:
+      - term_replaced_by
 
-equivalentTo:
-  text: "'has_part' some (%s and ('inheres_in' some %s) and ('qualifier' some 'abnormal'))"
-  vars:
-    - quality
-    - anatomical_entity
+subClassOf:
+  text: "'thing'"
