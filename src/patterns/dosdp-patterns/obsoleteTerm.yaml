@@ -12,11 +12,12 @@ annotationProperties:
   label: rdfs:label
 
 vars:
-  id: "'id'"
+  x: "'thing'"
 
 data_vars:
   term_replaced_by: "'term_replaced_by'"
   label: "'label'"
+  id: "'id'"
 
 annotations:
   - annotationProperty: label
@@ -24,7 +25,7 @@ annotations:
     vars:
       - label
   - annotationProperty: is_obsolete
-    value: [true]
+    text: "true"
   - annotationProperty: id
     text: "%s"
     vars:
@@ -36,3 +37,5 @@ annotations:
 
 subClassOf:
   text: "'thing'"
+  vars:
+    - x
