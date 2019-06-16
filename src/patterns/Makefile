@@ -57,12 +57,14 @@ $(AUTOPATTERNDIR)/abnormalMorphologyOfAnatomicalEntity.tsv: anatomy_seed.txt
 	python3 ../scripts/assign_unique_ids.py $@ id_map.tsv reserved_iris.txt $(AUTOPATTERNACCESSION) $(PURL) $(PATTERNDIR)
 
 $(MANUALPATTERNDIR)/%.tsv:
-	python3 ../scripts/assign_unique_ids.py $@ id_map.tsv reserved_iris.txt $(AUTOPATTERNACCESSION) $(PURL) $(PATTERNDIR)
+	@if [ $* != "obsoleteTerm" ]; then python3 ../scripts/assign_unique_ids.py $@ id_map.tsv reserved_iris.txt $(AUTOPATTERNACCESSION) $(PURL) $(PATTERNDIR); fi
 
-$(TODOPATTERNDIR)/obsoleteTerm.ofn: $(TODOPATTERNDIR)/obsoleteTerm.tsv $(PATTERNDIR)/obsoleteTerm.yaml $(SRC)
-		dosdp-tools generate --catalog=catalog-v001.xml --infile=$< --template=$(word 2, $^) --obo-prefixes=true --outfile=$@
+#if [[ $@ != *"obsolete"* ]]; then python3 ../scripts/assign_unique_ids.py $@ id_map.tsv reserved_iris.txt $(AUTOPATTERNACCESSION) $(PURL) $(PATTERNDIR); fi
 
-obsolete: $(TODOPATTERNDIR)/obsoleteTerm.ofn
+$(MANUALPATTERNDIR)/obsoleteTerm.ofn: $(MANUALPATTERNDIR)/obsoleteTerm.tsv $(PATTERNDIR)/obsoleteTerm.yaml
+	dosdp-tools generate --infile=$< --template=$(PATTERNDIR)/obsoleteTerm.yaml --obo-prefixes=true --outfile=$@
+
+obsolete: $(MANUALPATTERNDIR)/obsoleteTerm.ofn
 
 auto_patterns: $(AUTOPATTERNDIR)/abnormalAnatomicalEntity.tsv $(AUTOPATTERNDIR)/abnormalMorphologyOfAnatomicalEntity.tsv
 
