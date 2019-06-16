@@ -1,0 +1,32 @@
+pattern_name: obsoleteTerm
+pattern_iri: http://purl.obolibrary.org/obo/xpo/src/patterns/dosdp-patterns/obsoleteTerm.yaml
+
+classes:
+  term: owl:Thing
+
+annotationProperties:
+  term_replaced_by: IAO:0100001
+  is_obsolete: owl:deprecated
+  id: oio:id
+  label: rdfs:label
+
+vars:
+  term: "'term'"
+  
+name:
+  text: "abnormal(ly) %s of %s (T)"
+  vars:
+   - quality
+   - anatomical_entity
+
+def:
+  text: "Abnormal(ly) %s of %s (Temporary definition)."
+  vars:
+  - quality
+  - anatomical_entity
+
+equivalentTo:
+  text: "'has_part' some (%s and ('inheres_in' some %s) and ('qualifier' some 'abnormal'))"
+  vars:
+    - quality
+    - anatomical_entity
