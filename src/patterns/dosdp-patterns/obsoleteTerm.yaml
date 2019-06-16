@@ -11,9 +11,11 @@ annotationProperties:
   id: oio:id
   label: rdfs:label
 
+vars:
+  id: "'id'"
+
 data_vars:
   term_replaced_by: "'term_replaced_by'"
-  id: "'id'"
   label: "'label'"
 
 annotations:
@@ -22,8 +24,7 @@ annotations:
     vars:
       - label
   - annotationProperty: is_obsolete
-    text: "true"
-    type: boolean
+    value: [true]
   - annotationProperty: id
     text: "%s"
     vars:
