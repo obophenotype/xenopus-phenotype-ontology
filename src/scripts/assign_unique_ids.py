@@ -11,12 +11,13 @@ accession = int(sys.argv[4])
 prefix = sys.argv[5]
 pattern_dir = sys.argv[6]
 
-#tsv = "/ws/xenopus-phenotype-ontology/src/patterns/data/manual/decreasedProcessQualityInLocation.tsv"
-#id_map = "/ws/xenopus-phenotype-ontology/src/patterns/id_map.tsv"
-#reserved_ids = "/ws/xenopus-phenotype-ontology/src/patterns/reserved_iris.txt"
+#tsv = "../patterns/data/manual/obsoleteTerm.tsv"
+#id_map = "../patterns/id_map.tsv"
+#reserved_ids = "../patterns/reserved_iris.txt"
 #accession = int("9898")
 #prefix = "http://purl.obolibrary.org/obo/XPO_"
-obo_prefix = "http://purl.obolibrary.org/obo/"
+#obo_prefix = "http://purl.obolibrary.org/obo/"
+#pattern_dir = "../patterns/dosdp-patterns"
 
 maxid = 9999999
 pattern = os.path.basename(tsv)
@@ -136,6 +137,7 @@ df = df.sort_values('defined_class')
 df_ids = df_ids.sort_values('iri')
 df_ids = df_ids.drop_duplicates()
 df.drop_duplicates().to_csv(tsv, sep = '\t', index=False)
+
 idstest = df_ids['iri']
 if len(idstest) != len(set(idstest)):
     duplicates = [item for item, count in collections.Counter(idstest).items() if count > 1]

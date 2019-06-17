@@ -8,7 +8,7 @@ classes:
 annotationProperties:
   term_replaced_by: IAO:0100001
   is_obsolete: owl:deprecated
-  id: oio:id
+  curie: oio:id
   label: rdfs:label
 
 vars:
@@ -17,7 +17,7 @@ vars:
 data_vars:
   term_replaced_by: "'term_replaced_by'"
   label: "'label'"
-  id: "'id'"
+  curie: "'curie'"
 
 annotations:
   - annotationProperty: label
@@ -26,10 +26,10 @@ annotations:
       - label
   - annotationProperty: is_obsolete
     text: "true"
-  - annotationProperty: id
+  - annotationProperty: curie
     text: "%s"
     vars:
-      - id
+      - curie
   - annotationProperty: term_replaced_by
     text: "%s"
     vars:
