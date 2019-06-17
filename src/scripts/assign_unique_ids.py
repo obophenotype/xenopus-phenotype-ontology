@@ -16,9 +16,9 @@ pattern_dir = sys.argv[6]
 #reserved_ids = "../patterns/reserved_iris.txt"
 #accession = int("9898")
 #prefix = "http://purl.obolibrary.org/obo/XPO_"
-#obo_prefix = "http://purl.obolibrary.org/obo/"
 #pattern_dir = "../patterns/dosdp-patterns"
 
+obo_prefix = "http://purl.obolibrary.org/obo/"
 maxid = 9999999
 pattern = os.path.basename(tsv)
 pattern_file = os.path.join(pattern_dir,pattern.replace(".tsv",".yaml"))
