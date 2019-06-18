@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2019-05-22
+data-version: releases/2019-06-17
 ontology: xpo
 property_value: http://purl.org/dc/elements/1.1/description "Ontology about Xenopus." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Xenopus Phenotype Ontology" xsd:string
@@ -374,6 +374,24 @@ xref: MIPS_funcat:34.03.03
 is_a: GO:0042391 ! regulation of membrane potential
 
 [Term]
+id: GO:0001654
+name: eye development
+namespace: biological_process
+alt_id: GO:0042460
+def: "The process whose specific outcome is the progression of the eye over time, from its formation to the mature structure. The eye is the organ of sight." [GOC:jid, GOC:jl]
+xref: MIPS_funcat:47.03.02.02
+xref: Wikipedia:Eye_development
+is_a: GO:0007423 ! sensory organ development
+relationship: part_of GO:0150063 ! visual system development
+
+[Term]
+id: GO:0001655
+name: urogenital system development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the urogenital system over time, from its formation to the mature structure." [GOC:go_curators]
+is_a: GO:0048731 ! system development
+
+[Term]
 id: GO:0001667
 name: ameboidal-type cell migration
 namespace: biological_process
@@ -418,6 +436,98 @@ is_a: GO:0001704 ! formation of primary germ layer
 relationship: part_of GO:0048332 ! mesoderm morphogenesis
 
 [Term]
+id: GO:0001822
+name: kidney development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the kidney over time, from its formation to the mature structure. The kidney is an organ that filters the blood and/or excretes the end products of body metabolism in the form of urine." [GOC:dph, GOC:mtg_kidney_jan10, ISBN:0124020607, ISBN:0721662544]
+synonym: "nephrogenesis" RELATED [GOC:rph]
+xref: MIPS_funcat:47.03.07.01
+xref: Wikipedia:Kidney_development
+is_a: GO:0048513 ! animal organ development
+relationship: part_of GO:0072001 ! renal system development
+
+[Term]
+id: GO:0001823
+name: mesonephros development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the mesonephros over time, from its formation to the mature structure. In mammals, the mesonephros is the second of the three embryonic kidneys to be established and exists only transiently. In lower vertebrates such as fish and amphibia, the mesonephros will form the mature kidney." [GOC:dph, ISBN:0124020607, ISBN:0721662544, PMID:10535314]
+synonym: "Wolffian body development" EXACT [GOC:dph]
+is_a: GO:0001822 ! kidney development
+
+[Term]
+id: GO:0001889
+name: liver development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the liver over time, from its formation to the mature structure. The liver is an exocrine gland which secretes bile and functions in metabolism of protein and carbohydrate and fat, synthesizes substances involved in the clotting of the blood, synthesizes vitamin A, detoxifies poisonous substances, stores glycogen, and breaks down worn-out erythrocytes." [GOC:add, ISBN:068340007X]
+xref: MIPS_funcat:47.03.11.07
+is_a: GO:0048732 ! gland development
+relationship: part_of GO:0061008 ! hepaticobiliary system development
+
+[Term]
+id: GO:0002376
+name: immune system process
+namespace: biological_process
+def: "Any process involved in the development or functioning of the immune system, an organismal system for calibrated responses to potential internal or invasive threats." [GO_REF:0000022, GOC:add, GOC:mtg_15nov05]
+comment: Note that this term is a direct child of 'biological_process ; GO:0008150' because some immune system processes are types of cellular process (GO:0009987), whereas others are types of multicellular organism process (GO:0032501). This term was added by GO_REF:0000022.
+subset: goslim_agr
+subset: goslim_chembl
+subset: goslim_flybase_ribbon
+subset: goslim_generic
+subset: goslim_mouse
+subset: goslim_pir
+xref: Wikipedia:Immune_system
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0002520
+name: immune system development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of an organismal system whose objective is to provide calibrated responses by an organism to a potential internal or invasive threat, over time, from its formation to the mature structure. A system is a regularly interacting or interdependent group of organs or tissues that work together to carry out a given biological process." [GOC:add, GOC:dph]
+is_a: GO:0002376 ! immune system process
+is_a: GO:0048731 ! system development
+
+[Term]
+id: GO:0002682
+name: regulation of immune system process
+namespace: biological_process
+def: "Any process that modulates the frequency, rate, or extent of an immune system process." [GOC:add]
+is_a: GO:0050789 ! regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0002376 ! immune system process
+relationship: regulates GO:0002376 ! immune system process
+
+[Term]
+id: GO:0002683
+name: negative regulation of immune system process
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate, or extent of an immune system process." [GOC:add]
+synonym: "down regulation of immune system process" EXACT []
+synonym: "down-regulation of immune system process" EXACT []
+synonym: "downregulation of immune system process" EXACT []
+synonym: "inhibition of immune system process" NARROW []
+is_a: GO:0002682 ! regulation of immune system process
+is_a: GO:0048519 ! negative regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0002376 ! immune system process
+relationship: negatively_regulates GO:0002376 ! immune system process
+
+[Term]
+id: GO:0002684
+name: positive regulation of immune system process
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate, or extent of an immune system process." [GOC:add]
+synonym: "activation of immune system process" NARROW []
+synonym: "stimulation of immune system process" NARROW []
+synonym: "up regulation of immune system process" EXACT []
+synonym: "up-regulation of immune system process" EXACT []
+synonym: "upregulation of immune system process" EXACT []
+is_a: GO:0002682 ! regulation of immune system process
+is_a: GO:0048518 ! positive regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0002376 ! immune system process
+relationship: positively_regulates GO:0002376 ! immune system process
+
+[Term]
 id: GO:0003002
 name: regionalization
 namespace: biological_process
@@ -444,6 +554,25 @@ namespace: biological_process
 def: "A multicellular organismal process carried out by any of the organs or tissues in an organ system. An organ system is a regularly interacting or interdependent group of organs or tissues that work together to carry out a biological objective." [GOC:mtg_cardio]
 synonym: "organ system process" EXACT []
 is_a: GO:0032501 ! multicellular organismal process
+
+[Term]
+id: GO:0003205
+name: cardiac chamber development
+namespace: biological_process
+def: "The progression of a cardiac chamber over time, from its formation to the mature structure. A cardiac chamber is an enclosed cavity within the heart." [GOC:mtg_heart]
+is_a: GO:0048856 ! anatomical structure development
+relationship: part_of GO:0007507 ! heart development
+created_by: dph
+creation_date: 2009-10-13T09:11:18Z
+
+[Term]
+id: GO:0003231
+name: cardiac ventricle development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of a cardiac ventricle over time, from its formation to the mature structure. A cardiac ventricle receives blood from a cardiac atrium and pumps it out of the heart." [GOC:mtg_heart]
+is_a: GO:0003205 ! cardiac chamber development
+created_by: dph
+creation_date: 2009-10-13T11:03:16Z
 
 [Term]
 id: GO:0003401
@@ -1038,6 +1167,35 @@ xref: MIPS_funcat:47.03.01
 is_a: GO:0048731 ! system development
 
 [Term]
+id: GO:0007417
+name: central nervous system development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the central nervous system over time, from its formation to the mature structure. The central nervous system is the core nervous system that serves an integrating and coordinating function. In vertebrates it consists of the brain and spinal cord. In those invertebrates with a central nervous system it typically consists of a brain, cerebral ganglia and a nerve cord." [GOC:bf, GOC:jid, ISBN:0582227089]
+synonym: "CNS development" EXACT []
+xref: MIPS_funcat:47.03.01.01
+xref: Wikipedia:Neural_development
+is_a: GO:0048731 ! system development
+relationship: part_of GO:0007399 ! nervous system development
+
+[Term]
+id: GO:0007420
+name: brain development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the brain over time, from its formation to the mature structure. Brain development begins with patterning events in the neural tube and ends with the mature structure that is the center of thought and emotion. The brain is responsible for the coordination and control of bodily activities and the interpretation of information from the senses (sight, hearing, smell, etc.)." [GOC:dph, GOC:jid, GOC:tb, UBERON:0000955]
+xref: MIPS_funcat:47.03.01.01.01
+is_a: GO:0048513 ! animal organ development
+relationship: part_of GO:0007417 ! central nervous system development
+relationship: part_of GO:0060322 ! head development
+
+[Term]
+id: GO:0007423
+name: sensory organ development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of sensory organs over time, from its formation to the mature structure." [GOC:go_curators]
+synonym: "sense organ development" EXACT [GOC:dph]
+is_a: GO:0048513 ! animal organ development
+
+[Term]
 id: GO:0007492
 name: endoderm development
 namespace: biological_process
@@ -1050,6 +1208,37 @@ name: mesoderm development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of the mesoderm over time, from its formation to the mature structure. The mesoderm is the middle germ layer that develops into muscle, bone, cartilage, blood and connective tissue." [GOC:dph, GOC:tb]
 is_a: GO:0009888 ! tissue development
+
+[Term]
+id: GO:0007507
+name: heart development
+namespace: biological_process
+alt_id: GO:0007511
+def: "The process whose specific outcome is the progression of the heart over time, from its formation to the mature structure. The heart is a hollow, muscular organ, which, by contracting rhythmically, keeps up the circulation of the blood." [GOC:jid, UBERON:0000948]
+synonym: "cardiac development" RELATED []
+synonym: "dorsal vessel development" NARROW []
+xref: MIPS_funcat:47.03.03.01
+xref: Wikipedia:Heart_development
+is_a: GO:0048513 ! animal organ development
+relationship: part_of GO:0072359 ! circulatory system development
+
+[Term]
+id: GO:0007517
+name: muscle organ development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the muscle over time, from its formation to the mature structure. The muscle is an organ consisting of a tissue made up of various elongated cells that are specialized to contract and thus to produce movement and mechanical work." [GOC:jid, ISBN:0198506732]
+xref: MIPS_funcat:45.03.12
+is_a: GO:0048513 ! animal organ development
+is_a: GO:0061061 ! muscle structure development
+
+[Term]
+id: GO:0007548
+name: sex differentiation
+namespace: biological_process
+def: "The establishment of the sex of an organism by physical differentiation." [GOC:ai]
+xref: MIPS_funcat:41.05.23
+xref: Wikipedia:Sexual_differentiation
+is_a: GO:0003006 ! developmental process involved in reproduction
 
 [Term]
 id: GO:0007610
@@ -1171,6 +1360,24 @@ intersection_of: negatively_regulates GO:0008283 ! cell population proliferation
 relationship: negatively_regulates GO:0008283 ! cell population proliferation
 
 [Term]
+id: GO:0008406
+name: gonad development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the gonad over time, from its formation to the mature structure. The gonad is an animal organ that produces gametes; in some species it also produces hormones." [GOC:ems, ISBN:0198506732]
+synonym: "gonadogenesis" EXACT [GOC:cjm]
+is_a: GO:0048513 ! animal organ development
+is_a: GO:0048608 ! reproductive structure development
+relationship: part_of GO:0045137 ! development of primary sexual characteristics
+
+[Term]
+id: GO:0008544
+name: epidermis development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the epidermis over time, from its formation to the mature structure. The epidermis is the outer epithelial layer of an animal, it may be a single layer that produces an extracellular material (e.g. the cuticle of arthropods) or a complex stratified squamous epithelium, as in the case of many vertebrate species." [GOC:go_curators, UBERON:0001003]
+synonym: "hypodermis development" RELATED [GOC:kmv, GOC:rk]
+is_a: GO:0009888 ! tissue development
+
+[Term]
 id: GO:0009605
 name: response to external stimulus
 namespace: biological_process
@@ -1218,6 +1425,15 @@ synonym: "embryogenesis and morphogenesis" BROAD []
 synonym: "embryonal development" EXACT []
 xref: Wikipedia:Embryogenesis
 is_a: GO:0007275 ! multicellular organism development
+
+[Term]
+id: GO:0009792
+name: embryo development ending in birth or egg hatching
+namespace: biological_process
+def: "The process whose specific outcome is the progression of an embryo over time, from zygote formation until the end of the embryonic life stage. The end of the embryonic life stage is organism-specific and may be somewhat arbitrary; for mammals it is usually considered to be birth, for insects the hatching of the first instar larva from the eggshell." [GOC:go_curators, GOC:isa_complete, GOC:mtg_sensu]
+synonym: "embryogenesis" BROAD []
+xref: MIPS_funcat:41.05.03
+is_a: GO:0009790 ! embryo development
 
 [Term]
 id: GO:0009798
@@ -1639,6 +1855,31 @@ relationship: has_part GO:0005773 ! vacuole
 relationship: has_part GO:0005886 ! plasma membrane
 
 [Term]
+id: GO:0014031
+name: mesenchymal cell development
+namespace: biological_process
+def: "The process aimed at the progression of a mesenchymal cell over time, from initial commitment of the cell to its specific fate, to the fully functional differentiated cell." [GOC:dh, GOC:ef]
+is_a: GO:0048468 ! cell development
+relationship: part_of GO:0048762 ! mesenchymal cell differentiation
+
+[Term]
+id: GO:0014032
+name: neural crest cell development
+namespace: biological_process
+def: "The process aimed at the progression of a neural crest cell over time, from initial commitment of the cell to its specific fate, to the fully functional differentiated cell." [GOC:dh, GOC:ef]
+is_a: GO:0014031 ! mesenchymal cell development
+is_a: GO:0048864 ! stem cell development
+relationship: part_of GO:0014033 ! neural crest cell differentiation
+
+[Term]
+id: GO:0014033
+name: neural crest cell differentiation
+namespace: biological_process
+def: "The process in which a relatively unspecialized cell acquires specialized features of a neural crest cell." [GOC:dh, GOC:ef]
+is_a: GO:0048762 ! mesenchymal cell differentiation
+is_a: GO:0048863 ! stem cell differentiation
+
+[Term]
 id: GO:0015629
 name: actin cytoskeleton
 namespace: cellular_component
@@ -1827,6 +2068,15 @@ is_a: GO:0050877 ! nervous system process
 relationship: has_part GO:0001508 ! action potential
 relationship: has_part GO:0007268 ! chemical synaptic transmission
 relationship: part_of GO:0007154 ! cell communication
+
+[Term]
+id: GO:0021510
+name: spinal cord development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the spinal cord over time, from its formation to the mature structure. The spinal cord primarily conducts sensory and motor nerve impulses between the brain and the peripheral nervous tissues." [GO_REF:0000021, GOC:cls, GOC:dgh, GOC:dph, GOC:jid, GOC:mtg_15jun06]
+comment: This term was added by GO_REF:0000021.
+is_a: GO:0048513 ! animal organ development
+relationship: part_of GO:0007417 ! central nervous system development
 
 [Term]
 id: GO:0022008
@@ -2060,6 +2310,34 @@ is_a: GO:0097435 ! supramolecular fiber organization
 relationship: part_of GO:0055002 ! striated muscle cell development
 
 [Term]
+id: GO:0030323
+name: respiratory tube development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the respiratory tube over time, from its formation to the mature structure. The respiratory tube is assumed to mean any tube in the respiratory tract." [GOC:jid]
+is_a: GO:0035295 ! tube development
+is_a: GO:0048513 ! animal organ development
+
+[Term]
+id: GO:0030324
+name: lung development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the lung over time, from its formation to the mature structure. In all air-breathing vertebrates the lungs are developed from the ventral wall of the oesophagus as a pouch which divides into two sacs. In amphibians and many reptiles the lungs retain very nearly this primitive sac-like character, but in the higher forms the connection with the esophagus becomes elongated into the windpipe and the inner walls of the sacs become more and more divided, until, in the mammals, the air spaces become minutely divided into tubes ending in small air cells, in the walls of which the blood circulates in a fine network of capillaries. In mammals the lungs are more or less divided into lobes, and each lung occupies a separate cavity in the thorax." [GOC:jid, UBERON:0002048]
+xref: MIPS_funcat:47.03.09.01
+is_a: GO:0048513 ! animal organ development
+relationship: part_of GO:0030323 ! respiratory tube development
+relationship: part_of GO:0060541 ! respiratory system development
+
+[Term]
+id: GO:0030325
+name: adrenal gland development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the adrenal gland over time, from its formation to the mature structure. This gland can either be a discrete structure located bilaterally above each kidney, or a cluster of cells in the head kidney that perform the functions of the adrenal gland. In either case, this organ consists of two cells types, aminergic chromaffin cells and steroidogenic cortical cells." [GOC:dgh]
+synonym: "interrenal gland" RELATED []
+xref: MIPS_funcat:47.03.21.03.01
+is_a: GO:0048732 ! gland development
+relationship: part_of GO:0035270 ! endocrine system development
+
+[Term]
 id: GO:0030334
 name: regulation of cell migration
 namespace: biological_process
@@ -2115,6 +2393,31 @@ namespace: molecular_function
 def: "The function of interacting (directly or indirectly) with receptors such that the proportion of receptors in the active form is increased." [GOC:ceb]
 synonym: "receptor activator activity" BROAD []
 is_a: GO:0030545 ! receptor regulator activity
+
+[Term]
+id: GO:0030878
+name: thyroid gland development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the thyroid gland over time, from its formation to the mature structure. The thyroid gland is an endoderm-derived gland that produces thyroid hormone." [GOC:dgh]
+xref: MIPS_funcat:47.03.21.03.06
+is_a: GO:0048732 ! gland development
+relationship: part_of GO:0035270 ! endocrine system development
+
+[Term]
+id: GO:0030903
+name: notochord development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the notochord over time, from its formation to the mature structure. The notochord is a mesoderm-derived structure located ventral of the developing nerve cord. In vertebrates, the notochord serves as a core around which other mesodermal cells form the vertebrae. In the most primitive chordates, which lack vertebrae, the notochord persists as a substitute for a vertebral column." [GOC:dgh]
+is_a: GO:0048568 ! embryonic organ development
+
+[Term]
+id: GO:0031016
+name: pancreas development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the pancreas over time, from its formation to the mature structure. The pancreas is an endoderm derived structure that produces precursors of digestive enzymes and blood glucose regulating enzymes." [GOC:cvs]
+xref: MIPS_funcat:47.03.11.09
+xref: Wikipedia:Pancreas
+is_a: GO:0048513 ! animal organ development
 
 [Term]
 id: GO:0031032
@@ -2296,10 +2599,11 @@ intersection_of: part_of GO:0005737 ! cytoplasm
 
 [Term]
 id: GO:0031644
-name: regulation of neurological system process
+name: regulation of nervous system process
 namespace: biological_process
-def: "Any process that modulates the frequency, rate or extent of a neurophysiological process, an organ system process carried out by any of the organs or tissues of neurological system." [GOC:dph, GOC:mah, GOC:tb]
+def: "Any process that modulates the frequency, rate or extent of a neurophysiological process, an organ system process carried out by any of the organs or tissues of the nervous system." [GOC:dph, GOC:mah, GOC:tb]
 synonym: "regulation of neurological process" EXACT [GOC:dph, GOC:tb]
+synonym: "regulation of neurological system process" EXACT []
 synonym: "regulation of neurophysiological process" EXACT []
 is_a: GO:0044057 ! regulation of system process
 intersection_of: GO:0008150 ! biological_process
@@ -2308,7 +2612,7 @@ relationship: regulates GO:0050877 ! nervous system process
 
 [Term]
 id: GO:0031645
-name: negative regulation of neurological system process
+name: negative regulation of nervous system process
 namespace: biological_process
 def: "Any process that stops, prevents, or reduces the frequency, rate or extent of a neurophysiological process." [GOC:dph, GOC:mah, GOC:tb]
 synonym: "down regulation of neurological process" EXACT []
@@ -2316,8 +2620,9 @@ synonym: "down-regulation of neurological process" EXACT []
 synonym: "downregulation of neurological process" EXACT []
 synonym: "inhibition of neurological process" NARROW []
 synonym: "negative regulation of neurological process" EXACT [GOC:dph, GOC:tb]
+synonym: "negative regulation of neurological system process" EXACT []
 synonym: "negative regulation of neurophysiological process" EXACT []
-is_a: GO:0031644 ! regulation of neurological system process
+is_a: GO:0031644 ! regulation of nervous system process
 is_a: GO:0051241 ! negative regulation of multicellular organismal process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0050877 ! nervous system process
@@ -2325,17 +2630,18 @@ relationship: negatively_regulates GO:0050877 ! nervous system process
 
 [Term]
 id: GO:0031646
-name: positive regulation of neurological system process
+name: positive regulation of nervous system process
 namespace: biological_process
 def: "Any process that activates or increases the frequency, rate or extent of a neurophysiological process." [GOC:dph, GOC:mah, GOC:tb]
 synonym: "activation of neurological process" NARROW []
 synonym: "positive regulation of neurological process" EXACT [GOC:dph, GOC:tb]
+synonym: "positive regulation of neurological system process" EXACT []
 synonym: "positive regulation of neurophysiological process" EXACT []
 synonym: "stimulation of neurological process" NARROW []
 synonym: "up regulation of neurological process" EXACT []
 synonym: "up-regulation of neurological process" EXACT []
 synonym: "upregulation of neurological process" EXACT []
-is_a: GO:0031644 ! regulation of neurological system process
+is_a: GO:0031644 ! regulation of nervous system process
 is_a: GO:0051240 ! positive regulation of multicellular organismal process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0050877 ! nervous system process
@@ -2610,6 +2916,13 @@ intersection_of: regulates GO:0006996 ! organelle organization
 relationship: regulates GO:0006996 ! organelle organization
 
 [Term]
+id: GO:0033333
+name: fin development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of a fin over time, from its formation to the mature structure." [GOC:dgh]
+is_a: GO:0048736 ! appendage development
+
+[Term]
 id: GO:0033554
 name: cellular response to stress
 namespace: biological_process
@@ -2654,6 +2967,27 @@ intersection_of: positively_regulates GO:0016301 ! kinase activity
 relationship: positively_regulates GO:0016301 ! kinase activity
 
 [Term]
+id: GO:0034672
+name: anterior/posterior pattern specification involved in pronephros development
+namespace: biological_process
+def: "The developmental process that results in the creation of defined areas or spaces within the pronephros along the anterior/posterior axis to which cells respond and eventually are instructed to differentiate." [GOC:mah]
+synonym: "anterior/posterior pattern specification involved in pronephric kidney development" EXACT [GOC:mtg_kidney_jan10]
+is_a: GO:0039017 ! pattern specification involved in pronephros development
+is_a: GO:0072098 ! anterior/posterior pattern specification involved in kidney development
+intersection_of: GO:0009952 ! anterior/posterior pattern specification
+intersection_of: part_of GO:0048793 ! pronephros development
+
+[Term]
+id: GO:0035051
+name: cardiocyte differentiation
+namespace: biological_process
+def: "The process in which a relatively unspecialized cell acquires the specialized structural and/or functional features of a cell that will form part of the cardiac organ of an individual." [GOC:bf]
+synonym: "cardiac cell differentiation" EXACT []
+synonym: "heart cell differentiation" EXACT []
+is_a: GO:0030154 ! cell differentiation
+relationship: part_of GO:0007507 ! heart development
+
+[Term]
 id: GO:0035187
 name: hatching behavior
 namespace: biological_process
@@ -2670,6 +3004,21 @@ namespace: biological_process
 def: "The emergence of an immature organism from a protective structure." [GOC:dgh, GOC:isa_complete, ISBN:0198612001]
 is_a: GO:0071684 ! organism emergence from protective structure
 relationship: part_of GO:0007275 ! multicellular organism development
+
+[Term]
+id: GO:0035239
+name: tube morphogenesis
+namespace: biological_process
+def: "The process in which the anatomical structures of a tube are generated and organized. Epithelial and endothelial tubes transport gases, liquids and cells from one site to another and form the basic structure of many organs and tissues, with tube shape and organization varying from the single-celled excretory organ in Caenorhabditis elegans to the branching trees of the mammalian kidney and insect tracheal system." [GOC:bf, PMID:14624839]
+is_a: GO:0009653 ! anatomical structure morphogenesis
+relationship: part_of GO:0035295 ! tube development
+
+[Term]
+id: GO:0035270
+name: endocrine system development
+namespace: biological_process
+def: "Progression of the endocrine system over time, from its formation to a mature structure. The endocrine system is a system of hormones and ductless glands, where the glands release hormones directly into the blood, lymph or other intercellular fluid, and the hormones circulate within the body to affect distant organs. The major glands that make up the human endocrine system are the hypothalamus, pituitary, thyroid, parathryoids, adrenals, pineal body, and the reproductive glands which include the ovaries and testes." [GOC:bf, http://encyclopedia.thefreedictionary.com/Endocrine+sytem, ISBN:0198506732]
+is_a: GO:0048731 ! system development
 
 [Term]
 id: GO:0035295
@@ -2715,6 +3064,30 @@ created_by: rfoulger
 creation_date: 2011-01-14T10:13:50Z
 
 [Term]
+id: GO:0035787
+name: cell migration involved in kidney development
+namespace: biological_process
+def: "The orderly movement of a cell from one site to another that will contribute to the progression of the kidney over time, from its formation to the mature organ." [GOC:bf, GOC:mtg_kidney_jan10, GOC:yaf]
+is_a: GO:0016477 ! cell migration
+intersection_of: GO:0016477 ! cell migration
+intersection_of: part_of GO:0001822 ! kidney development
+relationship: part_of GO:0001822 ! kidney development
+created_by: rfoulger
+creation_date: 2011-04-06T10:39:52Z
+
+[Term]
+id: GO:0035844
+name: cloaca development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the cloaca over time, from it's formation to the mature structure. The cloaca is the common chamber into which intestinal, genital and urinary canals open in vertebrates." [GOC:dgh, ISBN:0582227089]
+synonym: "cloacal development" EXACT [GOC:bf]
+is_a: GO:0048856 ! anatomical structure development
+relationship: part_of GO:0001655 ! urogenital system development
+relationship: part_of GO:0048546 ! digestive tract morphogenesis
+created_by: rfoulger
+creation_date: 2011-05-06T01:54:35Z
+
+[Term]
 id: GO:0036268
 name: swimming
 namespace: biological_process
@@ -2723,6 +3096,15 @@ comment: For behavioral aspects of swimming, consider instead annotating to 'swi
 is_a: GO:0040011 ! locomotion
 created_by: rfoulger
 creation_date: 2012-07-04T10:12:24Z
+
+[Term]
+id: GO:0036342
+name: post-anal tail morphogenesis
+namespace: biological_process
+def: "The process in which a post-anal tail is generated and organized. A post-anal tail is a muscular region of the body that extends posterior to the anus. The post-anal tail may aid locomotion and balance." [GOC:bf, GOC:kmv, Wikipedia:Chordate]
+is_a: GO:0009653 ! anatomical structure morphogenesis
+created_by: rfoulger
+creation_date: 2012-09-11T13:54:49Z
 
 [Term]
 id: GO:0038023
@@ -2743,6 +3125,59 @@ synonym: "receptor activity involved in signal transduction" EXACT [GOC:bf]
 is_a: GO:0060089 ! molecular transducer activity
 created_by: rfoulger
 creation_date: 2011-08-01T02:45:27Z
+
+[Term]
+id: GO:0039014
+name: cell differentiation involved in pronephros development
+namespace: biological_process
+def: "The process in which relatively unspecialized cells acquire specialized structural and/or functional features that characterize the cells of the pronephros as it progresses from its formation to the mature state." [GOC:mtg_kidney_jan10]
+synonym: "cell differentiation involved in pronephric kidney development" EXACT [GOC:mtg_kidney_jan10]
+is_a: GO:0061005 ! cell differentiation involved in kidney development
+intersection_of: GO:0030154 ! cell differentiation
+intersection_of: part_of GO:0048793 ! pronephros development
+relationship: part_of GO:0048793 ! pronephros development
+created_by: rfoulger
+creation_date: 2010-07-02T09:59:25Z
+
+[Term]
+id: GO:0039015
+name: cell proliferation involved in pronephros development
+namespace: biological_process
+def: "The multiplication or reproduction of cells, resulting in the expansion of the population in the pronephros." [GOC:mtg_kidney_jan10]
+synonym: "cell proliferation involved in pronephric kidney development" EXACT [GOC:mtg_kidney_jan10]
+is_a: GO:0072111 ! cell proliferation involved in kidney development
+intersection_of: GO:0008283 ! cell population proliferation
+intersection_of: part_of GO:0048793 ! pronephros development
+relationship: part_of GO:0048793 ! pronephros development
+created_by: rfoulger
+creation_date: 2010-07-02T10:01:49Z
+
+[Term]
+id: GO:0039016
+name: cell-cell signaling involved in pronephros development
+namespace: biological_process
+def: "Any process that mediates the transfer of information from one cell to another and contributes to the progression of the pronephros over time, from its formation to the mature organ." [GOC:mtg_kidney_jan10]
+synonym: "cell-cell signaling involved in pronephric kidney development" EXACT [GOC:mtg_kidney_jan10]
+synonym: "cell-cell signalling involved in pronephros development" EXACT [GOC:mah]
+is_a: GO:0060995 ! cell-cell signaling involved in kidney development
+intersection_of: GO:0007267 ! cell-cell signaling
+intersection_of: part_of GO:0048793 ! pronephros development
+relationship: part_of GO:0048793 ! pronephros development
+created_by: rfoulger
+creation_date: 2010-07-02T10:03:16Z
+
+[Term]
+id: GO:0039017
+name: pattern specification involved in pronephros development
+namespace: biological_process
+def: "Any developmental process that results in the creation of defined areas or spaces within the pronephros to which cells respond and eventually are instructed to differentiate." [GOC:mtg_kidney_jan10]
+synonym: "pattern specification involved in pronephric kidney development" EXACT [GOC:mtg_kidney_jan10]
+is_a: GO:0061004 ! pattern specification involved in kidney development
+intersection_of: GO:0007389 ! pattern specification process
+intersection_of: part_of GO:0048793 ! pronephros development
+relationship: part_of GO:0048793 ! pronephros development
+created_by: rfoulger
+creation_date: 2010-07-02T10:04:39Z
 
 [Term]
 id: GO:0040007
@@ -2918,6 +3353,22 @@ is_a: GO:0030154 ! cell differentiation
 relationship: part_of GO:0061061 ! muscle structure development
 
 [Term]
+id: GO:0043009
+name: chordate embryonic development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the embryo over time, from zygote formation through a stage including a notochord and neural tube until birth or egg hatching." [GOC:mtg_sensu]
+is_a: GO:0009792 ! embryo development ending in birth or egg hatching
+
+[Term]
+id: GO:0043010
+name: camera-type eye development
+namespace: biological_process
+alt_id: GO:0001747
+alt_id: GO:0031075
+def: "The process whose specific outcome is the progression of the camera-type eye over time, from its formation to the mature structure. The camera-type eye is an organ of sight that receives light through an aperture and focuses it through a lens, projecting it on a photoreceptor field." [GOC:go_curators, GOC:mtg_sensu]
+is_a: GO:0001654 ! eye development
+
+[Term]
 id: GO:0043085
 name: positive regulation of catalytic activity
 namespace: biological_process
@@ -3061,6 +3512,25 @@ is_a: GO:0051338 ! regulation of transferase activity
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0016301 ! kinase activity
 relationship: regulates GO:0016301 ! kinase activity
+
+[Term]
+id: GO:0043583
+name: ear development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the ear over time, from its formation to the mature structure. The ear is the sense organ in vertebrates that is specialized for the detection of sound, and the maintenance of balance. Includes the outer ear and middle ear, which collect and transmit sound waves; and the inner ear, which contains the organs of balance and (except in fish) hearing. Also includes the pinna, the visible part of the outer ear, present in some mammals." [GOC:jl, ISBN:0192801023]
+synonym: "hearing organ development" EXACT []
+xref: MIPS_funcat:47.03.02.01
+is_a: GO:0007423 ! sensory organ development
+
+[Term]
+id: GO:0043584
+name: nose development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the nose over time, from its formation to the mature structure. The nose is the specialized structure of the face that serves as the organ of the sense of smell and as part of the respiratory system. Includes the nasi externus (external nose) and cavitas nasi (nasal cavity)." [GOC:jl, http://www.mercksource.com/]
+synonym: "nasus development" EXACT []
+xref: MIPS_funcat:47.03.02.03
+is_a: GO:0007423 ! sensory organ development
+relationship: part_of GO:0060541 ! respiratory system development
 
 [Term]
 id: GO:0044057
@@ -3302,6 +3772,15 @@ relationship: part_of GO:0005623 ! cell
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 
 [Term]
+id: GO:0045137
+name: development of primary sexual characteristics
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the primary sexual characteristics over time, from their formation to the mature structures. The primary sexual characteristics are the testes in males and the ovaries in females and they develop in response to sex hormone secretion." [GOC:ai]
+is_a: GO:0003006 ! developmental process involved in reproduction
+relationship: part_of GO:0007275 ! multicellular organism development
+relationship: part_of GO:0007548 ! sex differentiation
+
+[Term]
 id: GO:0045214
 name: sarcomere organization
 namespace: biological_process
@@ -3396,6 +3875,53 @@ is_a: GO:0050769 ! positive regulation of neurogenesis
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0030182 ! neuron differentiation
 relationship: positively_regulates GO:0030182 ! neuron differentiation
+
+[Term]
+id: GO:0045682
+name: regulation of epidermis development
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of epidermis development." [GOC:go_curators]
+synonym: "regulation of epidermal development" EXACT []
+synonym: "regulation of hypodermis development" RELATED [GOC:kmv, GOC:rk]
+is_a: GO:0050793 ! regulation of developmental process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0008544 ! epidermis development
+relationship: regulates GO:0008544 ! epidermis development
+
+[Term]
+id: GO:0045683
+name: negative regulation of epidermis development
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of epidermis development." [GOC:go_curators]
+synonym: "down regulation of epidermis development" EXACT []
+synonym: "down-regulation of epidermis development" EXACT []
+synonym: "downregulation of epidermis development" EXACT []
+synonym: "inhibition of epidermis development" NARROW []
+synonym: "negative regulation of epidermal development" EXACT []
+synonym: "negative regulation of hypodermis development" RELATED [GOC:kmv, GOC:rk]
+is_a: GO:0045682 ! regulation of epidermis development
+is_a: GO:0051093 ! negative regulation of developmental process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0008544 ! epidermis development
+relationship: negatively_regulates GO:0008544 ! epidermis development
+
+[Term]
+id: GO:0045684
+name: positive regulation of epidermis development
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of epidermis development." [GOC:go_curators]
+synonym: "activation of epidermis development" NARROW []
+synonym: "positive regulation of epidermal development" EXACT []
+synonym: "positive regulation of hypodermis development" RELATED [GOC:kmv, GOC:rk]
+synonym: "stimulation of epidermis development" NARROW []
+synonym: "up regulation of epidermis development" EXACT []
+synonym: "up-regulation of epidermis development" EXACT []
+synonym: "upregulation of epidermis development" EXACT []
+is_a: GO:0045682 ! regulation of epidermis development
+is_a: GO:0051094 ! positive regulation of developmental process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0008544 ! epidermis development
+relationship: positively_regulates GO:0008544 ! epidermis development
 
 [Term]
 id: GO:0045759
@@ -3673,6 +4199,17 @@ is_a: GO:0048869 ! cellular developmental process
 relationship: part_of GO:0030154 ! cell differentiation
 
 [Term]
+id: GO:0048513
+name: animal organ development
+namespace: biological_process
+def: "Development of a tissue or tissues that work together to perform a specific function or functions. Development pertains to the process whose specific outcome is the progression of a structure over time, from its formation to the mature structure. Organs are commonly observed as visibly distinct structures, but may also exist as loosely associated clusters of cells that work together to perform a specific function or functions." [GOC:dph, GOC:jid]
+synonym: "development of an organ" EXACT []
+synonym: "organogenesis" EXACT []
+xref: Wikipedia:Organogenesis
+is_a: GO:0048856 ! anatomical structure development
+relationship: part_of GO:0048731 ! system development
+
+[Term]
 id: GO:0048518
 name: positive regulation of biological process
 namespace: biological_process
@@ -3774,6 +4311,70 @@ intersection_of: negatively_regulates GO:0009987 ! cellular process
 relationship: negatively_regulates GO:0009987 ! cellular process
 
 [Term]
+id: GO:0048534
+name: hematopoietic or lymphoid organ development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of any organ involved in hematopoiesis (also known as hemopoiesis) or lymphoid cell activation over time, from its formation to the mature structure. Such development includes differentiation of resident cell types (stromal cells) and of migratory cell types dependent on the unique microenvironment afforded by the organ for their proper differentiation." [GOC:add, GOC:rl, ISBN:0781735149]
+synonym: "haematopoietic or lymphoid organ development" EXACT []
+synonym: "haemopoietic or lymphoid organ development" EXACT []
+synonym: "hemopoietic or lymphoid organ development" EXACT []
+is_a: GO:0048513 ! animal organ development
+relationship: part_of GO:0002520 ! immune system development
+
+[Term]
+id: GO:0048536
+name: spleen development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the spleen over time, from its formation to the mature structure. The spleen is a large vascular lymphatic organ composed of white and red pulp, involved both in hemopoietic and immune system functions." [GOC:add, ISBN:0781735149]
+xref: MIPS_funcat:47.03.05.02
+is_a: GO:0048534 ! hematopoietic or lymphoid organ development
+
+[Term]
+id: GO:0048538
+name: thymus development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the thymus over time, from its formation to the mature structure. The thymus is a symmetric bi-lobed organ involved primarily in the differentiation of immature to mature T cells, with unique vascular, nervous, epithelial, and lymphoid cell components." [GOC:add, ISBN:0781735149]
+comment: Note that this term is reserved for annotation of gene products involved in the formation of the thymus itself, not for gene products involved in T cell differentiation in the thymus or elsewhere.
+xref: MIPS_funcat:47.03.05.01
+is_a: GO:0048534 ! hematopoietic or lymphoid organ development
+is_a: GO:0048732 ! gland development
+
+[Term]
+id: GO:0048546
+name: digestive tract morphogenesis
+namespace: biological_process
+alt_id: GO:0048547
+def: "The process in which the anatomical structures of the digestive tract are generated and organized. The digestive tract is the anatomical structure through which food passes and is processed." [GOC:dph, GOC:go_curators, PMID:12618131]
+synonym: "alimentary canal morphogenesis" EXACT []
+synonym: "digestive tube morphogenesis" EXACT []
+synonym: "gastrointestinal tract morphogenesis" EXACT []
+synonym: "gut morphogenesis" BROAD [GOC:dph]
+synonym: "intestinal morphogenesis" NARROW []
+is_a: GO:0035239 ! tube morphogenesis
+relationship: part_of GO:0048565 ! digestive tract development
+
+[Term]
+id: GO:0048565
+name: digestive tract development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the digestive tract over time, from its formation to the mature structure. The digestive tract is the anatomical structure through which food passes and is processed." [GOC:go_curators]
+synonym: "gut development" BROAD [GOC:dph]
+synonym: "intestinal development" NARROW []
+synonym: "intestine development" NARROW []
+xref: MIPS_funcat:47.03.11.05
+is_a: GO:0035295 ! tube development
+relationship: part_of GO:0055123 ! digestive system development
+
+[Term]
+id: GO:0048568
+name: embryonic organ development
+namespace: biological_process
+def: "Development, taking place during the embryonic phase, of a tissue or tissues that work together to perform a specific function or functions. Development pertains to the process whose specific outcome is the progression of a structure over time, from its formation to the mature structure. Organs are commonly observed as visibly distinct structures, but may also exist as loosely associated clusters of cells that work together to perform a specific function or functions." [GOC:jid]
+synonym: "embryonic organogenesis" EXACT []
+is_a: GO:0048513 ! animal organ development
+relationship: part_of GO:0009790 ! embryo development
+
+[Term]
 id: GO:0048583
 name: regulation of response to stimulus
 namespace: biological_process
@@ -3857,6 +4458,49 @@ synonym: "organismal reproductive process" BROAD [GOC:curators]
 synonym: "reproductive process in a multicellular organism" EXACT [GOC:curators]
 is_a: GO:0022414 ! reproductive process
 relationship: part_of GO:0032504 ! multicellular organism reproduction
+
+[Term]
+id: GO:0048634
+name: regulation of muscle organ development
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of muscle development." [GOC:go_curators]
+is_a: GO:2000026 ! regulation of multicellular organismal development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0007517 ! muscle organ development
+relationship: regulates GO:0007517 ! muscle organ development
+
+[Term]
+id: GO:0048635
+name: negative regulation of muscle organ development
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of muscle development." [GOC:go_curators]
+synonym: "down regulation of muscle development" EXACT []
+synonym: "down-regulation of muscle development" EXACT []
+synonym: "downregulation of muscle development" EXACT []
+synonym: "inhibition of muscle development" NARROW []
+is_a: GO:0048634 ! regulation of muscle organ development
+is_a: GO:0051093 ! negative regulation of developmental process
+is_a: GO:0051241 ! negative regulation of multicellular organismal process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0007517 ! muscle organ development
+relationship: negatively_regulates GO:0007517 ! muscle organ development
+
+[Term]
+id: GO:0048636
+name: positive regulation of muscle organ development
+namespace: biological_process
+def: "Any process that activates, maintains or increases the rate of muscle development." [GOC:go_curators]
+synonym: "activation of muscle development" NARROW []
+synonym: "stimulation of muscle development" NARROW []
+synonym: "up regulation of muscle development" EXACT []
+synonym: "up-regulation of muscle development" EXACT []
+synonym: "upregulation of muscle development" EXACT []
+is_a: GO:0048634 ! regulation of muscle organ development
+is_a: GO:0051094 ! positive regulation of developmental process
+is_a: GO:0051240 ! positive regulation of multicellular organismal process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0007517 ! muscle organ development
+relationship: positively_regulates GO:0007517 ! muscle organ development
 
 [Term]
 id: GO:0048638
@@ -4003,6 +4647,24 @@ is_a: GO:0048856 ! anatomical structure development
 relationship: part_of GO:0007275 ! multicellular organism development
 
 [Term]
+id: GO:0048732
+name: gland development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of a gland over time, from its formation to the mature structure. A gland is an organ specialised for secretion." [GOC:jid]
+xref: MIPS_funcat:45.03.19
+xref: MIPS_funcat:47.03.21
+is_a: GO:0048513 ! animal organ development
+
+[Term]
+id: GO:0048736
+name: appendage development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of an appendage over time, from its formation to the mature structure. An appendage is an organ or part that is attached to the trunk of an organism, such as a limb or a branch." [GOC:jid, GOC:rc]
+xref: MIPS_funcat:41.05.21
+is_a: GO:0048856 ! anatomical structure development
+relationship: part_of GO:0007275 ! multicellular organism development
+
+[Term]
 id: GO:0048747
 name: muscle fiber development
 namespace: biological_process
@@ -4011,6 +4673,30 @@ synonym: "muscle fibre development" EXACT []
 synonym: "myofiber development" EXACT []
 synonym: "myofibre development" EXACT []
 is_a: GO:0055002 ! striated muscle cell development
+
+[Term]
+id: GO:0048762
+name: mesenchymal cell differentiation
+namespace: biological_process
+def: "The process in which a relatively unspecialized cell acquires specialized features of a mesenchymal cell. A mesenchymal cell is a loosely associated cell that is part of the connective tissue in an organism. Mesenchymal cells give rise to more mature connective tissue cell types." [GOC:dph, GOC:jid]
+is_a: GO:0030154 ! cell differentiation
+relationship: part_of GO:0060485 ! mesenchyme development
+
+[Term]
+id: GO:0048793
+name: pronephros development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the pronephros over time, from its formation to the mature structure. In mammals, the pronephros is the first of the three embryonic kidneys to be established and exists only transiently. In lower vertebrates such as fish and amphibia, the pronephros is the fully functional embryonic kidney and is indispensable for larval life." [GOC:bf, GOC:mtg_kidney_jan10, PMID:10535314, PMID:15968585, PMID:18322540, XAO:00002000, ZFA:0000151]
+synonym: "pronephric kidney development" EXACT [GOC:mtg_kidney_jan10]
+is_a: GO:0001822 ! kidney development
+
+[Term]
+id: GO:0048839
+name: inner ear development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the inner ear over time, from its formation to the mature structure." [GOC:sr]
+is_a: GO:0048856 ! anatomical structure development
+relationship: part_of GO:0043583 ! ear development
 
 [Term]
 id: GO:0048856
@@ -4023,6 +4709,22 @@ subset: goslim_generic
 subset: goslim_plant
 synonym: "development of an anatomical structure" EXACT []
 is_a: GO:0032502 ! developmental process
+
+[Term]
+id: GO:0048863
+name: stem cell differentiation
+namespace: biological_process
+def: "The process in which a relatively unspecialized cell acquires specialized features of a stem cell. A stem cell is a cell that retains the ability to divide and proliferate throughout life to provide progenitor cells that can differentiate into specialized cells." [CL:0000034, GOC:isa_complete]
+xref: Wikipedia:Stem_cell_differentiation
+is_a: GO:0030154 ! cell differentiation
+
+[Term]
+id: GO:0048864
+name: stem cell development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the stem cell over time, from its formation to the mature structure. Cell development does not include the steps involved in committing a cell to its specific fate." [CL:0000034, GOC:isa_complete]
+is_a: GO:0048468 ! cell development
+relationship: part_of GO:0048863 ! stem cell differentiation
 
 [Term]
 id: GO:0048869
@@ -4045,6 +4747,13 @@ synonym: "movement of a cell" EXACT []
 is_a: GO:0006928 ! movement of cell or subcellular component
 is_a: GO:0040011 ! locomotion
 relationship: part_of GO:0051674 ! localization of cell
+
+[Term]
+id: GO:0048880
+name: sensory system development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of a sensory system over time from its formation to the mature structure." [GOC:dgh]
+is_a: GO:0048731 ! system development
 
 [Term]
 id: GO:0050767
@@ -4882,7 +5591,7 @@ def: "Any process that modulates the frequency, rate or extent of transmission o
 synonym: "regulation of conduction of nerve impulse" EXACT [GOC:dph]
 is_a: GO:0010646 ! regulation of cell communication
 is_a: GO:0023051 ! regulation of signaling
-is_a: GO:0031644 ! regulation of neurological system process
+is_a: GO:0031644 ! regulation of nervous system process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0019226 ! transmission of nerve impulse
 relationship: regulates GO:0019226 ! transmission of nerve impulse
@@ -4899,7 +5608,7 @@ synonym: "inhibition of transmission of nerve impulse" NARROW []
 synonym: "negative regulation of conduction of nerve impulse" EXACT [GOC:dph]
 is_a: GO:0010648 ! negative regulation of cell communication
 is_a: GO:0023057 ! negative regulation of signaling
-is_a: GO:0031645 ! negative regulation of neurological system process
+is_a: GO:0031645 ! negative regulation of nervous system process
 is_a: GO:0051969 ! regulation of transmission of nerve impulse
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0019226 ! transmission of nerve impulse
@@ -4918,7 +5627,7 @@ synonym: "up-regulation of transmission of nerve impulse" EXACT []
 synonym: "upregulation of transmission of nerve impulse" EXACT []
 is_a: GO:0010647 ! positive regulation of cell communication
 is_a: GO:0023056 ! positive regulation of signaling
-is_a: GO:0031646 ! positive regulation of neurological system process
+is_a: GO:0031646 ! positive regulation of nervous system process
 is_a: GO:0051969 ! regulation of transmission of nerve impulse
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0019226 ! transmission of nerve impulse
@@ -4941,6 +5650,21 @@ is_a: GO:0055001 ! muscle cell development
 relationship: part_of GO:0051146 ! striated muscle cell differentiation
 
 [Term]
+id: GO:0055123
+name: digestive system development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the digestive system over time, from its formation to the mature structure. The digestive system is the entire structure in which digestion takes place. Digestion is all of the physical, chemical, and biochemical processes carried out by multicellular organisms to break down ingested nutrients into components that may be easily absorbed and directed into metabolism." [GOC:jid]
+is_a: GO:0048731 ! system development
+
+[Term]
+id: GO:0060037
+name: pharyngeal system development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the pharyngeal system over time, from its formation to the mature structure. The pharyngeal system is a transient embryonic complex that is specific to vertebrates. It comprises the pharyngeal arches, bulges of tissues of mesoderm and neural crest derivation through which pass nerves and pharyngeal arch arteries. The arches are separated internally by pharyngeal pouches, evaginations of foregut endoderm, and externally by pharyngeal clefts, invaginations of surface ectoderm. The development of the system ends when the stucture it contributes to are forming: the thymus, thyroid, parathyroids, maxilla, mandible, aortic arch, cardiac outflow tract, external and middle ear." [GOC:dph]
+is_a: GO:0048731 ! system development
+relationship: part_of GO:0043009 ! chordate embryonic development
+
+[Term]
 id: GO:0060066
 name: oviduct development
 namespace: biological_process
@@ -4958,6 +5682,14 @@ def: "A compound molecular function in which an effector function is controlled 
 subset: gocheck_do_not_manually_annotate
 subset: goslim_pir
 is_a: GO:0003674 ! molecular_function
+
+[Term]
+id: GO:0060157
+name: urinary bladder development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the urinary bladder over time, from its formation to the mature structure. The urinary bladder is an elastic, muscular sac situated in the anterior part of the pelvic cavity in which urine collects before excretion." [GOC:dph, GOC:ln, GOC:mr, http://en.wikipedia.org/wiki/Rhea_(bird), PMID:11768524, PMID:18276178, PMID:538956]
+is_a: GO:0048513 ! animal organ development
+relationship: part_of GO:0072001 ! renal system development
 
 [Term]
 id: GO:0060284
@@ -5018,6 +5750,13 @@ intersection_of: negatively_regulates GO:0045214 ! sarcomere organization
 relationship: negatively_regulates GO:0045214 ! sarcomere organization
 
 [Term]
+id: GO:0060322
+name: head development
+namespace: biological_process
+def: "The biological process whose specific outcome is the progression of a head from an initial condition to its mature state. The head is the anterior-most division of the body." [GOC:dph]
+is_a: GO:0048856 ! anatomical structure development
+
+[Term]
 id: GO:0060341
 name: regulation of cellular localization
 namespace: biological_process
@@ -5027,6 +5766,50 @@ is_a: GO:0032879 ! regulation of localization
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0051641 ! cellular localization
 relationship: regulates GO:0051641 ! cellular localization
+
+[Term]
+id: GO:0060429
+name: epithelium development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of an epithelium over time, from its formation to the mature structure. An epithelium is a tissue that covers the internal or external surfaces of an anatomical structure." [GOC:dph, GOC:mtg_lung]
+is_a: GO:0009888 ! tissue development
+
+[Term]
+id: GO:0060433
+name: bronchus development
+namespace: biological_process
+def: "The biological process whose specific outcome is the progression of a bronchus from an initial condition to its mature state. This process begins with the formation of the bronchus and ends with the mature structure. The bronchus is the portion of the airway that connects to the lungs." [GOC:dph]
+is_a: GO:0030323 ! respiratory tube development
+relationship: part_of GO:0060541 ! respiratory system development
+
+[Term]
+id: GO:0060485
+name: mesenchyme development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of a mesenchymal tissue over time, from its formation to the mature structure. A mesenchymal tissue is made up of loosely packed stellate cells." [GOC:dph]
+synonym: "mesenchymal development" EXACT [GOC:dph]
+is_a: GO:0009888 ! tissue development
+relationship: part_of GO:0048513 ! animal organ development
+
+[Term]
+id: GO:0060495
+name: cell-cell signaling involved in lung development
+namespace: biological_process
+def: "Any process that mediates the transfer of information from one cell to another and contributes to the progression of the lung, from its initial state to the mature structure." [GOC:dph, GOC:mtg_lung]
+synonym: "cell-cell signalling involved in lung development" EXACT [GOC:mah]
+is_a: GO:0007267 ! cell-cell signaling
+intersection_of: GO:0007267 ! cell-cell signaling
+intersection_of: part_of GO:0030324 ! lung development
+relationship: part_of GO:0030324 ! lung development
+
+[Term]
+id: GO:0060541
+name: respiratory system development
+namespace: biological_process
+def: "The progression of the respiratory system over time from its formation to its mature structure. The respiratory system carries out respiratory gaseous exchange." [GOC:dph]
+is_a: GO:0048731 ! system development
+created_by: dph
+creation_date: 2009-04-10T08:55:42Z
 
 [Term]
 id: GO:0060560
@@ -5042,6 +5825,18 @@ created_by: dph
 creation_date: 2009-04-28T08:42:53Z
 
 [Term]
+id: GO:0060915
+name: mesenchymal cell differentiation involved in lung development
+namespace: biological_process
+def: "The process in which a relatively unspecialized cell acquires specialized features of a mesenchymal cell of the lung. A mesenchymal cell is a loosely associated cell that is part of the connective tissue in an organism. Mesenchymal cells give rise to more mature connective tissue cell types." [GOC:dph]
+is_a: GO:0048762 ! mesenchymal cell differentiation
+intersection_of: GO:0048762 ! mesenchymal cell differentiation
+intersection_of: part_of GO:0030324 ! lung development
+relationship: part_of GO:0030324 ! lung development
+created_by: dph
+creation_date: 2009-09-18T11:45:33Z
+
+[Term]
 id: GO:0060972
 name: left/right pattern formation
 namespace: biological_process
@@ -5049,6 +5844,79 @@ def: "The pattern specification process that results in the subdivision of the l
 is_a: GO:0003002 ! regionalization
 created_by: dph
 creation_date: 2009-10-06T10:25:58Z
+
+[Term]
+id: GO:0060973
+name: cell migration involved in heart development
+namespace: biological_process
+def: "The orderly movement of a cell from one site to another that will contribute to the progression of the heart over time, from its initial formation, to the mature organ." [GOC:mtg_heart]
+is_a: GO:0016477 ! cell migration
+intersection_of: GO:0016477 ! cell migration
+intersection_of: part_of GO:0007507 ! heart development
+relationship: part_of GO:0007507 ! heart development
+created_by: dph
+creation_date: 2009-10-06T10:53:49Z
+
+[Term]
+id: GO:0060995
+name: cell-cell signaling involved in kidney development
+namespace: biological_process
+def: "Any process that mediates the transfer of information from one cell to another and contributes to the progression of the kidney over time, from its formation to the mature organ." [GOC:dph, GOC:mtg_kidney_jan10]
+synonym: "cell-cell signalling involved in kidney development" EXACT [GOC:mah]
+is_a: GO:0007267 ! cell-cell signaling
+intersection_of: GO:0007267 ! cell-cell signaling
+intersection_of: part_of GO:0001822 ! kidney development
+relationship: part_of GO:0001822 ! kidney development
+created_by: dph
+creation_date: 2010-01-19T08:33:40Z
+
+[Term]
+id: GO:0061004
+name: pattern specification involved in kidney development
+namespace: biological_process
+def: "Any developmental process that results in the creation of defined areas or spaces within the kidney to which cells respond and eventually are instructed to differentiate." [GOC:dph, GOC:mtg_kidney_jan10]
+synonym: "kidney pattern formation" RELATED [GOC:mtg_kidney_jan10]
+synonym: "kidney pattern specification" EXACT [GOC:mtg_kidney_jan10]
+synonym: "pattern formation involved in kidney development" RELATED [GOC:mtg_kidney_jan10]
+is_a: GO:0007389 ! pattern specification process
+intersection_of: GO:0007389 ! pattern specification process
+intersection_of: part_of GO:0001822 ! kidney development
+relationship: part_of GO:0001822 ! kidney development
+relationship: part_of GO:0072048 ! renal system pattern specification
+created_by: dph
+creation_date: 2010-01-21T09:05:54Z
+
+[Term]
+id: GO:0061005
+name: cell differentiation involved in kidney development
+namespace: biological_process
+def: "The process in which relatively unspecialized cells acquire specialized structural and/or functional features that characterize the cells of the kidney as it progresses from its formation to the mature state." [GOC:mtg_kidney_jan10]
+is_a: GO:0030154 ! cell differentiation
+intersection_of: GO:0030154 ! cell differentiation
+intersection_of: part_of GO:0001822 ! kidney development
+relationship: part_of GO:0001822 ! kidney development
+created_by: dph
+creation_date: 2010-01-21T09:13:55Z
+
+[Term]
+id: GO:0061008
+name: hepaticobiliary system development
+namespace: biological_process
+def: "The progression of the hepaticobiliary system over time, from its formation to the mature structure. The hepaticobiliary system is responsible for metabolic and catabolic processing of small molecules absorbed from the blood or gut, hormones and serum proteins, detoxification, storage of glycogen, triglycerides, metals and lipid soluble vitamins and excretion of bile. Included are the synthesis of albumin, blood coagulation factors, complement, and specific binding proteins." [GOC:dph]
+synonym: "hepatobiliary system development" EXACT [GOC:dph]
+is_a: GO:0048731 ! system development
+created_by: dph
+creation_date: 2010-01-22T09:11:59Z
+
+[Term]
+id: GO:0061010
+name: gall bladder development
+namespace: biological_process
+def: "The progression of the gall bladder over time, from its initial formation to the mature structure. The gall bladder is a cavitated organ that stores bile." [GOC:dph]
+is_a: GO:0048513 ! animal organ development
+relationship: part_of GO:0061008 ! hepaticobiliary system development
+created_by: dph
+creation_date: 2010-01-22T09:38:44Z
 
 [Term]
 id: GO:0061024
@@ -5071,6 +5939,16 @@ created_by: janelomax
 creation_date: 2010-02-08T02:43:11Z
 
 [Term]
+id: GO:0061053
+name: somite development
+namespace: biological_process
+def: "The progression of a somite from its initial formation to the mature structure. Somites are mesodermal clusters that are arranged segmentally along the anterior posterior axis of an embryo." [GOC:dph]
+is_a: GO:0060429 ! epithelium development
+relationship: part_of GO:0009790 ! embryo development
+created_by: dph
+creation_date: 2010-03-02T12:05:13Z
+
+[Term]
 id: GO:0061061
 name: muscle structure development
 namespace: biological_process
@@ -5078,6 +5956,119 @@ def: "The progression of a muscle structure over time, from its formation to its
 is_a: GO:0048856 ! anatomical structure development
 created_by: dph
 creation_date: 2010-03-09T08:55:14Z
+
+[Term]
+id: GO:0061208
+name: cell differentiation involved in mesonephros development
+namespace: biological_process
+def: "The process in which relatively unspecialized cells acquire specialized structural and/or functional features that characterize the cells of the mesonephros as it progresses from its formation to the mature state." [GOC:mtg_kidney_jan10]
+is_a: GO:0061005 ! cell differentiation involved in kidney development
+intersection_of: GO:0030154 ! cell differentiation
+intersection_of: part_of GO:0001823 ! mesonephros development
+relationship: part_of GO:0001823 ! mesonephros development
+created_by: dph
+creation_date: 2010-08-17T03:21:23Z
+
+[Term]
+id: GO:0061209
+name: cell proliferation involved in mesonephros development
+namespace: biological_process
+def: "The multiplication or reproduction of cells, resulting in the expansion of the population in the mesonephros." [GOC:mtg_kidney_jan10]
+is_a: GO:0072111 ! cell proliferation involved in kidney development
+intersection_of: GO:0008283 ! cell population proliferation
+intersection_of: part_of GO:0001823 ! mesonephros development
+relationship: part_of GO:0001823 ! mesonephros development
+created_by: dph
+creation_date: 2010-08-17T03:22:46Z
+
+[Term]
+id: GO:0061210
+name: cell-cell signaling involved in mesonephros development
+namespace: biological_process
+def: "Any process that mediates the transfer of information from one cell to another and contributes to the progression of the mesonephros over time, from its formation to the mature organ." [GOC:mtg_kidney_jan10]
+synonym: "cell-cell signalling involved in mesonephros development" EXACT [GOC:mah]
+is_a: GO:0060995 ! cell-cell signaling involved in kidney development
+intersection_of: GO:0007267 ! cell-cell signaling
+intersection_of: part_of GO:0001823 ! mesonephros development
+relationship: part_of GO:0001823 ! mesonephros development
+created_by: dph
+creation_date: 2010-08-17T03:24:08Z
+
+[Term]
+id: GO:0061213
+name: positive regulation of mesonephros development
+namespace: biological_process
+def: "Any process that increases the rate, frequency or extent of mesonephros development. Mesonephros development is the process whose specific outcome is the progression of the mesonephros over time, from its formation to the mature structure. The mesonephros is an organ that filters the blood and excretes the end products of body metabolism in the form of urine." [GOC:mtg_kidney_jan10]
+is_a: GO:0061217 ! regulation of mesonephros development
+is_a: GO:0090184 ! positive regulation of kidney development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0001823 ! mesonephros development
+relationship: positively_regulates GO:0001823 ! mesonephros development
+created_by: dph
+creation_date: 2010-08-17T03:39:35Z
+
+[Term]
+id: GO:0061217
+name: regulation of mesonephros development
+namespace: biological_process
+def: "Any process that modulates the rate, frequency or extent of mesonephros development. Mesonephros development is the process whose specific outcome is the progression of the mesonephros over time, from its formation to the mature structure. The mesonephros is an endocrine and metabolic organ that filters the blood and excretes the end products of body metabolism in the form of urine." [GOC:mtg_kidney_jan10]
+is_a: GO:0090183 ! regulation of kidney development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0001823 ! mesonephros development
+relationship: regulates GO:0001823 ! mesonephros development
+created_by: dph
+creation_date: 2010-08-17T03:35:31Z
+
+[Term]
+id: GO:0061218
+name: negative regulation of mesonephros development
+namespace: biological_process
+def: "Any process that decreases the rate, frequency or extent of mesonephros development. Mesonephros development is the process whose specific outcome is the progression of the mesonephros over time, from its formation to the mature structure. The mesonephros is an organ that filters the blood and excretes the end products of body metabolism in the form of urine." [GOC:mtg_kidney_jan10]
+is_a: GO:0061217 ! regulation of mesonephros development
+is_a: GO:0090185 ! negative regulation of kidney development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0001823 ! mesonephros development
+relationship: negatively_regulates GO:0001823 ! mesonephros development
+created_by: dph
+creation_date: 2010-08-17T03:43:06Z
+
+[Term]
+id: GO:0061227
+name: pattern specification involved in mesonephros development
+namespace: biological_process
+def: "Any developmental process that results in the creation of defined areas or spaces within the mesonephros to which cells respond and eventually are instructed to differentiate." [GOC:mtg_kidney_jan10]
+synonym: "mesonephros pattern formation" RELATED [GOC:mtg_kidney_jan10]
+synonym: "mesonephros pattern specification" EXACT [GOC:mtg_kidney_jan10]
+is_a: GO:0061004 ! pattern specification involved in kidney development
+intersection_of: GO:0007389 ! pattern specification process
+intersection_of: part_of GO:0001823 ! mesonephros development
+relationship: part_of GO:0001823 ! mesonephros development
+created_by: dph
+creation_date: 2010-08-19T02:22:22Z
+
+[Term]
+id: GO:0061307
+name: cardiac neural crest cell differentiation involved in heart development
+namespace: biological_process
+def: "The process in which a relatively unspecialized cell acquires specialized features of a cardiac neural crest cell that will migrate to the heart and contribute to its development. Cardiac neural crest cells are specialized cells that migrate toward the heart from the third, fourth and sixth pharyngeal arches." [GOC:dph, GOC:mtg_heart, PMID:19705442]
+is_a: GO:0014033 ! neural crest cell differentiation
+is_a: GO:0035051 ! cardiocyte differentiation
+intersection_of: GO:0014033 ! neural crest cell differentiation
+intersection_of: part_of GO:0007507 ! heart development
+created_by: dph
+creation_date: 2010-09-23T08:50:56Z
+
+[Term]
+id: GO:0061308
+name: cardiac neural crest cell development involved in heart development
+namespace: biological_process
+def: "The process aimed at the progression of a cardiac neural crest cell over time, from initial commitment of the cell to its specific fate, to the fully functional differentiated cell that contributes to the development of the heart." [GOC:dph, GOC:mtg_heart]
+is_a: GO:0014032 ! neural crest cell development
+intersection_of: GO:0014032 ! neural crest cell development
+intersection_of: part_of GO:0007507 ! heart development
+relationship: part_of GO:0061307 ! cardiac neural crest cell differentiation involved in heart development
+created_by: dph
+creation_date: 2010-09-23T09:01:49Z
 
 [Term]
 id: GO:0061351
@@ -5114,6 +6105,16 @@ def: "A cytokinesis that involves the function of a set of proteins that are par
 is_a: GO:0000910 ! cytokinesis
 created_by: dph
 creation_date: 2014-08-22T14:21:35Z
+
+[Term]
+id: GO:0062094
+name: stomach development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the stomach over time, from its formation to the mature structure. The stomach is an expanded region of the vertebrate alimentary tract that serves as a food storage compartment and digestive organ." [PMID:11967278]
+is_a: GO:0048513 ! animal organ development
+relationship: part_of GO:0048565 ! digestive tract development
+created_by: dph
+creation_date: 2018-11-20T18:15:45Z
 
 [Term]
 id: GO:0065007
@@ -5216,6 +6217,27 @@ created_by: midori
 creation_date: 2009-10-29T01:43:34Z
 
 [Term]
+id: GO:0071570
+name: cement gland development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the cement gland over time, from its formation to the mature structure. The cement gland is a simple mucus-secreting organ positioned at the anterior of amphibious embryos. The cement gland attaches the newly hatched embryo to a support before the hatchling can swim well or feed." [GOC:bf]
+is_a: GO:0048732 ! gland development
+created_by: midori
+creation_date: 2010-01-20T04:31:04Z
+
+[Term]
+id: GO:0071599
+name: otic vesicle development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the otic vesicle over time, from its formation to the mature structure. The otic vesicle is a transient embryonic structure formed during development of the vertebrate inner ear." [GOC:mah]
+is_a: GO:0007423 ! sensory organ development
+is_a: GO:0035295 ! tube development
+is_a: GO:0048839 ! inner ear development
+is_a: GO:0060429 ! epithelium development
+created_by: midori
+creation_date: 2010-02-04T04:07:17Z
+
+[Term]
 id: GO:0071684
 name: organism emergence from protective structure
 namespace: biological_process
@@ -5248,6 +6270,88 @@ subset: goslim_flybase_ribbon
 is_a: GO:0044464 ! cell part
 created_by: midori
 creation_date: 2010-10-04T01:51:47Z
+
+[Term]
+id: GO:0072001
+name: renal system development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the renal system over time, from its formation to the mature structure. The renal system maintains fluid balance and contributes to electrolyte balance, acid/base balance, and disposal of nitrogenous waste products. In humans, the renal system comprises a pair of kidneys, a pair of ureters, urinary bladder, urethra, sphincter muscle and associated blood vessels." [GOC:mtg_kidney_jan10, GOC:yaf, http://en.wikibooks.org/wiki/Human_Physiology/The_Urinary_System]
+synonym: "urinary system development" BROAD [GOC:yaf]
+synonym: "urinary tract development" BROAD [GOC:yaf, PMID:17881463]
+is_a: GO:0048731 ! system development
+relationship: part_of GO:0001655 ! urogenital system development
+created_by: midori
+creation_date: 2010-01-25T10:31:00Z
+
+[Term]
+id: GO:0072048
+name: renal system pattern specification
+namespace: biological_process
+def: "Any developmental process that results in the creation of defined areas or spaces within an organism to which cells respond and eventually are instructed to differentiate into the anatomical structures of the renal system." [GOC:mtg_kidney_jan10]
+synonym: "renal system pattern formation" RELATED [GOC:mtg_kidney_jan10]
+is_a: GO:0007389 ! pattern specification process
+relationship: part_of GO:0072001 ! renal system development
+created_by: midori
+creation_date: 2010-01-25T03:31:51Z
+
+[Term]
+id: GO:0072074
+name: kidney mesenchyme development
+namespace: biological_process
+def: "The biological process whose specific outcome is the progression of a kidney mesenchyme from an initial condition to its mature state. This process begins with the formation of kidney mesenchyme and ends with the mature structure. Kidney mesenchyme is the tissue made up of loosely connected mesenchymal cells in the kidney." [GOC:mtg_kidney_jan10]
+is_a: GO:0060485 ! mesenchyme development
+relationship: part_of GO:0001822 ! kidney development
+created_by: midori
+creation_date: 2010-01-25T04:39:04Z
+
+[Term]
+id: GO:0072098
+name: anterior/posterior pattern specification involved in kidney development
+namespace: biological_process
+def: "The developmental process that results in the creation of defined areas or spaces within the kidney along the anterior/posterior axis to which cells respond and eventually are instructed to differentiate." [GOC:mtg_kidney_jan10]
+synonym: "anterior/posterior pattern formation involved in kidney development" RELATED [GOC:mtg_kidney_jan10]
+synonym: "kidney anterior/posterior pattern formation" RELATED [GOC:mtg_kidney_jan10]
+synonym: "kidney anterior/posterior pattern specification" EXACT [GOC:mtg_kidney_jan10]
+is_a: GO:0009952 ! anterior/posterior pattern specification
+is_a: GO:0061004 ! pattern specification involved in kidney development
+intersection_of: GO:0009952 ! anterior/posterior pattern specification
+intersection_of: part_of GO:0001822 ! kidney development
+created_by: midori
+creation_date: 2010-02-10T02:06:24Z
+
+[Term]
+id: GO:0072111
+name: cell proliferation involved in kidney development
+namespace: biological_process
+def: "The multiplication or reproduction of cells, resulting in the expansion of the population in the kidney." [GOC:mtg_kidney_jan10]
+is_a: GO:0008283 ! cell population proliferation
+intersection_of: GO:0008283 ! cell population proliferation
+intersection_of: part_of GO:0001822 ! kidney development
+relationship: part_of GO:0001822 ! kidney development
+created_by: midori
+creation_date: 2010-02-22T10:48:45Z
+
+[Term]
+id: GO:0072161
+name: mesenchymal cell differentiation involved in kidney development
+namespace: biological_process
+def: "The process in which relatively unspecialized cells acquire specialized structural and/or functional features that characterize the mesenchymal cells of the kidney as it progresses from its formation to the mature state." [GOC:mtg_kidney_jan10]
+is_a: GO:0061005 ! cell differentiation involved in kidney development
+is_a: GO:2001012 ! mesenchymal cell differentiation involved in renal system development
+intersection_of: GO:0048762 ! mesenchymal cell differentiation
+intersection_of: part_of GO:0001822 ! kidney development
+relationship: part_of GO:0072074 ! kidney mesenchyme development
+created_by: midori
+creation_date: 2010-02-26T01:31:49Z
+
+[Term]
+id: GO:0072359
+name: circulatory system development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the circulatory system over time, from its formation to the mature structure. The circulatory system is the organ system that passes nutrients (such as amino acids and electrolytes), gases, hormones, blood cells, etc. to and from cells in the body to help fight diseases and help stabilize body temperature and pH to maintain homeostasis." [GOC:mah, UBERON:0001009]
+is_a: GO:0048731 ! system development
+created_by: midori
+creation_date: 2010-11-16T11:27:39Z
 
 [Term]
 id: GO:0080134
@@ -5298,6 +6402,49 @@ synonym: "membrane scission" EXACT []
 is_a: GO:0061024 ! membrane organization
 created_by: tanyaberardini
 creation_date: 2009-12-08T03:06:36Z
+
+[Term]
+id: GO:0090183
+name: regulation of kidney development
+namespace: biological_process
+def: "Any process that modulates the rate, frequency or extent of kidney development. Kidney development is the process whose specific outcome is the progression of the kidney over time, from its formation to the mature structure. The kidney is an organ that filters the blood and excretes the end products of body metabolism in the form of urine." [GOC:dph, GOC:tb, GOC:yaf]
+synonym: "regulation of nephrogenesis" RELATED [GOC:dph, GOC:tb]
+is_a: GO:2000026 ! regulation of multicellular organismal development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0001822 ! kidney development
+relationship: regulates GO:0001822 ! kidney development
+created_by: tanyaberardini
+creation_date: 2009-12-18T10:50:56Z
+
+[Term]
+id: GO:0090184
+name: positive regulation of kidney development
+namespace: biological_process
+def: "Any process that increases the rate, frequency or extent of kidney development. Kidney development is the process whose specific outcome is the progression of the kidney over time, from its formation to the mature structure. The kidney is an organ that filters the blood and excretes the end products of body metabolism in the form of urine." [GOC:dph, GOC:tb, GOC:yaf]
+synonym: "positive regulation of nephrogenesis" RELATED [GOC:dph, GOC:tb]
+is_a: GO:0051094 ! positive regulation of developmental process
+is_a: GO:0051240 ! positive regulation of multicellular organismal process
+is_a: GO:0090183 ! regulation of kidney development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0001822 ! kidney development
+relationship: positively_regulates GO:0001822 ! kidney development
+created_by: tanyaberardini
+creation_date: 2009-12-18T10:52:01Z
+
+[Term]
+id: GO:0090185
+name: negative regulation of kidney development
+namespace: biological_process
+def: "Any process that decreases the rate, frequency or extent of kidney development. Kidney development is the process whose specific outcome is the progression of the kidney over time, from its formation to the mature structure. The kidney is an organ that filters the blood and excretes the end products of body metabolism in the form of urine." [GOC:dph, GOC:tb, GOC:yaf]
+synonym: "negative regulation of nephrogenesis" RELATED [GOC:dph, GOC:tb]
+is_a: GO:0051093 ! negative regulation of developmental process
+is_a: GO:0051241 ! negative regulation of multicellular organismal process
+is_a: GO:0090183 ! regulation of kidney development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0001822 ! kidney development
+relationship: negatively_regulates GO:0001822 ! kidney development
+created_by: tanyaberardini
+creation_date: 2009-12-18T10:58:45Z
 
 [Term]
 id: GO:0097435
@@ -5525,6 +6672,17 @@ created_by: pg
 creation_date: 2017-03-23T14:44:23Z
 
 [Term]
+id: GO:0150063
+name: visual system development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the visual system over time, from its formation to the mature structure, including the eye, parts of the central nervous system (CNS) involved in processing of visual inputs, and connecting nerve pathways." [GOC:aruk, GOC:bc, GOC:krc, PMID:15004427, PMID:20647017, PMID:22632727]
+synonym: "optic pathway development" RELATED []
+synonym: "visual pathway development" RELATED []
+is_a: GO:0048880 ! sensory system development
+created_by: BarbaraCzub
+creation_date: 2018-07-23T10:31:58Z
+
+[Term]
 id: GO:1900120
 name: regulation of receptor binding
 namespace: biological_process
@@ -5571,6 +6729,55 @@ intersection_of: positively_regulates GO:0005102 ! signaling receptor binding
 relationship: positively_regulates GO:0005102 ! signaling receptor binding
 created_by: bf
 creation_date: 2012-02-22T11:41:00Z
+
+[Term]
+id: GO:1901722
+name: regulation of cell proliferation involved in kidney development
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of cell proliferation involved in kidney development." [GOC:TermGenie, PMID:18182616]
+is_a: GO:0042127 ! regulation of cell population proliferation
+is_a: GO:0090183 ! regulation of kidney development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0072111 ! cell proliferation involved in kidney development
+relationship: regulates GO:0072111 ! cell proliferation involved in kidney development
+created_by: krc
+creation_date: 2012-12-27T19:30:31Z
+
+[Term]
+id: GO:1901723
+name: negative regulation of cell proliferation involved in kidney development
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of cell proliferation involved in kidney development." [GOC:TermGenie, PMID:18182616]
+synonym: "down regulation of cell proliferation involved in kidney development" EXACT [GOC:TermGenie]
+synonym: "down-regulation of cell proliferation involved in kidney development" EXACT [GOC:TermGenie]
+synonym: "downregulation of cell proliferation involved in kidney development" EXACT [GOC:TermGenie]
+synonym: "inhibition of cell proliferation involved in kidney development" NARROW [GOC:TermGenie]
+is_a: GO:0008285 ! negative regulation of cell population proliferation
+is_a: GO:0090185 ! negative regulation of kidney development
+is_a: GO:1901722 ! regulation of cell proliferation involved in kidney development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0072111 ! cell proliferation involved in kidney development
+relationship: negatively_regulates GO:0072111 ! cell proliferation involved in kidney development
+created_by: krc
+creation_date: 2012-12-27T19:30:35Z
+
+[Term]
+id: GO:1901724
+name: positive regulation of cell proliferation involved in kidney development
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of cell proliferation involved in kidney development." [GOC:TermGenie, PMID:18182616]
+synonym: "activation of cell proliferation involved in kidney development" NARROW [GOC:TermGenie]
+synonym: "up regulation of cell proliferation involved in kidney development" EXACT [GOC:TermGenie]
+synonym: "up-regulation of cell proliferation involved in kidney development" EXACT [GOC:TermGenie]
+synonym: "upregulation of cell proliferation involved in kidney development" EXACT [GOC:TermGenie]
+is_a: GO:0008284 ! positive regulation of cell population proliferation
+is_a: GO:0090184 ! positive regulation of kidney development
+is_a: GO:1901722 ! regulation of cell proliferation involved in kidney development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0072111 ! cell proliferation involved in kidney development
+relationship: positively_regulates GO:0072111 ! cell proliferation involved in kidney development
+created_by: krc
+creation_date: 2012-12-27T19:30:40Z
 
 [Term]
 id: GO:1902115
@@ -5776,6 +6983,18 @@ created_by: bf
 creation_date: 2013-12-02T11:33:10Z
 
 [Term]
+id: GO:1902637
+name: neural crest cell differentiation involved in thymus development
+namespace: biological_process
+def: "Any neural crest cell differentiation that is involved in thymus development." [GO_REF:0000060, GOC:nhn, GOC:TermGenie, PMID:15741317, PMID:18292542]
+is_a: GO:0014033 ! neural crest cell differentiation
+intersection_of: GO:0014033 ! neural crest cell differentiation
+intersection_of: part_of GO:0048538 ! thymus development
+relationship: part_of GO:0048538 ! thymus development
+created_by: pr
+creation_date: 2014-01-21T10:03:20Z
+
+[Term]
 id: GO:1902903
 name: regulation of supramolecular fiber organization
 namespace: biological_process
@@ -5929,6 +7148,174 @@ created_by: al
 creation_date: 2014-09-25T09:00:35Z
 
 [Term]
+id: GO:1904412
+name: regulation of cardiac ventricle development
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of cardiac ventricle development." [GO_REF:0000058, GOC:TermGenie, PMID:19590510]
+is_a: GO:2000026 ! regulation of multicellular organismal development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0003231 ! cardiac ventricle development
+relationship: regulates GO:0003231 ! cardiac ventricle development
+created_by: sl
+creation_date: 2015-06-25T19:52:15Z
+
+[Term]
+id: GO:1904413
+name: negative regulation of cardiac ventricle development
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of cardiac ventricle development." [GO_REF:0000058, GOC:TermGenie, PMID:19590510]
+synonym: "down regulation of cardiac ventricle development" EXACT [GOC:TermGenie]
+synonym: "down-regulation of cardiac ventricle development" EXACT [GOC:TermGenie]
+synonym: "downregulation of cardiac ventricle development" EXACT [GOC:TermGenie]
+synonym: "inhibition of cardiac ventricle development" NARROW [GOC:TermGenie]
+is_a: GO:0051093 ! negative regulation of developmental process
+is_a: GO:0051241 ! negative regulation of multicellular organismal process
+is_a: GO:1904412 ! regulation of cardiac ventricle development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0003231 ! cardiac ventricle development
+relationship: negatively_regulates GO:0003231 ! cardiac ventricle development
+created_by: sl
+creation_date: 2015-06-25T19:52:21Z
+
+[Term]
+id: GO:1904414
+name: positive regulation of cardiac ventricle development
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of cardiac ventricle development." [GO_REF:0000058, GOC:TermGenie, PMID:19590510]
+synonym: "activation of cardiac ventricle development" NARROW [GOC:TermGenie]
+synonym: "up regulation of cardiac ventricle development" EXACT [GOC:TermGenie]
+synonym: "up-regulation of cardiac ventricle development" EXACT [GOC:TermGenie]
+synonym: "upregulation of cardiac ventricle development" EXACT [GOC:TermGenie]
+is_a: GO:0051094 ! positive regulation of developmental process
+is_a: GO:0051240 ! positive regulation of multicellular organismal process
+is_a: GO:1904412 ! regulation of cardiac ventricle development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0003231 ! cardiac ventricle development
+relationship: positively_regulates GO:0003231 ! cardiac ventricle development
+created_by: sl
+creation_date: 2015-06-25T19:52:27Z
+
+[Term]
+id: GO:1905207
+name: regulation of cardiocyte differentiation
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of cardiocyte differentiation." [GO_REF:0000058, GOC:bc, GOC:BHF, GOC:BHF_miRNA, GOC:TermGenie, PMID:23069713]
+synonym: "regulation of cardiac cell differentiation" EXACT [GOC:TermGenie]
+synonym: "regulation of heart cell differentiation" EXACT [GOC:TermGenie]
+is_a: GO:0045595 ! regulation of cell differentiation
+is_a: GO:2000026 ! regulation of multicellular organismal development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0035051 ! cardiocyte differentiation
+relationship: regulates GO:0035051 ! cardiocyte differentiation
+created_by: bc
+creation_date: 2016-06-02T07:20:01Z
+
+[Term]
+id: GO:1905208
+name: negative regulation of cardiocyte differentiation
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of cardiocyte differentiation." [GO_REF:0000058, GOC:bc, GOC:BHF, GOC:BHF_miRNA, GOC:TermGenie, PMID:23069713]
+synonym: "down regulation of cardiac cell differentiation" EXACT [GOC:TermGenie]
+synonym: "down regulation of cardiocyte differentiation" EXACT [GOC:TermGenie]
+synonym: "down regulation of heart cell differentiation" EXACT [GOC:TermGenie]
+synonym: "down-regulation of cardiac cell differentiation" EXACT [GOC:TermGenie]
+synonym: "down-regulation of cardiocyte differentiation" EXACT [GOC:TermGenie]
+synonym: "down-regulation of heart cell differentiation" EXACT [GOC:TermGenie]
+synonym: "downregulation of cardiac cell differentiation" EXACT [GOC:TermGenie]
+synonym: "downregulation of cardiocyte differentiation" EXACT [GOC:TermGenie]
+synonym: "downregulation of heart cell differentiation" EXACT [GOC:TermGenie]
+synonym: "inhibition of cardiac cell differentiation" NARROW [GOC:TermGenie]
+synonym: "inhibition of cardiocyte differentiation" NARROW [GOC:TermGenie]
+synonym: "inhibition of heart cell differentiation" NARROW [GOC:TermGenie]
+synonym: "negative regulation of cardiac cell differentiation" EXACT [GOC:TermGenie]
+synonym: "negative regulation of heart cell differentiation" EXACT [GOC:TermGenie]
+is_a: GO:0045596 ! negative regulation of cell differentiation
+is_a: GO:0051241 ! negative regulation of multicellular organismal process
+is_a: GO:1905207 ! regulation of cardiocyte differentiation
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0035051 ! cardiocyte differentiation
+relationship: negatively_regulates GO:0035051 ! cardiocyte differentiation
+created_by: bc
+creation_date: 2016-06-02T07:20:09Z
+
+[Term]
+id: GO:1905209
+name: positive regulation of cardiocyte differentiation
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of cardiocyte differentiation." [GO_REF:0000058, GOC:bc, GOC:BHF, GOC:BHF_miRNA, GOC:TermGenie, PMID:23069713]
+synonym: "activation of cardiac cell differentiation" NARROW [GOC:TermGenie]
+synonym: "activation of cardiocyte differentiation" NARROW [GOC:TermGenie]
+synonym: "activation of heart cell differentiation" NARROW [GOC:TermGenie]
+synonym: "positive regulation of cardiac cell differentiation" EXACT [GOC:TermGenie]
+synonym: "positive regulation of heart cell differentiation" EXACT [GOC:TermGenie]
+synonym: "up regulation of cardiac cell differentiation" EXACT [GOC:TermGenie]
+synonym: "up regulation of cardiocyte differentiation" EXACT [GOC:TermGenie]
+synonym: "up regulation of heart cell differentiation" EXACT [GOC:TermGenie]
+synonym: "up-regulation of cardiac cell differentiation" EXACT [GOC:TermGenie]
+synonym: "up-regulation of cardiocyte differentiation" EXACT [GOC:TermGenie]
+synonym: "up-regulation of heart cell differentiation" EXACT [GOC:TermGenie]
+synonym: "upregulation of cardiac cell differentiation" EXACT [GOC:TermGenie]
+synonym: "upregulation of cardiocyte differentiation" EXACT [GOC:TermGenie]
+synonym: "upregulation of heart cell differentiation" EXACT [GOC:TermGenie]
+is_a: GO:0045597 ! positive regulation of cell differentiation
+is_a: GO:0051240 ! positive regulation of multicellular organismal process
+is_a: GO:1905207 ! regulation of cardiocyte differentiation
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0035051 ! cardiocyte differentiation
+relationship: positively_regulates GO:0035051 ! cardiocyte differentiation
+created_by: bc
+creation_date: 2016-06-02T07:20:16Z
+
+[Term]
+id: GO:1905292
+name: regulation of neural crest cell differentiation
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of neural crest cell differentiation." [GO_REF:0000058, GOC:BHF, GOC:rl, GOC:TermGenie, PMID:15073157]
+is_a: GO:2000026 ! regulation of multicellular organismal development
+is_a: GO:2000736 ! regulation of stem cell differentiation
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0014033 ! neural crest cell differentiation
+relationship: regulates GO:0014033 ! neural crest cell differentiation
+created_by: rl
+creation_date: 2016-06-28T15:02:01Z
+
+[Term]
+id: GO:1905293
+name: negative regulation of neural crest cell differentiation
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of neural crest cell differentiation." [GO_REF:0000058, GOC:BHF, GOC:rl, GOC:TermGenie, PMID:15073157]
+synonym: "down regulation of neural crest cell differentiation" EXACT [GOC:TermGenie]
+synonym: "down-regulation of neural crest cell differentiation" EXACT [GOC:TermGenie]
+synonym: "downregulation of neural crest cell differentiation" EXACT [GOC:TermGenie]
+synonym: "inhibition of neural crest cell differentiation" NARROW [GOC:TermGenie]
+is_a: GO:0051241 ! negative regulation of multicellular organismal process
+is_a: GO:1905292 ! regulation of neural crest cell differentiation
+is_a: GO:2000737 ! negative regulation of stem cell differentiation
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0014033 ! neural crest cell differentiation
+relationship: negatively_regulates GO:0014033 ! neural crest cell differentiation
+created_by: rl
+creation_date: 2016-06-28T15:02:09Z
+
+[Term]
+id: GO:1905294
+name: positive regulation of neural crest cell differentiation
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of neural crest cell differentiation." [GO_REF:0000058, GOC:BHF, GOC:rl, GOC:TermGenie, PMID:15073157]
+synonym: "activation of neural crest cell differentiation" NARROW [GOC:TermGenie]
+synonym: "up regulation of neural crest cell differentiation" EXACT [GOC:TermGenie]
+synonym: "up-regulation of neural crest cell differentiation" EXACT [GOC:TermGenie]
+synonym: "upregulation of neural crest cell differentiation" EXACT [GOC:TermGenie]
+is_a: GO:0051240 ! positive regulation of multicellular organismal process
+is_a: GO:1905292 ! regulation of neural crest cell differentiation
+is_a: GO:2000738 ! positive regulation of stem cell differentiation
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0014033 ! neural crest cell differentiation
+relationship: positively_regulates GO:0014033 ! neural crest cell differentiation
+created_by: rl
+creation_date: 2016-06-28T15:02:16Z
+
+[Term]
 id: GO:1905902
 name: regulation of mesoderm formation
 namespace: biological_process
@@ -5976,6 +7363,68 @@ intersection_of: positively_regulates GO:0001707 ! mesoderm formation
 relationship: positively_regulates GO:0001707 ! mesoderm formation
 created_by: rachhuntley
 creation_date: 2017-02-03T12:28:38Z
+
+[Term]
+id: GO:1905939
+name: regulation of gonad development
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of gonad development." [GO_REF:0000058, GOC:TermGenie, PMID:15342467]
+synonym: "regulation of gonadogenesis" EXACT [GOC:TermGenie]
+is_a: GO:2000026 ! regulation of multicellular organismal development
+is_a: GO:2000241 ! regulation of reproductive process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: regulates GO:0008406 ! gonad development
+relationship: regulates GO:0008406 ! gonad development
+created_by: hbye
+creation_date: 2017-02-09T17:01:50Z
+
+[Term]
+id: GO:1905940
+name: negative regulation of gonad development
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of gonad development." [GO_REF:0000058, GOC:TermGenie, PMID:15342467]
+synonym: "down regulation of gonad development" EXACT [GOC:TermGenie]
+synonym: "down regulation of gonadogenesis" EXACT [GOC:TermGenie]
+synonym: "down-regulation of gonad development" EXACT [GOC:TermGenie]
+synonym: "down-regulation of gonadogenesis" EXACT [GOC:TermGenie]
+synonym: "downregulation of gonad development" EXACT [GOC:TermGenie]
+synonym: "downregulation of gonadogenesis" EXACT [GOC:TermGenie]
+synonym: "inhibition of gonad development" NARROW [GOC:TermGenie]
+synonym: "inhibition of gonadogenesis" NARROW [GOC:TermGenie]
+synonym: "negative regulation of gonadogenesis" EXACT [GOC:TermGenie]
+is_a: GO:0051093 ! negative regulation of developmental process
+is_a: GO:0051241 ! negative regulation of multicellular organismal process
+is_a: GO:1905939 ! regulation of gonad development
+is_a: GO:2000242 ! negative regulation of reproductive process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: negatively_regulates GO:0008406 ! gonad development
+relationship: negatively_regulates GO:0008406 ! gonad development
+created_by: hbye
+creation_date: 2017-02-09T17:01:59Z
+
+[Term]
+id: GO:1905941
+name: positive regulation of gonad development
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of gonad development." [GO_REF:0000058, GOC:TermGenie, PMID:15342467]
+synonym: "activation of gonad development" NARROW [GOC:TermGenie]
+synonym: "activation of gonadogenesis" NARROW [GOC:TermGenie]
+synonym: "positive regulation of gonadogenesis" EXACT [GOC:TermGenie]
+synonym: "up regulation of gonad development" EXACT [GOC:TermGenie]
+synonym: "up regulation of gonadogenesis" EXACT [GOC:TermGenie]
+synonym: "up-regulation of gonad development" EXACT [GOC:TermGenie]
+synonym: "up-regulation of gonadogenesis" EXACT [GOC:TermGenie]
+synonym: "upregulation of gonad development" EXACT [GOC:TermGenie]
+synonym: "upregulation of gonadogenesis" EXACT [GOC:TermGenie]
+is_a: GO:0051094 ! positive regulation of developmental process
+is_a: GO:0051240 ! positive regulation of multicellular organismal process
+is_a: GO:1905939 ! regulation of gonad development
+is_a: GO:2000243 ! positive regulation of reproductive process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: positively_regulates GO:0008406 ! gonad development
+relationship: positively_regulates GO:0008406 ! gonad development
+created_by: hbye
+creation_date: 2017-02-09T17:02:08Z
 
 [Term]
 id: GO:2000026
@@ -6259,6 +7708,99 @@ created_by: yaf
 creation_date: 2011-04-01T04:10:15Z
 
 [Term]
+id: GO:2000606
+name: regulation of cell proliferation involved in mesonephros development
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of cell proliferation involved in mesonephros development." [GOC:obol]
+is_a: GO:0061217 ! regulation of mesonephros development
+is_a: GO:1901722 ! regulation of cell proliferation involved in kidney development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0061209 ! cell proliferation involved in mesonephros development
+relationship: regulates GO:0061209 ! cell proliferation involved in mesonephros development
+created_by: yaf
+creation_date: 2011-04-18T08:42:19Z
+
+[Term]
+id: GO:2000607
+name: negative regulation of cell proliferation involved in mesonephros development
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of cell proliferation involved in mesonephros development." [GOC:obol]
+is_a: GO:0061218 ! negative regulation of mesonephros development
+is_a: GO:1901723 ! negative regulation of cell proliferation involved in kidney development
+is_a: GO:2000606 ! regulation of cell proliferation involved in mesonephros development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0061209 ! cell proliferation involved in mesonephros development
+relationship: negatively_regulates GO:0061209 ! cell proliferation involved in mesonephros development
+created_by: yaf
+creation_date: 2011-04-18T08:42:23Z
+
+[Term]
+id: GO:2000608
+name: positive regulation of cell proliferation involved in mesonephros development
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of cell proliferation involved in mesonephros development." [GOC:obol]
+is_a: GO:0061213 ! positive regulation of mesonephros development
+is_a: GO:1901724 ! positive regulation of cell proliferation involved in kidney development
+is_a: GO:2000606 ! regulation of cell proliferation involved in mesonephros development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0061209 ! cell proliferation involved in mesonephros development
+relationship: positively_regulates GO:0061209 ! cell proliferation involved in mesonephros development
+created_by: yaf
+creation_date: 2011-04-18T08:42:25Z
+
+[Term]
+id: GO:2000736
+name: regulation of stem cell differentiation
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of stem cell differentiation." [GOC:obol]
+is_a: GO:0045595 ! regulation of cell differentiation
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0048863 ! stem cell differentiation
+relationship: regulates GO:0048863 ! stem cell differentiation
+created_by: yaf
+creation_date: 2011-06-14T02:05:16Z
+
+[Term]
+id: GO:2000737
+name: negative regulation of stem cell differentiation
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of stem cell differentiation." [GOC:obol]
+is_a: GO:0045596 ! negative regulation of cell differentiation
+is_a: GO:2000736 ! regulation of stem cell differentiation
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0048863 ! stem cell differentiation
+relationship: negatively_regulates GO:0048863 ! stem cell differentiation
+created_by: yaf
+creation_date: 2011-06-14T02:05:20Z
+
+[Term]
+id: GO:2000738
+name: positive regulation of stem cell differentiation
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of stem cell differentiation." [GOC:obol]
+is_a: GO:0045597 ! positive regulation of cell differentiation
+is_a: GO:2000736 ! regulation of stem cell differentiation
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0048863 ! stem cell differentiation
+relationship: positively_regulates GO:0048863 ! stem cell differentiation
+created_by: yaf
+creation_date: 2011-06-14T02:05:23Z
+
+[Term]
+id: GO:2001012
+name: mesenchymal cell differentiation involved in renal system development
+namespace: biological_process
+def: "The process in which relatively unspecialized cells acquire specialized structural and/or functional features that characterize the mesenchymal cells of the renal system as it progresses from its formation to the mature state." [GOC:mtg_kidney_jan10, GOC:obol, GOC:yaf]
+synonym: "mesenchymal cell differentiation involved in urinary system development" RELATED [GOC:obol]
+synonym: "mesenchymal cell differentiation involved in urinary tract development" RELATED [GOC:obol]
+is_a: GO:0048762 ! mesenchymal cell differentiation
+intersection_of: GO:0048762 ! mesenchymal cell differentiation
+intersection_of: part_of GO:0072001 ! renal system development
+relationship: part_of GO:0072001 ! renal system development
+created_by: yaf
+creation_date: 2011-08-09T04:05:14Z
+
+[Term]
 id: IAO:0000027
 name: data item
 def: "a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements." []
@@ -6400,8 +7942,9 @@ name: morphology
 namespace: quality
 def: "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure." [PATOC:GVG]
 subset: attribute_slim
-is_a: BFO:0000019 ! quality
 is_a: PATO:0001241 ! physical object quality
+property_value: IAO:0000111 "morphology" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0000052
@@ -6491,6 +8034,8 @@ def: "A morphology quality inhering in a bearer by virtue of the bearer's physic
 subset: attribute_slim
 subset: scalar_slim
 is_a: PATO:0000051 ! morphology
+property_value: IAO:0000111 "size" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0000119
@@ -6521,7 +8066,6 @@ def: "A physical quality that inheres in a bearer by virtue of the proportion of
 subset: attribute_slim
 subset: relational_slim
 subset: scalar_slim
-is_a: BFO:0000019 ! quality
 is_a: PATO:0001018 ! physical quality
 property_value: IAO:0000111 "mass" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
@@ -7412,6 +8956,8 @@ subset: attribute_slim
 synonym: "relational physical quality" EXACT []
 xref: Wikipedia:Physical_property
 is_a: PATO:0001241 ! physical object quality
+property_value: IAO:0000111 "physical quality" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0001052
@@ -7471,7 +9017,10 @@ synonym: "quality of a single physical entity" EXACT []
 synonym: "quality of an object" EXACT []
 synonym: "quality of continuant" EXACT []
 xref: snap:Quality
+is_a: BFO:0000019 ! quality
 is_a: PATO:0000001 ! quality
+property_value: IAO:0000111 "physical object quality" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0001291
@@ -8036,6 +9585,8 @@ def: "A size quality inhering in an bearer by virtue of the bearer's extension i
 subset: attribute_slim
 synonym: "1-D size" EXACT []
 is_a: PATO:0000117 ! size
+property_value: IAO:0000111 "1-D extent" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0001709
@@ -52958,37 +54509,37 @@ is_a: XPO:0103642 ! increased cell population proliferation
 id: XPO:0103442
 name: increased oviduct development in female organism
 def: "Increased oviduct development in female organism." []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0116431 ! abnormal anatomical structure development
 
 [Term]
 id: XPO:0103443
 name: abnormal dorsal/ventral axis specification
 def: "Abnormal dorsal/ventral axis specification." []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0116433 ! abnormal axis specification
 
 [Term]
 id: XPO:0103444
 name: abnormal gastrulation
 def: "Abnormal gastrulation." []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0116451 ! abnormal embryonic morphogenesis
 
 [Term]
 id: XPO:0103445
 name: abnormal left/right axis specification
 def: "Abnormal left/right axis specification." []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0116433 ! abnormal axis specification
 
 [Term]
 id: XPO:0103446
 name: abnormal proximal/distal axis specification
 def: "Abnormal proximal/distal axis specification." []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0116433 ! abnormal axis specification
 
 [Term]
 id: XPO:0103447
 name: abnormal anterior/posterior axis specification
 def: "Abnormal anterior/posterior axis specification." []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0116433 ! abnormal axis specification
 
 [Term]
 id: XPO:0103448
@@ -53337,35 +54888,23 @@ is_a: XPO:0100582 ! abnormal forelimb digit
 
 [Term]
 id: XPO:0103585
-name: Decreased number of forelimb digit 2
-def: "The presence of a reduced number of forelimb digit 2." []
-synonym: "Reduced number of forelimb digit 2" EXACT []
-is_a: XPO:0103584 ! Decreased number of forelimb digit
-is_a: XPO:0115912 ! abnormal(ly) quality of forelimb digit 2 in forelimb (T)
+name: obsolete Decreased number of forelimb digit 2
+is_obsolete: true
 
 [Term]
 id: XPO:0103586
-name: Decreased number of forelimb digit 3
-def: "The presence of a reduced number of forelimb digit 3." []
-synonym: "Reduced number of forelimb digit 3" EXACT []
-is_a: XPO:0100966 ! abnormal forelimb digit 3
-is_a: XPO:0103584 ! Decreased number of forelimb digit
+name: obsolete Decreased number of forelimb digit 3
+is_obsolete: true
 
 [Term]
 id: XPO:0103587
-name: Decreased number of forelimb digit 4
-def: "The presence of a reduced number of forelimb digit 4." []
-synonym: "Reduced number of forelimb digit 4" EXACT []
-is_a: XPO:0100897 ! abnormal forelimb digit 4
-is_a: XPO:0103584 ! Decreased number of forelimb digit
+name: obsolete Decreased number of forelimb digit 4
+is_obsolete: true
 
 [Term]
 id: XPO:0103588
-name: Decreased number of forelimb digit 5
-def: "The presence of a reduced number of forelimb digit 5." []
-synonym: "Reduced number of forelimb digit 5" EXACT []
-is_a: XPO:0103584 ! Decreased number of forelimb digit
-is_a: XPO:0115913 ! abnormal(ly) quality of forelimb digit 5 in forelimb (T)
+name: obsolete Decreased number of forelimb digit 5
+is_obsolete: true
 
 [Term]
 id: XPO:0103589
@@ -53376,48 +54915,28 @@ is_a: XPO:0115872 ! abnormal(ly) quality of hindlimb digit in autopod (T)
 
 [Term]
 id: XPO:0103590
-name: Decreased number of hindlimb digit 1
-def: "The presence of a reduced number of hindlimb digit 1." []
-synonym: "Reduced number of hindlimb digit 1" EXACT []
-is_a: XPO:0100240 ! abnormal hindlimb digit 1
-is_a: XPO:0103589 ! Decreased number of hindlimb digit
-is_a: XPO:0103887 ! Decreased number of hindlimb digit
+name: obsolete Decreased number of hindlimb digit 1
+is_obsolete: true
 
 [Term]
 id: XPO:0103591
-name: Decreased number of hindlimb digit 2
-def: "The presence of a reduced number of hindlimb digit 2." []
-synonym: "Reduced number of hindlimb digit 2" EXACT []
-is_a: XPO:0100419 ! abnormal hindlimb digit 2
-is_a: XPO:0103589 ! Decreased number of hindlimb digit
-is_a: XPO:0103887 ! Decreased number of hindlimb digit
+name: obsolete Decreased number of hindlimb digit 2
+is_obsolete: true
 
 [Term]
 id: XPO:0103592
-name: Decreased number of hindlimb digit 3
-def: "The presence of a reduced number of hindlimb digit 3." []
-synonym: "Reduced number of hindlimb digit 3" EXACT []
-is_a: XPO:0100548 ! abnormal hindlimb digit 3
-is_a: XPO:0103589 ! Decreased number of hindlimb digit
-is_a: XPO:0103887 ! Decreased number of hindlimb digit
+name: obsolete Decreased number of hindlimb digit 3
+is_obsolete: true
 
 [Term]
 id: XPO:0103593
-name: Decreased number of hindlimb digit 4
-def: "The presence of a reduced number of hindlimb digit 4." []
-synonym: "Reduced number of hindlimb digit 4" EXACT []
-is_a: XPO:0101244 ! abnormal hindlimb digit 4
-is_a: XPO:0103589 ! Decreased number of hindlimb digit
-is_a: XPO:0103887 ! Decreased number of hindlimb digit
+name: obsolete Decreased number of hindlimb digit 4
+is_obsolete: true
 
 [Term]
 id: XPO:0103594
-name: Decreased number of hindlimb digit 5
-def: "The presence of a reduced number of hindlimb digit 5." []
-synonym: "Reduced number of hindlimb digit 5" EXACT []
-is_a: XPO:0103589 ! Decreased number of hindlimb digit
-is_a: XPO:0103887 ! Decreased number of hindlimb digit
-is_a: XPO:0115746 ! abnormal(ly) present of hindlimb digit 5 (T)
+name: obsolete Decreased number of hindlimb digit 5
+is_obsolete: true
 
 [Term]
 id: XPO:0103595
@@ -53781,7 +55300,7 @@ is_a: XPO:0103914 ! increased thickness of the epidermis
 id: XPO:0103642
 name: increased cell population proliferation
 def: "Increased cell population proliferation." []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0116434 ! abnormal biological process
 
 [Term]
 id: XPO:0103643
@@ -53890,112 +55409,112 @@ is_a: XPO:0107337 ! abnormal ventro-lateral region
 
 [Term]
 id: XPO:0103656
-name: abnormally formed left part of branchial arch skeleton
+name: malformed left part of branchial arch skeleton
 def: "An abnormally formed/malformed left part of branchial arch skeleton." []
 synonym: "malformed left part of branchial arch skeleton" EXACT []
 is_a: XPO:0107414 ! abnormal morphology of left part of branchial arch skeleton
 
 [Term]
 id: XPO:0103657
-name: abnormally formed right part of branchial arch skeleton
+name: malformed right part of branchial arch skeleton
 def: "An abnormally formed/malformed right part of branchial arch skeleton." []
 synonym: "malformed right part of branchial arch skeleton" EXACT []
 is_a: XPO:0107415 ! abnormal morphology of right part of branchial arch skeleton
 
 [Term]
 id: XPO:0103658
-name: abnormally formed left eye
+name: malformed left eye
 def: "An abnormally formed/malformed left eye." []
 synonym: "malformed left eye" EXACT []
 is_a: XPO:0107400 ! abnormal morphology of left eye
 
 [Term]
 id: XPO:0103659
-name: abnormally formed right eye
+name: malformed right eye
 def: "An abnormally formed/malformed right eye." []
 synonym: "malformed right eye" EXACT []
 is_a: XPO:0107401 ! abnormal morphology of right eye
 
 [Term]
 id: XPO:0103660
-name: abnormally formed left inner ear
+name: malformed left inner ear
 def: "An abnormally formed/malformed left inner ear." []
 synonym: "malformed left inner ear" EXACT []
 is_a: XPO:0107402 ! abnormal morphology of left inner ear
 
 [Term]
 id: XPO:0103661
-name: abnormally formed right inner ear
+name: malformed right inner ear
 def: "An abnormally formed/malformed right inner ear." []
 synonym: "malformed right inner ear" EXACT []
 is_a: XPO:0107403 ! abnormal morphology of right inner ear
 
 [Term]
 id: XPO:0103662
-name: abnormally formed left olfactory pit
+name: malformed left olfactory pit
 def: "An abnormally formed/malformed left olfactory pit." []
 synonym: "malformed left olfactory pit" EXACT []
 is_a: XPO:0107396 ! abnormal morphology of left olfactory pit
 
 [Term]
 id: XPO:0103663
-name: abnormally formed right olfactory pit
+name: malformed right olfactory pit
 def: "An abnormally formed/malformed right olfactory pit." []
 synonym: "malformed right olfactory pit" EXACT []
 is_a: XPO:0107397 ! abnormal morphology of right olfactory pit
 
 [Term]
 id: XPO:0103664
-name: abnormally formed left optic vesicle
+name: malformed left optic vesicle
 def: "An abnormally formed/malformed left optic vesicle." []
 synonym: "malformed left optic vesicle" EXACT []
 is_a: XPO:0107420 ! abnormal morphology of left optic vesicle
 
 [Term]
 id: XPO:0103665
-name: abnormally formed right optic vesicle
+name: malformed right optic vesicle
 def: "An abnormally formed/malformed right optic vesicle." []
 synonym: "malformed right optic vesicle" EXACT []
 is_a: XPO:0107421 ! abnormal morphology of right optic vesicle
 
 [Term]
 id: XPO:0103666
-name: abnormally formed posterior region
+name: malformed posterior region
 def: "An abnormally formed/malformed posterior region." []
 synonym: "malformed posterior region" EXACT []
 is_a: XPO:0107362 ! abnormal morphology of posterior region
 
 [Term]
 id: XPO:0103667
-name: abnormally formed ventral trunk
+name: malformed ventral trunk
 def: "An abnormally formed/malformed ventral trunk." []
 synonym: "malformed ventral trunk" EXACT []
 is_a: XPO:0107404 ! abnormal morphology of ventral trunk
 
 [Term]
 id: XPO:0103668
-name: abnormally formed ventral region
+name: malformed ventral region
 def: "An abnormally formed/malformed ventral region." []
 synonym: "malformed ventral region" EXACT []
 is_a: XPO:0107364 ! abnormal morphology of ventral region
 
 [Term]
 id: XPO:0103669
-name: abnormally formed left part of brain
+name: malformed left part of brain
 def: "An abnormally formed/malformed left part of brain." []
 synonym: "malformed left part of brain" EXACT []
 is_a: XPO:0107422 ! abnormal morphology of left part of brain
 
 [Term]
 id: XPO:0103670
-name: abnormally formed right part of brain
+name: malformed right part of brain
 def: "An abnormally formed/malformed right part of brain." []
 synonym: "malformed right part of brain" EXACT []
 is_a: XPO:0107423 ! abnormal morphology of right part of brain
 
 [Term]
 id: XPO:0103671
-name: abnormally formed dorsal region
+name: malformed dorsal region
 def: "An abnormally formed/malformed dorsal region." []
 synonym: "malformed dorsal region" EXACT []
 is_a: XPO:0107363 ! abnormal morphology of dorsal region
@@ -54037,7 +55556,7 @@ is_a: XPO:0103390 ! increased size of the pronephric tubule
 
 [Term]
 id: XPO:0103677
-name: abnormally formed cartilage element in head
+name: malformed cartilage element in head
 def: "An abnormally formed/malformed cartilage element in head." []
 synonym: "malformed cartilage element in head" EXACT []
 is_a: XPO:0100002 ! abnormal head
@@ -54045,16 +55564,16 @@ is_a: XPO:0101679 ! abnormal morphology of cartilage element
 
 [Term]
 id: XPO:0103678
-name: abnormally formed Meckel's cartilage in left side
+name: malformed Meckel's cartilage in left side
 def: "An abnormally formed/malformed Meckel's cartilage in left side." []
 synonym: "malformed Meckel's cartilage in left side" EXACT []
 is_a: XPO:0102398 ! abnormal morphology of Meckel's cartilage
-is_a: XPO:0103677 ! abnormally formed cartilage element in head
+is_a: XPO:0103677 ! malformed cartilage element in head
 is_a: XPO:0107268 ! abnormal left side
 
 [Term]
 id: XPO:0103679
-name: abnormally formed tarsus in regenerating hindlimb
+name: malformed tarsus in regenerating hindlimb
 def: "An abnormally formed/malformed tarsus in regenerating hindlimb." []
 synonym: "malformed tarsus in regenerating hindlimb" EXACT []
 is_a: XPO:0101181 ! abnormal regenerating hindlimb
@@ -54745,7 +56264,7 @@ is_a: XPO:0103772 ! arrested developmental process
 id: XPO:0103772
 name: arrested developmental process
 def: "Arrested developmental process." []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0116434 ! abnormal biological process
 
 [Term]
 id: XPO:0103773
@@ -55031,11 +56550,8 @@ is_a: XPO:0103836 ! Decreased number of skeletal element in the regenerating for
 
 [Term]
 id: XPO:0103835
-name: Decreased number of autopod in the regenerating forelimb
-def: "The presence of a reduced number of autopod in the regenerating forelimb." []
-synonym: "Reduced number of autopod in the regenerating forelimb" EXACT []
-is_a: XPO:0100458 ! abnormal autopod
-is_a: XPO:0100942 ! abnormal regenerating forelimb
+name: obsolete Decreased number of autopod in the regenerating forelimb
+is_obsolete: true
 
 [Term]
 id: XPO:0103836
@@ -55072,11 +56588,8 @@ is_a: XPO:0101248 ! abnormal digit-joint region
 
 [Term]
 id: XPO:0103840
-name: Decreased number of autopod in the regenerating hindlimb
-def: "The presence of a reduced number of autopod in the regenerating hindlimb." []
-synonym: "Reduced number of autopod in the regenerating hindlimb" EXACT []
-is_a: XPO:0100458 ! abnormal autopod
-is_a: XPO:0101181 ! abnormal regenerating hindlimb
+name: obsolete Decreased number of autopod in the regenerating hindlimb
+is_obsolete: true
 
 [Term]
 id: XPO:0103841
@@ -55088,44 +56601,44 @@ is_a: XPO:0101181 ! abnormal regenerating hindlimb
 
 [Term]
 id: XPO:0103842
-name: Abnormally localised cement gland
+name: mislocalized cement gland
 def: "An abnormally localised cement gland." []
 synonym: "abnormal position of cement gland" EXACT []
 is_a: XPO:0100444 ! abnormal cement gland
 
 [Term]
 id: XPO:0103843
-name: Abnormally localised head
+name: mislocalized head
 def: "An abnormally localised head." []
 synonym: "abnormal position of head" EXACT []
 is_a: XPO:0100002 ! abnormal head
 
 [Term]
 id: XPO:0103844
-name: Abnormally localised neural tube
+name: mislocalized neural tube
 def: "An abnormally localised neural tube." []
 synonym: "abnormal position of neural tube" EXACT []
 is_a: XPO:0100136 ! abnormal neural tube
 
 [Term]
 id: XPO:0103845
-name: Abnormally localised tail
+name: mislocalized tail
 def: "An abnormally localised tail." []
 synonym: "abnormal position of tail" EXACT []
 is_a: XPO:0100726 ! abnormal tail
 
 [Term]
 id: XPO:0103846
-name: Abnormally localised utricle
+name: mislocalized utricle
 def: "An abnormally localised utricle." []
 synonym: "abnormal position of utricle" EXACT []
 is_a: XPO:0101301 ! abnormal utricle
 
 [Term]
 id: XPO:0103884
-name: decreased qualitatively muscle cell differentiation
+name: decreased muscle cell differentiation
 def: "Decreased qualitatively muscle cell differentiation." []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0116434 ! abnormal biological process
 
 [Term]
 id: XPO:0103885
@@ -55343,39 +56856,39 @@ is_a: XPO:0102330 ! abnormal morphology of optic stalk
 
 [Term]
 id: XPO:0103920
-name: decreased qualitatively cell migration in cranial neural crest
+name: decreased cell migration in cranial neural crest
 def: "Decreased qualitatively cell migration in cranial neural crest." []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0116434 ! abnormal biological process
 
 [Term]
 id: XPO:0103921
-name: decreased qualitatively cell population proliferation in marginal zone
+name: decreased cell proliferation in marginal zone
 def: "Decreased qualitatively cell population proliferation in marginal zone." []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0116434 ! abnormal biological process
 
 [Term]
 id: XPO:0103922
-name: decreased qualitatively cell population proliferation in foregut endoderm
+name: decreased cell proliferation in foregut primordium
 def: "Decreased qualitatively cell population proliferation in foregut endoderm." []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0116434 ! abnormal biological process
 
 [Term]
 id: XPO:0103923
-name: decreased qualitatively mitotic nuclear division in proximal tubule
+name: decreased mitotic nuclear division in proximal tubule
 def: "Decreased qualitatively mitotic nuclear division in proximal tubule." []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0116434 ! abnormal biological process
 
 [Term]
 id: XPO:0103924
-name: decreased qualitatively neural precursor cell proliferation in optic tectum
+name: decreased neural precursor cell proliferation in optic tectum
 def: "Decreased qualitatively neural precursor cell proliferation in optic tectum." []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0116434 ! abnormal biological process
 
 [Term]
 id: XPO:0103925
-name: decreased qualitatively neuron differentiation in optic tectum
+name: decreased neuron differentiation in optic tectum
 def: "Decreased qualitatively neuron differentiation in optic tectum." []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0116434 ! abnormal biological process
 
 [Term]
 id: XPO:0103926
@@ -55395,7 +56908,7 @@ is_a: XPO:0102178 ! abnormal morphology of whole organism
 
 [Term]
 id: XPO:0107252
-name: decreased size of the globe
+name: microphthalmia
 def: "An abnormal reduction in the size of the globe." []
 synonym: "abnormally small globe" EXACT []
 is_a: XPO:0102212 ! abnormal morphology of globe
@@ -56703,18 +58216,22 @@ is_a: XPO:0107336 ! abnormal right part of brain
 [Term]
 id: XPO:0107424
 name: abnormal morphology of ventro-lateral region 
+name: obsolete abnormal morphology of ventro-lateral region
 def: "Any structural anomaly of the ventro-lateral region." []
 synonym: "abnormal shape of ventro-lateral region" EXACT []
 is_a: XPO:0101700 ! abnormal morphology of anatomical region
 is_a: XPO:0107337 ! abnormal ventro-lateral region
+is_obsolete: true
 
 [Term]
 id: XPO:0107425
 name: abnormal morphology of dorso-lateral region 
+name: obsolete abnormal morphology of dorso-lateral region
 def: "Any structural anomaly of the dorso-lateral region." []
 synonym: "abnormal shape of dorso-lateral region" EXACT []
 is_a: XPO:0101700 ! abnormal morphology of anatomical region
 is_a: XPO:0107338 ! abnormal dorso-lateral region
+is_obsolete: true
 
 [Term]
 id: XPO:0107426
@@ -56738,9 +58255,8 @@ is_a: XPO:0103713 ! increased size of the brain
 
 [Term]
 id: XPO:0115309
-name: abnormal(ly) open of brain (T)
-def: "Abnormal(ly) open of brain (Temporary definition)." []
-is_a: XPO:0101801 ! abnormal morphology of brain
+name: obsolete abnormal(ly) open of brain (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0115310
@@ -56768,16 +58284,13 @@ is_a: XPO:0101640 ! abnormal morphology of epidermis
 
 [Term]
 id: XPO:0115318
-name: abnormal(ly) separated from of epidermis outer layer (T)
-def: "Abnormal(ly) separated from of epidermis outer layer (Temporary definition)." []
-is_a: XPO:0102312 ! abnormal morphology of epidermis outer layer
+name: obsolete abnormal(ly) separated from of epidermis outer layer (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0115321
-name: abnormal(ly) normal amount of ciliated epidermal cell (T)
-def: "Abnormal(ly) normal amount of ciliated epidermal cell (Temporary definition)." []
-is_a: XPO:0100712 ! abnormal ciliated epidermal cell
-is_a: XPO:0115842 ! abnormal(ly) quality of epidermal cell in whole organism (T)
+name: obsolete abnormal(ly) normal amount of ciliated epidermal cell (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0115327
@@ -56793,9 +58306,8 @@ is_a: XPO:0100432 ! abnormal epidermis inner layer
 
 [Term]
 id: XPO:0115330
-name: abnormal(ly) transformed to of neuroectoderm (T)
-def: "Abnormal(ly) transformed to of neuroectoderm (Temporary definition)." []
-is_a: XPO:0102256 ! abnormal morphology of neuroectoderm
+name: obsolete abnormal(ly) transformed to of neuroectoderm (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0115333
@@ -56824,8 +58336,10 @@ is_a: XPO:0100166 ! abnormal somite
 [Term]
 id: XPO:0115343
 name: abnormal(ly) fused with of somite (T)
+name: obsolete abnormal(ly) fused with of somite (T)
 def: "Abnormal(ly) fused with of somite (Temporary definition)." []
 is_a: XPO:0101798 ! abnormal morphology of somite
+is_obsolete: true
 
 [Term]
 id: XPO:0115344
@@ -57509,9 +59023,8 @@ is_a: XPO:0100002 ! abnormal head
 
 [Term]
 id: XPO:0115522
-name: abnormal(ly) condensed of head (T)
-def: "Abnormal(ly) condensed of head (Temporary definition)." []
-is_a: XPO:0101634 ! abnormal morphology of head
+name: obsolete abnormal(ly) condensed of head (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0115523
@@ -57702,8 +59215,10 @@ is_a: XPO:0100846 ! abnormal hindlimb
 [Term]
 id: XPO:0115577
 name: abnormal(ly) fused with of hindlimb digit (T)
+name: obsolete abnormal(ly) fused with of hindlimb digit (T)
 def: "Abnormal(ly) fused with of hindlimb digit (Temporary definition)." []
 is_a: XPO:0101809 ! abnormal morphology of hindlimb digit
+is_obsolete: true
 
 [Term]
 id: XPO:0115578
@@ -58087,15 +59602,13 @@ is_a: XPO:0101691 ! abnormal morphology of regenerating tail
 
 [Term]
 id: XPO:0115690
-name: abnormal(ly) normal amount of retinal cone cell (T)
-def: "Abnormal(ly) normal amount of retinal cone cell (Temporary definition)." []
-is_a: XPO:0101250 ! abnormal retinal cone cell
+name: obsolete abnormal(ly) normal amount of retinal cone cell (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0115691
-name: abnormal(ly) normal amount of retinal rod cell (T)
-def: "Abnormal(ly) normal amount of retinal rod cell (Temporary definition)." []
-is_a: XPO:0101219 ! abnormal retinal rod cell
+name: obsolete abnormal(ly) normal amount of retinal rod cell (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0115693
@@ -58117,9 +59630,8 @@ is_a: XPO:0102412 ! abnormal morphology of vascular plexus
 
 [Term]
 id: XPO:0115697
-name: abnormal(ly) normal amount of angioblast (T)
-def: "Abnormal(ly) normal amount of angioblast (Temporary definition)." []
-is_a: XPO:0100900 ! abnormal angioblast
+name: obsolete abnormal(ly) normal amount of angioblast (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0115698
@@ -58136,8 +59648,10 @@ is_a: XPO:0102758 ! abnormal morphology of primary heart field
 [Term]
 id: XPO:0115701
 name: abnormal(ly) fused with of anterior branchial crest (T)
+name: obsolete abnormal(ly) fused with of anterior branchial crest (T)
 def: "Abnormal(ly) fused with of anterior branchial crest (Temporary definition)." []
 is_a: XPO:0102659 ! abnormal morphology of anterior branchial crest
+is_obsolete: true
 
 [Term]
 id: XPO:0115702
@@ -58226,9 +59740,11 @@ is_a: XPO:0101163 ! abnormal branchial basket
 [Term]
 id: XPO:0115739
 name: abnormal(ly) fused with of hindlimb digit 2 (T)
+name: obsolete abnormal(ly) fused with of hindlimb digit 2 (T)
 def: "Abnormal(ly) fused with of hindlimb digit 2 (Temporary definition)." []
 is_a: XPO:0102051 ! abnormal morphology of hindlimb digit 2
 is_a: XPO:0115577 ! abnormal(ly) fused with of hindlimb digit (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0115741
@@ -58334,9 +59850,8 @@ is_a: XPO:0101015 ! abnormal proximal tubule
 
 [Term]
 id: XPO:0115764
-name: abnormal(ly) dissociated from of epidermal cell (T)
-def: "Abnormal(ly) dissociated from of epidermal cell (Temporary definition)." []
-is_a: XPO:0102346 ! abnormal morphology of epidermal cell
+name: obsolete abnormal(ly) dissociated from of epidermal cell (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0115765
@@ -58376,208 +59891,208 @@ is_a: XPO:0102086 ! abnormal morphology of lung bud
 
 [Term]
 id: XPO:0115771
-name: abnormal duplication of bone element 
-def: "Any abnormal duplication of the bone element." []
-synonym: "abnormally duplicated bone element" EXACT []
+name: duplicated bone element in claw of hindlimb digit 1
+def: "Any abnormal duplication of the bone element in claw of hindlimb digit 1." []
+synonym: "abnormally duplicated bone element in claw of hindlimb digit 1" EXACT []
 is_a: XPO:0101295 ! abnormal claw of hindlimb digit 1
 is_a: XPO:0103400 ! Increased number of bone element in the hindlimb
 
 [Term]
 id: XPO:0115772
-name: abnormal duplication of bone element 
-def: "Any abnormal duplication of the bone element." []
-synonym: "abnormally duplicated bone element" EXACT []
+name: duplicated bone element in claw of hindlimb digit 2
+def: "Any abnormal duplication of the bone element in claw of hindlimb digit 2." []
+synonym: "abnormally duplicated bone element in claw of hindlimb digit 2" EXACT []
 is_a: XPO:0100825 ! abnormal claw of hindlimb digit 2
 is_a: XPO:0103400 ! Increased number of bone element in the hindlimb
 
 [Term]
 id: XPO:0115773
-name: abnormal duplication of bone element 
-def: "Any abnormal duplication of the bone element." []
-synonym: "abnormally duplicated bone element" EXACT []
+name: duplicated bone element in claw of hindlimb digit 3
+def: "Any abnormal duplication of the bone element in claw of hindlimb digit 3." []
+synonym: "abnormally duplicated bone element in claw of hindlimb digit 3" EXACT []
 is_a: XPO:0101165 ! abnormal claw of hindlimb digit 3
 is_a: XPO:0103400 ! Increased number of bone element in the hindlimb
 
 [Term]
 id: XPO:0115774
-name: abnormal duplication of bone element 
-def: "Any abnormal duplication of the bone element." []
-synonym: "abnormally duplicated bone element" EXACT []
+name: duplicated bone element in claw of hindlimb digit 4
+def: "Any abnormal duplication of the bone element in claw of hindlimb digit 4." []
+synonym: "abnormally duplicated bone element in claw of hindlimb digit 4" EXACT []
 is_a: XPO:0101412 ! abnormal claw of hindlimb digit 4
 is_a: XPO:0103400 ! Increased number of bone element in the hindlimb
 
 [Term]
 id: XPO:0115775
-name: abnormal duplication of bone element 
-def: "Any abnormal duplication of the bone element." []
-synonym: "abnormally duplicated bone element" EXACT []
+name: duplicated bone element in claw of hindlimb digit 5
+def: "Any abnormal duplication of the bone element in claw of hindlimb digit 5." []
+synonym: "abnormally duplicated bone element in claw of hindlimb digit 5" EXACT []
 is_a: XPO:0101559 ! abnormal claw of hindlimb digit 5
 is_a: XPO:0103400 ! Increased number of bone element in the hindlimb
 
 [Term]
 id: XPO:0115776
-name: abnormal duplication of apical ectodermal ridge 
-def: "Any abnormal duplication of the apical ectodermal ridge." []
-synonym: "abnormally duplicated apical ectodermal ridge" EXACT []
+name: duplicated apical ectodermal ridge in hindlimb bud
+def: "Any abnormal duplication of the apical ectodermal ridge in hindlimb bud." []
+synonym: "abnormally duplicated apical ectodermal ridge in hindlimb bud" EXACT []
 is_a: XPO:0115905 ! abnormal(ly) quality of apical ectodermal ridge in hindlimb bud (T)
 
 [Term]
 id: XPO:0115777
-name: abnormal duplication of apical ectodermal ridge 
-def: "Any abnormal duplication of the apical ectodermal ridge." []
-synonym: "abnormally duplicated apical ectodermal ridge" EXACT []
+name: duplicated apical ectodermal ridge in forelimb bud
+def: "Any abnormal duplication of the apical ectodermal ridge in forelimb bud." []
+synonym: "abnormally duplicated apical ectodermal ridge in forelimb bud" EXACT []
 is_a: XPO:0101044 ! abnormal apical ectodermal ridge
 is_a: XPO:0101189 ! abnormal forelimb bud
 
 [Term]
 id: XPO:0115778
-name: abnormal duplication of autopod 
-def: "Any abnormal duplication of the autopod." []
-synonym: "abnormally duplicated autopod" EXACT []
+name: duplicated autopod in regenerating hindlimb
+def: "Any abnormal duplication of the autopod in regenerating hindlimb." []
+synonym: "abnormally duplicated autopod in regenerating hindlimb" EXACT []
 is_a: XPO:0100458 ! abnormal autopod
 is_a: XPO:0101181 ! abnormal regenerating hindlimb
 
 [Term]
 id: XPO:0115779
-name: abnormal duplication of hindlimb digit 
-def: "Any abnormal duplication of the hindlimb digit." []
-synonym: "abnormally duplicated hindlimb digit" EXACT []
+name: duplicated hindlimb digit in regenerating hindlimb
+def: "Any abnormal duplication of the hindlimb digit in regenerating hindlimb." []
+synonym: "abnormally duplicated hindlimb digit in regenerating hindlimb" EXACT []
 is_a: XPO:0103413 ! Increased number of hindlimb digit in the regenerating hindlimb
 is_a: XPO:0103610 ! Increased number of hindlimb digit in the regenerating hindlimb
 
 [Term]
 id: XPO:0115780
-name: abnormal duplication of femur 
-def: "Any abnormal duplication of the femur." []
-synonym: "abnormally duplicated femur" EXACT []
+name: duplicated femur in regenerating hindlimb
+def: "Any abnormal duplication of the femur in regenerating hindlimb." []
+synonym: "abnormally duplicated femur in regenerating hindlimb" EXACT []
 is_a: XPO:0115642 ! abnormal(ly) duplicated of femur (T)
-is_a: XPO:0115802 ! abnormal duplication of femur
+is_a: XPO:0115802 ! duplicated femur
 is_a: XPO:0115900 ! abnormal(ly) quality of femur in regenerating hindlimb (T)
 
 [Term]
 id: XPO:0115781
-name: abnormal duplication of hindlimb digit 1 
-def: "Any abnormal duplication of the hindlimb digit 1." []
-synonym: "abnormally duplicated hindlimb digit 1" EXACT []
+name: duplicated hindlimb digit 1 in regenerating hindlimb
+def: "Any abnormal duplication of the hindlimb digit 1 in regenerating hindlimb." []
+synonym: "abnormally duplicated hindlimb digit 1 in regenerating hindlimb" EXACT []
 is_a: XPO:0100240 ! abnormal hindlimb digit 1
-is_a: XPO:0115779 ! abnormal duplication of hindlimb digit
+is_a: XPO:0115779 ! duplicated hindlimb digit in regenerating hindlimb
 
 [Term]
 id: XPO:0115782
-name: abnormal duplication of hindlimb digit 2 
-def: "Any abnormal duplication of the hindlimb digit 2." []
-synonym: "abnormally duplicated hindlimb digit 2" EXACT []
+name: duplicated hindlimb digit 2 in regenerating hindlimb
+def: "Any abnormal duplication of the hindlimb digit 2 in regenerating hindlimb." []
+synonym: "abnormally duplicated hindlimb digit 2 in regenerating hindlimb" EXACT []
 is_a: XPO:0100419 ! abnormal hindlimb digit 2
-is_a: XPO:0115779 ! abnormal duplication of hindlimb digit
+is_a: XPO:0115779 ! duplicated hindlimb digit in regenerating hindlimb
 
 [Term]
 id: XPO:0115783
-name: abnormal duplication of hindlimb digit 3 
-def: "Any abnormal duplication of the hindlimb digit 3." []
-synonym: "abnormally duplicated hindlimb digit 3" EXACT []
+name: duplicated hindlimb digit 3 in regenerating hindlimb
+def: "Any abnormal duplication of the hindlimb digit 3 in regenerating hindlimb." []
+synonym: "abnormally duplicated hindlimb digit 3 in regenerating hindlimb" EXACT []
 is_a: XPO:0100548 ! abnormal hindlimb digit 3
-is_a: XPO:0115779 ! abnormal duplication of hindlimb digit
+is_a: XPO:0115779 ! duplicated hindlimb digit in regenerating hindlimb
 
 [Term]
 id: XPO:0115784
-name: abnormal duplication of hindlimb digit 4 
-def: "Any abnormal duplication of the hindlimb digit 4." []
-synonym: "abnormally duplicated hindlimb digit 4" EXACT []
+name: duplicated hindlimb digit 4 in regenerating hindlimb
+def: "Any abnormal duplication of the hindlimb digit 4 in regenerating hindlimb." []
+synonym: "abnormally duplicated hindlimb digit 4 in regenerating hindlimb" EXACT []
 is_a: XPO:0101244 ! abnormal hindlimb digit 4
-is_a: XPO:0115779 ! abnormal duplication of hindlimb digit
+is_a: XPO:0115779 ! duplicated hindlimb digit in regenerating hindlimb
 
 [Term]
 id: XPO:0115785
-name: abnormal duplication of hindlimb digit 5 
-def: "Any abnormal duplication of the hindlimb digit 5." []
-synonym: "abnormally duplicated hindlimb digit 5" EXACT []
+name: duplicated hindlimb digit 5 in regenerating hindlimb
+def: "Any abnormal duplication of the hindlimb digit 5 in regenerating hindlimb." []
+synonym: "abnormally duplicated hindlimb digit 5 in regenerating hindlimb" EXACT []
 is_a: XPO:0115746 ! abnormal(ly) present of hindlimb digit 5 (T)
-is_a: XPO:0115779 ! abnormal duplication of hindlimb digit
+is_a: XPO:0115779 ! duplicated hindlimb digit in regenerating hindlimb
 
 [Term]
 id: XPO:0115786
-name: abnormal duplication of forelimb digit 2 
-def: "Any abnormal duplication of the forelimb digit 2." []
-synonym: "abnormally duplicated forelimb digit 2" EXACT []
+name: duplicated forelimb digit 2 in regenerating forelimb
+def: "Any abnormal duplication of the forelimb digit 2 in regenerating forelimb." []
+synonym: "abnormally duplicated forelimb digit 2 in regenerating forelimb" EXACT []
 is_a: XPO:0103609 ! Increased number of forelimb digit in the regenerating forelimb
 is_a: XPO:0115912 ! abnormal(ly) quality of forelimb digit 2 in forelimb (T)
 
 [Term]
 id: XPO:0115787
-name: abnormal duplication of forelimb digit 3 
-def: "Any abnormal duplication of the forelimb digit 3." []
-synonym: "abnormally duplicated forelimb digit 3" EXACT []
+name: duplicated forelimb digit 3 in regenerating forelimb
+def: "Any abnormal duplication of the forelimb digit 3 in regenerating forelimb." []
+synonym: "abnormally duplicated forelimb digit 3 in regenerating forelimb" EXACT []
 is_a: XPO:0100966 ! abnormal forelimb digit 3
 is_a: XPO:0103609 ! Increased number of forelimb digit in the regenerating forelimb
 
 [Term]
 id: XPO:0115788
-name: abnormal duplication of forelimb digit 4 
-def: "Any abnormal duplication of the forelimb digit 4." []
-synonym: "abnormally duplicated forelimb digit 4" EXACT []
+name: duplicated forelimb digit 4 in regenerating forelimb
+def: "Any abnormal duplication of the forelimb digit 4 in regenerating forelimb." []
+synonym: "abnormally duplicated forelimb digit 4 in regenerating forelimb" EXACT []
 is_a: XPO:0100897 ! abnormal forelimb digit 4
 is_a: XPO:0103609 ! Increased number of forelimb digit in the regenerating forelimb
 
 [Term]
 id: XPO:0115789
-name: abnormal duplication of forelimb digit 5 
-def: "Any abnormal duplication of the forelimb digit 5." []
-synonym: "abnormally duplicated forelimb digit 5" EXACT []
+name: duplicated forelimb digit 5 in regenerating forelimb
+def: "Any abnormal duplication of the forelimb digit 5 in regenerating forelimb." []
+synonym: "abnormally duplicated forelimb digit 5 in regenerating forelimb" EXACT []
 is_a: XPO:0103609 ! Increased number of forelimb digit in the regenerating forelimb
 is_a: XPO:0115913 ! abnormal(ly) quality of forelimb digit 5 in forelimb (T)
 
 [Term]
 id: XPO:0115790
-name: abnormal duplication of pelvic girdle 
-def: "Any abnormal duplication of the pelvic girdle." []
-synonym: "abnormally duplicated pelvic girdle" EXACT []
+name: duplicated pelvic girdle in regenerating hindlimb
+def: "Any abnormal duplication of the pelvic girdle in regenerating hindlimb." []
+synonym: "abnormally duplicated pelvic girdle in regenerating hindlimb" EXACT []
 is_a: XPO:0101181 ! abnormal regenerating hindlimb
 is_a: XPO:0115590 ! abnormal(ly) duplicated of pelvic girdle (T)
-is_a: XPO:0115818 ! abnormal duplication of pelvic girdle
+is_a: XPO:0115818 ! duplicated pelvic girdle
 
 [Term]
 id: XPO:0115791
-name: abnormal duplication of tarsus 
-def: "Any abnormal duplication of the tarsus." []
-synonym: "abnormally duplicated tarsus" EXACT []
+name: duplicated tarsus in regenerating hindlimb
+def: "Any abnormal duplication of the tarsus in regenerating hindlimb." []
+synonym: "abnormally duplicated tarsus in regenerating hindlimb" EXACT []
 is_a: XPO:0101181 ! abnormal regenerating hindlimb
 is_a: XPO:0101440 ! abnormal tarsus
 is_a: XPO:0103400 ! Increased number of bone element in the hindlimb
 
 [Term]
 id: XPO:0115792
-name: abnormal duplication of tibia-fibula 
-def: "Any abnormal duplication of the tibia-fibula." []
-synonym: "abnormally duplicated tibia-fibula" EXACT []
+name: duplicated tibia-fibula in regenerating hindlimb
+def: "Any abnormal duplication of the tibia-fibula in regenerating hindlimb." []
+synonym: "abnormally duplicated tibia-fibula in regenerating hindlimb" EXACT []
 is_a: XPO:0115898 ! abnormal(ly) quality of tibia-fibula in regenerating hindlimb (T)
 
 [Term]
 id: XPO:0115793
-name: abnormal duplication of zeugopod 
-def: "Any abnormal duplication of the zeugopod." []
-synonym: "abnormally duplicated zeugopod" EXACT []
+name: duplicated zeugopod in regenerating hindlimb
+def: "Any abnormal duplication of the zeugopod in regenerating hindlimb." []
+synonym: "abnormally duplicated zeugopod in regenerating hindlimb" EXACT []
 is_a: XPO:0100402 ! abnormal zeugopod
 is_a: XPO:0101181 ! abnormal regenerating hindlimb
 
 [Term]
 id: XPO:0115794
-name: abnormal duplication of anterior-posterior axis 
-def: "Any abnormal duplication of the anterior-posterior axis." []
-synonym: "abnormally duplicated anterior-posterior axis" EXACT []
+name: duplicated anterior-posterior axis in anterior region
+def: "Any abnormal duplication of the anterior-posterior axis in anterior region." []
+synonym: "abnormally duplicated anterior-posterior axis in anterior region" EXACT []
 is_a: XPO:0107274 ! abnormal anterior region
-is_a: XPO:0115824 ! abnormal duplication of anterior-posterior axis
+is_a: XPO:0115824 ! duplicated anterior-posterior axis
 
 [Term]
 id: XPO:0115795
-name: abnormal duplication of anterior-posterior axis 
-def: "Any abnormal duplication of the anterior-posterior axis." []
-synonym: "abnormally duplicated anterior-posterior axis" EXACT []
+name: duplicated anterior-posterior axis in antero-dorsal region
+def: "Any abnormal duplication of the anterior-posterior axis in antero-dorsal region." []
+synonym: "abnormally duplicated anterior-posterior axis in antero-dorsal region" EXACT []
 is_a: XPO:0107279 ! abnormal antero-dorsal region
-is_a: XPO:0115824 ! abnormal duplication of anterior-posterior axis
+is_a: XPO:0115824 ! duplicated anterior-posterior axis
 
 [Term]
 id: XPO:0115796
-name: abnormal duplication of cement gland 
+name: duplicated cement gland
 def: "Any abnormal duplication of the cement gland." []
 synonym: "abnormal duplication of cement gland" EXACT []
 synonym: "abnormally duplicated cement gland" EXACT []
@@ -58585,7 +60100,7 @@ is_a: XPO:0100444 ! abnormal cement gland
 
 [Term]
 id: XPO:0115797
-name: abnormal duplication of claw of hindlimb digit 1 
+name: duplicated claw of hindlimb digit 1
 def: "Any abnormal duplication of the claw of hindlimb digit 1." []
 synonym: "abnormal duplication of claw of hindlimb digit 1" EXACT []
 synonym: "abnormally duplicated claw of hindlimb digit 1" EXACT []
@@ -58593,7 +60108,7 @@ is_a: XPO:0101295 ! abnormal claw of hindlimb digit 1
 
 [Term]
 id: XPO:0115798
-name: abnormal duplication of claw of hindlimb digit 2 
+name: duplicated claw of hindlimb digit 2
 def: "Any abnormal duplication of the claw of hindlimb digit 2." []
 synonym: "abnormal duplication of claw of hindlimb digit 2" EXACT []
 synonym: "abnormally duplicated claw of hindlimb digit 2" EXACT []
@@ -58601,7 +60116,7 @@ is_a: XPO:0100825 ! abnormal claw of hindlimb digit 2
 
 [Term]
 id: XPO:0115799
-name: abnormal duplication of claw of hindlimb digit 3 
+name: duplicated claw of hindlimb digit 3
 def: "Any abnormal duplication of the claw of hindlimb digit 3." []
 synonym: "abnormal duplication of claw of hindlimb digit 3" EXACT []
 synonym: "abnormally duplicated claw of hindlimb digit 3" EXACT []
@@ -58609,7 +60124,7 @@ is_a: XPO:0101165 ! abnormal claw of hindlimb digit 3
 
 [Term]
 id: XPO:0115800
-name: abnormal duplication of claw of hindlimb digit 4 
+name: duplicated claw of hindlimb digit 4
 def: "Any abnormal duplication of the claw of hindlimb digit 4." []
 synonym: "abnormal duplication of claw of hindlimb digit 4" EXACT []
 synonym: "abnormally duplicated claw of hindlimb digit 4" EXACT []
@@ -58617,7 +60132,7 @@ is_a: XPO:0101412 ! abnormal claw of hindlimb digit 4
 
 [Term]
 id: XPO:0115801
-name: abnormal duplication of claw of hindlimb digit 5 
+name: duplicated claw of hindlimb digit 5
 def: "Any abnormal duplication of the claw of hindlimb digit 5." []
 synonym: "abnormal duplication of claw of hindlimb digit 5" EXACT []
 synonym: "abnormally duplicated claw of hindlimb digit 5" EXACT []
@@ -58625,7 +60140,7 @@ is_a: XPO:0101559 ! abnormal claw of hindlimb digit 5
 
 [Term]
 id: XPO:0115802
-name: abnormal duplication of femur 
+name: duplicated femur
 def: "Any abnormal duplication of the femur." []
 synonym: "abnormal duplication of femur" EXACT []
 synonym: "abnormally duplicated femur" EXACT []
@@ -58633,7 +60148,7 @@ is_a: XPO:0100401 ! abnormal femur
 
 [Term]
 id: XPO:0115803
-name: abnormal duplication of forelimb 
+name: duplicated forelimb
 def: "Any abnormal duplication of the forelimb." []
 synonym: "abnormal duplication of forelimb" EXACT []
 synonym: "abnormally duplicated forelimb" EXACT []
@@ -58641,7 +60156,7 @@ is_a: XPO:0100403 ! abnormal forelimb
 
 [Term]
 id: XPO:0115804
-name: abnormal duplication of forelimb bud 
+name: duplicated forelimb bud
 def: "Any abnormal duplication of the forelimb bud." []
 synonym: "abnormal duplication of forelimb bud" EXACT []
 synonym: "abnormally duplicated forelimb bud" EXACT []
@@ -58649,7 +60164,7 @@ is_a: XPO:0101189 ! abnormal forelimb bud
 
 [Term]
 id: XPO:0115805
-name: abnormal duplication of hand 
+name: duplicated hand
 def: "Any abnormal duplication of the hand." []
 synonym: "abnormal duplication of hand" EXACT []
 synonym: "abnormally duplicated hand" EXACT []
@@ -58657,47 +60172,47 @@ is_a: XPO:0100341 ! abnormal hand
 
 [Term]
 id: XPO:0115806
-name: abnormal duplication of left hindlimb 
+name: duplicated left hindlimb
 def: "Any abnormal duplication of the left hindlimb." []
 synonym: "abnormal duplication of left hindlimb" EXACT []
 synonym: "abnormally duplicated left hindlimb" EXACT []
 is_a: XPO:0107331 ! abnormal left hindlimb
 is_a: XPO:0115572 ! abnormal(ly) duplicated of hindlimb (T)
-is_a: XPO:0115814 ! abnormal duplication of hindlimb
+is_a: XPO:0115814 ! duplicated hindlimb
 
 [Term]
 id: XPO:0115807
-name: abnormal duplication of right hindlimb 
+name: duplicated right hindlimb
 def: "Any abnormal duplication of the right hindlimb." []
 synonym: "abnormal duplication of right hindlimb" EXACT []
 synonym: "abnormally duplicated right hindlimb" EXACT []
 is_a: XPO:0107332 ! abnormal right hindlimb
 is_a: XPO:0115572 ! abnormal(ly) duplicated of hindlimb (T)
-is_a: XPO:0115814 ! abnormal duplication of hindlimb
+is_a: XPO:0115814 ! duplicated hindlimb
 
 [Term]
 id: XPO:0115808
-name: abnormal duplication of left forelimb 
+name: duplicated left forelimb
 def: "Any abnormal duplication of the left forelimb." []
 synonym: "abnormal duplication of left forelimb" EXACT []
 synonym: "abnormally duplicated left forelimb" EXACT []
 is_a: XPO:0107329 ! abnormal left forelimb
 is_a: XPO:0115564 ! abnormal(ly) duplicated of forelimb (T)
-is_a: XPO:0115803 ! abnormal duplication of forelimb
+is_a: XPO:0115803 ! duplicated forelimb
 
 [Term]
 id: XPO:0115809
-name: abnormal duplication of right forelimb 
+name: duplicated right forelimb
 def: "Any abnormal duplication of the right forelimb." []
 synonym: "abnormal duplication of right forelimb" EXACT []
 synonym: "abnormally duplicated right forelimb" EXACT []
 is_a: XPO:0107330 ! abnormal right forelimb
 is_a: XPO:0115564 ! abnormal(ly) duplicated of forelimb (T)
-is_a: XPO:0115803 ! abnormal duplication of forelimb
+is_a: XPO:0115803 ! duplicated forelimb
 
 [Term]
 id: XPO:0115810
-name: abnormal duplication of forelimb stylopod 
+name: duplicated forelimb stylopod
 def: "Any abnormal duplication of the forelimb stylopod." []
 synonym: "abnormal duplication of forelimb stylopod" EXACT []
 synonym: "abnormally duplicated forelimb stylopod" EXACT []
@@ -58705,7 +60220,7 @@ is_a: XPO:0100510 ! abnormal forelimb stylopod
 
 [Term]
 id: XPO:0115811
-name: abnormal duplication of forelimb zeugopod 
+name: duplicated forelimb zeugopod
 def: "Any abnormal duplication of the forelimb zeugopod." []
 synonym: "abnormal duplication of forelimb zeugopod" EXACT []
 synonym: "abnormally duplicated forelimb zeugopod" EXACT []
@@ -58713,7 +60228,7 @@ is_a: XPO:0100670 ! abnormal forelimb zeugopod
 
 [Term]
 id: XPO:0115812
-name: abnormal duplication of head 
+name: duplicated head
 def: "Any abnormal duplication of the head." []
 synonym: "abnormal duplication of head" EXACT []
 synonym: "abnormally duplicated head" EXACT []
@@ -58721,7 +60236,7 @@ is_a: XPO:0100002 ! abnormal head
 
 [Term]
 id: XPO:0115813
-name: abnormal duplication of heart 
+name: duplicated heart
 def: "Any abnormal duplication of the heart." []
 synonym: "abnormal duplication of heart" EXACT []
 synonym: "abnormally duplicated heart" EXACT []
@@ -58729,7 +60244,7 @@ is_a: XPO:0100013 ! abnormal heart
 
 [Term]
 id: XPO:0115814
-name: abnormal duplication of hindlimb 
+name: duplicated hindlimb
 def: "Any abnormal duplication of the hindlimb." []
 synonym: "abnormal duplication of hindlimb" EXACT []
 synonym: "abnormally duplicated hindlimb" EXACT []
@@ -58737,7 +60252,7 @@ is_a: XPO:0103626 ! Increased number of hindlimb
 
 [Term]
 id: XPO:0115815
-name: abnormal duplication of hindlimb bud 
+name: duplicated hindlimb bud
 def: "Any abnormal duplication of the hindlimb bud." []
 synonym: "abnormal duplication of hindlimb bud" EXACT []
 synonym: "abnormally duplicated hindlimb bud" EXACT []
@@ -58745,7 +60260,7 @@ is_a: XPO:0100182 ! abnormal hindlimb bud
 
 [Term]
 id: XPO:0115816
-name: abnormal duplication of foot 
+name: duplicated foot
 def: "Any abnormal duplication of the foot." []
 synonym: "abnormal duplication of foot" EXACT []
 synonym: "abnormally duplicated foot" EXACT []
@@ -58753,7 +60268,7 @@ is_a: XPO:0103628 ! Increased number of foot
 
 [Term]
 id: XPO:0115817
-name: abnormal duplication of lens 
+name: duplicated lens
 def: "Any abnormal duplication of the lens." []
 synonym: "abnormal duplication of lens" EXACT []
 synonym: "abnormally duplicated lens" EXACT []
@@ -58761,7 +60276,7 @@ is_a: XPO:0100918 ! abnormal lens
 
 [Term]
 id: XPO:0115818
-name: abnormal duplication of pelvic girdle 
+name: duplicated pelvic girdle
 def: "Any abnormal duplication of the pelvic girdle." []
 synonym: "abnormal duplication of pelvic girdle" EXACT []
 synonym: "abnormally duplicated pelvic girdle" EXACT []
@@ -58769,7 +60284,7 @@ is_a: XPO:0100123 ! abnormal pelvic girdle
 
 [Term]
 id: XPO:0115819
-name: abnormal duplication of regenerating hindlimb 
+name: duplicated regenerating hindlimb
 def: "Any abnormal duplication of the regenerating hindlimb." []
 synonym: "abnormal duplication of regenerating hindlimb" EXACT []
 synonym: "abnormally duplicated regenerating hindlimb" EXACT []
@@ -58777,7 +60292,7 @@ is_a: XPO:0101181 ! abnormal regenerating hindlimb
 
 [Term]
 id: XPO:0115820
-name: abnormal duplication of tail 
+name: duplicated tail
 def: "Any abnormal duplication of the tail." []
 synonym: "abnormal duplication of tail" EXACT []
 synonym: "abnormally duplicated tail" EXACT []
@@ -58785,7 +60300,7 @@ is_a: XPO:0100726 ! abnormal tail
 
 [Term]
 id: XPO:0115821
-name: abnormal duplication of trunk 
+name: duplicated trunk
 def: "Any abnormal duplication of the trunk." []
 synonym: "abnormal duplication of trunk" EXACT []
 synonym: "abnormally duplicated trunk" EXACT []
@@ -58793,7 +60308,7 @@ is_a: XPO:0100103 ! abnormal trunk
 
 [Term]
 id: XPO:0115822
-name: abnormal duplication of utricle 
+name: duplicated utricle
 def: "Any abnormal duplication of the utricle." []
 synonym: "abnormal duplication of utricle" EXACT []
 synonym: "abnormally duplicated utricle" EXACT []
@@ -58801,7 +60316,7 @@ is_a: XPO:0101301 ! abnormal utricle
 
 [Term]
 id: XPO:0115823
-name: abnormal duplication of anatomical axis 
+name: duplicated anatomical axis
 def: "Any abnormal duplication of the anatomical axis." []
 synonym: "abnormal duplication of anatomical axis" EXACT []
 synonym: "abnormally duplicated anatomical axis" EXACT []
@@ -58809,25 +60324,25 @@ is_a: XPO:0107258 ! abnormal anatomical axis
 
 [Term]
 id: XPO:0115824
-name: abnormal duplication of anterior-posterior axis 
+name: duplicated anterior-posterior axis
 def: "Any abnormal duplication of the anterior-posterior axis." []
 synonym: "abnormal duplication of anterior-posterior axis" EXACT []
 synonym: "abnormally duplicated anterior-posterior axis" EXACT []
 is_a: XPO:0107260 ! abnormal anterior-posterior axis
-is_a: XPO:0115823 ! abnormal duplication of anatomical axis
+is_a: XPO:0115823 ! duplicated anatomical axis
 
 [Term]
 id: XPO:0115825
-name: abnormal duplication of dorsal-ventral axis 
+name: duplicated dorsal-ventral axis
 def: "Any abnormal duplication of the dorsal-ventral axis." []
 synonym: "abnormal duplication of dorsal-ventral axis" EXACT []
 synonym: "abnormally duplicated dorsal-ventral axis" EXACT []
 is_a: XPO:0107261 ! abnormal dorsal-ventral axis
-is_a: XPO:0115823 ! abnormal duplication of anatomical axis
+is_a: XPO:0115823 ! duplicated anatomical axis
 
 [Term]
 id: XPO:0115826
-name: abnormal duplication of hindlimb stylopod 
+name: duplicated hindlimb stylopod
 def: "Any abnormal duplication of the hindlimb stylopod." []
 synonym: "abnormal duplication of hindlimb stylopod" EXACT []
 synonym: "abnormally duplicated hindlimb stylopod" EXACT []
@@ -58836,7 +60351,7 @@ is_a: XPO:0115906 ! abnormal(ly) quality of stylopod in hindlimb (T)
 
 [Term]
 id: XPO:0115827
-name: abnormal duplication of hindlimb zeugopod 
+name: duplicated hindlimb zeugopod
 def: "Any abnormal duplication of the hindlimb zeugopod." []
 synonym: "abnormal duplication of hindlimb zeugopod" EXACT []
 synonym: "abnormally duplicated hindlimb zeugopod" EXACT []
@@ -58844,7 +60359,7 @@ is_a: XPO:0103629 ! Increased number of hindlimb zeugopod
 
 [Term]
 id: XPO:0115828
-name: abnormal duplication of left eye 
+name: duplicated left eye
 def: "Any abnormal duplication of the left eye." []
 synonym: "abnormal duplication of left eye" EXACT []
 synonym: "abnormally duplicated left eye" EXACT []
@@ -58853,7 +60368,7 @@ is_a: XPO:0115414 ! abnormal(ly) increased amount of eye (T)
 
 [Term]
 id: XPO:0115829
-name: abnormal duplication of right eye 
+name: duplicated right eye
 def: "Any abnormal duplication of the right eye." []
 synonym: "abnormal duplication of right eye" EXACT []
 synonym: "abnormally duplicated right eye" EXACT []
@@ -58862,7 +60377,7 @@ is_a: XPO:0115414 ! abnormal(ly) increased amount of eye (T)
 
 [Term]
 id: XPO:0115830
-name: abnormal duplication of dorsal trunk 
+name: duplicated dorsal trunk
 def: "Any abnormal duplication of the dorsal trunk." []
 synonym: "abnormal duplication of dorsal trunk" EXACT []
 synonym: "abnormally duplicated dorsal trunk" EXACT []
@@ -58870,7 +60385,7 @@ is_a: XPO:0107322 ! abnormal dorsal trunk
 
 [Term]
 id: XPO:0115831
-name: abnormal duplication of left part of brain 
+name: duplicated left part of brain
 def: "Any abnormal duplication of the left part of brain." []
 synonym: "abnormal duplication of left part of brain" EXACT []
 synonym: "abnormally duplicated left part of brain" EXACT []
@@ -58878,7 +60393,7 @@ is_a: XPO:0107335 ! abnormal left part of brain
 
 [Term]
 id: XPO:0115832
-name: abnormal duplication of right part of brain 
+name: duplicated right part of brain
 def: "Any abnormal duplication of the right part of brain." []
 synonym: "abnormal duplication of right part of brain" EXACT []
 synonym: "abnormally duplicated right part of brain" EXACT []
@@ -60079,75 +61594,58 @@ is_a: XPO:0101387 ! abnormal melanophore
 
 [Term]
 id: XPO:0116014
-name: abnormal(ly) fused with of somite in http://purl.obolibrary.org/obo/BSPO_0000000 (T)
-def: "Abnormal(ly) fused with of somite in http://purl.obolibrary.org/obo/BSPO_0000000 (Temporary definition)." []
-is_a: XPO:0115343 ! abnormal(ly) fused with of somite (T)
+name: obsolete abnormal(ly) fused with of somite in http://purl.obolibrary.org/obo/BSPO_0000000 (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0116015
-name: abnormal(ly) fused with of forelimb in digit (T)
-def: "Abnormal(ly) fused with of forelimb in digit (Temporary definition)." []
-is_a: XPO:0102035 ! abnormal morphology of forelimb
-is_a: XPO:0115844 ! abnormal(ly) quality of forelimb in digit (T)
+name: obsolete abnormal(ly) fused with of forelimb in digit (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0116016
-name: abnormal(ly) fused with of forelimb digit 2 in metacarpus (T)
-def: "Abnormal(ly) fused with of forelimb digit 2 in metacarpus (Temporary definition)." []
-is_a: XPO:0100717 ! abnormal metacarpus
-is_a: XPO:0102746 ! abnormal morphology of forelimb digit 2
+name: obsolete abnormal(ly) fused with of forelimb digit 2 in metacarpus (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0116017
-name: abnormal(ly) fused with of hindlimb in tarsus (T)
-def: "Abnormal(ly) fused with of hindlimb in tarsus (Temporary definition)." []
-is_a: XPO:0102478 ! abnormal morphology of hindlimb
-is_a: XPO:0115854 ! abnormal(ly) quality of hindlimb in tarsus (T)
+name: obsolete abnormal(ly) fused with of hindlimb in tarsus (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0116018
-name: abnormal(ly) fused with of hindlimb digit 2 in metatarsus (T)
-def: "Abnormal(ly) fused with of hindlimb digit 2 in metatarsus (Temporary definition)." []
-is_a: XPO:0101282 ! abnormal metatarsus
-is_a: XPO:0115739 ! abnormal(ly) fused with of hindlimb digit 2 (T)
+name: obsolete abnormal(ly) fused with of hindlimb digit 2 in metatarsus (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0116019
-name: abnormal(ly) fused with of regenerating hindlimb in tibia-fibula (T)
-def: "Abnormal(ly) fused with of regenerating hindlimb in tibia-fibula (Temporary definition)." []
-is_a: XPO:0102813 ! abnormal morphology of regenerating hindlimb
-is_a: XPO:0115861 ! abnormal(ly) quality of regenerating hindlimb in tibia-fibula (T)
+name: obsolete abnormal(ly) fused with of regenerating hindlimb in tibia-fibula (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0116020
-name: abnormal(ly) fused with of regenerating hindlimb in spike (T)
-def: "Abnormal(ly) fused with of regenerating hindlimb in spike (Temporary definition)." []
-is_a: XPO:0101375 ! abnormal spike
-is_a: XPO:0102813 ! abnormal morphology of regenerating hindlimb
+name: obsolete abnormal(ly) fused with of regenerating hindlimb in spike (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0116021
-name: abnormal(ly) fused with of eye in left (T)
-def: "Abnormal(ly) fused with of eye in left (Temporary definition)." []
-is_a: XPO:0101817 ! abnormal morphology of eye
+name: obsolete abnormal(ly) fused with of eye in left (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0116022
-name: abnormal(ly) fused with of optic stalk in left (T)
-def: "Abnormal(ly) fused with of optic stalk in left (Temporary definition)." []
-is_a: XPO:0102330 ! abnormal morphology of optic stalk
+name: obsolete abnormal(ly) fused with of optic stalk in left (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0116023
-name: abnormal(ly) fused with of eye in right (T)
-def: "Abnormal(ly) fused with of eye in right (Temporary definition)." []
-is_a: XPO:0101817 ! abnormal morphology of eye
+name: obsolete abnormal(ly) fused with of eye in right (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0116024
-name: abnormal(ly) fused with of olfactory pit in right (T)
-def: "Abnormal(ly) fused with of olfactory pit in right (Temporary definition)." []
-is_a: XPO:0102966 ! abnormal morphology of olfactory pit
+name: obsolete abnormal(ly) fused with of olfactory pit in right (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0116025
@@ -60210,7 +61708,7 @@ id: XPO:0116035
 name: abnormal(ly) malformed of Meckel's cartilage in left (T)
 def: "Abnormal(ly) malformed of Meckel's cartilage in left (Temporary definition)." []
 is_a: XPO:0102398 ! abnormal morphology of Meckel's cartilage
-is_a: XPO:0103677 ! abnormally formed cartilage element in head
+is_a: XPO:0103677 ! malformed cartilage element in head
 
 [Term]
 id: XPO:0116036
@@ -60326,7 +61824,7 @@ id: XPO:0116053
 name: abnormal(ly) duplicated of regenerating hindlimb in pelvic girdle (T)
 def: "Abnormal(ly) duplicated of regenerating hindlimb in pelvic girdle (Temporary definition)." []
 is_a: XPO:0115680 ! abnormal(ly) duplicated of regenerating hindlimb (T)
-is_a: XPO:0115819 ! abnormal duplication of regenerating hindlimb
+is_a: XPO:0115819 ! duplicated regenerating hindlimb
 is_a: XPO:0115849 ! abnormal(ly) quality of regenerating hindlimb in pelvic girdle (T)
 
 [Term]
@@ -60348,7 +61846,7 @@ id: XPO:0116056
 name: abnormal(ly) duplicated of regenerating hindlimb in femur (T)
 def: "Abnormal(ly) duplicated of regenerating hindlimb in femur (Temporary definition)." []
 is_a: XPO:0115680 ! abnormal(ly) duplicated of regenerating hindlimb (T)
-is_a: XPO:0115819 ! abnormal duplication of regenerating hindlimb
+is_a: XPO:0115819 ! duplicated regenerating hindlimb
 is_a: XPO:0115862 ! abnormal(ly) quality of regenerating hindlimb in femur (T)
 
 [Term]
@@ -60356,7 +61854,7 @@ id: XPO:0116057
 name: abnormal(ly) duplicated of hindlimb bud in apical ectodermal ridge (T)
 def: "Abnormal(ly) duplicated of hindlimb bud in apical ectodermal ridge (Temporary definition)." []
 is_a: XPO:0115600 ! abnormal(ly) duplicated of hindlimb bud (T)
-is_a: XPO:0115815 ! abnormal duplication of hindlimb bud
+is_a: XPO:0115815 ! duplicated hindlimb bud
 is_a: XPO:0115864 ! abnormal(ly) quality of hindlimb bud in apical ectodermal ridge (T)
 
 [Term]
@@ -60365,14 +61863,14 @@ name: abnormal(ly) duplicated of forelimb in stylopod (T)
 def: "Abnormal(ly) duplicated of forelimb in stylopod (Temporary definition)." []
 is_a: XPO:0100511 ! abnormal stylopod
 is_a: XPO:0115564 ! abnormal(ly) duplicated of forelimb (T)
-is_a: XPO:0115803 ! abnormal duplication of forelimb
+is_a: XPO:0115803 ! duplicated forelimb
 
 [Term]
 id: XPO:0116059
 name: abnormal(ly) duplicated of hindlimb in stylopod (T)
 def: "Abnormal(ly) duplicated of hindlimb in stylopod (Temporary definition)." []
 is_a: XPO:0115572 ! abnormal(ly) duplicated of hindlimb (T)
-is_a: XPO:0115814 ! abnormal duplication of hindlimb
+is_a: XPO:0115814 ! duplicated hindlimb
 is_a: XPO:0115866 ! abnormal(ly) quality of hindlimb in stylopod (T)
 
 [Term]
@@ -60381,14 +61879,14 @@ name: abnormal(ly) duplicated of forelimb in zeugopod (T)
 def: "Abnormal(ly) duplicated of forelimb in zeugopod (Temporary definition)." []
 is_a: XPO:0100402 ! abnormal zeugopod
 is_a: XPO:0115564 ! abnormal(ly) duplicated of forelimb (T)
-is_a: XPO:0115803 ! abnormal duplication of forelimb
+is_a: XPO:0115803 ! duplicated forelimb
 
 [Term]
 id: XPO:0116061
 name: abnormal(ly) duplicated of hindlimb in zeugopod (T)
 def: "Abnormal(ly) duplicated of hindlimb in zeugopod (Temporary definition)." []
 is_a: XPO:0115572 ! abnormal(ly) duplicated of hindlimb (T)
-is_a: XPO:0115814 ! abnormal duplication of hindlimb
+is_a: XPO:0115814 ! duplicated hindlimb
 is_a: XPO:0115868 ! abnormal(ly) quality of hindlimb in zeugopod (T)
 
 [Term]
@@ -60396,7 +61894,7 @@ id: XPO:0116062
 name: abnormal(ly) duplicated of regenerating hindlimb in zeugopod (T)
 def: "Abnormal(ly) duplicated of regenerating hindlimb in zeugopod (Temporary definition)." []
 is_a: XPO:0115680 ! abnormal(ly) duplicated of regenerating hindlimb (T)
-is_a: XPO:0115819 ! abnormal duplication of regenerating hindlimb
+is_a: XPO:0115819 ! duplicated regenerating hindlimb
 is_a: XPO:0115908 ! abnormal(ly) quality of regenerating hindlimb in zeugopod (T)
 
 [Term]
@@ -60404,7 +61902,7 @@ id: XPO:0116063
 name: abnormal(ly) duplicated of forelimb in autopod (T)
 def: "Abnormal(ly) duplicated of forelimb in autopod (Temporary definition)." []
 is_a: XPO:0115564 ! abnormal(ly) duplicated of forelimb (T)
-is_a: XPO:0115803 ! abnormal duplication of forelimb
+is_a: XPO:0115803 ! duplicated forelimb
 is_a: XPO:0115870 ! abnormal(ly) quality of forelimb in autopod (T)
 
 [Term]
@@ -60412,7 +61910,7 @@ id: XPO:0116064
 name: abnormal(ly) duplicated of hindlimb in autopod (T)
 def: "Abnormal(ly) duplicated of hindlimb in autopod (Temporary definition)." []
 is_a: XPO:0115572 ! abnormal(ly) duplicated of hindlimb (T)
-is_a: XPO:0115814 ! abnormal duplication of hindlimb
+is_a: XPO:0115814 ! duplicated hindlimb
 is_a: XPO:0115973 ! abnormal(ly) increased amount of hindlimb in autopod (T)
 
 [Term]
@@ -60420,7 +61918,7 @@ id: XPO:0116065
 name: abnormal(ly) duplicated of regenerating hindlimb in autopod (T)
 def: "Abnormal(ly) duplicated of regenerating hindlimb in autopod (Temporary definition)." []
 is_a: XPO:0115680 ! abnormal(ly) duplicated of regenerating hindlimb (T)
-is_a: XPO:0115819 ! abnormal duplication of regenerating hindlimb
+is_a: XPO:0115819 ! duplicated regenerating hindlimb
 is_a: XPO:0115974 ! abnormal(ly) increased amount of regenerating hindlimb in autopod (T)
 
 [Term]
@@ -60429,7 +61927,7 @@ name: abnormal(ly) duplicated of claw of hindlimb digit 4 in bone element (T)
 def: "Abnormal(ly) duplicated of claw of hindlimb digit 4 in bone element (Temporary definition)." []
 is_a: XPO:0100222 ! abnormal bone element
 is_a: XPO:0115749 ! abnormal(ly) duplicated of claw of hindlimb digit 4 (T)
-is_a: XPO:0115800 ! abnormal duplication of claw of hindlimb digit 4
+is_a: XPO:0115800 ! duplicated claw of hindlimb digit 4
 
 [Term]
 id: XPO:0116067
@@ -60469,7 +61967,7 @@ id: XPO:0116072
 name: abnormal(ly) duplicated of forelimb in left (T)
 def: "Abnormal(ly) duplicated of forelimb in left (Temporary definition)." []
 is_a: XPO:0115564 ! abnormal(ly) duplicated of forelimb (T)
-is_a: XPO:0115803 ! abnormal duplication of forelimb
+is_a: XPO:0115803 ! duplicated forelimb
 
 [Term]
 id: XPO:0116073
@@ -60482,7 +61980,7 @@ id: XPO:0116074
 name: abnormal(ly) duplicated of forelimb in right (T)
 def: "Abnormal(ly) duplicated of forelimb in right (Temporary definition)." []
 is_a: XPO:0115564 ! abnormal(ly) duplicated of forelimb (T)
-is_a: XPO:0115803 ! abnormal duplication of forelimb
+is_a: XPO:0115803 ! duplicated forelimb
 
 [Term]
 id: XPO:0116075
@@ -60884,22 +62382,18 @@ is_a: XPO:0115834 ! abnormal(ly) shape of regenerating hindlimb in autopod (T)
 
 [Term]
 id: XPO:0116141
-name: abnormal(ly) normal amount of migratory neural crest cell in tail region (T)
-def: "Abnormal(ly) normal amount of migratory neural crest cell in tail region (Temporary definition)." []
-is_a: XPO:0100296 ! abnormal tail region
-is_a: XPO:0101374 ! abnormal migratory neural crest cell
+name: obsolete abnormal(ly) normal amount of migratory neural crest cell in tail region (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0116142
-name: abnormal(ly) normal amount of hindlimb in digit (T)
-def: "Abnormal(ly) normal amount of hindlimb in digit (Temporary definition)." []
-is_a: XPO:0115845 ! abnormal(ly) quality of hindlimb in digit (T)
+name: obsolete abnormal(ly) normal amount of hindlimb in digit (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0116143
-name: abnormal(ly) normal amount of regenerating hindlimb in digit (T)
-def: "Abnormal(ly) normal amount of regenerating hindlimb in digit (Temporary definition)." []
-is_a: XPO:0115847 ! abnormal(ly) quality of regenerating hindlimb in digit (T)
+name: obsolete abnormal(ly) normal amount of regenerating hindlimb in digit (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0116144
@@ -61069,6 +62563,398 @@ name: abnormal(ly) irregularly shaped of epithelial cell in foregut endoderm (T)
 def: "Abnormal(ly) irregularly shaped of epithelial cell in foregut endoderm (Temporary definition)." []
 is_a: XPO:0100410 ! abnormal foregut endoderm
 is_a: XPO:0101850 ! abnormal morphology of epithelial cell
+
+[Term]
+id: XPO:0116429
+name: abnormal behavior
+def: "An anomaly in behavior." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0116430
+name: abnormal adrenal gland development
+def: "Abnormal adrenal gland development." []
+is_a: XPO:0116459 ! abnormal gland development
+
+[Term]
+id: XPO:0116431
+name: abnormal anatomical structure development
+def: "Abnormal anatomical structure development." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0116432
+name: abnormal animal organ development
+def: "Abnormal animal organ development." []
+is_a: XPO:0116431 ! abnormal anatomical structure development
+
+[Term]
+id: XPO:0116433
+name: abnormal axis specification
+def: "Abnormal axis specification." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0116434
+name: abnormal biological process
+def: "Abnormal biological_process." []
+is_a: XPO:00000000 ! Xenopus Phenotype
+
+[Term]
+id: XPO:0116435
+name: abnormal brain development
+def: "Abnormal brain development." []
+is_a: XPO:0116432 ! abnormal animal organ development
+
+[Term]
+id: XPO:0116436
+name: abnormal bronchus development
+def: "Abnormal bronchus development." []
+is_a: XPO:0116483 ! abnormal respiratory tube development
+
+[Term]
+id: XPO:0116437
+name: abnormal camera-type eye development
+def: "Abnormal camera-type eye development." []
+is_a: XPO:0116456 ! abnormal eye development
+
+[Term]
+id: XPO:0116438
+name: abnormal cardiac chamber development
+def: "Abnormal cardiac chamber development." []
+is_a: XPO:0116431 ! abnormal anatomical structure development
+
+[Term]
+id: XPO:0116439
+name: abnormal cardiac ventricle development
+def: "Abnormal cardiac ventricle development." []
+is_a: XPO:0116438 ! abnormal cardiac chamber development
+
+[Term]
+id: XPO:0116440
+name: abnormal cement gland development
+def: "Abnormal cement gland development." []
+is_a: XPO:0116459 ! abnormal gland development
+
+[Term]
+id: XPO:0116441
+name: abnormal central nervous system development
+def: "Abnormal central nervous system development." []
+is_a: XPO:0116431 ! abnormal anatomical structure development
+
+[Term]
+id: XPO:0116442
+name: abnormal chordate embryonic development
+def: "Abnormal chordate embryonic development." []
+is_a: XPO:0116450 ! abnormal embryo development
+
+[Term]
+id: XPO:0116443
+name: abnormal circulatory system development
+def: "Abnormal circulatory system development." []
+is_a: XPO:0116431 ! abnormal anatomical structure development
+
+[Term]
+id: XPO:0116444
+name: abnormal cloaca development
+def: "Abnormal cloaca development." []
+is_a: XPO:0116431 ! abnormal anatomical structure development
+
+[Term]
+id: XPO:0116445
+name: abnormal digestive system development
+def: "Abnormal digestive system development." []
+is_a: XPO:0116431 ! abnormal anatomical structure development
+
+[Term]
+id: XPO:0116446
+name: abnormal digestive tract development
+def: "Abnormal digestive tract development." []
+is_a: XPO:0116431 ! abnormal anatomical structure development
+
+[Term]
+id: XPO:0116447
+name: abnormal digestive tract morphogenesis
+def: "Abnormal digestive tract morphogenesis." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0116448
+name: abnormal ear development
+def: "Abnormal ear development." []
+is_a: XPO:0116484 ! abnormal sensory organ development
+
+[Term]
+id: XPO:0116449
+name: abnormal ectoderm development
+def: "Abnormal ectoderm development." []
+is_a: XPO:0116492 ! abnormal tissue development
+
+[Term]
+id: XPO:0116450
+name: abnormal embryo development
+def: "Abnormal embryo development." []
+is_a: XPO:0116431 ! abnormal anatomical structure development
+
+[Term]
+id: XPO:0116451
+name: abnormal embryonic morphogenesis
+def: "Abnormal embryonic morphogenesis." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0116452
+name: abnormal embryonic organ development
+def: "Abnormal embryonic organ development." []
+is_a: XPO:0116432 ! abnormal animal organ development
+
+[Term]
+id: XPO:0116453
+name: abnormal endocrine system development
+def: "Abnormal endocrine system development." []
+is_a: XPO:0116431 ! abnormal anatomical structure development
+
+[Term]
+id: XPO:0116454
+name: abnormal endoderm development
+def: "Abnormal endoderm development." []
+is_a: XPO:0116492 ! abnormal tissue development
+
+[Term]
+id: XPO:0116455
+name: abnormal epidermis development
+def: "Abnormal epidermis development." []
+is_a: XPO:0116492 ! abnormal tissue development
+
+[Term]
+id: XPO:0116456
+name: abnormal eye development
+def: "Abnormal eye development." []
+is_a: XPO:0116484 ! abnormal sensory organ development
+
+[Term]
+id: XPO:0116457
+name: abnormal fin development
+def: "Abnormal fin development." []
+is_a: XPO:0116431 ! abnormal anatomical structure development
+
+[Term]
+id: XPO:0116458
+name: abnormal gall bladder development
+def: "Abnormal gall bladder development." []
+is_a: XPO:0116432 ! abnormal animal organ development
+
+[Term]
+id: XPO:0116459
+name: abnormal gland development
+def: "Abnormal gland development." []
+is_a: XPO:0116432 ! abnormal animal organ development
+
+[Term]
+id: XPO:0116460
+name: abnormal gonad development
+def: "Abnormal gonad development." []
+is_a: XPO:0116432 ! abnormal animal organ development
+
+[Term]
+id: XPO:0116461
+name: abnormal head development
+def: "Abnormal head development." []
+is_a: XPO:0116431 ! abnormal anatomical structure development
+
+[Term]
+id: XPO:0116462
+name: abnormal heart development
+def: "Abnormal heart development." []
+is_a: XPO:0116432 ! abnormal animal organ development
+
+[Term]
+id: XPO:0116463
+name: abnormal hematopoietic or lymphoid organ development
+def: "Abnormal hematopoietic or lymphoid organ development." []
+is_a: XPO:0116432 ! abnormal animal organ development
+
+[Term]
+id: XPO:0116464
+name: abnormal hepaticobiliary system development
+def: "Abnormal hepaticobiliary system development." []
+is_a: XPO:0116431 ! abnormal anatomical structure development
+
+[Term]
+id: XPO:0116465
+name: abnormal immune system development
+def: "Abnormal immune system development." []
+is_a: XPO:0116431 ! abnormal anatomical structure development
+
+[Term]
+id: XPO:0116466
+name: abnormal kidney development
+def: "Abnormal kidney development." []
+is_a: XPO:0116432 ! abnormal animal organ development
+
+[Term]
+id: XPO:0116467
+name: abnormal liver development
+def: "Abnormal liver development." []
+is_a: XPO:0116459 ! abnormal gland development
+
+[Term]
+id: XPO:0116468
+name: abnormal lung development
+def: "Abnormal lung development." []
+is_a: XPO:0116432 ! abnormal animal organ development
+
+[Term]
+id: XPO:0116469
+name: abnormal mesoderm development
+def: "Abnormal mesoderm development." []
+is_a: XPO:0116492 ! abnormal tissue development
+
+[Term]
+id: XPO:0116470
+name: abnormal mesonephros development
+def: "Abnormal mesonephros development." []
+is_a: XPO:0116466 ! abnormal kidney development
+
+[Term]
+id: XPO:0116471
+name: abnormal muscle organ development
+def: "Abnormal muscle organ development." []
+is_a: XPO:0116432 ! abnormal animal organ development
+
+[Term]
+id: XPO:0116472
+name: abnormal nervous system development
+def: "Abnormal nervous system development." []
+is_a: XPO:0116431 ! abnormal anatomical structure development
+
+[Term]
+id: XPO:0116473
+name: abnormal neural crest cell development
+def: "Abnormal neural crest cell development." []
+is_a: XPO:0116488 ! abnormal stem cell development
+
+[Term]
+id: XPO:0116474
+name: abnormal nose development
+def: "Abnormal nose development." []
+is_a: XPO:0116484 ! abnormal sensory organ development
+
+[Term]
+id: XPO:0116475
+name: abnormal notochord development
+def: "Abnormal notochord development." []
+is_a: XPO:0116452 ! abnormal embryonic organ development
+
+[Term]
+id: XPO:0116476
+name: abnormal otic vesicle development
+def: "Abnormal otic vesicle development." []
+is_a: XPO:0116484 ! abnormal sensory organ development
+is_a: XPO:0116492 ! abnormal tissue development
+
+[Term]
+id: XPO:0116477
+name: abnormal pancreas development
+def: "Abnormal pancreas development." []
+is_a: XPO:0116432 ! abnormal animal organ development
+
+[Term]
+id: XPO:0116478
+name: abnormal pharyngeal system development
+def: "Abnormal pharyngeal system development." []
+is_a: XPO:0116431 ! abnormal anatomical structure development
+
+[Term]
+id: XPO:0116479
+name: abnormal post-anal tail morphogenesis
+def: "Abnormal post-anal tail morphogenesis." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0116480
+name: abnormal pronephros development
+def: "Abnormal pronephros development." []
+is_a: XPO:0116466 ! abnormal kidney development
+
+[Term]
+id: XPO:0116481
+name: abnormal renal system development
+def: "Abnormal renal system development." []
+is_a: XPO:0116431 ! abnormal anatomical structure development
+
+[Term]
+id: XPO:0116482
+name: abnormal respiratory system development
+def: "Abnormal respiratory system development." []
+is_a: XPO:0116431 ! abnormal anatomical structure development
+
+[Term]
+id: XPO:0116483
+name: abnormal respiratory tube development
+def: "Abnormal respiratory tube development." []
+is_a: XPO:0116432 ! abnormal animal organ development
+
+[Term]
+id: XPO:0116484
+name: abnormal sensory organ development
+def: "Abnormal sensory organ development." []
+is_a: XPO:0116432 ! abnormal animal organ development
+
+[Term]
+id: XPO:0116485
+name: abnormal somite development
+def: "Abnormal somite development." []
+is_a: XPO:0116492 ! abnormal tissue development
+
+[Term]
+id: XPO:0116486
+name: abnormal spinal cord development
+def: "Abnormal spinal cord development." []
+is_a: XPO:0116432 ! abnormal animal organ development
+
+[Term]
+id: XPO:0116487
+name: abnormal spleen development
+def: "Abnormal spleen development." []
+is_a: XPO:0116463 ! abnormal hematopoietic or lymphoid organ development
+
+[Term]
+id: XPO:0116488
+name: abnormal stem cell development
+def: "Abnormal stem cell development." []
+is_a: XPO:0116431 ! abnormal anatomical structure development
+
+[Term]
+id: XPO:0116489
+name: abnormal stomach development
+def: "Abnormal stomach development." []
+is_a: XPO:0116432 ! abnormal animal organ development
+
+[Term]
+id: XPO:0116490
+name: abnormal thymus development
+def: "Abnormal thymus development." []
+is_a: XPO:0116459 ! abnormal gland development
+is_a: XPO:0116463 ! abnormal hematopoietic or lymphoid organ development
+
+[Term]
+id: XPO:0116491
+name: abnormal thyroid gland development
+def: "Abnormal thyroid gland development." []
+is_a: XPO:0116459 ! abnormal gland development
+
+[Term]
+id: XPO:0116492
+name: abnormal tissue development
+def: "Abnormal tissue development." []
+is_a: XPO:0116431 ! abnormal anatomical structure development
+
+[Term]
+id: XPO:0116493
+name: abnormal urinary bladder development
+def: "Abnormal urinary bladder development." []
+is_a: XPO:0116432 ! abnormal animal organ development
 
 [Typedef]
 id: BFO:0000062

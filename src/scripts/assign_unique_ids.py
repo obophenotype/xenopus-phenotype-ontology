@@ -11,13 +11,14 @@ accession = int(sys.argv[4])
 prefix = sys.argv[5]
 pattern_dir = sys.argv[6]
 
-#tsv = "/ws/xenopus-phenotype-ontology/src/patterns/data/manual/decreasedProcessQualityInLocation.tsv"
-#id_map = "/ws/xenopus-phenotype-ontology/src/patterns/id_map.tsv"
-#reserved_ids = "/ws/xenopus-phenotype-ontology/src/patterns/reserved_iris.txt"
+#tsv = "../patterns/data/manual/obsoleteTerm.tsv"
+#id_map = "../patterns/id_map.tsv"
+#reserved_ids = "../patterns/reserved_iris.txt"
 #accession = int("9898")
 #prefix = "http://purl.obolibrary.org/obo/XPO_"
-obo_prefix = "http://purl.obolibrary.org/obo/"
+#pattern_dir = "../patterns/dosdp-patterns"
 
+obo_prefix = "http://purl.obolibrary.org/obo/"
 maxid = 9999999
 pattern = os.path.basename(tsv)
 pattern_file = os.path.join(pattern_dir,pattern.replace(".tsv",".yaml"))
@@ -136,10 +137,11 @@ df = df.sort_values('defined_class')
 df_ids = df_ids.sort_values('iri')
 df_ids = df_ids.drop_duplicates()
 df.drop_duplicates().to_csv(tsv, sep = '\t', index=False)
+
 idstest = df_ids['iri']
 if len(idstest) != len(set(idstest)):
     duplicates = [item for item, count in collections.Counter(idstest).items() if count > 1]
-    raise ValueError('An id was assigned more than once, aborting.. ('+str(duplicates)+')')
+    raise ValueError('An id was assigned more than once, aborting.. ('+str(duplicates)+')'+str(df_ids[df_ids['iri'].isin(duplicates)].head()))
 else:
     print("ID map consistent.")
 df_ids.to_csv(id_map, sep = '\t', index=False)

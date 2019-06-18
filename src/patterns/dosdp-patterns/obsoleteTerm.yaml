@@ -1,0 +1,41 @@
+pattern_name: obsoleteTerm
+pattern_iri: http://purl.obolibrary.org/obo/xpo/src/patterns/dosdp-patterns/obsoleteTerm.yaml
+
+classes:
+  term: owl:Thing
+  thing: owl:Thing
+
+annotationProperties:
+  term_replaced_by: IAO:0100001
+  is_obsolete: owl:deprecated
+  curie: oio:id
+  label: rdfs:label
+
+vars:
+  x: "'thing'"
+
+data_vars:
+  term_replaced_by: "'term_replaced_by'"
+  label: "'label'"
+  curie: "'curie'"
+
+annotations:
+  - annotationProperty: label
+    text: "%s"
+    vars:
+      - label
+  - annotationProperty: is_obsolete
+    text: "true"
+  - annotationProperty: curie
+    text: "%s"
+    vars:
+      - curie
+  - annotationProperty: term_replaced_by
+    text: "%s"
+    vars:
+      - term_replaced_by
+
+subClassOf:
+  text: "'thing'"
+  vars:
+    - x
