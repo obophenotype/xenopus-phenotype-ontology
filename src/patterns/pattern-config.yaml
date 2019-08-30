@@ -1,0 +1,27 @@
+anatomy_config:
+  iri_accession: 99999
+  iri_prefix: http://purl.obolibrary.org/obo/XPO_
+  global:
+    blacklist:
+      - http://purl.obolibrary.org/obo/XAO_0003003
+    blacklist_branch:
+      - http://purl.obolibrary.org/obo/XAO_0003185
+  patterns:
+    - pattern: absentAnatomicalEntity
+      blacklist_branch:
+      - http://purl.obolibrary.org/obo/XAO_0003007
+      - http://purl.obolibrary.org/obo/XAO_0005200
+      - http://purl.obolibrary.org/obo/XAO_0005205
+      blacklist:
+    - pattern: mislocalisedAnatomicalEntity
+      blacklist:
+      blacklist_branch:
+      - http://purl.obolibrary.org/obo/XAO_0003007
+      - http://purl.obolibrary.org/obo/XAO_0005200
+      - http://purl.obolibrary.org/obo/XAO_0005205
+    - pattern: abnormalAnatomicalEntity
+      blacklist:
+      blacklist_branch:
+        - http://purl.obolibrary.org/obo/XAO_1000000
+  
+    
