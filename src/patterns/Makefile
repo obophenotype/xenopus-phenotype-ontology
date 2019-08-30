@@ -1,22 +1,41 @@
-XAO = xenopus_anatomy.owl
-AUTOPATTERNS = ../patterns/data/anatomy/
 AUTOPATTERNACCESSION = 99999
 PURL=http://purl.obolibrary.org/obo/XPO_
 OBOPURL=http://purl.obolibrary.org/obo/
+ROBOT=robot -vv
+
+###########
+## Paths ##
+###########
+
 PATTERNDIR=../patterns/dosdp-patterns
-
-$(XAO):
-	curl -L -O https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.owl
-	robot reason --reasoner ELK --input $@ --output $@
-
-#https://raw.githubusercontent.com/obophenotype/upheno/master/src
-
-
-MANUALPATTERNS=$(patsubst %.tsv, $(MANUALPATTERNDIR)/%.tsv, $(notdir $(wildcard ../patterns/data/manual/*.tsv)))
-AUTOPATTERNS=$(patsubst %.tsv, $(AUTOPATTERNDIR)/%.tsv, $(notdir $(wildcard ../patterns/data/anatomy/*.tsv)))
+TEMPLATEDIR=../patterns/templates
 AUTOPATTERNDIR=../patterns/data/anatomy
 MANUALPATTERNDIR=../patterns/data/manual
 TODOPATTERNDIR=../patterns/data/todo
+
+###########
+## Files ##
+###########
+
+SRC=../ontology/xpo-edit.owl
+ID_MAP=id_map.tsv
+
+#############################################
+### WHOLE PIPELINE (main job)      ##########
+#############################################
+
+.PHONY: .FORCE
+
+xpo_pattern_pipeline: templates anatomy_pipeline missing_iris
+
+#../patterns/tmp/subclasses.sparql:
+#	sh ../scripts/generate_sparql_subclass_query.sh blacklist_branch.txt $@
+
+#############################################
+### Computing all reserved iris in XPO ######
+#############################################
+RESERVED_IRI=tmp/reserved_iris.txt
+XPO_SRC_SEED=tmp/editseed.txt
 pattern_term_lists_auto := $(patsubst %.tsv, $(AUTOPATTERNDIR)/%.txt, $(notdir $(wildcard ../patterns/data/anatomy/*.tsv)))
 pattern_term_lists_manual := $(patsubst %.tsv, $(MANUALPATTERNDIR)/%.txt, $(notdir $(wildcard ../patterns/data/manual/*.tsv)))
 
@@ -26,53 +45,53 @@ pattern_term_lists_manual := $(patsubst %.tsv, $(MANUALPATTERNDIR)/%.txt, $(notd
 ../patterns/data/anatomy/%.txt: ../patterns/data/anatomy/%.tsv
 	grep -Eo '($(PURL))[^[:space:]"]+' $< | sort | uniq > $@
 
-reserved_iris.txt: $(pattern_term_lists_auto) $(pattern_term_lists_manual)
-	robot query -f csv -i ../ontology/xpo-edit.owl --query ../sparql/xpo_terms.sparql editseed.txt
-	cat $(pattern_term_lists_auto) $(pattern_term_lists_manual) editseed.txt | sort | uniq >$@
+$(XPO_SRC_SEED): $(SRC)
+	robot query -f csv -i $< --query ../sparql/xpo_terms.sparql $@
 
-../patterns/tmp/subclasses.sparql:
-	sh ../scripts/generate_sparql_subclass_query.sh blacklist_branch.txt $@
+$(RESERVED_IRI): $(pattern_term_lists_auto) $(pattern_term_lists_manual) $(XPO_SRC_SEED)
+	cat $^ | sort | uniq > $@
 
-../patterns/tmp/blacklist.txt: $(XAO) ../patterns/tmp/subclasses.sparql
-	robot query --input $< --query ../patterns/tmp/subclasses.sparql ../patterns/tmp/blacklist_tmp.txt
-	cat ../patterns/tmp/blacklist_tmp.txt ../patterns/blacklist.txt | grep -Eo '($(OBOPURL))[^[:space:]"]+' | sort | uniq >$@
+#####################################################
+### Filling in missing IRIs in manual patterns ######
+#####################################################
 
-anatomy_seed.txt: $(XAO) ../patterns/tmp/blacklist.txt
-	robot query -f csv -i $< --query ../sparql/xao_terms.sparql ../patterns/tmp/anatomy_seed.txt
-	sort -o ../patterns/tmp/anatomy_seed.txt ../patterns/tmp/anatomy_seed.txt
-	sort -o ../patterns/tmp/blacklist.txt ../patterns/tmp/blacklist.txt
-	#comm -23 ../patterns/tmp/anatomy_seed.txt ../patterns/tmp/blacklist.txt > $@
-	#awk 'NR==FNR{a[$0];next} !($0 in a)' ../patterns/tmp/blacklist.txt ../patterns/tmp/anatomy_seed.txt
-	python3 ../scripts/blacklist.py ../patterns/tmp/anatomy_seed.txt ../patterns/tmp/blacklist.txt anatomy_seed.txt
+MANUALPATTERNIDS=$(patsubst %.tsv, $(MANUALPATTERNDIR)/%_ids, $(notdir $(wildcard ../patterns/data/manual/*.tsv)))
 
+$(MANUALPATTERNDIR)/%_ids: $(RESERVED_IRI) $(ID_MAP)
+	python3 ../scripts/assign_unique_ids.py $(MANUALPATTERNDIR)/$*.tsv id_map.tsv $(RESERVED_IRI) $(AUTOPATTERNACCESSION) $(PURL) $(PATTERNDIR)
 
-$(AUTOPATTERNDIR)/abnormalAnatomicalEntity.tsv: anatomy_seed.txt
-	cp $< $@
-	sed -i "1s/.*/anatomical_entity/" $@
-	python3 ../scripts/assign_unique_ids.py $@ id_map.tsv reserved_iris.txt $(AUTOPATTERNACCESSION) $(PURL) $(PATTERNDIR)
+missing_iris: $(MANUALPATTERNIDS)
 
-$(AUTOPATTERNDIR)/abnormalMorphologyOfAnatomicalEntity.tsv: anatomy_seed.txt
-	cp $< $@
-	sed -i "1s/.*/anatomical_entity/" $@
-	python3 ../scripts/assign_unique_ids.py $@ id_map.tsv reserved_iris.txt $(AUTOPATTERNACCESSION) $(PURL) $(PATTERNDIR)
+###################################
+### Running anatomy pipeline ######
+###################################
 
-$(MANUALPATTERNDIR)/%.tsv:
-	@if [ $* != "obsoleteTerm" ]; then python3 ../scripts/assign_unique_ids.py $@ id_map.tsv reserved_iris.txt $(AUTOPATTERNACCESSION) $(PURL) $(PATTERNDIR); fi
+XAO_IRI = https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.owl
+XAO = tmp/xenopus_anatomy.owl
+PATTERN_CONFIG=pattern-config.yaml
+PIPELINE_DATA_PATH=data/anatomy/
+SPARQLDIR=../sparql
 
-#if [[ $@ != *"obsolete"* ]]; then python3 ../scripts/assign_unique_ids.py $@ id_map.tsv reserved_iris.txt $(AUTOPATTERNACCESSION) $(PURL) $(PATTERNDIR); fi
+download_patterns: .FORCE
+	cat $(PATTERNDIR)/external.txt | sed 's!.*/!!' | sed 's! !!g' |  xargs -I{} rm -f $(PATTERNDIR)/{}
+	cat $(PATTERNDIR)/external.txt | sed 's! !!g' | xargs -I{} wget -q {} -P $(PATTERNDIR)/
 
-$(MANUALPATTERNDIR)/obsoleteTerm.ofn: $(MANUALPATTERNDIR)/obsoleteTerm.tsv $(PATTERNDIR)/obsoleteTerm.yaml
-	dosdp-tools generate --infile=$< --template=$(PATTERNDIR)/obsoleteTerm.yaml --obo-prefixes=true --outfile=$@
+$(XAO):
+	$(ROBOT) reason --reasoner ELK -I $(XAO_IRI) --output $@
 
-obsolete: $(MANUALPATTERNDIR)/obsoleteTerm.ofn
+anatomy_pipeline: download_patterns $(XAO) $(ID_MAP) $(RESERVED_IRI) 
+	echo "Using $(XAO_IRI), make sure this is correct!"
+	python3 ../scripts/xpo_anatomy_pipeline.py  $(XAO) $(ID_MAP) $(RESERVED_IRI) dosdp-patterns $(SPARQLDIR) $(PIPELINE_DATA_PATH) $(PATTERN_CONFIG)
+	
+#########################################
+### Generating all ROBOT templates ######
+#########################################
 
-auto_patterns: $(AUTOPATTERNDIR)/abnormalAnatomicalEntity.tsv $(AUTOPATTERNDIR)/abnormalMorphologyOfAnatomicalEntity.tsv
+TEMPLATES=$(patsubst %.tsv, templates/%.owl, $(notdir $(wildcard $(TEMPLATEDIR)/*.tsv)))
 
-pattern_iris: $(MANUALPATTERNS)
+templates/%.owl: templates/%.tsv
+	robot -vvv merge --catalog ../ontology/catalog-v001.xml --input $(SRC) template   --prefix 'rdfs: http://www.w3.org/2000/01/rdf-schema#'  --prefix "IAO: http://purl.obolibrary.org/obo/IAO_" --template $< --output $@ && \
+	robot annotate --input $@ --ontology-iri $(OBOPURL)xpo/patterns/$@ -o $@
 
-xpo.csv:
-	robot query -f csv -i ../patterns/definitions.owl --query ../sparql/xpol_terms.sparql $@
-
-xrefs:
-	robot template --template xrefs.csv --output xpo-xrefs.owl && \
-	robot annotate --input xpo-xrefs.owl --ontology-iri $(OBOPURL)xpo/patterns/xpo-xrefs.owl -o xpo-xrefs.owl
+templates: $(TEMPLATES)
+	echo $(TEMPLATES)
