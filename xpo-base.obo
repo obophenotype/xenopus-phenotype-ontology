@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: xpo/releases/2019-09-06/xpo-base.owl
+data-version: xpo/releases/2019-09-10/xpo-base.owl
 ontology: xpo/xpo-base
 property_value: http://purl.org/dc/elements/1.1/description "Ontology about Xenopus." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Xenopus Phenotype Ontology" xsd:string
@@ -19360,12 +19360,6 @@ def: "The presence of an increased number of forelimb digit in the regenerating 
 synonym: "Extra forelimb digit in the regenerating forelimb" EXACT []
 
 [Term]
-id: XPO:0103610
-name: Increased number of hindlimb digit in the regenerating hindlimb
-def: "The presence of an increased number of hindlimb digit in the regenerating hindlimb." []
-synonym: "Extra hindlimb digit in the regenerating hindlimb" EXACT []
-
-[Term]
 id: XPO:0103611
 name: abnormal number of forelimb digits
 def: "Any structural anomaly that causes there to be an abnormal number forelimb digit." []
@@ -19517,12 +19511,6 @@ id: XPO:0103634
 name: Increased number of forelimb digit
 def: "The presence of an increased number of forelimb digit." []
 synonym: "Extra forelimb digit" EXACT []
-
-[Term]
-id: XPO:0103635
-name: Increased number of hindlimb digit
-def: "The presence of an increased number of hindlimb digit." []
-synonym: "Extra hindlimb digit" EXACT []
 
 [Term]
 id: XPO:0103636
@@ -20652,12 +20640,6 @@ def: "The presence of a reduced number of ciliated epidermal cell." []
 synonym: "Reduced number of ciliated epidermal cell" EXACT []
 
 [Term]
-id: XPO:0103887
-name: Decreased number of hindlimb digit
-def: "The presence of a reduced number of hindlimb digit." []
-synonym: "Reduced number of hindlimb digit" EXACT []
-
-[Term]
 id: XPO:0103888
 name: Decreased number of claw
 def: "The presence of a reduced number of claw." []
@@ -20668,12 +20650,6 @@ id: XPO:0103889
 name: Decreased number of metatarsus
 def: "The presence of a reduced number of metatarsus." []
 synonym: "Reduced number of metatarsus" EXACT []
-
-[Term]
-id: XPO:0103890
-name: Decreased number of melanophore
-def: "The presence of a reduced number of melanophore." []
-synonym: "Reduced number of melanophore" EXACT []
 
 [Term]
 id: XPO:0103891
@@ -61455,29 +61431,50 @@ def: "An increase in the size of the vegetal endoderm." []
 synonym: "enlarged vegetal endoderm" EXACT []
 
 [Term]
-id: urn:dosdp:defined:class
-name: Absent melanophore in the tail
-name: Absent melanophore in the trunk
+id: XPO:0130956
 name: Decreased number of melanophore in the tail
-name: Decreased number of migratory neural crest cell in the trunk
-name: Decreased number of somite in the trunk
-name: decreased size of the neuroectoderm in the head
-name: increased size of the mesoderm in trunk
-name: increased size of the neuroectoderm in head
-def: "Absence of the melanophore in the tail." []
-def: "Absence of the melanophore in the trunk." []
-def: "An abnormal reduction in the size of the neuroectoderm in the head." []
-def: "An increase in the size of the mesoderm in the trunk." []
-def: "An increase in the size of the neuroectoderm in the head." []
 def: "The presence of a reduced number of melanophore in the tail." []
-def: "The presence of a reduced number of migratory neural crest cell in the trunk." []
-def: "The presence of a reduced number of somite in the trunk." []
-synonym: "abnormally small neuroectoderm in head" EXACT []
-synonym: "enlarged mesoderm in trunk" EXACT []
-synonym: "enlarged neuroectoderm in head" EXACT []
-synonym: "Missing melanophore in the tail" EXACT []
-synonym: "Missing melanophore in the trunk" EXACT []
 synonym: "Reduced number of melanophore in the tail" EXACT []
-synonym: "Reduced number of migratory neural crest cell in the trunk" EXACT []
+
+[Term]
+id: XPO:0130957
+name: Decreased number of somite in the trunk
+def: "The presence of a reduced number of somite in the trunk." []
 synonym: "Reduced number of somite in the trunk" EXACT []
+
+[Term]
+id: XPO:0130958
+name: Decreased number of migratory neural crest cell in the trunk
+def: "The presence of a reduced number of migratory neural crest cell in the trunk." []
+synonym: "Reduced number of migratory neural crest cell in the trunk" EXACT []
+
+[Term]
+id: XPO:0130959
+name: decreased size of the neuroectoderm in the head
+def: "An abnormal reduction in the size of the neuroectoderm in the head." []
+synonym: "abnormally small neuroectoderm in head" EXACT []
+
+[Term]
+id: XPO:0130960
+name: Absent melanophore in the tail
+def: "Absence of the melanophore in the tail." []
+synonym: "Missing melanophore in the tail" EXACT []
+
+[Term]
+id: XPO:0130961
+name: Absent melanophore in the trunk
+def: "Absence of the melanophore in the trunk." []
+synonym: "Missing melanophore in the trunk" EXACT []
+
+[Term]
+id: XPO:0130962
+name: increased size of the mesoderm in trunk
+def: "An increase in the size of the mesoderm in the trunk." []
+synonym: "enlarged mesoderm in trunk" EXACT []
+
+[Term]
+id: XPO:0130963
+name: increased size of the neuroectoderm in head
+def: "An increase in the size of the neuroectoderm in the head." []
+synonym: "enlarged neuroectoderm in head" EXACT []
 

@@ -53,7 +53,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103694>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103695>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103696>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103697>))
-Declaration(Class(<urn:dosdp:defined_class>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0130960>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0130961>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
@@ -193,16 +194,19 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0103697> "Absent zeugopod in the regenerating hindlimb"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103697> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004264> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
-# Class: <urn:dosdp:defined_class> (Absent melanophore in the trunk)
+# Class: <http://purl.obolibrary.org/obo/XPO_0130960> (Absent melanophore in the tail)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <urn:dosdp:defined_class> "Absence of the melanophore in the tail."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <urn:dosdp:defined_class> "Absence of the melanophore in the trunk."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <urn:dosdp:defined_class> "Missing melanophore in the tail"^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <urn:dosdp:defined_class> "Missing melanophore in the trunk"^^xsd:string)
-AnnotationAssertion(rdfs:label <urn:dosdp:defined_class> "Absent melanophore in the tail"^^xsd:string)
-AnnotationAssertion(rdfs:label <urn:dosdp:defined_class> "Absent melanophore in the trunk"^^xsd:string)
-EquivalentClasses(<urn:dosdp:defined_class> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0001014> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0003025>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
-EquivalentClasses(<urn:dosdp:defined_class> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0001014> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0003026>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0130960> "Absence of the melanophore in the tail."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0130960> "Missing melanophore in the tail"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0130960> "Absent melanophore in the tail"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0130960> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0001014> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0003026>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0130961> (Absent melanophore in the trunk)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0130961> "Absence of the melanophore in the trunk."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0130961> "Missing melanophore in the trunk"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0130961> "Absent melanophore in the trunk"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0130961> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0001014> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0003025>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 
 )
