@@ -10,9 +10,6 @@ Ontology(<urn:unnamed:ontology#ont1>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000460>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000646>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005217>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005218>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005219>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005252>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005253>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005256>))
@@ -36,12 +33,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103662>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103663>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103664>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103665>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103666>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103667>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103668>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103669>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103670>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103671>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002573>))
@@ -124,26 +118,12 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0103665> "malformed right optic vesicle"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103665> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000646> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005277>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
-# Class: <http://purl.obolibrary.org/obo/XPO_0103666> (malformed posterior region)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0103666> "An abnormally formed/malformed posterior region."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0103666> "malformed posterior region"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0103666> "malformed posterior region"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103666> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000646> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005217>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
-
 # Class: <http://purl.obolibrary.org/obo/XPO_0103667> (malformed ventral trunk)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0103667> "An abnormally formed/malformed ventral trunk."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0103667> "malformed ventral trunk"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0103667> "malformed ventral trunk"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103667> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000646> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005260>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
-
-# Class: <http://purl.obolibrary.org/obo/XPO_0103668> (malformed ventral region)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0103668> "An abnormally formed/malformed ventral region."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0103668> "malformed ventral region"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0103668> "malformed ventral region"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103668> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000646> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005219>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 # Class: <http://purl.obolibrary.org/obo/XPO_0103669> (malformed left part of brain)
 
@@ -158,13 +138,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0103670> "malformed right part of brain"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0103670> "malformed right part of brain"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103670> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000646> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005279>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
-
-# Class: <http://purl.obolibrary.org/obo/XPO_0103671> (malformed dorsal region)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0103671> "An abnormally formed/malformed dorsal region."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0103671> "malformed dorsal region"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0103671> "malformed dorsal region"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103671> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000646> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005218>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 
 )
