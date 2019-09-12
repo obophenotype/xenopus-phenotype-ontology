@@ -10,14 +10,8 @@ Ontology(<urn:unnamed:ontology#ont1>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000460>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000646>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003024>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003085>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003211>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004107>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005210>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103677>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103678>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103679>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
@@ -31,20 +25,6 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 ############################
 #   Classes
 ############################
-
-# Class: <http://purl.obolibrary.org/obo/XPO_0103677> (malformed cartilage element in head)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0103677> "An abnormally formed/malformed cartilage element in head."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0103677> "malformed cartilage element in head"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0103677> "malformed cartilage element in head"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103677> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000646> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004013> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0003024>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
-
-# Class: <http://purl.obolibrary.org/obo/XPO_0103678> (malformed Meckel's cartilage in left side)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0103678> "An abnormally formed/malformed Meckel's cartilage in left side."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0103678> "malformed Meckel's cartilage in left side"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0103678> "malformed Meckel's cartilage in left side"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103678> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000646> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0003085> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0005210>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 # Class: <http://purl.obolibrary.org/obo/XPO_0103679> (malformed tarsus in regenerating hindlimb)
 

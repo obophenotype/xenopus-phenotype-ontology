@@ -182,6 +182,17 @@ name: response to stimulus
 is_a: GO:0008150 ! biological_process
 
 [Term]
+id: GO:0051704
+name: multi-organism process
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0051705
+name: multi-organism behavior
+is_a: GO:0007610 ! behavior
+is_a: GO:0051704 ! multi-organism process
+
+[Term]
 id: PATO:0000001
 name: quality
 is_a: BFO:0000020 ! specifically dependent continuant
