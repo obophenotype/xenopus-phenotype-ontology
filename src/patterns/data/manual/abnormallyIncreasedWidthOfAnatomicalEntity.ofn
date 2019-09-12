@@ -10,12 +10,10 @@ Ontology(<urn:unnamed:ontology#ont1>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000460>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000600>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000045>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000249>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003066>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004105>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103672>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103673>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103674>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103675>))
@@ -31,13 +29,6 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 ############################
 #   Classes
 ############################
-
-# Class: <http://purl.obolibrary.org/obo/XPO_0103672> (increased width of hindbrain)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0103672> "Increased width of hindbrain."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0103672> "wider hindbrain"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0103672> "increased width of hindbrain"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103672> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000600> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0000015>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 # Class: <http://purl.obolibrary.org/obo/XPO_0103673> (increased width of hindlimb bud)
 

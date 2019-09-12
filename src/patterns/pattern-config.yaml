@@ -1,0 +1,99 @@
+anatomy_config:
+  iri_accession: 99999
+  iri_prefix: http://purl.obolibrary.org/obo/XPO_
+  global:
+    blacklist:
+      - http://purl.obolibrary.org/obo/XAO_0003003
+      - http://purl.obolibrary.org/obo/XAO_0000000
+    blacklist_branch:
+      - http://purl.obolibrary.org/obo/XAO_0003185
+      - http://purl.obolibrary.org/obo/XAO_1000000
+  patterns:
+    - pattern: abnormalAbsenceOfAnatomicalEntity
+      blacklist:
+      - http://purl.obolibrary.org/obo/XAO_0005200
+      - http://purl.obolibrary.org/obo/XAO_0005201
+      - http://purl.obolibrary.org/obo/XAO_0005203
+      - http://purl.obolibrary.org/obo/XAO_0005204
+      - http://purl.obolibrary.org/obo/XAO_0005212
+      blacklist_branch:
+      - http://purl.obolibrary.org/obo/XAO_0003007
+      - http://purl.obolibrary.org/obo/XAO_0005205
+    - pattern: mislocalisedAnatomicalEntity
+      blacklist:
+      - http://purl.obolibrary.org/obo/XAO_0005200
+      - http://purl.obolibrary.org/obo/XAO_0005201
+      - http://purl.obolibrary.org/obo/XAO_0005203
+      - http://purl.obolibrary.org/obo/XAO_0005204
+      - http://purl.obolibrary.org/obo/XAO_0005212
+      blacklist_branch:
+      - http://purl.obolibrary.org/obo/XAO_0003007
+      - http://purl.obolibrary.org/obo/XAO_0005205
+    - pattern: abnormallyDecreasedSizeOfAnatomicalEntity
+      blacklist:
+      - http://purl.obolibrary.org/obo/XAO_0005200
+      - http://purl.obolibrary.org/obo/XAO_0005201
+      - http://purl.obolibrary.org/obo/XAO_0005203
+      - http://purl.obolibrary.org/obo/XAO_0005204
+      - http://purl.obolibrary.org/obo/XAO_0005212
+      blacklist_branch:
+      - http://purl.obolibrary.org/obo/XAO_0003007
+      - http://purl.obolibrary.org/obo/XAO_0005205
+    - pattern: abnormallyIncreasedSizeOfAnatomicalEntity
+      blacklist:
+      - http://purl.obolibrary.org/obo/XAO_0005200
+      - http://purl.obolibrary.org/obo/XAO_0005201
+      - http://purl.obolibrary.org/obo/XAO_0005203
+      - http://purl.obolibrary.org/obo/XAO_0005204
+      - http://purl.obolibrary.org/obo/XAO_0005212
+      blacklist_branch:
+      - http://purl.obolibrary.org/obo/XAO_0003007
+      - http://purl.obolibrary.org/obo/XAO_0005205
+    - pattern: abnormallyIncreasedNumberOfAnatomicalEntity
+      blacklist:
+      - http://purl.obolibrary.org/obo/XAO_0003000
+      - http://purl.obolibrary.org/obo/XAO_0000113
+      - http://purl.obolibrary.org/obo/XAO_0000035
+      - http://purl.obolibrary.org/obo/XAO_0005033
+      blacklist_branch:
+      - http://purl.obolibrary.org/obo/XAO_0003007
+      - http://purl.obolibrary.org/obo/XAO_0004003
+      - http://purl.obolibrary.org/obo/XAO_0003186
+      - http://purl.obolibrary.org/obo/XAO_0003190
+      - http://purl.obolibrary.org/obo/XAO_0004001
+      - http://purl.obolibrary.org/obo/XAO_0003162
+      - http://purl.obolibrary.org/obo/XAO_0003001
+      - http://purl.obolibrary.org/obo/XAO_0004021
+      - http://purl.obolibrary.org/obo/XAO_0004290
+      - http://purl.obolibrary.org/obo/XAO_0003042
+      - http://purl.obolibrary.org/obo/XAO_0004005
+      - http://purl.obolibrary.org/obo/XAO_0005002
+      - http://purl.obolibrary.org/obo/XAO_0004486
+      - http://purl.obolibrary.org/obo/XAO_0004020
+      - http://purl.obolibrary.org/obo/XAO_0003004
+    - pattern: abnormallyDecreasedNumberOfAnatomicalEntity
+      blacklist:
+      - http://purl.obolibrary.org/obo/XAO_0003000
+      - http://purl.obolibrary.org/obo/XAO_0000113
+      - http://purl.obolibrary.org/obo/XAO_0000035
+      - http://purl.obolibrary.org/obo/XAO_0005033
+      blacklist_branch:
+      - http://purl.obolibrary.org/obo/XAO_0003007
+      - http://purl.obolibrary.org/obo/XAO_0004003
+      - http://purl.obolibrary.org/obo/XAO_0003186
+      - http://purl.obolibrary.org/obo/XAO_0003190
+      - http://purl.obolibrary.org/obo/XAO_0004001
+      - http://purl.obolibrary.org/obo/XAO_0003162
+      - http://purl.obolibrary.org/obo/XAO_0003001
+      - http://purl.obolibrary.org/obo/XAO_0004021
+      - http://purl.obolibrary.org/obo/XAO_0004290
+      - http://purl.obolibrary.org/obo/XAO_0003042
+      - http://purl.obolibrary.org/obo/XAO_0004005
+      - http://purl.obolibrary.org/obo/XAO_0005002
+      - http://purl.obolibrary.org/obo/XAO_0004486
+      - http://purl.obolibrary.org/obo/XAO_0004020
+      - http://purl.obolibrary.org/obo/XAO_0003004
+    - pattern: abnormalAnatomicalEntity
+      blacklist:
+      blacklist_branch:
+        - http://purl.obolibrary.org/obo/XAO_1000000

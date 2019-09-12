@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: xpo/releases/2019-06-16/imports/pato_import.owl
+data-version: xpo/releases/2019-09-12/imports/pato_import.owl
 ontology: xpo/imports/pato_import
 
 [Term]
@@ -8,7 +8,6 @@ name: quality
 namespace: quality
 alt_id: PATO:0000072
 def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" [PATOC:GVG]
-synonym: "trait" EXACT []
 
 [Term]
 id: PATO:0000004
@@ -30,6 +29,7 @@ def: "A composite chromatic quality composed of hue, saturation and intensity pa
 subset: attribute_slim
 synonym: "colour" EXACT []
 synonym: "relative color" EXACT []
+is_a: PATO:0000051 ! morphology
 is_a: PATO:0001300 ! optical quality
 
 [Term]
@@ -108,7 +108,7 @@ subset: attribute_slim
 subset: hpo_slim
 synonym: "distribution" EXACT []
 synonym: "pattern" RELATED []
-is_a: PATO:0000140 ! position
+is_a: PATO:0000051 ! morphology
 
 [Term]
 id: PATO:0000068
@@ -136,7 +136,6 @@ alt_id: PATO:0001226
 def: "The number of entities of this type that are part of the whole organism." [PATOC:GVG]
 comment: This term was originally named "presence". It has been renamed to reduce ambiguity. Consider annotating with the reciprocal relation,PATO:0001555, has_number_of. For example, rather than E=fin ray Q=count in organism C=10, say E=organism Q=has number of E2= fin ray C=10.
 subset: attribute_slim
-synonym: "count" EXACT []
 synonym: "count in organism" RELATED []
 synonym: "number" RELATED []
 synonym: "presence" RELATED []
@@ -466,7 +465,7 @@ subset: abnormal_slim
 subset: mpath_slim
 subset: value_slim
 synonym: "average" RELATED []
-is_a: PATO:0000069 ! deviation(from_normal)
+is_a: PATO:0000068 ! qualitative
 relationship: is_opposite_of PATO:0000460 ! abnormal
 
 [Term]
@@ -1181,7 +1180,7 @@ def: "A length quality which is equal to the length of any straight line segment
 subset: attribute_slim
 subset: mpath_slim
 subset: scalar_slim
-is_a: PATO:0000122 ! length
+is_a: PATO:0001708 ! 1-D extent
 
 [Term]
 id: PATO:0001355
@@ -1463,6 +1462,7 @@ synonym: "number" RELATED []
 synonym: "number of" EXACT []
 xref: OBO_REL:has_part
 is_a: PATO:0001241 ! physical object quality
+relationship: reciprocal_of PATO:0000070 ! amount
 
 [Term]
 id: PATO:0001558
@@ -1472,6 +1472,7 @@ def: "A quality of a process inhering in a bearer by virtue of the bearer's lack
 subset: relational_slim
 subset: value_slim
 is_a: PATO:0001564 ! extra or missing processual parts
+relationship: reciprocal_of PATO:0000462 ! absent
 
 [Term]
 id: PATO:0001562
@@ -2017,6 +2018,7 @@ def: "The bearer of this quality has_part = n, where n is the normal amount for 
 subset: relational_slim
 synonym: "having physical part" EXACT []
 is_a: PATO:0001555 ! has number of
+relationship: reciprocal_of PATO:0002050 ! normal amount
 
 [Term]
 id: PATO:0001920
@@ -2188,6 +2190,7 @@ subset: relational_slim
 synonym: "lacks all physical parts of type" EXACT []
 xref: OBO_REL:lacks_part
 is_a: PATO:0001999 ! lacks parts or has fewer parts of type
+relationship: reciprocal_of PATO:0000462 ! absent
 
 [Term]
 id: PATO:0002001

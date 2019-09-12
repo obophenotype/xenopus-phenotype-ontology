@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: xpo/releases/2019-06-16/imports/go_import.owl
+data-version: xpo/releases/2019-09-12/imports/go_import.owl
 ontology: xpo/imports/go_import
 
 [Term]
@@ -192,6 +192,25 @@ is_a: GO:0048732 ! gland development
 relationship: part_of GO:0061008 ! hepaticobiliary system development
 
 [Term]
+id: GO:0001947
+name: heart looping
+namespace: biological_process
+def: "The tube morphogenesis process in which the primitive heart tube loops asymmetrically. This looping brings the primitive heart chambers into alignment preceding their future integration. Heart looping begins with dextral-looping and ends when the main regional divisions of the mature heart and primordium of the great arterial trunks become established preceeding septation." [GOC:dph, PMID:12094232]
+synonym: "cardiac looping" EXACT []
+is_a: GO:0003143 ! embryonic heart tube morphogenesis
+relationship: part_of GO:0061371 ! determination of heart left/right asymmetry
+
+[Term]
+id: GO:0002009
+name: morphogenesis of an epithelium
+namespace: biological_process
+def: "The process in which the anatomical structures of epithelia are generated and organized. An epithelium consists of closely packed cells arranged in one or more layers, that covers the outer surfaces of the body or lines any internal cavity or tube." [GOC:dph, GOC:jl, GOC:tb, ISBN:0198506732]
+synonym: "epithelium morphogenesis" EXACT []
+xref: MIPS_funcat:45.03.09
+is_a: GO:0048729 ! tissue morphogenesis
+relationship: part_of GO:0060429 ! epithelium development
+
+[Term]
 id: GO:0002376
 name: immune system process
 namespace: biological_process
@@ -276,12 +295,52 @@ intersection_of: GO:0032502 ! developmental process
 intersection_of: part_of GO:0000003 ! reproduction
 
 [Term]
+id: GO:0003007
+name: heart morphogenesis
+namespace: biological_process
+def: "The developmental process in which the heart is generated and organized. The heart is a hollow, muscular organ, which, by contracting rhythmically, keeps up the circulation of the blood." [GOC:dph, GOC:isa_complete]
+synonym: "cardiac morphogenesis" RELATED []
+is_a: GO:0009887 ! animal organ morphogenesis
+relationship: part_of GO:0007507 ! heart development
+
+[Term]
 id: GO:0003008
 name: system process
 namespace: biological_process
 def: "A multicellular organismal process carried out by any of the organs or tissues in an organ system. An organ system is a regularly interacting or interdependent group of organs or tissues that work together to carry out a biological objective." [GOC:mtg_cardio]
 synonym: "organ system process" EXACT []
 is_a: GO:0032501 ! multicellular organismal process
+
+[Term]
+id: GO:0003013
+name: circulatory system process
+namespace: biological_process
+def: "A organ system process carried out by any of the organs or tissues of the circulatory system. The circulatory system is an organ system that moves extracellular fluids to and from tissue within a multicellular organism." [GOC:mtg_cardio]
+subset: goslim_chembl
+subset: goslim_generic
+xref: Wikipedia:Circulatory_system
+is_a: GO:0003008 ! system process
+
+[Term]
+id: GO:0003015
+name: heart process
+namespace: biological_process
+def: "A circulatory system process carried out by the heart. The heart is a hollow, muscular organ, which, by contracting rhythmically, keeps up the circulation of the blood. The heart is a hollow, muscular organ, which, by contracting rhythmically, keeps up the circulation of the blood." [GOC:mtg_cardio]
+synonym: "cardiac process" RELATED []
+is_a: GO:0003013 ! circulatory system process
+
+[Term]
+id: GO:0003143
+name: embryonic heart tube morphogenesis
+namespace: biological_process
+def: "The process in which the anatomical structures of the embryonic heart tube are generated and organized. The embryonic heart tube is an epithelial tube that will give rise to the mature heart." [GOC:mtg_heart]
+is_a: GO:0048598 ! embryonic morphogenesis
+is_a: GO:0060562 ! epithelial tube morphogenesis
+relationship: part_of GO:0003007 ! heart morphogenesis
+relationship: part_of GO:0035050 ! embryonic heart tube development
+relationship: part_of GO:0048562 ! embryonic organ morphogenesis
+created_by: tanyaberardini
+creation_date: 2009-09-22T04:21:17Z
 
 [Term]
 id: GO:0003205
@@ -301,6 +360,19 @@ def: "The process whose specific outcome is the progression of a cardiac ventric
 is_a: GO:0003205 ! cardiac chamber development
 created_by: dph
 creation_date: 2009-10-13T11:03:16Z
+
+[Term]
+id: GO:0003241
+name: growth involved in heart morphogenesis
+namespace: biological_process
+def: "Developmental growth that contributes to the shaping of the heart." [GOC:mtg_heart]
+is_a: GO:0060560 ! developmental growth involved in morphogenesis
+intersection_of: GO:0040007 ! growth
+intersection_of: part_of GO:0003007 ! heart morphogenesis
+relationship: part_of GO:0003007 ! heart morphogenesis
+relationship: part_of GO:0060419 ! heart growth
+created_by: dph
+creation_date: 2009-10-13T11:28:46Z
 
 [Term]
 id: GO:0003401
@@ -380,7 +452,7 @@ name: binding
 namespace: molecular_function
 def: "The selective, non-covalent, often stoichiometric, interaction of a molecule with one or more specific sites on another molecule." [GOC:ceb, GOC:mah, ISBN:0198506732]
 comment: Note that this term is in the subset of terms that should not be used for direct, manual gene product annotation. Please choose a more specific child term, or request a new one if no suitable term is available. For ligands that bind to signal transducing receptors, consider the molecular function term 'receptor binding ; GO:0005102' and its children.
-subset: gocheck_do_not_manually_annotate
+subset: gocheck_do_not_annotate
 subset: goslim_pir
 subset: goslim_plant
 synonym: "ligand" NARROW []
@@ -852,6 +924,14 @@ intersection_of: regulates GO:0000278 ! mitotic cell cycle
 relationship: regulates GO:0000278 ! mitotic cell cycle
 
 [Term]
+id: GO:0007368
+name: determination of left/right symmetry
+namespace: biological_process
+def: "The establishment of an organism's body plan or part of an organism with respect to the left and right halves. The pattern can either be symmetric, such that the halves are mirror images, or asymmetric where the pattern deviates from this symmetry." [GOC:dph, GOC:jid]
+synonym: "determination of left/right asymmetry" EXACT [GOC:dph]
+is_a: GO:0009855 ! determination of bilateral symmetry
+
+[Term]
 id: GO:0007369
 name: gastrulation
 namespace: biological_process
@@ -986,6 +1066,125 @@ created_by: janelomax
 creation_date: 2012-09-20T14:06:08Z
 
 [Term]
+id: GO:0007617
+name: mating behavior
+namespace: biological_process
+def: "The behavioral interactions between organisms for the purpose of mating, or sexual reproduction resulting in the formation of zygotes." [GOC:ai, GOC:dph]
+synonym: "mating behaviour" EXACT []
+xref: Wikipedia:Mating_behaviour
+is_a: GO:0019098 ! reproductive behavior
+intersection_of: GO:0007610 ! behavior
+intersection_of: part_of GO:0007618 ! mating
+relationship: part_of GO:0007618 ! mating
+
+[Term]
+id: GO:0007618
+name: mating
+namespace: biological_process
+def: "The pairwise union of individuals for the purpose of sexual reproduction, ultimately resulting in the formation of zygotes." [GOC:jl, ISBN:0387520546]
+is_a: GO:0044703 ! multi-organism reproductive process
+relationship: part_of GO:0019953 ! sexual reproduction
+
+[Term]
+id: GO:0007619
+name: courtship behavior
+namespace: biological_process
+def: "The behavioral interactions between organisms for the purpose of attracting sexual partners." [GOC:ai, GOC:dph]
+synonym: "courtship behaviour" EXACT []
+is_a: GO:0007617 ! mating behavior
+
+[Term]
+id: GO:0007626
+name: locomotory behavior
+namespace: biological_process
+def: "The specific movement from place to place of an organism in response to external or internal stimuli. Locomotion of a whole organism in a manner dependent upon some combination of that organism's internal state and external conditions." [GOC:dph]
+synonym: "behavior via locomotion" EXACT []
+synonym: "locomotion in response to stimulus" EXACT []
+synonym: "locomotory behavioral response to stimulus" EXACT []
+synonym: "locomotory behaviour" EXACT []
+synonym: "locomotory behavioural response to stimulus" EXACT []
+is_a: GO:0007610 ! behavior
+
+[Term]
+id: GO:0007631
+name: feeding behavior
+namespace: biological_process
+def: "Behavior associated with the intake of food." [GOC:mah]
+comment: See also the biological process term 'behavior ; GO:0007610'.
+synonym: "behavioral response to food" EXACT []
+synonym: "behavioural response to food" EXACT []
+synonym: "drinking" NARROW []
+synonym: "eating" NARROW []
+synonym: "feeding behaviour" EXACT []
+xref: MIPS_funcat:36.03
+xref: Wikipedia:List_of_feeding_behaviours
+is_a: GO:0007610 ! behavior
+
+[Term]
+id: GO:0007632
+name: visual behavior
+namespace: biological_process
+def: "The behavior of an organism in response to a visual stimulus." [GOC:jid, GOC:pr]
+synonym: "behavioral response to visual stimulus" EXACT []
+synonym: "behavioural response to visual stimulus" EXACT []
+synonym: "visual behaviour" EXACT []
+is_a: GO:0007610 ! behavior
+is_a: GO:0009416 ! response to light stimulus
+is_a: GO:0032501 ! multicellular organismal process
+
+[Term]
+id: GO:0007634
+name: optokinetic behavior
+namespace: biological_process
+def: "The behavior of an organism pertaining to movement of the eyes and of objects in the visual field, as in nystagmus." [GOC:jid, GOC:pr, http://www.mercksource.com]
+synonym: "optokinetic behaviour" EXACT []
+is_a: GO:0007632 ! visual behavior
+
+[Term]
+id: GO:0007635
+name: chemosensory behavior
+namespace: biological_process
+def: "Behavior that is dependent upon the sensation of chemicals." [GOC:go_curators]
+synonym: "behavioral response to chemical stimulus" EXACT []
+synonym: "behavioural response to chemical stimulus" EXACT []
+synonym: "chemosensory behaviour" EXACT []
+is_a: GO:0007610 ! behavior
+relationship: part_of GO:0042221 ! response to chemical
+
+[Term]
+id: GO:0007638
+name: mechanosensory behavior
+namespace: biological_process
+def: "Behavior that is dependent upon the sensation of a mechanical stimulus." [GOC:go_curators]
+synonym: "behavioral response to mechanical stimulus" EXACT []
+synonym: "behavioural response to mechanical stimulus" EXACT []
+synonym: "mechanosensory behaviour" EXACT []
+is_a: GO:0007610 ! behavior
+relationship: part_of GO:0009612 ! response to mechanical stimulus
+
+[Term]
+id: GO:0008015
+name: blood circulation
+namespace: biological_process
+alt_id: GO:0070261
+def: "The flow of blood through the body of an animal, enabling the transport of nutrients to the tissues and the removal of waste products." [GOC:mtg_heart, ISBN:0192800825]
+subset: goslim_pir
+synonym: "hemolymph circulation" RELATED []
+xref: MIPS_funcat:36.07.07
+is_a: GO:0003013 ! circulatory system process
+
+[Term]
+id: GO:0008016
+name: regulation of heart contraction
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of heart contraction. Heart contraction is the process in which the heart decreases in volume in a characteristic way to propel blood through the body." [GOC:dph, GOC:go_curators, GOC:tb]
+synonym: "regulation of cardiac contraction" EXACT []
+is_a: GO:1903522 ! regulation of blood circulation
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0060047 ! heart contraction
+relationship: regulates GO:0060047 ! heart contraction
+
+[Term]
 id: GO:0008150
 name: biological_process
 namespace: biological_process
@@ -1102,6 +1301,28 @@ synonym: "hypodermis development" RELATED [GOC:kmv, GOC:rk]
 is_a: GO:0009888 ! tissue development
 
 [Term]
+id: GO:0009314
+name: response to radiation
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an electromagnetic radiation stimulus. Electromagnetic radiation is a propagating wave in space with electric and magnetic components. These components oscillate at right angles to each other and to the direction of propagation." [GOC:jl, Wikipedia:Electromagnetic_radiation]
+comment: Note that 'radiation' refers to electromagnetic radiation of any wavelength.
+synonym: "response to electromagnetic radiation stimulus" EXACT []
+synonym: "response to radiation stimulus" EXACT []
+xref: MIPS_funcat:32.01.13
+is_a: GO:0009628 ! response to abiotic stimulus
+
+[Term]
+id: GO:0009416
+name: response to light stimulus
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a light stimulus, electromagnetic radiation of wavelengths classified as infrared, visible or ultraviolet light." [GOC:go_curators, ISBN:0582227089]
+subset: goslim_plant
+xref: MIPS_funcat:34.11.01
+xref: MIPS_funcat:34.11.01.01
+xref: MIPS_funcat:36.20.35.11
+is_a: GO:0009314 ! response to radiation
+
+[Term]
 id: GO:0009605
 name: response to external stimulus
 namespace: biological_process
@@ -1121,6 +1342,30 @@ alt_id: GO:0002245
 def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus indicating damage to the organism." [GOC:go_curators]
 synonym: "physiological response to wounding" EXACT []
 is_a: GO:0006950 ! response to stress
+
+[Term]
+id: GO:0009612
+name: response to mechanical stimulus
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a mechanical stimulus." [GOC:hb]
+synonym: "chemi-mechanical coupling" RELATED []
+synonym: "mechanical stimulus response" EXACT []
+xref: MIPS_funcat:34.11.05
+xref: MIPS_funcat:36.20.35.15
+is_a: GO:0009605 ! response to external stimulus
+is_a: GO:0009628 ! response to abiotic stimulus
+
+[Term]
+id: GO:0009628
+name: response to abiotic stimulus
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an abiotic (not derived from living organisms) stimulus." [GOC:hb]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC. Changed definition as requested in https://github.com/geneontology/go-ontology/issues/16572.
+subset: gocheck_do_not_manually_annotate
+subset: goslim_metagenomics
+subset: goslim_plant
+synonym: "response to abiotic stress" NARROW []
+is_a: GO:0050896 ! response to stimulus
 
 [Term]
 id: GO:0009653
@@ -1167,6 +1412,31 @@ def: "The establishment, maintenance and elaboration of a pattern along a line o
 synonym: "axis determination" RELATED []
 xref: MIPS_funcat:41.05.19
 is_a: GO:0007389 ! pattern specification process
+
+[Term]
+id: GO:0009799
+name: specification of symmetry
+namespace: biological_process
+def: "The establishment of an organism's body plan or part of an organism such that a similar arrangement in form and relationship of parts around a common axis, or around each side of a plane is created." [GOC:go_curators]
+synonym: "determination of symmetry" EXACT [GOC:dph]
+is_a: GO:0007389 ! pattern specification process
+
+[Term]
+id: GO:0009855
+name: determination of bilateral symmetry
+namespace: biological_process
+def: "The establishment of an organism's body plan or part of an organism with respect to a single longitudinal plane. The pattern can either be symmetric, such that the halves are mirror images, or asymmetric where the pattern deviates from this symmetry." [GOC:go_curators]
+synonym: "determination of bilateral asymmetry" EXACT [GOC:dph]
+is_a: GO:0009799 ! specification of symmetry
+
+[Term]
+id: GO:0009887
+name: animal organ morphogenesis
+namespace: biological_process
+def: "Morphogenesis of an animal organ. An organ is defined as a tissue or set of tissues that work together to perform a specific function or functions. Morphogenesis is the process in which anatomical structures are generated and organized. Organs are commonly observed as visibly distinct structures, but may also exist as loosely associated clusters of cells that work together to perform a specific function or functions." [GOC:dgh, GOC:go_curators, ISBN:0471245208, ISBN:0721662544]
+synonym: "histogenesis and organogenesis" BROAD []
+is_a: GO:0009653 ! anatomical structure morphogenesis
+relationship: part_of GO:0048513 ! animal organ development
 
 [Term]
 id: GO:0009888
@@ -1792,6 +2062,16 @@ relationship: has_part GO:0007268 ! chemical synaptic transmission
 relationship: part_of GO:0007154 ! cell communication
 
 [Term]
+id: GO:0019953
+name: sexual reproduction
+namespace: biological_process
+def: "A reproduction process that creates a new organism by combining the genetic material of two gametes, which may come from two organisms or from a single organism, in the case of self-fertilizing hermaphrodites, e.g. C. elegans, or self-fertilization in plants. It occurs both in eukaryotes and prokaryotes: in multicellular eukaryotic organisms, an individual is created anew; in prokaryotes, the initial cell has additional or transformed genetic material. In a process called genetic recombination, genetic material (DNA) originating from two gametes join up so that homologous sequences are aligned with each other, and this is followed by exchange of genetic information. After the new recombinant chromosome is formed, it is passed on to progeny." [GOC:jl, GOC:kmv, GOC:krc, GOC:tb, http://en.wikipedia.org/wiki/Sexual_reproduction, ISBN:0387520546]
+comment: Sexual reproduction may be seen as the regular alternation, in the life cycle of haplontic, diplontic and diplohaplontic organisms, of meiosis and fertilization which provides for the production offspring. In diplontic organisms there is a life cycle in which the products of meiosis behave directly as gametes, fusing to form a zygote from which the diploid, or sexually reproductive polyploid, adult organism will develop. In diplohaplontic organisms a haploid phase (gametophyte) exists in the life cycle between meiosis and fertilization (e.g. higher plants, many algae and Fungi); the products of meiosis are spores that develop as haploid individuals from which haploid gametes develop to form a diploid zygote; diplohaplontic organisms show an alternation of haploid and diploid generations. In haplontic organisms meiosis occurs in the zygote, giving rise to four haploid cells (e.g. many algae and protozoa), only the zygote is diploid and this may form a resistant spore, tiding organisms over hard times.
+xref: Wikipedia:Sexual_reproduction
+is_a: GO:0000003 ! reproduction
+is_a: GO:0044703 ! multi-organism reproductive process
+
+[Term]
 id: GO:0021510
 name: spinal cord development
 namespace: biological_process
@@ -2395,6 +2675,17 @@ xref: Wikipedia:Vesicle_(biology)
 is_a: GO:0043227 ! membrane-bounded organelle
 
 [Term]
+id: GO:0031987
+name: locomotion involved in locomotory behavior
+namespace: biological_process
+def: "Self-propelled movement of a cell or organism from one location to another in a behavioral context; the aspect of locomotory behavior having to do with movement." [GOC:mah]
+synonym: "locomotion during locomotory behaviour" EXACT []
+is_a: GO:0040011 ! locomotion
+intersection_of: GO:0040011 ! locomotion
+intersection_of: part_of GO:0007626 ! locomotory behavior
+relationship: part_of GO:0007626 ! locomotory behavior
+
+[Term]
 id: GO:0032091
 name: negative regulation of protein binding
 namespace: biological_process
@@ -2655,6 +2946,14 @@ is_a: GO:0006950 ! response to stress
 is_a: GO:0051716 ! cellular response to stimulus
 
 [Term]
+id: GO:0033555
+name: multicellular organismal response to stress
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a multicellular organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus indicating the organism is under stress. The stress is usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation)." [GOC:mah]
+is_a: GO:0006950 ! response to stress
+is_a: GO:0032501 ! multicellular organismal process
+
+[Term]
 id: GO:0033673
 name: negative regulation of kinase activity
 namespace: biological_process
@@ -2700,6 +2999,16 @@ intersection_of: GO:0009952 ! anterior/posterior pattern specification
 intersection_of: part_of GO:0048793 ! pronephros development
 
 [Term]
+id: GO:0035050
+name: embryonic heart tube development
+namespace: biological_process
+def: "The process whose specific outcome is the progression of the embryonic heart tube over time, from its formation to the mature structure. The heart tube forms as the heart rudiment from the heart field." [GOC:go_curators]
+is_a: GO:0035295 ! tube development
+is_a: GO:0060429 ! epithelium development
+relationship: part_of GO:0007507 ! heart development
+relationship: part_of GO:0048568 ! embryonic organ development
+
+[Term]
 id: GO:0035051
 name: cardiocyte differentiation
 namespace: biological_process
@@ -2708,6 +3017,18 @@ synonym: "cardiac cell differentiation" EXACT []
 synonym: "heart cell differentiation" EXACT []
 is_a: GO:0030154 ! cell differentiation
 relationship: part_of GO:0007507 ! heart development
+
+[Term]
+id: GO:0035176
+name: social behavior
+namespace: biological_process
+def: "Behavior directed towards society, or taking place between members of the same species. Occurs predominantly, or only, in individuals that are part of a group." [GOC:jh2, PMID:12848939, Wikipedia:Social_behavior]
+comment: Behavior such as predation which involves members of different species is not social. Communication between members of different species is also not social behavior.
+synonym: "cooperative behavior" RELATED []
+synonym: "social behaviour" EXACT []
+xref: Wikipedia:Social_behavior
+is_a: GO:0051703 ! intraspecies interaction between organisms
+is_a: GO:0051705 ! multi-organism behavior
 
 [Term]
 id: GO:0035187
@@ -2734,6 +3055,14 @@ namespace: biological_process
 def: "The process in which the anatomical structures of a tube are generated and organized. Epithelial and endothelial tubes transport gases, liquids and cells from one site to another and form the basic structure of many organs and tissues, with tube shape and organization varying from the single-celled excretory organ in Caenorhabditis elegans to the branching trees of the mammalian kidney and insect tracheal system." [GOC:bf, PMID:14624839]
 is_a: GO:0009653 ! anatomical structure morphogenesis
 relationship: part_of GO:0035295 ! tube development
+
+[Term]
+id: GO:0035265
+name: organ growth
+namespace: biological_process
+def: "The increase in size or mass of an organ. Organs are commonly observed as visibly distinct structures, but may also exist as loosely associated clusters of cells that function together as to perform a specific function." [GOC:bf, ISBN:0471245208, ISBN:0721662544]
+is_a: GO:0032501 ! multicellular organismal process
+is_a: GO:0048589 ! developmental growth
 
 [Term]
 id: GO:0035270
@@ -2818,6 +3147,16 @@ comment: For behavioral aspects of swimming, consider instead annotating to 'swi
 is_a: GO:0040011 ! locomotion
 created_by: rfoulger
 creation_date: 2012-07-04T10:12:24Z
+
+[Term]
+id: GO:0036269
+name: swimming behavior
+namespace: biological_process
+def: "The response to external or internal stimuli that results in the locomotory process of swimming. Swimming is the self-propelled movement of an organism through the water." [GOC:cvs, PMID:16764679]
+synonym: "swimming behaviour" EXACT [PMID:16764679]
+is_a: GO:0007626 ! locomotory behavior
+created_by: rfoulger
+creation_date: 2012-07-04T10:14:49Z
 
 [Term]
 id: GO:0036342
@@ -2997,6 +3336,19 @@ intersection_of: positively_regulates GO:0009790 ! embryo development
 relationship: positively_regulates GO:0009790 ! embryo development
 
 [Term]
+id: GO:0042048
+name: olfactory behavior
+namespace: biological_process
+def: "The behavior of an organism in response to an odor." [GOC:jid, GOC:pr]
+synonym: "behavioral response to scent" EXACT []
+synonym: "behavioral response to smell" EXACT []
+synonym: "behavioural response to odour" EXACT []
+synonym: "behavioural response to scent" EXACT []
+synonym: "behavioural response to smell" EXACT []
+synonym: "olfactory behaviour" EXACT []
+is_a: GO:0007635 ! chemosensory behavior
+
+[Term]
 id: GO:0042074
 name: cell migration involved in gastrulation
 namespace: biological_process
@@ -3016,6 +3368,25 @@ is_a: GO:0050794 ! regulation of cellular process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0008283 ! cell population proliferation
 relationship: regulates GO:0008283 ! cell population proliferation
+
+[Term]
+id: GO:0042221
+name: response to chemical
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a chemical stimulus." [GOC:jl]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_metagenomics
+subset: goslim_plant
+subset: goslim_yeast
+synonym: "response to chemical stimulus" EXACT [GOC:dos]
+synonym: "response to chemical substance" EXACT []
+xref: MIPS_funcat:34.11.03
+xref: MIPS_funcat:34.11.03.05
+xref: MIPS_funcat:36.20.35.09
+is_a: GO:0050896 ! response to stimulus
 
 [Term]
 id: GO:0042325
@@ -3255,6 +3626,38 @@ is_a: GO:0007423 ! sensory organ development
 relationship: part_of GO:0060541 ! respiratory system development
 
 [Term]
+id: GO:0043900
+name: regulation of multi-organism process
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of a multi-organism process, a process in which an organism has an effect on another organism of the same or different species." [GOC:jl]
+is_a: GO:0050789 ! regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0051704 ! multi-organism process
+relationship: regulates GO:0051704 ! multi-organism process
+
+[Term]
+id: GO:0043901
+name: negative regulation of multi-organism process
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of a multi-organism process, a process in which an organism has an effect on another organism of the same or different species." [GOC:jl]
+is_a: GO:0043900 ! regulation of multi-organism process
+is_a: GO:0048519 ! negative regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0051704 ! multi-organism process
+relationship: negatively_regulates GO:0051704 ! multi-organism process
+
+[Term]
+id: GO:0043902
+name: positive regulation of multi-organism process
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of a multi-organism process, a process in which an organism has an effect on another organism of the same or different species." [GOC:jl]
+is_a: GO:0043900 ! regulation of multi-organism process
+is_a: GO:0048518 ! positive regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0051704 ! multi-organism process
+relationship: positively_regulates GO:0051704 ! multi-organism process
+
+[Term]
 id: GO:0044057
 name: regulation of system process
 namespace: biological_process
@@ -3492,6 +3895,16 @@ intersection_of: part_of GO:0005623 ! cell
 relationship: part_of GO:0005623 ! cell
 
 [Term]
+id: GO:0044703
+name: multi-organism reproductive process
+namespace: biological_process
+def: "A biological process that directly contributes to the process of producing new individuals, involving another organism." [GOC:jl]
+is_a: GO:0022414 ! reproductive process
+is_a: GO:0051704 ! multi-organism process
+created_by: janelomax
+creation_date: 2012-09-19T15:56:30Z
+
+[Term]
 id: GO:0045137
 name: development of primary sexual characteristics
 namespace: biological_process
@@ -3710,6 +4123,39 @@ intersection_of: positively_regulates GO:0007049 ! cell cycle
 relationship: positively_regulates GO:0007049 ! cell cycle
 
 [Term]
+id: GO:0045822
+name: negative regulation of heart contraction
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of heart contraction." [GOC:go_curators]
+synonym: "down regulation of heart contraction" EXACT []
+synonym: "down-regulation of heart contraction" EXACT []
+synonym: "downregulation of heart contraction" EXACT []
+synonym: "inhibition of heart contraction" NARROW []
+synonym: "negative regulation of cardiac contraction" RELATED []
+is_a: GO:0008016 ! regulation of heart contraction
+is_a: GO:1903523 ! negative regulation of blood circulation
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0060047 ! heart contraction
+relationship: negatively_regulates GO:0060047 ! heart contraction
+
+[Term]
+id: GO:0045823
+name: positive regulation of heart contraction
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of heart contraction." [GOC:go_curators]
+synonym: "activation of heart contraction" NARROW []
+synonym: "positive regulation of cardiac contraction" EXACT []
+synonym: "stimulation of heart contraction" NARROW []
+synonym: "up regulation of heart contraction" EXACT []
+synonym: "up-regulation of heart contraction" EXACT []
+synonym: "upregulation of heart contraction" EXACT []
+is_a: GO:0008016 ! regulation of heart contraction
+is_a: GO:1903524 ! positive regulation of blood circulation
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0060047 ! heart contraction
+relationship: positively_regulates GO:0060047 ! heart contraction
+
+[Term]
 id: GO:0045839
 name: negative regulation of mitotic nuclear division
 namespace: biological_process
@@ -3873,6 +4319,41 @@ intersection_of: regulates GO:0009790 ! embryo development
 relationship: regulates GO:0009790 ! embryo development
 
 [Term]
+id: GO:0046620
+name: regulation of organ growth
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of growth of an organ of an organism." [GOC:bf, GOC:tb]
+is_a: GO:0048638 ! regulation of developmental growth
+is_a: GO:0051239 ! regulation of multicellular organismal process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0035265 ! organ growth
+relationship: regulates GO:0035265 ! organ growth
+
+[Term]
+id: GO:0046621
+name: negative regulation of organ growth
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of growth of an organ of an organism." [GOC:bf, GOC:tb]
+is_a: GO:0046620 ! regulation of organ growth
+is_a: GO:0048640 ! negative regulation of developmental growth
+is_a: GO:0051241 ! negative regulation of multicellular organismal process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0035265 ! organ growth
+relationship: negatively_regulates GO:0035265 ! organ growth
+
+[Term]
+id: GO:0046622
+name: positive regulation of organ growth
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of growth of an organ of an organism." [GOC:bf, GOC:tb]
+is_a: GO:0046620 ! regulation of organ growth
+is_a: GO:0048639 ! positive regulation of developmental growth
+is_a: GO:0051240 ! positive regulation of multicellular organismal process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0035265 ! organ growth
+relationship: positively_regulates GO:0035265 ! organ growth
+
+[Term]
 id: GO:0048018
 name: receptor ligand activity
 namespace: molecular_function
@@ -3889,6 +4370,24 @@ is_a: GO:0030546 ! signaling receptor activator activity
 relationship: part_of GO:0007165 ! signal transduction
 created_by: midori
 creation_date: 2010-09-13T04:51:59Z
+
+[Term]
+id: GO:0048265
+name: response to pain
+namespace: biological_process
+alt_id: GO:0048267
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a pain stimulus. Pain stimuli cause activation of nociceptors, peripheral receptors for pain, include receptors which are sensitive to painful mechanical stimuli, extreme heat or cold, and chemical stimuli." [GOC:jid, PMID:10203867, PMID:12723742, PMID:12843304, Wikipedia:Pain]
+synonym: "physiological response to pain" EXACT []
+is_a: GO:0033555 ! multicellular organismal response to stress
+
+[Term]
+id: GO:0048266
+name: behavioral response to pain
+namespace: biological_process
+def: "Any process that results in a change in the behavior of an organism as a result of a pain stimulus. Pain stimuli cause activation of nociceptors, peripheral receptors for pain, include receptors which are sensitive to painful mechanical stimuli, extreme heat or cold, and chemical stimuli." [GOC:jid]
+synonym: "behavioural response to pain" EXACT []
+is_a: GO:0007610 ! behavior
+relationship: part_of GO:0048265 ! response to pain
 
 [Term]
 id: GO:0048285
@@ -4072,6 +4571,15 @@ synonym: "gut morphogenesis" BROAD [GOC:dph]
 synonym: "intestinal morphogenesis" NARROW []
 is_a: GO:0035239 ! tube morphogenesis
 relationship: part_of GO:0048565 ! digestive tract development
+
+[Term]
+id: GO:0048562
+name: embryonic organ morphogenesis
+namespace: biological_process
+def: "Morphogenesis, during the embryonic phase, of a tissue or tissues that work together to perform a specific function or functions. Morphogenesis is the process in which anatomical structures are generated and organized. Organs are commonly observed as visibly distinct structures, but may also exist as loosely associated clusters of cells that work together to perform a specific function or functions." [GOC:jid]
+is_a: GO:0009887 ! animal organ morphogenesis
+is_a: GO:0048598 ! embryonic morphogenesis
+relationship: part_of GO:0048568 ! embryonic organ development
 
 [Term]
 id: GO:0048565
@@ -5159,6 +5667,45 @@ synonym: "localisation of cell" EXACT [GOC:mah]
 is_a: GO:0051179 ! localization
 
 [Term]
+id: GO:0051703
+name: intraspecies interaction between organisms
+namespace: biological_process
+def: "Any process in which an organism has an effect on an organism of the same species." [GOC:ai]
+subset: goslim_pir
+synonym: "intraspecies interaction with other organisms" EXACT []
+is_a: GO:0051704 ! multi-organism process
+
+[Term]
+id: GO:0051704
+name: multi-organism process
+namespace: biological_process
+alt_id: GO:0051706
+def: "A biological process which involves another organism of the same or different species." [GOC:jl]
+subset: gocheck_do_not_annotate
+subset: goslim_pir
+synonym: "interaction between organisms" EXACT []
+synonym: "physiological interaction between organisms" EXACT []
+synonym: "physiological interaction with other organism" EXACT []
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0051705
+name: multi-organism behavior
+namespace: biological_process
+alt_id: GO:0023032
+alt_id: GO:0044709
+def: "Any process in which an organism has a behavioral effect on another organism of the same or different species." [GOC:ai]
+subset: goslim_pir
+synonym: "behavioral interaction between organisms" EXACT []
+synonym: "behavioral interaction with other organism" EXACT []
+synonym: "behavioral signaling" NARROW []
+synonym: "behavioral signalling" NARROW [GOC:mah]
+synonym: "behavioural interaction between organisms" EXACT []
+synonym: "behavioural interaction with other organism" EXACT []
+is_a: GO:0007610 ! behavior
+is_a: GO:0051704 ! multi-organism process
+
+[Term]
 id: GO:0051716
 name: cellular response to stimulus
 namespace: biological_process
@@ -5385,6 +5932,17 @@ is_a: GO:0048731 ! system development
 relationship: part_of GO:0043009 ! chordate embryonic development
 
 [Term]
+id: GO:0060047
+name: heart contraction
+namespace: biological_process
+def: "The multicellular organismal process in which the heart decreases in volume in a characteristic way to propel blood through the body." [GOC:dph]
+synonym: "cardiac contraction" RELATED []
+synonym: "heart beating" EXACT []
+synonym: "hemolymph circulation" RELATED []
+is_a: GO:0003015 ! heart process
+relationship: part_of GO:0008015 ! blood circulation
+
+[Term]
 id: GO:0060066
 name: oviduct development
 namespace: biological_process
@@ -5410,6 +5968,17 @@ namespace: biological_process
 def: "The process whose specific outcome is the progression of the urinary bladder over time, from its formation to the mature structure. The urinary bladder is an elastic, muscular sac situated in the anterior part of the pelvic cavity in which urine collects before excretion." [GOC:dph, GOC:ln, GOC:mr, http://en.wikipedia.org/wiki/Rhea_(bird), PMID:11768524, PMID:18276178, PMID:538956]
 is_a: GO:0048513 ! animal organ development
 relationship: part_of GO:0072001 ! renal system development
+
+[Term]
+id: GO:0060259
+name: regulation of feeding behavior
+namespace: biological_process
+def: "Any process that modulates the rate, frequency or extent of the behavior associated with the intake of food." [GOC:BHF, GOC:dph, GOC:tb]
+synonym: "regulation of feeding behaviour" EXACT [GOC:dph, GOC:tb]
+is_a: GO:0050795 ! regulation of behavior
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0007631 ! feeding behavior
+relationship: regulates GO:0007631 ! feeding behavior
 
 [Term]
 id: GO:0060284
@@ -5488,6 +6057,36 @@ intersection_of: regulates GO:0051641 ! cellular localization
 relationship: regulates GO:0051641 ! cellular localization
 
 [Term]
+id: GO:0060419
+name: heart growth
+namespace: biological_process
+def: "The increase in size or mass of the heart." [GOC:dph, GOC:tb]
+is_a: GO:0035265 ! organ growth
+relationship: part_of GO:0007507 ! heart development
+
+[Term]
+id: GO:0060420
+name: regulation of heart growth
+namespace: biological_process
+def: "Any process that modulates the rate or extent of heart growth. Heart growth is the increase in size or mass of the heart." [GOC:dph, GOC:tb]
+is_a: GO:0046620 ! regulation of organ growth
+is_a: GO:2000026 ! regulation of multicellular organismal development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0060419 ! heart growth
+relationship: regulates GO:0060419 ! heart growth
+
+[Term]
+id: GO:0060421
+name: positive regulation of heart growth
+namespace: biological_process
+def: "Any process that increases the rate or extent of heart growth. Heart growth is the increase in size or mass of the heart." [GOC:BHF, GOC:dph, GOC:tb]
+is_a: GO:0046622 ! positive regulation of organ growth
+is_a: GO:0060420 ! regulation of heart growth
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0060419 ! heart growth
+relationship: positively_regulates GO:0060419 ! heart growth
+
+[Term]
 id: GO:0060429
 name: epithelium development
 namespace: biological_process
@@ -5543,6 +6142,16 @@ intersection_of: part_of GO:0009653 ! anatomical structure morphogenesis
 relationship: part_of GO:0009653 ! anatomical structure morphogenesis
 created_by: dph
 creation_date: 2009-04-28T08:42:53Z
+
+[Term]
+id: GO:0060562
+name: epithelial tube morphogenesis
+namespace: biological_process
+def: "The process in which the anatomical structures of a tube are generated and organized from an epithelium. Epithelial tubes transport gases, liquids and cells from one site to another and form the basic structure of many organs and tissues, with tube shape and organization varying from the single-celled excretory organ in Caenorhabditis elegans to the branching trees of the mammalian kidney and insect tracheal system." [GOC:dph]
+is_a: GO:0002009 ! morphogenesis of an epithelium
+is_a: GO:0035239 ! tube morphogenesis
+created_by: dph
+creation_date: 2009-04-28T09:33:36Z
 
 [Term]
 id: GO:0060915
@@ -5678,6 +6287,19 @@ created_by: dph
 creation_date: 2010-03-09T08:55:14Z
 
 [Term]
+id: GO:0061117
+name: negative regulation of heart growth
+namespace: biological_process
+def: "Any process that decreases the rate or extent of heart growth. Heart growth is the increase in size or mass of the heart." [GOC:dph, GOC:hjd]
+is_a: GO:0046621 ! negative regulation of organ growth
+is_a: GO:0060420 ! regulation of heart growth
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0060419 ! heart growth
+relationship: negatively_regulates GO:0060419 ! heart growth
+created_by: dph
+creation_date: 2010-05-17T07:31:28Z
+
+[Term]
 id: GO:0061208
 name: cell differentiation involved in mesonephros development
 namespace: biological_process
@@ -5791,6 +6413,18 @@ created_by: dph
 creation_date: 2010-09-23T09:01:49Z
 
 [Term]
+id: GO:0061323
+name: cell proliferation involved in heart morphogenesis
+namespace: biological_process
+def: "The multiplication or reproduction of cells, resulting in the expansion of a cell population that contributes to the shaping of the heart." [GOC:dph, GOC:mtg_heart]
+is_a: GO:0008283 ! cell population proliferation
+intersection_of: GO:0008283 ! cell population proliferation
+intersection_of: part_of GO:0003007 ! heart morphogenesis
+relationship: part_of GO:0003007 ! heart morphogenesis
+created_by: dph
+creation_date: 2010-09-28T09:05:26Z
+
+[Term]
 id: GO:0061351
 name: neural precursor cell proliferation
 namespace: biological_process
@@ -5798,6 +6432,17 @@ def: "The multiplication or reproduction of neural precursor cells, resulting in
 is_a: GO:0008283 ! cell population proliferation
 created_by: dph
 creation_date: 2010-10-01T11:06:04Z
+
+[Term]
+id: GO:0061371
+name: determination of heart left/right asymmetry
+namespace: biological_process
+def: "Determination of the asymmetric location of the heart with respect to the left and right halves of the organism." [GOC:dph, GOC:mtg_heart]
+synonym: "determination of cardiac left/right asymmetry" EXACT [GOC:dph]
+is_a: GO:0007368 ! determination of left/right symmetry
+relationship: part_of GO:0007507 ! heart development
+created_by: dph
+creation_date: 2010-11-03T02:13:58Z
 
 [Term]
 id: GO:0061458
@@ -5956,6 +6601,16 @@ is_a: GO:0048839 ! inner ear development
 is_a: GO:0060429 ! epithelium development
 created_by: midori
 creation_date: 2010-02-04T04:07:17Z
+
+[Term]
+id: GO:0071625
+name: vocalization behavior
+namespace: biological_process
+def: "The behavior in which an organism produces sounds by a mechanism involving its respiratory system." [GOC:mah]
+synonym: "vocalisation behaviour" EXACT [GOC:mah]
+is_a: GO:0007610 ! behavior
+created_by: midori
+creation_date: 2010-02-10T11:02:58Z
 
 [Term]
 id: GO:0071684
@@ -6167,6 +6822,47 @@ created_by: tanyaberardini
 creation_date: 2009-12-18T10:58:45Z
 
 [Term]
+id: GO:0090325
+name: regulation of locomotion involved in locomotory behavior
+namespace: biological_process
+def: "Any process that modulates the frequency, rate, or extent of the self-propelled movement of a cell or organism from one location to another in a behavioral context; the aspect of locomotory behavior having to do with movement." [GOC:dph, GOC:kmv, GOC:tb]
+is_a: GO:0040012 ! regulation of locomotion
+is_a: GO:0050795 ! regulation of behavior
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0031987 ! locomotion involved in locomotory behavior
+relationship: regulates GO:0031987 ! locomotion involved in locomotory behavior
+created_by: tanyaberardini
+creation_date: 2010-05-14T10:24:29Z
+
+[Term]
+id: GO:0090326
+name: positive regulation of locomotion involved in locomotory behavior
+namespace: biological_process
+def: "Any process that increases the frequency, rate, or extent of the self-propelled movement of a cell or organism from one location to another in a behavioral context; the aspect of locomotory behavior having to do with movement." [GOC:dph, GOC:kmv, GOC:tb]
+is_a: GO:0040017 ! positive regulation of locomotion
+is_a: GO:0048520 ! positive regulation of behavior
+is_a: GO:0090325 ! regulation of locomotion involved in locomotory behavior
+intersection_of: GO:0050789 ! regulation of biological process
+intersection_of: positively_regulates GO:0031987 ! locomotion involved in locomotory behavior
+relationship: positively_regulates GO:0031987 ! locomotion involved in locomotory behavior
+created_by: tanyaberardini
+creation_date: 2010-05-14T10:26:58Z
+
+[Term]
+id: GO:0090327
+name: negative regulation of locomotion involved in locomotory behavior
+namespace: biological_process
+def: "Any process that decreases the frequency, rate, or extent of the self-propelled movement of a cell or organism from one location to another in a behavioral context; the aspect of locomotory behavior having to do with movement." [GOC:dph, GOC:kmv, GOC:tb]
+is_a: GO:0040013 ! negative regulation of locomotion
+is_a: GO:0048521 ! negative regulation of behavior
+is_a: GO:0090325 ! regulation of locomotion involved in locomotory behavior
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0031987 ! locomotion involved in locomotory behavior
+relationship: negatively_regulates GO:0031987 ! locomotion involved in locomotory behavior
+created_by: tanyaberardini
+creation_date: 2010-05-14T10:26:58Z
+
+[Term]
 id: GO:0097435
 name: supramolecular fiber organization
 namespace: biological_process
@@ -6357,6 +7053,34 @@ created_by: kmv
 creation_date: 2017-06-20T19:28:58Z
 
 [Term]
+id: GO:0110110
+name: positive regulation of animal organ morphogenesis
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of animal organ morphogenesis." [GOC:kmv]
+is_a: GO:0051094 ! positive regulation of developmental process
+is_a: GO:0051240 ! positive regulation of multicellular organismal process
+is_a: GO:2000027 ! regulation of animal organ morphogenesis
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: positively_regulates GO:0009887 ! animal organ morphogenesis
+relationship: positively_regulates GO:0009887 ! animal organ morphogenesis
+created_by: kmv
+creation_date: 2018-07-05T14:10:14Z
+
+[Term]
+id: GO:0110111
+name: negative regulation of animal organ morphogenesis
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of animal organ morphogenesis." [GOC:kmv]
+is_a: GO:0051093 ! negative regulation of developmental process
+is_a: GO:0051241 ! negative regulation of multicellular organismal process
+is_a: GO:2000027 ! regulation of animal organ morphogenesis
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: negatively_regulates GO:0009887 ! animal organ morphogenesis
+relationship: negatively_regulates GO:0009887 ! animal organ morphogenesis
+created_by: kmv
+creation_date: 2018-07-05T14:25:21Z
+
+[Term]
 id: GO:0120035
 name: regulation of plasma membrane bounded cell projection organization
 namespace: biological_process
@@ -6449,6 +7173,69 @@ intersection_of: positively_regulates GO:0005102 ! signaling receptor binding
 relationship: positively_regulates GO:0005102 ! signaling receptor binding
 created_by: bf
 creation_date: 2012-02-22T11:41:00Z
+
+[Term]
+id: GO:1901207
+name: regulation of heart looping
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of heart looping." [GOC:BHF, GOC:TermGenie]
+synonym: "regulation of cardiac looping" EXACT [GOC:TermGenie]
+is_a: GO:0045995 ! regulation of embryonic development
+is_a: GO:1905330 ! regulation of morphogenesis of an epithelium
+is_a: GO:2000826 ! regulation of heart morphogenesis
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0001947 ! heart looping
+relationship: regulates GO:0001947 ! heart looping
+created_by: rl
+creation_date: 2012-07-31T07:15:47Z
+
+[Term]
+id: GO:1901208
+name: negative regulation of heart looping
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of heart looping." [GOC:BHF, GOC:TermGenie]
+synonym: "down regulation of cardiac looping" EXACT [GOC:TermGenie]
+synonym: "down regulation of heart looping" EXACT [GOC:TermGenie]
+synonym: "down-regulation of cardiac looping" EXACT [GOC:TermGenie]
+synonym: "down-regulation of heart looping" EXACT [GOC:TermGenie]
+synonym: "downregulation of cardiac looping" EXACT [GOC:TermGenie]
+synonym: "downregulation of heart looping" EXACT [GOC:TermGenie]
+synonym: "inhibition of cardiac looping" EXACT [GOC:TermGenie]
+synonym: "inhibition of heart looping" NARROW [GOC:TermGenie]
+synonym: "negative regulation of cardiac looping" EXACT [GOC:TermGenie]
+is_a: GO:0045992 ! negative regulation of embryonic development
+is_a: GO:0110111 ! negative regulation of animal organ morphogenesis
+is_a: GO:1901207 ! regulation of heart looping
+is_a: GO:1905331 ! negative regulation of morphogenesis of an epithelium
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0001947 ! heart looping
+relationship: negatively_regulates GO:0001947 ! heart looping
+created_by: rl
+creation_date: 2012-07-31T07:16:10Z
+
+[Term]
+id: GO:1901209
+name: positive regulation of heart looping
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of heart looping." [GOC:BHF, GOC:TermGenie]
+synonym: "activation of cardiac looping" EXACT [GOC:TermGenie]
+synonym: "activation of heart looping" NARROW [GOC:TermGenie]
+synonym: "positive regulation of cardiac looping" EXACT [GOC:TermGenie]
+synonym: "up regulation of cardiac looping" EXACT [GOC:TermGenie]
+synonym: "up regulation of heart looping" EXACT [GOC:TermGenie]
+synonym: "up-regulation of cardiac looping" EXACT [GOC:TermGenie]
+synonym: "up-regulation of heart looping" EXACT [GOC:TermGenie]
+synonym: "upregulation of cardiac looping" EXACT [GOC:TermGenie]
+synonym: "upregulation of heart looping" EXACT [GOC:TermGenie]
+is_a: GO:0040019 ! positive regulation of embryonic development
+is_a: GO:0110110 ! positive regulation of animal organ morphogenesis
+is_a: GO:1901207 ! regulation of heart looping
+is_a: GO:1905332 ! positive regulation of morphogenesis of an epithelium
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0001947 ! heart looping
+relationship: positively_regulates GO:0001947 ! heart looping
+created_by: rl
+creation_date: 2012-07-31T07:16:18Z
 
 [Term]
 id: GO:1901722
@@ -6868,6 +7655,63 @@ created_by: al
 creation_date: 2014-09-25T09:00:35Z
 
 [Term]
+id: GO:1903522
+name: regulation of blood circulation
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of blood circulation." [GO_REF:0000058, GOC:mr, GOC:TermGenie, PMID:10659969]
+synonym: "regulation of hemolymph circulation" RELATED [GOC:TermGenie]
+is_a: GO:0044057 ! regulation of system process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0008015 ! blood circulation
+relationship: regulates GO:0008015 ! blood circulation
+created_by: mr
+creation_date: 2014-10-06T18:38:56Z
+
+[Term]
+id: GO:1903523
+name: negative regulation of blood circulation
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of blood circulation." [GO_REF:0000058, GOC:mr, GOC:TermGenie, PMID:10659969]
+synonym: "down regulation of blood circulation" EXACT [GOC:TermGenie]
+synonym: "down regulation of hemolymph circulation" RELATED [GOC:TermGenie]
+synonym: "down-regulation of blood circulation" EXACT [GOC:TermGenie]
+synonym: "down-regulation of hemolymph circulation" RELATED [GOC:TermGenie]
+synonym: "downregulation of blood circulation" EXACT [GOC:TermGenie]
+synonym: "downregulation of hemolymph circulation" RELATED [GOC:TermGenie]
+synonym: "inhibition of blood circulation" NARROW [GOC:TermGenie]
+synonym: "inhibition of hemolymph circulation" RELATED [GOC:TermGenie]
+synonym: "negative regulation of hemolymph circulation" RELATED [GOC:TermGenie]
+is_a: GO:0051241 ! negative regulation of multicellular organismal process
+is_a: GO:1903522 ! regulation of blood circulation
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0008015 ! blood circulation
+relationship: negatively_regulates GO:0008015 ! blood circulation
+created_by: mr
+creation_date: 2014-10-06T18:39:05Z
+
+[Term]
+id: GO:1903524
+name: positive regulation of blood circulation
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of blood circulation." [GO_REF:0000058, GOC:mr, GOC:TermGenie, PMID:10659969]
+synonym: "activation of blood circulation" NARROW [GOC:TermGenie]
+synonym: "activation of hemolymph circulation" RELATED [GOC:TermGenie]
+synonym: "positive regulation of hemolymph circulation" RELATED [GOC:TermGenie]
+synonym: "up regulation of blood circulation" EXACT [GOC:TermGenie]
+synonym: "up regulation of hemolymph circulation" RELATED [GOC:TermGenie]
+synonym: "up-regulation of blood circulation" EXACT [GOC:TermGenie]
+synonym: "up-regulation of hemolymph circulation" RELATED [GOC:TermGenie]
+synonym: "upregulation of blood circulation" EXACT [GOC:TermGenie]
+synonym: "upregulation of hemolymph circulation" RELATED [GOC:TermGenie]
+is_a: GO:0051240 ! positive regulation of multicellular organismal process
+is_a: GO:1903522 ! regulation of blood circulation
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0008015 ! blood circulation
+relationship: positively_regulates GO:0008015 ! blood circulation
+created_by: mr
+creation_date: 2014-10-06T18:39:13Z
+
+[Term]
 id: GO:1904412
 name: regulation of cardiac ventricle development
 namespace: biological_process
@@ -7036,6 +7880,148 @@ created_by: rl
 creation_date: 2016-06-28T15:02:16Z
 
 [Term]
+id: GO:1905330
+name: regulation of morphogenesis of an epithelium
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of morphogenesis of an epithelium." [GO_REF:0000058, GOC:bhm, GOC:TermGenie, PMID:25745997]
+comment: An example of this is MMRN2 in human (Q9H8L6) in PMID:25745997 (inferred from direct assay).
+synonym: "regulation of epithelium morphogenesis" EXACT [GOC:TermGenie]
+is_a: GO:0022603 ! regulation of anatomical structure morphogenesis
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0002009 ! morphogenesis of an epithelium
+relationship: regulates GO:0002009 ! morphogenesis of an epithelium
+created_by: bhm
+creation_date: 2016-07-22T07:13:49Z
+
+[Term]
+id: GO:1905331
+name: negative regulation of morphogenesis of an epithelium
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of morphogenesis of an epithelium." [GO_REF:0000058, GOC:bhm, GOC:TermGenie, PMID:25745997]
+comment: An example of this is MMRN2 in human (Q9H8L6) in PMID:25745997 (inferred from direct assay).
+synonym: "down regulation of epithelium morphogenesis" EXACT [GOC:TermGenie]
+synonym: "down regulation of morphogenesis of an epithelium" EXACT [GOC:TermGenie]
+synonym: "down-regulation of epithelium morphogenesis" EXACT [GOC:TermGenie]
+synonym: "down-regulation of morphogenesis of an epithelium" EXACT [GOC:TermGenie]
+synonym: "downregulation of epithelium morphogenesis" EXACT [GOC:TermGenie]
+synonym: "downregulation of morphogenesis of an epithelium" EXACT [GOC:TermGenie]
+synonym: "inhibition of epithelium morphogenesis" NARROW [GOC:TermGenie]
+synonym: "inhibition of morphogenesis of an epithelium" NARROW [GOC:TermGenie]
+synonym: "negative regulation of epithelium morphogenesis" EXACT [GOC:TermGenie]
+is_a: GO:0051093 ! negative regulation of developmental process
+is_a: GO:1905330 ! regulation of morphogenesis of an epithelium
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0002009 ! morphogenesis of an epithelium
+relationship: negatively_regulates GO:0002009 ! morphogenesis of an epithelium
+created_by: bhm
+creation_date: 2016-07-22T07:13:57Z
+
+[Term]
+id: GO:1905332
+name: positive regulation of morphogenesis of an epithelium
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of morphogenesis of an epithelium." [GO_REF:0000058, GOC:bhm, GOC:TermGenie, PMID:25745997]
+comment: An example of this is MMRN2 in human (Q9H8L6) in PMID:25745997 (inferred from direct assay).
+synonym: "activation of epithelium morphogenesis" NARROW [GOC:TermGenie]
+synonym: "activation of morphogenesis of an epithelium" NARROW [GOC:TermGenie]
+synonym: "positive regulation of epithelium morphogenesis" EXACT [GOC:TermGenie]
+synonym: "up regulation of epithelium morphogenesis" EXACT [GOC:TermGenie]
+synonym: "up regulation of morphogenesis of an epithelium" EXACT [GOC:TermGenie]
+synonym: "up-regulation of epithelium morphogenesis" EXACT [GOC:TermGenie]
+synonym: "up-regulation of morphogenesis of an epithelium" EXACT [GOC:TermGenie]
+synonym: "upregulation of epithelium morphogenesis" EXACT [GOC:TermGenie]
+synonym: "upregulation of morphogenesis of an epithelium" EXACT [GOC:TermGenie]
+is_a: GO:0051094 ! positive regulation of developmental process
+is_a: GO:1905330 ! regulation of morphogenesis of an epithelium
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0002009 ! morphogenesis of an epithelium
+relationship: positively_regulates GO:0002009 ! morphogenesis of an epithelium
+created_by: bhm
+creation_date: 2016-07-22T07:14:05Z
+
+[Term]
+id: GO:1905790
+name: regulation of mechanosensory behavior
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of mechanosensory behavior." [GO_REF:0000058, GOC:TermGenie, PMID:8692859]
+synonym: "regulation of behavioral response to mechanical stimulus" EXACT [GOC:TermGenie]
+synonym: "regulation of behavioural response to mechanical stimulus" EXACT [GOC:TermGenie]
+synonym: "regulation of mechanosensory behaviour" EXACT [GOC:TermGenie]
+is_a: GO:0032101 ! regulation of response to external stimulus
+is_a: GO:0050795 ! regulation of behavior
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0007638 ! mechanosensory behavior
+relationship: regulates GO:0007638 ! mechanosensory behavior
+created_by: hbye
+creation_date: 2017-01-09T15:17:07Z
+
+[Term]
+id: GO:1905791
+name: negative regulation of mechanosensory behavior
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of mechanosensory behavior." [GO_REF:0000058, GOC:TermGenie, PMID:8692859]
+synonym: "down regulation of behavioral response to mechanical stimulus" EXACT [GOC:TermGenie]
+synonym: "down regulation of behavioural response to mechanical stimulus" EXACT [GOC:TermGenie]
+synonym: "down regulation of mechanosensory behavior" EXACT [GOC:TermGenie]
+synonym: "down regulation of mechanosensory behaviour" EXACT [GOC:TermGenie]
+synonym: "down-regulation of behavioral response to mechanical stimulus" EXACT [GOC:TermGenie]
+synonym: "down-regulation of behavioural response to mechanical stimulus" EXACT [GOC:TermGenie]
+synonym: "down-regulation of mechanosensory behavior" EXACT [GOC:TermGenie]
+synonym: "down-regulation of mechanosensory behaviour" EXACT [GOC:TermGenie]
+synonym: "downregulation of behavioral response to mechanical stimulus" EXACT [GOC:TermGenie]
+synonym: "downregulation of behavioural response to mechanical stimulus" EXACT [GOC:TermGenie]
+synonym: "downregulation of mechanosensory behavior" EXACT [GOC:TermGenie]
+synonym: "downregulation of mechanosensory behaviour" EXACT [GOC:TermGenie]
+synonym: "inhibition of behavioral response to mechanical stimulus" NARROW [GOC:TermGenie]
+synonym: "inhibition of behavioural response to mechanical stimulus" NARROW [GOC:TermGenie]
+synonym: "inhibition of mechanosensory behavior" NARROW [GOC:TermGenie]
+synonym: "inhibition of mechanosensory behaviour" NARROW [GOC:TermGenie]
+synonym: "negative regulation of behavioral response to mechanical stimulus" EXACT [GOC:TermGenie]
+synonym: "negative regulation of behavioural response to mechanical stimulus" EXACT [GOC:TermGenie]
+synonym: "negative regulation of mechanosensory behaviour" EXACT [GOC:TermGenie]
+is_a: GO:0032102 ! negative regulation of response to external stimulus
+is_a: GO:0048521 ! negative regulation of behavior
+is_a: GO:1905790 ! regulation of mechanosensory behavior
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0007638 ! mechanosensory behavior
+relationship: negatively_regulates GO:0007638 ! mechanosensory behavior
+created_by: hbye
+creation_date: 2017-01-09T15:17:15Z
+
+[Term]
+id: GO:1905792
+name: positive regulation of mechanosensory behavior
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of mechanosensory behavior." [GO_REF:0000058, GOC:TermGenie, PMID:8692859]
+synonym: "activation of behavioral response to mechanical stimulus" NARROW [GOC:TermGenie]
+synonym: "activation of behavioural response to mechanical stimulus" NARROW [GOC:TermGenie]
+synonym: "activation of mechanosensory behavior" NARROW [GOC:TermGenie]
+synonym: "activation of mechanosensory behaviour" NARROW [GOC:TermGenie]
+synonym: "positive regulation of behavioral response to mechanical stimulus" EXACT [GOC:TermGenie]
+synonym: "positive regulation of behavioural response to mechanical stimulus" EXACT [GOC:TermGenie]
+synonym: "positive regulation of mechanosensory behaviour" EXACT [GOC:TermGenie]
+synonym: "up regulation of behavioral response to mechanical stimulus" EXACT [GOC:TermGenie]
+synonym: "up regulation of behavioural response to mechanical stimulus" EXACT [GOC:TermGenie]
+synonym: "up regulation of mechanosensory behavior" EXACT [GOC:TermGenie]
+synonym: "up regulation of mechanosensory behaviour" EXACT [GOC:TermGenie]
+synonym: "up-regulation of behavioral response to mechanical stimulus" EXACT [GOC:TermGenie]
+synonym: "up-regulation of behavioural response to mechanical stimulus" EXACT [GOC:TermGenie]
+synonym: "up-regulation of mechanosensory behavior" EXACT [GOC:TermGenie]
+synonym: "up-regulation of mechanosensory behaviour" EXACT [GOC:TermGenie]
+synonym: "upregulation of behavioral response to mechanical stimulus" EXACT [GOC:TermGenie]
+synonym: "upregulation of behavioural response to mechanical stimulus" EXACT [GOC:TermGenie]
+synonym: "upregulation of mechanosensory behavior" EXACT [GOC:TermGenie]
+synonym: "upregulation of mechanosensory behaviour" EXACT [GOC:TermGenie]
+is_a: GO:0032103 ! positive regulation of response to external stimulus
+is_a: GO:0048520 ! positive regulation of behavior
+is_a: GO:1905790 ! regulation of mechanosensory behavior
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0007638 ! mechanosensory behavior
+relationship: positively_regulates GO:0007638 ! mechanosensory behavior
+created_by: hbye
+creation_date: 2017-01-09T15:17:24Z
+
+[Term]
 id: GO:1905902
 name: regulation of mesoderm formation
 namespace: biological_process
@@ -7160,6 +8146,20 @@ created_by: tanyaberardini
 creation_date: 2010-08-05T11:25:59Z
 
 [Term]
+id: GO:2000027
+name: regulation of animal organ morphogenesis
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of animal organ morphogenesis." [GOC:obol]
+synonym: "regulation of histogenesis and organogenesis" RELATED [GOC:obol]
+is_a: GO:0022603 ! regulation of anatomical structure morphogenesis
+is_a: GO:2000026 ! regulation of multicellular organismal development
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: regulates GO:0009887 ! animal organ morphogenesis
+relationship: regulates GO:0009887 ! animal organ morphogenesis
+created_by: tanyaberardini
+creation_date: 2010-08-05T11:26:27Z
+
+[Term]
 id: GO:2000035
 name: regulation of stem cell division
 namespace: biological_process
@@ -7171,6 +8171,47 @@ intersection_of: regulates GO:0017145 ! stem cell division
 relationship: regulates GO:0017145 ! stem cell division
 created_by: tanyaberardini
 creation_date: 2010-08-05T11:34:53Z
+
+[Term]
+id: GO:2000136
+name: regulation of cell proliferation involved in heart morphogenesis
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of cell proliferation involved in heart morphogenesis." [GOC:dph]
+is_a: GO:0042127 ! regulation of cell population proliferation
+is_a: GO:2000826 ! regulation of heart morphogenesis
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0061323 ! cell proliferation involved in heart morphogenesis
+relationship: regulates GO:0061323 ! cell proliferation involved in heart morphogenesis
+created_by: dph
+creation_date: 2010-09-29T12:43:53Z
+
+[Term]
+id: GO:2000137
+name: negative regulation of cell proliferation involved in heart morphogenesis
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of cell proliferation involved in heart morphogenesis." [GOC:dph]
+is_a: GO:0008285 ! negative regulation of cell population proliferation
+is_a: GO:0110111 ! negative regulation of animal organ morphogenesis
+is_a: GO:2000136 ! regulation of cell proliferation involved in heart morphogenesis
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0061323 ! cell proliferation involved in heart morphogenesis
+relationship: negatively_regulates GO:0061323 ! cell proliferation involved in heart morphogenesis
+created_by: dph
+creation_date: 2010-09-29T12:43:55Z
+
+[Term]
+id: GO:2000138
+name: positive regulation of cell proliferation involved in heart morphogenesis
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of cell proliferation involved in heart morphogenesis." [GOC:dph]
+is_a: GO:0008284 ! positive regulation of cell population proliferation
+is_a: GO:0110110 ! positive regulation of animal organ morphogenesis
+is_a: GO:2000136 ! regulation of cell proliferation involved in heart morphogenesis
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0061323 ! cell proliferation involved in heart morphogenesis
+relationship: positively_regulates GO:0061323 ! cell proliferation involved in heart morphogenesis
+created_by: dph
+creation_date: 2010-09-29T12:43:57Z
 
 [Term]
 id: GO:2000145
@@ -7297,6 +8338,42 @@ intersection_of: positively_regulates GO:0022414 ! reproductive process
 relationship: positively_regulates GO:0022414 ! reproductive process
 created_by: midori
 creation_date: 2010-11-10T02:44:08Z
+
+[Term]
+id: GO:2000252
+name: negative regulation of feeding behavior
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of feeding behavior." [GOC:obol]
+synonym: "negative regulation of behavioral response to food" EXACT [GOC:obol]
+synonym: "negative regulation of behavioural response to food" EXACT [GOC:obol]
+synonym: "negative regulation of drinking" RELATED [GOC:obol]
+synonym: "negative regulation of eating" RELATED [GOC:obol]
+synonym: "negative regulation of feeding behaviour" EXACT [GOC:obol]
+is_a: GO:0048521 ! negative regulation of behavior
+is_a: GO:0060259 ! regulation of feeding behavior
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0007631 ! feeding behavior
+relationship: negatively_regulates GO:0007631 ! feeding behavior
+created_by: yaf
+creation_date: 2010-11-18T11:24:14Z
+
+[Term]
+id: GO:2000253
+name: positive regulation of feeding behavior
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of feeding behavior." [GOC:obol]
+synonym: "positive regulation of behavioral response to food" EXACT [GOC:obol]
+synonym: "positive regulation of behavioural response to food" EXACT [GOC:obol]
+synonym: "positive regulation of drinking" RELATED [GOC:obol]
+synonym: "positive regulation of eating" RELATED [GOC:obol]
+synonym: "positive regulation of feeding behaviour" EXACT [GOC:obol]
+is_a: GO:0048520 ! positive regulation of behavior
+is_a: GO:0060259 ! regulation of feeding behavior
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0007631 ! feeding behavior
+relationship: positively_regulates GO:0007631 ! feeding behavior
+created_by: yaf
+creation_date: 2010-11-18T11:24:18Z
 
 [Term]
 id: GO:2000272
@@ -7505,6 +8582,19 @@ intersection_of: positively_regulates GO:0048863 ! stem cell differentiation
 relationship: positively_regulates GO:0048863 ! stem cell differentiation
 created_by: yaf
 creation_date: 2011-06-14T02:05:23Z
+
+[Term]
+id: GO:2000826
+name: regulation of heart morphogenesis
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of heart morphogenesis." [GOC:BHF]
+synonym: "regulation of cardiac morphogenesis" RELATED [GOC:obol]
+is_a: GO:2000027 ! regulation of animal organ morphogenesis
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0003007 ! heart morphogenesis
+relationship: regulates GO:0003007 ! heart morphogenesis
+created_by: vk
+creation_date: 2011-07-19T10:08:58Z
 
 [Term]
 id: GO:2001012
