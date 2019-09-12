@@ -10,23 +10,52 @@ Ontology(<urn:unnamed:ontology#ont1>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000460>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000586>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000028>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000042>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000050>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000062>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000125>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000127>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000128>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000275>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000306>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000472>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0001001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0002000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003012>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003024>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003025>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004107>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004130>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004265>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004393>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004489>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004518>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005034>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005170>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103605>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103606>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103607>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103608>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0130962>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0130963>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131454>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131455>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131456>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131457>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131458>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131459>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131460>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131461>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131462>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131463>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131464>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131465>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131466>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131467>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
@@ -81,6 +110,104 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0130963> "enlarged neuroectoderm in head"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0130963> "increased size of the neuroectoderm in head"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0130963> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000586> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0000042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0003024>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0131454> (increased size of the cilium in left-right organizer)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0131454> "An increase in the size of the cilium in the left-right organizer."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0131454> "enlarged cilium in left-right organizer"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0131454> "increased size of the cilium in left-right organizer"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0131454> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000586> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0005008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0005170>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0131455> (increased size of the cilium in neural progenitor cell)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0131455> "An increase in the size of the cilium in the neural progenitor cell."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0131455> "enlarged cilium in neural progenitor cell"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0131455> "increased size of the cilium in neural progenitor cell"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0131455> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000586> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0005008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0005034>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0131456> (increased size of the cilium in floor plate)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0131456> "An increase in the size of the cilium in the floor plate."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0131456> "enlarged cilium in floor plate"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0131456> "increased size of the cilium in floor plate"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0131456> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000586> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0005008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0000306>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0131457> (increased size of the cilium in brain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0131457> "An increase in the size of the cilium in the brain."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0131457> "enlarged cilium in brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0131457> "increased size of the cilium in brain"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0131457> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000586> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0005008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0000010>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0131458> (increased size of the cilium in mucociliary epithelium)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0131458> "An increase in the size of the cilium in the mucociliary epithelium."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0131458> "enlarged cilium in mucociliary epithelium"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0131458> "increased size of the cilium in mucociliary epithelium"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0131458> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000586> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0005008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004393>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0131459> (increased size of the cilium in pronephric kidney)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0131459> "An increase in the size of the cilium in the pronephric kidney."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0131459> "enlarged cilium in pronephric kidney"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0131459> "increased size of the cilium in pronephric kidney"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0131459> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000586> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0005008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0002000>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0131460> (increased size of the cilium in pronephric nephrostome)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0131460> "An increase in the size of the cilium in the pronephric nephrostome."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0131460> "enlarged cilium in pronephric nephrostome"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0131460> "increased size of the cilium in pronephric nephrostome"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0131460> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000586> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0005008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0000062>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0131461> (increased size of the cilium in proximal tubule)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0131461> "An increase in the size of the cilium in the proximal tubule."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0131461> "enlarged cilium in proximal tubule"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0131461> "increased size of the cilium in proximal tubule"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0131461> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000586> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0005008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004518>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0131462> (increased size of the cilium in olfactory pit)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0131462> "An increase in the size of the cilium in the olfactory pit."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0131462> "enlarged cilium in olfactory pit"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0131462> "increased size of the cilium in olfactory pit"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0131462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000586> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0005008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0000275>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0131463> (increased size of the cilium in auditory hair cell)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0131463> "An increase in the size of the cilium in the auditory hair cell."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0131463> "enlarged cilium in auditory hair cell"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0131463> "increased size of the cilium in auditory hair cell"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0131463> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000586> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0005008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004130>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0131464> (increased size of the cilium in lateral line)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0131464> "An increase in the size of the cilium in the lateral line."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0131464> "enlarged cilium in lateral line"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0131464> "increased size of the cilium in lateral line"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0131464> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000586> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0005008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004002>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0131465> (increased size of the cilium in alimentary system)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0131465> "An increase in the size of the cilium in the alimentary system."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0131465> "enlarged cilium in alimentary system"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0131465> "increased size of the cilium in alimentary system"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0131465> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000586> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0005008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0000125>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0131466> (increased size of the cilium in stomach)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0131466> "An increase in the size of the cilium in the stomach."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0131466> "enlarged cilium in stomach"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0131466> "increased size of the cilium in stomach"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0131466> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000586> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0005008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0000128>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0131467> (increased size of the cilium in esophagus)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0131467> "An increase in the size of the cilium in the esophagus."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0131467> "enlarged cilium in esophagus"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0131467> "increased size of the cilium in esophagus"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0131467> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000586> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0005008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0000127>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 
 )
