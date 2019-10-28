@@ -5,7 +5,7 @@ xpo_table.csv:
 #	echo "external.txt goal skipped until further notice"
 
 UPHENO_REL=https://raw.githubusercontent.com/obophenotype/upheno/master/src/ontology/upheno_materialise_relations.owl
-
+HASPART=http://purl.obolibrary.org/obo/BFO_0000051
 xpo_xenbase.obo:
 	$(ROBOT) merge -i xpo.owl -I $(UPHENO_REL) \
 		materialize --reasoner ELK --term http://purl.obolibrary.org/obo/UPHENO_9000001 \
