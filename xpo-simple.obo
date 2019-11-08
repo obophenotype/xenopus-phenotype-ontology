@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: xpo/releases/2019-09-18/xpo-simple.owl
+data-version: xpo/releases/2019-11-08/xpo-simple.owl
 ontology: xpo/xpo-simple
 property_value: http://purl.org/dc/elements/1.1/description "Ontology about Xenopus." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Xenopus Phenotype Ontology" xsd:string
@@ -561,9 +561,7 @@ id: XPO:0100111
 name: abnormal cranial nerve
 def: "Abnormality of cranial nerve." []
 synonym: "abnormality of cranial nerve" EXACT []
-is_a: XPO:0100002 ! abnormal head
-is_a: XPO:0100114 ! abnormal peripheral nervous system
-is_a: XPO:0100167 ! abnormal nerve
+is_a: XPO:0131652 ! abnormal cephalic nerve
 
 [Term]
 id: XPO:0100112
@@ -620,7 +618,7 @@ id: XPO:0100124
 name: abnormal endochondral element
 def: "Abnormality of endochondral element." []
 synonym: "abnormality of endochondral element" EXACT []
-is_a: XPO:0100597 ! abnormal replacement element
+is_a: XPO:0100597 ! abnormal regenerating skeletal element
 
 [Term]
 id: XPO:0100126
@@ -1288,6 +1286,7 @@ name: abnormal hindlimb skeleton
 def: "Abnormality of hindlimb skeleton." []
 synonym: "abnormality of hindlimb skeleton" EXACT []
 is_a: XPO:0100350 ! abnormal appendicular skeleton
+is_a: XPO:0100846 ! abnormal hindlimb
 
 [Term]
 id: XPO:0100228
@@ -1688,9 +1687,9 @@ is_a: XPO:0100004 ! abnormal cell
 
 [Term]
 id: XPO:0100287
-name: abnormal fused heart primordium
-def: "Abnormality of fused heart primordium." []
-synonym: "abnormality of fused heart primordium" EXACT []
+name: abnormal heart primordium
+def: "Abnormality of heart primordium." []
+synonym: "abnormality of heart primordium" EXACT []
 is_a: XPO:0100151 ! abnormal primordium
 is_a: XPO:0100363 ! abnormal cardiovascular system
 
@@ -1857,6 +1856,7 @@ name: abnormal gamete
 def: "Abnormality of gamete." []
 synonym: "abnormality of gamete" EXACT []
 is_a: XPO:0100026 ! abnormal germ cell
+is_a: XPO:0100120 ! abnormal genital system
 
 [Term]
 id: XPO:0100317
@@ -2035,6 +2035,7 @@ name: abnormal forelimb skeleton
 def: "Abnormality of forelimb skeleton." []
 synonym: "abnormality of forelimb skeleton" EXACT []
 is_a: XPO:0100350 ! abnormal appendicular skeleton
+is_a: XPO:0100403 ! abnormal forelimb
 
 [Term]
 id: XPO:0100343
@@ -2352,8 +2353,8 @@ id: XPO:0100388
 name: abnormal adenohypophyseal placode
 def: "Abnormality of adenohypophyseal placode." []
 synonym: "abnormality of adenohypophyseal placode" EXACT []
-is_a: XPO:0100078 ! abnormal neurogenic placode
 is_a: XPO:0100279 ! abnormal non-neural ectoderm
+is_a: XPO:0131672 ! abnormal non-neurogenic ectodermal placode
 
 [Term]
 id: XPO:0100389
@@ -3000,7 +3001,7 @@ name: abnormal lens placode
 def: "Abnormality of lens placode." []
 synonym: "abnormality of lens placode" EXACT []
 is_a: XPO:0100017 ! abnormal anterior placodal area
-is_a: XPO:0100078 ! abnormal neurogenic placode
+is_a: XPO:0131672 ! abnormal non-neurogenic ectodermal placode
 
 [Term]
 id: XPO:0100480
@@ -3642,8 +3643,7 @@ id: XPO:0100570
 name: abnormal axon
 def: "Abnormality of axon." []
 synonym: "abnormality of axon" EXACT []
-is_a: XPO:0100108 ! abnormal cell part
-is_a: XPO:0100196 ! abnormal neuron
+is_a: XPO:0131654 ! abnormal neuron projection
 
 [Term]
 id: XPO:0100571
@@ -3842,9 +3842,9 @@ is_a: XPO:0100100 ! abnormal muscle
 
 [Term]
 id: XPO:0100597
-name: abnormal replacement element
-def: "Abnormality of replacement element." []
-synonym: "abnormality of replacement element" EXACT []
+name: abnormal regenerating skeletal element
+def: "Abnormality of regenerating skeletal element." []
+synonym: "abnormality of regenerating skeletal element" EXACT []
 is_a: XPO:0100048 ! abnormal skeletal element
 is_a: XPO:0100498 ! abnormal endoskeleton
 
@@ -4222,8 +4222,7 @@ id: XPO:0100649
 name: abnormal growth cone
 def: "Abnormality of growth cone." []
 synonym: "abnormality of growth cone" EXACT []
-is_a: XPO:0100108 ! abnormal cell part
-is_a: XPO:0100196 ! abnormal neuron
+is_a: XPO:0131654 ! abnormal neuron projection
 
 [Term]
 id: XPO:0100650
@@ -4964,9 +4963,9 @@ is_a: XPO:0100207 ! abnormal blastema
 
 [Term]
 id: XPO:0100751
-name: abnormal coracoid
-def: "Abnormality of coracoid." []
-synonym: "abnormality of coracoid" EXACT []
+name: abnormal coracoid bone
+def: "Abnormality of coracoid bone." []
+synonym: "abnormality of coracoid bone" EXACT []
 is_a: XPO:0100121 ! abnormal endochondral bone
 is_a: XPO:0100768 ! abnormal pectoral girdle
 
@@ -5433,7 +5432,7 @@ id: XPO:0100814
 name: abnormal natural killer cell
 def: "Abnormality of natural killer cell." []
 synonym: "abnormality of natural killer cell" EXACT []
-is_a: XPO:0100449 ! abnormal lymphocyte
+is_a: XPO:0101083 ! abnormal T cell
 
 [Term]
 id: XPO:0100815
@@ -5531,8 +5530,7 @@ id: XPO:0100828
 name: abnormal atrioventricular valve leaflet
 def: "Abnormality of atrioventricular valve leaflet." []
 synonym: "abnormality of atrioventricular valve leaflet" EXACT []
-is_a: XPO:0100013 ! abnormal heart
-is_a: XPO:0100014 ! abnormal tissue
+is_a: XPO:0131653 ! abnormal atrioventricular valve
 
 [Term]
 id: XPO:0100829
@@ -6661,6 +6659,7 @@ def: "Abnormality of stapes." []
 synonym: "abnormality of stapes" EXACT []
 is_a: XPO:0100047 ! abnormal cartilage element
 is_a: XPO:0100425 ! abnormal auditory ossicle
+is_a: XPO:0101005 ! abnormal middle ear
 
 [Term]
 id: XPO:0100983
@@ -7659,7 +7658,7 @@ name: abnormal cardiac progenitor cell
 def: "Abnormality of cardiac progenitor cell." []
 synonym: "abnormality of cardiac progenitor cell" EXACT []
 is_a: XPO:0100285 ! abnormal progenitor cell
-is_a: XPO:0100287 ! abnormal fused heart primordium
+is_a: XPO:0100287 ! abnormal heart primordium
 
 [Term]
 id: XPO:0101121
@@ -9754,6 +9753,7 @@ id: XPO:0101403
 name: abnormal basal lamina
 def: "Abnormality of basal lamina." []
 synonym: "abnormality of basal lamina" EXACT []
+is_a: XPO:0100192 ! abnormal epithelium
 is_a: XPO:0100239 ! abnormal acellular anatomical structure
 
 [Term]
@@ -10529,8 +10529,7 @@ id: XPO:0101514
 name: abnormal dendrite
 def: "Abnormality of dendrite." []
 synonym: "abnormality of dendrite" EXACT []
-is_a: XPO:0100108 ! abnormal cell part
-is_a: XPO:0100196 ! abnormal neuron
+is_a: XPO:0131654 ! abnormal neuron projection
 
 [Term]
 id: XPO:0101515
@@ -10860,6 +10859,7 @@ def: "Abnormality of abdominal myoblast." []
 synonym: "abnormality of abdominal myoblast" EXACT []
 is_a: XPO:0100065 ! abnormal myotome
 is_a: XPO:0100653 ! abnormal myoblast
+is_a: XPO:0100865 ! abnormal trunk musculature
 
 [Term]
 id: XPO:0101559
@@ -11851,7 +11851,7 @@ name: abnormal endochondral element morphology
 def: "Any unspecified morphological anomaly of the endochondral element, such as, for example, abnormal shape or colour." []
 synonym: "abnormal morphology of endochondral element" EXACT []
 is_a: XPO:0100124 ! abnormal endochondral element
-is_a: XPO:0102229 ! abnormal replacement element morphology
+is_a: XPO:0102229 ! abnormal regenerating skeletal element morphology
 
 [Term]
 id: XPO:0101758
@@ -12975,10 +12975,10 @@ is_a: XPO:0101636 ! abnormal cell morphology
 
 [Term]
 id: XPO:0101919
-name: abnormal fused heart primordium morphology
-def: "Any unspecified morphological anomaly of the fused heart primordium, such as, for example, abnormal shape or colour." []
-synonym: "abnormal morphology of fused heart primordium" EXACT []
-is_a: XPO:0100287 ! abnormal fused heart primordium
+name: abnormal heart primordium morphology
+def: "Any unspecified morphological anomaly of the heart primordium, such as, for example, abnormal shape or colour." []
+synonym: "abnormal morphology of heart primordium" EXACT []
+is_a: XPO:0100287 ! abnormal heart primordium
 is_a: XPO:0101783 ! abnormal primordium morphology
 
 [Term]
@@ -13694,7 +13694,7 @@ name: abnormal adenohypophyseal placode morphology
 def: "Any unspecified morphological anomaly of the adenohypophyseal placode, such as, for example, abnormal shape or colour." []
 synonym: "abnormal morphology of adenohypophyseal placode" EXACT []
 is_a: XPO:0100388 ! abnormal adenohypophyseal placode
-is_a: XPO:0101710 ! abnormal neurogenic placode morphology
+is_a: XPO:0102021 ! abnormal cranial placode morphology
 
 [Term]
 id: XPO:0102021
@@ -14384,7 +14384,7 @@ name: abnormal lens placode morphology
 def: "Any unspecified morphological anomaly of the lens placode, such as, for example, abnormal shape or colour." []
 synonym: "abnormal morphology of lens placode" EXACT []
 is_a: XPO:0100479 ! abnormal lens placode
-is_a: XPO:0101710 ! abnormal neurogenic placode morphology
+is_a: XPO:0102021 ! abnormal cranial placode morphology
 
 [Term]
 id: XPO:0102112
@@ -15278,10 +15278,10 @@ is_a: XPO:0101636 ! abnormal cell morphology
 
 [Term]
 id: XPO:0102229
-name: abnormal replacement element morphology
-def: "Any unspecified morphological anomaly of the replacement element, such as, for example, abnormal shape or colour." []
-synonym: "abnormal morphology of replacement element" EXACT []
-is_a: XPO:0100597 ! abnormal replacement element
+name: abnormal regenerating skeletal element morphology
+def: "Any unspecified morphological anomaly of the regenerating skeletal element, such as, for example, abnormal shape or colour." []
+synonym: "abnormal morphology of regenerating skeletal element" EXACT []
+is_a: XPO:0100597 ! abnormal regenerating skeletal element
 is_a: XPO:0101680 ! abnormal skeletal element morphology
 
 [Term]
@@ -16475,10 +16475,10 @@ is_a: XPO:0101692 ! abnormal regenerating tissue morphology
 
 [Term]
 id: XPO:0102383
-name: abnormal coracoid morphology
-def: "Any unspecified morphological anomaly of the coracoid, such as, for example, abnormal shape or colour." []
-synonym: "abnormal morphology of coracoid" EXACT []
-is_a: XPO:0100751 ! abnormal coracoid
+name: abnormal coracoid bone morphology
+def: "Any unspecified morphological anomaly of the coracoid bone, such as, for example, abnormal shape or colour." []
+synonym: "abnormal morphology of coracoid bone" EXACT []
+is_a: XPO:0100751 ! abnormal coracoid bone
 is_a: XPO:0101753 ! abnormal endochondral bone morphology
 
 [Term]
@@ -16977,7 +16977,7 @@ name: abnormal natural killer cell morphology
 def: "Any unspecified morphological anomaly of the natural killer cell, such as, for example, abnormal shape or colour." []
 synonym: "abnormal morphology of natural killer cell" EXACT []
 is_a: XPO:0100814 ! abnormal natural killer cell
-is_a: XPO:0102081 ! abnormal lymphocyte morphology
+is_a: XPO:0102715 ! abnormal T cell morphology
 
 [Term]
 id: XPO:0102447
@@ -24089,10 +24089,10 @@ is_a: XPO:0129528 ! increased size of the limb bud
 
 [Term]
 id: XPO:0103379
-name: increased size of the fused heart primordium
-def: "An increase in the size of the fused heart primordium." []
-synonym: "enlarged fused heart primordium" EXACT []
-is_a: XPO:0101919 ! abnormal fused heart primordium morphology
+name: increased size of the heart primordium
+def: "An increase in the size of the heart primordium." []
+synonym: "enlarged heart primordium" EXACT []
+is_a: XPO:0101919 ! abnormal heart primordium morphology
 is_a: XPO:0129559 ! increased size of the primordium
 
 [Term]
@@ -24410,10 +24410,10 @@ is_a: XPO:0128048 ! decreased size of the limb bud
 
 [Term]
 id: XPO:0103419
-name: decreased size of the fused heart primordium
-def: "An abnormal reduction in the size of the fused heart primordium." []
-synonym: "abnormally small fused heart primordium" EXACT []
-is_a: XPO:0101919 ! abnormal fused heart primordium morphology
+name: decreased size of the heart primordium
+def: "An abnormal reduction in the size of the heart primordium." []
+synonym: "abnormally small heart primordium" EXACT []
+is_a: XPO:0101919 ! abnormal heart primordium morphology
 is_a: XPO:0128079 ! decreased size of the primordium
 
 [Term]
@@ -24558,7 +24558,6 @@ name: decreased size of the left part of branchial arch skeleton
 def: "An abnormal reduction in the size of the left part of branchial arch skeleton." []
 synonym: "abnormally small left part of branchial arch skeleton" EXACT []
 is_a: XPO:0107414 ! abnormal left part of branchial arch skeleton morphology
-is_a: XPO:0128158 ! decreased size of the skeletal subdivision
 
 [Term]
 id: XPO:0103438
@@ -24574,7 +24573,6 @@ name: decreased size of the right part of branchial arch skeleton
 def: "An abnormal reduction in the size of the right part of branchial arch skeleton." []
 synonym: "abnormally small right part of branchial arch skeleton" EXACT []
 is_a: XPO:0107415 ! abnormal right part of branchial arch skeleton morphology
-is_a: XPO:0128158 ! decreased size of the skeletal subdivision
 
 [Term]
 id: XPO:0103440
@@ -24635,10 +24633,9 @@ is_a: XPO:0101979 ! abnormal anterior neural fold morphology
 
 [Term]
 id: XPO:0103449
-name: abnormal incomplete closing of the anterior neural tube
-def: "Abnormally incompletely closed anterior neural tube." []
-synonym: "abnormally incompletely closed anterior neural tube" EXACT []
-is_a: XPO:0115462 ! abnormal(ly) open of anterior neural tube (T)
+name: obsolete abnormal incomplete closing of the anterior neural tube
+property_value: IAO:0000125 XPO:0131750
+is_obsolete: true
 
 [Term]
 id: XPO:0103450
@@ -24673,7 +24670,6 @@ id: XPO:0103454
 name: bifurcated left hindlimb
 def: "Bifurcation of the left hindlimb." []
 synonym: "left hindlimb bifurcation" EXACT []
-is_a: XPO:0103459 ! bifurcated hindlimb
 is_a: XPO:0107418 ! abnormal left hindlimb morphology
 
 [Term]
@@ -24681,7 +24677,6 @@ id: XPO:0103455
 name: bifurcated right hindlimb
 def: "Bifurcation of the right hindlimb." []
 synonym: "right hindlimb bifurcation" EXACT []
-is_a: XPO:0103459 ! bifurcated hindlimb
 is_a: XPO:0107419 ! abnormal right hindlimb morphology
 
 [Term]
@@ -24689,7 +24684,6 @@ id: XPO:0103456
 name: bifurcated left forelimb
 def: "Bifurcation of the left forelimb." []
 synonym: "left forelimb bifurcation" EXACT []
-is_a: XPO:0103458 ! bifurcated forelimb
 is_a: XPO:0107416 ! abnormal left forelimb morphology
 
 [Term]
@@ -24697,7 +24691,6 @@ id: XPO:0103457
 name: bifurcated right forelimb
 def: "Bifurcation of the right forelimb." []
 synonym: "right forelimb bifurcation" EXACT []
-is_a: XPO:0103458 ! bifurcated forelimb
 is_a: XPO:0107417 ! abnormal right forelimb morphology
 
 [Term]
@@ -25248,19 +25241,19 @@ is_a: XPO:0115913 ! abnormal(ly) quality of forelimb digit 5 in forelimb (T)
 id: XPO:0103623
 name: absent axon regeneration in optic nerve
 def: "Absent or undetectable axon regeneration in optic nerve." []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0116494 ! absent biological process
 
 [Term]
 id: XPO:0103624
 name: absent anterior/posterior pattern specification in midgut
 def: "Absent or undetectable anterior/posterior pattern specification in midgut." []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0116494 ! absent biological process
 
 [Term]
 id: XPO:0103625
 name: absent mitotic cytokinesis in primary spermatogonium
 def: "Absent or undetectable mitotic cytokinesis in primary spermatogonium." []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0116494 ! absent biological process
 
 [Term]
 id: XPO:0103626
@@ -26265,7 +26258,6 @@ name: increased size of the left part of branchial arch skeleton
 def: "An increase in the size of the left part of branchial arch skeleton." []
 synonym: "enlarged left part of branchial arch skeleton" EXACT []
 is_a: XPO:0107414 ! abnormal left part of branchial arch skeleton morphology
-is_a: XPO:0129638 ! increased size of the skeletal subdivision
 
 [Term]
 id: XPO:0103761
@@ -26281,7 +26273,6 @@ name: increased size of the right part of branchial arch skeleton
 def: "An increase in the size of the right part of branchial arch skeleton." []
 synonym: "enlarged right part of branchial arch skeleton" EXACT []
 is_a: XPO:0107415 ! abnormal right part of branchial arch skeleton morphology
-is_a: XPO:0129638 ! increased size of the skeletal subdivision
 
 [Term]
 id: XPO:0103763
@@ -26309,7 +26300,7 @@ name: increased size of the dorsal region
 name: obsolete increased size of the dorsal region
 def: "An increase in the size of the dorsal region." []
 synonym: "enlarged dorsal region" EXACT []
-is_a: XPO:0107363 ! obsolete abnormal morphology of dorsal region
+is_a: XPO:0107363 ! abnormal dorsal region morphology
 is_a: XPO:0129571 ! increased size of the anatomical region
 is_obsolete: true
 
@@ -26326,7 +26317,6 @@ id: XPO:0103767
 name: increased size of the left eye
 def: "An increase in the size of the left eye." []
 synonym: "enlarged left eye" EXACT []
-is_a: XPO:0103376 ! increased size of the eye
 is_a: XPO:0107400 ! abnormal left eye morphology
 
 [Term]
@@ -26344,7 +26334,6 @@ id: XPO:0103769
 name: increased size of the right eye
 def: "An increase in the size of the right eye." []
 synonym: "enlarged right eye" EXACT []
-is_a: XPO:0103376 ! increased size of the eye
 is_a: XPO:0107401 ! abnormal right eye morphology
 
 [Term]
@@ -26360,6 +26349,7 @@ id: XPO:0103771
 name: arrested axis elongation
 def: "Arrested axis elongation." []
 is_a: XPO:0103772 ! arrested developmental process
+is_a: XPO:0131745 ! abnormal axis elongation
 
 [Term]
 id: XPO:0103772
@@ -26834,48 +26824,42 @@ id: XPO:0103901
 name: absent left eye
 def: "Absence of left eye." []
 synonym: "missing left eye" EXACT []
-is_a: XPO:0103275 ! absent eye
-is_a: XPO:0107313 ! abnormal left eye
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103902
 name: absent left inner ear
 def: "Absence of left inner ear." []
 synonym: "missing left inner ear" EXACT []
-is_a: XPO:0103297 ! absent inner ear
-is_a: XPO:0107315 ! abnormal left inner ear
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103903
 name: absent left olfactory pit
 def: "Absence of left olfactory pit." []
 synonym: "missing left olfactory pit" EXACT []
-is_a: XPO:0103304 ! absent olfactory pit
-is_a: XPO:0107309 ! abnormal left olfactory pit
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103904
 name: absent right eye
 def: "Absence of right eye." []
 synonym: "missing right eye" EXACT []
-is_a: XPO:0103275 ! absent eye
-is_a: XPO:0107314 ! abnormal right eye
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103905
 name: absent right inner ear
 def: "Absence of right inner ear." []
 synonym: "missing right inner ear" EXACT []
-is_a: XPO:0103297 ! absent inner ear
-is_a: XPO:0107316 ! abnormal right inner ear
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103906
 name: absent right olfactory pit
 def: "Absence of right olfactory pit." []
 synonym: "missing right olfactory pit" EXACT []
-is_a: XPO:0103304 ! absent olfactory pit
-is_a: XPO:0107310 ! abnormal right olfactory pit
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0103907
@@ -26960,7 +26944,7 @@ is_a: XPO:0130194 ! increased size of the optic stalk
 id: XPO:0103920
 name: decreased cell migration in cranial neural crest
 def: "Decreased qualitatively cell migration in cranial neural crest." []
-is_a: XPO:0116434 ! abnormal biological process
+is_a: XPO:0131704 ! abnormal cell migration
 
 [Term]
 id: XPO:0103921
@@ -27437,20 +27421,6 @@ synonym: "abnormality of anterior hindgut endoderm" EXACT []
 is_a: XPO:0107304 ! abnormal hindgut endoderm
 
 [Term]
-id: XPO:0107309
-name: abnormal left olfactory pit
-def: "Abnormality of left olfactory pit." []
-synonym: "abnormality of left olfactory pit" EXACT []
-is_a: XPO:0101334 ! abnormal olfactory pit
-
-[Term]
-id: XPO:0107310
-name: abnormal right olfactory pit
-def: "Abnormality of right olfactory pit." []
-synonym: "abnormality of right olfactory pit" EXACT []
-is_a: XPO:0101334 ! abnormal olfactory pit
-
-[Term]
 id: XPO:0107311
 name: abnormal apical junction complex
 def: "Abnormality of apical junction complex." []
@@ -27464,34 +27434,6 @@ name: abnormal filopodium
 def: "Abnormality of filopodium." []
 synonym: "abnormality of filopodium" EXACT []
 is_a: XPO:0100108 ! abnormal cell part
-
-[Term]
-id: XPO:0107313
-name: abnormal left eye
-def: "Abnormality of left eye." []
-synonym: "abnormality of left eye" EXACT []
-is_a: XPO:0100185 ! abnormal eye
-
-[Term]
-id: XPO:0107314
-name: abnormal right eye
-def: "Abnormality of right eye." []
-synonym: "abnormality of right eye" EXACT []
-is_a: XPO:0100185 ! abnormal eye
-
-[Term]
-id: XPO:0107315
-name: abnormal left inner ear
-def: "Abnormality of left inner ear." []
-synonym: "abnormality of left inner ear" EXACT []
-is_a: XPO:0100536 ! abnormal inner ear
-
-[Term]
-id: XPO:0107316
-name: abnormal right inner ear
-def: "Abnormality of right inner ear." []
-synonym: "abnormality of right inner ear" EXACT []
-is_a: XPO:0100536 ! abnormal inner ear
 
 [Term]
 id: XPO:0107317
@@ -27567,48 +27509,6 @@ synonym: "abnormality of regenerating pelvic girdle" EXACT []
 is_a: XPO:0100207 ! abnormal blastema
 
 [Term]
-id: XPO:0107327
-name: abnormal left part of branchial arch skeleton
-def: "Abnormality of left part of branchial arch skeleton." []
-synonym: "abnormality of left part of branchial arch skeleton" EXACT []
-is_a: XPO:0100920 ! abnormal branchial arch skeleton
-
-[Term]
-id: XPO:0107328
-name: abnormal right part of branchial arch skeleton
-def: "Abnormality of right part of branchial arch skeleton." []
-synonym: "abnormality of right part of branchial arch skeleton" EXACT []
-is_a: XPO:0100920 ! abnormal branchial arch skeleton
-
-[Term]
-id: XPO:0107329
-name: abnormal left forelimb
-def: "Abnormality of left forelimb." []
-synonym: "abnormality of left forelimb" EXACT []
-is_a: XPO:0100403 ! abnormal forelimb
-
-[Term]
-id: XPO:0107330
-name: abnormal right forelimb
-def: "Abnormality of right forelimb." []
-synonym: "abnormality of right forelimb" EXACT []
-is_a: XPO:0100403 ! abnormal forelimb
-
-[Term]
-id: XPO:0107331
-name: abnormal left hindlimb
-def: "Abnormality of left hindlimb." []
-synonym: "abnormality of left hindlimb" EXACT []
-is_a: XPO:0100846 ! abnormal hindlimb
-
-[Term]
-id: XPO:0107332
-name: abnormal right hindlimb
-def: "Abnormality of right hindlimb." []
-synonym: "abnormality of right hindlimb" EXACT []
-is_a: XPO:0100846 ! abnormal hindlimb
-
-[Term]
 id: XPO:0107333
 name: abnormal left optic vesicle
 def: "Abnormality of left optic vesicle." []
@@ -27621,20 +27521,6 @@ name: abnormal right optic vesicle
 def: "Abnormality of right optic vesicle." []
 synonym: "abnormality of right optic vesicle" EXACT []
 is_a: XPO:0100459 ! abnormal optic vesicle
-
-[Term]
-id: XPO:0107335
-name: abnormal left part of brain
-def: "Abnormality of left part of brain." []
-synonym: "abnormality of left part of brain" EXACT []
-is_a: XPO:0100169 ! abnormal brain
-
-[Term]
-id: XPO:0107336
-name: abnormal right part of brain
-def: "Abnormality of right part of brain." []
-synonym: "abnormality of right part of brain" EXACT []
-is_a: XPO:0100169 ! abnormal brain
 
 [Term]
 id: XPO:0107337
@@ -28137,16 +28023,14 @@ id: XPO:0107396
 name: abnormal left olfactory pit morphology
 def: "Any unspecified morphological anomaly of the left olfactory pit, such as, for example, abnormal shape or colour." []
 synonym: "abnormal morphology of left olfactory pit" EXACT []
-is_a: XPO:0102966 ! abnormal olfactory pit morphology
-is_a: XPO:0107309 ! abnormal left olfactory pit
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0107397
 name: abnormal right olfactory pit morphology
 def: "Any unspecified morphological anomaly of the right olfactory pit, such as, for example, abnormal shape or colour." []
 synonym: "abnormal morphology of right olfactory pit" EXACT []
-is_a: XPO:0102966 ! abnormal olfactory pit morphology
-is_a: XPO:0107310 ! abnormal right olfactory pit
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0107398
@@ -28169,32 +28053,28 @@ id: XPO:0107400
 name: abnormal left eye morphology
 def: "Any unspecified morphological anomaly of the left eye, such as, for example, abnormal shape or colour." []
 synonym: "abnormal morphology of left eye" EXACT []
-is_a: XPO:0101817 ! abnormal eye morphology
-is_a: XPO:0107313 ! abnormal left eye
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0107401
 name: abnormal right eye morphology
 def: "Any unspecified morphological anomaly of the right eye, such as, for example, abnormal shape or colour." []
 synonym: "abnormal morphology of right eye" EXACT []
-is_a: XPO:0101817 ! abnormal eye morphology
-is_a: XPO:0107314 ! abnormal right eye
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0107402
 name: abnormal left inner ear morphology
 def: "Any unspecified morphological anomaly of the left inner ear, such as, for example, abnormal shape or colour." []
 synonym: "abnormal morphology of left inner ear" EXACT []
-is_a: XPO:0102168 ! abnormal inner ear morphology
-is_a: XPO:0107315 ! abnormal left inner ear
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0107403
 name: abnormal right inner ear morphology
 def: "Any unspecified morphological anomaly of the right inner ear, such as, for example, abnormal shape or colour." []
 synonym: "abnormal morphology of right inner ear" EXACT []
-is_a: XPO:0102168 ! abnormal inner ear morphology
-is_a: XPO:0107316 ! abnormal right inner ear
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0107404
@@ -28281,48 +28161,42 @@ id: XPO:0107414
 name: abnormal left part of branchial arch skeleton morphology
 def: "Any unspecified morphological anomaly of the left part of branchial arch skeleton, such as, for example, abnormal shape or colour." []
 synonym: "abnormal morphology of left part of branchial arch skeleton" EXACT []
-is_a: XPO:0101860 ! abnormal skeletal subdivision morphology
-is_a: XPO:0107327 ! abnormal left part of branchial arch skeleton
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0107415
 name: abnormal right part of branchial arch skeleton morphology
 def: "Any unspecified morphological anomaly of the right part of branchial arch skeleton, such as, for example, abnormal shape or colour." []
 synonym: "abnormal morphology of right part of branchial arch skeleton" EXACT []
-is_a: XPO:0101860 ! abnormal skeletal subdivision morphology
-is_a: XPO:0107328 ! abnormal right part of branchial arch skeleton
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0107416
 name: abnormal left forelimb morphology
 def: "Any unspecified morphological anomaly of the left forelimb, such as, for example, abnormal shape or colour." []
 synonym: "abnormal morphology of left forelimb" EXACT []
-is_a: XPO:0102035 ! abnormal forelimb morphology
-is_a: XPO:0107329 ! abnormal left forelimb
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0107417
 name: abnormal right forelimb morphology
 def: "Any unspecified morphological anomaly of the right forelimb, such as, for example, abnormal shape or colour." []
 synonym: "abnormal morphology of right forelimb" EXACT []
-is_a: XPO:0102035 ! abnormal forelimb morphology
-is_a: XPO:0107330 ! abnormal right forelimb
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0107418
 name: abnormal left hindlimb morphology
 def: "Any unspecified morphological anomaly of the left hindlimb, such as, for example, abnormal shape or colour." []
 synonym: "abnormal morphology of left hindlimb" EXACT []
-is_a: XPO:0102478 ! abnormal hindlimb morphology
-is_a: XPO:0107331 ! abnormal left hindlimb
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0107419
 name: abnormal right hindlimb morphology
 def: "Any unspecified morphological anomaly of the right hindlimb, such as, for example, abnormal shape or colour." []
 synonym: "abnormal morphology of right hindlimb" EXACT []
-is_a: XPO:0102478 ! abnormal hindlimb morphology
-is_a: XPO:0107332 ! abnormal right hindlimb
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0107420
@@ -28345,16 +28219,14 @@ id: XPO:0107422
 name: abnormal left part of brain morphology
 def: "Any unspecified morphological anomaly of the left part of brain, such as, for example, abnormal shape or colour." []
 synonym: "abnormal morphology of left part of brain" EXACT []
-is_a: XPO:0101833 ! abnormal cavitated compound organ morphology
-is_a: XPO:0107335 ! abnormal left part of brain
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0107423
 name: abnormal right part of brain morphology
 def: "Any unspecified morphological anomaly of the right part of brain, such as, for example, abnormal shape or colour." []
 synonym: "abnormal morphology of right part of brain" EXACT []
-is_a: XPO:0101833 ! abnormal cavitated compound organ morphology
-is_a: XPO:0107336 ! abnormal right part of brain
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0107424
@@ -28984,9 +28856,9 @@ is_a: XPO:0100555 ! abnormal central endoderm
 
 [Term]
 id: XPO:0115462
-name: abnormal(ly) open of anterior neural tube (T)
-def: "Abnormal(ly) open of anterior neural tube (Temporary definition)." []
-is_a: XPO:0101802 ! abnormal anterior neural tube morphology
+name: obsolete abnormal(ly) open of anterior neural tube (T)
+property_value: IAO:0000125 XPO:0131750
+is_obsolete: true
 
 [Term]
 id: XPO:0115463
@@ -30386,8 +30258,7 @@ name: duplicated left hindlimb
 def: "Any abnormal duplication of the left hindlimb." []
 synonym: "abnormal duplication of left hindlimb" EXACT []
 synonym: "abnormally duplicated left hindlimb" EXACT []
-is_a: XPO:0107331 ! abnormal left hindlimb
-is_a: XPO:0115814 ! duplicated hindlimb
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0115807
@@ -30395,8 +30266,7 @@ name: duplicated right hindlimb
 def: "Any abnormal duplication of the right hindlimb." []
 synonym: "abnormal duplication of right hindlimb" EXACT []
 synonym: "abnormally duplicated right hindlimb" EXACT []
-is_a: XPO:0107332 ! abnormal right hindlimb
-is_a: XPO:0115814 ! duplicated hindlimb
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0115808
@@ -30404,8 +30274,7 @@ name: duplicated left forelimb
 def: "Any abnormal duplication of the left forelimb." []
 synonym: "abnormal duplication of left forelimb" EXACT []
 synonym: "abnormally duplicated left forelimb" EXACT []
-is_a: XPO:0107329 ! abnormal left forelimb
-is_a: XPO:0115803 ! duplicated forelimb
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0115809
@@ -30413,8 +30282,7 @@ name: duplicated right forelimb
 def: "Any abnormal duplication of the right forelimb." []
 synonym: "abnormal duplication of right forelimb" EXACT []
 synonym: "abnormally duplicated right forelimb" EXACT []
-is_a: XPO:0107330 ! abnormal right forelimb
-is_a: XPO:0115803 ! duplicated forelimb
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0115810
@@ -30569,8 +30437,7 @@ name: duplicated left eye
 def: "Any abnormal duplication of the left eye." []
 synonym: "abnormal duplication of left eye" EXACT []
 synonym: "abnormally duplicated left eye" EXACT []
-is_a: XPO:0107313 ! abnormal left eye
-is_a: XPO:0115414 ! abnormal(ly) increased amount of eye (T)
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0115829
@@ -30578,8 +30445,7 @@ name: duplicated right eye
 def: "Any abnormal duplication of the right eye." []
 synonym: "abnormal duplication of right eye" EXACT []
 synonym: "abnormally duplicated right eye" EXACT []
-is_a: XPO:0107314 ! abnormal right eye
-is_a: XPO:0115414 ! abnormal(ly) increased amount of eye (T)
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0115830
@@ -30595,7 +30461,7 @@ name: duplicated left part of brain
 def: "Any abnormal duplication of the left part of brain." []
 synonym: "abnormal duplication of left part of brain" EXACT []
 synonym: "abnormally duplicated left part of brain" EXACT []
-is_a: XPO:0107335 ! abnormal left part of brain
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0115832
@@ -30603,7 +30469,7 @@ name: duplicated right part of brain
 def: "Any abnormal duplication of the right part of brain." []
 synonym: "abnormal duplication of right part of brain" EXACT []
 synonym: "abnormally duplicated right part of brain" EXACT []
-is_a: XPO:0107336 ! abnormal right part of brain
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0115833
@@ -33225,7 +33091,7 @@ is_a: XPO:0116432 ! abnormal animal organ development
 id: XPO:0116494
 name: absent biological process
 def: "Lack of biological_process." []
-is_a: XPO:0116434 ! abnormal biological process
+is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
 id: XPO:0124716
@@ -33808,7 +33674,7 @@ name: absent endochondral element
 def: "Absence of endochondral element." []
 synonym: "missing endochondral element" EXACT []
 is_a: XPO:0100124 ! abnormal endochondral element
-is_a: XPO:0125767 ! absent replacement element
+is_a: XPO:0125767 ! absent regenerating skeletal element
 
 [Term]
 id: XPO:0124831
@@ -34845,10 +34711,10 @@ is_a: XPO:0124716 ! absent cell
 
 [Term]
 id: XPO:0124985
-name: absent fused heart primordium
-def: "Absence of fused heart primordium." []
-synonym: "missing fused heart primordium" EXACT []
-is_a: XPO:0100287 ! abnormal fused heart primordium
+name: absent heart primordium
+def: "Absence of heart primordium." []
+synonym: "missing heart primordium" EXACT []
+is_a: XPO:0100287 ! abnormal heart primordium
 is_a: XPO:0124997 ! absent primordium
 
 [Term]
@@ -36410,7 +36276,7 @@ name: absent cranial nerve
 def: "Absence of cranial nerve." []
 synonym: "missing cranial nerve" EXACT []
 is_a: XPO:0100111 ! abnormal cranial nerve
-is_a: XPO:0124811 ! absent nerve
+is_a: XPO:0131498 ! absent cephalic nerve
 
 [Term]
 id: XPO:0125196
@@ -36789,7 +36655,7 @@ name: absent adenohypophyseal placode
 def: "Absence of adenohypophyseal placode." []
 synonym: "missing adenohypophyseal placode" EXACT []
 is_a: XPO:0100388 ! abnormal adenohypophyseal placode
-is_a: XPO:0124866 ! absent neurogenic placode
+is_a: XPO:0131518 ! absent non-neurogenic ectodermal placode
 
 [Term]
 id: XPO:0125245
@@ -37461,7 +37327,7 @@ name: absent lens placode
 def: "Absence of lens placode." []
 synonym: "missing lens placode" EXACT []
 is_a: XPO:0100479 ! abnormal lens placode
-is_a: XPO:0124866 ! absent neurogenic placode
+is_a: XPO:0131518 ! absent non-neurogenic ectodermal placode
 
 [Term]
 id: XPO:0125333
@@ -37543,14 +37409,6 @@ def: "Absence of gut epithelium." []
 synonym: "missing gut epithelium" EXACT []
 is_a: XPO:0100986 ! abnormal gut epithelium
 is_a: XPO:0125109 ! absent epithelium
-
-[Term]
-id: XPO:0125343
-name: absent right forelimb
-def: "Absence of right forelimb." []
-synonym: "missing right forelimb" EXACT []
-is_a: XPO:0103277 ! absent forelimb
-is_a: XPO:0107330 ! abnormal right forelimb
 
 [Term]
 id: XPO:0125344
@@ -39465,7 +39323,7 @@ name: absent dendrite
 def: "Absence of dendrite." []
 synonym: "missing dendrite" EXACT []
 is_a: XPO:0101514 ! abnormal dendrite
-is_a: XPO:0124807 ! absent cell part
+is_a: XPO:0131500 ! absent neuron projection
 
 [Term]
 id: XPO:0125592
@@ -39740,14 +39598,6 @@ is_a: XPO:0101525 ! abnormal posterior vena cava
 is_a: XPO:0124759 ! absent vein
 
 [Term]
-id: XPO:0125628
-name: absent left hindlimb
-def: "Absence of left hindlimb." []
-synonym: "missing left hindlimb" EXACT []
-is_a: XPO:0103287 ! absent hindlimb
-is_a: XPO:0107331 ! abnormal left hindlimb
-
-[Term]
 id: XPO:0125629
 name: absent optic nerve
 def: "Absence of optic nerve." []
@@ -39882,14 +39732,6 @@ def: "Absence of Eberth-Kastschenko layer." []
 synonym: "missing Eberth-Kastschenko layer" EXACT []
 is_a: XPO:0101313 ! abnormal Eberth-Kastschenko layer
 is_a: XPO:0124728 ! absent tissue
-
-[Term]
-id: XPO:0125646
-name: absent right hindlimb
-def: "Absence of right hindlimb." []
-synonym: "missing right hindlimb" EXACT []
-is_a: XPO:0103287 ! absent hindlimb
-is_a: XPO:0107332 ! abnormal right hindlimb
 
 [Term]
 id: XPO:0125647
@@ -40113,7 +39955,7 @@ name: absent axon
 def: "Absence of axon." []
 synonym: "missing axon" EXACT []
 is_a: XPO:0100570 ! abnormal axon
-is_a: XPO:0124807 ! absent cell part
+is_a: XPO:0131500 ! absent neuron projection
 
 [Term]
 id: XPO:0125675
@@ -40823,10 +40665,10 @@ is_a: XPO:0124808 ! absent anatomical cluster
 
 [Term]
 id: XPO:0125767
-name: absent replacement element
-def: "Absence of replacement element." []
-synonym: "missing replacement element" EXACT []
-is_a: XPO:0100597 ! abnormal replacement element
+name: absent regenerating skeletal element
+def: "Absence of regenerating skeletal element." []
+synonym: "missing regenerating skeletal element" EXACT []
+is_a: XPO:0100597 ! abnormal regenerating skeletal element
 is_a: XPO:0124751 ! absent skeletal element
 
 [Term]
@@ -41285,14 +41127,6 @@ def: "Absence of vestibule." []
 synonym: "missing vestibule" EXACT []
 is_a: XPO:0101203 ! abnormal vestibule
 is_a: XPO:0124728 ! absent tissue
-
-[Term]
-id: XPO:0125828
-name: absent right part of brain
-def: "Absence of right part of brain." []
-synonym: "missing right part of brain" EXACT []
-is_a: XPO:0107336 ! abnormal right part of brain
-is_a: XPO:0124862 ! absent cavitated compound organ
 
 [Term]
 id: XPO:0125829
@@ -42856,7 +42690,7 @@ name: absent natural killer cell
 def: "Absence of natural killer cell." []
 synonym: "missing natural killer cell" EXACT []
 is_a: XPO:0100814 ! abnormal natural killer cell
-is_a: XPO:0125283 ! absent lymphocyte
+is_a: XPO:0125972 ! absent T cell
 
 [Term]
 id: XPO:0126027
@@ -42892,10 +42726,10 @@ is_a: XPO:0125109 ! absent epithelium
 
 [Term]
 id: XPO:0126031
-name: absent coracoid
-def: "Absence of coracoid." []
-synonym: "missing coracoid" EXACT []
-is_a: XPO:0100751 ! abnormal coracoid
+name: absent coracoid bone
+def: "Absence of coracoid bone." []
+synonym: "missing coracoid bone" EXACT []
+is_a: XPO:0100751 ! abnormal coracoid bone
 is_a: XPO:0124806 ! absent endochondral bone
 
 [Term]
@@ -43243,14 +43077,6 @@ is_a: XPO:0100280 ! abnormal dorsal fin skeleton
 is_a: XPO:0124922 ! absent median fin skeleton
 
 [Term]
-id: XPO:0126075
-name: absent left part of brain
-def: "Absence of left part of brain." []
-synonym: "missing left part of brain" EXACT []
-is_a: XPO:0107335 ! abnormal left part of brain
-is_a: XPO:0124862 ! absent cavitated compound organ
-
-[Term]
 id: XPO:0126076
 name: absent posterior cerebral vein
 def: "Absence of posterior cerebral vein." []
@@ -43540,14 +43366,6 @@ is_a: XPO:0100033 ! abnormal fundus
 is_a: XPO:0124721 ! absent multi-tissue structure
 
 [Term]
-id: XPO:0126112
-name: absent left forelimb
-def: "Absence of left forelimb." []
-synonym: "missing left forelimb" EXACT []
-is_a: XPO:0103277 ! absent forelimb
-is_a: XPO:0107329 ! abnormal left forelimb
-
-[Term]
 id: XPO:0126113
 name: absent hemangioblast
 def: "Absence of hemangioblast." []
@@ -43650,14 +43468,6 @@ def: "Absence of ventral blood island border." []
 synonym: "missing ventral blood island border" EXACT []
 is_a: XPO:0101524 ! abnormal ventral blood island border
 is_a: XPO:0124762 ! absent blood vessel
-
-[Term]
-id: XPO:0126126
-name: absent left part of branchial arch skeleton
-def: "Absence of left part of branchial arch skeleton." []
-synonym: "missing left part of branchial arch skeleton" EXACT []
-is_a: XPO:0107327 ! abnormal left part of branchial arch skeleton
-is_a: XPO:0124813 ! absent skeletal subdivision
 
 [Term]
 id: XPO:0126127
@@ -44749,14 +44559,6 @@ is_a: XPO:0100859 ! abnormal blastomere V1.1.2
 is_a: XPO:0125690 ! absent ventral animal hemisphere blastomere
 
 [Term]
-id: XPO:0126266
-name: absent right part of branchial arch skeleton
-def: "Absence of right part of branchial arch skeleton." []
-synonym: "missing right part of branchial arch skeleton" EXACT []
-is_a: XPO:0107328 ! abnormal right part of branchial arch skeleton
-is_a: XPO:0124813 ! absent skeletal subdivision
-
-[Term]
 id: XPO:0126267
 name: absent left omphalomesenteric vein
 def: "Absence of left omphalomesenteric vein." []
@@ -45778,7 +45580,7 @@ name: Abnormally localised endochondral element
 def: "An abnormally localised endochondral element." []
 synonym: "abnormal position of endochondral element" EXACT []
 is_a: XPO:0100124 ! abnormal endochondral element
-is_a: XPO:0127416 ! Abnormally localised replacement element
+is_a: XPO:0127416 ! Abnormally localised regenerating skeletal element
 
 [Term]
 id: XPO:0126440
@@ -46871,10 +46673,10 @@ is_a: XPO:0126318 ! Abnormally localised cell
 
 [Term]
 id: XPO:0126601
-name: Abnormally localised fused heart primordium
-def: "An abnormally localised fused heart primordium." []
-synonym: "abnormal position of fused heart primordium" EXACT []
-is_a: XPO:0100287 ! abnormal fused heart primordium
+name: Abnormally localised heart primordium
+def: "An abnormally localised heart primordium." []
+synonym: "abnormal position of heart primordium" EXACT []
+is_a: XPO:0100287 ! abnormal heart primordium
 is_a: XPO:0126614 ! Abnormally localised primordium
 
 [Term]
@@ -48492,7 +48294,7 @@ name: Abnormally localised cranial nerve
 def: "An abnormally localised cranial nerve." []
 synonym: "abnormal position of cranial nerve" EXACT []
 is_a: XPO:0100111 ! abnormal cranial nerve
-is_a: XPO:0126417 ! Abnormally localised nerve
+is_a: XPO:0131536 ! Abnormally localised cephalic nerve
 
 [Term]
 id: XPO:0126819
@@ -48887,7 +48689,7 @@ name: Abnormally localised adenohypophyseal placode
 def: "An abnormally localised adenohypophyseal placode." []
 synonym: "abnormal position of adenohypophyseal placode" EXACT []
 is_a: XPO:0100388 ! abnormal adenohypophyseal placode
-is_a: XPO:0126475 ! Abnormally localised neurogenic placode
+is_a: XPO:0131556 ! Abnormally localised non-neurogenic ectodermal placode
 
 [Term]
 id: XPO:0126870
@@ -49592,7 +49394,7 @@ name: Abnormally localised lens placode
 def: "An abnormally localised lens placode." []
 synonym: "abnormal position of lens placode" EXACT []
 is_a: XPO:0100479 ! abnormal lens placode
-is_a: XPO:0126475 ! Abnormally localised neurogenic placode
+is_a: XPO:0131556 ! Abnormally localised non-neurogenic ectodermal placode
 
 [Term]
 id: XPO:0126962
@@ -49682,14 +49484,6 @@ def: "An abnormally localised gut epithelium." []
 synonym: "abnormal position of gut epithelium" EXACT []
 is_a: XPO:0100986 ! abnormal gut epithelium
 is_a: XPO:0126732 ! Abnormally localised epithelium
-
-[Term]
-id: XPO:0126973
-name: Abnormally localised right forelimb
-def: "An abnormally localised right forelimb." []
-synonym: "abnormal position of right forelimb" EXACT []
-is_a: XPO:0107330 ! abnormal right forelimb
-is_a: XPO:0126652 ! Abnormally localised forelimb
 
 [Term]
 id: XPO:0126974
@@ -51692,7 +51486,7 @@ name: Abnormally localised dendrite
 def: "An abnormally localised dendrite." []
 synonym: "abnormal position of dendrite" EXACT []
 is_a: XPO:0101514 ! abnormal dendrite
-is_a: XPO:0126413 ! Abnormally localised cell part
+is_a: XPO:0131538 ! Abnormally localised neuron projection
 
 [Term]
 id: XPO:0127233
@@ -51757,14 +51551,6 @@ def: "An abnormally localised jaw muscle." []
 synonym: "abnormal position of jaw muscle" EXACT []
 is_a: XPO:0101457 ! abnormal jaw muscle
 is_a: XPO:0126353 ! Abnormally localised cranial muscle
-
-[Term]
-id: XPO:0127242
-name: Abnormally localised left olfactory pit
-def: "An abnormally localised left olfactory pit." []
-synonym: "abnormal position of left olfactory pit" EXACT []
-is_a: XPO:0107309 ! abnormal left olfactory pit
-is_a: XPO:0127208 ! Abnormally localised olfactory pit
 
 [Term]
 id: XPO:0127243
@@ -51975,14 +51761,6 @@ is_a: XPO:0101525 ! abnormal posterior vena cava
 is_a: XPO:0126365 ! Abnormally localised vein
 
 [Term]
-id: XPO:0127270
-name: Abnormally localised left hindlimb
-def: "An abnormally localised left hindlimb." []
-synonym: "abnormal position of left hindlimb" EXACT []
-is_a: XPO:0107331 ! abnormal left hindlimb
-is_a: XPO:0126979 ! Abnormally localised hindlimb
-
-[Term]
 id: XPO:0127271
 name: Abnormally localised optic nerve
 def: "An abnormally localised optic nerve." []
@@ -52135,14 +51913,6 @@ def: "An abnormally localised Eberth-Kastschenko layer." []
 synonym: "abnormal position of Eberth-Kastschenko layer" EXACT []
 is_a: XPO:0101313 ! abnormal Eberth-Kastschenko layer
 is_a: XPO:0126330 ! Abnormally localised tissue
-
-[Term]
-id: XPO:0127290
-name: Abnormally localised right hindlimb
-def: "An abnormally localised right hindlimb." []
-synonym: "abnormal position of right hindlimb" EXACT []
-is_a: XPO:0107332 ! abnormal right hindlimb
-is_a: XPO:0126979 ! Abnormally localised hindlimb
 
 [Term]
 id: XPO:0127291
@@ -52366,7 +52136,7 @@ name: Abnormally localised axon
 def: "An abnormally localised axon." []
 synonym: "abnormal position of axon" EXACT []
 is_a: XPO:0100570 ! abnormal axon
-is_a: XPO:0126413 ! Abnormally localised cell part
+is_a: XPO:0131538 ! Abnormally localised neuron projection
 
 [Term]
 id: XPO:0127319
@@ -52594,14 +52364,6 @@ is_a: XPO:0101332 ! abnormal left spleen primordium
 is_a: XPO:0126323 ! Abnormally localised multi-tissue structure
 
 [Term]
-id: XPO:0127348
-name: Abnormally localised right eye
-def: "An abnormally localised right eye." []
-synonym: "abnormal position of right eye" EXACT []
-is_a: XPO:0107314 ! abnormal right eye
-is_a: XPO:0126513 ! Abnormally localised eye
-
-[Term]
 id: XPO:0127349
 name: Abnormally localised neural groove
 def: "An abnormally localised neural groove." []
@@ -52690,28 +52452,12 @@ is_a: XPO:0100853 ! abnormal osseous labyrinth
 is_a: XPO:0126323 ! Abnormally localised multi-tissue structure
 
 [Term]
-id: XPO:0127360
-name: Abnormally localised right olfactory pit
-def: "An abnormally localised right olfactory pit." []
-synonym: "abnormal position of right olfactory pit" EXACT []
-is_a: XPO:0107310 ! abnormal right olfactory pit
-is_a: XPO:0127208 ! Abnormally localised olfactory pit
-
-[Term]
 id: XPO:0127361
 name: Abnormally localised blastomere V2.2.2
 def: "An abnormally localised blastomere V2.2.2." []
 synonym: "abnormal position of blastomere V2.2.2" EXACT []
 is_a: XPO:0101158 ! abnormal blastomere V2.2.2
 is_a: XPO:0126860 ! Abnormally localised ventral vegetal hemisphere blastomere
-
-[Term]
-id: XPO:0127362
-name: Abnormally localised left eye
-def: "An abnormally localised left eye." []
-synonym: "abnormal position of left eye" EXACT []
-is_a: XPO:0107313 ! abnormal left eye
-is_a: XPO:0126513 ! Abnormally localised eye
 
 [Term]
 id: XPO:0127363
@@ -53116,10 +52862,10 @@ is_a: XPO:0126414 ! Abnormally localised anatomical cluster
 
 [Term]
 id: XPO:0127416
-name: Abnormally localised replacement element
-def: "An abnormally localised replacement element." []
-synonym: "abnormal position of replacement element" EXACT []
-is_a: XPO:0100597 ! abnormal replacement element
+name: Abnormally localised regenerating skeletal element
+def: "An abnormally localised regenerating skeletal element." []
+synonym: "abnormal position of regenerating skeletal element" EXACT []
+is_a: XPO:0100597 ! abnormal regenerating skeletal element
 is_a: XPO:0126356 ! Abnormally localised skeletal element
 
 [Term]
@@ -53610,14 +53356,6 @@ def: "An abnormally localised vestibule." []
 synonym: "abnormal position of vestibule" EXACT []
 is_a: XPO:0101203 ! abnormal vestibule
 is_a: XPO:0126330 ! Abnormally localised tissue
-
-[Term]
-id: XPO:0127481
-name: Abnormally localised right part of brain
-def: "An abnormally localised right part of brain." []
-synonym: "abnormal position of right part of brain" EXACT []
-is_a: XPO:0107336 ! abnormal right part of brain
-is_a: XPO:0126471 ! Abnormally localised cavitated compound organ
 
 [Term]
 id: XPO:0127482
@@ -55096,14 +54834,6 @@ is_a: XPO:0101452 ! abnormal blastomere V1.1.1
 is_a: XPO:0127335 ! Abnormally localised ventral animal hemisphere blastomere
 
 [Term]
-id: XPO:0127669
-name: Abnormally localised left inner ear
-def: "An abnormally localised left inner ear." []
-synonym: "abnormal position of left inner ear" EXACT []
-is_a: XPO:0107315 ! abnormal left inner ear
-is_a: XPO:0126883 ! Abnormally localised inner ear
-
-[Term]
 id: XPO:0127670
 name: Abnormally localised lateral hypothalamic nucleus
 def: "An abnormally localised lateral hypothalamic nucleus." []
@@ -55229,7 +54959,7 @@ name: Abnormally localised natural killer cell
 def: "An abnormally localised natural killer cell." []
 synonym: "abnormal position of natural killer cell" EXACT []
 is_a: XPO:0100814 ! abnormal natural killer cell
-is_a: XPO:0126909 ! Abnormally localised lymphocyte
+is_a: XPO:0127627 ! Abnormally localised T cell
 
 [Term]
 id: XPO:0127686
@@ -55265,10 +54995,10 @@ is_a: XPO:0126732 ! Abnormally localised epithelium
 
 [Term]
 id: XPO:0127690
-name: Abnormally localised coracoid
-def: "An abnormally localised coracoid." []
-synonym: "abnormal position of coracoid" EXACT []
-is_a: XPO:0100751 ! abnormal coracoid
+name: Abnormally localised coracoid bone
+def: "An abnormally localised coracoid bone." []
+synonym: "abnormal position of coracoid bone" EXACT []
+is_a: XPO:0100751 ! abnormal coracoid bone
 is_a: XPO:0126412 ! Abnormally localised endochondral bone
 
 [Term]
@@ -55632,14 +55362,6 @@ is_a: XPO:0100280 ! abnormal dorsal fin skeleton
 is_a: XPO:0126536 ! Abnormally localised median fin skeleton
 
 [Term]
-id: XPO:0127736
-name: Abnormally localised left part of brain
-def: "An abnormally localised left part of brain." []
-synonym: "abnormal position of left part of brain" EXACT []
-is_a: XPO:0107335 ! abnormal left part of brain
-is_a: XPO:0126471 ! Abnormally localised cavitated compound organ
-
-[Term]
 id: XPO:0127737
 name: Abnormally localised posterior cerebral vein
 def: "An abnormally localised posterior cerebral vein." []
@@ -55929,14 +55651,6 @@ is_a: XPO:0100033 ! abnormal fundus
 is_a: XPO:0126323 ! Abnormally localised multi-tissue structure
 
 [Term]
-id: XPO:0127773
-name: Abnormally localised left forelimb
-def: "An abnormally localised left forelimb." []
-synonym: "abnormal position of left forelimb" EXACT []
-is_a: XPO:0107329 ! abnormal left forelimb
-is_a: XPO:0126652 ! Abnormally localised forelimb
-
-[Term]
 id: XPO:0127774
 name: Abnormally localised hemangioblast
 def: "An abnormally localised hemangioblast." []
@@ -56039,14 +55753,6 @@ def: "An abnormally localised ventral blood island border." []
 synonym: "abnormal position of ventral blood island border" EXACT []
 is_a: XPO:0101524 ! abnormal ventral blood island border
 is_a: XPO:0126368 ! Abnormally localised blood vessel
-
-[Term]
-id: XPO:0127787
-name: Abnormally localised left part of branchial arch skeleton
-def: "An abnormally localised left part of branchial arch skeleton." []
-synonym: "abnormal position of left part of branchial arch skeleton" EXACT []
-is_a: XPO:0107327 ! abnormal left part of branchial arch skeleton
-is_a: XPO:0126420 ! Abnormally localised skeletal subdivision
 
 [Term]
 id: XPO:0127788
@@ -57162,14 +56868,6 @@ is_a: XPO:0100859 ! abnormal blastomere V1.1.2
 is_a: XPO:0127335 ! Abnormally localised ventral animal hemisphere blastomere
 
 [Term]
-id: XPO:0127930
-name: Abnormally localised right part of branchial arch skeleton
-def: "An abnormally localised right part of branchial arch skeleton." []
-synonym: "abnormal position of right part of branchial arch skeleton" EXACT []
-is_a: XPO:0107328 ! abnormal right part of branchial arch skeleton
-is_a: XPO:0126420 ! Abnormally localised skeletal subdivision
-
-[Term]
 id: XPO:0127931
 name: Abnormally localised left omphalomesenteric vein
 def: "An abnormally localised left omphalomesenteric vein." []
@@ -57296,14 +56994,6 @@ def: "An abnormally localised Schwann cell." []
 synonym: "abnormal position of Schwann cell" EXACT []
 is_a: XPO:0101600 ! abnormal Schwann cell
 is_a: XPO:0126397 ! Abnormally localised glial cell
-
-[Term]
-id: XPO:0127947
-name: Abnormally localised right inner ear
-def: "An abnormally localised right inner ear." []
-synonym: "abnormal position of right inner ear" EXACT []
-is_a: XPO:0107316 ! abnormal right inner ear
-is_a: XPO:0126883 ! Abnormally localised inner ear
 
 [Term]
 id: XPO:0127948
@@ -57565,7 +57255,7 @@ is_a: XPO:0126580 ! Abnormally localised neural nucleus
 id: XPO:0128000
 name: absent behavior
 def: "Absence of behavior." []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0116494 ! absent biological process
 
 [Term]
 id: XPO:0128001
@@ -57911,14 +57601,6 @@ is_a: XPO:0101833 ! abnormal cavitated compound organ morphology
 is_a: XPO:0128114 ! decreased size of the compound organ
 
 [Term]
-id: XPO:0128044
-name: decreased size of the left part of brain
-def: "An abnormal reduction in the size of the left part of brain." []
-synonym: "abnormally small left part of brain" EXACT []
-is_a: XPO:0107422 ! abnormal left part of brain morphology
-is_a: XPO:0128043 ! decreased size of the cavitated compound organ
-
-[Term]
 id: XPO:0128045
 name: decreased size of the anatomical group
 def: "An abnormal reduction in the size of the anatomical group." []
@@ -58236,7 +57918,7 @@ name: decreased size of the endochondral element
 def: "An abnormal reduction in the size of the endochondral element." []
 synonym: "abnormally small endochondral element" EXACT []
 is_a: XPO:0101756 ! abnormal endochondral element morphology
-is_a: XPO:0128948 ! decreased size of the replacement element
+is_a: XPO:0128948 ! decreased size of the regenerating skeletal element
 
 [Term]
 id: XPO:0128085
@@ -58260,7 +57942,7 @@ name: decreased size of the adenohypophyseal placode
 def: "An abnormal reduction in the size of the adenohypophyseal placode." []
 synonym: "abnormally small adenohypophyseal placode" EXACT []
 is_a: XPO:0102020 ! abnormal adenohypophyseal placode morphology
-is_a: XPO:0128088 ! decreased size of the neurogenic placode
+is_a: XPO:0131594 ! decreased size of the non-neurogenic ectodermal placode
 
 [Term]
 id: XPO:0128088
@@ -59995,7 +59677,7 @@ name: decreased size of the lens placode
 def: "An abnormal reduction in the size of the lens placode." []
 synonym: "abnormally small lens placode" EXACT []
 is_a: XPO:0102111 ! abnormal lens placode morphology
-is_a: XPO:0128088 ! decreased size of the neurogenic placode
+is_a: XPO:0131594 ! decreased size of the non-neurogenic ectodermal placode
 
 [Term]
 id: XPO:0128305
@@ -60579,7 +60261,7 @@ name: decreased size of the cranial nerve
 def: "An abnormal reduction in the size of the cranial nerve." []
 synonym: "abnormally small cranial nerve" EXACT []
 is_a: XPO:0101743 ! abnormal cranial nerve morphology
-is_a: XPO:0128123 ! decreased size of the nerve
+is_a: XPO:0131574 ! decreased size of the cephalic nerve
 
 [Term]
 id: XPO:0128378
@@ -61103,14 +60785,6 @@ def: "An abnormal reduction in the size of the secondary heart field." []
 synonym: "abnormally small secondary heart field" EXACT []
 is_a: XPO:0102573 ! abnormal secondary heart field morphology
 is_a: XPO:0128003 ! decreased size of the tissue
-
-[Term]
-id: XPO:0128443
-name: decreased size of the right part of brain
-def: "An abnormal reduction in the size of the right part of brain." []
-synonym: "abnormally small right part of brain" EXACT []
-is_a: XPO:0107423 ! abnormal right part of brain morphology
-is_a: XPO:0128043 ! decreased size of the cavitated compound organ
 
 [Term]
 id: XPO:0128444
@@ -62097,14 +61771,6 @@ is_a: XPO:0102823 ! abnormal palatoquadrate morphology
 is_a: XPO:0128003 ! decreased size of the tissue
 
 [Term]
-id: XPO:0128567
-name: decreased size of the right hindlimb
-def: "An abnormal reduction in the size of the right hindlimb." []
-synonym: "abnormally small right hindlimb" EXACT []
-is_a: XPO:0103345 ! decreased size of the hindlimb
-is_a: XPO:0107419 ! abnormal right hindlimb morphology
-
-[Term]
 id: XPO:0128568
 name: decreased size of the optic disc
 def: "An abnormal reduction in the size of the optic disc." []
@@ -62344,14 +62010,6 @@ def: "An abnormal reduction in the size of the blastomere D2." []
 synonym: "abnormally small blastomere D2" EXACT []
 is_a: XPO:0102135 ! abnormal blastomere D2 morphology
 is_a: XPO:0128228 ! decreased size of the blastomere
-
-[Term]
-id: XPO:0128598
-name: decreased size of the right olfactory pit
-def: "An abnormal reduction in the size of the right olfactory pit." []
-synonym: "abnormally small right olfactory pit" EXACT []
-is_a: XPO:0107397 ! abnormal right olfactory pit morphology
-is_a: XPO:0128599 ! decreased size of the olfactory pit
 
 [Term]
 id: XPO:0128599
@@ -62896,14 +62554,6 @@ def: "An abnormal reduction in the size of the posterior neural tube." []
 synonym: "abnormally small posterior neural tube" EXACT []
 is_a: XPO:0102419 ! abnormal posterior neural tube morphology
 is_a: XPO:0128011 ! decreased size of the embryonic structure
-
-[Term]
-id: XPO:0128667
-name: decreased size of the left inner ear
-def: "An abnormal reduction in the size of the left inner ear." []
-synonym: "abnormally small left inner ear" EXACT []
-is_a: XPO:0107402 ! abnormal left inner ear morphology
-is_a: XPO:0128333 ! decreased size of the inner ear
 
 [Term]
 id: XPO:0128668
@@ -63851,14 +63501,6 @@ is_a: XPO:0102879 ! abnormal mesonephric early proximal tubule morphology
 is_a: XPO:0128195 ! decreased size of the mesonephric tubule
 
 [Term]
-id: XPO:0128786
-name: decreased size of the right forelimb
-def: "An abnormal reduction in the size of the right forelimb." []
-synonym: "abnormally small right forelimb" EXACT []
-is_a: XPO:0103340 ! decreased size of the forelimb
-is_a: XPO:0107417 ! abnormal right forelimb morphology
-
-[Term]
 id: XPO:0128787
 name: decreased size of the peripheral retina
 def: "An abnormal reduction in the size of the peripheral retina." []
@@ -63889,14 +63531,6 @@ def: "An abnormal reduction in the size of the myotome of trunk somite 1." []
 synonym: "abnormally small myotome of trunk somite 1" EXACT []
 is_a: XPO:0102303 ! abnormal myotome of trunk somite 1 morphology
 is_a: XPO:0103354 ! decreased size of the myotome
-
-[Term]
-id: XPO:0128791
-name: decreased size of the right inner ear
-def: "An abnormal reduction in the size of the right inner ear." []
-synonym: "abnormally small right inner ear" EXACT []
-is_a: XPO:0107403 ! abnormal right inner ear morphology
-is_a: XPO:0128333 ! decreased size of the inner ear
 
 [Term]
 id: XPO:0128792
@@ -65150,10 +64784,10 @@ is_a: XPO:0128068 ! decreased size of the anatomical cluster
 
 [Term]
 id: XPO:0128948
-name: decreased size of the replacement element
-def: "An abnormal reduction in the size of the replacement element." []
-synonym: "abnormally small replacement element" EXACT []
-is_a: XPO:0102229 ! abnormal replacement element morphology
+name: decreased size of the regenerating skeletal element
+def: "An abnormal reduction in the size of the regenerating skeletal element." []
+synonym: "abnormally small regenerating skeletal element" EXACT []
+is_a: XPO:0102229 ! abnormal regenerating skeletal element morphology
 is_a: XPO:0128025 ! decreased size of the skeletal element
 
 [Term]
@@ -65314,7 +64948,7 @@ name: decreased size of the axon
 def: "An abnormal reduction in the size of the axon." []
 synonym: "abnormally small axon" EXACT []
 is_a: XPO:0102202 ! abnormal axon morphology
-is_a: XPO:0128071 ! decreased size of the cell part
+is_a: XPO:0131576 ! decreased size of the neuron projection
 
 [Term]
 id: XPO:0128969
@@ -65394,7 +65028,7 @@ name: decreased size of the dendrite
 def: "An abnormal reduction in the size of the dendrite." []
 synonym: "abnormally small dendrite" EXACT []
 is_a: XPO:0103146 ! abnormal dendrite morphology
-is_a: XPO:0128071 ! decreased size of the cell part
+is_a: XPO:0131576 ! decreased size of the neuron projection
 
 [Term]
 id: XPO:0128979
@@ -65675,14 +65309,6 @@ def: "An abnormal reduction in the size of the posterior lateral line placode." 
 synonym: "abnormally small posterior lateral line placode" EXACT []
 is_a: XPO:0102930 ! abnormal posterior lateral line placode morphology
 is_a: XPO:0128117 ! decreased size of the lateral line placode
-
-[Term]
-id: XPO:0129014
-name: decreased size of the left olfactory pit
-def: "An abnormal reduction in the size of the left olfactory pit." []
-synonym: "abnormally small left olfactory pit" EXACT []
-is_a: XPO:0107396 ! abnormal left olfactory pit morphology
-is_a: XPO:0128599 ! decreased size of the olfactory pit
 
 [Term]
 id: XPO:0129015
@@ -66413,22 +66039,6 @@ is_a: XPO:0102964 ! abnormal left spleen primordium morphology
 is_a: XPO:0128008 ! decreased size of the multi-tissue structure
 
 [Term]
-id: XPO:0129106
-name: decreased size of the left forelimb
-def: "An abnormal reduction in the size of the left forelimb." []
-synonym: "abnormally small left forelimb" EXACT []
-is_a: XPO:0103340 ! decreased size of the forelimb
-is_a: XPO:0107416 ! abnormal left forelimb morphology
-
-[Term]
-id: XPO:0129107
-name: decreased size of the right eye
-def: "An abnormal reduction in the size of the right eye." []
-synonym: "abnormally small right eye" EXACT []
-is_a: XPO:0103336 ! decreased size of the eye
-is_a: XPO:0107401 ! abnormal right eye morphology
-
-[Term]
 id: XPO:0129108
 name: decreased size of the ventral funiculus
 def: "An abnormal reduction in the size of the ventral funiculus." []
@@ -66547,14 +66157,6 @@ def: "An abnormal reduction in the size of the dorsal involuting marginal zone."
 synonym: "abnormally small dorsal involuting marginal zone" EXACT []
 is_a: XPO:0102856 ! abnormal dorsal involuting marginal zone morphology
 is_a: XPO:0128455 ! decreased size of the marginal zone
-
-[Term]
-id: XPO:0129123
-name: decreased size of the left hindlimb
-def: "An abnormal reduction in the size of the left hindlimb." []
-synonym: "abnormally small left hindlimb" EXACT []
-is_a: XPO:0103345 ! decreased size of the hindlimb
-is_a: XPO:0107418 ! abnormal left hindlimb morphology
 
 [Term]
 id: XPO:0129124
@@ -68399,7 +68001,7 @@ id: XPO:0129353
 name: decreased size of the dorsal region
 def: "An abnormal reduction in the size of the dorsal region." []
 synonym: "abnormally small dorsal region" EXACT []
-is_a: XPO:0107363 ! obsolete abnormal morphology of dorsal region
+is_a: XPO:0107363 ! abnormal dorsal region morphology
 is_a: XPO:0128091 ! decreased size of the anatomical region
 
 [Term]
@@ -68616,7 +68218,7 @@ name: decreased size of the natural killer cell
 def: "An abnormal reduction in the size of the natural killer cell." []
 synonym: "abnormally small natural killer cell" EXACT []
 is_a: XPO:0102446 ! abnormal natural killer cell morphology
-is_a: XPO:0128396 ! decreased size of the lymphocyte
+is_a: XPO:0128395 ! decreased size of the T cell
 
 [Term]
 id: XPO:0129381
@@ -68713,14 +68315,6 @@ def: "An abnormal reduction in the size of the barrier epithelial cell." []
 synonym: "abnormally small barrier epithelial cell" EXACT []
 is_a: XPO:0102965 ! abnormal barrier epithelial cell morphology
 is_a: XPO:0128006 ! decreased size of the cell
-
-[Term]
-id: XPO:0129393
-name: decreased size of the left eye
-def: "An abnormal reduction in the size of the left eye." []
-synonym: "abnormally small left eye" EXACT []
-is_a: XPO:0103336 ! decreased size of the eye
-is_a: XPO:0107400 ! abnormal left eye morphology
 
 [Term]
 id: XPO:0129394
@@ -68933,10 +68527,10 @@ is_a: XPO:0128037 ! decreased size of the anatomical space
 
 [Term]
 id: XPO:0129420
-name: decreased size of the coracoid
-def: "An abnormal reduction in the size of the coracoid." []
-synonym: "abnormally small coracoid" EXACT []
-is_a: XPO:0102383 ! abnormal coracoid morphology
+name: decreased size of the coracoid bone
+def: "An abnormal reduction in the size of the coracoid bone." []
+synonym: "abnormally small coracoid bone" EXACT []
+is_a: XPO:0102383 ! abnormal coracoid bone morphology
 is_a: XPO:0128017 ! decreased size of the endochondral bone
 
 [Term]
@@ -69765,14 +69359,6 @@ is_a: XPO:0101833 ! abnormal cavitated compound organ morphology
 is_a: XPO:0129594 ! increased size of the compound organ
 
 [Term]
-id: XPO:0129524
-name: increased size of the left part of brain
-def: "An increase in the size of the left part of brain." []
-synonym: "enlarged left part of brain" EXACT []
-is_a: XPO:0107422 ! abnormal left part of brain morphology
-is_a: XPO:0129523 ! increased size of the cavitated compound organ
-
-[Term]
 id: XPO:0129525
 name: increased size of the anatomical group
 def: "An increase in the size of the anatomical group." []
@@ -70090,7 +69676,7 @@ name: increased size of the endochondral element
 def: "An increase in the size of the endochondral element." []
 synonym: "enlarged endochondral element" EXACT []
 is_a: XPO:0101756 ! abnormal endochondral element morphology
-is_a: XPO:0130426 ! increased size of the replacement element
+is_a: XPO:0130426 ! increased size of the regenerating skeletal element
 
 [Term]
 id: XPO:0129565
@@ -70114,7 +69700,7 @@ name: increased size of the adenohypophyseal placode
 def: "An increase in the size of the adenohypophyseal placode." []
 synonym: "enlarged adenohypophyseal placode" EXACT []
 is_a: XPO:0102020 ! abnormal adenohypophyseal placode morphology
-is_a: XPO:0129568 ! increased size of the neurogenic placode
+is_a: XPO:0131632 ! increased size of the non-neurogenic ectodermal placode
 
 [Term]
 id: XPO:0129568
@@ -71850,7 +71436,7 @@ name: increased size of the lens placode
 def: "An increase in the size of the lens placode." []
 synonym: "enlarged lens placode" EXACT []
 is_a: XPO:0102111 ! abnormal lens placode morphology
-is_a: XPO:0129568 ! increased size of the neurogenic placode
+is_a: XPO:0131632 ! increased size of the non-neurogenic ectodermal placode
 
 [Term]
 id: XPO:0129785
@@ -72434,7 +72020,7 @@ name: increased size of the cranial nerve
 def: "An increase in the size of the cranial nerve." []
 synonym: "enlarged cranial nerve" EXACT []
 is_a: XPO:0101743 ! abnormal cranial nerve morphology
-is_a: XPO:0129603 ! increased size of the nerve
+is_a: XPO:0131612 ! increased size of the cephalic nerve
 
 [Term]
 id: XPO:0129858
@@ -72958,14 +72544,6 @@ def: "An increase in the size of the secondary heart field." []
 synonym: "enlarged secondary heart field" EXACT []
 is_a: XPO:0102573 ! abnormal secondary heart field morphology
 is_a: XPO:0129483 ! increased size of the tissue
-
-[Term]
-id: XPO:0129923
-name: increased size of the right part of brain
-def: "An increase in the size of the right part of brain." []
-synonym: "enlarged right part of brain" EXACT []
-is_a: XPO:0107423 ! abnormal right part of brain morphology
-is_a: XPO:0129523 ! increased size of the cavitated compound organ
 
 [Term]
 id: XPO:0129924
@@ -73952,14 +73530,6 @@ is_a: XPO:0102823 ! abnormal palatoquadrate morphology
 is_a: XPO:0129483 ! increased size of the tissue
 
 [Term]
-id: XPO:0130047
-name: increased size of the right hindlimb
-def: "An increase in the size of the right hindlimb." []
-synonym: "enlarged right hindlimb" EXACT []
-is_a: XPO:0103383 ! increased size of the hindlimb
-is_a: XPO:0107419 ! abnormal right hindlimb morphology
-
-[Term]
 id: XPO:0130048
 name: increased size of the optic disc
 def: "An increase in the size of the optic disc." []
@@ -74199,14 +73769,6 @@ def: "An increase in the size of the blastomere D2." []
 synonym: "enlarged blastomere D2" EXACT []
 is_a: XPO:0102135 ! abnormal blastomere D2 morphology
 is_a: XPO:0129708 ! increased size of the blastomere
-
-[Term]
-id: XPO:0130078
-name: increased size of the right olfactory pit
-def: "An increase in the size of the right olfactory pit." []
-synonym: "enlarged right olfactory pit" EXACT []
-is_a: XPO:0107397 ! abnormal right olfactory pit morphology
-is_a: XPO:0130079 ! increased size of the olfactory pit
 
 [Term]
 id: XPO:0130079
@@ -74743,14 +74305,6 @@ def: "An increase in the size of the posterior neural tube." []
 synonym: "enlarged posterior neural tube" EXACT []
 is_a: XPO:0102419 ! abnormal posterior neural tube morphology
 is_a: XPO:0129491 ! increased size of the embryonic structure
-
-[Term]
-id: XPO:0130146
-name: increased size of the left inner ear
-def: "An increase in the size of the left inner ear." []
-synonym: "enlarged left inner ear" EXACT []
-is_a: XPO:0107402 ! abnormal left inner ear morphology
-is_a: XPO:0129813 ! increased size of the inner ear
 
 [Term]
 id: XPO:0130147
@@ -75690,14 +75244,6 @@ is_a: XPO:0102879 ! abnormal mesonephric early proximal tubule morphology
 is_a: XPO:0129675 ! increased size of the mesonephric tubule
 
 [Term]
-id: XPO:0130264
-name: increased size of the right forelimb
-def: "An increase in the size of the right forelimb." []
-synonym: "enlarged right forelimb" EXACT []
-is_a: XPO:0103377 ! increased size of the forelimb
-is_a: XPO:0107417 ! abnormal right forelimb morphology
-
-[Term]
 id: XPO:0130265
 name: increased size of the peripheral retina
 def: "An increase in the size of the peripheral retina." []
@@ -75728,14 +75274,6 @@ def: "An increase in the size of the myotome of trunk somite 1." []
 synonym: "enlarged myotome of trunk somite 1" EXACT []
 is_a: XPO:0102303 ! abnormal myotome of trunk somite 1 morphology
 is_a: XPO:0103386 ! increased size of the myotome
-
-[Term]
-id: XPO:0130269
-name: increased size of the right inner ear
-def: "An increase in the size of the right inner ear." []
-synonym: "enlarged right inner ear" EXACT []
-is_a: XPO:0107403 ! abnormal right inner ear morphology
-is_a: XPO:0129813 ! increased size of the inner ear
 
 [Term]
 id: XPO:0130270
@@ -76989,10 +76527,10 @@ is_a: XPO:0129548 ! increased size of the anatomical cluster
 
 [Term]
 id: XPO:0130426
-name: increased size of the replacement element
-def: "An increase in the size of the replacement element." []
-synonym: "enlarged replacement element" EXACT []
-is_a: XPO:0102229 ! abnormal replacement element morphology
+name: increased size of the regenerating skeletal element
+def: "An increase in the size of the regenerating skeletal element." []
+synonym: "enlarged regenerating skeletal element" EXACT []
+is_a: XPO:0102229 ! abnormal regenerating skeletal element morphology
 is_a: XPO:0129505 ! increased size of the skeletal element
 
 [Term]
@@ -77153,7 +76691,7 @@ name: increased size of the axon
 def: "An increase in the size of the axon." []
 synonym: "enlarged axon" EXACT []
 is_a: XPO:0102202 ! abnormal axon morphology
-is_a: XPO:0129551 ! increased size of the cell part
+is_a: XPO:0131614 ! increased size of the neuron projection
 
 [Term]
 id: XPO:0130447
@@ -77233,7 +76771,7 @@ name: increased size of the dendrite
 def: "An increase in the size of the dendrite." []
 synonym: "enlarged dendrite" EXACT []
 is_a: XPO:0103146 ! abnormal dendrite morphology
-is_a: XPO:0129551 ! increased size of the cell part
+is_a: XPO:0131614 ! increased size of the neuron projection
 
 [Term]
 id: XPO:0130457
@@ -77506,14 +77044,6 @@ def: "An increase in the size of the posterior lateral line placode." []
 synonym: "enlarged posterior lateral line placode" EXACT []
 is_a: XPO:0102930 ! abnormal posterior lateral line placode morphology
 is_a: XPO:0129597 ! increased size of the lateral line placode
-
-[Term]
-id: XPO:0130491
-name: increased size of the left olfactory pit
-def: "An increase in the size of the left olfactory pit." []
-synonym: "enlarged left olfactory pit" EXACT []
-is_a: XPO:0107396 ! abnormal left olfactory pit morphology
-is_a: XPO:0130079 ! increased size of the olfactory pit
 
 [Term]
 id: XPO:0130492
@@ -78244,14 +77774,6 @@ is_a: XPO:0102964 ! abnormal left spleen primordium morphology
 is_a: XPO:0129488 ! increased size of the multi-tissue structure
 
 [Term]
-id: XPO:0130583
-name: increased size of the left forelimb
-def: "An increase in the size of the left forelimb." []
-synonym: "enlarged left forelimb" EXACT []
-is_a: XPO:0103377 ! increased size of the forelimb
-is_a: XPO:0107416 ! abnormal left forelimb morphology
-
-[Term]
 id: XPO:0130584
 name: increased size of the ventral funiculus
 def: "An increase in the size of the ventral funiculus." []
@@ -78370,14 +77892,6 @@ def: "An increase in the size of the dorsal involuting marginal zone." []
 synonym: "enlarged dorsal involuting marginal zone" EXACT []
 is_a: XPO:0102856 ! abnormal dorsal involuting marginal zone morphology
 is_a: XPO:0129935 ! increased size of the marginal zone
-
-[Term]
-id: XPO:0130599
-name: increased size of the left hindlimb
-def: "An increase in the size of the left hindlimb." []
-synonym: "enlarged left hindlimb" EXACT []
-is_a: XPO:0103383 ! increased size of the hindlimb
-is_a: XPO:0107418 ! abnormal left hindlimb morphology
 
 [Term]
 id: XPO:0130600
@@ -80423,7 +79937,7 @@ name: increased size of the natural killer cell
 def: "An increase in the size of the natural killer cell." []
 synonym: "enlarged natural killer cell" EXACT []
 is_a: XPO:0102446 ! abnormal natural killer cell morphology
-is_a: XPO:0129876 ! increased size of the lymphocyte
+is_a: XPO:0129875 ! increased size of the T cell
 
 [Term]
 id: XPO:0130855
@@ -80740,10 +80254,10 @@ is_a: XPO:0129517 ! increased size of the anatomical space
 
 [Term]
 id: XPO:0130894
-name: increased size of the coracoid
-def: "An increase in the size of the coracoid." []
-synonym: "enlarged coracoid" EXACT []
-is_a: XPO:0102383 ! abnormal coracoid morphology
+name: increased size of the coracoid bone
+def: "An increase in the size of the coracoid bone." []
+synonym: "enlarged coracoid bone" EXACT []
+is_a: XPO:0102383 ! abnormal coracoid bone morphology
 is_a: XPO:0129497 ! increased size of the endochondral bone
 
 [Term]
@@ -81554,7 +81068,7 @@ name: Increased number of natural killer cell
 def: "The presence of an increased number of natural killer cell." []
 synonym: "Extra natural killer cell" EXACT []
 is_a: XPO:0100814 ! abnormal natural killer cell
-is_a: XPO:0130996 ! Increased number of lymphocyte
+is_a: XPO:0131013 ! Increased number of T cell
 
 [Term]
 id: XPO:0130996
@@ -83284,7 +82798,7 @@ name: Decreased number of natural killer cell
 def: "The presence of a reduced number of natural killer cell." []
 synonym: "Reduced number of natural killer cell" EXACT []
 is_a: XPO:0100814 ! abnormal natural killer cell
-is_a: XPO:0131212 ! Decreased number of lymphocyte
+is_a: XPO:0131229 ! Decreased number of T cell
 
 [Term]
 id: XPO:0131212
@@ -85512,6 +85026,1931 @@ synonym: "abnormally small cilium in esophagus" EXACT []
 is_a: XPO:0100797 ! abnormal esophagus
 is_a: XPO:0131494 ! decreased size of the cilium in the alimentary system
 
+[Term]
+id: XPO:0131497
+name: absent roof of mouth
+def: "Absence of roof of mouth." []
+synonym: "missing roof of mouth" EXACT []
+is_a: XPO:0124721 ! absent multi-tissue structure
+is_a: XPO:0131651 ! abnormal roof of mouth
+
+[Term]
+id: XPO:0131498
+name: absent cephalic nerve
+def: "Absence of cephalic nerve." []
+synonym: "missing cephalic nerve" EXACT []
+is_a: XPO:0124811 ! absent nerve
+is_a: XPO:0131652 ! abnormal cephalic nerve
+
+[Term]
+id: XPO:0131499
+name: absent atrioventricular valve
+def: "Absence of atrioventricular valve." []
+synonym: "missing atrioventricular valve" EXACT []
+is_a: XPO:0124728 ! absent tissue
+is_a: XPO:0131653 ! abnormal atrioventricular valve
+
+[Term]
+id: XPO:0131500
+name: absent neuron projection
+def: "Absence of neuron projection." []
+synonym: "missing neuron projection" EXACT []
+is_a: XPO:0124807 ! absent cell part
+is_a: XPO:0131654 ! abnormal neuron projection
+
+[Term]
+id: XPO:0131501
+name: absent myofibril
+def: "Absence of myofibril." []
+synonym: "missing myofibril" EXACT []
+is_a: XPO:0124807 ! absent cell part
+is_a: XPO:0131655 ! abnormal myofibril
+
+[Term]
+id: XPO:0131502
+name: absent periocular mesenchyme
+def: "Absence of periocular mesenchyme." []
+synonym: "missing periocular mesenchyme" EXACT []
+is_a: XPO:0126071 ! absent head mesenchyme
+is_a: XPO:0131656 ! abnormal periocular mesenchyme
+
+[Term]
+id: XPO:0131503
+name: absent ventral endomesoderm
+def: "Absence of ventral endomesoderm." []
+synonym: "missing ventral endomesoderm" EXACT []
+is_a: XPO:0124841 ! absent anatomical region
+is_a: XPO:0131657 ! abnormal ventral endomesoderm
+
+[Term]
+id: XPO:0131504
+name: absent ventral endoderm
+def: "Absence of ventral endoderm." []
+synonym: "missing ventral endoderm" EXACT []
+is_a: XPO:0124841 ! absent anatomical region
+is_a: XPO:0131658 ! abnormal ventral endoderm
+
+[Term]
+id: XPO:0131505
+name: absent dorsal endomesoderm
+def: "Absence of dorsal endomesoderm." []
+synonym: "missing dorsal endomesoderm" EXACT []
+is_a: XPO:0124841 ! absent anatomical region
+is_a: XPO:0131659 ! abnormal dorsal endomesoderm
+
+[Term]
+id: XPO:0131506
+name: absent sarcomere
+def: "Absence of sarcomere." []
+synonym: "missing sarcomere" EXACT []
+is_a: XPO:0124807 ! absent cell part
+is_a: XPO:0131660 ! abnormal sarcomere
+
+[Term]
+id: XPO:0131507
+name: absent tracheal epithelium
+def: "Absence of tracheal epithelium." []
+synonym: "missing tracheal epithelium" EXACT []
+is_a: XPO:0125109 ! absent epithelium
+is_a: XPO:0131661 ! abnormal tracheal epithelium
+
+[Term]
+id: XPO:0131508
+name: absent foregut epithelium
+def: "Absence of foregut epithelium." []
+synonym: "missing foregut epithelium" EXACT []
+is_a: XPO:0125342 ! absent gut epithelium
+is_a: XPO:0131662 ! abnormal foregut epithelium
+
+[Term]
+id: XPO:0131509
+name: absent pia mater
+def: "Absence of pia mater." []
+synonym: "missing pia mater" EXACT []
+is_a: XPO:0124728 ! absent tissue
+is_a: XPO:0131663 ! abnormal pia mater
+
+[Term]
+id: XPO:0131510
+name: absent jaw muscle primordium
+def: "Absence of jaw muscle primordium." []
+synonym: "missing jaw muscle primordium" EXACT []
+is_a: XPO:0124773 ! absent cranial muscle primordium
+is_a: XPO:0131664 ! abnormal jaw muscle primordium
+
+[Term]
+id: XPO:0131511
+name: absent retinal vein
+def: "Absence of retinal vein." []
+synonym: "missing retinal vein" EXACT []
+is_a: XPO:0124759 ! absent vein
+is_a: XPO:0131665 ! abnormal retinal vein
+
+[Term]
+id: XPO:0131512
+name: absent adherens junction
+def: "Absence of adherens junction." []
+synonym: "missing adherens junction" EXACT []
+is_a: XPO:0124807 ! absent cell part
+is_a: XPO:0131666 ! abnormal adherens junction
+
+[Term]
+id: XPO:0131513
+name: absent actin cytoskeleton
+def: "Absence of actin cytoskeleton." []
+synonym: "missing actin cytoskeleton" EXACT []
+is_a: XPO:0124807 ! absent cell part
+is_a: XPO:0131667 ! abnormal actin cytoskeleton
+
+[Term]
+id: XPO:0131514
+name: absent anterior endomesoderm
+def: "Absence of anterior endomesoderm." []
+synonym: "missing anterior endomesoderm" EXACT []
+is_a: XPO:0124841 ! absent anatomical region
+is_a: XPO:0131668 ! abnormal anterior endomesoderm
+
+[Term]
+id: XPO:0131515
+name: absent Roux spot
+def: "Absence of Roux spot." []
+synonym: "missing Roux spot" EXACT []
+is_a: XPO:0124807 ! absent cell part
+is_a: XPO:0131669 ! abnormal Roux spot
+
+[Term]
+id: XPO:0131516
+name: absent maxillary nerve
+def: "Absence of maxillary nerve." []
+synonym: "missing maxillary nerve" EXACT []
+is_a: XPO:0131498 ! absent cephalic nerve
+is_a: XPO:0131670 ! abnormal maxillary nerve
+
+[Term]
+id: XPO:0131517
+name: absent nasociliary nerve
+def: "Absence of nasociliary nerve." []
+synonym: "missing nasociliary nerve" EXACT []
+is_a: XPO:0131498 ! absent cephalic nerve
+is_a: XPO:0131671 ! abnormal nasociliary nerve
+
+[Term]
+id: XPO:0131518
+name: absent non-neurogenic ectodermal placode
+def: "Absence of non-neurogenic ectodermal placode." []
+synonym: "missing non-neurogenic ectodermal placode" EXACT []
+is_a: XPO:0125125 ! absent cranial placode
+is_a: XPO:0131672 ! abnormal non-neurogenic ectodermal placode
+
+[Term]
+id: XPO:0131519
+name: absent buccopharyngeal membrane
+def: "Absence of buccopharyngeal membrane." []
+synonym: "missing buccopharyngeal membrane" EXACT []
+is_a: XPO:0124772 ! absent embryonic structure
+is_a: XPO:0131673 ! abnormal buccopharyngeal membrane
+
+[Term]
+id: XPO:0131520
+name: absent pial cell
+def: "Absence of pial cell." []
+synonym: "missing pial cell" EXACT []
+is_a: XPO:0124716 ! absent cell
+is_a: XPO:0131674 ! abnormal pial cell
+
+[Term]
+id: XPO:0131521
+name: absent spindle microtubule
+def: "Absence of spindle microtubule." []
+synonym: "missing spindle microtubule" EXACT []
+is_a: XPO:0126214 ! absent microtubule
+is_a: XPO:0131675 ! abnormal spindle microtubule
+
+[Term]
+id: XPO:0131522
+name: absent prootic bone
+def: "Absence of prootic bone." []
+synonym: "missing prootic bone" EXACT []
+is_a: XPO:0124806 ! absent endochondral bone
+is_a: XPO:0131676 ! abnormal prootic bone
+
+[Term]
+id: XPO:0131523
+name: absent actin filament
+def: "Absence of actin filament." []
+synonym: "missing actin filament" EXACT []
+is_a: XPO:0124807 ! absent cell part
+is_a: XPO:0131677 ! abnormal actin filament
+
+[Term]
+id: XPO:0131524
+name: absent intercanthal region
+def: "Absence of intercanthal region." []
+synonym: "missing intercanthal region" EXACT []
+is_a: XPO:0124841 ! absent anatomical region
+is_a: XPO:0131678 ! abnormal intercanthal region
+
+[Term]
+id: XPO:0131525
+name: absent frontal nerve
+def: "Absence of frontal nerve." []
+synonym: "missing frontal nerve" EXACT []
+is_a: XPO:0131498 ! absent cephalic nerve
+is_a: XPO:0131679 ! abnormal frontal nerve
+
+[Term]
+id: XPO:0131526
+name: absent posterior endoderm
+def: "Absence of posterior endoderm." []
+synonym: "missing posterior endoderm" EXACT []
+is_a: XPO:0124841 ! absent anatomical region
+is_a: XPO:0131680 ! abnormal posterior endoderm
+
+[Term]
+id: XPO:0131527
+name: absent anterior endoderm
+def: "Absence of anterior endoderm." []
+synonym: "missing anterior endoderm" EXACT []
+is_a: XPO:0124841 ! absent anatomical region
+is_a: XPO:0131681 ! abnormal anterior endoderm
+
+[Term]
+id: XPO:0131528
+name: absent esophageal epithelium
+def: "Absence of esophageal epithelium." []
+synonym: "missing esophageal epithelium" EXACT []
+is_a: XPO:0125109 ! absent epithelium
+is_a: XPO:0131682 ! abnormal esophageal epithelium
+
+[Term]
+id: XPO:0131529
+name: absent stomach epithelium
+def: "Absence of stomach epithelium." []
+synonym: "missing stomach epithelium" EXACT []
+is_a: XPO:0125342 ! absent gut epithelium
+is_a: XPO:0131683 ! abnormal stomach epithelium
+
+[Term]
+id: XPO:0131530
+name: absent posterior endomesoderm
+def: "Absence of posterior endomesoderm." []
+synonym: "missing posterior endomesoderm" EXACT []
+is_a: XPO:0124841 ! absent anatomical region
+is_a: XPO:0131684 ! abnormal posterior endomesoderm
+
+[Term]
+id: XPO:0131531
+name: absent cortical actin cytoskeleton
+def: "Absence of cortical actin cytoskeleton." []
+synonym: "missing cortical actin cytoskeleton" EXACT []
+is_a: XPO:0124807 ! absent cell part
+is_a: XPO:0131685 ! abnormal cortical actin cytoskeleton
+
+[Term]
+id: XPO:0131532
+name: absent M band
+def: "Absence of M band." []
+synonym: "missing M band" EXACT []
+is_a: XPO:0124807 ! absent cell part
+is_a: XPO:0131686 ! abnormal M band
+
+[Term]
+id: XPO:0131533
+name: absent astral microtubule
+def: "Absence of astral microtubule." []
+synonym: "missing astral microtubule" EXACT []
+is_a: XPO:0131521 ! absent spindle microtubule
+is_a: XPO:0131687 ! abnormal astral microtubule
+
+[Term]
+id: XPO:0131534
+name: absent mandibular nerve
+def: "Absence of mandibular nerve." []
+synonym: "missing mandibular nerve" EXACT []
+is_a: XPO:0131498 ! absent cephalic nerve
+is_a: XPO:0131688 ! abnormal mandibular nerve
+
+[Term]
+id: XPO:0131535
+name: Abnormally localised roof of mouth
+def: "An abnormally localised roof of mouth." []
+synonym: "abnormal position of roof of mouth" EXACT []
+is_a: XPO:0126323 ! Abnormally localised multi-tissue structure
+is_a: XPO:0131651 ! abnormal roof of mouth
+
+[Term]
+id: XPO:0131536
+name: Abnormally localised cephalic nerve
+def: "An abnormally localised cephalic nerve." []
+synonym: "abnormal position of cephalic nerve" EXACT []
+is_a: XPO:0126417 ! Abnormally localised nerve
+is_a: XPO:0131652 ! abnormal cephalic nerve
+
+[Term]
+id: XPO:0131537
+name: Abnormally localised atrioventricular valve
+def: "An abnormally localised atrioventricular valve." []
+synonym: "abnormal position of atrioventricular valve" EXACT []
+is_a: XPO:0126330 ! Abnormally localised tissue
+is_a: XPO:0131653 ! abnormal atrioventricular valve
+
+[Term]
+id: XPO:0131538
+name: Abnormally localised neuron projection
+def: "An abnormally localised neuron projection." []
+synonym: "abnormal position of neuron projection" EXACT []
+is_a: XPO:0126413 ! Abnormally localised cell part
+is_a: XPO:0131654 ! abnormal neuron projection
+
+[Term]
+id: XPO:0131539
+name: Abnormally localised myofibril
+def: "An abnormally localised myofibril." []
+synonym: "abnormal position of myofibril" EXACT []
+is_a: XPO:0126413 ! Abnormally localised cell part
+is_a: XPO:0131655 ! abnormal myofibril
+
+[Term]
+id: XPO:0131540
+name: Abnormally localised periocular mesenchyme
+def: "An abnormally localised periocular mesenchyme." []
+synonym: "abnormal position of periocular mesenchyme" EXACT []
+is_a: XPO:0127732 ! Abnormally localised head mesenchyme
+is_a: XPO:0131656 ! abnormal periocular mesenchyme
+
+[Term]
+id: XPO:0131541
+name: Abnormally localised ventral endomesoderm
+def: "An abnormally localised ventral endomesoderm." []
+synonym: "abnormal position of ventral endomesoderm" EXACT []
+is_a: XPO:0126450 ! Abnormally localised anatomical region
+is_a: XPO:0131657 ! abnormal ventral endomesoderm
+
+[Term]
+id: XPO:0131542
+name: Abnormally localised ventral endoderm
+def: "An abnormally localised ventral endoderm." []
+synonym: "abnormal position of ventral endoderm" EXACT []
+is_a: XPO:0126450 ! Abnormally localised anatomical region
+is_a: XPO:0131658 ! abnormal ventral endoderm
+
+[Term]
+id: XPO:0131543
+name: Abnormally localised dorsal endomesoderm
+def: "An abnormally localised dorsal endomesoderm." []
+synonym: "abnormal position of dorsal endomesoderm" EXACT []
+is_a: XPO:0126450 ! Abnormally localised anatomical region
+is_a: XPO:0131659 ! abnormal dorsal endomesoderm
+
+[Term]
+id: XPO:0131544
+name: Abnormally localised sarcomere
+def: "An abnormally localised sarcomere." []
+synonym: "abnormal position of sarcomere" EXACT []
+is_a: XPO:0126413 ! Abnormally localised cell part
+is_a: XPO:0131660 ! abnormal sarcomere
+
+[Term]
+id: XPO:0131545
+name: Abnormally localised tracheal epithelium
+def: "An abnormally localised tracheal epithelium." []
+synonym: "abnormal position of tracheal epithelium" EXACT []
+is_a: XPO:0126732 ! Abnormally localised epithelium
+is_a: XPO:0131661 ! abnormal tracheal epithelium
+
+[Term]
+id: XPO:0131546
+name: Abnormally localised foregut epithelium
+def: "An abnormally localised foregut epithelium." []
+synonym: "abnormal position of foregut epithelium" EXACT []
+is_a: XPO:0126972 ! Abnormally localised gut epithelium
+is_a: XPO:0131662 ! abnormal foregut epithelium
+
+[Term]
+id: XPO:0131547
+name: Abnormally localised pia mater
+def: "An abnormally localised pia mater." []
+synonym: "abnormal position of pia mater" EXACT []
+is_a: XPO:0126330 ! Abnormally localised tissue
+is_a: XPO:0131663 ! abnormal pia mater
+
+[Term]
+id: XPO:0131548
+name: Abnormally localised jaw muscle primordium
+def: "An abnormally localised jaw muscle primordium." []
+synonym: "abnormal position of jaw muscle primordium" EXACT []
+is_a: XPO:0126379 ! Abnormally localised cranial muscle primordium
+is_a: XPO:0131664 ! abnormal jaw muscle primordium
+
+[Term]
+id: XPO:0131549
+name: Abnormally localised retinal vein
+def: "An abnormally localised retinal vein." []
+synonym: "abnormal position of retinal vein" EXACT []
+is_a: XPO:0126365 ! Abnormally localised vein
+is_a: XPO:0131665 ! abnormal retinal vein
+
+[Term]
+id: XPO:0131550
+name: Abnormally localised adherens junction
+def: "An abnormally localised adherens junction." []
+synonym: "abnormal position of adherens junction" EXACT []
+is_a: XPO:0126413 ! Abnormally localised cell part
+is_a: XPO:0131666 ! abnormal adherens junction
+
+[Term]
+id: XPO:0131551
+name: Abnormally localised actin cytoskeleton
+def: "An abnormally localised actin cytoskeleton." []
+synonym: "abnormal position of actin cytoskeleton" EXACT []
+is_a: XPO:0126413 ! Abnormally localised cell part
+is_a: XPO:0131667 ! abnormal actin cytoskeleton
+
+[Term]
+id: XPO:0131552
+name: Abnormally localised anterior endomesoderm
+def: "An abnormally localised anterior endomesoderm." []
+synonym: "abnormal position of anterior endomesoderm" EXACT []
+is_a: XPO:0126450 ! Abnormally localised anatomical region
+is_a: XPO:0131668 ! abnormal anterior endomesoderm
+
+[Term]
+id: XPO:0131553
+name: Abnormally localised Roux spot
+def: "An abnormally localised Roux spot." []
+synonym: "abnormal position of Roux spot" EXACT []
+is_a: XPO:0126413 ! Abnormally localised cell part
+is_a: XPO:0131669 ! abnormal Roux spot
+
+[Term]
+id: XPO:0131554
+name: Abnormally localised maxillary nerve
+def: "An abnormally localised maxillary nerve." []
+synonym: "abnormal position of maxillary nerve" EXACT []
+is_a: XPO:0131536 ! Abnormally localised cephalic nerve
+is_a: XPO:0131670 ! abnormal maxillary nerve
+
+[Term]
+id: XPO:0131555
+name: Abnormally localised nasociliary nerve
+def: "An abnormally localised nasociliary nerve." []
+synonym: "abnormal position of nasociliary nerve" EXACT []
+is_a: XPO:0131536 ! Abnormally localised cephalic nerve
+is_a: XPO:0131671 ! abnormal nasociliary nerve
+
+[Term]
+id: XPO:0131556
+name: Abnormally localised non-neurogenic ectodermal placode
+def: "An abnormally localised non-neurogenic ectodermal placode." []
+synonym: "abnormal position of non-neurogenic ectodermal placode" EXACT []
+is_a: XPO:0126748 ! Abnormally localised cranial placode
+is_a: XPO:0131672 ! abnormal non-neurogenic ectodermal placode
+
+[Term]
+id: XPO:0131557
+name: Abnormally localised buccopharyngeal membrane
+def: "An abnormally localised buccopharyngeal membrane." []
+synonym: "abnormal position of buccopharyngeal membrane" EXACT []
+is_a: XPO:0126378 ! Abnormally localised embryonic structure
+is_a: XPO:0131673 ! abnormal buccopharyngeal membrane
+
+[Term]
+id: XPO:0131558
+name: Abnormally localised pial cell
+def: "An abnormally localised pial cell." []
+synonym: "abnormal position of pial cell" EXACT []
+is_a: XPO:0126318 ! Abnormally localised cell
+is_a: XPO:0131674 ! abnormal pial cell
+
+[Term]
+id: XPO:0131559
+name: Abnormally localised spindle microtubule
+def: "An abnormally localised spindle microtubule." []
+synonym: "abnormal position of spindle microtubule" EXACT []
+is_a: XPO:0127876 ! Abnormally localised microtubule
+is_a: XPO:0131675 ! abnormal spindle microtubule
+
+[Term]
+id: XPO:0131560
+name: Abnormally localised prootic bone
+def: "An abnormally localised prootic bone." []
+synonym: "abnormal position of prootic bone" EXACT []
+is_a: XPO:0126412 ! Abnormally localised endochondral bone
+is_a: XPO:0131676 ! abnormal prootic bone
+
+[Term]
+id: XPO:0131561
+name: Abnormally localised actin filament
+def: "An abnormally localised actin filament." []
+synonym: "abnormal position of actin filament" EXACT []
+is_a: XPO:0126413 ! Abnormally localised cell part
+is_a: XPO:0131677 ! abnormal actin filament
+
+[Term]
+id: XPO:0131562
+name: Abnormally localised intercanthal region
+def: "An abnormally localised intercanthal region." []
+synonym: "abnormal position of intercanthal region" EXACT []
+is_a: XPO:0126450 ! Abnormally localised anatomical region
+is_a: XPO:0131678 ! abnormal intercanthal region
+
+[Term]
+id: XPO:0131563
+name: Abnormally localised frontal nerve
+def: "An abnormally localised frontal nerve." []
+synonym: "abnormal position of frontal nerve" EXACT []
+is_a: XPO:0131536 ! Abnormally localised cephalic nerve
+is_a: XPO:0131679 ! abnormal frontal nerve
+
+[Term]
+id: XPO:0131564
+name: Abnormally localised posterior endoderm
+def: "An abnormally localised posterior endoderm." []
+synonym: "abnormal position of posterior endoderm" EXACT []
+is_a: XPO:0126450 ! Abnormally localised anatomical region
+is_a: XPO:0131680 ! abnormal posterior endoderm
+
+[Term]
+id: XPO:0131565
+name: Abnormally localised anterior endoderm
+def: "An abnormally localised anterior endoderm." []
+synonym: "abnormal position of anterior endoderm" EXACT []
+is_a: XPO:0126450 ! Abnormally localised anatomical region
+is_a: XPO:0131681 ! abnormal anterior endoderm
+
+[Term]
+id: XPO:0131566
+name: Abnormally localised esophageal epithelium
+def: "An abnormally localised esophageal epithelium." []
+synonym: "abnormal position of esophageal epithelium" EXACT []
+is_a: XPO:0126732 ! Abnormally localised epithelium
+is_a: XPO:0131682 ! abnormal esophageal epithelium
+
+[Term]
+id: XPO:0131567
+name: Abnormally localised stomach epithelium
+def: "An abnormally localised stomach epithelium." []
+synonym: "abnormal position of stomach epithelium" EXACT []
+is_a: XPO:0126972 ! Abnormally localised gut epithelium
+is_a: XPO:0131683 ! abnormal stomach epithelium
+
+[Term]
+id: XPO:0131568
+name: Abnormally localised posterior endomesoderm
+def: "An abnormally localised posterior endomesoderm." []
+synonym: "abnormal position of posterior endomesoderm" EXACT []
+is_a: XPO:0126450 ! Abnormally localised anatomical region
+is_a: XPO:0131684 ! abnormal posterior endomesoderm
+
+[Term]
+id: XPO:0131569
+name: Abnormally localised cortical actin cytoskeleton
+def: "An abnormally localised cortical actin cytoskeleton." []
+synonym: "abnormal position of cortical actin cytoskeleton" EXACT []
+is_a: XPO:0126413 ! Abnormally localised cell part
+is_a: XPO:0131685 ! abnormal cortical actin cytoskeleton
+
+[Term]
+id: XPO:0131570
+name: Abnormally localised M band
+def: "An abnormally localised M band." []
+synonym: "abnormal position of M band" EXACT []
+is_a: XPO:0126413 ! Abnormally localised cell part
+is_a: XPO:0131686 ! abnormal M band
+
+[Term]
+id: XPO:0131571
+name: Abnormally localised astral microtubule
+def: "An abnormally localised astral microtubule." []
+synonym: "abnormal position of astral microtubule" EXACT []
+is_a: XPO:0131559 ! Abnormally localised spindle microtubule
+is_a: XPO:0131687 ! abnormal astral microtubule
+
+[Term]
+id: XPO:0131572
+name: Abnormally localised mandibular nerve
+def: "An abnormally localised mandibular nerve." []
+synonym: "abnormal position of mandibular nerve" EXACT []
+is_a: XPO:0131536 ! Abnormally localised cephalic nerve
+is_a: XPO:0131688 ! abnormal mandibular nerve
+
+[Term]
+id: XPO:0131573
+name: decreased size of the roof of mouth
+def: "An abnormal reduction in the size of the roof of mouth." []
+synonym: "abnormally small roof of mouth" EXACT []
+is_a: XPO:0128008 ! decreased size of the multi-tissue structure
+is_a: XPO:0131651 ! abnormal roof of mouth
+
+[Term]
+id: XPO:0131574
+name: decreased size of the cephalic nerve
+def: "An abnormal reduction in the size of the cephalic nerve." []
+synonym: "abnormally small cephalic nerve" EXACT []
+is_a: XPO:0128123 ! decreased size of the nerve
+is_a: XPO:0131652 ! abnormal cephalic nerve
+
+[Term]
+id: XPO:0131575
+name: decreased size of the atrioventricular valve
+def: "An abnormal reduction in the size of the atrioventricular valve." []
+synonym: "abnormally small atrioventricular valve" EXACT []
+is_a: XPO:0128003 ! decreased size of the tissue
+is_a: XPO:0131653 ! abnormal atrioventricular valve
+
+[Term]
+id: XPO:0131576
+name: decreased size of the neuron projection
+def: "An abnormal reduction in the size of the neuron projection." []
+synonym: "abnormally small neuron projection" EXACT []
+is_a: XPO:0128071 ! decreased size of the cell part
+is_a: XPO:0131654 ! abnormal neuron projection
+
+[Term]
+id: XPO:0131577
+name: decreased size of the myofibril
+def: "An abnormal reduction in the size of the myofibril." []
+synonym: "abnormally small myofibril" EXACT []
+is_a: XPO:0128071 ! decreased size of the cell part
+is_a: XPO:0131655 ! abnormal myofibril
+
+[Term]
+id: XPO:0131578
+name: decreased size of the periocular mesenchyme
+def: "An abnormal reduction in the size of the periocular mesenchyme." []
+synonym: "abnormally small periocular mesenchyme" EXACT []
+is_a: XPO:0103435 ! decreased size of the head mesenchyme
+is_a: XPO:0131656 ! abnormal periocular mesenchyme
+
+[Term]
+id: XPO:0131579
+name: decreased size of the ventral endomesoderm
+def: "An abnormal reduction in the size of the ventral endomesoderm." []
+synonym: "abnormally small ventral endomesoderm" EXACT []
+is_a: XPO:0128091 ! decreased size of the anatomical region
+is_a: XPO:0131657 ! abnormal ventral endomesoderm
+
+[Term]
+id: XPO:0131580
+name: decreased size of the ventral endoderm
+def: "An abnormal reduction in the size of the ventral endoderm." []
+synonym: "abnormally small ventral endoderm" EXACT []
+is_a: XPO:0128091 ! decreased size of the anatomical region
+is_a: XPO:0131658 ! abnormal ventral endoderm
+
+[Term]
+id: XPO:0131581
+name: decreased size of the dorsal endomesoderm
+def: "An abnormal reduction in the size of the dorsal endomesoderm." []
+synonym: "abnormally small dorsal endomesoderm" EXACT []
+is_a: XPO:0128091 ! decreased size of the anatomical region
+is_a: XPO:0131659 ! abnormal dorsal endomesoderm
+
+[Term]
+id: XPO:0131582
+name: decreased size of the sarcomere
+def: "An abnormal reduction in the size of the sarcomere." []
+synonym: "abnormally small sarcomere" EXACT []
+is_a: XPO:0128071 ! decreased size of the cell part
+is_a: XPO:0131660 ! abnormal sarcomere
+
+[Term]
+id: XPO:0131583
+name: decreased size of the tracheal epithelium
+def: "An abnormal reduction in the size of the tracheal epithelium." []
+synonym: "abnormally small tracheal epithelium" EXACT []
+is_a: XPO:0128263 ! decreased size of the epithelium
+is_a: XPO:0131661 ! abnormal tracheal epithelium
+
+[Term]
+id: XPO:0131584
+name: decreased size of the foregut epithelium
+def: "An abnormal reduction in the size of the foregut epithelium." []
+synonym: "abnormally small foregut epithelium" EXACT []
+is_a: XPO:0128872 ! decreased size of the gut epithelium
+is_a: XPO:0131662 ! abnormal foregut epithelium
+
+[Term]
+id: XPO:0131585
+name: decreased size of the pia mater
+def: "An abnormal reduction in the size of the pia mater." []
+synonym: "abnormally small pia mater" EXACT []
+is_a: XPO:0128003 ! decreased size of the tissue
+is_a: XPO:0131663 ! abnormal pia mater
+
+[Term]
+id: XPO:0131586
+name: decreased size of the jaw muscle primordium
+def: "An abnormal reduction in the size of the jaw muscle primordium." []
+synonym: "abnormally small jaw muscle primordium" EXACT []
+is_a: XPO:0128145 ! decreased size of the cranial muscle primordium
+is_a: XPO:0131664 ! abnormal jaw muscle primordium
+
+[Term]
+id: XPO:0131587
+name: decreased size of the retinal vein
+def: "An abnormal reduction in the size of the retinal vein." []
+synonym: "abnormally small retinal vein" EXACT []
+is_a: XPO:0128028 ! decreased size of the vein
+is_a: XPO:0131665 ! abnormal retinal vein
+
+[Term]
+id: XPO:0131588
+name: decreased size of the adherens junction
+def: "An abnormal reduction in the size of the adherens junction." []
+synonym: "abnormally small adherens junction" EXACT []
+is_a: XPO:0128071 ! decreased size of the cell part
+is_a: XPO:0131666 ! abnormal adherens junction
+
+[Term]
+id: XPO:0131589
+name: decreased size of the actin cytoskeleton
+def: "An abnormal reduction in the size of the actin cytoskeleton." []
+synonym: "abnormally small actin cytoskeleton" EXACT []
+is_a: XPO:0128071 ! decreased size of the cell part
+is_a: XPO:0131667 ! abnormal actin cytoskeleton
+
+[Term]
+id: XPO:0131590
+name: decreased size of the anterior endomesoderm
+def: "An abnormal reduction in the size of the anterior endomesoderm." []
+synonym: "abnormally small anterior endomesoderm" EXACT []
+is_a: XPO:0128091 ! decreased size of the anatomical region
+is_a: XPO:0131668 ! abnormal anterior endomesoderm
+
+[Term]
+id: XPO:0131591
+name: decreased size of the Roux spot
+def: "An abnormal reduction in the size of the Roux spot." []
+synonym: "abnormally small Roux spot" EXACT []
+is_a: XPO:0128071 ! decreased size of the cell part
+is_a: XPO:0131669 ! abnormal Roux spot
+
+[Term]
+id: XPO:0131592
+name: decreased size of the maxillary nerve
+def: "An abnormal reduction in the size of the maxillary nerve." []
+synonym: "abnormally small maxillary nerve" EXACT []
+is_a: XPO:0131574 ! decreased size of the cephalic nerve
+is_a: XPO:0131670 ! abnormal maxillary nerve
+
+[Term]
+id: XPO:0131593
+name: decreased size of the nasociliary nerve
+def: "An abnormal reduction in the size of the nasociliary nerve." []
+synonym: "abnormally small nasociliary nerve" EXACT []
+is_a: XPO:0131574 ! decreased size of the cephalic nerve
+is_a: XPO:0131671 ! abnormal nasociliary nerve
+
+[Term]
+id: XPO:0131594
+name: decreased size of the non-neurogenic ectodermal placode
+def: "An abnormal reduction in the size of the non-neurogenic ectodermal placode." []
+synonym: "abnormally small non-neurogenic ectodermal placode" EXACT []
+is_a: XPO:0128256 ! decreased size of the cranial placode
+is_a: XPO:0131672 ! abnormal non-neurogenic ectodermal placode
+
+[Term]
+id: XPO:0131595
+name: decreased size of the buccopharyngeal membrane
+def: "An abnormal reduction in the size of the buccopharyngeal membrane." []
+synonym: "abnormally small buccopharyngeal membrane" EXACT []
+is_a: XPO:0128011 ! decreased size of the embryonic structure
+is_a: XPO:0131673 ! abnormal buccopharyngeal membrane
+
+[Term]
+id: XPO:0131596
+name: decreased size of the pial cell
+def: "An abnormal reduction in the size of the pial cell." []
+synonym: "abnormally small pial cell" EXACT []
+is_a: XPO:0128006 ! decreased size of the cell
+is_a: XPO:0131674 ! abnormal pial cell
+
+[Term]
+id: XPO:0131597
+name: decreased size of the spindle microtubule
+def: "An abnormal reduction in the size of the spindle microtubule." []
+synonym: "abnormally small spindle microtubule" EXACT []
+is_a: XPO:0129425 ! decreased size of the microtubule
+is_a: XPO:0131675 ! abnormal spindle microtubule
+
+[Term]
+id: XPO:0131598
+name: decreased size of the prootic bone
+def: "An abnormal reduction in the size of the prootic bone." []
+synonym: "abnormally small prootic bone" EXACT []
+is_a: XPO:0128017 ! decreased size of the endochondral bone
+is_a: XPO:0131676 ! abnormal prootic bone
+
+[Term]
+id: XPO:0131599
+name: decreased size of the actin filament
+def: "An abnormal reduction in the size of the actin filament." []
+synonym: "abnormally small actin filament" EXACT []
+is_a: XPO:0128071 ! decreased size of the cell part
+is_a: XPO:0131677 ! abnormal actin filament
+
+[Term]
+id: XPO:0131600
+name: decreased size of the intercanthal region
+def: "An abnormal reduction in the size of the intercanthal region." []
+synonym: "abnormally small intercanthal region" EXACT []
+is_a: XPO:0128091 ! decreased size of the anatomical region
+is_a: XPO:0131678 ! abnormal intercanthal region
+
+[Term]
+id: XPO:0131601
+name: decreased size of the frontal nerve
+def: "An abnormal reduction in the size of the frontal nerve." []
+synonym: "abnormally small frontal nerve" EXACT []
+is_a: XPO:0131574 ! decreased size of the cephalic nerve
+is_a: XPO:0131679 ! abnormal frontal nerve
+
+[Term]
+id: XPO:0131602
+name: decreased size of the posterior endoderm
+def: "An abnormal reduction in the size of the posterior endoderm." []
+synonym: "abnormally small posterior endoderm" EXACT []
+is_a: XPO:0128091 ! decreased size of the anatomical region
+is_a: XPO:0131680 ! abnormal posterior endoderm
+
+[Term]
+id: XPO:0131603
+name: decreased size of the anterior endoderm
+def: "An abnormal reduction in the size of the anterior endoderm." []
+synonym: "abnormally small anterior endoderm" EXACT []
+is_a: XPO:0128091 ! decreased size of the anatomical region
+is_a: XPO:0131681 ! abnormal anterior endoderm
+
+[Term]
+id: XPO:0131604
+name: decreased size of the esophageal epithelium
+def: "An abnormal reduction in the size of the esophageal epithelium." []
+synonym: "abnormally small esophageal epithelium" EXACT []
+is_a: XPO:0128263 ! decreased size of the epithelium
+is_a: XPO:0131682 ! abnormal esophageal epithelium
+
+[Term]
+id: XPO:0131605
+name: decreased size of the stomach epithelium
+def: "An abnormal reduction in the size of the stomach epithelium." []
+synonym: "abnormally small stomach epithelium" EXACT []
+is_a: XPO:0128872 ! decreased size of the gut epithelium
+is_a: XPO:0131683 ! abnormal stomach epithelium
+
+[Term]
+id: XPO:0131606
+name: decreased size of the posterior endomesoderm
+def: "An abnormal reduction in the size of the posterior endomesoderm." []
+synonym: "abnormally small posterior endomesoderm" EXACT []
+is_a: XPO:0128091 ! decreased size of the anatomical region
+is_a: XPO:0131684 ! abnormal posterior endomesoderm
+
+[Term]
+id: XPO:0131607
+name: decreased size of the cortical actin cytoskeleton
+def: "An abnormal reduction in the size of the cortical actin cytoskeleton." []
+synonym: "abnormally small cortical actin cytoskeleton" EXACT []
+is_a: XPO:0128071 ! decreased size of the cell part
+is_a: XPO:0131685 ! abnormal cortical actin cytoskeleton
+
+[Term]
+id: XPO:0131608
+name: decreased size of the M band
+def: "An abnormal reduction in the size of the M band." []
+synonym: "abnormally small M band" EXACT []
+is_a: XPO:0128071 ! decreased size of the cell part
+is_a: XPO:0131686 ! abnormal M band
+
+[Term]
+id: XPO:0131609
+name: decreased size of the astral microtubule
+def: "An abnormal reduction in the size of the astral microtubule." []
+synonym: "abnormally small astral microtubule" EXACT []
+is_a: XPO:0131597 ! decreased size of the spindle microtubule
+is_a: XPO:0131687 ! abnormal astral microtubule
+
+[Term]
+id: XPO:0131610
+name: decreased size of the mandibular nerve
+def: "An abnormal reduction in the size of the mandibular nerve." []
+synonym: "abnormally small mandibular nerve" EXACT []
+is_a: XPO:0131574 ! decreased size of the cephalic nerve
+is_a: XPO:0131688 ! abnormal mandibular nerve
+
+[Term]
+id: XPO:0131611
+name: increased size of the roof of mouth
+def: "An increase in the size of the roof of mouth." []
+synonym: "enlarged roof of mouth" EXACT []
+is_a: XPO:0129488 ! increased size of the multi-tissue structure
+is_a: XPO:0131651 ! abnormal roof of mouth
+
+[Term]
+id: XPO:0131612
+name: increased size of the cephalic nerve
+def: "An increase in the size of the cephalic nerve." []
+synonym: "enlarged cephalic nerve" EXACT []
+is_a: XPO:0129603 ! increased size of the nerve
+is_a: XPO:0131652 ! abnormal cephalic nerve
+
+[Term]
+id: XPO:0131613
+name: increased size of the atrioventricular valve
+def: "An increase in the size of the atrioventricular valve." []
+synonym: "enlarged atrioventricular valve" EXACT []
+is_a: XPO:0129483 ! increased size of the tissue
+is_a: XPO:0131653 ! abnormal atrioventricular valve
+
+[Term]
+id: XPO:0131614
+name: increased size of the neuron projection
+def: "An increase in the size of the neuron projection." []
+synonym: "enlarged neuron projection" EXACT []
+is_a: XPO:0129551 ! increased size of the cell part
+is_a: XPO:0131654 ! abnormal neuron projection
+
+[Term]
+id: XPO:0131615
+name: increased size of the myofibril
+def: "An increase in the size of the myofibril." []
+synonym: "enlarged myofibril" EXACT []
+is_a: XPO:0129551 ! increased size of the cell part
+is_a: XPO:0131655 ! abnormal myofibril
+
+[Term]
+id: XPO:0131616
+name: increased size of the periocular mesenchyme
+def: "An increase in the size of the periocular mesenchyme." []
+synonym: "enlarged periocular mesenchyme" EXACT []
+is_a: XPO:0103758 ! increased size of the head mesenchyme
+is_a: XPO:0131656 ! abnormal periocular mesenchyme
+
+[Term]
+id: XPO:0131617
+name: increased size of the ventral endomesoderm
+def: "An increase in the size of the ventral endomesoderm." []
+synonym: "enlarged ventral endomesoderm" EXACT []
+is_a: XPO:0129571 ! increased size of the anatomical region
+is_a: XPO:0131657 ! abnormal ventral endomesoderm
+
+[Term]
+id: XPO:0131618
+name: increased size of the ventral endoderm
+def: "An increase in the size of the ventral endoderm." []
+synonym: "enlarged ventral endoderm" EXACT []
+is_a: XPO:0129571 ! increased size of the anatomical region
+is_a: XPO:0131658 ! abnormal ventral endoderm
+
+[Term]
+id: XPO:0131619
+name: increased size of the dorsal endomesoderm
+def: "An increase in the size of the dorsal endomesoderm." []
+synonym: "enlarged dorsal endomesoderm" EXACT []
+is_a: XPO:0129571 ! increased size of the anatomical region
+is_a: XPO:0131659 ! abnormal dorsal endomesoderm
+
+[Term]
+id: XPO:0131620
+name: increased size of the sarcomere
+def: "An increase in the size of the sarcomere." []
+synonym: "enlarged sarcomere" EXACT []
+is_a: XPO:0129551 ! increased size of the cell part
+is_a: XPO:0131660 ! abnormal sarcomere
+
+[Term]
+id: XPO:0131621
+name: increased size of the tracheal epithelium
+def: "An increase in the size of the tracheal epithelium." []
+synonym: "enlarged tracheal epithelium" EXACT []
+is_a: XPO:0129743 ! increased size of the epithelium
+is_a: XPO:0131661 ! abnormal tracheal epithelium
+
+[Term]
+id: XPO:0131622
+name: increased size of the foregut epithelium
+def: "An increase in the size of the foregut epithelium." []
+synonym: "enlarged foregut epithelium" EXACT []
+is_a: XPO:0130350 ! increased size of the gut epithelium
+is_a: XPO:0131662 ! abnormal foregut epithelium
+
+[Term]
+id: XPO:0131623
+name: increased size of the pia mater
+def: "An increase in the size of the pia mater." []
+synonym: "enlarged pia mater" EXACT []
+is_a: XPO:0129483 ! increased size of the tissue
+is_a: XPO:0131663 ! abnormal pia mater
+
+[Term]
+id: XPO:0131624
+name: increased size of the jaw muscle primordium
+def: "An increase in the size of the jaw muscle primordium." []
+synonym: "enlarged jaw muscle primordium" EXACT []
+is_a: XPO:0129625 ! increased size of the cranial muscle primordium
+is_a: XPO:0131664 ! abnormal jaw muscle primordium
+
+[Term]
+id: XPO:0131625
+name: increased size of the retinal vein
+def: "An increase in the size of the retinal vein." []
+synonym: "enlarged retinal vein" EXACT []
+is_a: XPO:0129508 ! increased size of the vein
+is_a: XPO:0131665 ! abnormal retinal vein
+
+[Term]
+id: XPO:0131626
+name: increased size of the adherens junction
+def: "An increase in the size of the adherens junction." []
+synonym: "enlarged adherens junction" EXACT []
+is_a: XPO:0129551 ! increased size of the cell part
+is_a: XPO:0131666 ! abnormal adherens junction
+
+[Term]
+id: XPO:0131627
+name: increased size of the actin cytoskeleton
+def: "An increase in the size of the actin cytoskeleton." []
+synonym: "enlarged actin cytoskeleton" EXACT []
+is_a: XPO:0129551 ! increased size of the cell part
+is_a: XPO:0131667 ! abnormal actin cytoskeleton
+
+[Term]
+id: XPO:0131628
+name: increased size of the anterior endomesoderm
+def: "An increase in the size of the anterior endomesoderm." []
+synonym: "enlarged anterior endomesoderm" EXACT []
+is_a: XPO:0129571 ! increased size of the anatomical region
+is_a: XPO:0131668 ! abnormal anterior endomesoderm
+
+[Term]
+id: XPO:0131629
+name: increased size of the Roux spot
+def: "An increase in the size of the Roux spot." []
+synonym: "enlarged Roux spot" EXACT []
+is_a: XPO:0129551 ! increased size of the cell part
+is_a: XPO:0131669 ! abnormal Roux spot
+
+[Term]
+id: XPO:0131630
+name: increased size of the maxillary nerve
+def: "An increase in the size of the maxillary nerve." []
+synonym: "enlarged maxillary nerve" EXACT []
+is_a: XPO:0131612 ! increased size of the cephalic nerve
+is_a: XPO:0131670 ! abnormal maxillary nerve
+
+[Term]
+id: XPO:0131631
+name: increased size of the nasociliary nerve
+def: "An increase in the size of the nasociliary nerve." []
+synonym: "enlarged nasociliary nerve" EXACT []
+is_a: XPO:0131612 ! increased size of the cephalic nerve
+is_a: XPO:0131671 ! abnormal nasociliary nerve
+
+[Term]
+id: XPO:0131632
+name: increased size of the non-neurogenic ectodermal placode
+def: "An increase in the size of the non-neurogenic ectodermal placode." []
+synonym: "enlarged non-neurogenic ectodermal placode" EXACT []
+is_a: XPO:0129736 ! increased size of the cranial placode
+is_a: XPO:0131672 ! abnormal non-neurogenic ectodermal placode
+
+[Term]
+id: XPO:0131633
+name: increased size of the buccopharyngeal membrane
+def: "An increase in the size of the buccopharyngeal membrane." []
+synonym: "enlarged buccopharyngeal membrane" EXACT []
+is_a: XPO:0129491 ! increased size of the embryonic structure
+is_a: XPO:0131673 ! abnormal buccopharyngeal membrane
+
+[Term]
+id: XPO:0131634
+name: increased size of the pial cell
+def: "An increase in the size of the pial cell." []
+synonym: "enlarged pial cell" EXACT []
+is_a: XPO:0129486 ! increased size of the cell
+is_a: XPO:0131674 ! abnormal pial cell
+
+[Term]
+id: XPO:0131635
+name: increased size of the spindle microtubule
+def: "An increase in the size of the spindle microtubule." []
+synonym: "enlarged spindle microtubule" EXACT []
+is_a: XPO:0130899 ! increased size of the microtubule
+is_a: XPO:0131675 ! abnormal spindle microtubule
+
+[Term]
+id: XPO:0131636
+name: increased size of the prootic bone
+def: "An increase in the size of the prootic bone." []
+synonym: "enlarged prootic bone" EXACT []
+is_a: XPO:0129497 ! increased size of the endochondral bone
+is_a: XPO:0131676 ! abnormal prootic bone
+
+[Term]
+id: XPO:0131637
+name: increased size of the actin filament
+def: "An increase in the size of the actin filament." []
+synonym: "enlarged actin filament" EXACT []
+is_a: XPO:0129551 ! increased size of the cell part
+is_a: XPO:0131677 ! abnormal actin filament
+
+[Term]
+id: XPO:0131638
+name: increased size of the intercanthal region
+def: "An increase in the size of the intercanthal region." []
+synonym: "enlarged intercanthal region" EXACT []
+is_a: XPO:0129571 ! increased size of the anatomical region
+is_a: XPO:0131678 ! abnormal intercanthal region
+
+[Term]
+id: XPO:0131639
+name: increased size of the frontal nerve
+def: "An increase in the size of the frontal nerve." []
+synonym: "enlarged frontal nerve" EXACT []
+is_a: XPO:0131612 ! increased size of the cephalic nerve
+is_a: XPO:0131679 ! abnormal frontal nerve
+
+[Term]
+id: XPO:0131640
+name: increased size of the posterior endoderm
+def: "An increase in the size of the posterior endoderm." []
+synonym: "enlarged posterior endoderm" EXACT []
+is_a: XPO:0129571 ! increased size of the anatomical region
+is_a: XPO:0131680 ! abnormal posterior endoderm
+
+[Term]
+id: XPO:0131641
+name: increased size of the anterior endoderm
+def: "An increase in the size of the anterior endoderm." []
+synonym: "enlarged anterior endoderm" EXACT []
+is_a: XPO:0129571 ! increased size of the anatomical region
+is_a: XPO:0131681 ! abnormal anterior endoderm
+
+[Term]
+id: XPO:0131642
+name: increased size of the esophageal epithelium
+def: "An increase in the size of the esophageal epithelium." []
+synonym: "enlarged esophageal epithelium" EXACT []
+is_a: XPO:0129743 ! increased size of the epithelium
+is_a: XPO:0131682 ! abnormal esophageal epithelium
+
+[Term]
+id: XPO:0131643
+name: increased size of the stomach epithelium
+def: "An increase in the size of the stomach epithelium." []
+synonym: "enlarged stomach epithelium" EXACT []
+is_a: XPO:0130350 ! increased size of the gut epithelium
+is_a: XPO:0131683 ! abnormal stomach epithelium
+
+[Term]
+id: XPO:0131644
+name: increased size of the posterior endomesoderm
+def: "An increase in the size of the posterior endomesoderm." []
+synonym: "enlarged posterior endomesoderm" EXACT []
+is_a: XPO:0129571 ! increased size of the anatomical region
+is_a: XPO:0131684 ! abnormal posterior endomesoderm
+
+[Term]
+id: XPO:0131645
+name: increased size of the cortical actin cytoskeleton
+def: "An increase in the size of the cortical actin cytoskeleton." []
+synonym: "enlarged cortical actin cytoskeleton" EXACT []
+is_a: XPO:0129551 ! increased size of the cell part
+is_a: XPO:0131685 ! abnormal cortical actin cytoskeleton
+
+[Term]
+id: XPO:0131646
+name: increased size of the M band
+def: "An increase in the size of the M band." []
+synonym: "enlarged M band" EXACT []
+is_a: XPO:0129551 ! increased size of the cell part
+is_a: XPO:0131686 ! abnormal M band
+
+[Term]
+id: XPO:0131647
+name: increased size of the astral microtubule
+def: "An increase in the size of the astral microtubule." []
+synonym: "enlarged astral microtubule" EXACT []
+is_a: XPO:0131635 ! increased size of the spindle microtubule
+is_a: XPO:0131687 ! abnormal astral microtubule
+
+[Term]
+id: XPO:0131648
+name: increased size of the mandibular nerve
+def: "An increase in the size of the mandibular nerve." []
+synonym: "enlarged mandibular nerve" EXACT []
+is_a: XPO:0131612 ! increased size of the cephalic nerve
+is_a: XPO:0131688 ! abnormal mandibular nerve
+
+[Term]
+id: XPO:0131649
+name: Increased number of pial cell
+def: "The presence of an increased number of pial cell." []
+synonym: "Extra pial cell" EXACT []
+is_a: XPO:0130964 ! Increased number of cell
+is_a: XPO:0131674 ! abnormal pial cell
+
+[Term]
+id: XPO:0131650
+name: Decreased number of pial cell
+def: "The presence of a reduced number of pial cell." []
+synonym: "Reduced number of pial cell" EXACT []
+is_a: XPO:0131180 ! Decreased number of cell
+is_a: XPO:0131674 ! abnormal pial cell
+
+[Term]
+id: XPO:0131651
+name: abnormal roof of mouth
+def: "Abnormality of roof of mouth." []
+synonym: "abnormality of roof of mouth" EXACT []
+is_a: XPO:0100009 ! abnormal multi-tissue structure
+is_a: XPO:0100647 ! abnormal mouth
+
+[Term]
+id: XPO:0131652
+name: abnormal cephalic nerve
+def: "Abnormality of cephalic nerve." []
+synonym: "abnormality of cephalic nerve" EXACT []
+is_a: XPO:0100002 ! abnormal head
+is_a: XPO:0100114 ! abnormal peripheral nervous system
+is_a: XPO:0100167 ! abnormal nerve
+
+[Term]
+id: XPO:0131653
+name: abnormal atrioventricular valve
+def: "Abnormality of atrioventricular valve." []
+synonym: "abnormality of atrioventricular valve" EXACT []
+is_a: XPO:0100013 ! abnormal heart
+is_a: XPO:0100014 ! abnormal tissue
+
+[Term]
+id: XPO:0131654
+name: abnormal neuron projection
+def: "Abnormality of neuron projection." []
+synonym: "abnormality of neuron projection" EXACT []
+is_a: XPO:0100108 ! abnormal cell part
+is_a: XPO:0100196 ! abnormal neuron
+
+[Term]
+id: XPO:0131655
+name: abnormal myofibril
+def: "Abnormality of myofibril." []
+synonym: "abnormality of myofibril" EXACT []
+is_a: XPO:0100108 ! abnormal cell part
+is_a: XPO:0100275 ! abnormal skeletal muscle
+
+[Term]
+id: XPO:0131656
+name: abnormal periocular mesenchyme
+def: "Abnormality of periocular mesenchyme." []
+synonym: "abnormality of periocular mesenchyme" EXACT []
+is_a: XPO:0100451 ! abnormal head mesenchyme
+is_a: XPO:0100664 ! abnormal periocular region
+
+[Term]
+id: XPO:0131657
+name: abnormal ventral endomesoderm
+def: "Abnormality of ventral endomesoderm." []
+synonym: "abnormality of ventral endomesoderm" EXACT []
+is_a: XPO:0100068 ! abnormal anatomical region
+is_a: XPO:0101532 ! abnormal endomesoderm
+
+[Term]
+id: XPO:0131658
+name: abnormal ventral endoderm
+def: "Abnormality of ventral endoderm." []
+synonym: "abnormality of ventral endoderm" EXACT []
+is_a: XPO:0100068 ! abnormal anatomical region
+is_a: XPO:0100072 ! abnormal endoderm
+
+[Term]
+id: XPO:0131659
+name: abnormal dorsal endomesoderm
+def: "Abnormality of dorsal endomesoderm." []
+synonym: "abnormality of dorsal endomesoderm" EXACT []
+is_a: XPO:0100068 ! abnormal anatomical region
+is_a: XPO:0101532 ! abnormal endomesoderm
+
+[Term]
+id: XPO:0131660
+name: abnormal sarcomere
+def: "Abnormality of sarcomere." []
+synonym: "abnormality of sarcomere" EXACT []
+is_a: XPO:0131655 ! abnormal myofibril
+
+[Term]
+id: XPO:0131661
+name: abnormal tracheal epithelium
+def: "Abnormality of tracheal epithelium." []
+synonym: "abnormality of tracheal epithelium" EXACT []
+is_a: XPO:0100192 ! abnormal epithelium
+is_a: XPO:0101342 ! abnormal trachea
+
+[Term]
+id: XPO:0131662
+name: abnormal foregut epithelium
+def: "Abnormality of foregut epithelium." []
+synonym: "abnormality of foregut epithelium" EXACT []
+is_a: XPO:0100156 ! abnormal foregut
+is_a: XPO:0100986 ! abnormal gut epithelium
+
+[Term]
+id: XPO:0131663
+name: abnormal pia mater
+def: "Abnormality of pia mater." []
+synonym: "abnormality of pia mater" EXACT []
+is_a: XPO:0100014 ! abnormal tissue
+is_a: XPO:0100169 ! abnormal brain
+
+[Term]
+id: XPO:0131664
+name: abnormal jaw muscle primordium
+def: "Abnormality of jaw muscle primordium." []
+synonym: "abnormality of jaw muscle primordium" EXACT []
+is_a: XPO:0100199 ! abnormal cranial muscle primordium
+
+[Term]
+id: XPO:0131665
+name: abnormal retinal vein
+def: "Abnormality of retinal vein." []
+synonym: "abnormality of retinal vein" EXACT []
+is_a: XPO:0100043 ! abnormal vein
+is_a: XPO:0100664 ! abnormal periocular region
+
+[Term]
+id: XPO:0131666
+name: abnormal adherens junction
+def: "Abnormality of adherens junction." []
+synonym: "abnormality of adherens junction" EXACT []
+is_a: XPO:0100108 ! abnormal cell part
+
+[Term]
+id: XPO:0131667
+name: abnormal actin cytoskeleton
+def: "Abnormality of actin cytoskeleton." []
+synonym: "abnormality of actin cytoskeleton" EXACT []
+is_a: XPO:0100108 ! abnormal cell part
+
+[Term]
+id: XPO:0131668
+name: abnormal anterior endomesoderm
+def: "Abnormality of anterior endomesoderm." []
+synonym: "abnormality of anterior endomesoderm" EXACT []
+is_a: XPO:0100068 ! abnormal anatomical region
+is_a: XPO:0101532 ! abnormal endomesoderm
+
+[Term]
+id: XPO:0131669
+name: abnormal Roux spot
+def: "Abnormality of Roux spot." []
+synonym: "abnormality of Roux spot" EXACT []
+is_a: XPO:0100025 ! abnormal oocyte
+is_a: XPO:0100108 ! abnormal cell part
+
+[Term]
+id: XPO:0131670
+name: abnormal maxillary nerve
+def: "Abnormality of maxillary nerve." []
+synonym: "abnormality of maxillary nerve" EXACT []
+is_a: XPO:0100110 ! abnormal trigeminal nerve
+
+[Term]
+id: XPO:0131671
+name: abnormal nasociliary nerve
+def: "Abnormality of nasociliary nerve." []
+synonym: "abnormality of nasociliary nerve" EXACT []
+is_a: XPO:0100110 ! abnormal trigeminal nerve
+
+[Term]
+id: XPO:0131672
+name: abnormal non-neurogenic ectodermal placode
+def: "Abnormality of non-neurogenic ectodermal placode." []
+synonym: "abnormality of non-neurogenic ectodermal placode" EXACT []
+is_a: XPO:0100389 ! abnormal cranial placode
+
+[Term]
+id: XPO:0131673
+name: abnormal buccopharyngeal membrane
+def: "Abnormality of buccopharyngeal membrane." []
+synonym: "abnormality of buccopharyngeal membrane" EXACT []
+is_a: XPO:0100104 ! abnormal embryonic structure
+is_a: XPO:0100130 ! abnormal mouth primordium
+
+[Term]
+id: XPO:0131674
+name: abnormal pial cell
+def: "Abnormality of pial cell." []
+synonym: "abnormality of pial cell" EXACT []
+is_a: XPO:0100004 ! abnormal cell
+is_a: XPO:0131663 ! abnormal pia mater
+
+[Term]
+id: XPO:0131675
+name: abnormal spindle microtubule
+def: "Abnormality of spindle microtubule." []
+synonym: "abnormality of spindle microtubule" EXACT []
+is_a: XPO:0100888 ! abnormal microtubule
+
+[Term]
+id: XPO:0131676
+name: abnormal prootic bone
+def: "Abnormality of prootic bone." []
+synonym: "abnormality of prootic bone" EXACT []
+is_a: XPO:0100121 ! abnormal endochondral bone
+is_a: XPO:0107283 ! abnormal otic capsule
+
+[Term]
+id: XPO:0131677
+name: abnormal actin filament
+def: "Abnormality of actin filament." []
+synonym: "abnormality of actin filament" EXACT []
+is_a: XPO:0131667 ! abnormal actin cytoskeleton
+
+[Term]
+id: XPO:0131678
+name: abnormal intercanthal region
+def: "Abnormality of intercanthal region." []
+synonym: "abnormality of intercanthal region" EXACT []
+is_a: XPO:0101102 ! abnormal craniofacial region
+
+[Term]
+id: XPO:0131679
+name: abnormal frontal nerve
+def: "Abnormality of frontal nerve." []
+synonym: "abnormality of frontal nerve" EXACT []
+is_a: XPO:0100110 ! abnormal trigeminal nerve
+
+[Term]
+id: XPO:0131680
+name: abnormal posterior endoderm
+def: "Abnormality of posterior endoderm." []
+synonym: "abnormality of posterior endoderm" EXACT []
+is_a: XPO:0100068 ! abnormal anatomical region
+is_a: XPO:0100072 ! abnormal endoderm
+
+[Term]
+id: XPO:0131681
+name: abnormal anterior endoderm
+def: "Abnormality of anterior endoderm." []
+synonym: "abnormality of anterior endoderm" EXACT []
+is_a: XPO:0100068 ! abnormal anatomical region
+is_a: XPO:0100072 ! abnormal endoderm
+
+[Term]
+id: XPO:0131682
+name: abnormal esophageal epithelium
+def: "Abnormality of esophageal epithelium." []
+synonym: "abnormality of esophageal epithelium" EXACT []
+is_a: XPO:0100192 ! abnormal epithelium
+is_a: XPO:0100797 ! abnormal esophagus
+
+[Term]
+id: XPO:0131683
+name: abnormal stomach epithelium
+def: "Abnormality of stomach epithelium." []
+synonym: "abnormality of stomach epithelium" EXACT []
+is_a: XPO:0100156 ! abnormal foregut
+is_a: XPO:0100986 ! abnormal gut epithelium
+
+[Term]
+id: XPO:0131684
+name: abnormal posterior endomesoderm
+def: "Abnormality of posterior endomesoderm." []
+synonym: "abnormality of posterior endomesoderm" EXACT []
+is_a: XPO:0100068 ! abnormal anatomical region
+is_a: XPO:0101532 ! abnormal endomesoderm
+
+[Term]
+id: XPO:0131685
+name: abnormal cortical actin cytoskeleton
+def: "Abnormality of cortical actin cytoskeleton." []
+synonym: "abnormality of cortical actin cytoskeleton" EXACT []
+is_a: XPO:0131667 ! abnormal actin cytoskeleton
+
+[Term]
+id: XPO:0131686
+name: abnormal M band
+def: "Abnormality of M band." []
+synonym: "abnormality of M band" EXACT []
+is_a: XPO:0131660 ! abnormal sarcomere
+
+[Term]
+id: XPO:0131687
+name: abnormal astral microtubule
+def: "Abnormality of astral microtubule." []
+synonym: "abnormality of astral microtubule" EXACT []
+is_a: XPO:0131675 ! abnormal spindle microtubule
+
+[Term]
+id: XPO:0131688
+name: abnormal mandibular nerve
+def: "Abnormality of mandibular nerve." []
+synonym: "abnormality of mandibular nerve" EXACT []
+is_a: XPO:0100110 ! abnormal trigeminal nerve
+
+[Term]
+id: XPO:0131689
+name: abnormal cell migration in multiciliated epidermal cell
+def: "An abnormality of the cell migration in multiciliated epidermal cell." []
+is_a: XPO:0131704 ! abnormal cell migration
+
+[Term]
+id: XPO:0131690
+name: increased occurrence of cell migration in multiciliated epidermal cell
+def: "An increased occurrence of cell migration in multiciliated epidermal cell." []
+is_a: XPO:0131689 ! abnormal cell migration in multiciliated epidermal cell
+
+[Term]
+id: XPO:0131691
+name: abnormal molecular function
+def: "Abnormal molecular_function." []
+is_a: XPO:00000000 ! Xenopus Phenotype
+
+[Term]
+id: XPO:0131692
+name: abnormal MAP kinase activity
+def: "Abnormal MAP kinase activity." []
+is_a: XPO:0131691 ! abnormal molecular function
+
+[Term]
+id: XPO:0131693
+name: abnormal retinol dehydrogenase activity
+def: "Abnormal retinol dehydrogenase activity." []
+is_a: XPO:0131691 ! abnormal molecular function
+
+[Term]
+id: XPO:0131694
+name: abnormal RNA polymerase II activity
+def: "Abnormal RNA polymerase II activity." []
+is_a: XPO:0131691 ! abnormal molecular function
+
+[Term]
+id: XPO:0131695
+name: decreased MAP kinase activity
+def: "Abnormally reduced functionality of MAP kinase activity." []
+is_a: XPO:0131692 ! abnormal MAP kinase activity
+
+[Term]
+id: XPO:0131696
+name: decreased alpha-tubulin acetylation
+def: "decreased alpha-tubulin acetylation." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131697
+name: increased MAP kinase activity
+def: "Increased MAP kinase activity." []
+is_a: XPO:0131692 ! abnormal MAP kinase activity
+
+[Term]
+id: XPO:0131698
+name: abnormal apical constriction involved in gastrulation
+def: "Abnormal apical constriction involved in gastrulation." []
+is_a: XPO:0131744 ! abnormal apical constriction
+
+[Term]
+id: XPO:0131699
+name: abnormal axon extension involved in axon guidance
+def: "Abnormal axon extension involved in axon guidance." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131700
+name: abnormal BMP signaling pathway
+def: "Abnormal BMP signaling pathway." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131701
+name: abnormal calcium ion transport
+def: "Abnormal calcium ion transport." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131702
+name: abnormal canonical Wnt signaling pathway
+def: "Abnormal canonical Wnt signaling pathway." []
+is_a: XPO:0131738 ! abnormal Wnt signaling pathway
+
+[Term]
+id: XPO:0131703
+name: abnormal cell division
+def: "Abnormal cell division." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131704
+name: abnormal cell migration
+def: "Abnormal cell migration." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131705
+name: abnormal chemotaxis
+def: "Abnormal chemotaxis." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131706
+name: abnormal ciliary basal body organization
+def: "Abnormal ciliary basal body organization." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131707
+name: abnormal cilium assembly
+def: "Abnormal cilium assembly." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131708
+name: abnormal cilium disassembly
+def: "Abnormal cilium disassembly." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131709
+name: abnormal convergent extension involved in axis elongation
+def: "Abnormal convergent extension involved in axis elongation." []
+is_a: XPO:0131741 ! abnormal convergent extension
+
+[Term]
+id: XPO:0131710
+name: abnormal establishment of apical/basal cell polarity
+def: "Abnormal establishment of apical/basal cell polarity." []
+is_a: XPO:0131711 ! abnormal establishment of cell polarity
+
+[Term]
+id: XPO:0131711
+name: abnormal establishment of cell polarity
+def: "Abnormal establishment of cell polarity." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131712
+name: abnormal establishment of epithelial cell planar polarity
+def: "Abnormal establishment of epithelial cell planar polarity." []
+is_a: XPO:0131713 ! abnormal establishment of epithelial cell polarity
+
+[Term]
+id: XPO:0131713
+name: abnormal establishment of epithelial cell polarity
+def: "Abnormal establishment of epithelial cell polarity." []
+is_a: XPO:0131711 ! abnormal establishment of cell polarity
+
+[Term]
+id: XPO:0131714
+name: abnormal establishment of tissue polarity
+def: "Abnormal establishment of tissue polarity." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131715
+name: abnormal fibroblast growth factor receptor signaling pathway
+def: "Abnormal fibroblast growth factor receptor signaling pathway." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131716
+name: abnormal histone methylation
+def: "Abnormal histone methylation." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131717
+name: abnormal histone phosphorylation
+def: "Abnormal histone phosphorylation." []
+is_a: XPO:0131724 ! abnormal protein phosphorylation
+
+[Term]
+id: XPO:0131718
+name: abnormal JNK cascade
+def: "Abnormal JNK cascade." []
+is_a: XPO:0131724 ! abnormal protein phosphorylation
+
+[Term]
+id: XPO:0131719
+name: abnormal activation of meiosis
+def: "Abnormal activation of meiosis." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131720
+name: abnormal mitotic spindle assembly
+def: "Abnormal mitotic spindle assembly." []
+is_a: XPO:0131735 ! abnormal spindle assembly
+
+[Term]
+id: XPO:0131721
+name: abnormal nodal signaling pathway
+def: "Abnormal nodal signaling pathway." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131722
+name: abnormal determination of left/right symmetry
+def: "Abnormal determination of left/right symmetry." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131723
+name: abnormal pathway-restricted SMAD protein phosphorylation
+def: "Abnormal pathway-restricted SMAD protein phosphorylation." []
+is_a: XPO:0131724 ! abnormal protein phosphorylation
+
+[Term]
+id: XPO:0131724
+name: abnormal protein phosphorylation
+def: "Abnormal protein phosphorylation." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131725
+name: abnormal phosphorylation of RNA polymerase II C-terminal domain
+def: "Abnormal phosphorylation of RNA polymerase II C-terminal domain." []
+is_a: XPO:0131724 ! abnormal protein phosphorylation
+
+[Term]
+id: XPO:0131726
+name: abnormal Wnt signaling pathway, planar cell polarity pathway
+def: "Abnormal Wnt signaling pathway, planar cell polarity pathway." []
+is_a: XPO:0131738 ! abnormal Wnt signaling pathway
+
+[Term]
+id: XPO:0131727
+name: abnormal protein kinase B signaling
+def: "Abnormal protein kinase B signaling." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131728
+name: abnormal regulation of cell size
+def: "Abnormal regulation of cell size." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131729
+name: abnormal regulation of growth rate
+def: "Abnormal regulation of growth rate." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131730
+name: abnormal regulation of protein folding
+def: "Abnormal regulation of protein folding." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131731
+name: abnormal pigment accumulation in tissues
+def: "Abnormal pigment accumulation in tissues." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131732
+name: abnormal sex differentiation
+def: "Abnormal sex differentiation." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131733
+name: abnormal somitogenesis
+def: "Abnormal somitogenesis." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131734
+name: abnormal spermatogonial cell division
+def: "Abnormal spermatogonial cell division." []
+is_a: XPO:0131703 ! abnormal cell division
+
+[Term]
+id: XPO:0131735
+name: abnormal spindle assembly
+def: "Abnormal spindle assembly." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131736
+name: abnormal thyroid hormone generation
+def: "Abnormal thyroid hormone generation." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131737
+name: abnormal type B pancreatic cell differentiation
+def: "Abnormal type B pancreatic cell differentiation." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131738
+name: abnormal Wnt signaling pathway
+def: "Abnormal Wnt signaling pathway." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131739
+name: abnormal wound healing
+def: "Abnormal wound healing." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131740
+name: abnormal detection of nodal flow
+def: "Abnormal detection of nodal flow." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131741
+name: abnormal convergent extension
+def: "Abnormal convergent extension." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131742
+name: abnormal axon extension involved in regeneration
+def: "Abnormal axon extension involved in regeneration." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131743
+name: abnormal establishment of planar polarity
+def: "Abnormal establishment of planar polarity." []
+is_a: XPO:0131714 ! abnormal establishment of tissue polarity
+
+[Term]
+id: XPO:0131744
+name: abnormal apical constriction
+def: "Abnormal apical constriction." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131745
+name: abnormal axis elongation
+def: "Abnormal axis elongation." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131746
+name: abnormal neural tube closure
+def: "Abnormal neural tube closure." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131747
+name: abnormal convergent extension involved in neural plate elongation
+def: "Abnormal convergent extension involved in neural plate elongation." []
+is_a: XPO:0116451 ! abnormal embryonic morphogenesis
+is_a: XPO:0131741 ! abnormal convergent extension
+
+[Term]
+id: XPO:0131748
+name: abnormal convergent extension involved in notochord morphogenesis
+def: "Abnormal convergent extension involved in notochord morphogenesis." []
+is_a: XPO:0116451 ! abnormal embryonic morphogenesis
+is_a: XPO:0131741 ! abnormal convergent extension
+
+[Term]
+id: XPO:0131749
+name: increased pigmentation in the animal hemisphere
+def: "Increased or increasing of pigmentation of animal hemisphere." []
+synonym: "animal hemisphere hyperpigmentation" EXACT []
+synonym: "increasing of pigment in the animal hemisphere" EXACT []
+is_a: XPO:0101699 ! abnormal animal hemisphere morphology
+
+[Term]
+id: XPO:0131750
+name: abnormal opening of the anterior neural tube
+def: "Abnormally open anterior neural tube." []
+synonym: "abnormally open anterior neural tube" EXACT []
+is_a: XPO:0101802 ! abnormal anterior neural tube morphology
+
+[Term]
+id: XPO:0131751
+name: decreased occurrence of cell migration in multiciliated epidermal cell
+def: "A decreased occurrence of cell migration in multiciliated epidermal cell." []
+is_a: XPO:0131689 ! abnormal cell migration in multiciliated epidermal cell
+
+[Term]
+id: XPO:0131752
+name: decreased pigmentation in the animal hemisphere
+def: "Decreased or loss of pigmentation of animal hemisphere." []
+synonym: "animal hemisphere hypopigmentation" EXACT []
+synonym: "loss of pigment in the animal hemisphere" EXACT []
+is_a: XPO:0101699 ! abnormal animal hemisphere morphology
+
+[Term]
+id: XPO:0131753
+name: increased alpha-tubulin acetylation
+def: "Increased alpha-tubulin acetylation." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0131754
+name: delayed embryo development
+def: "Delayed embryo development." []
+is_a: XPO:0116450 ! abnormal embryo development
+
 [Typedef]
 id: RO:0000052
 name: inheres in
@@ -85552,6 +86991,7 @@ name: has_part
 namespace: chebi_ontology
 namespace: external
 namespace: quality
+namespace: uberon
 def: "a core relation that holds between a whole and its part" []
 def: "Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2." [PATOC:CJM]
 comment: We use the has_part relation to relate complex qualities to more primitive ones. A complex quality is a collection of qualities. The complex quality cannot exist without the sub-qualities. For example, the quality 'swollen' necessarily comes with the qualities of 'protruding' and 'increased size'.
@@ -85589,6 +87029,7 @@ name: part of
 name: part_of
 namespace: external
 namespace: quality
+namespace: uberon
 namespace: xenopus_anatomy
 def: "a core relation that holds between a part and its whole" []
 xref: BFO:0000050
