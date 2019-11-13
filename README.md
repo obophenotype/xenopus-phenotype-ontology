@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/obophenotype/xenopus-phenotype-ontology.svg?branch=master)](https://travis-ci.org/obophenotype/xenopus-phenotype-ontology)
-[![DOI](https://zenodo.org/badge/13996/obophenotype/xenopus-phenotype-ontology.svg)](https://zenodo.org/badge/latestdoi/13996/obophenotype/xenopus-phenotype-ontology)
+
+<!-- [![DOI](https://zenodo.org/badge/13996/obophenotype/xenopus-phenotype-ontology.svg)](https://zenodo.org/badge/latestdoi/13996/obophenotype/xenopus-phenotype-ontology) -->
 
 # Xenopus Phenotype Ontology
 
@@ -27,4 +28,4 @@ Please use this GitHub repository's [Issue tracker](https://github.com/obophenot
 
 ## Acknowledgements
 
-This ontology repository was created using the [ontology starter kit](https://github.com/INCATools/ontology-starter-kit)
+This ontology repository was created using the [ontology development kit](https://github.com/INCATools/ontology-development-kit)
