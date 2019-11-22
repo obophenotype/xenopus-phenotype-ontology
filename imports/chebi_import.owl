@@ -10,7 +10,7 @@
      xmlns:chebi="http://purl.obolibrary.org/obo/chebi#3"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/xpo/imports/chebi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/xpo/releases/2019-11-08/imports/chebi_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/xpo/releases/2019-11-22/imports/chebi_import.owl"/>
     </owl:Ontology>
     
 
@@ -57,7 +57,9 @@
 
     <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty">
+        <rdfs:label>subset_property</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 

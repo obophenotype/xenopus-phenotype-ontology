@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: xpo/releases/2019-11-08/imports/go_import.owl
+data-version: xpo/releases/2019-11-22/imports/go_import.owl
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_agr "AGR slim"
@@ -2477,6 +2477,43 @@ xref: Wikipedia:Cell_signaling
 is_a: GO:0009987 ! cellular process
 
 [Term]
+id: GO:0007155
+name: cell adhesion
+namespace: biological_process
+alt_id: GO:0098602
+def: "The attachment of a cell, either to another cell or to an underlying substrate such as the extracellular matrix, via cell adhesion molecules." [GOC:hb, GOC:pf]
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_pombe
+synonym: "cell adhesion molecule activity" RELATED []
+synonym: "single organism cell adhesion" RELATED []
+xref: MIPS_funcat:34.07
+xref: Wikipedia:Cell_adhesion
+is_a: GO:0022610 ! biological adhesion
+created_by: davidos
+creation_date: 2014-04-15T15:59:10Z
+
+[Term]
+id: GO:0007162
+name: negative regulation of cell adhesion
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of cell adhesion." [GOC:go_curators]
+synonym: "cell adhesion receptor inhibitor activity" RELATED []
+synonym: "down regulation of cell adhesion" EXACT []
+synonym: "down-regulation of cell adhesion" EXACT []
+synonym: "downregulation of cell adhesion" EXACT []
+synonym: "inhibition of cell adhesion" NARROW []
+is_a: GO:0030155 ! regulation of cell adhesion
+is_a: GO:0048523 ! negative regulation of cellular process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0007155 ! cell adhesion
+relationship: negatively_regulates GO:0007155 ! cell adhesion
+
+[Term]
 id: GO:0007163
 name: establishment or maintenance of cell polarity
 namespace: biological_process
@@ -4741,6 +4778,14 @@ is_a: GO:0016043 ! cellular component organization
 relationship: part_of GO:0044085 ! cellular component biogenesis
 
 [Term]
+id: GO:0022610
+name: biological adhesion
+namespace: biological_process
+def: "The attachment of a cell or organism to a substrate, another cell, or other organism. Biological adhesion includes intracellular attachment between membrane regions." [GOC:isa_complete]
+subset: goslim_pir
+is_a: GO:0008150 ! biological_process
+
+[Term]
 id: GO:0023014
 name: signal transduction by protein phosphorylation
 namespace: biological_process
@@ -4953,6 +4998,17 @@ subset: goslim_plant
 xref: MIPS_funcat:40.02
 xref: Wikipedia:Cellular_differentiation
 is_a: GO:0048869 ! cellular developmental process
+
+[Term]
+id: GO:0030155
+name: regulation of cell adhesion
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of attachment of a cell to another cell or to the extracellular matrix." [GOC:mah]
+synonym: "cell adhesion receptor regulator activity" RELATED []
+is_a: GO:0050789 ! regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0007155 ! cell adhesion
+relationship: regulates GO:0007155 ! cell adhesion
 
 [Term]
 id: GO:0030177
@@ -8606,6 +8662,22 @@ is_a: GO:0050772 ! positive regulation of axonogenesis
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0048675 ! axon extension
 relationship: positively_regulates GO:0048675 ! axon extension
+
+[Term]
+id: GO:0045785
+name: positive regulation of cell adhesion
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of cell adhesion." [GOC:go_curators]
+synonym: "activation of cell adhesion" NARROW []
+synonym: "stimulation of cell adhesion" NARROW []
+synonym: "up regulation of cell adhesion" EXACT []
+synonym: "up-regulation of cell adhesion" EXACT []
+synonym: "upregulation of cell adhesion" EXACT []
+is_a: GO:0030155 ! regulation of cell adhesion
+is_a: GO:0048518 ! positive regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0007155 ! cell adhesion
+relationship: positively_regulates GO:0007155 ! cell adhesion
 
 [Term]
 id: GO:0045786
@@ -12631,6 +12703,31 @@ created_by: dph
 creation_date: 2010-09-29T11:27:34Z
 
 [Term]
+id: GO:0061343
+name: cell adhesion involved in heart morphogenesis
+namespace: biological_process
+def: "The attachment of a cell, either to another cell or to an underlying substrate such as the extracellular matrix, via cell adhesion molecules that contributes to the shaping of the heart." [GOC:dph, GOC:mtg_heart, PMID:16860783]
+is_a: GO:0007155 ! cell adhesion
+intersection_of: GO:0007155 ! cell adhesion
+intersection_of: part_of GO:0003007 ! heart morphogenesis
+relationship: part_of GO:0003007 ! heart morphogenesis
+created_by: dph
+creation_date: 2010-09-29T11:34:06Z
+
+[Term]
+id: GO:0061344
+name: regulation of cell adhesion involved in heart morphogenesis
+namespace: biological_process
+def: "Any process that modulates the extent of cell adhesion contributing to the shaping of the heart." [GOC:dph, GOC:mtg_heart, PMID:16860783]
+is_a: GO:0030155 ! regulation of cell adhesion
+is_a: GO:2000826 ! regulation of heart morphogenesis
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0061343 ! cell adhesion involved in heart morphogenesis
+relationship: regulates GO:0061343 ! cell adhesion involved in heart morphogenesis
+created_by: dph
+creation_date: 2010-09-29T11:35:27Z
+
+[Term]
 id: GO:0061351
 name: neural precursor cell proliferation
 namespace: biological_process
@@ -14081,6 +14178,18 @@ intersection_of: part_of GO:0005886 ! plasma membrane
 relationship: part_of GO:0005886 ! plasma membrane
 created_by: davidos
 creation_date: 2014-03-06T11:55:32Z
+
+[Term]
+id: GO:0098631
+name: cell adhesion mediator activity
+namespace: molecular_function
+def: "The binding by a cell-adhesion protein on the cell surface to an extracellular matrix component, to mediate adhesion of the cell to the external substrate or to another cell." [Wikipedia:Cell_adhesion]
+synonym: "cell adhesion molecule" EXACT []
+synonym: "protein binding involved in cell adhesion" EXACT []
+is_a: GO:0005488 ! binding
+intersection_of: GO:0005488 ! binding
+intersection_of: part_of GO:0007155 ! cell adhesion
+relationship: part_of GO:0007155 ! cell adhesion
 
 [Term]
 id: GO:0098772

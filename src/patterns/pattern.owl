@@ -16,6 +16,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000070>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000297>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000404>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000406>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000460>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000462>))
@@ -40,6 +41,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000912>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001236>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001473>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001784>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001796>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001928>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001997>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002051>))
@@ -56,6 +58,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalAb
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalBehavior.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalBiologicalProcess.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalBiologicalProcessInLocation.yaml>))
+Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalCoilingOfAnatomicalEntity.yaml>))
+Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalDevelopmentOfAnatomicalEntity.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalMolecularFunction.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalMorphologyOfAnatomicalEntity.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalMorphologyOfAnatomicalEntityInLocation.yaml>))
@@ -65,6 +69,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormally
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormallyBentAnatomicalEntity.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormallyClosedAnatomicalEntity.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormallyCurvedAnatomicalEntityByOrientation.yaml>))
+Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormallyDecreasedCoilingOfAnatomicalEntity.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormallyDecreasedLengthOfAnatomicalEntity.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormallyDecreasedLengthOfAnatomicalEntityInLocation.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormallyDecreasedNumberOfAnatomicalEntity.yaml>))
@@ -100,6 +105,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormally
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/blisteredAnatomicalEntity.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/blisteredAnatomicalEntityInLocation.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/malformedAnatomicalEntity.yaml>))
+Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/malformedAnatomicalEntityByType.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/malformedAnatomicalEntityInLocation.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/mislocalisedAnatomicalEntity.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns/abnormalAnatomicalEntity.yaml>))
@@ -113,6 +119,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000066>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002295>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002314>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002573>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
@@ -185,6 +192,21 @@ AnnotationAssertion(<http://purl.org/dc/terms/title> <http://purl.obolibrary.org
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalBiologicalProcessInLocation.yaml> "abnormal 'biological process' in 'independent continuant'"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalBiologicalProcessInLocation.yaml> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001236> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0008150> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/BFO_0000004>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
+# Class: <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalCoilingOfAnatomicalEntity.yaml> (abnormally coiled 'anatomical entity' )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalCoilingOfAnatomicalEntity.yaml> "Any abnormal coiling of the 'anatomical entity'."^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/title> <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalCoilingOfAnatomicalEntity.yaml> "abnormalCoilingOfAnatomicalEntity"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalCoilingOfAnatomicalEntity.yaml> "abnormal coiling of 'anatomical entity'"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalCoilingOfAnatomicalEntity.yaml> "abnormally coiled 'anatomical entity' "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalCoilingOfAnatomicalEntity.yaml> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000404> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/UBERON_0001062>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalDevelopmentOfAnatomicalEntity.yaml> (abnormal development of 'anatomical entity')
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalDevelopmentOfAnatomicalEntity.yaml> "An abnormal development of the 'anatomical entity'."^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/title> <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalDevelopmentOfAnatomicalEntity.yaml> "abnormalDevelopmentOfAnatomicalEntity"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalDevelopmentOfAnatomicalEntity.yaml> "abnormal development of 'anatomical entity'"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalDevelopmentOfAnatomicalEntity.yaml> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001236> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0008150> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002295> <http://purl.obolibrary.org/obo/UBERON_0001062>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
 # Class: <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalMolecularFunction.yaml> (abnormal 'molecular function')
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalMolecularFunction.yaml> "Abnormal 'molecular function'."^^xsd:string)
@@ -255,6 +277,14 @@ AnnotationAssertion(<http://purl.org/dc/terms/title> <http://purl.obolibrary.org
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormallyCurvedAnatomicalEntityByOrientation.yaml> "'curved' 'anatomical entity'"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormallyCurvedAnatomicalEntityByOrientation.yaml> "abnormal 'anatomical entity', 'curved' "^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormallyCurvedAnatomicalEntityByOrientation.yaml> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000406> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/UBERON_0001062>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormallyDecreasedCoilingOfAnatomicalEntity.yaml> (abnormally decreased coiling of 'anatomical entity' )
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormallyDecreasedCoilingOfAnatomicalEntity.yaml> "Abnormally decreased coiling of the 'anatomical entity'."^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/title> <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormallyDecreasedCoilingOfAnatomicalEntity.yaml> "abnormallyDecreasedCoilingOfAnatomicalEntity"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormallyDecreasedCoilingOfAnatomicalEntity.yaml> "abnormal decreased 'anatomical entity' coiling"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormallyDecreasedCoilingOfAnatomicalEntity.yaml> "abnormally decreased coiling of 'anatomical entity' "^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormallyDecreasedCoilingOfAnatomicalEntity.yaml> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001796> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/UBERON_0001062>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 # Class: <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormallyDecreasedLengthOfAnatomicalEntity.yaml> (decreased length of 'anatomical entity')
 
@@ -528,6 +558,13 @@ AnnotationAssertion(<http://purl.org/dc/terms/title> <http://purl.obolibrary.org
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/upheno/patterns-dev/malformedAnatomicalEntity.yaml> "malformed 'anatomical entity'"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/upheno/patterns-dev/malformedAnatomicalEntity.yaml> "abnormally formed 'anatomical entity'"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/upheno/patterns-dev/malformedAnatomicalEntity.yaml> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000646> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/UBERON_0001062>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/upheno/patterns-dev/malformedAnatomicalEntityByType.yaml> ('malformed' 'anatomical entity')
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/upheno/patterns-dev/malformedAnatomicalEntityByType.yaml> "A 'malformed' 'anatomical entity'."^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/title> <http://purl.obolibrary.org/obo/upheno/patterns-dev/malformedAnatomicalEntityByType.yaml> "malformedAnatomicalEntityByType"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/upheno/patterns-dev/malformedAnatomicalEntityByType.yaml> "'malformed' 'anatomical entity'"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/upheno/patterns-dev/malformedAnatomicalEntityByType.yaml> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000646> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/UBERON_0001062>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 # Class: <http://purl.obolibrary.org/obo/upheno/patterns-dev/malformedAnatomicalEntityInLocation.yaml> (abnormally formed 'anatomical entity' in 'independent continuant')
 

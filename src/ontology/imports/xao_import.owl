@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/xpo/imports/xao_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/xpo/releases/2019-11-08/imports/xao_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/xpo/releases/2019-11-22/imports/xao_import.owl"/>
     </owl:Ontology>
     
 
@@ -88,7 +88,9 @@
 
     <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty">
+        <rdfs:label>subset_property</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -1147,7 +1149,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000020"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Elongated, approximately cylindrical part of the central nervous system that lies in the vertebral canal and from which the spinal nerves emerge.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dictionary.reference.com/medical/spinal+cord</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://dictionary.reference.com/medical/spinal+cord</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1448,7 +1450,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Ganglion that is located in the head.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:EJS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0000013</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0000013</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000027"/>
@@ -4010,7 +4012,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000095"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Sensory system that has as it parts the sense organs that detect vibrations carried through water, develops during late tailbud stage, and persists in the adult bearing elaborate dorsal and ventral components. It develops from a specialized series of dorsolateral ectodermal placodes named lateral line placodes.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0000975</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AAO:0000975</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471209627</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0815318960</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -4386,7 +4388,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Posterior subdivision of the digestive tract. The posterior part of the alimentary canal, including the large intestine and cloaca.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001046</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001046</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0000104</oboInOwl:id>
         <rdfs:label>hindgut</rdfs:label>
@@ -4395,7 +4397,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000104"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Posterior subdivision of the digestive tract. The posterior part of the alimentary canal, including the large intestine and cloaca.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001046</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001046</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -4439,7 +4441,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000105"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The space enclosed by the walls of the pharynx.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002097</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0002097</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4475,7 +4477,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000106"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Tissue that is a temporary extension of the embryonic gut caudal to the cloaca.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://medical-dictionary.thefreedictionary.com/gut</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://medical-dictionary.thefreedictionary.com/gut</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4527,7 +4529,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Rapidly proliferating mass of cells at the caudal extremity of the embryo. Its formation is reflected in a caudal carving of the posterior portion of the archenteric canal at NF stage 22. With its further outgrowth, the postanal gut primordium becomes stretched. Its lumen is in broad communication with the hindgut at NF stage 25.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0815318960</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dictionary.reference.com/medical/tail+bud</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://dictionary.reference.com/medical/tail+bud</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4578,7 +4580,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000108"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The anterior limit of the neurenteric canal, which connects the post-anal gut with the central canal of the spinal chord. It is formed from a population of cells derived from the dorsal lip of the late gastrula, and has been shown to be important in tail development.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0762302852</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0762302852</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:11404094</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:7916680</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -5762,7 +5764,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A double layer of tissue composed of peritoneum that attaches the visceral organs to the body wall.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:EJS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>ZFA:0005129</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0005129</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5799,7 +5801,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000139"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Serous membrane that forms the lining of the abdominal cavity or the coelom. It covers most of the intra-abdominal organs, supports the abdominal organs, and serves as a conduit for their blood and lymph vessels and nerves. It is composed of a layer of mesothelium.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>AAO:0010814</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0010814</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6344,7 +6346,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000158"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Anatomical system that consists of the glands and parts of glands that produce endocrine secretions and help to integrate and control bodily metabolic activity.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.merriam-webster.com/medlineplus/endocrine+system</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.merriam-webster.com/medlineplus/endocrine+system</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6394,7 +6396,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000159"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Structure that is made up of islet cells that produce insulin, glucagon, and somatostatin.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000016</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0000016</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6479,7 +6481,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A two-lobed endocrine gland, located next to the trachea, and producing various hormones, such as triiodothyronine and calcitonin.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002046</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0002046</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>thyroid gland</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0000162</oboInOwl:id>
@@ -6489,7 +6491,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000162"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A two-lobed endocrine gland, located next to the trachea, and producing various hormones, such as triiodothyronine and calcitonin.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002046</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0002046</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6532,7 +6534,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000163"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Anatomical structure of largely lymphoid tissue that functions in cell-mediated immunity by being the site where T cells develop.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.merriam-webster.com/medlineplus/thymus</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.merriam-webster.com/medlineplus/thymus</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6560,7 +6562,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Either of a pair of complex endocrine organs near the anterior medial border of the kidney consisting of a mesodermal cortex that produces glucocorticoid, mineralocorticoid, and androgenic hormones and an ectodermal medulla that produces epinephrine and norepinephrine.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002369</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0002369</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0000164</oboInOwl:id>
         <rdfs:label>adrenal gland</rdfs:label>
@@ -6569,7 +6571,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000164"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Either of a pair of complex endocrine organs near the anterior medial border of the kidney consisting of a mesodermal cortex that produces glucocorticoid, mineralocorticoid, and androgenic hormones and an ectodermal medulla that produces epinephrine and norepinephrine.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002369</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0002369</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -8234,7 +8236,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A cluster of nervous tissue principally composed of neuronal cell bodies external to the central nervous system (CNS).</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000045</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0000045</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>ganglia</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>XAO:0000209</oboInOwl:id>
@@ -8244,7 +8246,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000209"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A cluster of nervous tissue principally composed of neuronal cell bodies external to the central nervous system (CNS).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000045</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0000045</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000209"/>
@@ -8442,7 +8444,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000215"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The part of the nervous system that consists of the brain and spinal cord, to which sensory impulses are transmitted and from which motor impulses pass out, and that supervises and coordinates the activity of the entire nervous system.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.merriam-webster.com/medlineplus/central+nervous+system</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.merriam-webster.com/medlineplus/central+nervous+system</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -8813,7 +8815,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The ectodermal precursor of the trigeminal ganglion. The profundal and the trigeminal ganglia are separate distally but fused at their proximal end as they condense around NF stage 24. The trigeminal placode gives rise to the sensory neurons of the ophthalmic and maxillomandibular lobes of cranial nerve V.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0003070</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0003070</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0000225</oboInOwl:id>
         <rdfs:label>trigeminal placode</rdfs:label>
@@ -8823,7 +8825,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The ectodermal precursor of the trigeminal ganglion. The profundal and the trigeminal ganglia are separate distally but fused at their proximal end as they condense around NF stage 24. The trigeminal placode gives rise to the sensory neurons of the ophthalmic and maxillomandibular lobes of cranial nerve V.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:21452441</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0003070</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0003070</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -9032,7 +9034,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000230"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Cell type that forms a layer within an ovarian follicle that surrounds the oocyte.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dictionary.reference.com/medical/follicle+cell</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://dictionary.reference.com/medical/follicle+cell</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -9068,7 +9070,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000231"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A monolayer of follicle cells surrounding the developing oocyte and forming adhesive contacts with the surrounding follicular epithelium.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:619165</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:619165</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -9108,7 +9110,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The anterior part of the alimentary system, from the mouth and esophagus to the duodenum at the entrance of the bile duct. Structures of the foregut are: esophagus, stomach, duodenum, liver, gall bladder, and pancreas. The spleen is located in the foregut region, but is not a gut organ.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001041</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001041</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0000232</oboInOwl:id>
         <rdfs:label>foregut</rdfs:label>
@@ -9117,7 +9119,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000232"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The anterior part of the alimentary system, from the mouth and esophagus to the duodenum at the entrance of the bile duct. Structures of the foregut are: esophagus, stomach, duodenum, liver, gall bladder, and pancreas. The spleen is located in the foregut region, but is not a gut organ.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001041</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001041</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -9294,7 +9296,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The final section of the small intestine.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002116</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0002116</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0000237</oboInOwl:id>
         <rdfs:label>ileum</rdfs:label>
@@ -9303,7 +9305,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000237"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The final section of the small intestine.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002116</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0002116</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -9627,7 +9629,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A prominent mass in the cytoplasm of previtellogenic oocytes. The cloud contains both mitochondria and electron-dense granulofibrillar material (GFM) and is the source of germinal granule material.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0032019</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0032019</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Balbiani body</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mitochondrial aggregate</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
@@ -9639,7 +9641,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000245"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A prominent mass in the cytoplasm of previtellogenic oocytes. The cloud contains both mitochondria and electron-dense granulofibrillar material (GFM) and is the source of germinal granule material.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0032019</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0032019</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -9753,7 +9755,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The median dorsal longitudinal groove in the neural plate, directly above the notochord, which appears after neural fold formation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:curators</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.merriam-webster.com/medlineplus/neural+groove</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.merriam-webster.com/medlineplus/neural+groove</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -10041,7 +10043,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000256"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The developing female gamete, the differentiation of which is classified into six stages: I (pre-vitellogenic), II (early vitellogenic), III (mid-vitellogenic, formation of pigment), IV (polarization along animal-vegetal axis), V (late vitellogenic), and VI (post-vitellogenic, appearance of equatorial band).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:4109871</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:4109871</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -10083,7 +10085,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000257"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An outpocketing of the foregut ventral to the infundibulum and the hypophysis. The walls surrounding this cavity are composed of endoderm.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.uoguelph.ca/zoology/devobio/34mmfrog/db34fg1.htm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.uoguelph.ca/zoology/devobio/34mmfrog/db34fg1.htm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -10642,7 +10644,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Layer of lateral plate mesoderm that forms the future body wall; it underlies the ectoderm.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0004871</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0004871</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0000271</oboInOwl:id>
         <rdfs:label>somatic layer of lateral plate mesoderm</rdfs:label>
@@ -10651,7 +10653,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000271"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Layer of lateral plate mesoderm that forms the future body wall; it underlies the ectoderm.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0004871</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0004871</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -10740,7 +10742,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000273"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Organ comprising the specialized structures subserving the function of the sense of smell.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001772</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0001772</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -11160,7 +11162,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000283"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A hole located in the center of the iris of the eye that allows light to enter the retina.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Pupil</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Pupil</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -11442,7 +11444,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The tissue made up of loosely connected mesenchymal cells in the mesonephros.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0005323</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0005323</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0000291</oboInOwl:id>
         <rdfs:label>mesonephric mesenchyme</rdfs:label>
@@ -11451,7 +11453,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000291"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The tissue made up of loosely connected mesenchymal cells in the mesonephros.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0005323</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0005323</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -11652,7 +11654,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000298"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Spatial concept denoting the back or upper surface of the body.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:Dorsal</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIt:Dorsal</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -12654,7 +12656,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000330"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Transient developmental organ that gives rise to oviducts in females (and is documented to persist in some male frogs).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0010141</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AAO:0010141</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -13222,7 +13224,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000345"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Artery that arises from the ventral aorta and delivers blood to the filter apparatus. It is visible as a bilateral pair of vessels on the ventral surface of the head, running between the heart and the tip of the jaw.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0073524239</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0073524239</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:12606281</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -13449,7 +13451,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Simple squamous epithelium that lines blood and lymphatic vessels and the heart.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:EJS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0001639</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0001639</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000356"/>
@@ -13628,7 +13630,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000362"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Artery consisting of many branches which supply blood to various organs in the viscus. One of the major blood vessels, branching off the dorsal aorta and supplying the embryonic foregut organs: liver, stomach, intestine, spleen and pancreas.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0010499</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AAO:0010499</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0070179778</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -14980,7 +14982,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Vein in the tail returning blood from the tail to the heart.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:EJS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0000180</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0000180</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -15182,7 +15184,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000399"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An elongated fibroblast type cell, the cytoplasm of which is stretched between the collagen fibres of the tendon.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Tendon_cell</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Tendon_cell</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -15596,7 +15598,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000414"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Mesenchymal cells that break from the sclerotome. Such cells migrate from the somite to surround the notochord.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0123190606</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0123190606</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -16154,7 +16156,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A depression in the roof of the developing mouth in front of the buccopharyngeal membrane. It gives rise to the anterior pituitary (adenohypophysis), a part of the endocrine system.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0005356</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0005356</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0000430</oboInOwl:id>
         <rdfs:label>Rathke&apos;s pouch</rdfs:label>
@@ -16163,7 +16165,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000430"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A depression in the roof of the developing mouth in front of the buccopharyngeal membrane. It gives rise to the anterior pituitary (adenohypophysis), a part of the endocrine system.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0005356</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0005356</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -16532,7 +16534,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000445"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The organ used for chemoreception.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0010573</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AAO:0010573</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -16566,7 +16568,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The movable, muscular organ on the floor of the mouth.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001723</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001723</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0000446</oboInOwl:id>
         <rdfs:label>tongue</rdfs:label>
@@ -16575,7 +16577,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0000446"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The movable, muscular organ on the floor of the mouth.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001723</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001723</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -17730,7 +17732,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0001011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any of the vessels through which blood circulates in the body.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BTO:0001102</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001102</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0001011"/>
@@ -18111,7 +18113,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Inward fold on the surface of the embryonic ectoderm that develops into the common cloacal passage. The most posterior section of the larval alimentary system.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:curators</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0000066</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0000066</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -18442,7 +18444,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Anatomical structure consisting of at least two non-overlapping organs, multi-tissue aggregates or portion of tissues or cells of different types that does not constitute an organism, organ, multi-tissue aggregate, or portion of tissue.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000054</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000054</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UBERON:0000480</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0003001</oboInOwl:id>
@@ -18452,7 +18454,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003001"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Anatomical structure consisting of at least two non-overlapping organs, multi-tissue aggregates or portion of tissues or cells of different types that does not constitute an organism, organ, multi-tissue aggregate, or portion of tissue.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000054</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000054</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -18474,7 +18476,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Anatomical group that has as its parts distinct anatomical structures interconnected by anatomical structures at a lower level of granularity.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000011</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000011</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UBERON:0000467</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0003002</oboInOwl:id>
@@ -18484,7 +18486,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003002"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Anatomical group that has as its parts distinct anatomical structures interconnected by anatomical structures at a lower level of granularity.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000011</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000011</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -18537,7 +18539,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115>Anatomical structure that is an individual member of Xenopus laevis.</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>ubiquitous</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000012</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000012</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UBERON:0000468</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0003004</oboInOwl:id>
@@ -18549,7 +18551,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003004"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Anatomical structure that is an individual member of Xenopus laevis.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000012</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000012</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -18571,7 +18573,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Gonochoristic organism that can produce female gametes.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000028</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000028</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UBERON:0003100</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0003005</oboInOwl:id>
@@ -18581,7 +18583,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003005"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Gonochoristic organism that can produce female gametes.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000028</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000028</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -18603,7 +18605,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Gonochoristic organism that can produce male gametes.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000027</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000027</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UBERON:0003101</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0003006</oboInOwl:id>
@@ -18613,7 +18615,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003006"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Gonochoristic organism that can produce male gametes.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000027</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000027</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -18667,7 +18669,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003009"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>NF stage 8 ectoderm of Xenopus laevis embryos that have been cut and disaggregated. The cells have been treated with activin at a concentration to induce endodermal tissue. Afterwards the reaggregated cells have been cultured until control sibling embryos reach stage 12/13.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ncbi.nlm.nih.gov/UniGene/library.cgi?ORG=Xl&amp;LID=1962</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.ncbi.nlm.nih.gov/UniGene/library.cgi?ORG=Xl&amp;LID=1962</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -18698,7 +18700,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003010"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The main artery of the circulatory system which carries oxygenated blood from the heart to all the arteries of the body except those of the lungs.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0010213</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AAO:0010213</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -18737,7 +18739,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A layer of cells produced during the process of gastrulation during the early development of the embryo, which is distinct from other such layers of cells, as an early step of cell differentiation. The types of germ layers are the endoderm, ectoderm, and mesoderm.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000556</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0000556</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -19913,7 +19915,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003042"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An anatomical structure that exists only before the organism is fully formed.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000174</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0000174</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -20005,7 +20007,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Portion of tissue that consists of one or more layers of epithelial cells connected to each other by cell junctions and that is underlain by a basal lamina.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000066</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000066</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UBERON:0000483</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0003045</oboInOwl:id>
@@ -20015,7 +20017,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003045"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Portion of tissue that consists of one or more layers of epithelial cells connected to each other by cell junctions and that is underlain by a basal lamina.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000066</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000066</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -20047,7 +20049,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003046"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Portion of embryonic tissue consisting of loosely organized, undifferentiated mesodermal or neural crest derived cells, that have specific properties (they are migratory, have no polarity). Mesenchyme cells are incorporated into a wide variety of structures including connective tissue, blood, bone and cartilage as development continues.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0010427</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AAO:0010427</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:CJZ</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -20155,7 +20157,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003049"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Connective tissue in which fat is stored.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.merriam-webster.com/medlineplus/adipose+tissue</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.merriam-webster.com/medlineplus/adipose+tissue</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -20277,7 +20279,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003052"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A simple ciliated tube through which the ovum travels from the ovaries to the cloaca and the external environment. It is lined with mucus-secreting glands that produce the jelly that surrounds the ovum.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Oviduct</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Oviduct</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -20295,7 +20297,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003053"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A rectangle of dorsal mesendoderm and ectoderm from an early-gastrula-stage Xenopus laevis embryo. It is approximately 60 deg to 90 deg wide, extending from the bottle cells to the animal pole.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:9780879695040</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:9780879695040</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -20360,7 +20362,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A stem cell from which all cells of the lymphoid and myeloid lineages develop, including blood cells and cells of the immune system.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000037</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000037</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>HSC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0003055</oboInOwl:id>
@@ -20370,8 +20372,8 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003055"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A stem cell from which all cells of the lymphoid and myeloid lineages develop, including blood cells and cells of the immune system.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000037</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009014</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000037</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0009014</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -20480,7 +20482,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003060"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Anatomical system that provides physical support to the organism.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0000566</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AAO:0000566</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -20514,7 +20516,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The collection of all skeletal elements in a free forelimb region.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001440</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001440</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0003061</oboInOwl:id>
         <rdfs:label>forelimb skeleton</rdfs:label>
@@ -20523,7 +20525,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003061"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The collection of all skeletal elements in a free forelimb region.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001440</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001440</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -21141,7 +21143,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003081"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Anatomical structure consisting of a narrowly triangular chamber supported by a series of semicircular cartilages in which part of the sound-production system is located.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0000268</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AAO:0000268</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -21266,7 +21268,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003085"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Paired cartilaginous component of the lower jaw that fuses together through a median inferior labial cartilage, resulting in a single curved bar of cartilage by metamorphic climax. During metamorphosis it is surrounded by the developing dentale and goniale.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:3693112</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:3693112</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -21303,7 +21305,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003086"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Anatomical cluster consisting of the mandibular structures which connect the base of the lower jaw with the skull.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://medical-dictionary.thefreedictionary.com/Suspensorium</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://medical-dictionary.thefreedictionary.com/Suspensorium</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -21341,7 +21343,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003087"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The dorsal portion of the first pharyngeal arch.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO:0001272</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0001272</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:EJS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -21379,7 +21381,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003088"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any of the coiled tubules located in the testes in which spermatozoa are produced.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0010399</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AAO:0010399</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -21474,7 +21476,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Cranial nerve that has three branches: the ophthalmic branch that supplies the skin of the nose and upper jaw, and the maxillary and mandibular branches that supply the lower jaw.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001645</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001645</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>cranial nerve V</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>trigeminus</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
@@ -21485,7 +21487,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003092"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Cranial nerve that has three branches: the ophthalmic branch that supplies the skin of the nose and upper jaw, and the maxillary and mandibular branches that supply the lower jaw.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001645</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001645</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -21507,7 +21509,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Cranial nerve that runs to the eye muscles.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001646</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001646</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>abducens</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>abducent nerve</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>cranial nerve VI</oboInOwl:hasExactSynonym>
@@ -21519,7 +21521,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003093"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Cranial nerve that runs to the eye muscles.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001646</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001646</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -21747,7 +21749,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Irregularly shaped cavity in the rhombencephalon, between the medulla oblongata, the pons, and the isthmus in front, and the cerebellum behind. It is continuous with the central canal of the cord below and with the cerebral aqueduct above, and through its lateral and median apertures it communicates with the subarachnoid space.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002422</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0002422</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>4th ventricle</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>IVth ventricle</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
@@ -21758,7 +21760,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003099"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Irregularly shaped cavity in the rhombencephalon, between the medulla oblongata, the pons, and the isthmus in front, and the cerebellum behind. It is continuous with the central canal of the cord below and with the cerebral aqueduct above, and through its lateral and median apertures it communicates with the subarachnoid space.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002422</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0002422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24365,7 +24367,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003173"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An anatomical cluster that is located in the posterior region of the neurocranium and forms the margin of the foramen margin and occipital condyles.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0010199</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AAO:0010199</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24393,7 +24395,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Anatomical cluster that forms the floor and side walls of the middle part of the cranium.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0003111</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0003111</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0003174</oboInOwl:id>
         <rdfs:label>sphenoid region</rdfs:label>
@@ -24402,7 +24404,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003174"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Anatomical cluster that forms the floor and side walls of the middle part of the cranium.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0003111</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0003111</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24471,7 +24473,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Regional skeletal system of the jaws, hyoid and branchial arches.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:EJS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0001216</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0001216</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24857,7 +24859,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003187"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Spatial concept pertaining to being toward the middle or inside.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:Medial</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIt:Medial</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24876,7 +24878,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003188"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Spatial concept denoting a part of the body that is closer to the center of the body than another part.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:Proximal</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIt:Proximal</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24895,7 +24897,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003189"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Spatial concept denoting a part of the body that is farther away from the center of the body than another part.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:Distal</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIt:Distal</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24929,7 +24931,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Non-material anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes; is surrounded by one or more anatomical structures; contains one or more organism substances or anatomical structures.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000005</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UBERON:0000464</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0003190</oboInOwl:id>
@@ -24939,7 +24941,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003190"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Non-material anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes; is surrounded by one or more anatomical structures; contains one or more organism substances or anatomical structures.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000005</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -25041,7 +25043,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Cardiac chamber that consists of a wall that surrounds the cavity of a ventricle. The amphibian heart has a single ventricle and an outflow tract with an incomplete spiral septum.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002082</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0002082</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0003193</oboInOwl:id>
         <rdfs:label>cardiac ventricle</rdfs:label>
@@ -25050,7 +25052,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003193"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Cardiac chamber that consists of a wall that surrounds the cavity of a ventricle. The amphibian heart has a single ventricle and an outflow tract with an incomplete spiral septum.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002082</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0002082</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -25242,8 +25244,8 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003199"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Part of the circulatory system that consists of a series of vessels that collect blood (exclusive of erythrocytes) which seeps through capillary walls and return it to the veins. The lymphatic system of vasculature drains lymph fluid from the tissue spaces of most organs and returns it to the blood vasculature for recirculation. The lymphatic sytem functions in immune responses. Anurans generate a lot of lymphatic fluid, largely as a consequence of their very leaky vasculature and high interstitial compliance. Lymph is ultimately pumped into the venous system by paired, dorsally located lymph hearts. Hedrick et al (2007) showed that lung inflation and deflation assists lymph movement. Lymph is moved during lung deflation to the subvertebral sac from anterior and posterior lymph sacs. During lung inflation, increased lymph sac pressure moves lymph to axillary regions, where lymph hearts can return lymph to the vascular space.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0010522</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17981861</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AAO:0010522</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:17981861</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -25309,7 +25311,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Epithelium that lines the oral cavity, with many short microvilli as well as mucous cells, rodlet cells and taste buds.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002424</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0002424</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0003201</oboInOwl:id>
         <rdfs:label>oral epithelium</rdfs:label>
@@ -25318,7 +25320,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003201"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Epithelium that lines the oral cavity, with many short microvilli as well as mucous cells, rodlet cells and taste buds.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002424</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0002424</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -25382,7 +25384,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Epithelium that is part of a developing tooth or dental organ.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:EJS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0005134</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0005134</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -25437,7 +25439,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003204"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Hollow epithelial tube on the dorsal side of the embryo that develops into the brain and spinal cord.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0010617</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AAO:0010617</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -25471,7 +25473,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Polymorphic cell type that forms cartilage.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000138</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000138</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>cartilage cell</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>XAO:0003205</oboInOwl:id>
@@ -25481,7 +25483,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003205"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Polymorphic cell type that forms cartilage.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000138</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000138</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -25699,7 +25701,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003210"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Either of the paired, elongate, cylindrical forelimb bones of endochondral origin that extend from the pectoral girdle (shoulders) to the elbows.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0000679</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AAO:0000679</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -25921,7 +25923,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The layer within the retina where the photoreceptor cell receptor segments reside.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:EJS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0000143</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0000143</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -26010,7 +26012,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The monolayer of pigmented epithelium covering the neural retina.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:EJS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0000144</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0000144</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -26040,7 +26042,7 @@
         <obo:IAO_0000115>The layer within the retina where the bipolar cells synapse with the photoreceptor cells.</obo:IAO_0000115>
         <oboInOwl:created_by>eriksegerdell</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-15T02:26:28Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001790</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001790</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0003218</oboInOwl:id>
         <rdfs:label>retinal outer plexiform layer</rdfs:label>
@@ -26049,7 +26051,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003218"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The layer within the retina where the bipolar cells synapse with the photoreceptor cells.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001790</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001790</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -26079,7 +26081,7 @@
         <obo:IAO_0000115>The layer within the retina where the photoreceptor cell bodies reside.</obo:IAO_0000115>
         <oboInOwl:created_by>eriksegerdell</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-15T02:26:30Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001789</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001789</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0003219</oboInOwl:id>
         <rdfs:label>retinal outer nuclear layer</rdfs:label>
@@ -26088,7 +26090,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003219"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The layer within the retina where the photoreceptor cell bodies reside.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001789</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001789</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -26236,7 +26238,7 @@
         <obo:IAO_0000115>Innermost nuclear layer of the retina, consisting of retinal ganglion cells, containing neurons that project axons through the optic nerve to the brain.</obo:IAO_0000115>
         <oboInOwl:created_by>eriksegerdell</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-15T02:26:41Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001792</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001792</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0003223</oboInOwl:id>
         <rdfs:label>retinal ganglion cell layer</rdfs:label>
@@ -26245,7 +26247,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003223"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Innermost nuclear layer of the retina, consisting of retinal ganglion cells, containing neurons that project axons through the optic nerve to the brain.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001792</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001792</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -26314,7 +26316,7 @@
         <obo:IAO_0000115>The plexiform layer of the retina positioned between the inner nuclear layer and the ganglion cell layer and containing the dendrites of retinal ganglion cells and processes of bipolar and amacrine cells.</obo:IAO_0000115>
         <oboInOwl:created_by>eriksegerdell</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-15T02:26:47Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001795</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001795</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0003225</oboInOwl:id>
         <rdfs:label>retinal inner plexiform layer</rdfs:label>
@@ -26323,7 +26325,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003225"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The plexiform layer of the retina positioned between the inner nuclear layer and the ganglion cell layer and containing the dendrites of retinal ganglion cells and processes of bipolar and amacrine cells.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001795</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001795</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -26453,7 +26455,7 @@
         <obo:IAO_0000115>Type of trunk muscle that lies ventral to the horizontal septum of the vertebrae and is innervated by the ventral ramus of the spinal nerves. The arise from migratory somitic cells along the lower margin of the trunk somites.</obo:IAO_0000115>
         <oboInOwl:created_by>eriksegerdell</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-16T02:14:05Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0008777</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0008777</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>body wall muscle</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>XAO:0003228</oboInOwl:id>
@@ -26463,7 +26465,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003228"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Type of trunk muscle that lies ventral to the horizontal septum of the vertebrae and is innervated by the ventral ramus of the spinal nerves. The arise from migratory somitic cells along the lower margin of the trunk somites.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0008777</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0008777</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:curator</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -26940,7 +26942,7 @@
         <obo:IAO_0000115>A cell found in the embryo before the formation of all the germ layers is complete.</obo:IAO_0000115>
         <oboInOwl:created_by>eriksegerdell</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-20T01:31:42Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000007</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0003241</oboInOwl:id>
         <rdfs:label>early embryonic cell</rdfs:label>
@@ -26949,7 +26951,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003241"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A cell found in the embryo before the formation of all the germ layers is complete.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000007</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -27130,7 +27132,7 @@
         <obo:IAO_0000115>A cell of an endocrine gland, ductless glands that secrete substances which are released directly into the circulation and which influence metabolism and other body functions.</obo:IAO_0000115>
         <oboInOwl:created_by>eriksegerdell</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-20T01:38:59Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000163</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000163</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0003247</oboInOwl:id>
         <rdfs:label>endocrine cell</rdfs:label>
@@ -27139,7 +27141,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003247"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A cell of an endocrine gland, ductless glands that secrete substances which are released directly into the circulation and which influence metabolism and other body functions.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000163</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000163</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -27603,7 +27605,7 @@
         <obo:IAO_0000115>An erythrocyte having a nucleus.</obo:IAO_0000115>
         <oboInOwl:created_by>eriksegerdell</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-20T02:10:45Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000562</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000562</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0003260</oboInOwl:id>
         <rdfs:label>nucleate erythrocyte</rdfs:label>
@@ -27612,7 +27614,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003260"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An erythrocyte having a nucleus.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000562</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000562</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -27741,7 +27743,7 @@
         <obo:IAO_0000115>A slender, contractile, mesenchymal-like cell found in close association with capillary walls. They are relatively undifferentiated and may become fibroblasts, macrophages, or smooth muscle cells.</obo:IAO_0000115>
         <oboInOwl:created_by>eriksegerdell</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-20T02:21:51Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000669</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000669</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0003264</oboInOwl:id>
         <rdfs:label>pericyte</rdfs:label>
@@ -27750,7 +27752,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003264"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A slender, contractile, mesenchymal-like cell found in close association with capillary walls. They are relatively undifferentiated and may become fibroblasts, macrophages, or smooth muscle cells.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000669</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000669</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -27837,7 +27839,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Embryonic primordium consisting of an endodermal thickening that develops into the liver.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:EJS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0000124</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0000124</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -27882,7 +27884,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003267"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Either of the pair of structures lying on either side of the dorsal aorta in which fluid balance is regulated and waste is excreted out in the form of urine. Amphibians (and fish) have a early kidney, the pronephros/pronephric kidney, which consitsts of a single nephron attached to a pronephric duct, which in turn is linked to the cloaca. The pronephros functions as primary filtration system for the embryo while the mesonephric kidney develops. The pronephros starts to degenerate at NF stage 53. The mesonephros starts to form at NF stage 39 and contuinues to grow into the adult kidney.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0000250</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AAO:0000250</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -27962,7 +27964,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003269"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Type of muscle that arises in the zygomatic arch and closes the jaw.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0003681</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0003681</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -27986,7 +27988,7 @@
         <obo:IAO_0000115>A tube shaped portion of tissue lined with epithelial cells that collects secretions and routes them to their destination.</obo:IAO_0000115>
         <oboInOwl:created_by>lab</oboInOwl:created_by>
         <oboInOwl:creation_date>2011-06-16T10:41:29Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000058</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0000058</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>ducts</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>XAO:0004000</oboInOwl:id>
@@ -27996,7 +27998,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004000"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A tube shaped portion of tissue lined with epithelial cells that collects secretions and routes them to their destination.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000058</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0000058</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004000"/>
@@ -28142,7 +28144,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004004"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Epithelium that consists of epithelial cells not arranged in one ore more layers.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0010057</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AAO:0010057</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -28461,7 +28463,7 @@
         <obo:IAO_0000115>Skeletal element that is composed of cartilage tissue and may be permanent or transient.</obo:IAO_0000115>
         <oboInOwl:created_by>xenbase3</oboInOwl:created_by>
         <oboInOwl:creation_date>2011-08-22T03:25:09Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0007844</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0007844</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>cartilaginous element</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>chondrogenic element</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
@@ -28473,7 +28475,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004013"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Skeletal element that is composed of cartilage tissue and may be permanent or transient.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0007844</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0007844</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -29256,7 +29258,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004034"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Extracellular matrix that is mineralized.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VSAO:0000020</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VSAO:0000020</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -29333,7 +29335,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004036"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Avascular GAG-rich matrix that is mineralized.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VSAO:0000120</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VSAO:0000120</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -29372,7 +29374,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004037"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Avascular GAG-rich matrix that is not mineralized.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VSAO:0000119</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VSAO:0000119</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -29402,7 +29404,7 @@
         <obo:IAO_0000115>A specialized form of connective tissue in which the extracellular matrix is firm, providing the tissue with resilience, and/or mineralized and that functions in mechanical and structural support.</obo:IAO_0000115>
         <oboInOwl:created_by>xenbase3</oboInOwl:created_by>
         <oboInOwl:creation_date>2011-08-22T05:21:47Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0004755</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0004755</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0004038</oboInOwl:id>
         <rdfs:label>skeletal tissue</rdfs:label>
@@ -29411,7 +29413,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004038"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A specialized form of connective tissue in which the extracellular matrix is firm, providing the tissue with resilience, and/or mineralized and that functions in mechanical and structural support.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0004755</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0004755</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -29764,7 +29766,7 @@
         <obo:IAO_0000115>Anatomical cluster that comprises the oral part of the pharynx.</obo:IAO_0000115>
         <oboInOwl:created_by>xenbase3</oboInOwl:created_by>
         <oboInOwl:creation_date>2011-08-23T08:50:17Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001729</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001729</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0004048</oboInOwl:id>
         <rdfs:label>oropharynx</rdfs:label>
@@ -29773,7 +29775,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004048"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Anatomical cluster that comprises the oral part of the pharynx.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001729</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001729</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -29806,7 +29808,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004049"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A layer of dense irregular connective tissue that surrounds the cartilage of developing bone, consisting of two separate layers: an outer fibrous layer and inner chondrogenic layer. The fibrous layer contains fibroblasts, which produce collagenous fibers. The chondrogenic layer remains undifferentiated and can form chondroblasts or chondrocytes. Perichondrium is a type of  connective tissue, and also functions in the growth and repair of cartilage. Once vascularized, the perichondrium becomes the periosteum.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Perichondrium</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Perichondrium</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -31276,7 +31278,7 @@
         <obo:IAO_0000115>One of the two edges of the neural groove.</obo:IAO_0000115>
         <oboInOwl:created_by>xenbase3</oboInOwl:created_by>
         <oboInOwl:creation_date>2011-08-24T02:42:38Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0005062</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0005062</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0004087</oboInOwl:id>
         <rdfs:label>neural fold</rdfs:label>
@@ -31285,7 +31287,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004087"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>One of the two edges of the neural groove.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0005062</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0005062</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -31403,7 +31405,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Portion of tissue that is part of the anterior neural plate and will form the optic vesicle.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:EJS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0000570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0000570</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -31501,7 +31503,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004092"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A thick, U-shaped primordium positioned at the border of the future epidermis and the neural plate/neural crest forming regions, in the neural stage embryo. This field of naive ectoderm is subdivided into 3 domains, each with distinct gene expression profiles: the anterior PPE (bottom of the U), the lateral PPE (the curves of the U), and the posterior PPE (arms of the U and adjacent to the neural crest/neural plate border). The PPE differentiates into the sensory placodes, which in turn form the adenohypophysis/anterior pituitary gland and sensory organs (such as the olfactory epithelium, lens, trigeminal nerves, epibranchial nerves, otic vesicles and lateral lines).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:30291163</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:30291163</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -31574,7 +31576,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Epithelium that borders the anterior and equitorial region of the lens. Lens growth occurs via the differentiation of additional fibre cells from lens epithelial cells.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:EJS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0001326</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0001326</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -31612,7 +31614,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004095"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The region of the lens of the eye where cells from the anterior epithelial capsule become transformed into the fibers that compose the lens substance.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dictionary.reference.com/browse/transitional+zone</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://dictionary.reference.com/browse/transitional+zone</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -31642,7 +31644,7 @@
         <obo:IAO_0000115>Portion of tissue comprising fibers that form the bulk of the lens. They are long, thin, transparent cells.</obo:IAO_0000115>
         <oboInOwl:created_by>xenbase3</oboInOwl:created_by>
         <oboInOwl:creation_date>2011-08-24T03:45:09Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002444</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0002444</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>lens fiber</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>lens fiber cells</oboInOwl:hasRelatedSynonym>
@@ -31653,7 +31655,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004096"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Portion of tissue comprising fibers that form the bulk of the lens. They are long, thin, transparent cells.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002444</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0002444</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -31723,7 +31725,7 @@
         <obo:IAO_0000115>A type of interneuron that has two neurites, usually an axon and a dendrite, extending from opposite poles of an ovoid cell body.</obo:IAO_0000115>
         <oboInOwl:created_by>xenbase3</oboInOwl:created_by>
         <oboInOwl:creation_date>2011-08-24T04:01:16Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000103</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000103</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>bipolar cell</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>XAO:0004098</oboInOwl:id>
@@ -31733,7 +31735,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004098"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A type of interneuron that has two neurites, usually an axon and a dendrite, extending from opposite poles of an ovoid cell body.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000103</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000103</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -31763,7 +31765,7 @@
         <obo:IAO_0000115>Interneuron of the retina. They integrate, modulate, and interpose a temporal domain in the visual message presented to the retinal ganglion cells, with which they synapse in the inner plexiform layer. They lack large axons.</obo:IAO_0000115>
         <oboInOwl:created_by>xenbase3</oboInOwl:created_by>
         <oboInOwl:creation_date>2011-08-24T04:06:40Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000561</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000561</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>amacrine neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0004099</oboInOwl:id>
@@ -31773,7 +31775,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004099"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Interneuron of the retina. They integrate, modulate, and interpose a temporal domain in the visual message presented to the retinal ganglion cells, with which they synapse in the inner plexiform layer. They lack large axons.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000561</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000561</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -32031,8 +32033,8 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004105"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any of bilaterally paired tubes that perform the resorptive and excretory functions of the pronephros, and which connect the pronephric glomeruli to the pronephric ducts.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0127224416</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0001558</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0127224416</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0001558</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -32637,7 +32639,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Anatomical cluster that consists of rapidly dividing cells.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:EJS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0000098</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0000098</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -37476,7 +37478,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004242"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The accompanying artery of the ischiadic nerve.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Accompanying_artery_of_ischiadic_nerve</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Accompanying_artery_of_ischiadic_nerve</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -37653,7 +37655,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004247"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A major artery of the neck that branches from the subclavian arteries and merge to form the single midline basilar artery.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Vertebral_artery</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Vertebral_artery</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -37957,7 +37959,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004255"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Either of the veins that collect blood from the trunk and skin and drain into the subclavian vein.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0010515</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AAO:0010515</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -38062,7 +38064,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004258"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Structure that comprises the base region of the telencephalon.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000204</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0000204</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -38222,7 +38224,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004262"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Lymphatic vessel located in the posterior ventral region of the trunk, ventral to the posterior cardinal vein.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:9048122465</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:9048122465</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -38396,7 +38398,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004267"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A multipolar neuron that connects afferent neurons and efferent neurons in neural pathways. They are found within the central nervous system and enteric nervous system.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Interneuron</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Interneuron</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -38553,7 +38555,7 @@
         <obo:IAO_0000115>Multi-tissue structure that is the ventral part of the midbrain.</obo:IAO_0000115>
         <oboInOwl:created_by>eriksegerdell</oboInOwl:created_by>
         <oboInOwl:creation_date>2012-01-28T06:06:15Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001943</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001943</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Tegm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>tegmentum mesencephali</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
@@ -38566,7 +38568,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004271"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Multi-tissue structure that is the ventral part of the midbrain.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001943</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001943</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -38610,7 +38612,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004272"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any of the neuronal precursor cells that are isolated and scattered throughout the anterior ventro-lateral region of the embryo, generally in a punctate pattern, immediately below the ectoderm.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17554687</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:17554687</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -38677,7 +38679,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Ossicle that is part of the axial skeleton.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0011142</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0011142</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>vertebral ossicle</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>XAO:0004275</oboInOwl:id>
@@ -38687,7 +38689,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004275"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Ossicle that is part of the axial skeleton.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0011142</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0011142</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -38709,7 +38711,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Skeletal element that is composed of bone tissue.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001474</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001474</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>bone organ</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>bone</oboInOwl:hasRelatedSynonym>
@@ -38720,7 +38722,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004276"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Skeletal element that is composed of bone tissue.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001474</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001474</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -38794,7 +38796,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004278"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Paired bone that is part of the shoulder assembly, joining the scapula to the front end of the sternum.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Coracoid</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Coracoid</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -38866,7 +38868,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004280"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Median fin skeleton located on the dorsal surface of the organism.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VSAO:0000168</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VSAO:0000168</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -38896,7 +38898,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004281"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Fin that is an unpaired fin located in the sagittal plane of the organism.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VSAO:0000162</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VSAO:0000162</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -39210,7 +39212,7 @@
         <obo:IAO_0000115>Anatomical structure that is part of a cell and that has a granularity level equal to that of a protein complex or higher.</obo:IAO_0000115>
         <oboInOwl:created_by>eriksegerdell</oboInOwl:created_by>
         <oboInOwl:creation_date>2012-02-23T11:17:28Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000014</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000014</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GO:0044464</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>cell component</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
@@ -39221,7 +39223,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004290"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Anatomical structure that is part of a cell and that has a granularity level equal to that of a protein complex or higher.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000014</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000014</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -39242,7 +39244,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004291"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A solution obtained by rupturing cells (especially unfertilized oocytes) and removing all particulate matter.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://medical-dictionary.thefreedictionary.com/cell-free+extract</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://medical-dictionary.thefreedictionary.com/cell-free+extract</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004291"/>
@@ -39286,7 +39288,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004292"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Region of the oocyte vegetal cortex that contains a subdomain of ER organized on top of the mitochondrial cloud and where localization of Vg1 mRNA takes place.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:15654016</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:15654016</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -39324,7 +39326,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004293"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Contractile ring formed at the division plane of the oocyte during first cleavage.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11942608</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:11942608</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -39682,7 +39684,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004302"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Structure that comprises the roof region of the telencephalon.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000203</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0000203</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -40050,7 +40052,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004310"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Bone of the ear that is connected to the tympanic membrane via the extrastapes. This structure is the amphibian ear ossicle, also known as the columella. It extends between extrastapes cartilage and the oval window. The extrastapes forms a cartilaginous tympanic disk.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0520252780</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0520252780</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -40237,7 +40239,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004315"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A cell of the perichondrium, the fibrous membrane of connective tissue covering the surface of cartilage.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://medical-dictionary.thefreedictionary.com/Perichondrial</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://medical-dictionary.thefreedictionary.com/Perichondrial</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004315"/>
@@ -41052,7 +41054,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004337"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Deep, visceral muscle associated with tongue movement.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0010659</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AAO:0010659</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -41632,7 +41634,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004354"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Muscle in the orbit that depresses, adducts, and helps extort (rotate laterally) the eye.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0006322</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0006322</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -41670,7 +41672,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004355"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Muscle in the orbit, the primary function is of which is elevation.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0006323</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0006323</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -41708,7 +41710,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004356"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Thin, narrow muscle placed near the anterior margin of the floor of the orbit.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0006320</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0006320</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -41746,7 +41748,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004357"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Muscle in the upper, medial side of the orbit whose primary action is downward, lateral rotation of the eye.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0006321</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0006321</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -42058,7 +42060,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004364"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Cartilaginous element that supports the anterior end of the nasal organ.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:1276806469</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:1276806469</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004364"/>
@@ -42507,7 +42509,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004374"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>One of the cartilaginous elements that meet and articulate in the median plane posterior to the basibranchial.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://amphibiatree.org/node/407</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://amphibiatree.org/node/407</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004374"/>
@@ -42697,7 +42699,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004378"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Cartilaginous element comprising the dorsal component of the mandibular arch.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0004752</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0004752</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -42749,7 +42751,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Cartilaginous element that forms at the posteroventral tip of Meckel&apos;s cartilage.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:EJS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0000422</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0000422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -42925,7 +42927,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004385"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Cartilaginous element that comprises the network-like cartilaginous skeleton of the gill region.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0009119</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0009119</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -43103,7 +43105,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Multi-tissue structure that is the dorsal part of the thalamus and emerges ventral to the caudal portion of the ventral habenular nucleus.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:EJS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0000653</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0000653</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -45521,7 +45523,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004456"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A sharp boundary, running parallel to the outside of the embryo, between involuted mesoderm and external ectoderm. It runs from the blastopore to the upper limit of the involuted mesoderm.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:21464931</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:21464931</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -47356,7 +47358,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004500"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any of the bony lateral projections from the presacral veterebrae of the anterior trunk region, enabling the lungs to expand and thus facilitate breathing by expanding the chest cavity. They serve to protect the lungs, heart, and other internal organs of the thorax.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Rib</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Rib</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004500"/>
@@ -47394,7 +47396,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004501"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A cell that is in the process of programmed cell death. The process is characterized by morphological changes (e.g. blebbing, cell shrinkage, nuclear fragmentation, chromatin condensation, and chromosomal DNA fragmentation) ending in cell death.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Apoptosis</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Apoptosis</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -49990,7 +49992,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Subdivision of the pallium that is located in the medial position.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0014738</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0014738</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>MP</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>hippocampus</oboInOwl:hasRelatedSynonym>
@@ -50001,7 +50003,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004570"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Subdivision of the pallium that is located in the medial position.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0014738</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0014738</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -50187,7 +50189,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A brain structure that is part of the septal nuclear complex and is connected with the hippocampus, hypothalamus, and amygdala.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001879</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001879</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>diagonal band</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>diagonal band of Broca</oboInOwl:hasRelatedSynonym>
@@ -50198,7 +50200,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004576"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A brain structure that is part of the septal nuclear complex and is connected with the hippocampus, hypothalamus, and amygdala.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001879</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001879</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -50593,7 +50595,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A region of the forebrain consisting of the caudate nucleus, putamen and fundus striati.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002435</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0002435</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Str</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>neostriatum</oboInOwl:hasRelatedSynonym>
@@ -50606,7 +50608,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004587"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A region of the forebrain consisting of the caudate nucleus, putamen and fundus striati.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002435</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0002435</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -50906,7 +50908,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0004595"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Nucleus situated in the thalamus that receives inputs from the basal nuclei and the function of which is to help coordinate and plan movement.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Ventral_lateral_nucleus</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Ventral_lateral_nucleus</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -53805,7 +53807,7 @@
         <oboInOwl:created_by>eriksegerdell</oboInOwl:created_by>
         <oboInOwl:creation_date>2015-05-19T21:14:01Z</oboInOwl:creation_date>
         <oboInOwl:hasBroadSynonym>satellite cell</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000594</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000594</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0005043</oboInOwl:id>
         <rdfs:label>skeletal muscle satellite cell</rdfs:label>
@@ -53814,7 +53816,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005043"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An elongated, spindle-shaped cell that is located between the basal lamina and the plasmalemma of a muscle fiber. These cells are mostly quiescent, but upon activation they divide to produce cells that generate new muscle fibers.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000594</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000594</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -54020,7 +54022,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005048"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A series of nuclei forming a column of grey matter embedded in the medulla, through the center of which runs the solitary tract. The solitary tract and nucleus are structures that carry and receive visceral sensation and taste from the facial (VII), glossopharyngeal (IX) and vagus (X) cranial nerves.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Solitary_nucleus</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Solitary_nucleus</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -54605,7 +54607,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005063"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Part of the double coil of the small intestine, consisting of anti-clockwise loops of intestine proximal to the internal coil.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10603354</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:10603354</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -54643,7 +54645,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005064"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Part of the double coil of the small intestine, consisting of clockwise loops of intestine distal to the external coil.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10603354</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:10603354</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -54844,7 +54846,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005069"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A hindlimb muscle that is used in locomotion and which contains a population of slow or tonic fibers, as well as twitch fibers.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:434137</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:434137</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -55025,7 +55027,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005074"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A gland of the skin in which some secretory cells are serous and some mucous.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.medilexicon.com/medicaldictionary.php?t=37219</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.medilexicon.com/medicaldictionary.php?t=37219</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -55066,7 +55068,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005075"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any of the branched tubuloalveolar glands situated in the mucous membrane of the olfactory region of the nasal cavity that produce mucus to moisten the olfactory epithelium and dissolve odor-containing gases.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://medical-dictionary.thefreedictionary.com/olfactory+gland</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://medical-dictionary.thefreedictionary.com/olfactory+gland</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -55251,7 +55253,7 @@
         <obo:IAO_0000115>The bilaminar epithelium formed from the myotome and dermatome.</obo:IAO_0000115>
         <oboInOwl:created_by>eriksegerdell</oboInOwl:created_by>
         <oboInOwl:creation_date>2015-05-24T13:29:14Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0004290</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0004290</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>dermamyotome</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0005080</oboInOwl:id>
@@ -55261,7 +55263,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005080"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The bilaminar epithelium formed from the myotome and dermatome.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0004290</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0004290</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -55325,7 +55327,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005082"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A special form of chromosome found in growing oocytes, transforming into the lampbrush form because of an active transcription of many genes, and organized into a series of chromomeres with large chromatin loops extended laterally.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Lampbrush_chromosome</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Lampbrush_chromosome</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -57334,7 +57336,7 @@
         <obo:IAO_0000115>A class of large neuroglial (macroglial) cells in the central nervous system that form the insulating myelin sheath of axons.</obo:IAO_0000115>
         <oboInOwl:created_by>eriksegerdell</oboInOwl:created_by>
         <oboInOwl:creation_date>2016-09-03T19:21:41Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000128</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000128</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0005133</oboInOwl:id>
         <rdfs:label>oligodendrocyte</rdfs:label>
@@ -57343,7 +57345,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005133"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A class of large neuroglial (macroglial) cells in the central nervous system that form the insulating myelin sheath of axons.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000128</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000128</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -57401,7 +57403,7 @@
         <obo:IAO_0000115>An endocrine cell that is located in the epithelium of the gastrointestinal tract or in the pancreas.</obo:IAO_0000115>
         <oboInOwl:created_by>eriksegerdell</oboInOwl:created_by>
         <oboInOwl:creation_date>2016-12-06T18:00:00Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000164</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000164</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0005135</oboInOwl:id>
         <rdfs:label>enteroendocrine cell</rdfs:label>
@@ -57410,7 +57412,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005135"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An endocrine cell that is located in the epithelium of the gastrointestinal tract or in the pancreas.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000164</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CL:0000164</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -57804,7 +57806,7 @@
         <obo:IAO_0000115>The section of the stomach which lies between the cardia and the stomach body, and contains the fundic glands.</obo:IAO_0000115>
         <oboInOwl:created_by>eriksegerdell</oboInOwl:created_by>
         <oboInOwl:creation_date>2016-12-09T17:00:00Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001160</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001160</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>fundic stomach</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>fundus of stomach</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>gastric fundus</oboInOwl:hasExactSynonym>
@@ -57816,8 +57818,8 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005145"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The section of the stomach which lies between the cardia and the stomach body, and contains the fundic glands.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001160</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Stomach</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001160</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Stomach</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -58240,7 +58242,7 @@
         <obo:IAO_0000115>The section of the stomach which lies between the fundus and the pyloric antrum.</obo:IAO_0000115>
         <oboInOwl:created_by>eriksegerdell</oboInOwl:created_by>
         <oboInOwl:creation_date>2016-12-09T17:00:00Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001161</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001161</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>body of stomach</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>gastric body</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
@@ -58251,7 +58253,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005156"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The section of the stomach which lies between the fundus and the pyloric antrum.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001161</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001161</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -58287,7 +58289,7 @@
         <obo:IAO_0000115>The section of the stomach which lies between the stomach body and pylorus, and that contains gastrin-producing G cells, which stimulate acid production, and the luminal pH-sensitive population of somatostatin-producing D cells.</obo:IAO_0000115>
         <oboInOwl:created_by>eriksegerdell</oboInOwl:created_by>
         <oboInOwl:creation_date>2016-12-09T17:00:00Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001165</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001165</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>antrum of stomach</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>pyloric antrum</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
@@ -58298,7 +58300,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005157"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The section of the stomach which lies between the stomach body and pylorus, and that contains gastrin-producing G cells, which stimulate acid production, and the luminal pH-sensitive population of somatostatin-producing D cells.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001165</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0001165</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -60044,7 +60046,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005200"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A straight line through space, intersecting an anatomical entity. Axis directions are defined in terms of axes.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BSPO:0000010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSPO:0000010</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -60074,7 +60076,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005201"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An axis that extends from the animal end of an egg or early embryo to the opposite, vegetal end.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BSPO:0000199</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSPO:0000199</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -60104,7 +60106,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005202"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An axis that extends through an organism from head end to opposite end of body or tail.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BSPO:0000013</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSPO:0000013</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -60134,7 +60136,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005203"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An axis that is approximately perpendicular to the anterior-posterior axis and that extends through the horizontal plane of the body.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BSPO:0000016</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSPO:0000016</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -60164,7 +60166,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005204"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An axis that bisects an organism from left to right sides of body, through a sagittal plane.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BSPO:0000017</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSPO:0000017</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -60314,7 +60316,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005209"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An anatomical region that is the entire part of an anatomical structure ventral to a horizontal plane and bounded on one side by the same horizontal plane.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSPO:0000068</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BSPO:0000068</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -60704,7 +60706,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005222"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Anatomical region that overlaps the anterior and ventral regions of a body or body part.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSPO:0000027</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BSPO:0000027</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -63580,7 +63582,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A cardial valve in the atrioventricular region that separates the atrium from the ventricle and prevents backflow from the ventricles into the atria during systole.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002133</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0002133</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0005308</oboInOwl:id>
         <rdfs:label>atrioventricular valve</rdfs:label>
@@ -63589,7 +63591,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005308"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A cardial valve in the atrioventricular region that separates the atrium from the ventricle and prevents backflow from the ventricles into the atria during systole.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002133</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0002133</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -63700,7 +63702,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The midline of aligned thick filaments in a sarcomere; location of specific proteins that link thick filaments. Depending on muscle type the M band consists of different numbers of M lines.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0031430</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0031430</oboInOwl:hasDbXref>
         <oboInOwl:hasNarrowSynonym>M line</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>mesophragma</oboInOwl:hasRelatedSynonym>
@@ -63711,7 +63713,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005312"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The midline of aligned thick filaments in a sarcomere; location of specific proteins that link thick filaments. Depending on muscle type the M band consists of different numbers of M lines.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0031430</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0031430</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -63733,7 +63735,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The part of the cytoskeleton (the internal framework of a cell) composed of actin and associated proteins. Includes actin cytoskeleton-associated complexes.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0015629</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0015629</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0005313</oboInOwl:id>
         <rdfs:label>actin cytoskeleton</rdfs:label>
@@ -63742,7 +63744,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005313"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The part of the cytoskeleton (the internal framework of a cell) composed of actin and associated proteins. Includes actin cytoskeleton-associated complexes.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0015629</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0015629</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -63770,7 +63772,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Either of the paired endochondral bones forming the anterior and lateral walls of the otic capsules.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0004746</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0004746</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>XAO:0005314</oboInOwl:id>
         <rdfs:label>prootic bone</rdfs:label>
@@ -63779,7 +63781,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005314"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Either of the paired endochondral bones forming the anterior and lateral walls of the otic capsules.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0004746</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0004746</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -63930,7 +63932,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005318"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The portion of the actin cytoskeleton, comprising filamentous actin and associated proteins, that lies just beneath the plasma membrane.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0030864</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0030864</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -63995,7 +63997,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A multi-tissue structure consisting of bone and soft tissue that forms a part of the roof of the oral cavity.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0007375</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0007375</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>xenopus_anatomy</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>palate</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>palatum</oboInOwl:hasRelatedSynonym>
@@ -64007,7 +64009,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0005320"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A multi-tissue structure consisting of bone and soft tissue that forms a part of the roof of the oral cavity.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0007375</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0007375</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -64235,7 +64237,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Embryonic stage during which neurulation is completed and tail formation begins, visible by an emerging tail primordium; comprising Nieuwkoop and Faber stages 22 to 44 (feeding), including the beginning of hatching (NF stage 35/36).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0815318960</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.nature.com/nrg/journal/v5/n6/glossary/nrg1347.html</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.nature.com/nrg/journal/v5/n6/glossary/nrg1347.html</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
