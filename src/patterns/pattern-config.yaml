@@ -9,6 +9,11 @@ anatomy_config:
       - http://purl.obolibrary.org/obo/XAO_0003185
       - http://purl.obolibrary.org/obo/XAO_1000000
   patterns:
+    - pattern: abnormalDevelopmentOfAnatomicalEntity
+      blacklist:
+      blacklist_branch:
+      - http://purl.obolibrary.org/obo/XAO_0003007
+      - http://purl.obolibrary.org/obo/XAO_0005205
     - pattern: abnormalAbsenceOfAnatomicalEntity
       blacklist:
       - http://purl.obolibrary.org/obo/XAO_0005200
