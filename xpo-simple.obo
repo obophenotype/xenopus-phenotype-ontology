@@ -28624,6 +28624,11 @@ property_value: IAO:0000125 XPO:0102156
 is_obsolete: true
 
 [Term]
+id: XPO:0115399
+name: obsolete abnormal(ly) uncoiled of small intestine (T)
+is_obsolete: true
+
+[Term]
 id: XPO:0115400
 name: obsolete abnormal(ly) decreased coiling of small intestine (T)
 property_value: IAO:0000125 XPO:0133350
@@ -29937,10 +29942,20 @@ name: obsolete abnormal(ly) dissociated from of epidermal cell (T)
 is_obsolete: true
 
 [Term]
+id: XPO:0115765
+name: obsolete abnormal(ly) uncoiled of external coil of the small intestine (T)
+is_obsolete: true
+
+[Term]
 id: XPO:0115766
 name: abnormal(ly) inverted of external coil of the small intestine (T)
 def: "Abnormal(ly) inverted of external coil of the small intestine (Temporary definition)." []
 is_a: XPO:0102920 ! abnormal external coil of the small intestine morphology
+
+[Term]
+id: XPO:0115767
+name: obsolete abnormal(ly) uncoiled of internal coil of the small intestine (T)
+is_obsolete: true
 
 [Term]
 id: XPO:0115768
@@ -32727,9 +32742,8 @@ is_a: XPO:0116483 ! abnormal respiratory tube development
 
 [Term]
 id: XPO:0116437
-name: abnormal camera-type eye development
-def: "Abnormal camera-type eye development." []
-is_a: XPO:0116456 ! abnormal eye development
+name: obsolete abnormal camera-type eye development
+is_obsolete: true
 
 [Term]
 id: XPO:0116438
@@ -32793,9 +32807,9 @@ is_a: XPO:0116434 ! abnormal biological process
 
 [Term]
 id: XPO:0116448
-name: abnormal ear development
-def: "Abnormal ear development." []
-is_a: XPO:0116484 ! abnormal sensory organ development
+name: obsolete abnormal ear development
+property_value: IAO:0000125 XPO:0132323
+is_obsolete: true
 
 [Term]
 id: XPO:0116449
@@ -32841,9 +32855,9 @@ is_a: XPO:0116492 ! abnormal tissue development
 
 [Term]
 id: XPO:0116456
-name: abnormal eye development
-def: "Abnormal eye development." []
-is_a: XPO:0116484 ! abnormal sensory organ development
+name: obsolete abnormal eye development
+property_value: IAO:0000125 XPO:0131897
+is_obsolete: true
 
 [Term]
 id: XPO:0116457
@@ -32949,9 +32963,8 @@ is_a: XPO:0116488 ! abnormal stem cell development
 
 [Term]
 id: XPO:0116474
-name: abnormal nose development
-def: "Abnormal nose development." []
-is_a: XPO:0116484 ! abnormal sensory organ development
+name: obsolete abnormal nose development
+is_obsolete: true
 
 [Term]
 id: XPO:0116475
@@ -32961,10 +32974,9 @@ is_a: XPO:0116452 ! abnormal embryonic organ development
 
 [Term]
 id: XPO:0116476
-name: abnormal otic vesicle development
-def: "Abnormal otic vesicle development." []
-is_a: XPO:0116484 ! abnormal sensory organ development
-is_a: XPO:0116492 ! abnormal tissue development
+name: obsolete abnormal otic vesicle development
+property_value: IAO:0000125 XPO:0132416
+is_obsolete: true
 
 [Term]
 id: XPO:0116477
@@ -33010,9 +33022,8 @@ is_a: XPO:0116432 ! abnormal animal organ development
 
 [Term]
 id: XPO:0116484
-name: abnormal sensory organ development
-def: "Abnormal sensory organ development." []
-is_a: XPO:0116432 ! abnormal animal organ development
+name: obsolete abnormal sensory organ development
+is_obsolete: true
 
 [Term]
 id: XPO:0116485
@@ -61284,7 +61295,7 @@ id: XPO:0128508
 name: decreased size of the dorso-lateral region
 def: "An abnormal reduction in the size of the dorso-lateral region." []
 synonym: "abnormally small dorso-lateral region" EXACT []
-is_a: XPO:0107425 ! obsolete abnormal morphology of dorso-lateral region
+is_a: XPO:0107425 ! abnormal dorso-lateral region morphology
 is_a: XPO:0128091 ! decreased size of the anatomical region
 
 [Term]
@@ -73043,7 +73054,7 @@ id: XPO:0129988
 name: increased size of the dorso-lateral region
 def: "An increase in the size of the dorso-lateral region." []
 synonym: "enlarged dorso-lateral region" EXACT []
-is_a: XPO:0107425 ! obsolete abnormal morphology of dorso-lateral region
+is_a: XPO:0107425 ! abnormal dorso-lateral region morphology
 is_a: XPO:0129571 ! increased size of the anatomical region
 
 [Term]
