@@ -21,14 +21,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004478>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004479>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004480>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004481>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005272>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005273>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005274>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005275>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103454>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103455>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103456>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103457>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103458>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103459>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103460>))
@@ -51,34 +43,6 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 ############################
 #   Classes
 ############################
-
-# Class: <http://purl.obolibrary.org/obo/XPO_0103454> (bifurcated left hindlimb)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0103454> "Bifurcation of the left hindlimb."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0103454> "left hindlimb bifurcation"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0103454> "bifurcated left hindlimb"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103454> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001784> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005274>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
-
-# Class: <http://purl.obolibrary.org/obo/XPO_0103455> (bifurcated right hindlimb)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0103455> "Bifurcation of the right hindlimb."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0103455> "right hindlimb bifurcation"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0103455> "bifurcated right hindlimb"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103455> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001784> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005275>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
-
-# Class: <http://purl.obolibrary.org/obo/XPO_0103456> (bifurcated left forelimb)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0103456> "Bifurcation of the left forelimb."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0103456> "left forelimb bifurcation"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0103456> "bifurcated left forelimb"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103456> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001784> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005272>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
-
-# Class: <http://purl.obolibrary.org/obo/XPO_0103457> (bifurcated right forelimb)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0103457> "Bifurcation of the right forelimb."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0103457> "right forelimb bifurcation"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0103457> "bifurcated right forelimb"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103457> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001784> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005273>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 # Class: <http://purl.obolibrary.org/obo/XPO_0103458> (bifurcated forelimb)
 
