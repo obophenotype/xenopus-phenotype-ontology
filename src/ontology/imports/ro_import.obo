@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: xpo/releases/2019-11-27/imports/ro_import.owl
+data-version: xpo/releases/2019-12-06/imports/ro_import.owl
 subsetdef: ro-eco ""
 subsetdef: RO:0002259 ""
 ontology: xpo/imports/ro_import
@@ -1236,6 +1236,15 @@ id: RO:0002502
 name: depends on
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: seeAlso BFO:0000169
+
+[Typedef]
+id: RO:0002503
+name: towards
+def: "q towards e2 if and only if q is a relational quality such that q inheres-in some e, and e != e2 and q is dependent on e2" []
+property_value: IAO:0000116 "This relation is provided in order to support the use of relational qualities such as 'concentration of'; for example, the concentration of C in V is a quality that inheres in V, but pertains to C." xsd:string
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20064205
+is_a: RO:0002502 ! depends on
 
 [Typedef]
 id: RO:0002506

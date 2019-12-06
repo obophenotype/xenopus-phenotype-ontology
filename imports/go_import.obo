@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: xpo/releases/2019-11-27/imports/go_import.owl
+data-version: xpo/releases/2019-12-06/imports/go_import.owl
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_agr "AGR slim"
@@ -984,6 +984,175 @@ is_a: GO:0034062 ! 5'-3' RNA polymerase activity
 relationship: part_of GO:0032774 ! RNA biosynthetic process
 
 [Term]
+id: GO:0004175
+name: endopeptidase activity
+namespace: molecular_function
+alt_id: GO:0016809
+def: "Catalysis of the hydrolysis of internal, alpha-peptide bonds in a polypeptide chain." [http://merops.sanger.ac.uk/about/glossary.htm#ENDOPEPTIDASE]
+synonym: "elastase activity" RELATED [GOC:krc]
+synonym: "endoprotease activity" NARROW []
+synonym: "proteasome endopeptidase activity" NARROW []
+synonym: "proteinase" NARROW []
+xref: MetaCyc:RXN0-5195
+xref: Reactome:R-HSA-1168640 "Ubiquitinated IkB is degraded"
+xref: Reactome:R-HSA-1234159 "Proteasome proteolyzes ub-HIF-alpha"
+xref: Reactome:R-HSA-1236935 "Proteasomal cleavage of substrate"
+xref: Reactome:R-HSA-1236970 "Proteasomal clevage of exogenous antigen"
+xref: Reactome:R-HSA-1251997 "Cleavage of ERBB4m80 by gamma-scretase complex"
+xref: Reactome:R-HSA-1433374 "Processing of SCF isoform 1"
+xref: Reactome:R-HSA-1504193 "Ubiquitinated DVL is degraded by the proteasome"
+xref: Reactome:R-HSA-174058 "Degradation of multiubiquitinated Cdh1"
+xref: Reactome:R-HSA-174105 "Degradation of multiubiquitinated cell cycle proteins"
+xref: Reactome:R-HSA-174202 "Degradation of multiubiquitinated Securin"
+xref: Reactome:R-HSA-174203 "SCF-mediated degradation of Emi1"
+xref: Reactome:R-HSA-174255 "Degradation multiubiquitinated Cyclin A"
+xref: Reactome:R-HSA-180573 "Degradation of ubiquitinated CD4"
+xref: Reactome:R-HSA-180603 "Proteosome-mediated degradation of APOBEC3G"
+xref: Reactome:R-HSA-187574 "Degradation of ubiquitinated p27/p21 by the 26S proteasome"
+xref: Reactome:R-HSA-188191 "APC/C:Cdh1-mediated degradation of Skp2"
+xref: Reactome:R-HSA-193682 "gamma-secretase cleaves the p75NTR transmembrane domain"
+xref: Reactome:R-HSA-209061 "Ubiquitinated and phosphorylated IKBA binds to and is degraded by the proteasome complex"
+xref: Reactome:R-HSA-211715 "Proteasome mediated degradation of PAK-2p34"
+xref: Reactome:R-HSA-2130282 "Degradation of ubiquitinated beta catenin by the proteasome"
+xref: Reactome:R-HSA-2213200 "Release of endostatin-like peptides"
+xref: Reactome:R-HSA-264458 "Proteasome mediated degradation of COP1"
+xref: Reactome:R-HSA-353125 "26S proteosome degrades ODC holoenzyme complex"
+xref: Reactome:R-HSA-3640874 "Ub-RibC-AXIN is degraded by the proteasome"
+xref: Reactome:R-HSA-3928656 "gamma-secretase cleaves EPHB2"
+xref: Reactome:R-HSA-450466 "AUF1:mRNA complex is destroyed"
+xref: Reactome:R-HSA-4608855 "PRICKLE1 is degraded by the proteasome"
+xref: Reactome:R-HSA-4641256 "Ubiquitinated AXIN is degraded by the proteasome"
+xref: Reactome:R-HSA-4641260 "Ubiquitinated DVL1 is degraded by the proteasome"
+xref: Reactome:R-HSA-5358340 "Autoproteolytic cleavage of Hh precursors"
+xref: Reactome:R-HSA-5358460 "HPE SHH variants don't undergo autoproteolytic cleavage"
+xref: Reactome:R-HSA-5362448 "Hh C-terminal fragments are degraded by the proteasome"
+xref: Reactome:R-HSA-5387392 "processing defective Hh variants are degraded by the proteasome"
+xref: Reactome:R-HSA-5607724 "26S proteasome processes K48PolyUb-K21,22-p-S32,36-IkBA:NF-kB complex to form NF-kB complex"
+xref: Reactome:R-HSA-5607731 "26S proteasome processes p-7S-p100:RELB to form p52:RELB"
+xref: Reactome:R-HSA-5610754 "GLI3 is partially degraded by the proteasome to yield the GLI3 repressor"
+xref: Reactome:R-HSA-5610757 "GLI2 is degraded by the proteasome"
+xref: Reactome:R-HSA-5610758 "GLI1 is degraded by the proteasome after ubiquitination by beta-TrCP"
+xref: Reactome:R-HSA-5610760 "GLI1 is degraded by the proteasome after ubiquitination by ITCH"
+xref: Reactome:R-HSA-5635854 "GLI2,3 are degraded by the proteasome"
+xref: Reactome:R-HSA-5635868 "ub-GLI is degraded by the proteasome"
+xref: Reactome:R-HSA-5658430 "NF1 is degraded by the proteasome"
+xref: Reactome:R-HSA-5668481 "Protesomal degradation of K48polyUb-TRAF3"
+xref: Reactome:R-HSA-5668520 "26Sproteasome degrades K48polyUb-NIK"
+xref: Reactome:R-HSA-5687112 "MAPK6 is degraded by the 26S proteasome"
+xref: Reactome:R-HSA-5693081 "FURIN cleaves 7K-BACE1 to 7K-BACE1(46-501)"
+xref: Reactome:R-HSA-6784628 "PCSK6,FURIN mediate dissociation of 2 x LPL from GPIHBP1:HSPG:LPL dimer"
+xref: Reactome:R-HSA-6784676 "PCSK5 mediates dissociation of 2 x LPL from GPIHBP1:HSPG:LPL dimer"
+xref: Reactome:R-HSA-68825 "Ubiquitinated geminin is degraded by the proteasome"
+xref: Reactome:R-HSA-68948 "Ubiquitinated Orc1 is degraded by the proteasome"
+xref: Reactome:R-HSA-69016 "Ubiquitinated Cdc6 is degraded by the proteasome"
+xref: Reactome:R-HSA-69600 "Proteolytic degradation of ubiquitinated-Cdc25A"
+xref: Reactome:R-HSA-74730 "Insulin degradation"
+xref: Reactome:R-HSA-75825 "Proteasome mediated degradation of Cyclin D1"
+xref: Reactome:R-HSA-8849797 "Membrane proteases cleave Profilaggrin producing Filaggrin"
+xref: Reactome:R-HSA-8850992 "Proteasome degrades polyubiquitinated PTEN"
+xref: Reactome:R-HSA-8852354 "GTSE1 facilitates proteasome-mediated degradation of TP53"
+xref: Reactome:R-HSA-8854044 "Proteasome degrades AURKA ubiquitinated by SCF-FBXL7"
+xref: Reactome:R-HSA-8854071 "Proteasome-mediated degradation of PolyUb-FBXL7"
+xref: Reactome:R-HSA-8866553 "misfolded CFTR is degraded by the 26S proteasome"
+xref: Reactome:R-HSA-8866858 "CFTR F508del is degraded by the 26S proteasome"
+xref: Reactome:R-HSA-8934819 "Cytoplasmic proteases cleave Profilaggrin producing Filaggrin"
+xref: Reactome:R-HSA-8939801 "26S proteasome degrades PolyUb-RUNX2"
+xref: Reactome:R-HSA-8952408 "Polyubiquitinated RUNX3 is degraded by the proteasome"
+xref: Reactome:R-HSA-8957265 "26S proteasome degrades TP73 polyubiquitinated by ITCH"
+xref: Reactome:R-HSA-9008110 "Proteasome degrades polyubiquitinated RUNX2"
+xref: Reactome:R-HSA-9008475 "Proteasome degrades polyubiquitinated RUNX2"
+xref: Reactome:R-HSA-9009362 "Proteasome degrades PolyUb-RUNX2"
+xref: Reactome:R-HSA-9010096 "Gamma-secretase cleaves APP(672-770) to APP(672-711) and APP(672-713)"
+xref: Reactome:R-HSA-9011313 "Proteasome degrades ubiquitinated ROBO3.1"
+xref: Reactome:R-HSA-9604642 "Proteasome degrades ubiquitinated NICD4"
+xref: Reactome:R-HSA-983150 "Proteasomal cleavage of substrate"
+xref: Reactome:R-HSA-983158 "Trimming of peptides in ER"
+is_a: GO:0070011 ! peptidase activity, acting on L-amino acid peptides
+
+[Term]
+id: GO:0004197
+name: cysteine-type endopeptidase activity
+namespace: molecular_function
+def: "Catalysis of the hydrolysis of internal, alpha-peptide bonds in a polypeptide chain by a mechanism in which the sulfhydryl group of a cysteine residue at the active center acts as a nucleophile." [GOC:mah, http://merops.sanger.ac.uk/about/glossary.htm#CATTYPE, http://merops.sanger.ac.uk/about/glossary.htm#ENDOPEPTIDASE]
+synonym: "caspase activity" NARROW [GOC:mtg_apoptosis]
+synonym: "lysosomal cysteine-type endopeptidase" NARROW []
+synonym: "metacaspase activity" NARROW [GOC:mtg_apoptosis]
+synonym: "thiol endopeptidase activity" EXACT []
+xref: EC:3.4.22
+xref: Reactome:R-HSA-114252 "Cleavage of Procaspase-3 by the apoptosome"
+xref: Reactome:R-HSA-114259 "Cleavage of Procaspase9 to caspase9"
+xref: Reactome:R-HSA-114261 "Cleavage of Procaspase-7 by the apoptosome"
+xref: Reactome:R-HSA-1236948 "Antigen processing by cathepsin S in endosoytic vesicle"
+xref: Reactome:R-HSA-139898 "Caspase-8 activates BID by cleavage"
+xref: Reactome:R-HSA-139952 "Caspase-8 processing in the DISC"
+xref: Reactome:R-HSA-1678920 "TLR processing at low pH"
+xref: Reactome:R-HSA-1678981 "TLR9 processing at neutral pH"
+xref: Reactome:R-HSA-201595 "Caspase-mediated cleavage of plakophilin-1"
+xref: Reactome:R-HSA-201603 "Caspase-mediated cleavage of PKC theta"
+xref: Reactome:R-HSA-201608 "Caspase-mediated cleavage of alpha adducin"
+xref: Reactome:R-HSA-201611 "Caspase-mediated cleavage of Rock-1"
+xref: Reactome:R-HSA-201622 "Caspase-mediated cleavage of gelsolin"
+xref: Reactome:R-HSA-201628 "Caspase-mediated cleavage of vimentin at DSVD (85)"
+xref: Reactome:R-HSA-201629 "Caspase-mediated cleavage of Tau"
+xref: Reactome:R-HSA-201630 "Caspase-mediated cleavage of Acinus"
+xref: Reactome:R-HSA-201631 "Caspase-mediated cleavage of Desmoglein 3"
+xref: Reactome:R-HSA-201634 "Caspase-mediated cleavage of FADK 1"
+xref: Reactome:R-HSA-201636 "Caspase-mediated cleavage of Desmoplakin"
+xref: Reactome:R-HSA-201637 "Caspase-mediated cleavage of plectin-1"
+xref: Reactome:R-HSA-201639 "Caspase-mediated cleavage of GAS2"
+xref: Reactome:R-HSA-201640 "Caspase-mediated cleavage of farnesyltransferase/geranyl- geranyltransferase subunit alpha"
+xref: Reactome:R-HSA-2028692 "Cleavage of p-STK4 (p-MST1) by caspase 3"
+xref: Reactome:R-HSA-2028697 "Cleavage of p-STK3 (p-MST2) by caspase 3"
+xref: Reactome:R-HSA-202917 "Caspase-mediated cleavage of Desmoglein 1"
+xref: Reactome:R-HSA-202939 "Caspase-mediated cleavage of E-Cadherin"
+xref: Reactome:R-HSA-202947 "Caspase mediated cleavage of APC"
+xref: Reactome:R-HSA-202960 "Caspase mediated cleavage of C-IAP1"
+xref: Reactome:R-HSA-202966 "Caspase mediated cleavage of HIP-55"
+xref: Reactome:R-HSA-202967 "Caspase mediated cleavage of alpha-II-Fodrin"
+xref: Reactome:R-HSA-202969 "Caspase mediated cleavage of beta-catenin"
+xref: Reactome:R-HSA-211186 "Cleavage of DFF45 (224) by caspase-3"
+xref: Reactome:R-HSA-211190 "Caspase 3-mediated cleavage of DFF45 (117)"
+xref: Reactome:R-HSA-211651 "Cleavage of PAK-2 at 212"
+xref: Reactome:R-HSA-212552 "Caspase 3-mediated cleavage of PKC delta"
+xref: Reactome:R-HSA-2130336 "Initial proteolyis of Ii by aspartic proteases to lip22"
+xref: Reactome:R-HSA-2130349 "Generation of CLIP from lip10"
+xref: Reactome:R-HSA-2130504 "Cleavage of lip22 to lip10"
+xref: Reactome:R-HSA-2130706 "MHC class II antigen processing"
+xref: Reactome:R-HSA-2562564 "Caspase-8 processing within TLR4 complex"
+xref: Reactome:R-HSA-264865 "Caspase-mediated cleavage of Lamin A"
+xref: Reactome:R-HSA-264871 "Caspase-mediated cleavage of Lamin B1"
+xref: Reactome:R-HSA-3465448 "Caspase-8 and FLIP(L) processing at DISC"
+xref: Reactome:R-HSA-350158 "LGMN degrades GC"
+xref: Reactome:R-HSA-350318 "Caspase-mediated cleavage of vimentin at TNLD (429)"
+xref: Reactome:R-HSA-350319 "Caspase mediated cleavage of vimentin at IDVD (259)"
+xref: Reactome:R-HSA-350651 "Caspase-mediated cleavage of MASK"
+xref: Reactome:R-HSA-351849 "Caspase-mediated cleavage of Etk"
+xref: Reactome:R-HSA-351871 "Caspase-mediated cleavage of Z0-2"
+xref: Reactome:R-HSA-351876 "Caspase-mediated cleavage of occludin"
+xref: Reactome:R-HSA-351877 "Caspase-mediated cleavage of Desmoglein 2"
+xref: Reactome:R-HSA-351894 "Caspase mediated cleavage of BAP31"
+xref: Reactome:R-HSA-351901 "Caspase-mediated cleavage of MST3"
+xref: Reactome:R-HSA-351913 "Caspase-mediated cleavage of TJP1"
+xref: Reactome:R-HSA-351936 "Caspase-mediated cleavage of claspin"
+xref: Reactome:R-HSA-352268 "Cleavage of Satb1"
+xref: Reactome:R-HSA-418845 "Activation of caspase-3"
+xref: Reactome:R-HSA-418846 "Caspase cleavage of UNC5A"
+xref: Reactome:R-HSA-418852 "Caspase cleavage of UNC5B"
+xref: Reactome:R-HSA-448703 "Interleukin-1 family precursors are cleaved by caspase-1"
+xref: Reactome:R-HSA-5357828 "RIP1 is cleaved by CASP8"
+xref: Reactome:R-HSA-5634228 "TRAF1 is cleaved by caspases"
+xref: Reactome:R-HSA-5660663 "Caspase-8 cleaves IL1B precursor"
+xref: Reactome:R-HSA-5681987 "LC3 is cleaved by ATG4"
+xref: Reactome:R-HSA-5682377 "LC3 de-lipidation by ATG4"
+xref: Reactome:R-HSA-6814387 "CASP14 cleaves filaggrin"
+xref: Reactome:R-HSA-9012556 "IL37:2x(CASP1(120-197):CASP1(317-404)) cleaves IL37"
+xref: Reactome:R-HSA-9013895 "Caspase-8 processing within TLR3 complex"
+xref: Reactome:R-HSA-933532 "Processing of caspases"
+xref: Reactome:R-HSA-9603534 "Unknown caspase cleaves NTRK3"
+is_a: GO:0004175 ! endopeptidase activity
+is_a: GO:0008234 ! cysteine-type peptidase activity
+
+[Term]
 id: GO:0004672
 name: protein kinase activity
 namespace: molecular_function
@@ -1521,6 +1690,14 @@ xref: Reactome:R-HSA-73722 "Phosphorylation of UBF-1:rDNA Promoter"
 xref: Reactome:R-HSA-9626832 "MAPK1 or MAPK3 phosphorylates NCF1 at Ser345"
 is_a: GO:0004674 ! protein serine/threonine kinase activity
 relationship: part_of GO:0000165 ! MAPK cascade
+
+[Term]
+id: GO:0004711
+name: ribosomal protein S6 kinase activity
+namespace: molecular_function
+def: "Catalysis of the reaction: ribosomal protein S6 + ATP = ribosomal protein S6 phosphate + ATP." [GOC:mah, PMID:9822608]
+xref: EC:2.7.11
+is_a: GO:0004674 ! protein serine/threonine kinase activity
 
 [Term]
 id: GO:0004745
@@ -2125,6 +2302,20 @@ synonym: "protein amino acid methylation" EXACT [GOC:bf]
 xref: MIPS_funcat:14.07.09
 is_a: GO:0008213 ! protein alkylation
 is_a: GO:0043414 ! macromolecule methylation
+
+[Term]
+id: GO:0006508
+name: proteolysis
+namespace: biological_process
+def: "The hydrolysis of proteins into smaller polypeptides and/or amino acids by cleavage of their peptide bonds." [GOC:bf, GOC:mah]
+comment: This term was intentionally placed under 'protein metabolic process ; GO:0019538' rather than 'protein catabolic process ; GO:0030163' to cover all processes centered on breaking peptide bonds, including those involved in protein processing.
+subset: goslim_chembl
+subset: goslim_metagenomics
+subset: goslim_pir
+synonym: "ATP-dependent proteolysis" NARROW [GOC:mah]
+synonym: "peptidolysis" EXACT []
+xref: Wikipedia:Proteolysis
+is_a: GO:0019538 ! protein metabolic process
 
 [Term]
 id: GO:0006575
@@ -3060,6 +3251,50 @@ synonym: "protein amino acid alkylation" EXACT [GOC:bf]
 is_a: GO:0006464 ! cellular protein modification process
 
 [Term]
+id: GO:0008233
+name: peptidase activity
+namespace: molecular_function
+def: "Catalysis of the hydrolysis of a peptide bond. A peptide bond is a covalent bond formed when the carbon atom from the carboxyl group of one amino acid shares electrons with the nitrogen atom from the amino group of a second amino acid." [GOC:jl, ISBN:0815332181]
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_yeast
+synonym: "hydrolase, acting on peptide bonds" EXACT []
+synonym: "peptide hydrolase activity" EXACT []
+synonym: "protease activity" EXACT []
+synonym: "proteinase activity" NARROW []
+xref: EC:3.4
+xref: Reactome:R-HSA-205112 "gamma-secretase cleaves p75NTR, releasing NRIF and TRAF6"
+xref: Reactome:R-HSA-3000243 "Unknown protease degrades GIF:Cbl to release Cbl"
+xref: Reactome:R-HSA-3139027 "Maturation of HIV Virion"
+xref: Reactome:R-HSA-376149 "Proteolytic processing of SLIT"
+xref: Reactome:R-HSA-448678 "CTSG cleaves CASP1(1-404)"
+xref: Reactome:R-HSA-5655483 "USP1 autocleavage"
+xref: Reactome:R-HSA-5684864 "NAPSA, CTSH, PGA3-5 cleave pro-SFTPB"
+xref: Reactome:R-HSA-5685902 "NAPSA, CTSH, PGA3-5 cleave pro-SFTPC"
+xref: Reactome:R-HSA-5693319 "CTRC hydrolyses PRSS1"
+is_a: GO:0016787 ! hydrolase activity
+is_a: GO:0140096 ! catalytic activity, acting on a protein
+relationship: part_of GO:0006508 ! proteolysis
+
+[Term]
+id: GO:0008234
+name: cysteine-type peptidase activity
+namespace: molecular_function
+alt_id: GO:0004220
+def: "Catalysis of the hydrolysis of peptide bonds in a polypeptide chain by a mechanism in which the sulfhydryl group of a cysteine residue at the active center acts as a nucleophile." [GOC:mah, http://merops.sanger.ac.uk/about/glossary.htm#CATTYPE]
+synonym: "cysteine protease activity" NARROW []
+synonym: "thiol protease activity" NARROW []
+xref: Reactome:R-HSA-2022381 "Cathepsin Z (Cathepsin X) hydrolyzes Angiotensin-(1-10) to Angiotensin-(1-8)"
+xref: Reactome:R-HSA-2467775 "Autocleavage of ESPL1 (Separase)"
+xref: Reactome:R-HSA-2467809 "ESPL1 (Separase) cleaves centromeric cohesin"
+xref: Reactome:R-HSA-5660752 "USP9X deubiquitinates Ub-SNCA"
+is_a: GO:0070011 ! peptidase activity, acting on L-amino acid peptides
+
+[Term]
 id: GO:0008283
 name: cell population proliferation
 namespace: biological_process
@@ -3106,6 +3341,17 @@ is_a: GO:0048523 ! negative regulation of cellular process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0008283 ! cell population proliferation
 relationship: negatively_regulates GO:0008283 ! cell population proliferation
+
+[Term]
+id: GO:0008286
+name: insulin receptor signaling pathway
+namespace: biological_process
+def: "The series of molecular signals generated as a consequence of the insulin receptor binding to insulin." [GOC:ceb]
+synonym: "daf-2 receptor signaling pathway" NARROW []
+synonym: "insulin receptor signalling pathway" EXACT []
+xref: MIPS_funcat:30.05.01.12.05
+is_a: GO:0007169 ! transmembrane receptor protein tyrosine kinase signaling pathway
+relationship: part_of GO:0032869 ! cellular response to insulin stimulus
 
 [Term]
 id: GO:0008361
@@ -3272,6 +3518,16 @@ comment: Note that this term is in the subset of terms that should not be used f
 subset: gocheck_do_not_manually_annotate
 subset: goslim_plant
 is_a: GO:0050896 ! response to stimulus
+
+[Term]
+id: GO:0009725
+name: response to hormone
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a hormone stimulus." [GOC:jl]
+synonym: "growth regulator" RELATED []
+synonym: "response to hormone stimulus" EXACT [GOC:dos]
+is_a: GO:0009719 ! response to endogenous stimulus
+is_a: GO:0010033 ! response to organic substance
 
 [Term]
 id: GO:0009726
@@ -3583,6 +3839,27 @@ name: response to organic substance
 namespace: biological_process
 def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an organic substance stimulus." [GOC:sm]
 is_a: GO:0042221 ! response to chemical
+
+[Term]
+id: GO:0010243
+name: response to organonitrogen compound
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an organonitrogen stimulus. An organonitrogen compound is formally a compound containing at least one carbon-nitrogen bond." [CHEBI:35352, PMID:9869419]
+synonym: "response to organic nitrogen" EXACT []
+is_a: GO:0010033 ! response to organic substance
+is_a: GO:1901698 ! response to nitrogen compound
+
+[Term]
+id: GO:0010466
+name: negative regulation of peptidase activity
+namespace: biological_process
+def: "Any process that stops or reduces the rate of peptidase activity, the hydrolysis of peptide bonds within proteins." [GOC:dph, GOC:tb]
+is_a: GO:0045861 ! negative regulation of proteolysis
+is_a: GO:0051346 ! negative regulation of hydrolase activity
+is_a: GO:0052547 ! regulation of peptidase activity
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0008233 ! peptidase activity
+relationship: negatively_regulates GO:0008233 ! peptidase activity
 
 [Term]
 id: GO:0010467
@@ -3956,6 +4233,47 @@ intersection_of: negatively_regulates GO:0022402 ! cell cycle process
 relationship: negatively_regulates GO:0022402 ! cell cycle process
 created_by: tanyaberardini
 creation_date: 2009-04-27T09:53:22Z
+
+[Term]
+id: GO:0010950
+name: positive regulation of endopeptidase activity
+namespace: biological_process
+def: "Any process that increases the frequency, rate or extent of endopeptidase activity, the endohydrolysis of peptide bonds within proteins." [GOC:dph, GOC:tb]
+is_a: GO:0010952 ! positive regulation of peptidase activity
+is_a: GO:0052548 ! regulation of endopeptidase activity
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0004175 ! endopeptidase activity
+relationship: positively_regulates GO:0004175 ! endopeptidase activity
+created_by: tanyaberardini
+creation_date: 2009-04-27T11:45:39Z
+
+[Term]
+id: GO:0010951
+name: negative regulation of endopeptidase activity
+namespace: biological_process
+def: "Any process that decreases the frequency, rate or extent of endopeptidase activity, the endohydrolysis of peptide bonds within proteins." [GOC:dph, GOC:tb]
+subset: goslim_chembl
+is_a: GO:0010466 ! negative regulation of peptidase activity
+is_a: GO:0052548 ! regulation of endopeptidase activity
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0004175 ! endopeptidase activity
+relationship: negatively_regulates GO:0004175 ! endopeptidase activity
+created_by: tanyaberardini
+creation_date: 2009-04-27T11:47:01Z
+
+[Term]
+id: GO:0010952
+name: positive regulation of peptidase activity
+namespace: biological_process
+def: "Any process that increases the frequency, rate or extent of peptidase activity, the hydrolysis of peptide bonds within proteins." [GOC:dph, GOC:tb]
+is_a: GO:0045862 ! positive regulation of proteolysis
+is_a: GO:0051345 ! positive regulation of hydrolase activity
+is_a: GO:0052547 ! regulation of peptidase activity
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0008233 ! peptidase activity
+relationship: positively_regulates GO:0008233 ! peptidase activity
+created_by: tanyaberardini
+creation_date: 2009-04-27T11:54:32Z
 
 [Term]
 id: GO:0010959
@@ -4450,6 +4768,30 @@ subset: goslim_yeast
 xref: EC:2.7.7
 xref: Reactome:R-HSA-6782434 "THG1L transfers GMP to 5' end of tRNA(His)"
 is_a: GO:0016772 ! transferase activity, transferring phosphorus-containing groups
+
+[Term]
+id: GO:0016787
+name: hydrolase activity
+namespace: molecular_function
+def: "Catalysis of the hydrolysis of various bonds, e.g. C-O, C-N, C-C, phosphoric anhydride bonds, etc. Hydrolase is the systematic name for any enzyme of EC class 3." [ISBN:0198506732]
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_metagenomics
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+xref: EC:3
+xref: Reactome:R-HSA-1236938 "Partial proteolysis of antigen in phagolysosomes"
+xref: Reactome:R-HSA-2029475 "Production of AA by iPLA2 upon FCGR activation"
+xref: Reactome:R-HSA-5694583 "ABHD4 hydrolyses NAPE"
+xref: Reactome:R-HSA-5695964 "ABHD14B hydrolyses PNPB"
+xref: Reactome:R-HSA-6786190 "CMBL hydrolyses OM to OLMS"
+xref: Reactome:R-HSA-6788295 "HDHD1:Mg2+ dephosphorylates PURIDP"
+xref: Reactome:R-HSA-8938314 "ENPPs hydrolyse CoA-SH to PPANT, PAP"
+xref: Reactome:R-HSA-8952137 "Phospholipid phosphatase 6 hydrolyses Presqualene diphosphate to presqualene monophosphate"
+is_a: GO:0003824 ! catalytic activity
 
 [Term]
 id: GO:0017145
@@ -5009,6 +5351,17 @@ is_a: GO:0050789 ! regulation of biological process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0007155 ! cell adhesion
 relationship: regulates GO:0007155 ! cell adhesion
+
+[Term]
+id: GO:0030162
+name: regulation of proteolysis
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of the hydrolysis of a peptide bond or bonds within a protein." [GOC:mah]
+synonym: "regulation of peptidolysis" EXACT []
+is_a: GO:0051246 ! regulation of protein metabolic process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0006508 ! proteolysis
+relationship: regulates GO:0006508 ! proteolysis
 
 [Term]
 id: GO:0030177
@@ -6291,6 +6644,31 @@ is_a: GO:0099568 ! cytoplasmic region
 intersection_of: GO:0005737 ! cytoplasm
 intersection_of: part_of GO:0120025 ! plasma membrane bounded cell projection
 relationship: part_of GO:0120025 ! plasma membrane bounded cell projection
+
+[Term]
+id: GO:0032868
+name: response to insulin
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an insulin stimulus. Insulin is a polypeptide hormone produced by the islets of Langerhans of the pancreas in mammals, and by the homologous organs of other organisms." [GOC:mah, ISBN:0198506732]
+synonym: "response to insulin stimulus" EXACT [GOC:dos]
+is_a: GO:0043434 ! response to peptide hormone
+
+[Term]
+id: GO:0032869
+name: cellular response to insulin stimulus
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an insulin stimulus. Insulin is a polypeptide hormone produced by the islets of Langerhans of the pancreas in mammals, and by the homologous organs of other organisms." [GOC:mah, ISBN:0198506732]
+is_a: GO:0032868 ! response to insulin
+is_a: GO:0071375 ! cellular response to peptide hormone stimulus
+
+[Term]
+id: GO:0032870
+name: cellular response to hormone stimulus
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a hormone stimulus." [GOC:mah]
+is_a: GO:0009725 ! response to hormone
+is_a: GO:0071310 ! cellular response to organic substance
+is_a: GO:0071495 ! cellular response to endogenous stimulus
 
 [Term]
 id: GO:0032872
@@ -7878,6 +8256,16 @@ is_a: GO:0043412 ! macromolecule modification
 is_a: GO:0044260 ! cellular macromolecule metabolic process
 
 [Term]
+id: GO:0043434
+name: response to peptide hormone
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a peptide hormone stimulus. A peptide hormone is any of a class of peptides that are secreted into the blood stream and have endocrine functions in living animals." [PMID:11027914, PMID:15134857, Wikipedia:Peptide_hormone]
+synonym: "response to peptide hormone stimulus" EXACT [GOC:dos]
+synonym: "response to polypeptide hormone stimulus" EXACT []
+is_a: GO:0009725 ! response to hormone
+is_a: GO:1901652 ! response to peptide
+
+[Term]
 id: GO:0043473
 name: pigmentation
 namespace: biological_process
@@ -8850,6 +9238,39 @@ intersection_of: positively_regulates GO:0004672 ! protein kinase activity
 relationship: positively_regulates GO:0004672 ! protein kinase activity
 
 [Term]
+id: GO:0045861
+name: negative regulation of proteolysis
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of the hydrolysis of a peptide bond or bonds within a protein." [GOC:go_curators]
+synonym: "down regulation of proteolysis" EXACT []
+synonym: "down-regulation of proteolysis" EXACT []
+synonym: "downregulation of proteolysis" EXACT []
+synonym: "inhibition of proteolysis" NARROW []
+synonym: "negative regulation of peptidolysis" EXACT []
+is_a: GO:0030162 ! regulation of proteolysis
+is_a: GO:0032269 ! negative regulation of cellular protein metabolic process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0006508 ! proteolysis
+relationship: negatively_regulates GO:0006508 ! proteolysis
+
+[Term]
+id: GO:0045862
+name: positive regulation of proteolysis
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of the hydrolysis of a peptide bond or bonds within a protein." [GOC:go_curators]
+synonym: "activation of proteolysis" NARROW []
+synonym: "positive regulation of peptidolysis" EXACT []
+synonym: "stimulation of proteolysis" NARROW []
+synonym: "up regulation of proteolysis" EXACT []
+synonym: "up-regulation of proteolysis" EXACT []
+synonym: "upregulation of proteolysis" EXACT []
+is_a: GO:0030162 ! regulation of proteolysis
+is_a: GO:0032270 ! positive regulation of cellular protein metabolic process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0006508 ! proteolysis
+relationship: positively_regulates GO:0006508 ! proteolysis
+
+[Term]
 id: GO:0045892
 name: negative regulation of transcription, DNA-templated
 namespace: biological_process
@@ -9181,6 +9602,53 @@ is_a: GO:0051240 ! positive regulation of multicellular organismal process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0035265 ! organ growth
 relationship: positively_regulates GO:0035265 ! organ growth
+
+[Term]
+id: GO:0046626
+name: regulation of insulin receptor signaling pathway
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of insulin receptor signaling." [GOC:bf]
+synonym: "regulation of insulin receptor signalling pathway" EXACT []
+is_a: GO:0009966 ! regulation of signal transduction
+is_a: GO:1900076 ! regulation of cellular response to insulin stimulus
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0008286 ! insulin receptor signaling pathway
+relationship: regulates GO:0008286 ! insulin receptor signaling pathway
+
+[Term]
+id: GO:0046627
+name: negative regulation of insulin receptor signaling pathway
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of insulin receptor signaling." [GOC:bf]
+synonym: "down regulation of insulin receptor signaling pathway" EXACT []
+synonym: "down-regulation of insulin receptor signaling pathway" EXACT []
+synonym: "downregulation of insulin receptor signaling pathway" EXACT []
+synonym: "inhibition of insulin receptor signaling pathway" NARROW []
+synonym: "negative regulation of insulin receptor signalling pathway" EXACT []
+is_a: GO:0009968 ! negative regulation of signal transduction
+is_a: GO:0046626 ! regulation of insulin receptor signaling pathway
+is_a: GO:1900077 ! negative regulation of cellular response to insulin stimulus
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0008286 ! insulin receptor signaling pathway
+relationship: negatively_regulates GO:0008286 ! insulin receptor signaling pathway
+
+[Term]
+id: GO:0046628
+name: positive regulation of insulin receptor signaling pathway
+namespace: biological_process
+def: "Any process that increases the frequency, rate or extent of insulin receptor signaling." [GOC:bf]
+synonym: "activation of insulin receptor signaling pathway" NARROW []
+synonym: "positive regulation of insulin receptor signalling pathway" EXACT []
+synonym: "stimulation of insulin receptor signaling pathway" NARROW []
+synonym: "up regulation of insulin receptor signaling pathway" EXACT []
+synonym: "up-regulation of insulin receptor signaling pathway" EXACT []
+synonym: "upregulation of insulin receptor signaling pathway" EXACT []
+is_a: GO:0009967 ! positive regulation of signal transduction
+is_a: GO:0046626 ! regulation of insulin receptor signaling pathway
+is_a: GO:1900078 ! positive regulation of cellular response to insulin stimulus
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0008286 ! insulin receptor signaling pathway
+relationship: positively_regulates GO:0008286 ! insulin receptor signaling pathway
 
 [Term]
 id: GO:0046907
@@ -11057,6 +11525,17 @@ intersection_of: has_part GO:0140013 ! meiotic nuclear division
 relationship: has_part GO:0140013 ! meiotic nuclear division
 
 [Term]
+id: GO:0051336
+name: regulation of hydrolase activity
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of hydrolase activity, the catalysis of the hydrolysis of various bonds, e.g. C-O, C-N, C-C, phosphoric anhydride bonds, etc. Hydrolase is the systematic name for any enzyme of EC class 3." [EC:3.-.-.-, GOC:ai]
+synonym: "hydrolase regulator" EXACT []
+is_a: GO:0050790 ! regulation of catalytic activity
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0016787 ! hydrolase activity
+relationship: regulates GO:0016787 ! hydrolase activity
+
+[Term]
 id: GO:0051338
 name: regulation of transferase activity
 namespace: biological_process
@@ -11080,6 +11559,39 @@ is_a: GO:0050790 ! regulation of catalytic activity
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0016491 ! oxidoreductase activity
 relationship: regulates GO:0016491 ! oxidoreductase activity
+
+[Term]
+id: GO:0051345
+name: positive regulation of hydrolase activity
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of hydrolase activity, the catalysis of the hydrolysis of various bonds." [GOC:ai]
+synonym: "activation of hydrolase activity" NARROW []
+synonym: "hydrolase activator" EXACT []
+synonym: "stimulation of hydrolase activity" NARROW []
+synonym: "up regulation of hydrolase activity" EXACT []
+synonym: "up-regulation of hydrolase activity" EXACT []
+synonym: "upregulation of hydrolase activity" EXACT []
+is_a: GO:0043085 ! positive regulation of catalytic activity
+is_a: GO:0051336 ! regulation of hydrolase activity
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0016787 ! hydrolase activity
+relationship: positively_regulates GO:0016787 ! hydrolase activity
+
+[Term]
+id: GO:0051346
+name: negative regulation of hydrolase activity
+namespace: biological_process
+def: "Any process that stops or reduces the rate of hydrolase activity, the catalysis of the hydrolysis of various bonds." [GOC:ai]
+synonym: "down regulation of hydrolase activity" EXACT []
+synonym: "down-regulation of hydrolase activity" EXACT []
+synonym: "downregulation of hydrolase activity" EXACT []
+synonym: "hydrolase inhibitor" EXACT []
+synonym: "inhibition of hydrolase activity" NARROW []
+is_a: GO:0043086 ! negative regulation of catalytic activity
+is_a: GO:0051336 ! regulation of hydrolase activity
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0016787 ! hydrolase activity
+relationship: negatively_regulates GO:0016787 ! hydrolase activity
 
 [Term]
 id: GO:0051347
@@ -11725,6 +12237,29 @@ is_a: GO:0051969 ! regulation of transmission of nerve impulse
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0019226 ! transmission of nerve impulse
 relationship: positively_regulates GO:0019226 ! transmission of nerve impulse
+
+[Term]
+id: GO:0052547
+name: regulation of peptidase activity
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of peptidase activity, the hydrolysis of peptide bonds within proteins." [GOC:ai]
+synonym: "peptidase regulator activity" RELATED []
+is_a: GO:0030162 ! regulation of proteolysis
+is_a: GO:0051336 ! regulation of hydrolase activity
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0008233 ! peptidase activity
+relationship: regulates GO:0008233 ! peptidase activity
+
+[Term]
+id: GO:0052548
+name: regulation of endopeptidase activity
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of endopeptidase activity, the endohydrolysis of peptide bonds within proteins." [GOC:ai, GOC:hjd]
+synonym: "protease regulator activity" NARROW []
+is_a: GO:0052547 ! regulation of peptidase activity
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0004175 ! endopeptidase activity
+relationship: regulates GO:0004175 ! endopeptidase activity
 
 [Term]
 id: GO:0055001
@@ -12850,6 +13385,17 @@ intersection_of: regulates GO:0003674 ! molecular_function
 relationship: regulates GO:0003674 ! molecular_function
 
 [Term]
+id: GO:0070011
+name: peptidase activity, acting on L-amino acid peptides
+namespace: molecular_function
+def: "Catalysis of the hydrolysis of peptide bonds formed between L-amino acids." [GOC:mah]
+xref: Reactome:R-HSA-3065958 "An unknown protease degrades ACACA"
+xref: Reactome:R-HSA-3065959 "An unknown protease degrades hCBXs"
+xref: Reactome:R-HSA-4167501 "An unknown protease degrades ACACB"
+xref: Reactome:R-HSA-6803060 "DCD(63-110) is processed to DCD(63-109)"
+is_a: GO:0008233 ! peptidase activity
+
+[Term]
 id: GO:0070013
 name: intracellular organelle lumen
 namespace: cellular_component
@@ -13096,6 +13642,31 @@ is_a: GO:0070848 ! response to growth factor
 is_a: GO:0071310 ! cellular response to organic substance
 created_by: midori
 creation_date: 2009-12-11T03:05:07Z
+
+[Term]
+id: GO:0071375
+name: cellular response to peptide hormone stimulus
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a peptide hormone stimulus. A peptide hormone is any of a class of peptides that are secreted into the blood stream and have endocrine functions in living animals." [GOC:mah]
+synonym: "cellular response to polypeptide hormone stimulus" EXACT [GOC:mah]
+is_a: GO:0032870 ! cellular response to hormone stimulus
+is_a: GO:0043434 ! response to peptide hormone
+is_a: GO:1901653 ! cellular response to peptide
+created_by: midori
+creation_date: 2009-12-11T03:24:18Z
+
+[Term]
+id: GO:0071417
+name: cellular response to organonitrogen compound
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an organonitrogen stimulus. An organonitrogen compound is formally a compound containing at least one carbon-nitrogen bond." [CHEBI:35352, GOC:mah]
+synonym: "cellular response to organic nitrogen" EXACT [GOC:mah]
+is_a: GO:0010243 ! response to organonitrogen compound
+is_a: GO:0071310 ! cellular response to organic substance
+is_a: GO:0071495 ! cellular response to endogenous stimulus
+is_a: GO:1901699 ! cellular response to nitrogen compound
+created_by: midori
+creation_date: 2009-12-14T04:07:27Z
 
 [Term]
 id: GO:0071495
@@ -14626,6 +15197,55 @@ def: "Any process that mediates the transfer of information from one cell to ano
 is_a: GO:0007267 ! cell-cell signaling
 
 [Term]
+id: GO:1900076
+name: regulation of cellular response to insulin stimulus
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of cellular response to insulin stimulus." [GOC:TermGenie, GOC:yaf]
+is_a: GO:0048583 ! regulation of response to stimulus
+is_a: GO:0050794 ! regulation of cellular process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0032869 ! cellular response to insulin stimulus
+relationship: regulates GO:0032869 ! cellular response to insulin stimulus
+created_by: yaf
+creation_date: 2012-01-31T11:22:22Z
+
+[Term]
+id: GO:1900077
+name: negative regulation of cellular response to insulin stimulus
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of cellular response to insulin stimulus." [GOC:TermGenie, GOC:yaf]
+synonym: "down regulation of cellular response to insulin stimulus" EXACT [GOC:TermGenie]
+synonym: "down-regulation of cellular response to insulin stimulus" EXACT [GOC:TermGenie]
+synonym: "downregulation of cellular response to insulin stimulus" EXACT [GOC:TermGenie]
+synonym: "inhibition of cellular response to insulin stimulus" NARROW [GOC:TermGenie]
+is_a: GO:0048523 ! negative regulation of cellular process
+is_a: GO:0048585 ! negative regulation of response to stimulus
+is_a: GO:1900076 ! regulation of cellular response to insulin stimulus
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0032869 ! cellular response to insulin stimulus
+relationship: negatively_regulates GO:0032869 ! cellular response to insulin stimulus
+created_by: yaf
+creation_date: 2012-01-31T11:23:15Z
+
+[Term]
+id: GO:1900078
+name: positive regulation of cellular response to insulin stimulus
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of cellular response to insulin stimulus." [GOC:TermGenie, GOC:yaf]
+synonym: "activation of cellular response to insulin stimulus" NARROW [GOC:TermGenie]
+synonym: "up regulation of cellular response to insulin stimulus" EXACT [GOC:TermGenie]
+synonym: "up-regulation of cellular response to insulin stimulus" EXACT [GOC:TermGenie]
+synonym: "upregulation of cellular response to insulin stimulus" EXACT [GOC:TermGenie]
+is_a: GO:0048522 ! positive regulation of cellular process
+is_a: GO:0048584 ! positive regulation of response to stimulus
+is_a: GO:1900076 ! regulation of cellular response to insulin stimulus
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0032869 ! cellular response to insulin stimulus
+relationship: positively_regulates GO:0032869 ! cellular response to insulin stimulus
+created_by: yaf
+creation_date: 2012-01-31T11:24:30Z
+
+[Term]
 id: GO:1900094
 name: regulation of transcription from RNA polymerase II promoter involved in determination of left/right symmetry
 namespace: biological_process
@@ -15191,6 +15811,27 @@ created_by: pr
 creation_date: 2012-11-13T12:54:27Z
 
 [Term]
+id: GO:1901652
+name: response to peptide
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a peptide stimulus." [GOC:pr, GOC:TermGenie]
+is_a: GO:0010243 ! response to organonitrogen compound
+is_a: GO:1901700 ! response to oxygen-containing compound
+created_by: pr
+creation_date: 2012-11-20T09:45:15Z
+
+[Term]
+id: GO:1901653
+name: cellular response to peptide
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a peptide stimulus." [GOC:pr, GOC:TermGenie]
+is_a: GO:0071417 ! cellular response to organonitrogen compound
+is_a: GO:1901652 ! response to peptide
+is_a: GO:1901701 ! cellular response to oxygen-containing compound
+created_by: pr
+creation_date: 2012-11-20T09:45:19Z
+
+[Term]
 id: GO:1901673
 name: regulation of mitotic spindle assembly
 namespace: biological_process
@@ -15204,6 +15845,48 @@ intersection_of: regulates GO:0090307 ! mitotic spindle assembly
 relationship: regulates GO:0090307 ! mitotic spindle assembly
 created_by: al
 creation_date: 2012-11-22T09:50:00Z
+
+[Term]
+id: GO:1901698
+name: response to nitrogen compound
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a nitrogen compound stimulus." [GOC:pr, GOC:TermGenie]
+synonym: "response to nitrogen molecular entity" EXACT []
+is_a: GO:0042221 ! response to chemical
+created_by: pr
+creation_date: 2012-12-13T15:06:08Z
+
+[Term]
+id: GO:1901699
+name: cellular response to nitrogen compound
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a nitrogen compound stimulus." [GOC:pr, GOC:TermGenie]
+synonym: "cellular response to nitrogen molecular entity" EXACT []
+is_a: GO:0070887 ! cellular response to chemical stimulus
+is_a: GO:1901698 ! response to nitrogen compound
+created_by: pr
+creation_date: 2012-12-13T15:06:13Z
+
+[Term]
+id: GO:1901700
+name: response to oxygen-containing compound
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an oxygen-containing compound stimulus." [GOC:pr, GOC:TermGenie]
+synonym: "response to oxygen molecular entity" EXACT []
+is_a: GO:0042221 ! response to chemical
+created_by: pr
+creation_date: 2012-12-13T15:11:37Z
+
+[Term]
+id: GO:1901701
+name: cellular response to oxygen-containing compound
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an oxygen-containing compound stimulus." [GOC:pr, GOC:TermGenie]
+synonym: "cellular response to oxygen molecular entity" EXACT []
+is_a: GO:0070887 ! cellular response to chemical stimulus
+is_a: GO:1901700 ! response to oxygen-containing compound
+created_by: pr
+creation_date: 2012-12-13T15:11:42Z
 
 [Term]
 id: GO:1901722
@@ -18035,6 +18718,35 @@ created_by: dph
 creation_date: 2010-09-16T01:22:36Z
 
 [Term]
+id: GO:2000116
+name: regulation of cysteine-type endopeptidase activity
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of cysteine-type endopeptidase activity." [GOC:obol, GOC:yaf]
+synonym: "regulation of lysosomal cysteine-type endopeptidase" RELATED [GOC:obol]
+synonym: "regulation of thiol endopeptidase activity" EXACT [GOC:obol]
+is_a: GO:0052548 ! regulation of endopeptidase activity
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0004197 ! cysteine-type endopeptidase activity
+relationship: regulates GO:0004197 ! cysteine-type endopeptidase activity
+created_by: jane
+creation_date: 2010-09-23T10:24:33Z
+
+[Term]
+id: GO:2000117
+name: negative regulation of cysteine-type endopeptidase activity
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of cysteine-type endopeptidase activity." [GOC:obol, GOC:yaf]
+synonym: "negative regulation of lysosomal cysteine-type endopeptidase" RELATED [GOC:obol]
+synonym: "negative regulation of thiol endopeptidase activity" EXACT [GOC:obol]
+is_a: GO:0010951 ! negative regulation of endopeptidase activity
+is_a: GO:2000116 ! regulation of cysteine-type endopeptidase activity
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0004197 ! cysteine-type endopeptidase activity
+relationship: negatively_regulates GO:0004197 ! cysteine-type endopeptidase activity
+created_by: jane
+creation_date: 2010-09-23T10:24:35Z
+
+[Term]
 id: GO:2000136
 name: regulation of cell proliferation involved in heart morphogenesis
 namespace: biological_process
@@ -18623,6 +19335,21 @@ intersection_of: part_of GO:0072001 ! renal system development
 relationship: part_of GO:0072001 ! renal system development
 created_by: yaf
 creation_date: 2011-08-09T04:05:14Z
+
+[Term]
+id: GO:2001056
+name: positive regulation of cysteine-type endopeptidase activity
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of cysteine-type endopeptidase activity." [GOC:obol]
+synonym: "positive regulation of lysosomal cysteine-type endopeptidase" RELATED [GOC:obol]
+synonym: "positive regulation of thiol endopeptidase activity" EXACT [GOC:obol]
+is_a: GO:0010950 ! positive regulation of endopeptidase activity
+is_a: GO:2000116 ! regulation of cysteine-type endopeptidase activity
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0004197 ! cysteine-type endopeptidase activity
+relationship: positively_regulates GO:0004197 ! cysteine-type endopeptidase activity
+created_by: pr
+creation_date: 2011-09-09T08:53:43Z
 
 [Term]
 id: GO:2001141

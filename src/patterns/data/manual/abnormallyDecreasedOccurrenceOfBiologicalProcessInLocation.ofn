@@ -11,8 +11,18 @@ Ontology(<urn:unnamed:ontology#ont1>
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0016477>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000460>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002052>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000025>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000026>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004187>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004188>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005179>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131751>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133383>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133384>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133385>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133386>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133387>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000066>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
@@ -30,6 +40,36 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0131751> "A decreased occurrence of cell migration in multiciliated epidermal cell."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0131751> "decreased occurrence of cell migration in multiciliated epidermal cell"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0131751> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0002052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0016477> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0005179>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133383> (decreased occurrence of cell migration in branchial crest)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133383> "A decreased occurrence of cell migration in branchial crest."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133383> "decreased occurrence of cell migration in branchial crest"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133383> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0002052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0016477> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0000026>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133384> (decreased occurrence of cell migration in hyoid crest)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133384> "A decreased occurrence of cell migration in hyoid crest."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133384> "decreased occurrence of cell migration in hyoid crest"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133384> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0002052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0016477> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0000025>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133385> (decreased occurrence of cell migration in mandibular crest)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133385> "A decreased occurrence of cell migration in mandibular crest."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133385> "decreased occurrence of cell migration in mandibular crest"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133385> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0002052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0016477> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0000024>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133386> (decreased occurrence of cell migration in anterior branchial crest)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133386> "A decreased occurrence of cell migration in anterior branchial crest."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133386> "decreased occurrence of cell migration in anterior branchial crest"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133386> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0002052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0016477> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0004187>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133387> (decreased occurrence of cell migration in posterior branchial crest)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133387> "A decreased occurrence of cell migration in posterior branchial crest."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133387> "decreased occurrence of cell migration in posterior branchial crest"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133387> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0002052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0016477> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0004188>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 
 )
