@@ -8,8 +8,6 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<urn:unnamed:ontology#ont1>
 
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0000235>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0005876>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000460>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000462>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000006>))
@@ -74,6 +72,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004478>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004479>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004480>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004481>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005285>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005286>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103235>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103236>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103237>))
@@ -183,14 +183,14 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103238> ObjectSomeValuesF
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0103264> "Absence of astral microtubule."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0103264> "missing astral microtubule"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0103264> "absent astral microtubule"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103264> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/GO_0000235>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103264> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005286>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 # Class: <http://purl.obolibrary.org/obo/XPO_0103265> (absent spindle microtubule)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0103265> "Absence of spindle microtubule."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0103265> "missing spindle microtubule"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0103265> "absent spindle microtubule"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103265> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/GO_0005876>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103265> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005285>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 # Class: <http://purl.obolibrary.org/obo/XPO_0103266> (absent apical ectodermal ridge)
 

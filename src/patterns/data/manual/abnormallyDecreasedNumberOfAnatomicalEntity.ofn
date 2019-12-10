@@ -8,8 +8,6 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<urn:unnamed:ontology#ont1>
 
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0005876>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0030017>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000460>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001997>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000031>))
@@ -25,6 +23,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004100>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004219>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004300>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004518>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005284>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005285>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103584>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103589>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103595>))
@@ -134,7 +134,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103891> ObjectSomeValuesF
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0103892> "The presence of a reduced number of sarcomere."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0103892> "Reduced number of sarcomere"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0103892> "Decreased number of sarcomere"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103892> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001997> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/GO_0030017>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103892> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001997> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005284>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 # Class: <http://purl.obolibrary.org/obo/XPO_0103893> (Decreased number of somite)
 
@@ -148,7 +148,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103893> ObjectSomeValuesF
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0103894> "The presence of a reduced number of spindle microtubule."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0103894> "Reduced number of spindle microtubule"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0103894> "Decreased number of spindle microtubule"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103894> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001997> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/GO_0005876>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103894> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001997> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005285>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 # Class: <http://purl.obolibrary.org/obo/XPO_0103895> (Decreased number of trunk somite)
 

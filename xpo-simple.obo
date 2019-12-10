@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: xpo/releases/2019-12-06/xpo-simple.owl
+data-version: xpo/releases/2019-12-10/xpo-simple.owl
 ontology: xpo/xpo-simple
 property_value: http://purl.org/dc/elements/1.1/description "Ontology about Xenopus." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Xenopus Phenotype Ontology" xsd:string
@@ -23163,13 +23163,15 @@ name: absent astral microtubule
 def: "Absence of astral microtubule." []
 synonym: "missing astral microtubule" EXACT []
 is_a: XPO:0103265 ! absent spindle microtubule
+is_a: XPO:0131687 ! abnormal astral microtubule
 
 [Term]
 id: XPO:0103265
 name: absent spindle microtubule
 def: "Absence of spindle microtubule." []
 synonym: "missing spindle microtubule" EXACT []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0126214 ! absent microtubule
+is_a: XPO:0131675 ! abnormal spindle microtubule
 
 [Term]
 id: XPO:0103266
@@ -24588,7 +24590,7 @@ is_a: XPO:0103642 ! increased cell population proliferation
 id: XPO:0103442
 name: increased oviduct development in female organism
 def: "Increased oviduct development in female organism." []
-is_a: XPO:0116431 ! abnormal anatomical structure development
+is_a: XPO:0133403 ! abnormal development
 
 [Term]
 id: XPO:0103443
@@ -26307,7 +26309,7 @@ name: increased size of the postero-ventral region
 name: obsolete increased size of the postero-ventral region
 def: "An increase in the size of the postero-ventral region." []
 synonym: "enlarged postero-ventral region" EXACT []
-is_a: XPO:0107369 ! obsolete abnormal morphology of postero-ventral region
+is_a: XPO:0107369 ! abnormal postero-ventral region morphology
 is_a: XPO:0129571 ! increased size of the anatomical region
 is_obsolete: true
 
@@ -26335,7 +26337,7 @@ is_a: XPO:0131745 ! abnormal axis elongation
 id: XPO:0103772
 name: arrested developmental process
 def: "Arrested developmental process." []
-is_a: XPO:0116434 ! abnormal biological process
+is_a: XPO:0133403 ! abnormal development
 
 [Term]
 id: XPO:0103773
@@ -26709,7 +26711,7 @@ is_a: XPO:0126642 ! Abnormally localised auditory ossicle
 id: XPO:0103884
 name: decreased muscle cell differentiation
 def: "Decreased qualitatively muscle cell differentiation." []
-is_a: XPO:0116434 ! abnormal biological process
+is_a: XPO:0133403 ! abnormal development
 
 [Term]
 id: XPO:0103885
@@ -26766,7 +26768,7 @@ id: XPO:0103892
 name: Decreased number of sarcomere
 def: "The presence of a reduced number of sarcomere." []
 synonym: "Reduced number of sarcomere" EXACT []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0131660 ! abnormal sarcomere
 
 [Term]
 id: XPO:0103893
@@ -26780,7 +26782,7 @@ id: XPO:0103894
 name: Decreased number of spindle microtubule
 def: "The presence of a reduced number of spindle microtubule." []
 synonym: "Reduced number of spindle microtubule" EXACT []
-is_a: XPO:00000000 ! Xenopus Phenotype
+is_a: XPO:0131675 ! abnormal spindle microtubule
 
 [Term]
 id: XPO:0103895
@@ -26942,7 +26944,7 @@ is_a: XPO:0116434 ! abnormal biological process
 id: XPO:0103925
 name: decreased neuron differentiation in optic tectum
 def: "Decreased qualitatively neuron differentiation in optic tectum." []
-is_a: XPO:0116434 ! abnormal biological process
+is_a: XPO:0133403 ! abnormal development
 
 [Term]
 id: XPO:0103926
@@ -32609,24 +32611,6 @@ def: "An anomaly in behavior." []
 is_a: XPO:0116434 ! abnormal biological process
 
 [Term]
-id: XPO:0116430
-name: abnormal adrenal gland development
-def: "Abnormal adrenal gland development." []
-is_a: XPO:0116459 ! abnormal gland development
-
-[Term]
-id: XPO:0116431
-name: abnormal anatomical structure development
-def: "Abnormal anatomical structure development." []
-is_a: XPO:0116434 ! abnormal biological process
-
-[Term]
-id: XPO:0116432
-name: abnormal animal organ development
-def: "Abnormal animal organ development." []
-is_a: XPO:0116431 ! abnormal anatomical structure development
-
-[Term]
 id: XPO:0116433
 name: abnormal axis specification
 def: "Abnormal axis specification." []
@@ -32639,81 +32623,15 @@ def: "Abnormal biological_process." []
 is_a: XPO:00000000 ! Xenopus Phenotype
 
 [Term]
-id: XPO:0116435
-name: abnormal brain development
-def: "Abnormal brain development." []
-is_a: XPO:0116432 ! abnormal animal organ development
-
-[Term]
-id: XPO:0116436
-name: abnormal bronchus development
-def: "Abnormal bronchus development." []
-is_a: XPO:0116483 ! abnormal respiratory tube development
-
-[Term]
 id: XPO:0116437
 name: obsolete abnormal camera-type eye development
 is_obsolete: true
 
 [Term]
-id: XPO:0116438
-name: abnormal cardiac chamber development
-def: "Abnormal cardiac chamber development." []
-is_a: XPO:0116431 ! abnormal anatomical structure development
-
-[Term]
-id: XPO:0116439
-name: abnormal cardiac ventricle development
-def: "Abnormal cardiac ventricle development." []
-is_a: XPO:0116438 ! abnormal cardiac chamber development
-
-[Term]
-id: XPO:0116440
-name: abnormal cement gland development
-def: "Abnormal cement gland development." []
-is_a: XPO:0116459 ! abnormal gland development
-
-[Term]
-id: XPO:0116441
-name: abnormal central nervous system development
-def: "Abnormal central nervous system development." []
-is_a: XPO:0116431 ! abnormal anatomical structure development
-
-[Term]
-id: XPO:0116442
-name: abnormal chordate embryonic development
-def: "Abnormal chordate embryonic development." []
-is_a: XPO:0116450 ! abnormal embryo development
-
-[Term]
-id: XPO:0116443
-name: abnormal circulatory system development
-def: "Abnormal circulatory system development." []
-is_a: XPO:0116431 ! abnormal anatomical structure development
-
-[Term]
-id: XPO:0116444
-name: abnormal cloaca development
-def: "Abnormal cloaca development." []
-is_a: XPO:0116431 ! abnormal anatomical structure development
-
-[Term]
-id: XPO:0116445
-name: abnormal digestive system development
-def: "Abnormal digestive system development." []
-is_a: XPO:0116431 ! abnormal anatomical structure development
-
-[Term]
-id: XPO:0116446
-name: abnormal digestive tract development
-def: "Abnormal digestive tract development." []
-is_a: XPO:0116431 ! abnormal anatomical structure development
-
-[Term]
 id: XPO:0116447
 name: abnormal digestive tract morphogenesis
 def: "Abnormal digestive tract morphogenesis." []
-is_a: XPO:0116434 ! abnormal biological process
+is_a: XPO:0133403 ! abnormal development
 
 [Term]
 id: XPO:0116448
@@ -32722,46 +32640,10 @@ property_value: IAO:0000125 XPO:0132323
 is_obsolete: true
 
 [Term]
-id: XPO:0116449
-name: abnormal ectoderm development
-def: "Abnormal ectoderm development." []
-is_a: XPO:0116492 ! abnormal tissue development
-
-[Term]
-id: XPO:0116450
-name: abnormal embryo development
-def: "Abnormal embryo development." []
-is_a: XPO:0116431 ! abnormal anatomical structure development
-
-[Term]
 id: XPO:0116451
 name: abnormal embryonic morphogenesis
 def: "Abnormal embryonic morphogenesis." []
-is_a: XPO:0116434 ! abnormal biological process
-
-[Term]
-id: XPO:0116452
-name: abnormal embryonic organ development
-def: "Abnormal embryonic organ development." []
-is_a: XPO:0116432 ! abnormal animal organ development
-
-[Term]
-id: XPO:0116453
-name: abnormal endocrine system development
-def: "Abnormal endocrine system development." []
-is_a: XPO:0116431 ! abnormal anatomical structure development
-
-[Term]
-id: XPO:0116454
-name: abnormal endoderm development
-def: "Abnormal endoderm development." []
-is_a: XPO:0116492 ! abnormal tissue development
-
-[Term]
-id: XPO:0116455
-name: abnormal epidermis development
-def: "Abnormal epidermis development." []
-is_a: XPO:0116492 ! abnormal tissue development
+is_a: XPO:0133403 ! abnormal development
 
 [Term]
 id: XPO:0116456
@@ -32770,117 +32652,9 @@ property_value: IAO:0000125 XPO:0131897
 is_obsolete: true
 
 [Term]
-id: XPO:0116457
-name: abnormal fin development
-def: "Abnormal fin development." []
-is_a: XPO:0116431 ! abnormal anatomical structure development
-
-[Term]
-id: XPO:0116458
-name: abnormal gall bladder development
-def: "Abnormal gall bladder development." []
-is_a: XPO:0116432 ! abnormal animal organ development
-
-[Term]
-id: XPO:0116459
-name: abnormal gland development
-def: "Abnormal gland development." []
-is_a: XPO:0116432 ! abnormal animal organ development
-
-[Term]
-id: XPO:0116460
-name: abnormal gonad development
-def: "Abnormal gonad development." []
-is_a: XPO:0116432 ! abnormal animal organ development
-
-[Term]
-id: XPO:0116461
-name: abnormal head development
-def: "Abnormal head development." []
-is_a: XPO:0116431 ! abnormal anatomical structure development
-
-[Term]
-id: XPO:0116462
-name: abnormal heart development
-def: "Abnormal heart development." []
-is_a: XPO:0116432 ! abnormal animal organ development
-
-[Term]
-id: XPO:0116463
-name: abnormal hematopoietic or lymphoid organ development
-def: "Abnormal hematopoietic or lymphoid organ development." []
-is_a: XPO:0116432 ! abnormal animal organ development
-
-[Term]
-id: XPO:0116464
-name: abnormal hepaticobiliary system development
-def: "Abnormal hepaticobiliary system development." []
-is_a: XPO:0116431 ! abnormal anatomical structure development
-
-[Term]
-id: XPO:0116465
-name: abnormal immune system development
-def: "Abnormal immune system development." []
-is_a: XPO:0116431 ! abnormal anatomical structure development
-
-[Term]
-id: XPO:0116466
-name: abnormal kidney development
-def: "Abnormal kidney development." []
-is_a: XPO:0116432 ! abnormal animal organ development
-
-[Term]
-id: XPO:0116467
-name: abnormal liver development
-def: "Abnormal liver development." []
-is_a: XPO:0116459 ! abnormal gland development
-
-[Term]
-id: XPO:0116468
-name: abnormal lung development
-def: "Abnormal lung development." []
-is_a: XPO:0116432 ! abnormal animal organ development
-
-[Term]
-id: XPO:0116469
-name: abnormal mesoderm development
-def: "Abnormal mesoderm development." []
-is_a: XPO:0116492 ! abnormal tissue development
-
-[Term]
-id: XPO:0116470
-name: abnormal mesonephros development
-def: "Abnormal mesonephros development." []
-is_a: XPO:0116466 ! abnormal kidney development
-
-[Term]
-id: XPO:0116471
-name: abnormal muscle organ development
-def: "Abnormal muscle organ development." []
-is_a: XPO:0116432 ! abnormal animal organ development
-
-[Term]
-id: XPO:0116472
-name: abnormal nervous system development
-def: "Abnormal nervous system development." []
-is_a: XPO:0116431 ! abnormal anatomical structure development
-
-[Term]
-id: XPO:0116473
-name: abnormal neural crest cell development
-def: "Abnormal neural crest cell development." []
-is_a: XPO:0116488 ! abnormal stem cell development
-
-[Term]
 id: XPO:0116474
 name: obsolete abnormal nose development
 is_obsolete: true
-
-[Term]
-id: XPO:0116475
-name: abnormal notochord development
-def: "Abnormal notochord development." []
-is_a: XPO:0116452 ! abnormal embryonic organ development
 
 [Term]
 id: XPO:0116476
@@ -32889,106 +32663,15 @@ property_value: IAO:0000125 XPO:0132416
 is_obsolete: true
 
 [Term]
-id: XPO:0116477
-name: abnormal pancreas development
-def: "Abnormal pancreas development." []
-is_a: XPO:0116432 ! abnormal animal organ development
-
-[Term]
-id: XPO:0116478
-name: abnormal pharyngeal system development
-def: "Abnormal pharyngeal system development." []
-is_a: XPO:0116431 ! abnormal anatomical structure development
-
-[Term]
 id: XPO:0116479
 name: abnormal post-anal tail morphogenesis
 def: "Abnormal post-anal tail morphogenesis." []
-is_a: XPO:0116434 ! abnormal biological process
-
-[Term]
-id: XPO:0116480
-name: abnormal pronephros development
-def: "Abnormal pronephros development." []
-is_a: XPO:0116466 ! abnormal kidney development
-
-[Term]
-id: XPO:0116481
-name: abnormal renal system development
-def: "Abnormal renal system development." []
-is_a: XPO:0116431 ! abnormal anatomical structure development
-
-[Term]
-id: XPO:0116482
-name: abnormal respiratory system development
-def: "Abnormal respiratory system development." []
-is_a: XPO:0116431 ! abnormal anatomical structure development
-
-[Term]
-id: XPO:0116483
-name: abnormal respiratory tube development
-def: "Abnormal respiratory tube development." []
-is_a: XPO:0116432 ! abnormal animal organ development
+is_a: XPO:0133403 ! abnormal development
 
 [Term]
 id: XPO:0116484
 name: obsolete abnormal sensory organ development
 is_obsolete: true
-
-[Term]
-id: XPO:0116485
-name: abnormal somite development
-def: "Abnormal somite development." []
-is_a: XPO:0116492 ! abnormal tissue development
-
-[Term]
-id: XPO:0116486
-name: abnormal spinal cord development
-def: "Abnormal spinal cord development." []
-is_a: XPO:0116432 ! abnormal animal organ development
-
-[Term]
-id: XPO:0116487
-name: abnormal spleen development
-def: "Abnormal spleen development." []
-is_a: XPO:0116463 ! abnormal hematopoietic or lymphoid organ development
-
-[Term]
-id: XPO:0116488
-name: abnormal stem cell development
-def: "Abnormal stem cell development." []
-is_a: XPO:0116431 ! abnormal anatomical structure development
-
-[Term]
-id: XPO:0116489
-name: abnormal stomach development
-def: "Abnormal stomach development." []
-is_a: XPO:0116432 ! abnormal animal organ development
-
-[Term]
-id: XPO:0116490
-name: abnormal thymus development
-def: "Abnormal thymus development." []
-is_a: XPO:0116459 ! abnormal gland development
-is_a: XPO:0116463 ! abnormal hematopoietic or lymphoid organ development
-
-[Term]
-id: XPO:0116491
-name: abnormal thyroid gland development
-def: "Abnormal thyroid gland development." []
-is_a: XPO:0116459 ! abnormal gland development
-
-[Term]
-id: XPO:0116492
-name: abnormal tissue development
-def: "Abnormal tissue development." []
-is_a: XPO:0116431 ! abnormal anatomical structure development
-
-[Term]
-id: XPO:0116493
-name: abnormal urinary bladder development
-def: "Abnormal urinary bladder development." []
-is_a: XPO:0116432 ! abnormal animal organ development
 
 [Term]
 id: XPO:0116494
@@ -61205,7 +60888,7 @@ id: XPO:0128508
 name: decreased size of the dorso-lateral region
 def: "An abnormal reduction in the size of the dorso-lateral region." []
 synonym: "abnormally small dorso-lateral region" EXACT []
-is_a: XPO:0107425 ! obsolete abnormal morphology of dorso-lateral region
+is_a: XPO:0107425 ! abnormal dorso-lateral region morphology
 is_a: XPO:0128091 ! decreased size of the anatomical region
 
 [Term]
@@ -62151,7 +61834,7 @@ id: XPO:0128628
 name: decreased size of the postero-ventral region
 def: "An abnormal reduction in the size of the postero-ventral region." []
 synonym: "abnormally small postero-ventral region" EXACT []
-is_a: XPO:0107369 ! obsolete abnormal morphology of postero-ventral region
+is_a: XPO:0107369 ! abnormal postero-ventral region morphology
 is_a: XPO:0128091 ! decreased size of the anatomical region
 
 [Term]
@@ -72964,7 +72647,7 @@ id: XPO:0129988
 name: increased size of the dorso-lateral region
 def: "An increase in the size of the dorso-lateral region." []
 synonym: "enlarged dorso-lateral region" EXACT []
-is_a: XPO:0107425 ! obsolete abnormal morphology of dorso-lateral region
+is_a: XPO:0107425 ! abnormal dorso-lateral region morphology
 is_a: XPO:0129571 ! increased size of the anatomical region
 
 [Term]
@@ -85122,14 +84805,6 @@ is_a: XPO:0124716 ! absent cell
 is_a: XPO:0131674 ! abnormal pial cell
 
 [Term]
-id: XPO:0131521
-name: absent spindle microtubule
-def: "Absence of spindle microtubule." []
-synonym: "missing spindle microtubule" EXACT []
-is_a: XPO:0126214 ! absent microtubule
-is_a: XPO:0131675 ! abnormal spindle microtubule
-
-[Term]
 id: XPO:0131522
 name: absent prootic bone
 def: "Absence of prootic bone." []
@@ -85216,14 +84891,6 @@ def: "Absence of M band." []
 synonym: "missing M band" EXACT []
 is_a: XPO:0124807 ! absent cell part
 is_a: XPO:0131686 ! abnormal M band
-
-[Term]
-id: XPO:0131533
-name: absent astral microtubule
-def: "Absence of astral microtubule." []
-synonym: "missing astral microtubule" EXACT []
-is_a: XPO:0131521 ! absent spindle microtubule
-is_a: XPO:0131687 ! abnormal astral microtubule
 
 [Term]
 id: XPO:0131534
@@ -86453,15 +86120,15 @@ is_a: XPO:0100110 ! abnormal trigeminal nerve
 
 [Term]
 id: XPO:0131689
-name: abnormal cell migration in multiciliated epidermal cell
+name: abnormal cell migration of multiciliated epidermal cell
 def: "An abnormality of the cell migration in multiciliated epidermal cell." []
 is_a: XPO:0131704 ! abnormal cell migration
 
 [Term]
 id: XPO:0131690
-name: increased occurrence of cell migration in multiciliated epidermal cell
+name: increased cell migration of multiciliated epidermal cell
 def: "An increased occurrence of cell migration in multiciliated epidermal cell." []
-is_a: XPO:0131689 ! abnormal cell migration in multiciliated epidermal cell
+is_a: XPO:0131689 ! abnormal cell migration of multiciliated epidermal cell
 
 [Term]
 id: XPO:0131691
@@ -86515,7 +86182,7 @@ is_a: XPO:0131744 ! abnormal apical constriction
 id: XPO:0131699
 name: abnormal axon extension involved in axon guidance
 def: "Abnormal axon extension involved in axon guidance." []
-is_a: XPO:0116434 ! abnormal biological process
+is_a: XPO:0133403 ! abnormal development
 
 [Term]
 id: XPO:0131700
@@ -86605,7 +86272,7 @@ is_a: XPO:0131711 ! abnormal establishment of cell polarity
 id: XPO:0131714
 name: abnormal establishment of tissue polarity
 def: "Abnormal establishment of tissue polarity." []
-is_a: XPO:0116434 ! abnormal biological process
+is_a: XPO:0133403 ! abnormal development
 
 [Term]
 id: XPO:0131715
@@ -86713,13 +86380,13 @@ is_a: XPO:0116434 ! abnormal biological process
 id: XPO:0131732
 name: abnormal sex differentiation
 def: "Abnormal sex differentiation." []
-is_a: XPO:0116434 ! abnormal biological process
+is_a: XPO:0133403 ! abnormal development
 
 [Term]
 id: XPO:0131733
 name: abnormal somitogenesis
 def: "Abnormal somitogenesis." []
-is_a: XPO:0116434 ! abnormal biological process
+is_a: XPO:0133403 ! abnormal development
 
 [Term]
 id: XPO:0131734
@@ -86743,7 +86410,7 @@ is_a: XPO:0116434 ! abnormal biological process
 id: XPO:0131737
 name: abnormal type B pancreatic cell differentiation
 def: "Abnormal type B pancreatic cell differentiation." []
-is_a: XPO:0116434 ! abnormal biological process
+is_a: XPO:0133403 ! abnormal development
 
 [Term]
 id: XPO:0131738
@@ -86767,13 +86434,13 @@ is_a: XPO:0116434 ! abnormal biological process
 id: XPO:0131741
 name: abnormal convergent extension
 def: "Abnormal convergent extension." []
-is_a: XPO:0116434 ! abnormal biological process
+is_a: XPO:0133403 ! abnormal development
 
 [Term]
 id: XPO:0131742
 name: abnormal axon extension involved in regeneration
 def: "Abnormal axon extension involved in regeneration." []
-is_a: XPO:0116434 ! abnormal biological process
+is_a: XPO:0133403 ! abnormal development
 
 [Term]
 id: XPO:0131743
@@ -86791,13 +86458,13 @@ is_a: XPO:0116434 ! abnormal biological process
 id: XPO:0131745
 name: abnormal axis elongation
 def: "Abnormal axis elongation." []
-is_a: XPO:0116434 ! abnormal biological process
+is_a: XPO:0133403 ! abnormal development
 
 [Term]
 id: XPO:0131746
 name: abnormal neural tube closure
 def: "Abnormal neural tube closure." []
-is_a: XPO:0116434 ! abnormal biological process
+is_a: XPO:0133403 ! abnormal development
 
 [Term]
 id: XPO:0131747
@@ -86830,9 +86497,9 @@ is_a: XPO:0101802 ! abnormal anterior neural tube morphology
 
 [Term]
 id: XPO:0131751
-name: decreased occurrence of cell migration in multiciliated epidermal cell
+name: decreased cell migration of multiciliated epidermal cell
 def: "A decreased occurrence of cell migration in multiciliated epidermal cell." []
-is_a: XPO:0131689 ! abnormal cell migration in multiciliated epidermal cell
+is_a: XPO:0131689 ! abnormal cell migration of multiciliated epidermal cell
 
 [Term]
 id: XPO:0131752
@@ -86852,7 +86519,7 @@ is_a: XPO:0116434 ! abnormal biological process
 id: XPO:0131754
 name: delayed embryo development
 def: "Delayed embryo development." []
-is_a: XPO:0116450 ! abnormal embryo development
+is_a: XPO:0133403 ! abnormal development
 
 [Term]
 id: XPO:0131755
@@ -96687,33 +96354,33 @@ is_a: XPO:0133364 ! tibia-fibula fused with autopod
 
 [Term]
 id: XPO:0133383
-name: decreased occurrence of cell migration in branchial crest
+name: decreased cell migration of branchial crest
 def: "A decreased occurrence of cell migration in branchial crest." []
 is_a: XPO:0103920 ! decreased cell migration in cranial neural crest
 
 [Term]
 id: XPO:0133384
-name: decreased occurrence of cell migration in hyoid crest
+name: decreased cell migration of hyoid crest
 def: "A decreased occurrence of cell migration in hyoid crest." []
 is_a: XPO:0103920 ! decreased cell migration in cranial neural crest
 
 [Term]
 id: XPO:0133385
-name: decreased occurrence of cell migration in mandibular crest
+name: decreased cell migration of mandibular crest
 def: "A decreased occurrence of cell migration in mandibular crest." []
 is_a: XPO:0103920 ! decreased cell migration in cranial neural crest
 
 [Term]
 id: XPO:0133386
-name: decreased occurrence of cell migration in anterior branchial crest
+name: decreased cell migration of anterior branchial crest
 def: "A decreased occurrence of cell migration in anterior branchial crest." []
-is_a: XPO:0133383 ! decreased occurrence of cell migration in branchial crest
+is_a: XPO:0133383 ! decreased cell migration of branchial crest
 
 [Term]
 id: XPO:0133387
-name: decreased occurrence of cell migration in posterior branchial crest
+name: decreased cell migration of posterior branchial crest
 def: "A decreased occurrence of cell migration in posterior branchial crest." []
-is_a: XPO:0133383 ! decreased occurrence of cell migration in branchial crest
+is_a: XPO:0133383 ! decreased cell migration of branchial crest
 
 [Term]
 id: XPO:0133388
@@ -96804,6 +96471,12 @@ id: XPO:0133402
 name: absent determination of left/right symmetry in alimentary system
 def: "Absent or undetectable determination of left/right symmetry in alimentary system." []
 is_a: XPO:0116494 ! absent biological process
+
+[Term]
+id: XPO:0133403
+name: abnormal development
+def: "Abnormal developmental process." []
+is_a: XPO:0116434 ! abnormal biological process
 
 [Typedef]
 id: RO:0000052
