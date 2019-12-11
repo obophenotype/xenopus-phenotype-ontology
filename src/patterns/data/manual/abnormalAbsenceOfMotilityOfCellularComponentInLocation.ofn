@@ -1,0 +1,183 @@
+Prefix(:=<urn:unnamed:ontology#ont1#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont1>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0006928>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000460>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000462>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000062>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000125>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000127>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000128>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000275>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000306>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0002000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004393>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004517>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005137>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005139>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005170>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005178>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0005179>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133454>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133455>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133456>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133457>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133458>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133459>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133460>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133461>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133462>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133463>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133464>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133465>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133466>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133467>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133468>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133469>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133470>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000066>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002565>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002573>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133454> (absent cilium motility in left-right organizer)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133454> "Inability to move cilium in left-right organizer."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133454> "immotile cilium in left-right organizer"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133454> "absent cilium motility in left-right organizer"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133454> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0006928> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0005170>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002565> <http://purl.obolibrary.org/obo/XAO_0005008>)))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133455> (absent cilium motility in floor plate)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133455> "Inability to move cilium in floor plate."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133455> "immotile cilium in floor plate"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133455> "absent cilium motility in floor plate"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133455> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0006928> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0000306>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002565> <http://purl.obolibrary.org/obo/XAO_0005008>)))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133456> (absent cilium motility in brain)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133456> "Inability to move cilium in brain."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133456> "immotile cilium in brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133456> "absent cilium motility in brain"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133456> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0006928> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0000010>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002565> <http://purl.obolibrary.org/obo/XAO_0005008>)))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133457> (absent cilium motility in mucociliary epithelium)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133457> "Inability to move cilium in mucociliary epithelium."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133457> "immotile cilium in mucociliary epithelium"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133457> "absent cilium motility in mucociliary epithelium"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133457> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0006928> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0004393>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002565> <http://purl.obolibrary.org/obo/XAO_0005008>)))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133458> (absent cilium motility in pronephric kidney)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133458> "Inability to move cilium in pronephric kidney."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133458> "immotile cilium in pronephric kidney"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133458> "absent cilium motility in pronephric kidney"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133458> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0006928> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0002000>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002565> <http://purl.obolibrary.org/obo/XAO_0005008>)))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133459> (absent cilium motility in pronephric nephrostome)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133459> "Inability to move cilium in pronephric nephrostome."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133459> "immotile cilium in pronephric nephrostome"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133459> "absent cilium motility in pronephric nephrostome"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133459> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0006928> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0000062>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002565> <http://purl.obolibrary.org/obo/XAO_0005008>)))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133460> (absent cilium motility in olfactory pit)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133460> "Inability to move cilium in olfactory pit."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133460> "immotile cilium in olfactory pit"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133460> "absent cilium motility in olfactory pit"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133460> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0006928> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0000275>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002565> <http://purl.obolibrary.org/obo/XAO_0005008>)))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133461> (absent cilium motility in alimentary system)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133461> "Inability to move cilium in alimentary system."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133461> "immotile cilium in alimentary system"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133461> "absent cilium motility in alimentary system"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133461> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0006928> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0000125>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002565> <http://purl.obolibrary.org/obo/XAO_0005008>)))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133462> (absent cilium motility in stomach)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133462> "Inability to move cilium in stomach."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133462> "immotile cilium in stomach"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133462> "absent cilium motility in stomach"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0006928> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0000128>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002565> <http://purl.obolibrary.org/obo/XAO_0005008>)))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133463> (absent cilium motility in esophagus)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133463> "Inability to move cilium in esophagus."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133463> "immotile cilium in esophagus"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133463> "absent cilium motility in esophagus"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133463> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0006928> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0000127>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002565> <http://purl.obolibrary.org/obo/XAO_0005008>)))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133464> (absent cilium motility in ciliated cell)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133464> "Inability to move cilium in ciliated cell."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133464> "immotile cilium in ciliated cell"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133464> "absent cilium motility in ciliated cell"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133464> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0006928> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0005017>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002565> <http://purl.obolibrary.org/obo/XAO_0005008>)))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133465> (absent cilium motility in monociliated cell)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133465> "Inability to move cilium in monociliated cell."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133465> "immotile cilium in monociliated cell"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133465> "absent cilium motility in monociliated cell"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133465> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0006928> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0005137>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002565> <http://purl.obolibrary.org/obo/XAO_0005008>)))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133466> (absent cilium motility in multiciliated cell)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133466> "Inability to move cilium in multiciliated cell."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133466> "immotile cilium in multiciliated cell"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133466> "absent cilium motility in multiciliated cell"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133466> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0006928> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0005139>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002565> <http://purl.obolibrary.org/obo/XAO_0005008>)))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133467> (absent cilium motility in ciliated epidermal cell)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133467> "Inability to move cilium in ciliated epidermal cell."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133467> "immotile cilium in ciliated epidermal cell"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133467> "absent cilium motility in ciliated epidermal cell"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133467> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0006928> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0000031>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002565> <http://purl.obolibrary.org/obo/XAO_0005008>)))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133468> (absent cilium motility in ciliated non-epidermal cell)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133468> "Inability to move cilium in ciliated non-epidermal cell."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133468> "immotile cilium in ciliated non-epidermal cell"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133468> "absent cilium motility in ciliated non-epidermal cell"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133468> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0006928> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0004517>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002565> <http://purl.obolibrary.org/obo/XAO_0005008>)))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133469> (absent cilium motility in monociliated epidermal cell)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133469> "Inability to move cilium in monociliated epidermal cell."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133469> "immotile cilium in monociliated epidermal cell"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133469> "absent cilium motility in monociliated epidermal cell"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133469> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0006928> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0005178>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002565> <http://purl.obolibrary.org/obo/XAO_0005008>)))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133470> (absent cilium motility in multiciliated epidermal cell)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133470> "Inability to move cilium in multiciliated epidermal cell."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133470> "immotile cilium in multiciliated epidermal cell"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133470> "absent cilium motility in multiciliated epidermal cell"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133470> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0006928> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0005179>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002565> <http://purl.obolibrary.org/obo/XAO_0005008>)))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+
+)

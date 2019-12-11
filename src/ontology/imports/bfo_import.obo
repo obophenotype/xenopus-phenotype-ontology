@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: xpo/releases/2019-12-10/imports/bfo_import.owl
+data-version: xpo/releases/2019-12-11/imports/bfo_import.owl
 ontology: xpo/imports/bfo_import
 
 [Term]
@@ -172,6 +172,7 @@ property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 id: BFO:0000040
 name: material entity
 is_a: BFO:0000004 ! independent continuant
+disjoint_from: BFO:0000141 ! immaterial entity
 property_value: BFO:0000179 "material" xsd:string
 property_value: BFO:0000180 "MaterialEntity" xsd:string
 property_value: IAO:0000112 "a flame" xsd:string
@@ -195,5 +196,14 @@ property_value: IAO:0000601 "Every entity which has a material entity as continu
 property_value: IAO:0000602 "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/021-002"}
 property_value: IAO:0000602 "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/020-002"}
 property_value: IAO:0000602 "(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/019-002"}
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000141
+name: immaterial entity
+is_a: BFO:0000004 ! independent continuant
+property_value: BFO:0000179 "immaterial" xsd:string
+property_value: BFO:0000180 "ImmaterialEntity" xsd:string
+property_value: IAO:0000116 "BFO 2 Reference: Immaterial entities are divided into two subgroups:boundaries and sites, which bound, or are demarcated in relation, to material entities, and which can thus change location, shape and size and as their material hosts move or change shape or size (for example: your nasal passage; the hold of a ship; the boundary of Wales (which moves with the rotation of the Earth) [38, 7, 10" xsd:string
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 

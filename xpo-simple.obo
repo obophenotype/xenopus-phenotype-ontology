@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: xpo/releases/2019-12-10/xpo-simple.owl
+data-version: xpo/releases/2019-12-11/xpo-simple.owl
 ontology: xpo/xpo-simple
 property_value: http://purl.org/dc/elements/1.1/description "Ontology about Xenopus." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Xenopus Phenotype Ontology" xsd:string
@@ -24590,7 +24590,7 @@ is_a: XPO:0103642 ! increased cell population proliferation
 id: XPO:0103442
 name: increased oviduct development in female organism
 def: "Increased oviduct development in female organism." []
-is_a: XPO:0133403 ! abnormal development
+is_a: XPO:0133403 ! abnormal developmental process
 
 [Term]
 id: XPO:0103443
@@ -25372,16 +25372,16 @@ id: XPO:0103643
 name: Decreased number of cilium in the ciliated epidermal cell
 def: "The presence of a reduced number of cilium in the ciliated epidermal cell." []
 synonym: "Reduced number of cilium in the ciliated epidermal cell" EXACT []
-is_a: XPO:0100392 ! abnormal cilium
 is_a: XPO:0100712 ! abnormal ciliated epidermal cell
+is_a: XPO:0133471 ! Decreased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0103644
 name: Decreased number of cilium in the multiciliated cell
 def: "The presence of a reduced number of cilium in the multiciliated cell." []
 synonym: "Reduced number of cilium in the multiciliated cell" EXACT []
-is_a: XPO:0100392 ! abnormal cilium
 is_a: XPO:0100976 ! abnormal multiciliated cell
+is_a: XPO:0133471 ! Decreased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0103645
@@ -26286,7 +26286,7 @@ name: increased size of the dorsal region
 name: obsolete increased size of the dorsal region
 def: "An increase in the size of the dorsal region." []
 synonym: "enlarged dorsal region" EXACT []
-is_a: XPO:0107363 ! abnormal dorsal region morphology
+is_a: XPO:0107363 ! obsolete abnormal morphology of dorsal region
 is_a: XPO:0129571 ! increased size of the anatomical region
 is_obsolete: true
 
@@ -26337,7 +26337,7 @@ is_a: XPO:0131745 ! abnormal axis elongation
 id: XPO:0103772
 name: arrested developmental process
 def: "Arrested developmental process." []
-is_a: XPO:0133403 ! abnormal development
+is_a: XPO:0133403 ! abnormal developmental process
 
 [Term]
 id: XPO:0103773
@@ -26711,7 +26711,7 @@ is_a: XPO:0126642 ! Abnormally localised auditory ossicle
 id: XPO:0103884
 name: decreased muscle cell differentiation
 def: "Decreased qualitatively muscle cell differentiation." []
-is_a: XPO:0133403 ! abnormal development
+is_a: XPO:0133403 ! abnormal developmental process
 
 [Term]
 id: XPO:0103885
@@ -26944,7 +26944,7 @@ is_a: XPO:0116434 ! abnormal biological process
 id: XPO:0103925
 name: decreased neuron differentiation in optic tectum
 def: "Decreased qualitatively neuron differentiation in optic tectum." []
-is_a: XPO:0133403 ! abnormal development
+is_a: XPO:0133403 ! abnormal developmental process
 
 [Term]
 id: XPO:0103926
@@ -31484,8 +31484,7 @@ is_a: XPO:0128451 ! decreased size of the hindlimb digit 5
 id: XPO:0115994
 name: abnormal(ly) decreased length of cilium in multiciliated cell (T)
 def: "Abnormal(ly) decreased length of cilium in multiciliated cell (Temporary definition)." []
-is_a: XPO:0100976 ! abnormal multiciliated cell
-is_a: XPO:0128799 ! decreased size of the cilium
+is_a: XPO:0133449 ! decreased size of the cilium in the multiciliated cell
 
 [Term]
 id: XPO:0115995
@@ -32631,7 +32630,7 @@ is_obsolete: true
 id: XPO:0116447
 name: abnormal digestive tract morphogenesis
 def: "Abnormal digestive tract morphogenesis." []
-is_a: XPO:0133403 ! abnormal development
+is_a: XPO:0133403 ! abnormal developmental process
 
 [Term]
 id: XPO:0116448
@@ -32643,7 +32642,7 @@ is_obsolete: true
 id: XPO:0116451
 name: abnormal embryonic morphogenesis
 def: "Abnormal embryonic morphogenesis." []
-is_a: XPO:0133403 ! abnormal development
+is_a: XPO:0133403 ! abnormal developmental process
 
 [Term]
 id: XPO:0116456
@@ -32666,7 +32665,7 @@ is_obsolete: true
 id: XPO:0116479
 name: abnormal post-anal tail morphogenesis
 def: "Abnormal post-anal tail morphogenesis." []
-is_a: XPO:0133403 ! abnormal development
+is_a: XPO:0133403 ! abnormal developmental process
 
 [Term]
 id: XPO:0116484
@@ -67587,7 +67586,7 @@ id: XPO:0129353
 name: decreased size of the dorsal region
 def: "An abnormal reduction in the size of the dorsal region." []
 synonym: "abnormally small dorsal region" EXACT []
-is_a: XPO:0107363 ! abnormal dorsal region morphology
+is_a: XPO:0107363 ! obsolete abnormal morphology of dorsal region
 is_a: XPO:0128091 ! decreased size of the anatomical region
 
 [Term]
@@ -83953,24 +83952,24 @@ id: XPO:0131410
 name: Increased number of cilium in the left-right organizer
 def: "The presence of an increased number of cilium in the left-right organizer." []
 synonym: "Extra cilium in the left-right organizer" EXACT []
-is_a: XPO:0100392 ! abnormal cilium
 is_a: XPO:0101439 ! abnormal left-right organizer
+is_a: XPO:0133441 ! Increased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0131411
 name: Increased number of cilium in the neural progenitor cell
 def: "The presence of an increased number of cilium in the neural progenitor cell." []
 synonym: "Extra cilium in the neural progenitor cell" EXACT []
-is_a: XPO:0100392 ! abnormal cilium
 is_a: XPO:0100954 ! abnormal neural progenitor cell
+is_a: XPO:0133441 ! Increased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0131412
 name: Increased number of cilium in the floor plate
 def: "The presence of an increased number of cilium in the floor plate." []
 synonym: "Extra cilium in the floor plate" EXACT []
-is_a: XPO:0100392 ! abnormal cilium
 is_a: XPO:0101370 ! abnormal floor plate
+is_a: XPO:0133441 ! Increased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0131413
@@ -83978,23 +83977,23 @@ name: Increased number of cilium in the brain
 def: "The presence of an increased number of cilium in the brain." []
 synonym: "Extra cilium in the brain" EXACT []
 is_a: XPO:0100169 ! abnormal brain
-is_a: XPO:0100392 ! abnormal cilium
+is_a: XPO:0133441 ! Increased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0131414
 name: Increased number of cilium in the mucociliary epithelium
 def: "The presence of an increased number of cilium in the mucociliary epithelium." []
 synonym: "Extra cilium in the mucociliary epithelium" EXACT []
-is_a: XPO:0100392 ! abnormal cilium
 is_a: XPO:0100749 ! abnormal mucociliary epithelium
+is_a: XPO:0133441 ! Increased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0131415
 name: Increased number of cilium in the pronephric kidney
 def: "The presence of an increased number of cilium in the pronephric kidney." []
 synonym: "Extra cilium in the pronephric kidney" EXACT []
-is_a: XPO:0100392 ! abnormal cilium
 is_a: XPO:0100565 ! abnormal pronephric kidney
+is_a: XPO:0133441 ! Increased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0131416
@@ -84017,16 +84016,16 @@ id: XPO:0131418
 name: Increased number of cilium in the olfactory pit
 def: "The presence of an increased number of cilium in the olfactory pit." []
 synonym: "Extra cilium in the olfactory pit" EXACT []
-is_a: XPO:0100392 ! abnormal cilium
 is_a: XPO:0101334 ! abnormal olfactory pit
+is_a: XPO:0133441 ! Increased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0131419
 name: Increased number of cilium in the auditory hair cell
 def: "The presence of an increased number of cilium in the auditory hair cell." []
 synonym: "Extra cilium in the auditory hair cell" EXACT []
-is_a: XPO:0100392 ! abnormal cilium
 is_a: XPO:0101251 ! abnormal auditory hair cell
+is_a: XPO:0133441 ! Increased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0131420
@@ -84034,7 +84033,7 @@ name: Increased number of cilium in the lateral line
 def: "The presence of an increased number of cilium in the lateral line." []
 synonym: "Extra cilium in the lateral line" EXACT []
 is_a: XPO:0100320 ! abnormal lateral line
-is_a: XPO:0100392 ! abnormal cilium
+is_a: XPO:0133441 ! Increased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0131421
@@ -84042,7 +84041,7 @@ name: Increased number of cilium in the alimentary system
 def: "The presence of an increased number of cilium in the alimentary system." []
 synonym: "Extra cilium in the alimentary system" EXACT []
 is_a: XPO:0100152 ! abnormal alimentary system
-is_a: XPO:0100392 ! abnormal cilium
+is_a: XPO:0133441 ! Increased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0131422
@@ -84079,24 +84078,24 @@ id: XPO:0131426
 name: Decreased number of cilium in the left-right organizer
 def: "The presence of a reduced number of cilium in the left-right organizer." []
 synonym: "Reduced number of cilium in the left-right organizer" EXACT []
-is_a: XPO:0100392 ! abnormal cilium
 is_a: XPO:0101439 ! abnormal left-right organizer
+is_a: XPO:0133471 ! Decreased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0131427
 name: Decreased number of cilium in the neural progenitor cell
 def: "The presence of a reduced number of cilium in the neural progenitor cell." []
 synonym: "Reduced number of cilium in the neural progenitor cell" EXACT []
-is_a: XPO:0100392 ! abnormal cilium
 is_a: XPO:0100954 ! abnormal neural progenitor cell
+is_a: XPO:0133471 ! Decreased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0131428
 name: Decreased number of cilium in the floor plate
 def: "The presence of a reduced number of cilium in the floor plate." []
 synonym: "Reduced number of cilium in the floor plate" EXACT []
-is_a: XPO:0100392 ! abnormal cilium
 is_a: XPO:0101370 ! abnormal floor plate
+is_a: XPO:0133471 ! Decreased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0131429
@@ -84104,23 +84103,23 @@ name: Decreased number of cilium in the brain
 def: "The presence of a reduced number of cilium in the brain." []
 synonym: "Reduced number of cilium in the brain" EXACT []
 is_a: XPO:0100169 ! abnormal brain
-is_a: XPO:0100392 ! abnormal cilium
+is_a: XPO:0133471 ! Decreased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0131430
 name: Decreased number of cilium in the mucociliary epithelium
 def: "The presence of a reduced number of cilium in the mucociliary epithelium." []
 synonym: "Reduced number of cilium in the mucociliary epithelium" EXACT []
-is_a: XPO:0100392 ! abnormal cilium
 is_a: XPO:0100749 ! abnormal mucociliary epithelium
+is_a: XPO:0133471 ! Decreased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0131431
 name: Decreased number of cilium in the pronephric kidney
 def: "The presence of a reduced number of cilium in the pronephric kidney." []
 synonym: "Reduced number of cilium in the pronephric kidney" EXACT []
-is_a: XPO:0100392 ! abnormal cilium
 is_a: XPO:0100565 ! abnormal pronephric kidney
+is_a: XPO:0133471 ! Decreased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0131432
@@ -84143,16 +84142,16 @@ id: XPO:0131434
 name: Decreased number of cilium in the olfactory pit
 def: "The presence of a reduced number of cilium in the olfactory pit." []
 synonym: "Reduced number of cilium in the olfactory pit" EXACT []
-is_a: XPO:0100392 ! abnormal cilium
 is_a: XPO:0101334 ! abnormal olfactory pit
+is_a: XPO:0133471 ! Decreased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0131435
 name: Decreased number of cilium in the auditory hair cell
 def: "The presence of a reduced number of cilium in the auditory hair cell." []
 synonym: "Reduced number of cilium in the auditory hair cell" EXACT []
-is_a: XPO:0100392 ! abnormal cilium
 is_a: XPO:0101251 ! abnormal auditory hair cell
+is_a: XPO:0133471 ! Decreased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0131436
@@ -84160,7 +84159,7 @@ name: Decreased number of cilium in the lateral line
 def: "The presence of a reduced number of cilium in the lateral line." []
 synonym: "Reduced number of cilium in the lateral line" EXACT []
 is_a: XPO:0100320 ! abnormal lateral line
-is_a: XPO:0100392 ! abnormal cilium
+is_a: XPO:0133471 ! Decreased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0131437
@@ -84168,7 +84167,7 @@ name: Decreased number of cilium in the alimentary system
 def: "The presence of a reduced number of cilium in the alimentary system." []
 synonym: "Reduced number of cilium in the alimentary system" EXACT []
 is_a: XPO:0100152 ! abnormal alimentary system
-is_a: XPO:0100392 ! abnormal cilium
+is_a: XPO:0133471 ! Decreased number of cilium in the ciliated cell
 
 [Term]
 id: XPO:0131438
@@ -84303,112 +84302,112 @@ id: XPO:0131454
 name: increased size of the cilium in left-right organizer
 def: "An increase in the size of the cilium in the left-right organizer." []
 synonym: "enlarged cilium in left-right organizer" EXACT []
-is_a: XPO:0101439 ! abnormal left-right organizer
 is_a: XPO:0130277 ! increased size of the cilium
+is_a: XPO:0133421 ! abnormal cilium morphology in the left-right organizer
 
 [Term]
 id: XPO:0131455
 name: increased size of the cilium in neural progenitor cell
 def: "An increase in the size of the cilium in the neural progenitor cell." []
 synonym: "enlarged cilium in neural progenitor cell" EXACT []
-is_a: XPO:0100954 ! abnormal neural progenitor cell
 is_a: XPO:0130277 ! increased size of the cilium
+is_a: XPO:0133422 ! abnormal cilium morphology in the neural progenitor cell
 
 [Term]
 id: XPO:0131456
 name: increased size of the cilium in floor plate
 def: "An increase in the size of the cilium in the floor plate." []
 synonym: "enlarged cilium in floor plate" EXACT []
-is_a: XPO:0101370 ! abnormal floor plate
 is_a: XPO:0130277 ! increased size of the cilium
+is_a: XPO:0133423 ! abnormal cilium morphology in the floor plate
 
 [Term]
 id: XPO:0131457
 name: increased size of the cilium in brain
 def: "An increase in the size of the cilium in the brain." []
 synonym: "enlarged cilium in brain" EXACT []
-is_a: XPO:0100169 ! abnormal brain
 is_a: XPO:0130277 ! increased size of the cilium
+is_a: XPO:0133424 ! abnormal cilium morphology in the brain
 
 [Term]
 id: XPO:0131458
 name: increased size of the cilium in mucociliary epithelium
 def: "An increase in the size of the cilium in the mucociliary epithelium." []
 synonym: "enlarged cilium in mucociliary epithelium" EXACT []
-is_a: XPO:0100749 ! abnormal mucociliary epithelium
 is_a: XPO:0130277 ! increased size of the cilium
+is_a: XPO:0133425 ! abnormal cilium morphology in the mucociliary epithelium
 
 [Term]
 id: XPO:0131459
 name: increased size of the cilium in pronephric kidney
 def: "An increase in the size of the cilium in the pronephric kidney." []
 synonym: "enlarged cilium in pronephric kidney" EXACT []
-is_a: XPO:0100565 ! abnormal pronephric kidney
 is_a: XPO:0130277 ! increased size of the cilium
+is_a: XPO:0133426 ! abnormal cilium morphology in the pronephric kidney
 
 [Term]
 id: XPO:0131460
 name: increased size of the cilium in pronephric nephrostome
 def: "An increase in the size of the cilium in the pronephric nephrostome." []
 synonym: "enlarged cilium in pronephric nephrostome" EXACT []
-is_a: XPO:0100500 ! abnormal pronephric nephrostome
 is_a: XPO:0131459 ! increased size of the cilium in pronephric kidney
+is_a: XPO:0133427 ! abnormal cilium morphology in the pronephric nephrostome
 
 [Term]
 id: XPO:0131461
 name: increased size of the cilium in proximal tubule
 def: "An increase in the size of the cilium in the proximal tubule." []
 synonym: "enlarged cilium in proximal tubule" EXACT []
-is_a: XPO:0101015 ! abnormal proximal tubule
 is_a: XPO:0131459 ! increased size of the cilium in pronephric kidney
+is_a: XPO:0133428 ! abnormal cilium morphology in the proximal tubule
 
 [Term]
 id: XPO:0131462
 name: increased size of the cilium in olfactory pit
 def: "An increase in the size of the cilium in the olfactory pit." []
 synonym: "enlarged cilium in olfactory pit" EXACT []
-is_a: XPO:0101334 ! abnormal olfactory pit
 is_a: XPO:0130277 ! increased size of the cilium
+is_a: XPO:0133429 ! abnormal cilium morphology in the olfactory pit
 
 [Term]
 id: XPO:0131463
 name: increased size of the cilium in auditory hair cell
 def: "An increase in the size of the cilium in the auditory hair cell." []
 synonym: "enlarged cilium in auditory hair cell" EXACT []
-is_a: XPO:0101251 ! abnormal auditory hair cell
 is_a: XPO:0130277 ! increased size of the cilium
+is_a: XPO:0133430 ! abnormal cilium morphology in the auditory hair cell
 
 [Term]
 id: XPO:0131464
 name: increased size of the cilium in lateral line
 def: "An increase in the size of the cilium in the lateral line." []
 synonym: "enlarged cilium in lateral line" EXACT []
-is_a: XPO:0100320 ! abnormal lateral line
 is_a: XPO:0130277 ! increased size of the cilium
+is_a: XPO:0133431 ! abnormal cilium morphology in the lateral line
 
 [Term]
 id: XPO:0131465
 name: increased size of the cilium in alimentary system
 def: "An increase in the size of the cilium in the alimentary system." []
 synonym: "enlarged cilium in alimentary system" EXACT []
-is_a: XPO:0100152 ! abnormal alimentary system
 is_a: XPO:0130277 ! increased size of the cilium
+is_a: XPO:0133432 ! abnormal cilium morphology in the alimentary system
 
 [Term]
 id: XPO:0131466
 name: increased size of the cilium in stomach
 def: "An increase in the size of the cilium in the stomach." []
 synonym: "enlarged cilium in stomach" EXACT []
-is_a: XPO:0100847 ! abnormal stomach
 is_a: XPO:0131465 ! increased size of the cilium in alimentary system
+is_a: XPO:0133433 ! abnormal cilium morphology in the stomach
 
 [Term]
 id: XPO:0131467
 name: increased size of the cilium in esophagus
 def: "An increase in the size of the cilium in the esophagus." []
 synonym: "enlarged cilium in esophagus" EXACT []
-is_a: XPO:0100797 ! abnormal esophagus
 is_a: XPO:0131465 ! increased size of the cilium in alimentary system
+is_a: XPO:0133434 ! abnormal cilium morphology in the esophagus
 
 [Term]
 id: XPO:0131468
@@ -84505,112 +84504,112 @@ id: XPO:0131483
 name: decreased size of the cilium in the left-right organizer
 def: "An abnormal reduction in the size of the cilium in the left-right organizer." []
 synonym: "abnormally small cilium in left-right organizer" EXACT []
-is_a: XPO:0101439 ! abnormal left-right organizer
 is_a: XPO:0128799 ! decreased size of the cilium
+is_a: XPO:0133421 ! abnormal cilium morphology in the left-right organizer
 
 [Term]
 id: XPO:0131484
 name: decreased size of the cilium in the neural progenitor cell
 def: "An abnormal reduction in the size of the cilium in the neural progenitor cell." []
 synonym: "abnormally small cilium in neural progenitor cell" EXACT []
-is_a: XPO:0100954 ! abnormal neural progenitor cell
 is_a: XPO:0128799 ! decreased size of the cilium
+is_a: XPO:0133422 ! abnormal cilium morphology in the neural progenitor cell
 
 [Term]
 id: XPO:0131485
 name: decreased size of the cilium in the floor plate
 def: "An abnormal reduction in the size of the cilium in the floor plate." []
 synonym: "abnormally small cilium in floor plate" EXACT []
-is_a: XPO:0101370 ! abnormal floor plate
 is_a: XPO:0128799 ! decreased size of the cilium
+is_a: XPO:0133423 ! abnormal cilium morphology in the floor plate
 
 [Term]
 id: XPO:0131486
 name: decreased size of the cilium in the brain
 def: "An abnormal reduction in the size of the cilium in the brain." []
 synonym: "abnormally small cilium in brain" EXACT []
-is_a: XPO:0100169 ! abnormal brain
 is_a: XPO:0128799 ! decreased size of the cilium
+is_a: XPO:0133424 ! abnormal cilium morphology in the brain
 
 [Term]
 id: XPO:0131487
 name: decreased size of the cilium in the mucociliary epithelium
 def: "An abnormal reduction in the size of the cilium in the mucociliary epithelium." []
 synonym: "abnormally small cilium in mucociliary epithelium" EXACT []
-is_a: XPO:0100749 ! abnormal mucociliary epithelium
 is_a: XPO:0128799 ! decreased size of the cilium
+is_a: XPO:0133425 ! abnormal cilium morphology in the mucociliary epithelium
 
 [Term]
 id: XPO:0131488
 name: decreased size of the cilium in the pronephric kidney
 def: "An abnormal reduction in the size of the cilium in the pronephric kidney." []
 synonym: "abnormally small cilium in pronephric kidney" EXACT []
-is_a: XPO:0100565 ! abnormal pronephric kidney
 is_a: XPO:0128799 ! decreased size of the cilium
+is_a: XPO:0133426 ! abnormal cilium morphology in the pronephric kidney
 
 [Term]
 id: XPO:0131489
 name: decreased size of the cilium in the pronephric nephrostome
 def: "An abnormal reduction in the size of the cilium in the pronephric nephrostome." []
 synonym: "abnormally small cilium in pronephric nephrostome" EXACT []
-is_a: XPO:0100500 ! abnormal pronephric nephrostome
 is_a: XPO:0131488 ! decreased size of the cilium in the pronephric kidney
+is_a: XPO:0133427 ! abnormal cilium morphology in the pronephric nephrostome
 
 [Term]
 id: XPO:0131490
 name: decreased size of the cilium in the proximal tubule
 def: "An abnormal reduction in the size of the cilium in the proximal tubule." []
 synonym: "abnormally small cilium in proximal tubule" EXACT []
-is_a: XPO:0101015 ! abnormal proximal tubule
 is_a: XPO:0131488 ! decreased size of the cilium in the pronephric kidney
+is_a: XPO:0133428 ! abnormal cilium morphology in the proximal tubule
 
 [Term]
 id: XPO:0131491
 name: decreased size of the cilium in the olfactory pit
 def: "An abnormal reduction in the size of the cilium in the olfactory pit." []
 synonym: "abnormally small cilium in olfactory pit" EXACT []
-is_a: XPO:0101334 ! abnormal olfactory pit
 is_a: XPO:0128799 ! decreased size of the cilium
+is_a: XPO:0133429 ! abnormal cilium morphology in the olfactory pit
 
 [Term]
 id: XPO:0131492
 name: decreased size of the cilium in the auditory hair cell
 def: "An abnormal reduction in the size of the cilium in the auditory hair cell." []
 synonym: "abnormally small cilium in auditory hair cell" EXACT []
-is_a: XPO:0101251 ! abnormal auditory hair cell
 is_a: XPO:0128799 ! decreased size of the cilium
+is_a: XPO:0133430 ! abnormal cilium morphology in the auditory hair cell
 
 [Term]
 id: XPO:0131493
 name: decreased size of the cilium in the lateral line
 def: "An abnormal reduction in the size of the cilium in the lateral line." []
 synonym: "abnormally small cilium in lateral line" EXACT []
-is_a: XPO:0100320 ! abnormal lateral line
 is_a: XPO:0128799 ! decreased size of the cilium
+is_a: XPO:0133431 ! abnormal cilium morphology in the lateral line
 
 [Term]
 id: XPO:0131494
 name: decreased size of the cilium in the alimentary system
 def: "An abnormal reduction in the size of the cilium in the alimentary system." []
 synonym: "abnormally small cilium in alimentary system" EXACT []
-is_a: XPO:0100152 ! abnormal alimentary system
 is_a: XPO:0128799 ! decreased size of the cilium
+is_a: XPO:0133432 ! abnormal cilium morphology in the alimentary system
 
 [Term]
 id: XPO:0131495
 name: decreased size of the cilium in the stomach
 def: "An abnormal reduction in the size of the cilium in the stomach." []
 synonym: "abnormally small cilium in stomach" EXACT []
-is_a: XPO:0100847 ! abnormal stomach
 is_a: XPO:0131494 ! decreased size of the cilium in the alimentary system
+is_a: XPO:0133433 ! abnormal cilium morphology in the stomach
 
 [Term]
 id: XPO:0131496
 name: decreased size of the cilium in the esophagus
 def: "An abnormal reduction in the size of the cilium in the esophagus." []
 synonym: "abnormally small cilium in esophagus" EXACT []
-is_a: XPO:0100797 ! abnormal esophagus
 is_a: XPO:0131494 ! decreased size of the cilium in the alimentary system
+is_a: XPO:0133434 ! abnormal cilium morphology in the esophagus
 
 [Term]
 id: XPO:0131497
@@ -86182,7 +86181,7 @@ is_a: XPO:0131744 ! abnormal apical constriction
 id: XPO:0131699
 name: abnormal axon extension involved in axon guidance
 def: "Abnormal axon extension involved in axon guidance." []
-is_a: XPO:0133403 ! abnormal development
+is_a: XPO:0133403 ! abnormal developmental process
 
 [Term]
 id: XPO:0131700
@@ -86272,7 +86271,7 @@ is_a: XPO:0131711 ! abnormal establishment of cell polarity
 id: XPO:0131714
 name: abnormal establishment of tissue polarity
 def: "Abnormal establishment of tissue polarity." []
-is_a: XPO:0133403 ! abnormal development
+is_a: XPO:0133403 ! abnormal developmental process
 
 [Term]
 id: XPO:0131715
@@ -86380,13 +86379,13 @@ is_a: XPO:0116434 ! abnormal biological process
 id: XPO:0131732
 name: abnormal sex differentiation
 def: "Abnormal sex differentiation." []
-is_a: XPO:0133403 ! abnormal development
+is_a: XPO:0133403 ! abnormal developmental process
 
 [Term]
 id: XPO:0131733
 name: abnormal somitogenesis
 def: "Abnormal somitogenesis." []
-is_a: XPO:0133403 ! abnormal development
+is_a: XPO:0133403 ! abnormal developmental process
 
 [Term]
 id: XPO:0131734
@@ -86410,7 +86409,7 @@ is_a: XPO:0116434 ! abnormal biological process
 id: XPO:0131737
 name: abnormal type B pancreatic cell differentiation
 def: "Abnormal type B pancreatic cell differentiation." []
-is_a: XPO:0133403 ! abnormal development
+is_a: XPO:0133403 ! abnormal developmental process
 
 [Term]
 id: XPO:0131738
@@ -86434,13 +86433,13 @@ is_a: XPO:0116434 ! abnormal biological process
 id: XPO:0131741
 name: abnormal convergent extension
 def: "Abnormal convergent extension." []
-is_a: XPO:0133403 ! abnormal development
+is_a: XPO:0133403 ! abnormal developmental process
 
 [Term]
 id: XPO:0131742
 name: abnormal axon extension involved in regeneration
 def: "Abnormal axon extension involved in regeneration." []
-is_a: XPO:0133403 ! abnormal development
+is_a: XPO:0133403 ! abnormal developmental process
 
 [Term]
 id: XPO:0131743
@@ -86458,13 +86457,13 @@ is_a: XPO:0116434 ! abnormal biological process
 id: XPO:0131745
 name: abnormal axis elongation
 def: "Abnormal axis elongation." []
-is_a: XPO:0133403 ! abnormal development
+is_a: XPO:0133403 ! abnormal developmental process
 
 [Term]
 id: XPO:0131746
 name: abnormal neural tube closure
 def: "Abnormal neural tube closure." []
-is_a: XPO:0133403 ! abnormal development
+is_a: XPO:0133403 ! abnormal developmental process
 
 [Term]
 id: XPO:0131747
@@ -86519,7 +86518,7 @@ is_a: XPO:0116434 ! abnormal biological process
 id: XPO:0131754
 name: delayed embryo development
 def: "Delayed embryo development." []
-is_a: XPO:0133403 ! abnormal development
+is_a: XPO:0133403 ! abnormal developmental process
 
 [Term]
 id: XPO:0131755
@@ -96354,33 +96353,33 @@ is_a: XPO:0133364 ! tibia-fibula fused with autopod
 
 [Term]
 id: XPO:0133383
-name: decreased cell migration of branchial crest
+name: decreased cell migration in branchial crest
 def: "A decreased occurrence of cell migration in branchial crest." []
 is_a: XPO:0103920 ! decreased cell migration in cranial neural crest
 
 [Term]
 id: XPO:0133384
-name: decreased cell migration of hyoid crest
+name: decreased cell migration in hyoid crest
 def: "A decreased occurrence of cell migration in hyoid crest." []
 is_a: XPO:0103920 ! decreased cell migration in cranial neural crest
 
 [Term]
 id: XPO:0133385
-name: decreased cell migration of mandibular crest
+name: decreased cell migration in mandibular crest
 def: "A decreased occurrence of cell migration in mandibular crest." []
 is_a: XPO:0103920 ! decreased cell migration in cranial neural crest
 
 [Term]
 id: XPO:0133386
-name: decreased cell migration of anterior branchial crest
+name: decreased cell migration in anterior branchial crest
 def: "A decreased occurrence of cell migration in anterior branchial crest." []
-is_a: XPO:0133383 ! decreased cell migration of branchial crest
+is_a: XPO:0133383 ! decreased cell migration in branchial crest
 
 [Term]
 id: XPO:0133387
-name: decreased cell migration of posterior branchial crest
+name: decreased cell migration in posterior branchial crest
 def: "A decreased occurrence of cell migration in posterior branchial crest." []
-is_a: XPO:0133383 ! decreased cell migration of branchial crest
+is_a: XPO:0133383 ! decreased cell migration in branchial crest
 
 [Term]
 id: XPO:0133388
@@ -96474,8 +96473,753 @@ is_a: XPO:0116494 ! absent biological process
 
 [Term]
 id: XPO:0133403
-name: abnormal development
+name: abnormal developmental process
 def: "Abnormal developmental process." []
+is_a: XPO:0116434 ! abnormal biological process
+
+[Term]
+id: XPO:0133404
+name: increased cilium motility in left-right organizer
+def: "Increased ability to move cilium in left-right organizer." []
+is_a: XPO:0133505 ! abnormal cilium motility
+
+[Term]
+id: XPO:0133405
+name: increased cilium motility in floor plate
+def: "Increased ability to move cilium in floor plate." []
+is_a: XPO:0133505 ! abnormal cilium motility
+
+[Term]
+id: XPO:0133406
+name: increased cilium motility in brain
+def: "Increased ability to move cilium in brain." []
+is_a: XPO:0133505 ! abnormal cilium motility
+
+[Term]
+id: XPO:0133407
+name: increased cilium motility in mucociliary epithelium
+def: "Increased ability to move cilium in mucociliary epithelium." []
+is_a: XPO:0133505 ! abnormal cilium motility
+
+[Term]
+id: XPO:0133408
+name: increased cilium motility in pronephric kidney
+def: "Increased ability to move cilium in pronephric kidney." []
+is_a: XPO:0133505 ! abnormal cilium motility
+
+[Term]
+id: XPO:0133409
+name: increased cilium motility in pronephric nephrostome
+def: "Increased ability to move cilium in pronephric nephrostome." []
+is_a: XPO:0133408 ! increased cilium motility in pronephric kidney
+
+[Term]
+id: XPO:0133410
+name: increased cilium motility in olfactory pit
+def: "Increased ability to move cilium in olfactory pit." []
+is_a: XPO:0133505 ! abnormal cilium motility
+
+[Term]
+id: XPO:0133411
+name: increased cilium motility in alimentary system
+def: "Increased ability to move cilium in alimentary system." []
+is_a: XPO:0133505 ! abnormal cilium motility
+
+[Term]
+id: XPO:0133412
+name: increased cilium motility in stomach
+def: "Increased ability to move cilium in stomach." []
+is_a: XPO:0133411 ! increased cilium motility in alimentary system
+
+[Term]
+id: XPO:0133413
+name: increased cilium motility in esophagus
+def: "Increased ability to move cilium in esophagus." []
+is_a: XPO:0133411 ! increased cilium motility in alimentary system
+
+[Term]
+id: XPO:0133414
+name: increased cilium motility in ciliated cell
+def: "Increased ability to move cilium in ciliated cell." []
+is_a: XPO:0133505 ! abnormal cilium motility
+
+[Term]
+id: XPO:0133415
+name: increased cilium motility in monociliated cell
+def: "Increased ability to move cilium in monociliated cell." []
+is_a: XPO:0133414 ! increased cilium motility in ciliated cell
+
+[Term]
+id: XPO:0133416
+name: increased cilium motility in multiciliated cell
+def: "Increased ability to move cilium in multiciliated cell." []
+is_a: XPO:0133414 ! increased cilium motility in ciliated cell
+
+[Term]
+id: XPO:0133417
+name: increased cilium motility in ciliated epidermal cell
+def: "Increased ability to move cilium in ciliated epidermal cell." []
+is_a: XPO:0133414 ! increased cilium motility in ciliated cell
+
+[Term]
+id: XPO:0133418
+name: increased cilium motility in ciliated non-epidermal cell
+def: "Increased ability to move cilium in ciliated non-epidermal cell." []
+is_a: XPO:0133414 ! increased cilium motility in ciliated cell
+
+[Term]
+id: XPO:0133419
+name: increased cilium motility in monociliated epidermal cell
+def: "Increased ability to move cilium in monociliated epidermal cell." []
+is_a: XPO:0133415 ! increased cilium motility in monociliated cell
+is_a: XPO:0133417 ! increased cilium motility in ciliated epidermal cell
+
+[Term]
+id: XPO:0133420
+name: increased cilium motility in multiciliated epidermal cell
+def: "Increased ability to move cilium in multiciliated epidermal cell." []
+is_a: XPO:0133416 ! increased cilium motility in multiciliated cell
+is_a: XPO:0133417 ! increased cilium motility in ciliated epidermal cell
+
+[Term]
+id: XPO:0133421
+name: abnormal cilium morphology in the left-right organizer
+def: "A morphological abnormality of the cilium in the left-right organizer." []
+synonym: "Abnormal morphology of the cilium in the left-right organizer" EXACT []
+is_a: XPO:0101439 ! abnormal left-right organizer
+is_a: XPO:0102024 ! abnormal cilium morphology
+
+[Term]
+id: XPO:0133422
+name: abnormal cilium morphology in the neural progenitor cell
+def: "A morphological abnormality of the cilium in the neural progenitor cell." []
+synonym: "Abnormal morphology of the cilium in the neural progenitor cell" EXACT []
+is_a: XPO:0100954 ! abnormal neural progenitor cell
+is_a: XPO:0102024 ! abnormal cilium morphology
+
+[Term]
+id: XPO:0133423
+name: abnormal cilium morphology in the floor plate
+def: "A morphological abnormality of the cilium in the floor plate." []
+synonym: "Abnormal morphology of the cilium in the floor plate" EXACT []
+is_a: XPO:0101370 ! abnormal floor plate
+is_a: XPO:0102024 ! abnormal cilium morphology
+
+[Term]
+id: XPO:0133424
+name: abnormal cilium morphology in the brain
+def: "A morphological abnormality of the cilium in the brain." []
+synonym: "Abnormal morphology of the cilium in the brain" EXACT []
+is_a: XPO:0100169 ! abnormal brain
+is_a: XPO:0102024 ! abnormal cilium morphology
+
+[Term]
+id: XPO:0133425
+name: abnormal cilium morphology in the mucociliary epithelium
+def: "A morphological abnormality of the cilium in the mucociliary epithelium." []
+synonym: "Abnormal morphology of the cilium in the mucociliary epithelium" EXACT []
+is_a: XPO:0100749 ! abnormal mucociliary epithelium
+is_a: XPO:0102024 ! abnormal cilium morphology
+
+[Term]
+id: XPO:0133426
+name: abnormal cilium morphology in the pronephric kidney
+def: "A morphological abnormality of the cilium in the pronephric kidney." []
+synonym: "Abnormal morphology of the cilium in the pronephric kidney" EXACT []
+is_a: XPO:0100565 ! abnormal pronephric kidney
+is_a: XPO:0102024 ! abnormal cilium morphology
+
+[Term]
+id: XPO:0133427
+name: abnormal cilium morphology in the pronephric nephrostome
+def: "A morphological abnormality of the cilium in the pronephric nephrostome." []
+synonym: "Abnormal morphology of the cilium in the pronephric nephrostome" EXACT []
+is_a: XPO:0100500 ! abnormal pronephric nephrostome
+is_a: XPO:0133426 ! abnormal cilium morphology in the pronephric kidney
+
+[Term]
+id: XPO:0133428
+name: abnormal cilium morphology in the proximal tubule
+def: "A morphological abnormality of the cilium in the proximal tubule." []
+synonym: "Abnormal morphology of the cilium in the proximal tubule" EXACT []
+is_a: XPO:0101015 ! abnormal proximal tubule
+is_a: XPO:0133426 ! abnormal cilium morphology in the pronephric kidney
+
+[Term]
+id: XPO:0133429
+name: abnormal cilium morphology in the olfactory pit
+def: "A morphological abnormality of the cilium in the olfactory pit." []
+synonym: "Abnormal morphology of the cilium in the olfactory pit" EXACT []
+is_a: XPO:0101334 ! abnormal olfactory pit
+is_a: XPO:0102024 ! abnormal cilium morphology
+
+[Term]
+id: XPO:0133430
+name: abnormal cilium morphology in the auditory hair cell
+def: "A morphological abnormality of the cilium in the auditory hair cell." []
+synonym: "Abnormal morphology of the cilium in the auditory hair cell" EXACT []
+is_a: XPO:0101251 ! abnormal auditory hair cell
+is_a: XPO:0102024 ! abnormal cilium morphology
+
+[Term]
+id: XPO:0133431
+name: abnormal cilium morphology in the lateral line
+def: "A morphological abnormality of the cilium in the lateral line." []
+synonym: "Abnormal morphology of the cilium in the lateral line" EXACT []
+is_a: XPO:0100320 ! abnormal lateral line
+is_a: XPO:0102024 ! abnormal cilium morphology
+
+[Term]
+id: XPO:0133432
+name: abnormal cilium morphology in the alimentary system
+def: "A morphological abnormality of the cilium in the alimentary system." []
+synonym: "Abnormal morphology of the cilium in the alimentary system" EXACT []
+is_a: XPO:0100152 ! abnormal alimentary system
+is_a: XPO:0102024 ! abnormal cilium morphology
+
+[Term]
+id: XPO:0133433
+name: abnormal cilium morphology in the stomach
+def: "A morphological abnormality of the cilium in the stomach." []
+synonym: "Abnormal morphology of the cilium in the stomach" EXACT []
+is_a: XPO:0100847 ! abnormal stomach
+is_a: XPO:0133432 ! abnormal cilium morphology in the alimentary system
+
+[Term]
+id: XPO:0133434
+name: abnormal cilium morphology in the esophagus
+def: "A morphological abnormality of the cilium in the esophagus." []
+synonym: "Abnormal morphology of the cilium in the esophagus" EXACT []
+is_a: XPO:0100797 ! abnormal esophagus
+is_a: XPO:0133432 ! abnormal cilium morphology in the alimentary system
+
+[Term]
+id: XPO:0133435
+name: abnormal cilium morphology in the monociliated cell
+def: "A morphological abnormality of the cilium in the monociliated cell." []
+synonym: "Abnormal morphology of the cilium in the monociliated cell" EXACT []
+is_a: XPO:0100713 ! abnormal monociliated cell
+is_a: XPO:0102024 ! abnormal cilium morphology
+
+[Term]
+id: XPO:0133436
+name: abnormal cilium morphology in the multiciliated cell
+def: "A morphological abnormality of the cilium in the multiciliated cell." []
+synonym: "Abnormal morphology of the cilium in the multiciliated cell" EXACT []
+is_a: XPO:0100976 ! abnormal multiciliated cell
+is_a: XPO:0102024 ! abnormal cilium morphology
+
+[Term]
+id: XPO:0133437
+name: abnormal cilium morphology in the ciliated epidermal cell
+def: "A morphological abnormality of the cilium in the ciliated epidermal cell." []
+synonym: "Abnormal morphology of the cilium in the ciliated epidermal cell" EXACT []
+is_a: XPO:0100712 ! abnormal ciliated epidermal cell
+is_a: XPO:0102024 ! abnormal cilium morphology
+
+[Term]
+id: XPO:0133438
+name: abnormal cilium morphology in the ciliated non-epidermal cell
+def: "A morphological abnormality of the cilium in the ciliated non-epidermal cell." []
+synonym: "Abnormal morphology of the cilium in the ciliated non-epidermal cell" EXACT []
+is_a: XPO:0101240 ! abnormal ciliated non-epidermal cell
+is_a: XPO:0102024 ! abnormal cilium morphology
+
+[Term]
+id: XPO:0133439
+name: abnormal cilium morphology in the monociliated epidermal cell
+def: "A morphological abnormality of the cilium in the monociliated epidermal cell." []
+synonym: "Abnormal morphology of the cilium in the monociliated epidermal cell" EXACT []
+is_a: XPO:0100959 ! abnormal monociliated epidermal cell
+is_a: XPO:0133435 ! abnormal cilium morphology in the monociliated cell
+is_a: XPO:0133437 ! abnormal cilium morphology in the ciliated epidermal cell
+
+[Term]
+id: XPO:0133440
+name: abnormal cilium morphology in the multiciliated epidermal cell
+def: "A morphological abnormality of the cilium in the multiciliated epidermal cell." []
+synonym: "Abnormal morphology of the cilium in the multiciliated epidermal cell" EXACT []
+is_a: XPO:0100975 ! abnormal multiciliated epidermal cell
+is_a: XPO:0133436 ! abnormal cilium morphology in the multiciliated cell
+is_a: XPO:0133437 ! abnormal cilium morphology in the ciliated epidermal cell
+
+[Term]
+id: XPO:0133441
+name: Increased number of cilium in the ciliated cell
+def: "The presence of an increased number of cilium in the ciliated cell." []
+synonym: "Extra cilium in the ciliated cell" EXACT []
+is_a: XPO:0100392 ! abnormal cilium
+
+[Term]
+id: XPO:0133442
+name: Increased number of cilium in the monociliated cell
+def: "The presence of an increased number of cilium in the monociliated cell." []
+synonym: "Extra cilium in the monociliated cell" EXACT []
+is_a: XPO:0100713 ! abnormal monociliated cell
+is_a: XPO:0133441 ! Increased number of cilium in the ciliated cell
+
+[Term]
+id: XPO:0133443
+name: Increased number of cilium in the multiciliated cell
+def: "The presence of an increased number of cilium in the multiciliated cell." []
+synonym: "Extra cilium in the multiciliated cell" EXACT []
+is_a: XPO:0100976 ! abnormal multiciliated cell
+is_a: XPO:0133441 ! Increased number of cilium in the ciliated cell
+
+[Term]
+id: XPO:0133444
+name: Increased number of cilium in the ciliated epidermal cell
+def: "The presence of an increased number of cilium in the ciliated epidermal cell." []
+synonym: "Extra cilium in the ciliated epidermal cell" EXACT []
+is_a: XPO:0100712 ! abnormal ciliated epidermal cell
+is_a: XPO:0133441 ! Increased number of cilium in the ciliated cell
+
+[Term]
+id: XPO:0133445
+name: Increased number of cilium in the ciliated non-epidermal cell
+def: "The presence of an increased number of cilium in the ciliated non-epidermal cell." []
+synonym: "Extra cilium in the ciliated non-epidermal cell" EXACT []
+is_a: XPO:0101240 ! abnormal ciliated non-epidermal cell
+is_a: XPO:0133441 ! Increased number of cilium in the ciliated cell
+
+[Term]
+id: XPO:0133446
+name: Increased number of cilium in the monociliated epidermal cell
+def: "The presence of an increased number of cilium in the monociliated epidermal cell." []
+synonym: "Extra cilium in the monociliated epidermal cell" EXACT []
+is_a: XPO:0100959 ! abnormal monociliated epidermal cell
+is_a: XPO:0133442 ! Increased number of cilium in the monociliated cell
+is_a: XPO:0133444 ! Increased number of cilium in the ciliated epidermal cell
+
+[Term]
+id: XPO:0133447
+name: Increased number of cilium in the multiciliated epidermal cell
+def: "The presence of an increased number of cilium in the multiciliated epidermal cell." []
+synonym: "Extra cilium in the multiciliated epidermal cell" EXACT []
+is_a: XPO:0100975 ! abnormal multiciliated epidermal cell
+is_a: XPO:0133443 ! Increased number of cilium in the multiciliated cell
+is_a: XPO:0133444 ! Increased number of cilium in the ciliated epidermal cell
+
+[Term]
+id: XPO:0133448
+name: decreased size of the cilium in the monociliated cell
+def: "An abnormal reduction in the size of the cilium in the monociliated cell." []
+synonym: "abnormally small cilium in monociliated cell" EXACT []
+is_a: XPO:0128799 ! decreased size of the cilium
+is_a: XPO:0133435 ! abnormal cilium morphology in the monociliated cell
+
+[Term]
+id: XPO:0133449
+name: decreased size of the cilium in the multiciliated cell
+def: "An abnormal reduction in the size of the cilium in the multiciliated cell." []
+synonym: "abnormally small cilium in multiciliated cell" EXACT []
+is_a: XPO:0128799 ! decreased size of the cilium
+is_a: XPO:0133436 ! abnormal cilium morphology in the multiciliated cell
+
+[Term]
+id: XPO:0133450
+name: decreased size of the cilium in the ciliated epidermal cell
+def: "An abnormal reduction in the size of the cilium in the ciliated epidermal cell." []
+synonym: "abnormally small cilium in ciliated epidermal cell" EXACT []
+is_a: XPO:0128799 ! decreased size of the cilium
+is_a: XPO:0133437 ! abnormal cilium morphology in the ciliated epidermal cell
+
+[Term]
+id: XPO:0133451
+name: decreased size of the cilium in the ciliated non-epidermal cell
+def: "An abnormal reduction in the size of the cilium in the ciliated non-epidermal cell." []
+synonym: "abnormally small cilium in ciliated non-epidermal cell" EXACT []
+is_a: XPO:0128799 ! decreased size of the cilium
+is_a: XPO:0133438 ! abnormal cilium morphology in the ciliated non-epidermal cell
+
+[Term]
+id: XPO:0133452
+name: decreased size of the cilium in the monociliated epidermal cell
+def: "An abnormal reduction in the size of the cilium in the monociliated epidermal cell." []
+synonym: "abnormally small cilium in monociliated epidermal cell" EXACT []
+is_a: XPO:0133439 ! abnormal cilium morphology in the monociliated epidermal cell
+is_a: XPO:0133448 ! decreased size of the cilium in the monociliated cell
+is_a: XPO:0133450 ! decreased size of the cilium in the ciliated epidermal cell
+
+[Term]
+id: XPO:0133453
+name: decreased size of the cilium in the multiciliated epidermal cell
+def: "An abnormal reduction in the size of the cilium in the multiciliated epidermal cell." []
+synonym: "abnormally small cilium in multiciliated epidermal cell" EXACT []
+is_a: XPO:0133440 ! abnormal cilium morphology in the multiciliated epidermal cell
+is_a: XPO:0133449 ! decreased size of the cilium in the multiciliated cell
+is_a: XPO:0133450 ! decreased size of the cilium in the ciliated epidermal cell
+
+[Term]
+id: XPO:0133454
+name: absent cilium motility in left-right organizer
+def: "Inability to move cilium in left-right organizer." []
+synonym: "immotile cilium in left-right organizer" EXACT []
+is_a: XPO:0116494 ! absent biological process
+
+[Term]
+id: XPO:0133455
+name: absent cilium motility in floor plate
+def: "Inability to move cilium in floor plate." []
+synonym: "immotile cilium in floor plate" EXACT []
+is_a: XPO:0116494 ! absent biological process
+
+[Term]
+id: XPO:0133456
+name: absent cilium motility in brain
+def: "Inability to move cilium in brain." []
+synonym: "immotile cilium in brain" EXACT []
+is_a: XPO:0116494 ! absent biological process
+
+[Term]
+id: XPO:0133457
+name: absent cilium motility in mucociliary epithelium
+def: "Inability to move cilium in mucociliary epithelium." []
+synonym: "immotile cilium in mucociliary epithelium" EXACT []
+is_a: XPO:0116494 ! absent biological process
+
+[Term]
+id: XPO:0133458
+name: absent cilium motility in pronephric kidney
+def: "Inability to move cilium in pronephric kidney." []
+synonym: "immotile cilium in pronephric kidney" EXACT []
+is_a: XPO:0116494 ! absent biological process
+
+[Term]
+id: XPO:0133459
+name: absent cilium motility in pronephric nephrostome
+def: "Inability to move cilium in pronephric nephrostome." []
+synonym: "immotile cilium in pronephric nephrostome" EXACT []
+is_a: XPO:0133458 ! absent cilium motility in pronephric kidney
+
+[Term]
+id: XPO:0133460
+name: absent cilium motility in olfactory pit
+def: "Inability to move cilium in olfactory pit." []
+synonym: "immotile cilium in olfactory pit" EXACT []
+is_a: XPO:0116494 ! absent biological process
+
+[Term]
+id: XPO:0133461
+name: absent cilium motility in alimentary system
+def: "Inability to move cilium in alimentary system." []
+synonym: "immotile cilium in alimentary system" EXACT []
+is_a: XPO:0116494 ! absent biological process
+
+[Term]
+id: XPO:0133462
+name: absent cilium motility in stomach
+def: "Inability to move cilium in stomach." []
+synonym: "immotile cilium in stomach" EXACT []
+is_a: XPO:0133461 ! absent cilium motility in alimentary system
+
+[Term]
+id: XPO:0133463
+name: absent cilium motility in esophagus
+def: "Inability to move cilium in esophagus." []
+synonym: "immotile cilium in esophagus" EXACT []
+is_a: XPO:0133461 ! absent cilium motility in alimentary system
+
+[Term]
+id: XPO:0133464
+name: absent cilium motility in ciliated cell
+def: "Inability to move cilium in ciliated cell." []
+synonym: "immotile cilium in ciliated cell" EXACT []
+is_a: XPO:0116494 ! absent biological process
+
+[Term]
+id: XPO:0133465
+name: absent cilium motility in monociliated cell
+def: "Inability to move cilium in monociliated cell." []
+synonym: "immotile cilium in monociliated cell" EXACT []
+is_a: XPO:0133464 ! absent cilium motility in ciliated cell
+
+[Term]
+id: XPO:0133466
+name: absent cilium motility in multiciliated cell
+def: "Inability to move cilium in multiciliated cell." []
+synonym: "immotile cilium in multiciliated cell" EXACT []
+is_a: XPO:0133464 ! absent cilium motility in ciliated cell
+
+[Term]
+id: XPO:0133467
+name: absent cilium motility in ciliated epidermal cell
+def: "Inability to move cilium in ciliated epidermal cell." []
+synonym: "immotile cilium in ciliated epidermal cell" EXACT []
+is_a: XPO:0133464 ! absent cilium motility in ciliated cell
+
+[Term]
+id: XPO:0133468
+name: absent cilium motility in ciliated non-epidermal cell
+def: "Inability to move cilium in ciliated non-epidermal cell." []
+synonym: "immotile cilium in ciliated non-epidermal cell" EXACT []
+is_a: XPO:0133464 ! absent cilium motility in ciliated cell
+
+[Term]
+id: XPO:0133469
+name: absent cilium motility in monociliated epidermal cell
+def: "Inability to move cilium in monociliated epidermal cell." []
+synonym: "immotile cilium in monociliated epidermal cell" EXACT []
+is_a: XPO:0133465 ! absent cilium motility in monociliated cell
+is_a: XPO:0133467 ! absent cilium motility in ciliated epidermal cell
+
+[Term]
+id: XPO:0133470
+name: absent cilium motility in multiciliated epidermal cell
+def: "Inability to move cilium in multiciliated epidermal cell." []
+synonym: "immotile cilium in multiciliated epidermal cell" EXACT []
+is_a: XPO:0133466 ! absent cilium motility in multiciliated cell
+is_a: XPO:0133467 ! absent cilium motility in ciliated epidermal cell
+
+[Term]
+id: XPO:0133471
+name: Decreased number of cilium in the ciliated cell
+def: "The presence of a reduced number of cilium in the ciliated cell." []
+synonym: "Reduced number of cilium in the ciliated cell" EXACT []
+is_a: XPO:0100392 ! abnormal cilium
+
+[Term]
+id: XPO:0133472
+name: Decreased number of cilium in the monociliated cell
+def: "The presence of a reduced number of cilium in the monociliated cell." []
+synonym: "Reduced number of cilium in the monociliated cell" EXACT []
+is_a: XPO:0100713 ! abnormal monociliated cell
+is_a: XPO:0133471 ! Decreased number of cilium in the ciliated cell
+
+[Term]
+id: XPO:0133473
+name: Decreased number of cilium in the ciliated non-epidermal cell
+def: "The presence of a reduced number of cilium in the ciliated non-epidermal cell." []
+synonym: "Reduced number of cilium in the ciliated non-epidermal cell" EXACT []
+is_a: XPO:0101240 ! abnormal ciliated non-epidermal cell
+is_a: XPO:0133471 ! Decreased number of cilium in the ciliated cell
+
+[Term]
+id: XPO:0133474
+name: Decreased number of cilium in the monociliated epidermal cell
+def: "The presence of a reduced number of cilium in the monociliated epidermal cell." []
+synonym: "Reduced number of cilium in the monociliated epidermal cell" EXACT []
+is_a: XPO:0100959 ! abnormal monociliated epidermal cell
+is_a: XPO:0103643 ! Decreased number of cilium in the ciliated epidermal cell
+is_a: XPO:0133472 ! Decreased number of cilium in the monociliated cell
+
+[Term]
+id: XPO:0133475
+name: Decreased number of cilium in the multiciliated epidermal cell
+def: "The presence of a reduced number of cilium in the multiciliated epidermal cell." []
+synonym: "Reduced number of cilium in the multiciliated epidermal cell" EXACT []
+is_a: XPO:0100975 ! abnormal multiciliated epidermal cell
+is_a: XPO:0103643 ! Decreased number of cilium in the ciliated epidermal cell
+is_a: XPO:0103644 ! Decreased number of cilium in the multiciliated cell
+
+[Term]
+id: XPO:0133476
+name: Absent cilium in the monociliated cell
+def: "Absence of the cilium in the monociliated cell." []
+synonym: "Missing cilium in the monociliated cell" EXACT []
+is_a: XPO:0100713 ! abnormal monociliated cell
+is_a: XPO:0125577 ! absent cilium
+
+[Term]
+id: XPO:0133477
+name: Absent cilium in the multiciliated cell
+def: "Absence of the cilium in the multiciliated cell." []
+synonym: "Missing cilium in the multiciliated cell" EXACT []
+is_a: XPO:0100976 ! abnormal multiciliated cell
+is_a: XPO:0125577 ! absent cilium
+
+[Term]
+id: XPO:0133478
+name: Absent cilium in the ciliated epidermal cell
+def: "Absence of the cilium in the ciliated epidermal cell." []
+synonym: "Missing cilium in the ciliated epidermal cell" EXACT []
+is_a: XPO:0100712 ! abnormal ciliated epidermal cell
+is_a: XPO:0125577 ! absent cilium
+
+[Term]
+id: XPO:0133479
+name: Absent cilium in the ciliated non-epidermal cell
+def: "Absence of the cilium in the ciliated non-epidermal cell." []
+synonym: "Missing cilium in the ciliated non-epidermal cell" EXACT []
+is_a: XPO:0101240 ! abnormal ciliated non-epidermal cell
+is_a: XPO:0125577 ! absent cilium
+
+[Term]
+id: XPO:0133480
+name: Absent cilium in the monociliated epidermal cell
+def: "Absence of the cilium in the monociliated epidermal cell." []
+synonym: "Missing cilium in the monociliated epidermal cell" EXACT []
+is_a: XPO:0100959 ! abnormal monociliated epidermal cell
+is_a: XPO:0133476 ! Absent cilium in the monociliated cell
+is_a: XPO:0133478 ! Absent cilium in the ciliated epidermal cell
+
+[Term]
+id: XPO:0133481
+name: Absent cilium in the multiciliated epidermal cell
+def: "Absence of the cilium in the multiciliated epidermal cell." []
+synonym: "Missing cilium in the multiciliated epidermal cell" EXACT []
+is_a: XPO:0100975 ! abnormal multiciliated epidermal cell
+is_a: XPO:0133477 ! Absent cilium in the multiciliated cell
+is_a: XPO:0133478 ! Absent cilium in the ciliated epidermal cell
+
+[Term]
+id: XPO:0133482
+name: increased size of the cilium in monociliated cell
+def: "An increase in the size of the cilium in the monociliated cell." []
+synonym: "enlarged cilium in monociliated cell" EXACT []
+is_a: XPO:0130277 ! increased size of the cilium
+is_a: XPO:0133435 ! abnormal cilium morphology in the monociliated cell
+
+[Term]
+id: XPO:0133483
+name: increased size of the cilium in multiciliated cell
+def: "An increase in the size of the cilium in the multiciliated cell." []
+synonym: "enlarged cilium in multiciliated cell" EXACT []
+is_a: XPO:0130277 ! increased size of the cilium
+is_a: XPO:0133436 ! abnormal cilium morphology in the multiciliated cell
+
+[Term]
+id: XPO:0133484
+name: increased size of the cilium in ciliated epidermal cell
+def: "An increase in the size of the cilium in the ciliated epidermal cell." []
+synonym: "enlarged cilium in ciliated epidermal cell" EXACT []
+is_a: XPO:0130277 ! increased size of the cilium
+is_a: XPO:0133437 ! abnormal cilium morphology in the ciliated epidermal cell
+
+[Term]
+id: XPO:0133485
+name: increased size of the cilium in ciliated non-epidermal cell
+def: "An increase in the size of the cilium in the ciliated non-epidermal cell." []
+synonym: "enlarged cilium in ciliated non-epidermal cell" EXACT []
+is_a: XPO:0130277 ! increased size of the cilium
+is_a: XPO:0133438 ! abnormal cilium morphology in the ciliated non-epidermal cell
+
+[Term]
+id: XPO:0133486
+name: increased size of the cilium in monociliated epidermal cell
+def: "An increase in the size of the cilium in the monociliated epidermal cell." []
+synonym: "enlarged cilium in monociliated epidermal cell" EXACT []
+is_a: XPO:0133439 ! abnormal cilium morphology in the monociliated epidermal cell
+is_a: XPO:0133482 ! increased size of the cilium in monociliated cell
+is_a: XPO:0133484 ! increased size of the cilium in ciliated epidermal cell
+
+[Term]
+id: XPO:0133487
+name: increased size of the cilium in multiciliated epidermal cell
+def: "An increase in the size of the cilium in the multiciliated epidermal cell." []
+synonym: "enlarged cilium in multiciliated epidermal cell" EXACT []
+is_a: XPO:0133440 ! abnormal cilium morphology in the multiciliated epidermal cell
+is_a: XPO:0133483 ! increased size of the cilium in multiciliated cell
+is_a: XPO:0133484 ! increased size of the cilium in ciliated epidermal cell
+
+[Term]
+id: XPO:0133488
+name: decreased cilium motility in left-right organizer
+def: "Decreased ability to move cilium in left-right organizer." []
+is_a: XPO:0133505 ! abnormal cilium motility
+
+[Term]
+id: XPO:0133489
+name: decreased cilium motility in floor plate
+def: "Decreased ability to move cilium in floor plate." []
+is_a: XPO:0133505 ! abnormal cilium motility
+
+[Term]
+id: XPO:0133490
+name: decreased cilium motility in brain
+def: "Decreased ability to move cilium in brain." []
+is_a: XPO:0133505 ! abnormal cilium motility
+
+[Term]
+id: XPO:0133491
+name: decreased cilium motility in mucociliary epithelium
+def: "Decreased ability to move cilium in mucociliary epithelium." []
+is_a: XPO:0133505 ! abnormal cilium motility
+
+[Term]
+id: XPO:0133492
+name: decreased cilium motility in pronephric kidney
+def: "Decreased ability to move cilium in pronephric kidney." []
+is_a: XPO:0133505 ! abnormal cilium motility
+
+[Term]
+id: XPO:0133493
+name: decreased cilium motility in pronephric nephrostome
+def: "Decreased ability to move cilium in pronephric nephrostome." []
+is_a: XPO:0133492 ! decreased cilium motility in pronephric kidney
+
+[Term]
+id: XPO:0133494
+name: decreased cilium motility in olfactory pit
+def: "Decreased ability to move cilium in olfactory pit." []
+is_a: XPO:0133505 ! abnormal cilium motility
+
+[Term]
+id: XPO:0133495
+name: decreased cilium motility in alimentary system
+def: "Decreased ability to move cilium in alimentary system." []
+is_a: XPO:0133505 ! abnormal cilium motility
+
+[Term]
+id: XPO:0133496
+name: decreased cilium motility in stomach
+def: "Decreased ability to move cilium in stomach." []
+is_a: XPO:0133495 ! decreased cilium motility in alimentary system
+
+[Term]
+id: XPO:0133497
+name: decreased cilium motility in esophagus
+def: "Decreased ability to move cilium in esophagus." []
+is_a: XPO:0133495 ! decreased cilium motility in alimentary system
+
+[Term]
+id: XPO:0133498
+name: decreased cilium motility in ciliated cell
+def: "Decreased ability to move cilium in ciliated cell." []
+is_a: XPO:0133505 ! abnormal cilium motility
+
+[Term]
+id: XPO:0133499
+name: decreased cilium motility in monociliated cell
+def: "Decreased ability to move cilium in monociliated cell." []
+is_a: XPO:0133498 ! decreased cilium motility in ciliated cell
+
+[Term]
+id: XPO:0133500
+name: decreased cilium motility in multiciliated cell
+def: "Decreased ability to move cilium in multiciliated cell." []
+is_a: XPO:0133498 ! decreased cilium motility in ciliated cell
+
+[Term]
+id: XPO:0133501
+name: decreased cilium motility in ciliated epidermal cell
+def: "Decreased ability to move cilium in ciliated epidermal cell." []
+is_a: XPO:0133498 ! decreased cilium motility in ciliated cell
+
+[Term]
+id: XPO:0133502
+name: decreased cilium motility in ciliated non-epidermal cell
+def: "Decreased ability to move cilium in ciliated non-epidermal cell." []
+is_a: XPO:0133498 ! decreased cilium motility in ciliated cell
+
+[Term]
+id: XPO:0133503
+name: decreased cilium motility in monociliated epidermal cell
+def: "Decreased ability to move cilium in monociliated epidermal cell." []
+is_a: XPO:0133499 ! decreased cilium motility in monociliated cell
+is_a: XPO:0133501 ! decreased cilium motility in ciliated epidermal cell
+
+[Term]
+id: XPO:0133504
+name: decreased cilium motility in multiciliated epidermal cell
+def: "Decreased ability to move cilium in multiciliated epidermal cell." []
+is_a: XPO:0133500 ! decreased cilium motility in multiciliated cell
+is_a: XPO:0133501 ! decreased cilium motility in ciliated epidermal cell
+
+[Term]
+id: XPO:0133505
+name: abnormal cilium motility
+def: "Abnormal ability to move cilium." []
 is_a: XPO:0116434 ! abnormal biological process
 
 [Typedef]
