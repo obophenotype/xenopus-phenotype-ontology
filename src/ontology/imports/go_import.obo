@@ -757,6 +757,19 @@ created_by: dph
 creation_date: 2009-10-13T11:28:46Z
 
 [Term]
+id: GO:0003278
+name: apoptotic process involved in heart morphogenesis
+namespace: biological_process
+def: "Any apoptotic process that contributes to the shaping of the heart." [GOC:mtg_apoptosis, GOC:mtg_heart]
+synonym: "apoptosis involved in heart morphogenesis" NARROW []
+is_a: GO:0060561 ! apoptotic process involved in morphogenesis
+intersection_of: GO:0006915 ! apoptotic process
+intersection_of: part_of GO:0003007 ! heart morphogenesis
+relationship: part_of GO:0003007 ! heart morphogenesis
+created_by: dph
+creation_date: 2009-10-20T09:40:22Z
+
+[Term]
 id: GO:0003306
 name: Wnt signaling pathway involved in heart development
 namespace: biological_process
@@ -2457,6 +2470,34 @@ relationship: part_of GO:0016192 ! vesicle-mediated transport
 relationship: part_of GO:0051650 ! establishment of vesicle localization
 
 [Term]
+id: GO:0006915
+name: apoptotic process
+namespace: biological_process
+alt_id: GO:0006917
+alt_id: GO:0008632
+def: "A programmed cell death process which begins when a cell receives an internal (e.g. DNA damage) or external signal (e.g. an extracellular death ligand), and proceeds through a series of biochemical events (signaling pathway phase) which trigger an execution phase. The execution phase is the last step of an apoptotic process, and is typically characterized by rounding-up of the cell, retraction of pseudopodes, reduction of cellular volume (pyknosis), chromatin condensation, nuclear fragmentation (karyorrhexis), plasma membrane blebbing and fragmentation of the cell into apoptotic bodies. When the execution phase is completed, the cell has died." [GOC:cjm, GOC:dhl, GOC:ecd, GOC:go_curators, GOC:mtg_apoptosis, GOC:tb, ISBN:0198506732, PMID:18846107, PMID:21494263]
+subset: goslim_pombe
+synonym: "activation of apoptosis" NARROW []
+synonym: "apoptosis" NARROW []
+synonym: "apoptosis activator activity" RELATED []
+synonym: "apoptosis signaling" NARROW []
+synonym: "apoptotic cell death" EXACT [GOC:sl]
+synonym: "apoptotic program" NARROW [GOC:add]
+synonym: "apoptotic programmed cell death" EXACT []
+synonym: "caspase-dependent programmed cell death" RELATED []
+synonym: "cell suicide" BROAD []
+synonym: "cellular suicide" BROAD []
+synonym: "commitment to apoptosis" RELATED []
+synonym: "induction of apoptosis" RELATED []
+synonym: "induction of apoptosis by p53" RELATED []
+synonym: "programmed cell death by apoptosis" EXACT []
+synonym: "signaling (initiator) caspase activity" RELATED []
+synonym: "type I programmed cell death" NARROW []
+xref: MIPS_funcat:40.10.02
+xref: Wikipedia:Apoptosis
+is_a: GO:0012501 ! programmed cell death
+
+[Term]
 id: GO:0006928
 name: movement of cell or subcellular component
 namespace: biological_process
@@ -3251,6 +3292,22 @@ synonym: "protein amino acid alkylation" EXACT [GOC:bf]
 is_a: GO:0006464 ! cellular protein modification process
 
 [Term]
+id: GO:0008219
+name: cell death
+namespace: biological_process
+def: "Any biological process that results in permanent cessation of all vital functions of a cell. A cell should be considered dead when any one of the following molecular or morphological criteria is met: (1) the cell has lost the integrity of its plasma membrane; (2) the cell, including its nucleus, has undergone complete fragmentation into discrete bodies (frequently referred to as apoptotic bodies). The cell corpse (or its fragments) may be engulfed by an adjacent cell in vivo, but engulfment of whole cells should not be considered a strict criteria to define cell death as, under some circumstances, live engulfed cells can be released from phagosomes (see PMID:18045538)." [GOC:mah, GOC:mtg_apoptosis, PMID:25236395]
+comment: This term should not be used for direct annotation. The only exception should be when experimental data (e.g., staining with trypan blue or propidium iodide) show that cell death has occurred, but fail to provide details on death modality (accidental versus programmed). When information is provided on the cell death mechanism, annotations should be made to the appropriate descendant of 'cell death' (such as, but not limited to, GO:0097300 'programmed necrotic cell death' or GO:0006915 'apoptotic process'). Also, if experimental data suggest that a gene product influences cell death indirectly, rather than being involved in the death process directly, consider annotating to a 'regulation' term.
+subset: goslim_agr
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_mouse
+subset: goslim_plant
+synonym: "accidental cell death" RELATED []
+synonym: "necrosis" RELATED []
+xref: MIPS_funcat:40.10
+is_a: GO:0009987 ! cellular process
+
+[Term]
 id: GO:0008233
 name: peptidase activity
 namespace: molecular_function
@@ -3997,6 +4054,20 @@ intersection_of: negatively_regulates GO:0043170 ! macromolecule metabolic proce
 relationship: negatively_regulates GO:0043170 ! macromolecule metabolic process
 
 [Term]
+id: GO:0010623
+name: programmed cell death involved in cell development
+namespace: biological_process
+def: "The activation of endogenous cellular processes that result in the death of a cell as part of its development." [GOC:dph, GOC:mtg_apoptosis, GOC:tb]
+comment: This process is part of the natural developmental program of some cell types, but it does not always happen as part of the development or shaping of a gross anatomical structure.
+synonym: "developmental programmed cell death" BROAD []
+synonym: "programmed cell death involved in development" BROAD []
+is_a: GO:0012501 ! programmed cell death
+is_a: GO:0048869 ! cellular developmental process
+intersection_of: GO:0012501 ! programmed cell death
+intersection_of: part_of GO:0048468 ! cell development
+relationship: part_of GO:0048468 ! cell development
+
+[Term]
 id: GO:0010628
 name: positive regulation of gene expression
 namespace: biological_process
@@ -4222,6 +4293,27 @@ intersection_of: part_of GO:0009653 ! anatomical structure morphogenesis
 relationship: part_of GO:0032989 ! cellular component morphogenesis
 
 [Term]
+id: GO:0010941
+name: regulation of cell death
+namespace: biological_process
+def: "Any process that modulates the rate or frequency of cell death. Cell death is the specific activation or halting of processes within a cell so that its vital functions markedly cease, rather than simply deteriorating gradually over time, which culminates in cell death." [GOC:dph, GOC:tb]
+is_a: GO:0050794 ! regulation of cellular process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0008219 ! cell death
+relationship: regulates GO:0008219 ! cell death
+
+[Term]
+id: GO:0010942
+name: positive regulation of cell death
+namespace: biological_process
+def: "Any process that increases the rate or frequency of cell death. Cell death is the specific activation or halting of processes within a cell so that its vital functions markedly cease, rather than simply deteriorating gradually over time, which culminates in cell death." [GOC:dph, GOC:tb]
+is_a: GO:0010941 ! regulation of cell death
+is_a: GO:0048522 ! positive regulation of cellular process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0008219 ! cell death
+relationship: positively_regulates GO:0008219 ! cell death
+
+[Term]
 id: GO:0010948
 name: negative regulation of cell cycle process
 namespace: biological_process
@@ -4353,6 +4445,23 @@ intersection_of: negatively_regulates GO:0031175 ! neuron projection development
 relationship: negatively_regulates GO:0031175 ! neuron projection development
 created_by: tanyaberardini
 creation_date: 2009-06-01T10:47:42Z
+
+[Term]
+id: GO:0012501
+name: programmed cell death
+namespace: biological_process
+alt_id: GO:0016244
+def: "A process which begins when a cell receives an internal or external signal and activates a series of biochemical events (signaling pathway). The process ends with the death of the cell." [GOC:lr, GOC:mtg_apoptosis]
+comment: Note that this term should be used to annotate gene products in the organism undergoing the programmed cell death. To annotate genes in another organism whose products modulate programmed cell death in a host organism, consider the term 'modulation by symbiont of host programmed cell death ; GO:0052040'. Also, note that 'programmed cell death ; GO:0012501' should be used to refer to instances of caspase-independent cell death mechanisms, in the absence of further indications on the process taking place. At present, caspase-independent cell death is not yet represented in GO due to the lack of consensus and in-depth research on the topic. 'programmed cell death ; GO:0012501' may also be used to annotate gene products in taxa where apoptosis as defined in GO:0006915 does not occur, such as plants. You may also consider these specific children: GO:0097468 'programmed cell death in response to reactive oxygen species' (with descendants GO:0010421 'hydrogen peroxide-mediated programmed cell death' and GO:0010343 'singlet oxygen-mediated programmed cell death'), and GO:0009626 'plant-type hypersensitive response' and its children.
+synonym: "caspase-independent apoptosis" RELATED []
+synonym: "caspase-independent cell death" NARROW []
+synonym: "non-apoptotic programmed cell death" NARROW []
+synonym: "nonapoptotic programmed cell death" NARROW []
+synonym: "PCD" RELATED []
+synonym: "RCD" RELATED []
+synonym: "regulated cell death" BROAD []
+xref: Wikipedia:Programmed_cell_death
+is_a: GO:0008219 ! cell death
 
 [Term]
 id: GO:0012505
@@ -7888,6 +7997,19 @@ subset: goslim_pir
 is_a: GO:0071705 ! nitrogen compound transport
 
 [Term]
+id: GO:0042981
+name: regulation of apoptotic process
+namespace: biological_process
+def: "Any process that modulates the occurrence or rate of cell death by apoptotic process." [GOC:jl, GOC:mtg_apoptosis]
+comment: This term should only be used when it is not possible to determine which phase or subtype of the apoptotic process is regulated by a gene product. Whenever detailed information is available, the more granular children terms should be used.
+synonym: "apoptosis regulator activity" RELATED []
+synonym: "regulation of apoptosis" NARROW []
+is_a: GO:0043067 ! regulation of programmed cell death
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0006915 ! apoptotic process
+relationship: regulates GO:0006915 ! apoptotic process
+
+[Term]
 id: GO:0042995
 name: cell projection
 namespace: cellular_component
@@ -7916,6 +8038,94 @@ alt_id: GO:0001747
 alt_id: GO:0031075
 def: "The process whose specific outcome is the progression of the camera-type eye over time, from its formation to the mature structure. The camera-type eye is an organ of sight that receives light through an aperture and focuses it through a lens, projecting it on a photoreceptor field." [GOC:go_curators, GOC:mtg_sensu]
 is_a: GO:0001654 ! eye development
+
+[Term]
+id: GO:0043065
+name: positive regulation of apoptotic process
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of cell death by apoptotic process." [GOC:jl, GOC:mtg_apoptosis]
+comment: This term should only be used when it is not possible to determine which phase or subtype of the apoptotic process is positively regulated by a gene product. Whenever detailed information is available, the more granular children terms should be used.
+subset: goslim_chembl
+synonym: "activation of apoptosis" NARROW []
+synonym: "positive regulation of apoptosis" NARROW []
+synonym: "pro-apoptosis" RELATED []
+synonym: "stimulation of apoptosis" NARROW []
+synonym: "up regulation of apoptosis" EXACT []
+synonym: "up-regulation of apoptosis" EXACT []
+synonym: "upregulation of apoptosis" EXACT []
+is_a: GO:0042981 ! regulation of apoptotic process
+is_a: GO:0043068 ! positive regulation of programmed cell death
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0006915 ! apoptotic process
+relationship: positively_regulates GO:0006915 ! apoptotic process
+
+[Term]
+id: GO:0043066
+name: negative regulation of apoptotic process
+namespace: biological_process
+alt_id: GO:0006916
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of cell death by apoptotic process." [GOC:jl, GOC:mtg_apoptosis]
+comment: This term should only be used when it is not possible to determine which phase or subtype of the apoptotic process is negatively regulated by a gene product. Whenever detailed information is available, the more granular children terms should be used.
+synonym: "anti-apoptosis" EXACT []
+synonym: "apoptosis inhibitor activity" RELATED []
+synonym: "down regulation of apoptosis" EXACT []
+synonym: "down-regulation of apoptosis" EXACT []
+synonym: "downregulation of apoptosis" EXACT []
+synonym: "inhibition of apoptosis" NARROW []
+synonym: "negative regulation of apoptosis" NARROW []
+synonym: "pro-survival" RELATED []
+is_a: GO:0042981 ! regulation of apoptotic process
+is_a: GO:0043069 ! negative regulation of programmed cell death
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0006915 ! apoptotic process
+relationship: negatively_regulates GO:0006915 ! apoptotic process
+
+[Term]
+id: GO:0043067
+name: regulation of programmed cell death
+namespace: biological_process
+alt_id: GO:0043070
+def: "Any process that modulates the frequency, rate or extent of programmed cell death, cell death resulting from activation of endogenous cellular processes." [GOC:jl]
+synonym: "regulation of non-apoptotic programmed cell death" NARROW []
+is_a: GO:0010941 ! regulation of cell death
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0012501 ! programmed cell death
+relationship: regulates GO:0012501 ! programmed cell death
+
+[Term]
+id: GO:0043068
+name: positive regulation of programmed cell death
+namespace: biological_process
+alt_id: GO:0043071
+def: "Any process that activates or increases the frequency, rate or extent of programmed cell death, cell death resulting from activation of endogenous cellular processes." [GOC:jl]
+synonym: "activation of programmed cell death" NARROW []
+synonym: "positive regulation of non-apoptotic programmed cell death" NARROW []
+synonym: "stimulation of programmed cell death" NARROW []
+synonym: "up regulation of programmed cell death" EXACT []
+synonym: "up-regulation of programmed cell death" EXACT []
+synonym: "upregulation of programmed cell death" EXACT []
+is_a: GO:0010942 ! positive regulation of cell death
+is_a: GO:0043067 ! regulation of programmed cell death
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0012501 ! programmed cell death
+relationship: positively_regulates GO:0012501 ! programmed cell death
+
+[Term]
+id: GO:0043069
+name: negative regulation of programmed cell death
+namespace: biological_process
+alt_id: GO:0043072
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of programmed cell death, cell death resulting from activation of endogenous cellular processes." [GOC:jl]
+synonym: "down regulation of programmed cell death" EXACT []
+synonym: "down-regulation of programmed cell death" EXACT []
+synonym: "downregulation of programmed cell death" EXACT []
+synonym: "inhibition of programmed cell death" NARROW []
+synonym: "negative regulation of non-apoptotic programmed cell death" NARROW []
+is_a: GO:0043067 ! regulation of programmed cell death
+is_a: GO:0060548 ! negative regulation of cell death
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0012501 ! programmed cell death
+relationship: negatively_regulates GO:0012501 ! programmed cell death
 
 [Term]
 id: GO:0043085
@@ -7964,6 +8174,26 @@ is_a: GO:0050790 ! regulation of catalytic activity
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0003824 ! catalytic activity
 relationship: negatively_regulates GO:0003824 ! catalytic activity
+
+[Term]
+id: GO:0043154
+name: negative regulation of cysteine-type endopeptidase activity involved in apoptotic process
+namespace: biological_process
+alt_id: GO:0001719
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of a cysteine-type endopeptidase activity involved in the apoptotic process." [GOC:jl, GOC:mtg_apoptosis]
+synonym: "down regulation of caspase activity" EXACT []
+synonym: "down-regulation of caspase activity" EXACT []
+synonym: "downregulation of caspase activity" EXACT []
+synonym: "inhibition of caspase activation" NARROW []
+synonym: "inhibition of caspase activity" NARROW []
+synonym: "negative regulation of caspase activation" EXACT []
+synonym: "negative regulation of caspase activity" BROAD []
+is_a: GO:0043066 ! negative regulation of apoptotic process
+is_a: GO:0043281 ! regulation of cysteine-type endopeptidase activity involved in apoptotic process
+is_a: GO:2000117 ! negative regulation of cysteine-type endopeptidase activity
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0097153 ! cysteine-type endopeptidase activity involved in apoptotic process
+relationship: negatively_regulates GO:0097153 ! cysteine-type endopeptidase activity involved in apoptotic process
 
 [Term]
 id: GO:0043170
@@ -8093,6 +8323,38 @@ is_a: GO:0051051 ! negative regulation of transport
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0006811 ! ion transport
 relationship: negatively_regulates GO:0006811 ! ion transport
+
+[Term]
+id: GO:0043280
+name: positive regulation of cysteine-type endopeptidase activity involved in apoptotic process
+namespace: biological_process
+def: "Any process that activates or increases the activity of a cysteine-type endopeptidase involved in the apoptotic process." [GOC:jl, GOC:mtg_apoptosis]
+synonym: "activation of caspase activity" NARROW []
+synonym: "positive regulation of caspase activity" BROAD []
+synonym: "stimulation of caspase activity" NARROW []
+synonym: "up regulation of caspase activity" EXACT []
+synonym: "up-regulation of caspase activity" EXACT []
+synonym: "upregulation of caspase activity" EXACT []
+is_a: GO:0043065 ! positive regulation of apoptotic process
+is_a: GO:0043281 ! regulation of cysteine-type endopeptidase activity involved in apoptotic process
+is_a: GO:2001056 ! positive regulation of cysteine-type endopeptidase activity
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0097153 ! cysteine-type endopeptidase activity involved in apoptotic process
+relationship: positively_regulates GO:0097153 ! cysteine-type endopeptidase activity involved in apoptotic process
+
+[Term]
+id: GO:0043281
+name: regulation of cysteine-type endopeptidase activity involved in apoptotic process
+namespace: biological_process
+alt_id: GO:0043026
+def: "Any process that modulates the activity of a cysteine-type endopeptidase involved in apoptosis." [GOC:jl, GOC:mtg_apoptosis]
+synonym: "regulation of caspase activation" NARROW []
+synonym: "regulation of caspase activity" BROAD []
+is_a: GO:0042981 ! regulation of apoptotic process
+is_a: GO:2000116 ! regulation of cysteine-type endopeptidase activity
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0097153 ! cysteine-type endopeptidase activity involved in apoptotic process
+relationship: regulates GO:0097153 ! cysteine-type endopeptidase activity involved in apoptotic process
 
 [Term]
 id: GO:0043292
@@ -8598,6 +8860,37 @@ intersection_of: part_of GO:0014033 ! neural crest cell differentiation
 relationship: part_of GO:0014033 ! neural crest cell differentiation
 created_by: janelomax
 creation_date: 2010-08-20T03:02:34Z
+
+[Term]
+id: GO:0044336
+name: canonical Wnt signaling pathway involved in negative regulation of apoptotic process
+namespace: biological_process
+def: "The series of molecular signals initiated by binding of a Wnt protein to a frizzled family receptor on the surface of the target cell, followed by propagation of the signal via beta-catenin, and ending with a change in transcription of target genes involved in the negative regulation of apoptotic process." [GOC:BHF, GOC:jl, GOC:mtg_apoptosis]
+synonym: "canonical Wnt receptor signaling pathway involved in negative regulation of apoptosis" NARROW []
+synonym: "canonical Wnt receptor signaling pathway involved in negative regulation of apoptotic process" EXACT [GOC:signaling]
+synonym: "canonical Wnt receptor signalling pathway involved in negative regulation of apoptosis" EXACT [GOC:mah]
+is_a: GO:0060070 ! canonical Wnt signaling pathway
+intersection_of: GO:0060070 ! canonical Wnt signaling pathway
+intersection_of: part_of GO:0043066 ! negative regulation of apoptotic process
+relationship: part_of GO:0043066 ! negative regulation of apoptotic process
+created_by: janelomax
+creation_date: 2010-08-20T03:07:53Z
+
+[Term]
+id: GO:0044337
+name: canonical Wnt signaling pathway involved in positive regulation of apoptotic process
+namespace: biological_process
+def: "The series of molecular signals initiated by binding of a Wnt protein to a frizzled family receptor on the surface of the target cell, followed by propagation of the signal via beta-catenin, and ending with a change in transcription of target genes involved in the positive regulation of apoptotic process." [GOC:BHF, GOC:jl, GOC:mtg_apoptosis]
+synonym: "canonical Wnt receptor signaling pathway involved in positive regulation of apoptosis" NARROW []
+synonym: "canonical Wnt receptor signaling pathway involved in positive regulation of apoptotic process" EXACT []
+synonym: "canonical Wnt receptor signalling pathway involved in positive regulation of apoptosis" EXACT [GOC:mah]
+synonym: "canonical Wnt-activated signaling pathway involved in positive regulation of apoptotic process" EXACT [GOC:signaling]
+is_a: GO:0060070 ! canonical Wnt signaling pathway
+intersection_of: GO:0060070 ! canonical Wnt signaling pathway
+intersection_of: part_of GO:0043065 ! positive regulation of apoptotic process
+relationship: part_of GO:0043065 ! positive regulation of apoptotic process
+created_by: janelomax
+creation_date: 2010-08-20T03:08:24Z
 
 [Term]
 id: GO:0044340
@@ -12675,6 +12968,19 @@ created_by: dph
 creation_date: 2009-04-10T08:55:42Z
 
 [Term]
+id: GO:0060548
+name: negative regulation of cell death
+namespace: biological_process
+def: "Any process that decreases the rate or frequency of cell death. Cell death is the specific activation or halting of processes within a cell so that its vital functions markedly cease, rather than simply deteriorating gradually over time, which culminates in cell death." [GOC:BHF, GOC:dph, GOC:tb]
+is_a: GO:0010941 ! regulation of cell death
+is_a: GO:0048523 ! negative regulation of cellular process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0008219 ! cell death
+relationship: negatively_regulates GO:0008219 ! cell death
+created_by: dph
+creation_date: 2009-04-13T01:56:10Z
+
+[Term]
 id: GO:0060560
 name: developmental growth involved in morphogenesis
 namespace: biological_process
@@ -12686,6 +12992,21 @@ intersection_of: part_of GO:0009653 ! anatomical structure morphogenesis
 relationship: part_of GO:0009653 ! anatomical structure morphogenesis
 created_by: dph
 creation_date: 2009-04-28T08:42:53Z
+
+[Term]
+id: GO:0060561
+name: apoptotic process involved in morphogenesis
+namespace: biological_process
+def: "Any apoptotic process that contributes to the shaping of an anatomical structure." [GOC:dph, GOC:mtg_apoptosis]
+synonym: "apoptosis involved in development" RELATED []
+synonym: "apoptosis involved in morphogenesis" NARROW []
+synonym: "morphogenetic apoptosis" RELATED [GOC:dph]
+is_a: GO:1902742 ! apoptotic process involved in development
+intersection_of: GO:0006915 ! apoptotic process
+intersection_of: part_of GO:0009653 ! anatomical structure morphogenesis
+relationship: part_of GO:0009653 ! anatomical structure morphogenesis
+created_by: dph
+creation_date: 2009-04-28T09:17:27Z
 
 [Term]
 id: GO:0060562
@@ -14642,6 +14963,21 @@ created_by: paola
 creation_date: 2011-06-07T11:22:09Z
 
 [Term]
+id: GO:0097153
+name: cysteine-type endopeptidase activity involved in apoptotic process
+namespace: molecular_function
+def: "Catalysis of the hydrolysis of internal, alpha-peptide bonds in a polypeptide chain by a mechanism in which the sulfhydryl group of a cysteine residue at the active center acts as a nucleophile, and contributing to the apoptotic process." [GOC:mtg_apoptosis]
+synonym: "caspase activity" BROAD []
+synonym: "metacaspase activity" NARROW [GOC:mtg_apoptosis]
+xref: Reactome:R-HSA-6800797 "The PIDDosome activates CASP2"
+is_a: GO:0004197 ! cysteine-type endopeptidase activity
+intersection_of: GO:0004197 ! cysteine-type endopeptidase activity
+intersection_of: part_of GO:0006915 ! apoptotic process
+relationship: part_of GO:0006915 ! apoptotic process
+created_by: paola
+creation_date: 2011-09-09T10:21:56Z
+
+[Term]
 id: GO:0097435
 name: supramolecular fiber organization
 namespace: biological_process
@@ -16162,6 +16498,86 @@ created_by: pr
 creation_date: 2013-07-08T15:55:17Z
 
 [Term]
+id: GO:1902337
+name: regulation of apoptotic process involved in morphogenesis
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of apoptotic process involved in morphogenesis." [GOC:sart, GOC:TermGenie, PMID:12202035]
+synonym: "regulation of apoptosis involved in development" RELATED [GOC:TermGenie]
+synonym: "regulation of apoptosis involved in morphogenesis" NARROW [GOC:TermGenie]
+synonym: "regulation of morphogenetic apoptosis" RELATED [GOC:TermGenie]
+is_a: GO:0022603 ! regulation of anatomical structure morphogenesis
+is_a: GO:1904748 ! regulation of apoptotic process involved in development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0060561 ! apoptotic process involved in morphogenesis
+relationship: regulates GO:0060561 ! apoptotic process involved in morphogenesis
+created_by: sart
+creation_date: 2013-07-29T15:03:16Z
+
+[Term]
+id: GO:1902338
+name: negative regulation of apoptotic process involved in morphogenesis
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of apoptotic process involved in morphogenesis." [GOC:sart, GOC:TermGenie, PMID:12202035]
+synonym: "down regulation of apoptosis involved in development" RELATED [GOC:TermGenie]
+synonym: "down regulation of apoptosis involved in morphogenesis" NARROW [GOC:TermGenie]
+synonym: "down regulation of apoptotic process involved in morphogenesis" EXACT [GOC:TermGenie]
+synonym: "down regulation of morphogenetic apoptosis" RELATED [GOC:TermGenie]
+synonym: "down-regulation of apoptosis involved in development" RELATED [GOC:TermGenie]
+synonym: "down-regulation of apoptosis involved in morphogenesis" NARROW [GOC:TermGenie]
+synonym: "down-regulation of apoptotic process involved in morphogenesis" EXACT [GOC:TermGenie]
+synonym: "down-regulation of morphogenetic apoptosis" RELATED [GOC:TermGenie]
+synonym: "downregulation of apoptosis involved in development" RELATED [GOC:TermGenie]
+synonym: "downregulation of apoptosis involved in morphogenesis" NARROW [GOC:TermGenie]
+synonym: "downregulation of apoptotic process involved in morphogenesis" EXACT [GOC:TermGenie]
+synonym: "downregulation of morphogenetic apoptosis" RELATED [GOC:TermGenie]
+synonym: "inhibition of apoptosis involved in development" RELATED [GOC:TermGenie]
+synonym: "inhibition of apoptosis involved in morphogenesis" NARROW [GOC:TermGenie]
+synonym: "inhibition of apoptotic process involved in morphogenesis" NARROW [GOC:TermGenie]
+synonym: "inhibition of morphogenetic apoptosis" RELATED [GOC:TermGenie]
+synonym: "negative regulation of apoptosis involved in development" RELATED [GOC:TermGenie]
+synonym: "negative regulation of apoptosis involved in morphogenesis" NARROW [GOC:TermGenie]
+synonym: "negative regulation of morphogenetic apoptosis" RELATED [GOC:TermGenie]
+is_a: GO:1902337 ! regulation of apoptotic process involved in morphogenesis
+is_a: GO:1904746 ! negative regulation of apoptotic process involved in development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0060561 ! apoptotic process involved in morphogenesis
+relationship: negatively_regulates GO:0060561 ! apoptotic process involved in morphogenesis
+created_by: sart
+creation_date: 2013-07-29T15:03:25Z
+
+[Term]
+id: GO:1902339
+name: positive regulation of apoptotic process involved in morphogenesis
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of apoptotic process involved in morphogenesis." [GOC:sart, GOC:TermGenie, PMID:12202035]
+synonym: "activation of apoptosis involved in development" RELATED [GOC:TermGenie]
+synonym: "activation of apoptosis involved in morphogenesis" NARROW [GOC:TermGenie]
+synonym: "activation of apoptotic process involved in morphogenesis" NARROW [GOC:TermGenie]
+synonym: "activation of morphogenetic apoptosis" RELATED [GOC:TermGenie]
+synonym: "positive regulation of apoptosis involved in development" RELATED [GOC:TermGenie]
+synonym: "positive regulation of apoptosis involved in morphogenesis" NARROW [GOC:TermGenie]
+synonym: "positive regulation of morphogenetic apoptosis" RELATED [GOC:TermGenie]
+synonym: "up regulation of apoptosis involved in development" RELATED [GOC:TermGenie]
+synonym: "up regulation of apoptosis involved in morphogenesis" NARROW [GOC:TermGenie]
+synonym: "up regulation of apoptotic process involved in morphogenesis" EXACT [GOC:TermGenie]
+synonym: "up regulation of morphogenetic apoptosis" RELATED [GOC:TermGenie]
+synonym: "up-regulation of apoptosis involved in development" RELATED [GOC:TermGenie]
+synonym: "up-regulation of apoptosis involved in morphogenesis" NARROW [GOC:TermGenie]
+synonym: "up-regulation of apoptotic process involved in morphogenesis" EXACT [GOC:TermGenie]
+synonym: "up-regulation of morphogenetic apoptosis" RELATED [GOC:TermGenie]
+synonym: "upregulation of apoptosis involved in development" RELATED [GOC:TermGenie]
+synonym: "upregulation of apoptosis involved in morphogenesis" NARROW [GOC:TermGenie]
+synonym: "upregulation of apoptotic process involved in morphogenesis" EXACT [GOC:TermGenie]
+synonym: "upregulation of morphogenetic apoptosis" RELATED [GOC:TermGenie]
+is_a: GO:1902337 ! regulation of apoptotic process involved in morphogenesis
+is_a: GO:1904747 ! positive regulation of apoptotic process involved in development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0060561 ! apoptotic process involved in morphogenesis
+relationship: positively_regulates GO:0060561 ! apoptotic process involved in morphogenesis
+created_by: sart
+creation_date: 2013-07-29T15:03:33Z
+
+[Term]
 id: GO:1902412
 name: regulation of mitotic cytokinesis
 namespace: biological_process
@@ -16490,6 +16906,46 @@ intersection_of: positively_regulates GO:0032774 ! RNA biosynthetic process
 relationship: positively_regulates GO:0032774 ! RNA biosynthetic process
 created_by: jl
 creation_date: 2014-02-05T16:32:10Z
+
+[Term]
+id: GO:1902742
+name: apoptotic process involved in development
+namespace: biological_process
+def: "Any apoptotic process that is involved in anatomical structure development." [GO_REF:0000060, GOC:mtg_apoptosis, GOC:pg, GOC:TermGenie]
+synonym: "activation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "activation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "apoptosis activator activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "apoptosis activator activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "apoptosis signaling involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "apoptosis signaling involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "apoptotic cell death involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "apoptotic cell death involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "apoptotic process involved in anatomical structure development" EXACT []
+synonym: "apoptotic process involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "apoptotic program involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "apoptotic program involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "apoptotic programmed cell death involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "apoptotic programmed cell death involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "commitment to apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "commitment to apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "induction of apoptosis by p53 involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "induction of apoptosis by p53 involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "induction of apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "induction of apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "programmed cell death by apoptosis involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "programmed cell death by apoptosis involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "signaling (initiator) caspase activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "signaling (initiator) caspase activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "type I programmed cell death involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "type I programmed cell death involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+is_a: GO:0006915 ! apoptotic process
+intersection_of: GO:0006915 ! apoptotic process
+intersection_of: part_of GO:0048856 ! anatomical structure development
+relationship: part_of GO:0048856 ! anatomical structure development
+created_by: pr
+creation_date: 2014-02-28T13:09:43Z
 
 [Term]
 id: GO:1902850
@@ -17390,6 +17846,366 @@ intersection_of: positively_regulates GO:0003231 ! cardiac ventricle development
 relationship: positively_regulates GO:0003231 ! cardiac ventricle development
 created_by: sl
 creation_date: 2015-06-25T19:52:27Z
+
+[Term]
+id: GO:1904746
+name: negative regulation of apoptotic process involved in development
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of apoptotic process involved in development." [GO_REF:0000058, GOC:TermGenie, PMID:22801495]
+comment: U4PR86 in PMID:22801495 inferred from mutant phenotype
+synonym: "down regulation of activation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "down regulation of activation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "down regulation of apoptosis activator activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "down regulation of apoptosis activator activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "down regulation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "down regulation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "down regulation of apoptosis signaling involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "down regulation of apoptosis signaling involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "down regulation of apoptotic cell death involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "down regulation of apoptotic cell death involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "down regulation of apoptotic process involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "down regulation of apoptotic process involved in development" EXACT [GOC:TermGenie]
+synonym: "down regulation of apoptotic process involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "down regulation of apoptotic program involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "down regulation of apoptotic program involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "down regulation of apoptotic programmed cell death involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "down regulation of apoptotic programmed cell death involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "down regulation of commitment to apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "down regulation of commitment to apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "down regulation of induction of apoptosis by p53 involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "down regulation of induction of apoptosis by p53 involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "down regulation of induction of apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "down regulation of induction of apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "down regulation of programmed cell death by apoptosis involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "down regulation of programmed cell death by apoptosis involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "down regulation of signaling (initiator) caspase activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "down regulation of signaling (initiator) caspase activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "down regulation of type I programmed cell death involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "down regulation of type I programmed cell death involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "down-regulation of activation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "down-regulation of activation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "down-regulation of apoptosis activator activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "down-regulation of apoptosis activator activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "down-regulation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "down-regulation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "down-regulation of apoptosis signaling involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "down-regulation of apoptosis signaling involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "down-regulation of apoptotic cell death involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "down-regulation of apoptotic cell death involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "down-regulation of apoptotic process involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "down-regulation of apoptotic process involved in development" EXACT [GOC:TermGenie]
+synonym: "down-regulation of apoptotic process involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "down-regulation of apoptotic program involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "down-regulation of apoptotic program involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "down-regulation of apoptotic programmed cell death involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "down-regulation of apoptotic programmed cell death involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "down-regulation of commitment to apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "down-regulation of commitment to apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "down-regulation of induction of apoptosis by p53 involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "down-regulation of induction of apoptosis by p53 involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "down-regulation of induction of apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "down-regulation of induction of apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "down-regulation of programmed cell death by apoptosis involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "down-regulation of programmed cell death by apoptosis involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "down-regulation of signaling (initiator) caspase activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "down-regulation of signaling (initiator) caspase activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "down-regulation of type I programmed cell death involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "down-regulation of type I programmed cell death involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "downregulation of activation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "downregulation of activation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "downregulation of apoptosis activator activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "downregulation of apoptosis activator activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "downregulation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "downregulation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "downregulation of apoptosis signaling involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "downregulation of apoptosis signaling involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "downregulation of apoptotic cell death involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "downregulation of apoptotic cell death involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "downregulation of apoptotic process involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "downregulation of apoptotic process involved in development" EXACT [GOC:TermGenie]
+synonym: "downregulation of apoptotic process involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "downregulation of apoptotic program involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "downregulation of apoptotic program involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "downregulation of apoptotic programmed cell death involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "downregulation of apoptotic programmed cell death involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "downregulation of commitment to apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "downregulation of commitment to apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "downregulation of induction of apoptosis by p53 involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "downregulation of induction of apoptosis by p53 involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "downregulation of induction of apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "downregulation of induction of apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "downregulation of programmed cell death by apoptosis involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "downregulation of programmed cell death by apoptosis involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "downregulation of signaling (initiator) caspase activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "downregulation of signaling (initiator) caspase activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "downregulation of type I programmed cell death involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "downregulation of type I programmed cell death involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "inhibition of activation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "inhibition of activation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "inhibition of apoptosis activator activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "inhibition of apoptosis activator activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "inhibition of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "inhibition of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "inhibition of apoptosis signaling involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "inhibition of apoptosis signaling involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "inhibition of apoptotic cell death involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "inhibition of apoptotic cell death involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "inhibition of apoptotic process involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "inhibition of apoptotic process involved in development" NARROW [GOC:TermGenie]
+synonym: "inhibition of apoptotic process involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "inhibition of apoptotic program involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "inhibition of apoptotic program involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "inhibition of apoptotic programmed cell death involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "inhibition of apoptotic programmed cell death involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "inhibition of commitment to apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "inhibition of commitment to apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "inhibition of induction of apoptosis by p53 involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "inhibition of induction of apoptosis by p53 involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "inhibition of induction of apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "inhibition of induction of apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "inhibition of programmed cell death by apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "inhibition of programmed cell death by apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "inhibition of signaling (initiator) caspase activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "inhibition of signaling (initiator) caspase activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "inhibition of type I programmed cell death involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "inhibition of type I programmed cell death involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "negative regulation of activation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "negative regulation of activation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "negative regulation of apoptosis activator activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "negative regulation of apoptosis activator activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "negative regulation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "negative regulation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "negative regulation of apoptosis signaling involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "negative regulation of apoptosis signaling involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "negative regulation of apoptotic cell death involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "negative regulation of apoptotic cell death involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "negative regulation of apoptotic process involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "negative regulation of apoptotic process involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "negative regulation of apoptotic program involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "negative regulation of apoptotic program involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "negative regulation of apoptotic programmed cell death involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "negative regulation of apoptotic programmed cell death involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "negative regulation of commitment to apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "negative regulation of commitment to apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "negative regulation of induction of apoptosis by p53 involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "negative regulation of induction of apoptosis by p53 involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "negative regulation of induction of apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "negative regulation of induction of apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "negative regulation of programmed cell death by apoptosis involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "negative regulation of programmed cell death by apoptosis involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "negative regulation of signaling (initiator) caspase activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "negative regulation of signaling (initiator) caspase activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "negative regulation of type I programmed cell death involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "negative regulation of type I programmed cell death involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+is_a: GO:0043066 ! negative regulation of apoptotic process
+is_a: GO:0051093 ! negative regulation of developmental process
+is_a: GO:1904748 ! regulation of apoptotic process involved in development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:1902742 ! apoptotic process involved in development
+relationship: negatively_regulates GO:1902742 ! apoptotic process involved in development
+created_by: es
+creation_date: 2015-10-19T14:12:27Z
+
+[Term]
+id: GO:1904747
+name: positive regulation of apoptotic process involved in development
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of apoptotic process involved in development." [GO_REF:0000058, GOC:TermGenie, PMID:22801495]
+comment: U4PR86 in PMID:22801495 inferred from mutant phenotype
+synonym: "activation of activation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "activation of activation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "activation of apoptosis activator activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "activation of apoptosis activator activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "activation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "activation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "activation of apoptosis signaling involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "activation of apoptosis signaling involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "activation of apoptotic cell death involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "activation of apoptotic cell death involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "activation of apoptotic process involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "activation of apoptotic process involved in development" NARROW [GOC:TermGenie]
+synonym: "activation of apoptotic process involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "activation of apoptotic program involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "activation of apoptotic program involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "activation of apoptotic programmed cell death involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "activation of apoptotic programmed cell death involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "activation of commitment to apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "activation of commitment to apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "activation of induction of apoptosis by p53 involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "activation of induction of apoptosis by p53 involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "activation of induction of apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "activation of induction of apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "activation of programmed cell death by apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "activation of programmed cell death by apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "activation of signaling (initiator) caspase activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "activation of signaling (initiator) caspase activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "activation of type I programmed cell death involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "activation of type I programmed cell death involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "positive regulation of activation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "positive regulation of activation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "positive regulation of apoptosis activator activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "positive regulation of apoptosis activator activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "positive regulation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "positive regulation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "positive regulation of apoptosis signaling involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "positive regulation of apoptosis signaling involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "positive regulation of apoptotic cell death involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "positive regulation of apoptotic cell death involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "positive regulation of apoptotic process involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "positive regulation of apoptotic process involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "positive regulation of apoptotic program involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "positive regulation of apoptotic program involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "positive regulation of apoptotic programmed cell death involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "positive regulation of apoptotic programmed cell death involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "positive regulation of commitment to apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "positive regulation of commitment to apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "positive regulation of induction of apoptosis by p53 involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "positive regulation of induction of apoptosis by p53 involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "positive regulation of induction of apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "positive regulation of induction of apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "positive regulation of programmed cell death by apoptosis involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "positive regulation of programmed cell death by apoptosis involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "positive regulation of signaling (initiator) caspase activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "positive regulation of signaling (initiator) caspase activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "positive regulation of type I programmed cell death involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "positive regulation of type I programmed cell death involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "up regulation of activation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "up regulation of activation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "up regulation of apoptosis activator activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "up regulation of apoptosis activator activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "up regulation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "up regulation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "up regulation of apoptosis signaling involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "up regulation of apoptosis signaling involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "up regulation of apoptotic cell death involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "up regulation of apoptotic cell death involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "up regulation of apoptotic process involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "up regulation of apoptotic process involved in development" EXACT [GOC:TermGenie]
+synonym: "up regulation of apoptotic process involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "up regulation of apoptotic program involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "up regulation of apoptotic program involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "up regulation of apoptotic programmed cell death involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "up regulation of apoptotic programmed cell death involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "up regulation of commitment to apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "up regulation of commitment to apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "up regulation of induction of apoptosis by p53 involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "up regulation of induction of apoptosis by p53 involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "up regulation of induction of apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "up regulation of induction of apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "up regulation of programmed cell death by apoptosis involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "up regulation of programmed cell death by apoptosis involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "up regulation of signaling (initiator) caspase activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "up regulation of signaling (initiator) caspase activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "up regulation of type I programmed cell death involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "up regulation of type I programmed cell death involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "up-regulation of activation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "up-regulation of activation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "up-regulation of apoptosis activator activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "up-regulation of apoptosis activator activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "up-regulation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "up-regulation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "up-regulation of apoptosis signaling involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "up-regulation of apoptosis signaling involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "up-regulation of apoptotic cell death involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "up-regulation of apoptotic cell death involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "up-regulation of apoptotic process involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "up-regulation of apoptotic process involved in development" EXACT [GOC:TermGenie]
+synonym: "up-regulation of apoptotic process involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "up-regulation of apoptotic program involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "up-regulation of apoptotic program involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "up-regulation of apoptotic programmed cell death involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "up-regulation of apoptotic programmed cell death involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "up-regulation of commitment to apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "up-regulation of commitment to apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "up-regulation of induction of apoptosis by p53 involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "up-regulation of induction of apoptosis by p53 involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "up-regulation of induction of apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "up-regulation of induction of apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "up-regulation of programmed cell death by apoptosis involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "up-regulation of programmed cell death by apoptosis involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "up-regulation of signaling (initiator) caspase activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "up-regulation of signaling (initiator) caspase activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "up-regulation of type I programmed cell death involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "up-regulation of type I programmed cell death involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "upregulation of activation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "upregulation of activation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "upregulation of apoptosis activator activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "upregulation of apoptosis activator activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "upregulation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "upregulation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "upregulation of apoptosis signaling involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "upregulation of apoptosis signaling involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "upregulation of apoptotic cell death involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "upregulation of apoptotic cell death involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "upregulation of apoptotic process involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "upregulation of apoptotic process involved in development" EXACT [GOC:TermGenie]
+synonym: "upregulation of apoptotic process involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "upregulation of apoptotic program involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "upregulation of apoptotic program involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "upregulation of apoptotic programmed cell death involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "upregulation of apoptotic programmed cell death involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "upregulation of commitment to apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "upregulation of commitment to apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "upregulation of induction of apoptosis by p53 involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "upregulation of induction of apoptosis by p53 involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "upregulation of induction of apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "upregulation of induction of apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "upregulation of programmed cell death by apoptosis involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "upregulation of programmed cell death by apoptosis involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "upregulation of signaling (initiator) caspase activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "upregulation of signaling (initiator) caspase activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "upregulation of type I programmed cell death involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "upregulation of type I programmed cell death involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+is_a: GO:0043065 ! positive regulation of apoptotic process
+is_a: GO:0051094 ! positive regulation of developmental process
+is_a: GO:1904748 ! regulation of apoptotic process involved in development
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:1902742 ! apoptotic process involved in development
+relationship: positively_regulates GO:1902742 ! apoptotic process involved in development
+created_by: es
+creation_date: 2015-10-19T14:12:34Z
+
+[Term]
+id: GO:1904748
+name: regulation of apoptotic process involved in development
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of apoptotic process involved in development." [GO_REF:0000058, GOC:TermGenie, PMID:22801495]
+comment: Q10943 in PMID:22801495, inferred from mutant phenotype
+synonym: "regulation of activation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "regulation of activation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "regulation of apoptosis activator activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "regulation of apoptosis activator activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "regulation of apoptosis involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "regulation of apoptosis involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "regulation of apoptosis signaling involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "regulation of apoptosis signaling involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "regulation of apoptotic cell death involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "regulation of apoptotic cell death involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "regulation of apoptotic process involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "regulation of apoptotic process involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "regulation of apoptotic program involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "regulation of apoptotic program involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+synonym: "regulation of apoptotic programmed cell death involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "regulation of apoptotic programmed cell death involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "regulation of commitment to apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "regulation of commitment to apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "regulation of induction of apoptosis by p53 involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "regulation of induction of apoptosis by p53 involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "regulation of induction of apoptosis involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "regulation of induction of apoptosis involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "regulation of programmed cell death by apoptosis involved in anatomical structure development" EXACT [GOC:TermGenie]
+synonym: "regulation of programmed cell death by apoptosis involved in development of an anatomical structure" EXACT [GOC:TermGenie]
+synonym: "regulation of signaling (initiator) caspase activity involved in anatomical structure development" RELATED [GOC:TermGenie]
+synonym: "regulation of signaling (initiator) caspase activity involved in development of an anatomical structure" RELATED [GOC:TermGenie]
+synonym: "regulation of type I programmed cell death involved in anatomical structure development" NARROW [GOC:TermGenie]
+synonym: "regulation of type I programmed cell death involved in development of an anatomical structure" NARROW [GOC:TermGenie]
+is_a: GO:0042981 ! regulation of apoptotic process
+is_a: GO:0050793 ! regulation of developmental process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:1902742 ! apoptotic process involved in development
+relationship: regulates GO:1902742 ! apoptotic process involved in development
+created_by: es
+creation_date: 2015-10-19T15:02:28Z
 
 [Term]
 id: GO:1904920
