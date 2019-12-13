@@ -10,10 +10,12 @@ Ontology(<urn:unnamed:ontology#ont1>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000460>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002251>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000202>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003217>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103926>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103927>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131752>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002573>))
@@ -41,6 +43,14 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0103927> "whole organism hypopigmentation"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0103927> "decreased pigmentation in the whole organism"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103927> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0002251> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0003004>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0131752> (decreased pigmentation in the animal hemisphere)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0131752> "Decreased or loss of pigmentation of animal hemisphere."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0131752> "animal hemisphere hypopigmentation"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0131752> "loss of pigment in the animal hemisphere"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0131752> "decreased pigmentation in the animal hemisphere"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0131752> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0002251> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0000202>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 
 )

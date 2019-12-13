@@ -9,16 +9,23 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Ontology(<urn:unnamed:ontology#ont1>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0000281>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007368>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0009952>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0031103>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000460>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000462>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000103>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000125>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000129>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000188>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000311>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103623>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103624>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103625>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133400>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133401>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133402>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000066>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
@@ -48,6 +55,24 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103624> ObjectSomeValuesF
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0103625> "Absent or undetectable mitotic cytokinesis in primary spermatogonium."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0103625> "absent mitotic cytokinesis in primary spermatogonium"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0103625> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0000281> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0003018>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133400> (absent determination of left/right symmetry in intestine)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133400> "Absent or undetectable determination of left/right symmetry in intestine."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133400> "absent determination of left/right symmetry in intestine"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133400> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0007368> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0000129>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133401> (absent determination of left/right symmetry in lateral plate mesoderm)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133401> "Absent or undetectable determination of left/right symmetry in lateral plate mesoderm."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133401> "absent determination of left/right symmetry in lateral plate mesoderm"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133401> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0007368> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0000311>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133402> (absent determination of left/right symmetry in alimentary system)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133402> "Absent or undetectable determination of left/right symmetry in alimentary system."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133402> "absent determination of left/right symmetry in alimentary system"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133402> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0007368> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/XAO_0000125>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 
 )

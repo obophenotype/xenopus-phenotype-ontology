@@ -1,0 +1,111 @@
+Prefix(:=<urn:unnamed:ontology#ont1#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont1>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000460>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000642>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003035>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003036>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003207>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003208>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003211>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003212>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003213>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004106>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004107>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004265>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004489>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133374>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133375>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133376>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133377>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133378>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133379>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133380>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133381>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0133382>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002503>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002573>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133374> (fused spikes part of regenerating hindlimb)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133374> "Any abnormal fusion of the spike in the regenerating hindlimb and the spike in the regenerating hindlimb."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133374> "abnormal fusion of spike in regenerating hindlimb and spike in regenerating hindlimb"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133374> "fused spikes part of regenerating hindlimb"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133374> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000642> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004489> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002503> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004489> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133375> (fused spikes part of regenerating forelimb)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133375> "Any abnormal fusion of the spike in the regenerating forelimb and the spike in the regenerating forelimb."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133375> "abnormal fusion of spike in regenerating forelimb and spike in regenerating forelimb"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133375> "fused spikes part of regenerating forelimb"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133375> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000642> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004489> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004106>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002503> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004489> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004106>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133376> (fused metacarpals part of regenerating forelimb)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133376> "Any abnormal fusion of the metacarpus in the regenerating forelimb and the metacarpus in the regenerating forelimb."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133376> "abnormal fusion of metacarpus in regenerating forelimb and metacarpus in regenerating forelimb"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133376> "fused metacarpals part of regenerating forelimb"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133376> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000642> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0003208> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004106>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002503> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0003208> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004106>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133377> (fused metatarsals part of regenerating hindlimb)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133377> "Any abnormal fusion of the metatarsus in the regenerating hindlimb and the metatarsus in the regenerating hindlimb."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133377> "abnormal fusion of metatarsus in regenerating hindlimb and metatarsus in regenerating hindlimb"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133377> "fused metatarsals part of regenerating hindlimb"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133377> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000642> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0003212> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002503> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0003212> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133378> (fused forelimb digits part of regenerating forelimb)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133378> "Any abnormal fusion of the forelimb digit in the regenerating forelimb and the forelimb digit in the regenerating forelimb."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133378> "abnormal fusion of forelimb digit in regenerating forelimb and forelimb digit in regenerating forelimb"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133378> "fused forelimb digits part of regenerating forelimb"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133378> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000642> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0003036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004106>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002503> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0003036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004106>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133379> (fused hindlimb digits part of regenerating hindlimb)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133379> "Any abnormal fusion of the hindlimb digit in the regenerating hindlimb and the hindlimb digit in the regenerating hindlimb."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133379> "abnormal fusion of hindlimb digit in regenerating hindlimb and hindlimb digit in regenerating hindlimb"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133379> "fused hindlimb digits part of regenerating hindlimb"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133379> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000642> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0003035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002503> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0003035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133380> (fused tarsi part of regenerating hindlimb)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133380> "Any abnormal fusion of the tarsus in the regenerating hindlimb and the tarsus in the regenerating hindlimb."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133380> "abnormal fusion of tarsus in regenerating hindlimb and tarsus in regenerating hindlimb"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133380> "fused tarsi part of regenerating hindlimb"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133380> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000642> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0003211> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002503> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0003211> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133381> (fused carpi part of regenerating forelimb)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133381> "Any abnormal fusion of the carpus in the regenerating forelimb and the carpus in the regenerating forelimb."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133381> "abnormal fusion of carpus in regenerating forelimb and carpus in regenerating forelimb"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133381> "fused carpi part of regenerating forelimb"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133381> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000642> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0003207> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004106>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002503> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0003207> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004106>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0133382> (tibia-fibula fused with autopod part of regenerating hindlimb)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0133382> "Any abnormal fusion of the tibia-fibula in the regenerating hindlimb and the autopod in the regenerating hindlimb."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0133382> "abnormal fusion of tibia-fibula in regenerating hindlimb and autopod in regenerating hindlimb"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0133382> "tibia-fibula fused with autopod part of regenerating hindlimb"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0133382> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000642> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0003213> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002503> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/XAO_0004265> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/XAO_0004107>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+
+)
