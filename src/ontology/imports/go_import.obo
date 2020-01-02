@@ -1,11 +1,12 @@
 format-version: 1.2
-data-version: xpo/releases/2019-12-12/imports/go_import.owl
+data-version: xpo/releases/2020-01-02/imports/go_import.owl
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_agr "AGR slim"
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
 subsetdef: goslim_candida "Candida GO slim"
 subsetdef: goslim_chembl "ChEMBL protein targets summary"
+subsetdef: goslim_drosophila ""
 subsetdef: goslim_flybase_ribbon "FlyBase Drosophila GO ribbon slim"
 subsetdef: goslim_generic "Generic GO slim"
 subsetdef: goslim_metagenomics "Metagenomics GO slim"
@@ -72,7 +73,7 @@ synonym: "MAP kinase kinase kinase cascade" EXACT []
 synonym: "MAPK signal transduction" EXACT [GOC:signaling]
 synonym: "MAPK signaling" RELATED []
 synonym: "MAPK signalling" RELATED []
-synonym: "MAPKKK cascade" EXACT [GOC:curators]
+synonym: "MAPKKK cascade" EXACT []
 synonym: "MAPKKK cascade during sporulation" NARROW []
 synonym: "mitogen-activated protein kinase cascade" EXACT [GOC:bf]
 xref: MIPS_funcat:30.01.05.01.03
@@ -87,7 +88,7 @@ name: meiotic spindle organization
 namespace: biological_process
 alt_id: GO:0043147
 def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of the microtubule spindle during a meiotic cell cycle." [GOC:go_curators, GOC:mah]
-synonym: "meiotic spindle organisation" EXACT [GOC:curators]
+synonym: "meiotic spindle organisation" EXACT []
 synonym: "meiotic spindle organization and biogenesis" RELATED [GOC:mah]
 synonym: "meiotic spindle stabilization" RELATED []
 synonym: "spindle organization during meiosis" EXACT [GOC:mah]
@@ -101,6 +102,7 @@ id: GO:0000226
 name: microtubule cytoskeleton organization
 namespace: biological_process
 def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of cytoskeletal structures comprising microtubules and their associated proteins." [GOC:mah]
+subset: goslim_drosophila
 subset: goslim_pombe
 synonym: "microtubule cytoskeleton organisation" EXACT [GOC:mah]
 synonym: "microtubule cytoskeleton organization and biogenesis" RELATED [GOC:mah]
@@ -153,6 +155,7 @@ namespace: biological_process
 alt_id: GO:0007067
 def: "Progression through the phases of the mitotic cell cycle, the most common eukaryotic cell cycle, which canonically comprises four successive phases called G1, S, G2, and M and includes replication of the genome and the subsequent segregation of chromosomes into daughter cells. In some variant cell cycles nuclear replication or nuclear division may not be followed by cell division, or G1 and G2 phases may be absent." [GOC:mah, ISBN:0815316194, Reactome:69278]
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_generic
 subset: goslim_yeast
 synonym: "mitosis" RELATED []
@@ -228,6 +231,7 @@ alt_id: GO:0045790
 alt_id: GO:0045791
 def: "The developmental process in which the size or shape of a cell is generated and organized." [GOC:clt, GOC:dph, GOC:go_curators, GOC:tb]
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_generic
 subset: goslim_yeast
 synonym: "cellular morphogenesis" EXACT []
@@ -588,6 +592,7 @@ id: GO:0002520
 name: immune system development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of an organismal system whose objective is to provide calibrated responses by an organism to a potential internal or invasive threat, over time, from its formation to the mature structure. A system is a regularly interacting or interdependent group of organs or tissues that work together to carry out a given biological process." [GOC:add, GOC:dph]
+subset: goslim_drosophila
 is_a: GO:0002376 ! immune system process
 is_a: GO:0048731 ! system development
 
@@ -1204,7 +1209,6 @@ synonym: "serine(threonine) protein kinase activity" EXACT [EC:2.7.11.1]
 synonym: "serine-specific protein kinase activity" NARROW [EC:2.7.11.1]
 synonym: "serine/threonine protein kinase activity" EXACT [EC:2.7.11.1]
 synonym: "threonine-specific protein kinase activity" NARROW [EC:2.7.11.1]
-xref: EC:2.7.11
 xref: Reactome:R-HSA-109702 "PDPK1 phosphorylates AKT2"
 xref: Reactome:R-HSA-109822 "MAPK3,(MAPK1) phosphorylates GRB2-1:SOS1:p-Y427-SHC1"
 xref: Reactome:R-HSA-109823 "MAPK3,(MAPK1) phosphorylates GRB2-1:SOS1:p-Y-IRS1,p-Y-IRS2"
@@ -1709,7 +1713,6 @@ id: GO:0004711
 name: ribosomal protein S6 kinase activity
 namespace: molecular_function
 def: "Catalysis of the reaction: ribosomal protein S6 + ATP = ribosomal protein S6 phosphate + ATP." [GOC:mah, PMID:9822608]
-xref: EC:2.7.11
 is_a: GO:0004674 ! protein serine/threonine kinase activity
 
 [Term]
@@ -1858,6 +1861,7 @@ subset: goslim_agr
 subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_flybase_ribbon
 subset: goslim_generic
 subset: goslim_metagenomics
@@ -1882,6 +1886,7 @@ subset: goslim_agr
 subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_flybase_ribbon
 subset: goslim_generic
 subset: goslim_metagenomics
@@ -1920,6 +1925,7 @@ subset: goslim_agr
 subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_flybase_ribbon
 subset: goslim_generic
 subset: goslim_mouse
@@ -1969,6 +1975,7 @@ subset: goslim_agr
 subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_flybase_ribbon
 subset: goslim_generic
 subset: goslim_mouse
@@ -2046,6 +2053,7 @@ subset: goslim_agr
 subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_generic
 subset: goslim_metagenomics
 subset: goslim_mouse
@@ -2072,6 +2080,7 @@ alt_id: GO:0072372
 def: "A specialized eukaryotic organelle that consists of a filiform extrusion of the cell surface and of some cytoplasmic parts. Each cilium is largely bounded by an extrusion of the cytoplasmic (plasma) membrane, and contains a regular longitudinal array of microtubules, anchored to a basal body." [GOC:cilia, GOC:curators, GOC:kmv, GOC:vw, ISBN:0198547684, PMID:16824949, PMID:17009929, PMID:20144998]
 comment: Note that we deem cilium and microtubule-based flagellum to be equivalent. In most eukaryotic species, intracellular sub-components of the cilium, such as the ciliary base and rootlet, are located near the plasma membrane. In Diplomonads such as Giardia, instead, the same ciliary parts are located further intracellularly. Also, 'cilium' may be used when axonemal structure and/or motility are unknown, or when axonemal structure is unusual. For all other cases, please refer to children of 'cilium'. Finally, note that any role of ciliary proteins in sensory events should be captured by annotating to relevant biological process terms.
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_generic
 subset: goslim_pir
 synonym: "eukaryotic flagellum" EXACT []
@@ -2143,6 +2152,7 @@ alt_id: GO:0061018
 alt_id: GO:0061022
 def: "The cellular synthesis of RNA on a template of DNA." [GOC:jl, GOC:txnOH]
 subset: goslim_aspergillus
+subset: goslim_drosophila
 subset: goslim_metagenomics
 subset: goslim_pir
 subset: goslim_pombe
@@ -2223,6 +2233,7 @@ def: "The process of assisting in the covalent and noncovalent assembly of singl
 subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_generic
 subset: goslim_metagenomics
 subset: goslim_pir
@@ -2334,9 +2345,9 @@ is_a: GO:0019538 ! protein metabolic process
 id: GO:0006575
 name: cellular modified amino acid metabolic process
 namespace: biological_process
-def: "The chemical reactions and pathways involving compounds derived from amino acids, organic acids containing one or more amino substituents." [CHEBI:83821, GOC:ai]
-synonym: "amino acid derivative metabolic process" EXACT [GOC:curators]
-synonym: "cellular amino acid derivative metabolic process" EXACT [GOC:curators]
+def: "The chemical reactions and pathways involving compounds derived from amino acids, organic acids containing one or more amino substituents." [GOC:ai]
+synonym: "amino acid derivative metabolic process" EXACT []
+synonym: "cellular amino acid derivative metabolic process" EXACT []
 synonym: "cellular amino acid derivative metabolism" EXACT []
 synonym: "cellular modified amino acid metabolism" EXACT [GOC:mah]
 synonym: "modified amino acid metabolic process" EXACT [GOC:mah]
@@ -2386,7 +2397,7 @@ is_a: GO:0006793 ! phosphorus metabolic process
 id: GO:0006807
 name: nitrogen compound metabolic process
 namespace: biological_process
-def: "The chemical reactions and pathways involving organic or inorganic compounds that contain nitrogen." [CHEBI:51143, GOC:go_curators, GOC:jl, ISBN:0198506732]
+def: "The chemical reactions and pathways involving organic or inorganic compounds that contain nitrogen." [GOC:jl, ISBN:0198506732]
 subset: goslim_metagenomics
 subset: goslim_pir
 synonym: "nitrogen compound metabolism" EXACT []
@@ -2423,6 +2434,7 @@ id: GO:0006811
 name: ion transport
 namespace: biological_process
 def: "The directed movement of charged atoms or small charged molecules into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore." [GOC:ai]
+subset: goslim_drosophila
 subset: goslim_pir
 subset: goslim_yeast
 xref: MIPS_funcat:20.01.01
@@ -2533,6 +2545,7 @@ subset: gocheck_do_not_manually_annotate
 subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_generic
 subset: goslim_metagenomics
 subset: goslim_plant
@@ -2550,7 +2563,7 @@ def: "A process that is carried out at the cellular level which results in the a
 subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_pir
-synonym: "organelle organisation" EXACT [GOC:curators]
+synonym: "organelle organisation" EXACT []
 synonym: "organelle organization and biogenesis" RELATED [GOC:dph, GOC:jl, GOC:mah]
 synonym: "single organism organelle organization" EXACT [GOC:TermGenie]
 synonym: "single-organism organelle organization" RELATED []
@@ -2570,7 +2583,7 @@ subset: goslim_generic
 subset: goslim_yeast
 synonym: "cytoskeletal organization and biogenesis" RELATED [GOC:mah]
 synonym: "cytoskeletal regulator activity" RELATED []
-synonym: "cytoskeleton organisation" EXACT [GOC:curators]
+synonym: "cytoskeleton organisation" EXACT []
 synonym: "cytoskeleton organization and biogenesis" RELATED [GOC:mah]
 xref: MIPS_funcat:42.04
 is_a: GO:0006996 ! organelle organization
@@ -2618,7 +2631,7 @@ name: spindle organization
 namespace: biological_process
 alt_id: GO:0043146
 def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of the spindle, the array of microtubules and associated molecules that forms between opposite poles of a eukaryotic cell during DNA segregation and serves to move the duplicated chromosomes apart." [GOC:go_curators, GOC:mah]
-synonym: "spindle organisation" EXACT [GOC:curators]
+synonym: "spindle organisation" EXACT []
 synonym: "spindle organization and biogenesis" RELATED [GOC:mah]
 synonym: "spindle stabilization" RELATED []
 is_a: GO:0000226 ! microtubule cytoskeleton organization
@@ -2633,7 +2646,7 @@ alt_id: GO:0030472
 alt_id: GO:0043148
 def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of the microtubule spindle during a mitotic cell cycle." [GOC:go_curators, GOC:mah]
 comment: In fission yeast most mitotic spindle organization occurs in the nucleus; see https://github.com/geneontology/go-ontology/issues/15341.
-synonym: "mitotic spindle organisation" EXACT [GOC:curators]
+synonym: "mitotic spindle organisation" EXACT []
 synonym: "mitotic spindle organisation in nucleus" NARROW []
 synonym: "mitotic spindle organization and biogenesis" RELATED [GOC:mah]
 synonym: "mitotic spindle organization and biogenesis in cell nucleus" NARROW []
@@ -2717,6 +2730,7 @@ def: "The attachment of a cell, either to another cell or to an underlying subst
 subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_generic
 subset: goslim_metagenomics
 subset: goslim_pir
@@ -2795,6 +2809,7 @@ id: GO:0007166
 name: cell surface receptor signaling pathway
 namespace: biological_process
 def: "A series of molecular signals initiated by activation of a receptor on the surface of a cell. The pathway begins with binding of an extracellular ligand to a cell surface receptor, or for receptors that signal in the absence of a ligand, by ligand-withdrawal or the activity of a constitutively active receptor. The pathway ends with regulation of a downstream cellular process, e.g. transcription." [GOC:bf, GOC:mah, GOC:pr, GOC:signaling]
+subset: goslim_drosophila
 synonym: "cell surface receptor linked signal transduction" EXACT []
 synonym: "cell surface receptor linked signaling pathway" EXACT [GOC:bf]
 synonym: "cell surface receptor linked signalling pathway" EXACT [GOC:mah]
@@ -2943,6 +2958,7 @@ id: GO:0007369
 name: gastrulation
 namespace: biological_process
 def: "A complex and coordinated series of cellular movements that occurs at the end of cleavage during embryonic development of most animals. The details of gastrulation vary from species to species, but usually result in the formation of the three primary germ layers, ectoderm, mesoderm and endoderm." [GOC:curators, ISBN:9780878933846]
+subset: goslim_drosophila
 xref: MIPS_funcat:41.05.09
 xref: Wikipedia:Gastrulation
 is_a: GO:0048598 ! embryonic morphogenesis
@@ -2955,6 +2971,7 @@ id: GO:0007389
 name: pattern specification process
 namespace: biological_process
 def: "Any developmental process that results in the creation of defined areas or spaces within an organism to which cells respond and eventually are instructed to differentiate." [GOC:go_curators, GOC:isa_complete, ISBN:0521436125]
+subset: goslim_drosophila
 synonym: "pattern biosynthesis" RELATED []
 synonym: "pattern formation" RELATED []
 xref: MIPS_funcat:41.01.03
@@ -2973,6 +2990,7 @@ id: GO:0007399
 name: nervous system development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of nervous tissue over time, from its formation to its mature state." [GOC:dgh]
+subset: goslim_drosophila
 synonym: "pan-neural process" RELATED []
 xref: MIPS_funcat:45.03.17
 xref: MIPS_funcat:47.03.01
@@ -2998,7 +3016,7 @@ name: axon guidance
 namespace: biological_process
 alt_id: GO:0008040
 def: "The chemotaxis process that directs the migration of an axon growth cone to a specific target site in response to a combination of attractive and repulsive cues." [ISBN:0878932437]
-synonym: "axon chemotaxis" RELATED [GOC:curators]
+synonym: "axon chemotaxis" RELATED []
 synonym: "axon growth cone guidance" NARROW []
 synonym: "axon pathfinding" EXACT [GOC:mah]
 xref: Wikipedia:Axon_guidance
@@ -3132,6 +3150,7 @@ id: GO:0007626
 name: locomotory behavior
 namespace: biological_process
 def: "The specific movement from place to place of an organism in response to external or internal stimuli. Locomotion of a whole organism in a manner dependent upon some combination of that organism's internal state and external conditions." [GOC:dph]
+subset: goslim_drosophila
 synonym: "behavior via locomotion" EXACT []
 synonym: "locomotion in response to stimulus" EXACT []
 synonym: "locomotory behavioral response to stimulus" EXACT []
@@ -3299,6 +3318,7 @@ def: "Any biological process that results in permanent cessation of all vital fu
 comment: This term should not be used for direct annotation. The only exception should be when experimental data (e.g., staining with trypan blue or propidium iodide) show that cell death has occurred, but fail to provide details on death modality (accidental versus programmed). When information is provided on the cell death mechanism, annotations should be made to the appropriate descendant of 'cell death' (such as, but not limited to, GO:0097300 'programmed necrotic cell death' or GO:0006915 'apoptotic process'). Also, if experimental data suggest that a gene product influences cell death indirectly, rather than being involved in the death process directly, consider annotating to a 'regulation' term.
 subset: goslim_agr
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_generic
 subset: goslim_mouse
 subset: goslim_plant
@@ -3315,6 +3335,7 @@ def: "Catalysis of the hydrolysis of a peptide bond. A peptide bond is a covalen
 subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_generic
 subset: goslim_metagenomics
 subset: goslim_pir
@@ -3359,6 +3380,7 @@ def: "The multiplication or reproduction of cells, resulting in the expansion of
 comment: This term was moved out from being a child of 'cellular process' because it is a cell population-level process, and cellular processes are restricted to those processes that involve individual cells. Also note that this term is intended to be used for the proliferation of cells within a multicellular organism, not for the expansion of a population of single-celled organisms.
 subset: goslim_agr
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_flybase_ribbon
 subset: goslim_generic
 subset: goslim_mouse
@@ -3477,7 +3499,7 @@ id: GO:0009059
 name: macromolecule biosynthetic process
 namespace: biological_process
 alt_id: GO:0043284
-def: "The chemical reactions and pathways resulting in the formation of a macromolecule, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." [CHEBI:33694, GOC:mah]
+def: "The chemical reactions and pathways resulting in the formation of a macromolecule, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." [GOC:mah]
 subset: goslim_pir
 synonym: "biopolymer biosynthetic process" EXACT [GOC:mtg_chebi_dec09]
 synonym: "macromolecule anabolism" EXACT []
@@ -3516,6 +3538,7 @@ namespace: biological_process
 def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an external stimulus." [GOC:hb]
 comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
 subset: gocheck_do_not_manually_annotate
+subset: goslim_drosophila
 subset: goslim_plant
 synonym: "response to environmental stimulus" EXACT []
 xref: MIPS_funcat:36.20.35
@@ -3901,7 +3924,7 @@ is_a: GO:0042221 ! response to chemical
 id: GO:0010243
 name: response to organonitrogen compound
 namespace: biological_process
-def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an organonitrogen stimulus. An organonitrogen compound is formally a compound containing at least one carbon-nitrogen bond." [CHEBI:35352, PMID:9869419]
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an organonitrogen stimulus. An organonitrogen compound is formally a compound containing at least one carbon-nitrogen bond." [PMID:9869419]
 synonym: "response to organic nitrogen" EXACT []
 is_a: GO:0010033 ! response to organic substance
 is_a: GO:1901698 ! response to nitrogen compound
@@ -3933,8 +3956,8 @@ name: regulation of gene expression
 namespace: biological_process
 def: "Any process that modulates the frequency, rate or extent of gene expression. Gene expression is the process in which a gene's coding sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA or circRNA (for protein-coding genes) and the translation of that mRNA or circRNA into protein. Protein maturation is included when required to form an active form of a product from an inactive precursor form." [GOC:dph, GOC:tb]
 comment: This class covers any process that regulates the rate of production of a mature gene product, and so includes processes that regulate that rate by regulating the level, stability or availability of intermediates in the process of gene expression.  For example, it covers any process that regulates the level, stability or availability of mRNA or circRNA for translation and thereby regulates the rate of production of the encoded protein via translation.
-synonym: "regulation of gene product expression" RELATED [GOC:curators]
-synonym: "regulation of protein expression" NARROW [GOC:curators]
+synonym: "regulation of gene product expression" RELATED []
+synonym: "regulation of protein expression" NARROW []
 xref: Wikipedia:Regulation_of_gene_expression
 is_a: GO:0060255 ! regulation of macromolecule metabolic process
 intersection_of: GO:0008150 ! biological_process
@@ -4621,6 +4644,7 @@ namespace: biological_process
 alt_id: GO:0048591
 def: "The process in which a cell irreversibly increases in size over time by accretion and biosynthetic production of matter similar to that already present." [GOC:ai]
 subset: gocheck_do_not_annotate
+subset: goslim_drosophila
 subset: goslim_pir
 subset: goslim_plant
 synonym: "cell expansion" RELATED []
@@ -4675,6 +4699,7 @@ def: "A cellular transport process in which transported substances are moved in 
 subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_generic
 subset: goslim_pir
 subset: goslim_pombe
@@ -4693,6 +4718,7 @@ namespace: molecular_function
 def: "Catalysis of the transfer of a phosphate group, usually from ATP, to a substrate molecule." [ISBN:0198506732]
 comment: Note that this term encompasses all activities that transfer a single phosphate group; although ATP is by far the most common phosphate donor, reactions using other phosphate donors are included in this term.
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_generic
 subset: goslim_metagenomics
 subset: goslim_plant
@@ -4739,6 +4765,7 @@ comment: Note that enzymes of class EC:1.97.-.- should also be annotated to this
 subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_generic
 subset: goslim_metagenomics
 subset: goslim_mouse
@@ -4859,6 +4886,7 @@ id: GO:0016773
 name: phosphotransferase activity, alcohol group as acceptor
 namespace: molecular_function
 def: "Catalysis of the transfer of a phosphorus-containing group from one compound (donor) to an alcohol group (acceptor)." [GOC:jl]
+subset: goslim_drosophila
 xref: EC:2.7.1
 xref: Reactome:R-HSA-2161193 "abacavir + AMP => abacavir monophosphate + adenosine"
 is_a: GO:0016772 ! transferase activity, transferring phosphorus-containing groups
@@ -4871,6 +4899,7 @@ def: "Catalysis of the transfer of a nucleotidyl group to a reactant." [ISBN:019
 subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_generic
 subset: goslim_metagenomics
 subset: goslim_yeast
@@ -4957,13 +4986,13 @@ is_a: GO:0018205 ! peptidyl-lysine modification
 id: GO:0018958
 name: phenol-containing compound metabolic process
 namespace: biological_process
-def: "The chemical reactions and pathways involving a phenol, any compound containing one or more hydroxyl groups directly attached to an aromatic carbon ring." [CHEBI:33853, ISBN:0198506732]
+def: "The chemical reactions and pathways involving a phenol, any compound containing one or more hydroxyl groups directly attached to an aromatic carbon ring." [ISBN:0198506732]
 comment: Note that phenol metabolism is not included as a child of 'xenobiotic metabolism' because although it is synthesized industrially, phenol is also found naturally in animal wastes and other organic materials. It is often formed by the activity of microorganisms, which can chemically modify a variety of xenobiotic and naturally occurring phenolic compounds.
 synonym: "carbolic acid metabolic process" EXACT []
 synonym: "carbolic acid metabolism" EXACT []
 synonym: "hydroxybenzene metabolic process" EXACT []
 synonym: "hydroxybenzene metabolism" EXACT []
-synonym: "phenol-containing compound metabolism" EXACT [GOC:curators]
+synonym: "phenol-containing compound metabolism" EXACT []
 xref: UM-BBD_pathwayID:phe
 is_a: GO:0006725 ! cellular aromatic compound metabolic process
 is_a: GO:1901360 ! organic cyclic compound metabolic process
@@ -4976,8 +5005,9 @@ namespace: biological_process
 alt_id: GO:0033057
 alt_id: GO:0044704
 def: "The specific behavior of an organism that is associated with reproduction." [GOC:jl, GOC:pr]
+subset: goslim_drosophila
 synonym: "multicellular organism reproductive behavior" NARROW []
-synonym: "reproductive behavior in a multicellular organism" EXACT [GOC:curators]
+synonym: "reproductive behavior in a multicellular organism" EXACT []
 synonym: "reproductive behaviour" EXACT []
 synonym: "single-organism reproductive behavior" RELATED []
 is_a: GO:0007610 ! behavior
@@ -5168,7 +5198,7 @@ id: GO:0022412
 name: cellular process involved in reproduction in multicellular organism
 namespace: biological_process
 def: "A process, occurring at the cellular level, that is involved in the reproductive function of a multicellular organism." [GOC:isa_complete]
-synonym: "reproductive cellular process in multicellular organism" EXACT [GOC:curators]
+synonym: "reproductive cellular process in multicellular organism" EXACT []
 is_a: GO:0009987 ! cellular process
 is_a: GO:0022414 ! reproductive process
 intersection_of: GO:0009987 ! cellular process
@@ -5373,7 +5403,7 @@ id: GO:0030030
 name: cell projection organization
 namespace: biological_process
 def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of a prolongation or process extending from a cell, e.g. a flagellum or axon." [GOC:jl, GOC:mah, http://www.cogsci.princeton.edu/~wn/]
-synonym: "cell projection organisation" EXACT [GOC:curators]
+synonym: "cell projection organisation" EXACT []
 synonym: "cell projection organization and biogenesis" RELATED [GOC:mah]
 synonym: "cell surface structure organization and biogenesis" RELATED [GOC:mah]
 is_a: GO:0016043 ! cellular component organization
@@ -5393,8 +5423,9 @@ id: GO:0030036
 name: actin cytoskeleton organization
 namespace: biological_process
 def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of cytoskeletal structures comprising actin filaments and their associated proteins." [GOC:dph, GOC:jl, GOC:mah]
+subset: goslim_drosophila
 subset: goslim_pombe
-synonym: "actin cytoskeleton organisation" EXACT [GOC:curators]
+synonym: "actin cytoskeleton organisation" EXACT []
 synonym: "actin cytoskeleton organization and biogenesis" RELATED [GOC:mah]
 synonym: "actin modulating activity" RELATED []
 xref: MIPS_funcat:42.04.03
@@ -5443,6 +5474,7 @@ namespace: biological_process
 def: "The process in which relatively unspecialized cells, e.g. embryonic or regenerative cells, acquire specialized structural and/or functional features that characterize the cells, tissues, or organs of the mature organism or some other relatively stable phase of the organism's life history. Differentiation includes the processes involved in commitment of a cell to a specific fate and its subsequent development to the mature state." [ISBN:0198506732]
 subset: goslim_agr
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_generic
 subset: goslim_mouse
 subset: goslim_plant
@@ -5791,6 +5823,7 @@ name: cytoskeleton-dependent intracellular transport
 namespace: biological_process
 def: "The directed movement of substances along cytoskeletal fibers such as microfilaments or microtubules within a cell." [GOC:mah]
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_generic
 xref: MIPS_funcat:20.09.14
 is_a: GO:0046907 ! intracellular transport
@@ -5897,7 +5930,7 @@ name: microtubule organizing center organization
 namespace: biological_process
 def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of a microtubule organizing center, a structure from which microtubules grow." [GOC:dph, GOC:jl, GOC:mah]
 subset: goslim_pir
-synonym: "microtubule organising center organisation" EXACT [GOC:curators]
+synonym: "microtubule organising center organisation" EXACT []
 synonym: "microtubule organizing center organization and biogenesis" RELATED [GOC:mah]
 is_a: GO:0007017 ! microtubule-based process
 is_a: GO:0016043 ! cellular component organization
@@ -5910,7 +5943,7 @@ namespace: biological_process
 def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of cytoskeletal structures containing both actin and myosin or paramyosin. The myosin may be organized into filaments." [GOC:dph, GOC:jl, GOC:mah]
 comment: Note that this term is a child of 'actin cytoskeleton organization and biogenesis ; GO:0030036' because the actin cytoskeleton is defined as actin filaments and associated proteins.
 synonym: "actomyosin organization" EXACT []
-synonym: "actomyosin structure organisation" EXACT [GOC:curators]
+synonym: "actomyosin structure organisation" EXACT []
 synonym: "actomyosin structure organization and biogenesis" RELATED [GOC:mah]
 is_a: GO:0030036 ! actin cytoskeleton organization
 
@@ -6172,7 +6205,7 @@ id: GO:0031344
 name: regulation of cell projection organization
 namespace: biological_process
 def: "Any process that modulates the frequency, rate or extent of a process involved in the formation, arrangement of constituent parts, or disassembly of cell projections." [GOC:mah]
-synonym: "regulation of cell projection organisation" EXACT [GOC:curators]
+synonym: "regulation of cell projection organisation" EXACT []
 synonym: "regulation of cell projection organization and biogenesis" RELATED [GOC:mah]
 is_a: GO:0051128 ! regulation of cellular component organization
 intersection_of: GO:0008150 ! biological_process
@@ -6188,7 +6221,7 @@ synonym: "down regulation of cell projection organization" EXACT [GOC:mah]
 synonym: "down-regulation of cell projection organization" EXACT []
 synonym: "downregulation of cell projection organization" EXACT []
 synonym: "inhibition of cell projection organization" NARROW []
-synonym: "negative regulation of cell projection organisation" EXACT [GOC:curators]
+synonym: "negative regulation of cell projection organisation" EXACT []
 synonym: "negative regulation of cell projection organization and biogenesis" RELATED [GOC:mah]
 is_a: GO:0031344 ! regulation of cell projection organization
 is_a: GO:0051129 ! negative regulation of cellular component organization
@@ -6202,7 +6235,7 @@ name: positive regulation of cell projection organization
 namespace: biological_process
 def: "Any process that activates or increases the frequency, rate or extent of the process involved in the formation, arrangement of constituent parts, or disassembly of cell projections." [GOC:mah]
 synonym: "activation of cell projection organization" NARROW []
-synonym: "positive regulation of cell projection organisation" EXACT [GOC:curators]
+synonym: "positive regulation of cell projection organisation" EXACT []
 synonym: "positive regulation of cell projection organization and biogenesis" RELATED [GOC:mah]
 synonym: "stimulation of cell projection organization" NARROW []
 synonym: "up regulation of cell projection organization" EXACT []
@@ -7230,6 +7263,7 @@ name: cellular protein localization
 namespace: biological_process
 alt_id: GO:0016249
 def: "Any process in which a protein is transported to, and/or maintained in, a specific location at the level of a cell. Localization at the cellular level encompasses movement within the cell, from within the cell to the cell surface, or from one location to another at the surface of a cell." [GOC:mah]
+subset: goslim_drosophila
 synonym: "cellular protein localisation" EXACT [GOC:mah]
 synonym: "channel localizer activity" NARROW [GOC:mah]
 is_a: GO:0008104 ! protein localization
@@ -7251,7 +7285,7 @@ id: GO:0034645
 name: cellular macromolecule biosynthetic process
 namespace: biological_process
 alt_id: GO:0034961
-def: "The chemical reactions and pathways resulting in the formation of a macromolecule, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass, carried out by individual cells." [CHEBI:33694, GOC:mah]
+def: "The chemical reactions and pathways resulting in the formation of a macromolecule, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass, carried out by individual cells." [GOC:mah]
 synonym: "cellular biopolymer biosynthetic process" EXACT [GOC:mtg_chebi_dec09]
 synonym: "cellular macromolecule anabolism" EXACT [GOC:mah]
 synonym: "cellular macromolecule biosynthesis" EXACT [GOC:mah]
@@ -7428,6 +7462,7 @@ alt_id: GO:0007243
 alt_id: GO:0023013
 alt_id: GO:0023034
 def: "The process in which a signal is passed on to downstream components within the cell, which become activated themselves to further propagate the signal and finally trigger a change in the function or state of the cell." [GOC:bf, GOC:jl, GOC:signaling, ISBN:3527303782]
+subset: goslim_drosophila
 synonym: "intracellular protein kinase cascade" NARROW [GOC:signaling]
 synonym: "intracellular signal transduction pathway" NARROW []
 synonym: "intracellular signaling cascade" RELATED [GOC:signaling]
@@ -7578,6 +7613,7 @@ alt_id: GO:0019041
 def: "Receiving a signal and transmitting it in the cell to initiate a change in cell activity. A signal is a physical entity or change in state that is used to transfer information in order to trigger a response." [GOC:bf, GOC:signaling]
 subset: goslim_agr
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_flybase_ribbon
 subset: goslim_metagenomics
 subset: goslim_mouse
@@ -7884,6 +7920,7 @@ comment: Note that this term is in the subset of terms that should not be used f
 subset: gocheck_do_not_manually_annotate
 subset: goslim_aspergillus
 subset: goslim_candida
+subset: goslim_drosophila
 subset: goslim_metagenomics
 subset: goslim_plant
 subset: goslim_yeast
@@ -7973,7 +8010,7 @@ is_a: GO:0042445 ! hormone metabolic process
 id: GO:0042445
 name: hormone metabolic process
 namespace: biological_process
-def: "The chemical reactions and pathways involving any hormone, naturally occurring substances secreted by specialized cells that affects the metabolism or behavior of other cells possessing functional receptors for the hormone." [CHEBI:24621, GOC:jl]
+def: "The chemical reactions and pathways involving any hormone, naturally occurring substances secreted by specialized cells that affects the metabolism or behavior of other cells possessing functional receptors for the hormone." [GOC:jl]
 subset: goslim_pir
 synonym: "hormone metabolism" EXACT []
 is_a: GO:0008152 ! metabolic process
@@ -8201,7 +8238,7 @@ name: macromolecule metabolic process
 namespace: biological_process
 alt_id: GO:0043283
 alt_id: GO:0044259
-def: "The chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." [CHEBI:33694, GOC:mah]
+def: "The chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." [GOC:mah]
 subset: goslim_pir
 synonym: "biopolymer metabolic process" EXACT [GOC:mtg_chebi_dec09]
 synonym: "macromolecule metabolism" EXACT []
@@ -8762,7 +8799,7 @@ id: GO:0044260
 name: cellular macromolecule metabolic process
 namespace: biological_process
 alt_id: GO:0034960
-def: "The chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass, as carried out by individual cells." [CHEBI:33694, GOC:mah]
+def: "The chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass, as carried out by individual cells." [GOC:mah]
 synonym: "cellular biopolymer metabolic process" EXACT [GOC:mtg_chebi_dec09]
 synonym: "cellular macromolecule metabolism" EXACT []
 is_a: GO:0043170 ! macromolecule metabolic process
@@ -9071,6 +9108,7 @@ name: cilium organization
 namespace: biological_process
 def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of a cilium, a specialized eukaryotic organelle that consists of a filiform extrusion of the cell surface. Each cilium is bounded by an extrusion of the cytoplasmic membrane, and contains a regular longitudinal array of microtubules, anchored basally in a centriole." [GOC:cilia, GOC:jl]
 comment: Note that we deem cilium and microtubule-based flagellum to be equivalent.
+subset: goslim_drosophila
 synonym: "microtubule-based flagellum organization" EXACT []
 is_a: GO:0006996 ! organelle organization
 is_a: GO:0120036 ! plasma membrane bounded cell projection organization
@@ -9103,6 +9141,7 @@ name: synapse
 namespace: cellular_component
 def: "The junction between a nerve fiber of one neuron and another neuron, muscle fiber or glial cell. As the nerve fiber approaches the synapse it enlarges into a specialized structure, the presynaptic nerve ending, which contains mitochondria and synaptic vesicles. At the tip of the nerve ending is the presynaptic membrane; facing it, and separated from it by a minute cleft (the synaptic cleft) is a specialized area of membrane on the receiving cell, known as the postsynaptic membrane. In response to the arrival of nerve impulses, the presynaptic nerve ending secretes molecules of neurotransmitters into the synaptic cleft. These diffuse across the cleft and transmit the signal to the postsynaptic membrane." [ISBN:0198506732]
 subset: goslim_agr
+subset: goslim_drosophila
 subset: goslim_flybase_ribbon
 subset: goslim_mouse
 subset: goslim_pir
@@ -9121,7 +9160,7 @@ namespace: biological_process
 alt_id: GO:0006938
 def: "The myofibril assembly process that results in the organization of muscle actomyosin into sarcomeres. The sarcomere is the repeating unit of a myofibril in a muscle cell, composed of an array of overlapping thick and thin filaments between two adjacent Z discs." [GOC:bf]
 synonym: "sarcomere alignment" EXACT []
-synonym: "sarcomere organisation" EXACT [GOC:curators]
+synonym: "sarcomere organisation" EXACT []
 is_a: GO:0031032 ! actomyosin structure organization
 relationship: part_of GO:0030239 ! myofibril assembly
 
@@ -9356,7 +9395,7 @@ synonym: "up-regulation of cell adhesion" EXACT []
 synonym: "upregulation of cell adhesion" EXACT []
 is_a: GO:0030155 ! regulation of cell adhesion
 is_a: GO:0048518 ! positive regulation of biological process
-intersection_of: GO:0008150 ! biological_process
+intersection_of: GO:0065007 ! biological regulation
 intersection_of: positively_regulates GO:0007155 ! cell adhesion
 relationship: positively_regulates GO:0007155 ! cell adhesion
 
@@ -9856,7 +9895,7 @@ relationship: positively_regulates GO:0007254 ! JNK cascade
 id: GO:0046483
 name: heterocycle metabolic process
 namespace: biological_process
-def: "The chemical reactions and pathways involving heterocyclic compounds, those with a cyclic molecular structure and at least two different atoms in the ring (or rings)." [CHEBI:5686, ISBN:0198506732]
+def: "The chemical reactions and pathways involving heterocyclic compounds, those with a cyclic molecular structure and at least two different atoms in the ring (or rings)." [ISBN:0198506732]
 subset: goslim_pir
 synonym: "heterocycle metabolism" EXACT []
 is_a: GO:0044237 ! cellular metabolic process
@@ -9967,6 +10006,7 @@ alt_id: GO:0071884
 def: "The activity of a gene product that interacts with a receptor to effect a change in the activity of the receptor. Ligands may be produced by the same, or different, cell that expresses the receptor. Ligands may diffuse extracellularly from their point of origin to the receiving cell, or remain attached to an adjacent cell surface (e.g. Notch ligands)." [GOC:kv, GOC:molecular_function_refactoring, GOC:pdt]
 comment: Definition discussed in https://github.com/geneontology/go-ontology/issues/14220
 subset: goslim_chembl
+subset: goslim_drosophila
 synonym: "receptor agonist activity" BROAD [GOC:molecular_function_refactoring]
 synonym: "signaling molecule" EXACT []
 synonym: "signaling receptor ligand activity" EXACT []
@@ -10153,7 +10193,7 @@ synonym: "up-regulation of cellular process" EXACT []
 synonym: "upregulation of cellular process" EXACT []
 is_a: GO:0048518 ! positive regulation of biological process
 is_a: GO:0050794 ! regulation of cellular process
-intersection_of: GO:0008150 ! biological_process
+intersection_of: GO:0065007 ! biological regulation
 intersection_of: positively_regulates GO:0009987 ! cellular process
 relationship: positively_regulates GO:0009987 ! cellular process
 
@@ -10345,8 +10385,8 @@ id: GO:0048609
 name: multicellular organismal reproductive process
 namespace: biological_process
 def: "The process, occurring above the cellular level, that is pertinent to the reproductive function of a multicellular organism. This includes the integrated processes at the level of tissues and organs." [GOC:dph, GOC:jid, GOC:tb]
-synonym: "organismal reproductive process" BROAD [GOC:curators]
-synonym: "reproductive process in a multicellular organism" EXACT [GOC:curators]
+synonym: "organismal reproductive process" BROAD []
+synonym: "reproductive process in a multicellular organism" EXACT []
 is_a: GO:0022414 ! reproductive process
 relationship: part_of GO:0032504 ! multicellular organism reproduction
 
@@ -10648,7 +10688,7 @@ id: GO:0048699
 name: generation of neurons
 namespace: biological_process
 def: "The process in which nerve cells are generated. This includes the production of neuroblasts and their differentiation into neurons." [GOC:nln]
-synonym: "neuron generation" EXACT [GOC:curators]
+synonym: "neuron generation" EXACT []
 xref: MIPS_funcat:41.05.13
 is_a: GO:0022008 ! neurogenesis
 
@@ -10840,6 +10880,7 @@ name: cell motility
 namespace: biological_process
 def: "Any process involved in the controlled self-propelled movement of a cell that results in translocation of the cell from one place to another." [GOC:dgh, GOC:dph, GOC:isa_complete, GOC:mlg]
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_generic
 synonym: "cell locomotion" EXACT []
 synonym: "cell movement" RELATED []
@@ -10993,7 +11034,7 @@ alt_id: GO:0051244
 def: "Any process that modulates the frequency, rate or extent of a cellular process, any of those that are carried out at the cellular level, but are not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level." [GOC:go_curators]
 synonym: "regulation of cellular physiological process" EXACT []
 is_a: GO:0050789 ! regulation of biological process
-intersection_of: GO:0008150 ! biological_process
+intersection_of: GO:0065007 ! biological regulation
 intersection_of: regulates GO:0009987 ! cellular process
 relationship: regulates GO:0009987 ! cellular process
 
@@ -11300,7 +11341,7 @@ namespace: biological_process
 def: "Any process that modulates the frequency, rate or extent of a process involved in the formation, arrangement of constituent parts, or disassembly of cell structures, including the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope." [GOC:ai]
 synonym: "regulation of cell organisation" RELATED [GOC:mah]
 synonym: "regulation of cell organization" RELATED [GOC:mah]
-synonym: "regulation of cellular component organisation" EXACT [GOC:curators]
+synonym: "regulation of cellular component organisation" EXACT []
 synonym: "regulation of cellular component organization and biogenesis" RELATED [GOC:mah]
 is_a: GO:0050794 ! regulation of cellular process
 intersection_of: GO:0008150 ! biological_process
@@ -11771,6 +11812,7 @@ alt_id: GO:0007001
 alt_id: GO:0051277
 def: "A process that is carried out at the cellular level that results in the assembly, arrangement of constituent parts, or disassembly of chromosomes, structures composed of a very long molecule of DNA and associated proteins that carries hereditary information. This term covers covalent modifications at the molecular level as well as spatial relationships among the major components of a chromosome." [GOC:ai, GOC:dph, GOC:jl, GOC:mah]
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_generic
 subset: goslim_pir
 synonym: "chromosome organisation" EXACT []
@@ -11787,6 +11829,7 @@ namespace: biological_process
 def: "The process resulting in division and partitioning of components of a cell to form more cells; may or may not be accompanied by the physical separation of a cell into distinct, individually membrane-bounded daughter cells." [GOC:di, GOC:go_curators, GOC:pr]
 comment: Note that this term differs from 'cytokinesis ; GO:0000910' in that cytokinesis does not include nuclear division.
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_generic
 subset: goslim_pir
 xref: Wikipedia:Cell_division
@@ -11808,6 +11851,7 @@ name: meiotic cell cycle
 namespace: biological_process
 alt_id: GO:0007126
 def: "Progression through the phases of the meiotic cell cycle, in which canonically a cell replicates to produce four offspring with half the chromosomal content of the progenitor cell via two nuclear divisions." [GOC:ai]
+subset: goslim_drosophila
 subset: goslim_yeast
 synonym: "meiosis" RELATED []
 xref: Wikipedia:Meiosis
@@ -12576,7 +12620,7 @@ name: oxidation-reduction process
 namespace: biological_process
 def: "A metabolic process that results in the removal or addition of one or more electrons to or from a substance, with or without the concomitant removal or addition of a proton or protons." [GOC:dhl, GOC:ecd, GOC:jh2, GOC:jid, GOC:mlg, GOC:rph]
 subset: goslim_pir
-synonym: "oxidation reduction" EXACT [GOC:curators]
+synonym: "oxidation reduction" EXACT []
 synonym: "oxidoreductase process" EXACT systematic_synonym []
 xref: Wikipedia:Redox
 is_a: GO:0008152 ! metabolic process
@@ -12916,6 +12960,7 @@ id: GO:0060429
 name: epithelium development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of an epithelium over time, from its formation to the mature structure. An epithelium is a tissue that covers the internal or external surfaces of an anatomical structure." [GOC:dph, GOC:mtg_lung]
+subset: goslim_drosophila
 is_a: GO:0009888 ! tissue development
 
 [Term]
@@ -12963,6 +13008,7 @@ id: GO:0060541
 name: respiratory system development
 namespace: biological_process
 def: "The progression of the respiratory system over time from its formation to its mature structure. The respiratory system carries out respiratory gaseous exchange." [GOC:dph]
+subset: goslim_drosophila
 is_a: GO:0048731 ! system development
 created_by: dph
 creation_date: 2009-04-10T08:55:42Z
@@ -13205,10 +13251,11 @@ alt_id: GO:0016044
 alt_id: GO:0044802
 def: "A process which results in the assembly, arrangement of constituent parts, or disassembly of a membrane. A membrane is a double layer of lipid molecules that encloses all cells, and, in eukaryotes, many organelles; may be a single or double lipid bilayer; also includes associated proteins." [GOC:dph, GOC:tb]
 subset: goslim_chembl
+subset: goslim_drosophila
 subset: goslim_generic
 subset: goslim_pir
 subset: goslim_pombe
-synonym: "cellular membrane organisation" EXACT [GOC:curators]
+synonym: "cellular membrane organisation" EXACT []
 synonym: "cellular membrane organization" EXACT []
 synonym: "membrane organisation" EXACT [GOC:mah]
 synonym: "membrane organization and biogenesis" RELATED [GOC:mah]
@@ -13258,6 +13305,7 @@ id: GO:0061061
 name: muscle structure development
 namespace: biological_process
 def: "The progression of a muscle structure over time, from its formation to its mature state. Muscle structures are contractile cells, tissues or organs that are found in multicellular organisms." [GOC:dph]
+subset: goslim_drosophila
 is_a: GO:0048856 ! anatomical structure development
 created_by: dph
 creation_date: 2010-03-09T08:55:14Z
@@ -14983,7 +15031,7 @@ name: supramolecular fiber organization
 namespace: biological_process
 alt_id: GO:0043206
 def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of a supramolecular fiber, a polymer consisting of an indefinite number of protein or protein complex subunits that have polymerised to form a fiber-shaped structure." [GOC:pr]
-synonym: "extracellular fibril organisation" NARROW [GOC:curators]
+synonym: "extracellular fibril organisation" NARROW []
 synonym: "extracellular fibril organization" NARROW []
 synonym: "extracellular fibril organization and biogenesis" NARROW [GOC:mah]
 synonym: "fibril organisation" RELATED []
@@ -15214,6 +15262,7 @@ id: GO:0099503
 name: secretory vesicle
 namespace: cellular_component
 def: "A cytoplasmic, membrane bound vesicle that is capable of fusing to the plasma membrane to release its contents into the extracellular space." [GOC:dos]
+subset: goslim_drosophila
 is_a: GO:0031410 ! cytoplasmic vesicle
 
 [Term]
@@ -15472,7 +15521,6 @@ id: GO:0140013
 name: meiotic nuclear division
 namespace: biological_process
 def: "One of the two nuclear divisions that occur as part of the meiotic cell cycle." [PMID:9334324]
-subset: goslim_pombe
 is_a: GO:0000280 ! nuclear division
 is_a: GO:1903046 ! meiotic cell cycle process
 intersection_of: GO:0000280 ! nuclear division
@@ -17096,6 +17144,7 @@ name: meiotic cell cycle process
 namespace: biological_process
 def: "A process that is part of the meiotic cell cycle." [GO_REF:0000060, GOC:mtg_cell_cycle, GOC:TermGenie]
 subset: gocheck_do_not_annotate
+subset: goslim_pombe
 is_a: GO:0022402 ! cell cycle process
 is_a: GO:0022414 ! reproductive process
 intersection_of: GO:0009987 ! cellular process
