@@ -13,6 +13,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003674>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0005575>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0006928>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0008150>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0032502>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000313>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000051>))
@@ -39,6 +40,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000617>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000628>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000642>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000646>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000647>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000911>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000912>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001236>))
@@ -117,6 +119,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/malformedA
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/malformedAnatomicalEntityByType.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/malformedAnatomicalEntityInLocation.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/mislocalisedAnatomicalEntity.yaml>))
+Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns-dev/necroticAnatomicalEntity.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns/abnormalAnatomicalEntity.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns/abnormallyIncompleteClosureOfAnatomicalEntity.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns/bifurcatedAnatomicalEntity.yaml>))
@@ -224,7 +227,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalCo
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalDevelopmentOfAnatomicalEntity.yaml> "An abnormal development of the 'anatomical entity'."^^xsd:string)
 AnnotationAssertion(<http://purl.org/dc/terms/title> <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalDevelopmentOfAnatomicalEntity.yaml> "abnormalDevelopmentOfAnatomicalEntity"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalDevelopmentOfAnatomicalEntity.yaml> "abnormal development of 'anatomical entity'"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalDevelopmentOfAnatomicalEntity.yaml> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001236> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0008150> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002295> <http://purl.obolibrary.org/obo/UBERON_0001062>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+EquivalentClasses(<http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalDevelopmentOfAnatomicalEntity.yaml> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001236> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0032502> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002295> <http://purl.obolibrary.org/obo/UBERON_0001062>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 # Class: <http://purl.obolibrary.org/obo/upheno/patterns-dev/abnormalMolecularFunction.yaml> (abnormal 'molecular function')
 
@@ -637,6 +640,13 @@ AnnotationAssertion(<http://purl.org/dc/terms/title> <http://purl.obolibrary.org
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/upheno/patterns-dev/mislocalisedAnatomicalEntity.yaml> "abnormal position of 'anatomical entity'"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/upheno/patterns-dev/mislocalisedAnatomicalEntity.yaml> "Abnormally localised 'anatomical entity'"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/upheno/patterns-dev/mislocalisedAnatomicalEntity.yaml> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000628> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/UBERON_0001062>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/upheno/patterns-dev/necroticAnatomicalEntity.yaml> (abnormally necrotic 'anatomical entity')
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/upheno/patterns-dev/necroticAnatomicalEntity.yaml> "An abnormally necrotic 'anatomical entity'."^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/title> <http://purl.obolibrary.org/obo/upheno/patterns-dev/necroticAnatomicalEntity.yaml> "necroticAnatomicalEntity"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/upheno/patterns-dev/necroticAnatomicalEntity.yaml> "abnormally necrotic 'anatomical entity'"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/upheno/patterns-dev/necroticAnatomicalEntity.yaml> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000647> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/UBERON_0001062>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 # Class: <http://purl.obolibrary.org/obo/upheno/patterns/abnormalAnatomicalEntity.yaml> (abnormal 'anatomical entity')
 
