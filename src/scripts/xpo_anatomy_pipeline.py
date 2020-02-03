@@ -58,7 +58,7 @@ def rm(path):
 def robot_query(ontology_path,seedfile,sparql_terms, TIMEOUT="3600", robot_opts="-v"):
     print("Query "+ontology_path+" with "+sparql_terms)
     try:
-        check_call(['timeout','-t',TIMEOUT,'robot', 'query',robot_opts,'--use-graphs','true','-f','csv','-i', ontology_path,'--query', sparql_terms, seedfile])
+        check_call(['timeout',TIMEOUT,'robot', 'query',robot_opts,'--use-graphs','true','-f','csv','-i', ontology_path,'--query', sparql_terms, seedfile])
     except Exception as e:
         print(e)
         raise Exception("Seed extraction of" + ontology_path + " failed")
