@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: xpo/releases/2020-01-02/imports/go_import.owl
+data-version: xpo/releases/2020-02-05/imports/go_import.owl
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_agr "AGR slim"
@@ -11774,11 +11774,6 @@ id: GO:0051271
 name: negative regulation of cellular component movement
 namespace: biological_process
 def: "Any process that stops, prevents, or reduces the frequency, rate or extent of the movement of a cellular component." [GOC:ai, GOC:dph, GOC:jl]
-synonym: "down regulation of cell motility" EXACT []
-synonym: "down-regulation of cell motility" EXACT []
-synonym: "downregulation of cell motility" EXACT []
-synonym: "inhibition of cell motility" NARROW []
-synonym: "negative regulation of cell movement" RELATED []
 synonym: "negative regulation of cellular component motion" EXACT [GOC:mah]
 is_a: GO:0048523 ! negative regulation of cellular process
 is_a: GO:0051270 ! regulation of cellular component movement
@@ -11791,13 +11786,7 @@ id: GO:0051272
 name: positive regulation of cellular component movement
 namespace: biological_process
 def: "Any process that activates or increases the frequency, rate or extent of the movement of a cellular component." [GOC:ai, GOC:dph, GOC:jl]
-synonym: "activation of cell motility" NARROW []
-synonym: "positive regulation of cell movement" RELATED []
 synonym: "positive regulation of cellular component motion" EXACT [GOC:mah]
-synonym: "stimulation of cell motility" NARROW []
-synonym: "up regulation of cell motility" EXACT []
-synonym: "up-regulation of cell motility" EXACT []
-synonym: "upregulation of cell motility" EXACT []
 is_a: GO:0048522 ! positive regulation of cellular process
 is_a: GO:0051270 ! regulation of cellular component movement
 intersection_of: GO:0008150 ! biological_process

@@ -21,6 +21,11 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0036269>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0042048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0048266>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0071625>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000358>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0040002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0040003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0040004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0040005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000460>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001236>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0116429>))
@@ -36,6 +41,11 @@ Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131406>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131407>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131408>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131409>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141263>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141264>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141265>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141266>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141267>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002573>))
@@ -124,6 +134,36 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0131408> ObjectSomeValuesF
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0131409> "An anomaly in locomotory behavior."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0131409> "abnormal locomotory behavior"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0131409> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001236> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/GO_0007626>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0141263> (abnormal visually guided collision avoidance behavior)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0141263> "An anomaly in visually guided collision avoidance behavior."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0141263> "abnormal visually guided collision avoidance behavior"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0141263> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001236> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/NBO_0040005>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0141264> (abnormal schooling behavior)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0141264> "An anomaly in schooling behavior."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0141264> "abnormal schooling behavior"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0141264> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001236> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/NBO_0040002>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0141265> (abnormal escape behavior)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0141265> "An anomaly in escape behavior."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0141265> "abnormal escape behavior"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0141265> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001236> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/NBO_0040003>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0141266> (abnormal surface breathing)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0141266> "An anomaly in surface breathing."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0141266> "abnormal surface breathing"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0141266> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001236> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/NBO_0040004>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0141267> (abnormal resting posture)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0141267> "An anomaly in resting posture."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0141267> "abnormal resting posture"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0141267> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001236> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/NBO_0000358>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 
 )
