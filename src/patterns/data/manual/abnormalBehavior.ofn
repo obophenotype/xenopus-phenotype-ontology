@@ -21,6 +21,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0036269>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0042048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0048266>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0071625>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000313>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000358>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0040002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0040003>))
@@ -46,6 +47,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141264>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141265>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141266>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141267>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141317>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002573>))
@@ -164,6 +166,12 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0141266> ObjectSomeValuesF
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0141267> "An anomaly in resting posture."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0141267> "abnormal resting posture"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0141267> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001236> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/NBO_0000358>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0141317> (abnormal behavior process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0141317> "An anomaly in behavior process."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0141317> "abnormal behavior process"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0141317> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001236> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/NBO_0000313>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 
 )

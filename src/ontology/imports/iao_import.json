@@ -1578,6 +1578,26 @@
       "type" : "PROPERTY",
       "lbl" : "contains process"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000425",
+      "meta" : {
+        "definition" : {
+          "val" : "A macro expansion tag applied to an annotation property which can be expanded into a more detailed axiom.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "expand assertion to"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "ObjectProperty: RO???\nLabel: spatially disjoint from\nAnnotations: expand_assertion_to \"DisjointClasses: (http://purl.obolibrary.org/obo/BFO_0000051 some ?X)  (http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)\"\n"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "expand assertion to"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000227",
       "meta" : {
         "basicPropertyValues" : [ {
@@ -2043,7 +2063,7 @@
       "subsets" : [ ],
       "xrefs" : [ ],
       "basicPropertyValues" : [ ],
-      "version" : "http://purl.obolibrary.org/obo/xpo/releases/2020-02-27/imports/iao_import.owl"
+      "version" : "http://purl.obolibrary.org/obo/xpo/releases/2020-02-29/imports/iao_import.owl"
     },
     "equivalentNodesSets" : [ ],
     "logicalDefinitionAxioms" : [ ],
