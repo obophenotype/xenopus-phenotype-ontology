@@ -10,16 +10,26 @@ Ontology(<urn:unnamed:ontology#ont1>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000460>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002250>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000028>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000179>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000188>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000202>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0000475>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003024>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003025>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0003217>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XAO_0004063>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103706>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103707>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103708>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0103709>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131749>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141333>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141334>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141335>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141336>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141337>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002573>))
@@ -71,6 +81,46 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0131749> "increasing of pigment in the animal hemisphere"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0131749> "increased pigmentation in the animal hemisphere"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0131749> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0002250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0000202>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0141333> (increased pigmentation in the retinal pigmented epithelium)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0141333> "Increased or increasing of pigmentation of retinal pigmented epithelium."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0141333> "increasing of pigment in the retinal pigmented epithelium"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0141333> "retinal pigmented epithelium hyperpigmentation"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0141333> "increased pigmentation in the retinal pigmented epithelium"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0141333> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0002250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0003217>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0141334> (increased pigmentation in the whole organism)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0141334> "Increased or increasing of pigmentation of whole organism."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0141334> "increasing of pigment in the whole organism"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0141334> "whole organism hyperpigmentation"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0141334> "increased pigmentation in the whole organism"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0141334> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0002250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0003004>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0141335> (increased pigmentation in the dorsal fin)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0141335> "Increased or increasing of pigmentation of dorsal fin."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0141335> "dorsal fin hyperpigmentation"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0141335> "increasing of pigment in the dorsal fin"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0141335> "increased pigmentation in the dorsal fin"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0141335> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0002250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0004063>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0141336> (increased pigmentation in the epidermis)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0141336> "Increased or increasing of pigmentation of epidermis."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0141336> "epidermis hyperpigmentation"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0141336> "increasing of pigment in the epidermis"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0141336> "increased pigmentation in the epidermis"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0141336> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0002250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0000028>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0141337> (increased pigmentation in the eye)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0141337> "Increased or increasing of pigmentation of eye."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0141337> "eye hyperpigmentation"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0141337> "increasing of pigment in the eye"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0141337> "increased pigmentation in the eye"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0141337> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0002250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0000179>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 
 )

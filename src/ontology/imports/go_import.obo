@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: xpo/releases/2020-05-08/imports/go_import.owl
+data-version: xpo/releases/2020-06-26/imports/go_import.owl
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_agr "AGR slim"
@@ -1818,16 +1818,14 @@ is_a: GO:0005575 ! cellular_component
 
 [Term]
 id: GO:0005623
-name: cell
+name: obsolete cell
 namespace: cellular_component
-def: "The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope." [GOC:go_curators]
-subset: goslim_chembl
-subset: goslim_generic
-subset: goslim_plant
+def: "OBSOLETE. The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope." [GOC:go_curators]
+comment: This term was obsoleted because it was redundant with the root class of the cell ontology, CL:0000000.
 xref: NIF_Subcellular:sao1813327414
 xref: Wikipedia:Cell_(biology)
-is_a: GO:0005575 ! cellular_component
 property_value: IAO:0000589 "cell and encapsulating structures" xsd:string
+is_obsolete: true
 
 [Term]
 id: GO:0005634
@@ -11028,6 +11026,17 @@ intersection_of: positively_regulates GO:0007268 ! chemical synaptic transmissio
 relationship: positively_regulates GO:0007268 ! chemical synaptic transmission
 
 [Term]
+id: GO:0050839
+name: cell adhesion molecule binding
+namespace: molecular_function
+def: "Interacting selectively and non-covalently with a cell adhesion molecule." [GOC:ai]
+synonym: "adhesive extracellular matrix constituent" RELATED []
+synonym: "CAM binding" EXACT []
+synonym: "cell adhesion molecule activity" RELATED []
+synonym: "cell adhesion receptor activity" RELATED []
+is_a: GO:0005515 ! protein binding
+
+[Term]
 id: GO:0050877
 name: nervous system process
 namespace: biological_process
@@ -15069,10 +15078,10 @@ creation_date: 2014-03-06T11:55:32Z
 id: GO:0098631
 name: cell adhesion mediator activity
 namespace: molecular_function
-def: "The binding by a cell-adhesion protein on the cell surface to an extracellular matrix component, to mediate adhesion of the cell to the external substrate or to another cell." [Wikipedia:Cell_adhesion]
+def: "The binding by a cell-adhesion protein on a cell surface to an adhesion molecule on another cell surface, to mediate adhesion of the cell to the external substrate or to another cell." [GOC:vw, Wikipedia:Cell_adhesion]
 synonym: "cell adhesion molecule" EXACT []
 synonym: "protein binding involved in cell adhesion" EXACT []
-is_a: GO:0005488 ! binding
+is_a: GO:0050839 ! cell adhesion molecule binding
 intersection_of: GO:0005488 ! binding
 intersection_of: part_of GO:0007155 ! cell adhesion
 relationship: part_of GO:0007155 ! cell adhesion
