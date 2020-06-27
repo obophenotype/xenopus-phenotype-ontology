@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: xpo/releases/2020-06-26/imports/xao_import.owl
+data-version: xpo/releases/2020-06-27/imports/xao_import.owl
 subsetdef: anatomical_site_slim "Anatomical Site slim"
 subsetdef: frequent_anatomy_items "Frequently Used Anatomy slim"
 subsetdef: organism_views "Organism View slim"
@@ -10,7 +10,7 @@ ontology: xpo/imports/xao_import
 id: XAO:0000000
 name: Xenopus anatomical entity
 namespace: xenopus_anatomy
-def: "Entity that is either an individual member of Xenopus or constitutes the structural organization of an individual member Xenopus." [CARO:0000000, XAO:EJS]
+def: "An entity that is either an individual member of Xenopus or constitutes the structural organization of an individual member of Xenopus." [CARO:0000000, XAO:EJS]
 xref: CARO:0000000
 
 [Term]
@@ -1985,6 +1985,7 @@ def: "A fibrous, strong, connective tissue that connects muscle to bone." [http:
 xref: UBERON:0000043
 is_a: XAO:0004030 ! dense regular connective tissue
 relationship: develops_from XAO:0000399 ! tendon fibroblast
+relationship: develops_from XAO:0005325 ! syndetome
 relationship: end_stage XAO:0000437 ! death
 relationship: start_stage XAO:1000040 ! NF stage 24
 
@@ -2848,7 +2849,8 @@ relationship: start_stage XAO:1000039 ! NF stage 23
 id: XAO:0000252
 name: neurocoel
 namespace: xenopus_anatomy
-def: "Spinal cord structure that is part of the ventricular system and is filled with cerebral-spinal fluid and runs the length of the spinal cord." [VHOG:0001119]
+def: "An anatomical space that is surrounded by a neural tube." [UBERON:0003842]
+synonym: "neural tube lumen" EXACT []
 xref: UBERON:0003842
 is_a: XAO:0003190 ! anatomical space
 relationship: end_stage XAO:0000437 ! death
@@ -3332,7 +3334,7 @@ relationship: start_stage XAO:1000057 ! NF stage 45
 
 [Term]
 id: XAO:0000293
-name: neural fold (obsolete)
+name: obsolete neural fold
 namespace: xenopus_anatomy
 is_obsolete: true
 replaced_by: XAO:0004087
@@ -3588,7 +3590,7 @@ def: "Neural crest cells that migrate along two major pathways: through the somi
 synonym: "TNC" EXACT []
 synonym: "trunk crest" RELATED []
 xref: UBERON:0003083
-is_a: XAO:0003040 ! tissue
+is_a: XAO:0005327 ! chordal neural crest
 relationship: develops_from XAO:0000001 ! ectoderm
 relationship: end_stage XAO:1000046 ! NF stage 31
 relationship: part_of XAO:0000048 ! neural crest
@@ -4452,7 +4454,7 @@ name: trunk somite 1
 namespace: xenopus_anatomy
 def: "Trunk somite that is initially the fifth somite, first forming around NF stage 19 and becoming more anteriorly positioned as the head somites degenerate. It is the most anterior somite by NF stage 45 and is adjacent to the otic vesicle." [ISBN:0815318960]
 synonym: "fifth somite" RELATED []
-synonym: "somite 1 " EXACT []
+synonym: "somite 1" EXACT []
 is_a: XAO:0000314 ! trunk somite
 relationship: end_stage XAO:1000059 ! NF stage 47
 relationship: start_stage XAO:1000035 ! NF stage 19
@@ -4756,7 +4758,7 @@ is_a: XAO:0004620 ! neurogenic placode
 relationship: develops_from XAO:0004207 ! posterior placodal area
 relationship: end_stage XAO:1000053 ! NF stage 41
 relationship: part_of XAO:0000095 ! lateral line system
-relationship: start_stage XAO:1000045 ! NF stage 29 and 30
+relationship: start_stage XAO:1000044 ! NF stage 28
 
 [Term]
 id: XAO:0000441
@@ -6955,7 +6957,7 @@ relationship: start_stage XAO:1000093 ! adult frog stage
 
 [Term]
 id: XAO:0003148
-name: germ line cell
+name: obsolete germ line cell
 namespace: xenopus_anatomy
 is_obsolete: true
 replaced_by: XAO:0000111
@@ -7031,6 +7033,7 @@ namespace: xenopus_anatomy
 def: "A cell of the B cell, T cell, or natural killer cell lineage." [CL:0000542]
 xref: CL:0000542
 is_a: XAO:0003012 ! cell
+relationship: develops_from XAO:0005323 ! lymphoblast
 relationship: end_stage XAO:0000437 ! death
 relationship: part_of XAO:0003152 ! immune system
 relationship: start_stage XAO:1000052 ! NF stage 40
@@ -7826,7 +7829,7 @@ is_a: XAO:0003037 ! multi-tissue structure
 relationship: develops_from XAO:0000014 ! midbrain
 relationship: end_stage XAO:0000437 ! death
 relationship: part_of XAO:0000014 ! midbrain
-relationship: start_stage XAO:1000052 ! NF stage 40
+relationship: start_stage XAO:1000049 ! NF stage 35 and 36
 created_by: eriksegerdell
 creation_date: 2009-07-15T03:37:08Z
 
@@ -9599,6 +9602,7 @@ id: XAO:0004092
 name: preplacodal ectoderm
 namespace: xenopus_anatomy
 def: "A thick, U-shaped primordium positioned at the border of the future epidermis and the neural plate/neural crest forming regions, in the neural stage embryo. This field of naive ectoderm is subdivided into 3 domains, each with distinct gene expression profiles: the anterior PPE (bottom of the U), the lateral PPE (the curves of the U), and the posterior PPE (arms of the U and adjacent to the neural crest/neural plate border). The PPE differentiates into the sensory placodes, which in turn form the adenohypophysis/anterior pituitary gland and sensory organs (such as the olfactory epithelium, lens, trigeminal nerves, epibranchial nerves, otic vesicles and lateral lines)." [PMID:30291163]
+synonym: "placodal area" RELATED []
 synonym: "PPE" EXACT []
 synonym: "pre-placodal ectoderm" EXACT []
 is_a: XAO:0003040 ! tissue
@@ -10048,7 +10052,7 @@ id: XAO:0004126
 name: cardiac valve
 namespace: xenopus_anatomy
 def: "Portion of tissue that prevents regurgitation of blood from the ventricles to the atria or from the pulmonary arteries or aorta to the ventricles." [UBERON:0000946]
-synonym: "heart valve " RELATED []
+synonym: "heart valve" RELATED []
 xref: UBERON:0000946
 is_a: XAO:0003040 ! tissue
 relationship: end_stage XAO:0000437 ! death
@@ -10940,7 +10944,7 @@ namespace: xenopus_anatomy
 def: "One of the 5 distinct and partially overlapping functional domains of the premigratory neural crest. Together with the sacral neural crest cells, they develop into the ganglia of the enteric nervous system, also known as the parasympathetic ganglia. These cells, between the head and trunk, contribute post-cranially to the heart and gut, the chromatophores (pigment cells) of the epidermis, and the majority of the neurons and glial cells of the enteric nervous system. Both vagal and sacral neural crest cells contribute to the enteric nervous system in the hindgut." [PMID:9753687, XAO:CJZ]
 synonym: "VNC" EXACT []
 xref: UBERON:0005428
-is_a: XAO:0003040 ! tissue
+is_a: XAO:0005327 ! chordal neural crest
 relationship: develops_from XAO:0000001 ! ectoderm
 relationship: end_stage XAO:1000046 ! NF stage 31
 relationship: part_of XAO:0000048 ! neural crest
@@ -10955,7 +10959,7 @@ namespace: xenopus_anatomy
 def: "One of the 5 distinct and partially overlapping functional domains of the premigratory neural crest. Together with the vagal neural crest cells, they develop into the ganglia of the enteric nervous system, also known as the parasympathetic ganglia. Sacral crest cells are associated with extrinsic nerve fibers of the hindgut and colon." [XAO:CJZ]
 synonym: "SNC" EXACT []
 xref: UBERON:0010075
-is_a: XAO:0003040 ! tissue
+is_a: XAO:0005327 ! chordal neural crest
 relationship: develops_from XAO:0000001 ! ectoderm
 relationship: end_stage XAO:1000046 ! NF stage 31
 relationship: part_of XAO:0000048 ! neural crest
@@ -11343,7 +11347,7 @@ synonym: "anterior ventral lateral line placode" EXACT []
 synonym: "pAV" EXACT []
 is_a: XAO:0000440 ! lateral line placode
 relationship: end_stage XAO:1000053 ! NF stage 41
-relationship: start_stage XAO:1000048 ! NF stage 33 and 34
+relationship: start_stage XAO:1000044 ! NF stage 28
 created_by: eriksegerdell
 creation_date: 2012-01-27T09:32:47Z
 
@@ -11354,8 +11358,9 @@ namespace: xenopus_anatomy
 def: "Lateral line placode that gives rise to the anterior lateral line nerve." [XAO:EJS]
 synonym: "pre-auditory lateral line placode" RELATED []
 is_a: XAO:0000440 ! lateral line placode
+relationship: develops_from XAO:0000440 ! lateral line placode
 relationship: end_stage XAO:1000053 ! NF stage 41
-relationship: start_stage XAO:1000048 ! NF stage 33 and 34
+relationship: start_stage XAO:1000044 ! NF stage 28
 created_by: eriksegerdell
 
 [Term]
@@ -11366,7 +11371,7 @@ def: "Lateral line placode that gives rise to the middle lateral line nerve." [X
 synonym: "intermediate lateral line placode" RELATED []
 is_a: XAO:0000440 ! lateral line placode
 relationship: end_stage XAO:1000053 ! NF stage 41
-relationship: start_stage XAO:1000048 ! NF stage 33 and 34
+relationship: start_stage XAO:1000044 ! NF stage 28
 created_by: eriksegerdell
 
 [Term]
@@ -11378,7 +11383,7 @@ synonym: "pP" EXACT []
 synonym: "vagus lateral line placode" RELATED []
 is_a: XAO:0000440 ! lateral line placode
 relationship: end_stage XAO:1000053 ! NF stage 41
-relationship: start_stage XAO:1000048 ! NF stage 33 and 34
+relationship: start_stage XAO:1000044 ! NF stage 28
 created_by: eriksegerdell
 
 [Term]
@@ -11921,7 +11926,7 @@ synonym: "pAD" EXACT []
 is_a: XAO:0000440 ! lateral line placode
 relationship: develops_from XAO:0004206 ! anterior placodal area
 relationship: end_stage XAO:1000053 ! NF stage 41
-relationship: start_stage XAO:1000048 ! NF stage 33 and 34
+relationship: start_stage XAO:1000044 ! NF stage 28
 created_by: eriksegerdell
 
 [Term]
@@ -12309,14 +12314,13 @@ id: XAO:0004303
 name: pretectum
 namespace: xenopus_anatomy
 def: "Multi-tissue structure that is the dorsal part of the diencephalon and the major sensory input to which is visual." [XAO:EJS, ZFA:0000418]
-synonym: "forebrain-midbrain boundary" RELATED []
 synonym: "P1" RELATED []
 synonym: "prosomere 1" RELATED []
 synonym: "PT" EXACT []
 is_a: XAO:0003037 ! multi-tissue structure
 relationship: end_stage XAO:0000437 ! death
 relationship: part_of XAO:0000013 ! diencephalon
-relationship: start_stage XAO:1000038 ! NF stage 22
+relationship: start_stage XAO:1000024 ! NF stage 14
 created_by: eriksegerdell
 creation_date: 2012-03-10T03:28:09Z
 
@@ -13831,6 +13835,7 @@ namespace: xenopus_anatomy
 def: "Ganglion that develops from a cranial ectodermal placode and contains sensory neurons that innervate the posterior lateral line system." [XAO:EJS, ZFA:0001314]
 synonym: "posterior lateral line ganglia" RELATED PLURAL []
 is_a: XAO:0004457 ! lateral line ganglion
+relationship: develops_from XAO:0004223 ! posterior lateral line placode
 relationship: end_stage XAO:0000437 ! death
 relationship: start_stage XAO:1000044 ! NF stage 28
 created_by: eriksegerdell
@@ -16314,7 +16319,7 @@ creation_date: 2015-05-14T17:39:42Z
 id: XAO:0005006
 name: right
 namespace: xenopus_anatomy
-def: "Spatial concept pertaining to being located on or directed toward the side of the body to the west when facing north." [NCIt:Right]
+def: "Spatial concept pertaining to being located on or directed toward the side of the body to the east when facing north." [NCIt:Right]
 subset: anatomical_site_slim
 is_a: XAO:0003185 ! anatomical direction
 created_by: eriksegerdell
@@ -19420,14 +19425,14 @@ relationship: start_stage XAO:1000036 ! NF stage 20
 
 [Term]
 id: XAO:0005252
-name: left olfactory pit
+name: obsolete left olfactory pit
 namespace: xenopus_anatomy
 is_obsolete: true
 consider: XAO:0000275
 
 [Term]
 id: XAO:0005253
-name: right olfactory pit
+name: obsolete right olfactory pit
 namespace: xenopus_anatomy
 is_obsolete: true
 consider: XAO:0000275
@@ -19455,28 +19460,28 @@ relationship: start_stage XAO:1000025 ! NF stage 15
 
 [Term]
 id: XAO:0005256
-name: left eye
+name: obsolete left eye
 namespace: xenopus_anatomy
 is_obsolete: true
 consider: XAO:0000179
 
 [Term]
 id: XAO:0005257
-name: right eye
+name: obsolete right eye
 namespace: xenopus_anatomy
 is_obsolete: true
 consider: XAO:0000179
 
 [Term]
 id: XAO:0005258
-name: left inner ear
+name: obsolete left inner ear
 namespace: xenopus_anatomy
 is_obsolete: true
 consider: XAO:0000192
 
 [Term]
 id: XAO:0005259
-name: right inner ear
+name: obsolete right inner ear
 namespace: xenopus_anatomy
 is_obsolete: true
 consider: XAO:0000192
@@ -19587,72 +19592,70 @@ relationship: start_stage XAO:1000067 ! NF stage 55
 
 [Term]
 id: XAO:0005270
-name: left part of branchial arch skeleton
+name: obsolete left part of branchial arch skeleton
 namespace: xenopus_anatomy
 is_obsolete: true
 consider: XAO:0003180
 
 [Term]
 id: XAO:0005271
-name: right part of branchial arch skeleton
+name: obsolete right part of branchial arch skeleton
 namespace: xenopus_anatomy
 is_obsolete: true
 consider: XAO:0003180
 
 [Term]
 id: XAO:0005272
-name: left forelimb
+name: obsolete left forelimb
 namespace: xenopus_anatomy
 is_obsolete: true
 consider: XAO:0003030
 
 [Term]
 id: XAO:0005273
-name: right forelimb
+name: obsolete right forelimb
 namespace: xenopus_anatomy
 is_obsolete: true
 consider: XAO:0003030
 
 [Term]
 id: XAO:0005274
-name: left hindlimb
+name: obsolete left hindlimb
 namespace: xenopus_anatomy
 is_obsolete: true
 consider: XAO:0003031
 
 [Term]
 id: XAO:0005275
-name: right hindlimb
+name: obsolete right hindlimb
 namespace: xenopus_anatomy
 is_obsolete: true
 consider: XAO:0003031
 
 [Term]
 id: XAO:0005276
-name: left optic vesicle
-def: "Optic vesicle located on the left side of the organism." [XAO:EJS]
-is_a: XAO:0000228 ! optic vesicle
-relationship: end_stage XAO:1000047 ! NF stage 32
-relationship: start_stage XAO:1000034 ! NF stage 18
+name: obsolete left optic vesicle
+namespace: xenopus_anatomy
+is_obsolete: true
+consider: XAO:0000228
 
 [Term]
 id: XAO:0005277
-name: right optic vesicle
-def: "Optic vesicle located on the right side of the organism." [XAO:EJS]
-is_a: XAO:0000228 ! optic vesicle
-relationship: end_stage XAO:1000047 ! NF stage 32
-relationship: start_stage XAO:1000034 ! NF stage 18
+name: obsolete right optic vesicle
+namespace: xenopus_anatomy
+is_obsolete: true
+consider: XAO:0000228
 
 [Term]
 id: XAO:0005278
-name: left part of brain
+name: obsolete left part of brain
 namespace: xenopus_anatomy
 is_obsolete: true
 consider: XAO:0000010
 
 [Term]
 id: XAO:0005279
-name: right part of brain
+name: obsolete right part of brain
 namespace: xenopus_anatomy
 is_obsolete: true
 consider: XAO:0000010
@@ -20122,6 +20125,59 @@ is_a: XAO:0003186 ! anatomical region
 relationship: end_stage XAO:0000437 ! death
 relationship: part_of XAO:0004024 ! craniofacial region
 relationship: start_stage XAO:1000044 ! NF stage 28
+
+[Term]
+id: XAO:0005322
+name: tadpole
+namespace: xenopus_anatomy
+def: "An organism at the tadpole stage." [UBERON:0002547]
+xref: UBERON:0002547
+is_a: XAO:0003004 ! whole organism
+relationship: end_stage XAO:1000078 ! NF stage 66
+relationship: start_stage XAO:1000057 ! NF stage 45
+
+[Term]
+id: XAO:0005323
+name: lymphoblast
+namespace: xenopus_anatomy
+def: "An immature cell which typically differentiates to form a mature lymphocyte." [XAO:curators]
+is_a: XAO:0003012 ! cell
+relationship: end_stage XAO:0000437 ! death
+relationship: part_of XAO:0003152 ! immune system
+relationship: start_stage XAO:1000020 ! NF stage 10
+
+[Term]
+id: XAO:0005324
+name: anterior lateral line ganglion
+namespace: xenopus_anatomy
+def: "Ganglion that develops from a cranial ectodermal placode and contains sensory neurons that innervate the anterior lateral line system." [XAO:EJS]
+synonym: "anterior lateral line ganglia" RELATED PLURAL []
+is_a: XAO:0004457 ! lateral line ganglion
+relationship: develops_from XAO:0004221 ! anterior lateral line placode
+relationship: end_stage XAO:0000437 ! death
+relationship: start_stage XAO:1000044 ! NF stage 28
+
+[Term]
+id: XAO:0005325
+name: syndetome
+namespace: xenopus_anatomy
+def: "Subdomain that occupies the dorso-lateral portion of a somite and comprises tendon progenitor cells. It is located between the neighboring sclerotome and myotome, at the future site of connection between bone and muscle, and gives rise to the axial tendons of the body." [https://discovery.lifemapsc.com/in-vivo-development/somite/syndetome]
+is_a: XAO:0003040 ! tissue
+relationship: develops_from XAO:0000397 ! sclerotome
+relationship: end_stage XAO:1000059 ! NF stage 47
+relationship: part_of XAO:0000058 ! somite
+relationship: start_stage XAO:1000027 ! NF stage 17
+
+[Term]
+id: XAO:0005327
+name: chordal neural crest
+namespace: xenopus_anatomy
+def: "Neural crest comprising sacral, vagal, and trunk neural crest." [XAO:curators]
+is_a: XAO:0003040 ! tissue
+relationship: develops_from XAO:0000001 ! ectoderm
+relationship: end_stage XAO:1000046 ! NF stage 31
+relationship: part_of XAO:0000048 ! neural crest
+relationship: start_stage XAO:1000023 ! NF stage 13
 
 [Term]
 id: XAO:1000000
