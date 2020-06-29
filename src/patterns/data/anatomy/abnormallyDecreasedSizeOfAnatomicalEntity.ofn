@@ -1930,7 +1930,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0128276>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0128277>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0128278>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0128279>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0128280>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0128281>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0128282>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0128283>))
@@ -2380,7 +2379,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0128731>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0128732>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0128733>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0128734>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0128735>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0128736>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0128737>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0128738>))
@@ -3154,6 +3152,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131607>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131608>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131609>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0131610>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141449>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141450>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002573>))
@@ -5601,13 +5601,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0128279> "abnormally small m. rectus anterior primordium"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0128279> "decreased size of the m. rectus anterior primordium"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0128279> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000587> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0004449>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
-
-# Class: <http://purl.obolibrary.org/obo/XPO_0128280> (decreased size of the obsolete left optic vesicle)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0128280> "An abnormal reduction in the size of the obsolete left optic vesicle."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0128280> "abnormally small obsolete left optic vesicle"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0128280> "decreased size of the obsolete left optic vesicle"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0128280> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000587> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005276>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 # Class: <http://purl.obolibrary.org/obo/XPO_0128281> (decreased size of the trigeminal placode)
 
@@ -8751,13 +8744,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0128734> "abnormally small spermatocyte"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0128734> "decreased size of the spermatocyte"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0128734> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000587> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0003019>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
-
-# Class: <http://purl.obolibrary.org/obo/XPO_0128735> (decreased size of the obsolete right optic vesicle)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0128735> "An abnormal reduction in the size of the obsolete right optic vesicle."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0128735> "abnormally small obsolete right optic vesicle"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0128735> "decreased size of the obsolete right optic vesicle"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0128735> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000587> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005277>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 # Class: <http://purl.obolibrary.org/obo/XPO_0128736> (decreased size of the chordal neural plate border)
 
@@ -14169,6 +14155,20 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0131610> "abnormally small mandibular nerve"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0131610> "decreased size of the mandibular nerve"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0131610> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000587> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005294>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0141449> (decreased size of the obsolete left optic vesicle)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0141449> "An abnormal reduction in the size of the obsolete left optic vesicle."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0141449> "abnormally small obsolete left optic vesicle"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0141449> "decreased size of the obsolete left optic vesicle"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0141449> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000587> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005276>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0141450> (decreased size of the obsolete right optic vesicle)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0141450> "An abnormal reduction in the size of the obsolete right optic vesicle."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0141450> "abnormally small obsolete right optic vesicle"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0141450> "decreased size of the obsolete right optic vesicle"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0141450> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000587> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005277>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 
 )

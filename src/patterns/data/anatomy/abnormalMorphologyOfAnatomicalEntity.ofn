@@ -3130,8 +3130,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0107410>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0107411>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0107412>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0107413>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0107420>))
-Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0107421>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0107426>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141277>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141278>))
@@ -3172,6 +3170,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141312>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141313>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141314>))
 Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141316>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141455>))
+Declaration(Class(<http://purl.obolibrary.org/obo/XPO_0141456>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002573>))
@@ -13957,20 +13957,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0107413> "abnormal regenerating pelvic girdle morphology"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0107413> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005269>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
-# Class: <http://purl.obolibrary.org/obo/XPO_0107420> (abnormal obsolete left optic vesicle morphology)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0107420> "Any unspecified morphological anomaly of the obsolete left optic vesicle, such as, for example, abnormal shape or colour."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0107420> "abnormal morphology of obsolete left optic vesicle"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0107420> "abnormal obsolete left optic vesicle morphology"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0107420> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005276>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
-
-# Class: <http://purl.obolibrary.org/obo/XPO_0107421> (abnormal obsolete right optic vesicle morphology)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0107421> "Any unspecified morphological anomaly of the obsolete right optic vesicle, such as, for example, abnormal shape or colour."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0107421> "abnormal morphology of obsolete right optic vesicle"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0107421> "abnormal obsolete right optic vesicle morphology"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0107421> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005277>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
-
 # Class: <http://purl.obolibrary.org/obo/XPO_0107426> (abnormal yolk platelet morphology)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0107426> "Any unspecified morphological anomaly of the yolk platelet, such as, for example, abnormal shape or colour."^^xsd:string)
@@ -14250,6 +14236,20 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0141316> "abnormal morphology of anatomical region"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0141316> "abnormal anatomical region morphology"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0141316> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0003186>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0141455> (abnormal obsolete left optic vesicle morphology)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0141455> "Any unspecified morphological anomaly of the obsolete left optic vesicle, such as, for example, abnormal shape or colour."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0141455> "abnormal morphology of obsolete left optic vesicle"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0141455> "abnormal obsolete left optic vesicle morphology"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0141455> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005276>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
+
+# Class: <http://purl.obolibrary.org/obo/XPO_0141456> (abnormal obsolete right optic vesicle morphology)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_0141456> "Any unspecified morphological anomaly of the obsolete right optic vesicle, such as, for example, abnormal shape or colour."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/XPO_0141456> "abnormal morphology of obsolete right optic vesicle"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_0141456> "abnormal obsolete right optic vesicle morphology"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_0141456> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/XAO_0005277>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
 
 )
