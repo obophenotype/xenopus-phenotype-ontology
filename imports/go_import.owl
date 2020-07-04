@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/xpo/imports/go_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/xpo/releases/2020-06-30/imports/go_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/xpo/releases/2020-07-04/imports/go_import.owl"/>
     </owl:Ontology>
     
 
@@ -410,7 +410,7 @@
         <owl:annotatedTarget>An intracellular protein kinase cascade containing at least a MAPK, a MAPKK and a MAP3K. The cascade can also contain an additional tiers: the upstream MAP4K. The kinases in each tier phosphorylate and activate the kinase in the downstream tier to transmit a signal within a cell.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:bf</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:mtg_signaling_feb11</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:20811974</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20811974</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:9561267</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -2452,7 +2452,7 @@
         <oboInOwl:hasAlternativeId>GO:0000129</oboInOwl:hasAlternativeId>
         <oboInOwl:hasBroadSynonym>DNA-directed RNA polymerase activity</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>transcriptase</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MetaCyc:DNA-DIRECTED-RNA-POLYMERASE-RXN</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Reactome:R-HSA-111264</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Reactome:R-HSA-167113</oboInOwl:hasDbXref>
@@ -2493,14 +2493,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003899"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Catalysis of the reaction: nucleoside triphosphate + RNA(n) = diphosphate + RNA(n+1). Utilizes a DNA template, i.e. the catalysis of DNA-template-directed extension of the 3&apos;-end of an RNA strand by one nucleotide at a time. Can initiate a chain &apos;de novo&apos;.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:pf</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003899"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
         <owl:annotatedTarget>transcriptase</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003899"/>
@@ -2608,67 +2608,67 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003899"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>DNA-dependent RNA nucleotidyltransferase activity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003899"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>DNA-dependent RNA polymerase activity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003899"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>DNA-dependent ribonucleate nucleotidyltransferase activity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003899"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>RNA nucleotidyltransferase (DNA-directed) activity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003899"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>deoxyribonucleic acid-dependent ribonucleic acid polymerase activity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003899"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>nucleoside-triphosphate:RNA nucleotidyltransferase (DNA-directed) activity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003899"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>RNA polymerase I activity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003899"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>RNA polymerase II activity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003899"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>RNA polymerase III activity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003899"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>C RNA formation factors</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003899"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>C ribonucleic acid formation factors</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3304,7 +3304,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Catalysis of the hydrolysis of internal, alpha-peptide bonds in a polypeptide chain by a mechanism in which the sulfhydryl group of a cysteine residue at the active center acts as a nucleophile.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>http://merops.sanger.ac.uk/about/glossary.htm#CATTYPE</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://merops.sanger.ac.uk/about/glossary.htm#CATTYPE</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://merops.sanger.ac.uk/about/glossary.htm#ENDOPEPTIDASE</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -7161,7 +7161,7 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>MAPK</owl:annotatedTarget>
         <oboInOwl:hasDbXref>EC:2.7.11.24</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:20811974</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20811974</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -8615,7 +8615,7 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mtg_apoptosis</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0198506732</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:18846107</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:18846107</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:21494263</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -9399,13 +9399,13 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:bf</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:signaling</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:11790549</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:20811974</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20811974</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0007254"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>c-Jun N-terminal kinase cascade</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PMID:20811974</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20811974</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0007254"/>
@@ -9806,7 +9806,7 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>axon morphogenesis</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:bf</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:23517308</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:23517308</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0007409"/>
@@ -10572,7 +10572,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Catalysis of the hydrolysis of peptide bonds in a polypeptide chain by a mechanism in which the sulfhydryl group of a cysteine residue at the active center acts as a nucleophile.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>http://merops.sanger.ac.uk/about/glossary.htm#CATTYPE</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://merops.sanger.ac.uk/about/glossary.htm#CATTYPE</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008234"/>
@@ -10625,7 +10625,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The multiplication or reproduction of cells, resulting in the expansion of a cell population.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:mb</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mb</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -14386,7 +14386,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0021915"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The process whose specific outcome is the progression of the neural tube over time, from its formation to the mature structure. The mature structure of the neural tube exists when the tube has been segmented into the forebrain, midbrain, hindbrain and spinal cord regions. In addition neural crest has budded away from the epithelium.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:cls</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:cls</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dgh</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jid</oboInOwl:hasDbXref>
@@ -14425,7 +14425,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0021992"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The process of expansion of cell numbers in the neural plate due to cell division of progenitor cells preferentially in the rostrocaudal direction, resulting in the elongation of the tissue.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:cls</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:cls</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dgh</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jid</oboInOwl:hasDbXref>
@@ -14466,7 +14466,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0022007"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The process of directed cell movement in the neural plate resulting in tissue elongation via intercalation of adjacent cells in an epithelial sheet at the midline, leading to narrowing and lengthening of the neural plate.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:cls</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:cls</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dgh</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jid</oboInOwl:hasDbXref>
@@ -14499,7 +14499,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0022008"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Generation of cells within the nervous system.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:cls</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:cls</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:curators</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dgh</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
@@ -18606,7 +18606,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0034062"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Catalysis of the reaction: nucleoside triphosphate + RNA(n) = diphosphate + RNA(n+1); the synthesis of RNA from ribonucleotide triphosphates in the presence of a nucleic acid template, via extension of the 3&apos;-end.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:pf</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -18614,13 +18614,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0034062"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
         <owl:annotatedTarget>ribonucleic acid nucleotidyltransferase</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0034062"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
         <owl:annotatedTarget>transcriptase</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0034062"/>
@@ -18638,61 +18638,61 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0034062"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>RNA nucleotidyltransferase activity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0034062"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>RNA transcriptase activity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0034062"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>ribonucleate nucleotidyltransferase activity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0034062"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>ribonucleate polymerase activity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0034062"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>ribonucleic acid polymerase activity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0034062"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>ribonucleic acid transcriptase activity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0034062"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>ribonucleic polymerase activity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0034062"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>ribonucleic transcriptase activity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0034062"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>C RNA formation factors</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0034062"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>C ribonucleic acid formation factors</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>EC:2.7.7.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC:2.7.7.6</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -20326,7 +20326,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The directed movement of a motile cell or organism in response to an external stimulus.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jl</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0192801023</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0192801023</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -21375,7 +21375,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0043434"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a peptide hormone stimulus. A peptide hormone is any of a class of peptides that are secreted into the blood stream and have endocrine functions in living animals.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PMID:11027914</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11027914</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:15134857</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Peptide_hormone</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -21808,7 +21808,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0044093"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any process that activates or increases the rate or extent of a molecular function, an elemental biological activity occurring at the molecular level, such as catalysis or binding.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:jl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:jl</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24498,7 +24498,7 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dgh</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jid</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:lm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:lm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:rl</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -24550,7 +24550,7 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dgh</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jid</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:lm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:lm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24590,7 +24590,7 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dgh</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jid</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:lm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:lm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24636,7 +24636,7 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dgh</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jid</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:lm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:lm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24664,7 +24664,7 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dgh</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jid</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:lm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:lm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24705,7 +24705,7 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dgh</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jid</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:lm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:lm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24751,7 +24751,7 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dgh</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jid</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:lm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:lm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24790,7 +24790,7 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dgh</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jid</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:lm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:lm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24835,7 +24835,7 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dgh</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jid</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:lm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:lm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24976,7 +24976,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0048841"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any process that modulates the frequency, rate or extent of axon extension involved in axon guidance.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:devbiol</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:devbiol</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -25018,7 +25018,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0048842"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any process that activates, maintains or increases the frequency, rate or extent of axon extension involved in axon guidance.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:devbiol</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:devbiol</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -26408,7 +26408,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The aggregation, arrangement and bonding together of a set of components to form the spindle, the array of microtubules and associated molecules that serves to move duplicated chromosomes apart.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:ai</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:expert_rg</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:expert_rg</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mtg_sensu</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -28311,7 +28311,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The process whose specific outcome is the progression of a muscle cell over time, from its formation to the mature structure. Muscle cell development does not include the steps involved in committing an unspecified cell to the muscle cell fate.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>CL:0000187</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:devbiol</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:devbiol</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -28336,7 +28336,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The process whose specific outcome is the progression of a striated muscle cell over time, from its formation to the mature structure. Striated muscle cells contain fibers that are divided by transverse bands into striations, and cardiac and skeletal muscle are types of striated muscle.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>CL:0000737</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:devbiol</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:devbiol</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -28390,7 +28390,7 @@
         <owl:annotatedTarget>The morphogenetic process in which an epithelium narrows along one axis and lengthens in a perpendicular axis.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dgf</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:12062082</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:12062082</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -28427,7 +28427,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The morphogenetic process in which an epithelium narrows along one axis and lengthens in a perpendicular axis usually resulting in the formation of the three primary germ layers, ectoderm, mesoderm and endoderm.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:12062082</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:12062082</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -28463,7 +28463,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The morphogenetic process in which an epithelium narrows along one axis and lengthens in a perpendicular axis contributing to the lengthening of the axis of an organism.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:12062082</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:12062082</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -28499,7 +28499,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The morphogenetic process in which an epithelium narrows along one axis and lengthens in a perpendicular axis contribution to the shaping of an organ.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:12062082</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:12062082</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -33435,7 +33435,7 @@
         <owl:annotatedTarget>The process in which the migration of a neuron projection is directed to a specific target site in response to a combination of attractive and repulsive cues.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:BHF</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:rl</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:22790009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:22790009</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -34090,7 +34090,7 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>eupodium</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:krc</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:rjd</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:rjd</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:10328951</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:9096956</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -36750,7 +36750,7 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:BHF</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:rl</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:22790009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:22790009</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1902284"/>
@@ -37843,7 +37843,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1902680"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any process that activates or increases the frequency, rate or extent of RNA biosynthetic process.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:jl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:jl</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000058</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -42571,8 +42571,8 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:bf</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000060</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:21106844</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:23517308</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:21106844</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:23517308</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1904938"/>
@@ -44778,7 +44778,7 @@
         <owl:annotatedTarget>Long distance growth of a single neuron projection involved in cellular development. A neuron projection is a prolongation or process extending from a nerve cell, e.g. an axon or dendrite.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:BHF</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:rl</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:22790009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:22790009</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
