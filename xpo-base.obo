@@ -1,15 +1,15 @@
 format-version: 1.2
-data-version: xpo/releases/2020-03-02/xpo-base.owl
+data-version: xpo/releases/2020-07-04/xpo-base.owl
 ontology: xpo/xpo-base
-property_value: http://purl.org/dc/elements/1.1/description "The XPO represents phenotypes occurring throughout the development of the African frogs Xenopus laevis and tropicalis." xsd:string
+property_value: http://purl.org/dc/elements/1.1/description "XPO represents anatomical, cellular, and gene function phenotypes occurring throughout the development of the African frogs Xenopus laevis and tropicalis." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Xenopus Phenotype Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type http://purl.obolibrary.org/obo/IAO_8000001 xsd:string
-property_value: http://purl.org/dc/terms/license "CC-BY" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/3.0/
 
 [Term]
 id: XPO:00000000
-name: Xenopus Phenotype
-def: "Phenotype of the Xenopus African clawed frog." []
+name: Xenopus phenotype
+def: "A phenotype observed in Xenopus." []
 
 [Term]
 id: XPO:0100002
@@ -19217,12 +19217,6 @@ def: "An increase in the size of the iridophore in the epidermis." []
 synonym: "enlarged iridophore in epidermis" EXACT []
 
 [Term]
-id: XPO:0103606
-name: increased size of the autopod in regenerating hindlimb
-def: "An increase in the size of the autopod in the regenerating hindlimb." []
-synonym: "enlarged autopod in regenerating hindlimb" EXACT []
-
-[Term]
 id: XPO:0103607
 name: increased size of the spike in regenerating hindlimb
 def: "An increase in the size of the spike in the regenerating hindlimb." []
@@ -19513,12 +19507,6 @@ def: "Increased width of pronephric tubule." []
 synonym: "wider pronephric tubule" EXACT []
 
 [Term]
-id: XPO:0103679
-name: malformed tarsus in regenerating hindlimb
-def: "An abnormally formed/malformed tarsus in regenerating hindlimb." []
-synonym: "malformed tarsus in regenerating hindlimb" EXACT []
-
-[Term]
 id: XPO:0103680
 name: absent blood in the heart
 def: "Absence of the blood in the heart." []
@@ -19591,28 +19579,10 @@ def: "Absence of the digit-joint region in the forelimb digit 5." []
 synonym: "Missing digit-joint region in the forelimb digit 5" EXACT []
 
 [Term]
-id: XPO:0103694
-name: absent autopod in the regenerating forelimb
-def: "Absence of the autopod in the regenerating forelimb." []
-synonym: "Missing autopod in the regenerating forelimb" EXACT []
-
-[Term]
 id: XPO:0103695
 name: absent perichondrium in the regenerating forelimb
 def: "Absence of the perichondrium in the regenerating forelimb." []
 synonym: "Missing perichondrium in the regenerating forelimb" EXACT []
-
-[Term]
-id: XPO:0103696
-name: absent autopod in the regenerating hindlimb
-def: "Absence of the autopod in the regenerating hindlimb." []
-synonym: "Missing autopod in the regenerating hindlimb" EXACT []
-
-[Term]
-id: XPO:0103697
-name: absent zeugopod in the regenerating hindlimb
-def: "Absence of the zeugopod in the regenerating hindlimb." []
-synonym: "Missing zeugopod in the regenerating hindlimb" EXACT []
 
 [Term]
 id: XPO:0103698
@@ -20796,18 +20766,6 @@ def: "Abnormality of regenerating pelvic girdle." []
 synonym: "abnormality of regenerating pelvic girdle" EXACT []
 
 [Term]
-id: XPO:0107333
-name: abnormal left optic vesicle
-def: "Abnormality of left optic vesicle." []
-synonym: "abnormality of left optic vesicle" EXACT []
-
-[Term]
-id: XPO:0107334
-name: abnormal right optic vesicle
-def: "Abnormality of right optic vesicle." []
-synonym: "abnormality of right optic vesicle" EXACT []
-
-[Term]
 id: XPO:0107339
 name: abnormal yolk platelet
 def: "Abnormality of yolk platelet." []
@@ -21156,18 +21114,6 @@ def: "Any unspecified morphological anomaly of the regenerating pelvic girdle, s
 synonym: "abnormal morphology of regenerating pelvic girdle" EXACT []
 
 [Term]
-id: XPO:0107420
-name: abnormal left optic vesicle morphology
-def: "Any unspecified morphological anomaly of the left optic vesicle, such as, for example, abnormal shape or colour." []
-synonym: "abnormal morphology of left optic vesicle" EXACT []
-
-[Term]
-id: XPO:0107421
-name: abnormal right optic vesicle morphology
-def: "Any unspecified morphological anomaly of the right optic vesicle, such as, for example, abnormal shape or colour." []
-synonym: "abnormal morphology of right optic vesicle" EXACT []
-
-[Term]
 id: XPO:0107426
 name: abnormal yolk platelet morphology
 def: "Any unspecified morphological anomaly of the yolk platelet, such as, for example, abnormal shape or colour." []
@@ -21175,897 +21121,597 @@ synonym: "abnormal morphology of yolk platelet" EXACT []
 
 [Term]
 id: XPO:0115308
-name: abnormal(ly) increased volume of brain (T)
+name: abnormally increased volume of brain
 def: "Abnormal(ly) increased volume of brain (Temporary definition)." []
 
 [Term]
 id: XPO:0115310
-name: abnormal(ly) incomplete structure of forebrain (T)
+name: abnormally incomplete structure of forebrain
 def: "Abnormal(ly) incomplete structure of forebrain (Temporary definition)." []
 
 [Term]
 id: XPO:0115314
-name: abnormal(ly) undivided of branchial crest (T)
+name: abnormally undivided branchial crest
 def: "Abnormal(ly) undivided of branchial crest (Temporary definition)." []
 
 [Term]
 id: XPO:0115316
-name: abnormal(ly) neoplastic of epidermis (T)
+name: abnormally neoplastic epidermis
 def: "Abnormal(ly) neoplastic of epidermis (Temporary definition)." []
 
 [Term]
 id: XPO:0115317
-name: abnormal(ly) incomplete structure of epidermis (T)
+name: abnormally incomplete structure of epidermis
 def: "Abnormal(ly) incomplete structure of epidermis (Temporary definition)." []
 
 [Term]
-id: XPO:0115333
-name: abnormal(ly) lacks parts or has fewer parts of type of dorsal aorta (T)
-def: "Abnormal(ly) lacks parts or has fewer parts of type of dorsal aorta (Temporary definition)." []
-
-[Term]
-id: XPO:0115339
-name: abnormal(ly) hypoplastic of notochord (T)
-def: "Abnormal(ly) hypoplastic of notochord (Temporary definition)." []
-
-[Term]
 id: XPO:0115340
-name: abnormal(ly) irregular spatial pattern of somite (T)
+name: abnormally irregular spatial pattern of somite
 def: "Abnormal(ly) irregular spatial pattern of somite (Temporary definition)." []
 
 [Term]
 id: XPO:0115345
-name: abnormal(ly) mislocalised anteriorly of somite (T)
+name: abnormally anteriorly mislocalised somite
 def: "Abnormal(ly) mislocalised anteriorly of somite (Temporary definition)." []
 
 [Term]
-id: XPO:0115346
-name: abnormal(ly) obtuse of somite (T)
-def: "Abnormal(ly) obtuse of somite (Temporary definition)." []
-
-[Term]
 id: XPO:0115348
-name: abnormal(ly) neoplastic of somite (T)
+name: abnormally neoplastic somite
 def: "Abnormal(ly) neoplastic of somite (Temporary definition)." []
 
 [Term]
 id: XPO:0115351
-name: abnormal(ly) increased volume of heart (T)
+name: abnormally increased volume of heart
 def: "Abnormal(ly) increased volume of heart (Temporary definition)." []
 
 [Term]
 id: XPO:0115352
-name: abnormal(ly) decreased volume of heart (T)
+name: abnormally decreased volume of heart
 def: "Abnormal(ly) decreased volume of heart (Temporary definition)." []
 
 [Term]
 id: XPO:0115353
-name: abnormal(ly) inverted of heart (T)
+name: abnormally inverted heart
 def: "Abnormal(ly) inverted of heart (Temporary definition)." []
 
 [Term]
 id: XPO:0115354
-name: abnormal(ly) edematous of heart (T)
+name: abnormally edematous heart
 def: "Abnormal(ly) edematous of heart (Temporary definition)." []
 
 [Term]
-id: XPO:0115356
-name: abnormal(ly) deformed of heart (T)
-def: "Abnormal(ly) deformed of heart (Temporary definition)." []
-
-[Term]
 id: XPO:0115357
-name: abnormal(ly) oblique orientation of heart (T)
+name: abnormally oblique orientation of heart
 def: "Abnormal(ly) oblique orientation of heart (Temporary definition)." []
 
 [Term]
 id: XPO:0115358
-name: abnormal(ly) decreased thickness of myocardium (T)
+name: abnormally decreased thickness of myocardium
 def: "Abnormal(ly) decreased thickness of myocardium (Temporary definition)." []
 
 [Term]
-id: XPO:0115360
-name: abnormal(ly) decreased area of dorsal marginal zone (T)
-def: "Abnormal(ly) decreased area of dorsal marginal zone (Temporary definition)." []
-
-[Term]
-id: XPO:0115361
-name: abnormal(ly) apoptotic of blastopore lip (T)
-def: "Abnormal(ly) apoptotic of blastopore lip (Temporary definition)." []
-
-[Term]
 id: XPO:0115362
-name: abnormal(ly) decreased adhesivity of prechordal plate (T)
+name: abnormally decreased adhesivity of prechordal plate
 def: "Abnormal(ly) decreased adhesivity of prechordal plate (Temporary definition)." []
 
 [Term]
 id: XPO:0115371
-name: abnormal(ly) decreased volume of archenteron (T)
+name: abnormally decreased volume of archenteron
 def: "Abnormal(ly) decreased volume of archenteron (Temporary definition)." []
 
 [Term]
 id: XPO:0115376
-name: abnormal(ly) decreased length of hindgut (T)
+name: abnormally decreased length of hindgut
 def: "Abnormal(ly) decreased length of hindgut (Temporary definition)." []
 
 [Term]
-id: XPO:0115382
-name: abnormal(ly) dorso-ventrally flattened of embryo (T)
-def: "Abnormal(ly) dorso-ventrally flattened of embryo (Temporary definition)." []
-
-[Term]
 id: XPO:0115383
-name: abnormal(ly) anterioralized of embryo (T)
+name: abnormally anterioralized embryo
 def: "Abnormal(ly) anterioralized of embryo (Temporary definition)." []
 
 [Term]
 id: XPO:0115384
-name: abnormal(ly) dorsalized of embryo (T)
+name: abnormally dorsalized embryo
 def: "Abnormal(ly) dorsalized of embryo (Temporary definition)." []
 
 [Term]
 id: XPO:0115385
-name: abnormal(ly) posterioralized of embryo (T)
+name: abnormally posterioralized embryo
 def: "Abnormal(ly) posterioralized of embryo (Temporary definition)." []
 
 [Term]
 id: XPO:0115386
-name: abnormal(ly) ventralized of embryo (T)
+name: abnormally ventralized embryo
 def: "Abnormal(ly) ventralized of embryo (Temporary definition)." []
 
 [Term]
 id: XPO:0115387
-name: abnormal(ly) agenesis of trachea (T)
+name: abnormal agenesis of trachea
 def: "Abnormal(ly) agenesis of trachea (Temporary definition)." []
 
 [Term]
 id: XPO:0115388
-name: abnormal(ly) decreased length of alimentary system (T)
+name: abnormally decreased length of alimentary system
 def: "Abnormal(ly) decreased length of alimentary system (Temporary definition)." []
 
 [Term]
 id: XPO:0115390
-name: abnormal(ly) edematous of alimentary system (T)
+name: abnormally edematous alimentary system
 def: "Abnormal(ly) edematous of alimentary system (Temporary definition)." []
 
 [Term]
 id: XPO:0115391
-name: abnormal(ly) undifferentiated of alimentary system (T)
+name: abnormally undifferentiated alimentary system
 def: "Abnormal(ly) undifferentiated of alimentary system (Temporary definition)." []
 
 [Term]
 id: XPO:0115392
-name: abnormal(ly) incomplete structure of alimentary system (T)
+name: abnormally incomplete structure of alimentary system
 def: "Abnormal(ly) incomplete structure of alimentary system (Temporary definition)." []
 
 [Term]
 id: XPO:0115393
-name: abnormal(ly) decreased volume of oral cavity (T)
+name: abnormally decreased volume of oral cavity
 def: "Abnormal(ly) decreased volume of oral cavity (Temporary definition)." []
 
 [Term]
-id: XPO:0115396
-name: abnormal(ly) hypoplastic of stomach (T)
-def: "Abnormal(ly) hypoplastic of stomach (Temporary definition)." []
-
-[Term]
 id: XPO:0115397
-name: abnormal(ly) decreased length of intestine (T)
+name: abnormally decreased length of intestine
 def: "Abnormal(ly) decreased length of intestine (Temporary definition)." []
 
 [Term]
 id: XPO:0115407
-name: abnormal(ly) multiple of pancreas (T)
+name: multiple pancreases
 def: "Abnormal(ly) multiple of pancreas (Temporary definition)." []
 
 [Term]
-id: XPO:0115408
-name: abnormal(ly) lacks parts or has fewer parts of type of mesentery (T)
-def: "Abnormal(ly) lacks parts or has fewer parts of type of mesentery (Temporary definition)." []
-
-[Term]
 id: XPO:0115411
-name: abnormal(ly) mislocalised anteriorly of skeletal muscle (T)
+name: abnormally anteriorly mislocalised skeletal muscle
 def: "Abnormal(ly) mislocalised anteriorly of skeletal muscle (Temporary definition)." []
 
 [Term]
-id: XPO:0115412
-name: abnormal(ly) decreased distance of eye (T)
-def: "Abnormal(ly) decreased distance of eye (Temporary definition)." []
-
-[Term]
 id: XPO:0115414
-name: abnormal(ly) increased amount of eye (T)
+name: abnormally increased number of eye
 def: "Abnormal(ly) increased amount of eye (Temporary definition)." []
 
 [Term]
 id: XPO:0115417
-name: abnormal(ly) wholly ventralized of eye (T)
+name: abnormally wholly ventralized eye
 def: "Abnormal(ly) wholly ventralized of eye (Temporary definition)." []
 
 [Term]
 id: XPO:0115419
-name: abnormal(ly) mislocalised anteriorly of eye (T)
+name: abnormally anteriorly mislocalised eye
 def: "Abnormal(ly) mislocalised anteriorly of eye (Temporary definition)." []
 
 [Term]
 id: XPO:0115420
-name: abnormal(ly) mislocalised medially of eye (T)
+name: abnormally medially mislocalised eye
 def: "Abnormal(ly) mislocalised medially of eye (Temporary definition)." []
 
 [Term]
-id: XPO:0115421
-name: abnormal(ly) deviation towards the medial side of eye (T)
-def: "Abnormal(ly) deviation towards the medial side of eye (Temporary definition)." []
-
-[Term]
-id: XPO:0115422
-name: abnormal(ly) decreased pigmentation of eye (T)
-def: "Abnormal(ly) decreased pigmentation of eye (Temporary definition)." []
-
-[Term]
 id: XPO:0115423
-name: abnormal(ly) incomplete structure of eye (T)
+name: abnormally incomplete structure of eye
 def: "Abnormal(ly) incomplete structure of eye (Temporary definition)." []
 
 [Term]
 id: XPO:0115430
-name: abnormal(ly) loose of axial mesoderm (T)
+name: abnormally loose axial mesoderm
 def: "Abnormal(ly) loose of axial mesoderm (Temporary definition)." []
 
 [Term]
-id: XPO:0115433
-name: abnormal(ly) delayed of blastopore (T)
-def: "Abnormal(ly) delayed of blastopore (Temporary definition)." []
-
-[Term]
 id: XPO:0115435
-name: abnormal(ly) increased area of blastopore (T)
+name: abnormally increased area of blastopore
 def: "Abnormal(ly) increased area of blastopore (Temporary definition)." []
 
 [Term]
 id: XPO:0115436
-name: abnormal(ly) delayed closure of blastopore (T)
+name: abnormally delayed closure of blastopore
 def: "Abnormal(ly) delayed closure of blastopore (Temporary definition)." []
 
 [Term]
-id: XPO:0115442
-name: abnormal(ly) hypoplastic of foregut (T)
-def: "Abnormal(ly) hypoplastic of foregut (Temporary definition)." []
-
-[Term]
 id: XPO:0115444
-name: abnormal(ly) edematous of foregut (T)
+name: abnormally edematous foregut
 def: "Abnormal(ly) edematous of foregut (Temporary definition)." []
 
 [Term]
 id: XPO:0115445
-name: abnormal(ly) decreased coiling of foregut (T)
+name: abnormally decreased coiling of foregut
 def: "Abnormal(ly) decreased coiling of foregut (Temporary definition)." []
 
 [Term]
 id: XPO:0115446
-name: abnormal(ly) duplicated of cardiac mesoderm (T)
+name: abnormally duplicated cardiac mesoderm
 def: "Abnormal(ly) duplicated of cardiac mesoderm (Temporary definition)." []
 
 [Term]
 id: XPO:0115447
-name: abnormal(ly) mislocalized abaxially of cardiac mesoderm (T)
+name: abnormally abaxially mislocalized cardiac mesoderm
 def: "Abnormal(ly) mislocalized abaxially of cardiac mesoderm (Temporary definition)." []
 
 [Term]
-id: XPO:0115450
-name: abnormal(ly) lacks parts or has fewer parts of type of posterior cardinal vein (T)
-def: "Abnormal(ly) lacks parts or has fewer parts of type of posterior cardinal vein (Temporary definition)." []
-
-[Term]
 id: XPO:0115457
-name: abnormal(ly) increased volume of blastocoel (T)
+name: abnormally increased volume of blastocoel
 def: "Abnormal(ly) increased volume of blastocoel (Temporary definition)." []
 
 [Term]
 id: XPO:0115459
-name: abnormal(ly) protruding out of of central endoderm (T)
+name: abnormally protruding central endoderm
 def: "Abnormal(ly) protruding out of of central endoderm (Temporary definition)." []
 
 [Term]
 id: XPO:0115463
-name: abnormal(ly) decreased height of anterior neural fold (T)
+name: abnormally decreased height of anterior neural fold
 def: "Abnormal(ly) decreased height of anterior neural fold (Temporary definition)." []
 
 [Term]
 id: XPO:0115467
-name: abnormal(ly) wholly dorsalized of trunk somite (T)
+name: abnormally wholly dorsalized trunk somite
 def: "Abnormal(ly) wholly dorsalized of trunk somite (Temporary definition)." []
 
 [Term]
 id: XPO:0115471
-name: abnormal(ly) disorganized of myotome (T)
+name: abnormally disorganized myotome
 def: "Abnormal(ly) disorganized of myotome (Temporary definition)." []
 
 [Term]
 id: XPO:0115473
-name: abnormal(ly) delayed phase of Mullerian duct (T)
+name: abnormally delayed phase of Mullerian duct
 def: "Abnormal(ly) delayed phase of Mullerian duct (Temporary definition)." []
 
 [Term]
 id: XPO:0115474
-name: abnormal(ly) decreased diameter of Mullerian duct (T)
+name: abnormally decreased diameter of Mullerian duct
 def: "Abnormal(ly) decreased diameter of Mullerian duct (Temporary definition)." []
 
 [Term]
-id: XPO:0115476
-name: abnormal(ly) lacks parts or has fewer parts of type of ventral aorta (T)
-def: "Abnormal(ly) lacks parts or has fewer parts of type of ventral aorta (Temporary definition)." []
-
-[Term]
 id: XPO:0115482
-name: abnormal(ly) pigmented of optic stalk (T)
+name: abnormally pigmented optic stalk
 def: "Abnormal(ly) pigmented of optic stalk (Temporary definition)." []
 
 [Term]
 id: XPO:0115484
-name: abnormal(ly) irregular spatial pattern of cranial neural crest (T)
+name: abnormally irregular spatial pattern of cranial neural crest
 def: "Abnormal(ly) irregular spatial pattern of cranial neural crest (Temporary definition)." []
 
 [Term]
-id: XPO:0115485
-name: abnormal(ly) decreased mobility of cranial neural crest (T)
-def: "Abnormal(ly) decreased mobility of cranial neural crest (Temporary definition)." []
-
-[Term]
-id: XPO:0115487
-name: abnormal(ly) hypoplastic of lung primordium (T)
-def: "Abnormal(ly) hypoplastic of lung primordium (Temporary definition)." []
-
-[Term]
-id: XPO:0115490
-name: abnormal(ly) has fewer parts of type of melanophore (T)
-def: "Abnormal(ly) has fewer parts of type of melanophore (Temporary definition)." []
-
-[Term]
 id: XPO:0115491
-name: abnormal(ly) increased distribution of connective tissue (T)
+name: abnormally increased distribution of connective tissue
 def: "Abnormal(ly) increased distribution of connective tissue (Temporary definition)." []
 
 [Term]
-id: XPO:0115492
-name: abnormal(ly) hypertrophic of proctodeum (T)
-def: "Abnormal(ly) hypertrophic of proctodeum (Temporary definition)." []
-
-[Term]
 id: XPO:0115494
-name: abnormal(ly) closure incomplete of proctodeum (T)
+name: abnormally incomplete closure of proctodeum
 def: "Abnormal(ly) closure incomplete of proctodeum (Temporary definition)." []
 
 [Term]
 id: XPO:0115495
-name: abnormal(ly) protruding of proctodeum (T)
+name: abnormally protruding proctodeum
 def: "Abnormal(ly) protruding of proctodeum (Temporary definition)." []
 
 [Term]
 id: XPO:0115505
-name: abnormal(ly) dead of whole organism (T)
+name: dead whole organism
 def: "Abnormal(ly) dead of whole organism (Temporary definition)." []
 
 [Term]
 id: XPO:0115507
-name: abnormal(ly) curved lateral of whole organism (T)
+name: abnormally laterally curved whole organism
 def: "Abnormal(ly) curved lateral of whole organism (Temporary definition)." []
 
 [Term]
 id: XPO:0115508
-name: abnormal(ly) peramorphic growth of whole organism (T)
+name: abnormally peramorphic growth of whole organism
 def: "Abnormal(ly) peramorphic growth of whole organism (Temporary definition)." []
 
 [Term]
 id: XPO:0115509
-name: abnormal(ly) semi-viable of whole organism (T)
+name: abnormally semi-viable whole organism
 def: "Abnormal(ly) semi-viable of whole organism (Temporary definition)." []
 
 [Term]
 id: XPO:0115510
-name: abnormal(ly) degeneration of whole organism (T)
+name: abnormal degeneration of whole organism
 def: "Abnormal(ly) degeneration of whole organism (Temporary definition)." []
 
 [Term]
 id: XPO:0115512
-name: abnormal(ly) semi erect of whole organism (T)
+name: abnormally semi-erect whole organism
 def: "Abnormal(ly) semi erect of whole organism (Temporary definition)." []
 
 [Term]
-id: XPO:0115513
-name: abnormal(ly) phenotypic sex of male organism (T)
-def: "Abnormal(ly) phenotypic sex of male organism (Temporary definition)." []
-
-[Term]
 id: XPO:0115520
-name: abnormal(ly) edematous of head (T)
+name: abnormally edematous head
 def: "Abnormal(ly) edematous of head (Temporary definition)." []
 
 [Term]
-id: XPO:0115523
-name: abnormal(ly) immature of head (T)
-def: "Abnormal(ly) immature of head (Temporary definition)." []
-
-[Term]
-id: XPO:0115524
-name: abnormal(ly) disrupted of head (T)
-def: "Abnormal(ly) disrupted of head (Temporary definition)." []
-
-[Term]
 id: XPO:0115526
-name: abnormal(ly) incomplete structure of head (T)
+name: abnormally incomplete structure of head
 def: "Abnormal(ly) incomplete structure of head (Temporary definition)." []
 
 [Term]
-id: XPO:0115529
-name: abnormal(ly) hypoplastic of trunk (T)
-def: "Abnormal(ly) hypoplastic of trunk (Temporary definition)." []
-
-[Term]
 id: XPO:0115533
-name: abnormal(ly) nodular of trunk (T)
+name: abnormally nodular trunk
 def: "Abnormal(ly) nodular of trunk (Temporary definition)." []
 
 [Term]
-id: XPO:0115543
-name: abnormal(ly) hypoplastic of tail (T)
-def: "Abnormal(ly) hypoplastic of tail (Temporary definition)." []
-
-[Term]
 id: XPO:0115547
-name: abnormal(ly) curved ventral of tail (T)
+name: abnormally ventrally curved tail
 def: "Abnormal(ly) curved ventral of tail (Temporary definition)." []
 
 [Term]
-id: XPO:0115552
-name: abnormal(ly) hemorrhagic of tail (T)
-def: "Abnormal(ly) hemorrhagic of tail (Temporary definition)." []
-
-[Term]
 id: XPO:0115553
-name: abnormal(ly) incomplete structure of tail (T)
+name: abnormally incomplete structure of tail
 def: "Abnormal(ly) incomplete structure of tail (Temporary definition)." []
 
 [Term]
 id: XPO:0115558
-name: abnormal(ly) incomplete structure of mouth (T)
+name: abnormally incomplete structure of mouth
 def: "Abnormal(ly) incomplete structure of mouth (Temporary definition)." []
 
 [Term]
 id: XPO:0115562
-name: abnormal(ly) paralysed of forelimb (T)
+name: abnormally paralysed forelimb
 def: "Abnormal(ly) paralysed of forelimb (Temporary definition)." []
 
 [Term]
-id: XPO:0115563
-name: abnormal(ly) obtuse angle to of forelimb (T)
-def: "Abnormal(ly) obtuse angle to of forelimb (Temporary definition)." []
-
-[Term]
 id: XPO:0115566
-name: abnormal(ly) variability of size of forelimb (T)
+name: abnormal variability of size of forelimb
 def: "Abnormal(ly) variability of size of forelimb (Temporary definition)." []
 
 [Term]
 id: XPO:0115570
-name: abnormal(ly) paralysed of hindlimb (T)
+name: abnormally paralysed hindlimb
 def: "Abnormal(ly) paralysed of hindlimb (Temporary definition)." []
 
 [Term]
-id: XPO:0115571
-name: abnormal(ly) obtuse angle to of hindlimb (T)
-def: "Abnormal(ly) obtuse angle to of hindlimb (Temporary definition)." []
-
-[Term]
 id: XPO:0115574
-name: abnormal(ly) variability of size of hindlimb (T)
+name: abnormal variability of size of hindlimb
 def: "Abnormal(ly) variability of size of hindlimb (Temporary definition)." []
 
 [Term]
-id: XPO:0115575
-name: abnormal(ly) has extra parts of type of hindlimb (T)
-def: "Abnormal(ly) has extra parts of type of hindlimb (Temporary definition)." []
-
-[Term]
-id: XPO:0115578
-name: abnormal(ly) has normal numbers of parts of type of hindlimb digit (T)
-def: "Abnormal(ly) has normal numbers of parts of type of hindlimb digit (Temporary definition)." []
-
-[Term]
-id: XPO:0115580
-name: abnormal(ly) has fewer parts of type of hindlimb digit (T)
-def: "Abnormal(ly) has fewer parts of type of hindlimb digit (Temporary definition)." []
-
-[Term]
-id: XPO:0115581
-name: abnormal(ly) has extra parts of type of hindlimb digit (T)
-def: "Abnormal(ly) has extra parts of type of hindlimb digit (Temporary definition)." []
-
-[Term]
-id: XPO:0115582
-name: abnormal(ly) shape of forelimb digit (T)
-def: "Abnormal(ly) shape of forelimb digit (Temporary definition)." []
-
-[Term]
-id: XPO:0115583
-name: abnormal(ly) has fewer parts of type of forelimb digit (T)
-def: "Abnormal(ly) has fewer parts of type of forelimb digit (Temporary definition)." []
-
-[Term]
-id: XPO:0115584
-name: abnormal(ly) distributed of mesenchyme (T)
-def: "Abnormal(ly) distributed of mesenchyme (Temporary definition)." []
-
-[Term]
 id: XPO:0115586
-name: abnormal(ly) decreased volume of chondrocranium (T)
+name: abnormally decreased volume of chondrocranium
 def: "Abnormal(ly) decreased volume of chondrocranium (Temporary definition)." []
 
 [Term]
-id: XPO:0115587
-name: abnormal(ly) hypoplastic of chondrocranium (T)
-def: "Abnormal(ly) hypoplastic of chondrocranium (Temporary definition)." []
-
-[Term]
 id: XPO:0115588
-name: abnormal(ly) decreased mass of chondrocranium (T)
+name: abnormally decreased mass of chondrocranium
 def: "Abnormal(ly) decreased mass of chondrocranium (Temporary definition)." []
 
 [Term]
-id: XPO:0115593
-name: abnormal(ly) concealed of forelimb bud (T)
-def: "Abnormal(ly) concealed of forelimb bud (Temporary definition)." []
-
-[Term]
-id: XPO:0115594
-name: abnormal(ly) concealed by of forelimb bud (T)
-def: "Abnormal(ly) concealed by of forelimb bud (Temporary definition)." []
-
-[Term]
-id: XPO:0115599
-name: abnormal(ly) hyperplastic of hindlimb bud (T)
-def: "Abnormal(ly) hyperplastic of hindlimb bud (Temporary definition)." []
-
-[Term]
 id: XPO:0115601
-name: abnormal(ly) increased distribution of hindlimb bud (T)
+name: abnormally increased distribution of hindlimb bud
 def: "Abnormal(ly) increased distribution of hindlimb bud (Temporary definition)." []
 
 [Term]
 id: XPO:0115602
-name: abnormal(ly) peramorphic growth of hindlimb bud (T)
+name: abnormally peramorphic growth of hindlimb bud
 def: "Abnormal(ly) peramorphic growth of hindlimb bud (Temporary definition)." []
 
 [Term]
 id: XPO:0115603
-name: abnormal(ly) variability of size of hindlimb bud (T)
+name: abnormal variability of size of hindlimb bud
 def: "Abnormal(ly) variability of size of hindlimb bud (Temporary definition)." []
 
 [Term]
 id: XPO:0115604
-name: abnormal(ly) aplastic growth of hindlimb bud (T)
+name: abnormally aplastic growth of hindlimb bud
 def: "Abnormal(ly) aplastic growth of hindlimb bud (Temporary definition)." []
 
 [Term]
-id: XPO:0115607
-name: abnormal(ly) decreased amount of Meckel's cartilage (T)
-def: "Abnormal(ly) decreased amount of Meckel's cartilage (Temporary definition)." []
-
-[Term]
 id: XPO:0115615
-name: abnormal(ly) mislocalised posteriorly of primordial germ cell (T)
+name: abnormally posteriorly mislocalised primordial germ cell
 def: "Abnormal(ly) mislocalised posteriorly of primordial germ cell (Temporary definition)." []
 
 [Term]
 id: XPO:0115617
-name: abnormal(ly) posterioralized of primordial germ cell (T)
+name: abnormally posterioralized primordial germ cell
 def: "Abnormal(ly) posterioralized of primordial germ cell (Temporary definition)." []
 
 [Term]
 id: XPO:0115624
-name: abnormal(ly) dilated of cardiac ventricle (T)
+name: abnormally dilated cardiac ventricle
 def: "Abnormal(ly) dilated of cardiac ventricle (Temporary definition)." []
 
 [Term]
 id: XPO:0115628
-name: abnormal(ly) open of neural tube (T)
+name: abnormally open neural tube
 def: "Abnormal(ly) open of neural tube (Temporary definition)." []
 
 [Term]
 id: XPO:0115630
-name: abnormal(ly) delayed closure of neural tube (T)
+name: abnormally delayed closure of neural tube
 def: "Abnormal(ly) delayed closure of neural tube (Temporary definition)." []
 
 [Term]
 id: XPO:0115631
-name: abnormal(ly) triangular of radio-ulna (T)
+name: abnormally triangular radio-ulna
 def: "Abnormal(ly) triangular of radio-ulna (Temporary definition)." []
 
 [Term]
 id: XPO:0115636
-name: abnormal(ly) bent of metatarsus (T)
+name: abnormally bent metatarsus
 def: "Abnormal(ly) bent of metatarsus (Temporary definition)." []
 
 [Term]
 id: XPO:0115639
-name: abnormal(ly) triangular of tibia-fibula (T)
+name: abnormally triangular tibia-fibula
 def: "Abnormal(ly) triangular of tibia-fibula (Temporary definition)." []
 
 [Term]
 id: XPO:0115643
-name: abnormal(ly) triangular of femur (T)
+name: abnormally triangular femur
 def: "Abnormal(ly) triangular of femur (Temporary definition)." []
 
 [Term]
 id: XPO:0115645
-name: abnormal(ly) mislocalised ventrally of retinal pigmented epithelium (T)
+name: abnormally ventrally mislocalised retinal pigmented epithelium
 def: "Abnormal(ly) mislocalised ventrally of retinal pigmented epithelium (Temporary definition)." []
 
 [Term]
 id: XPO:0115648
-name: abnormal(ly) increased amount of hypaxial muscle (T)
+name: abnormally increased amount of hypaxial muscle
 def: "Abnormal(ly) increased amount of hypaxial muscle (Temporary definition)." []
 
 [Term]
-id: XPO:0115649
-name: abnormal(ly) decreased amount of hypaxial muscle (T)
-def: "Abnormal(ly) decreased amount of hypaxial muscle (Temporary definition)." []
-
-[Term]
 id: XPO:0115651
-name: abnormal(ly) wholly dorsalized of epaxial muscle (T)
+name: abnormally wholly dorsalized epaxial muscle
 def: "Abnormal(ly) wholly dorsalized of epaxial muscle (Temporary definition)." []
 
 [Term]
-id: XPO:0115652
-name: abnormal(ly) displaced to of ectodermal cell (T)
-def: "Abnormal(ly) displaced to of ectodermal cell (Temporary definition)." []
-
-[Term]
-id: XPO:0115653
-name: abnormal(ly) hypoplastic of liver primordium (T)
-def: "Abnormal(ly) hypoplastic of liver primordium (Temporary definition)." []
-
-[Term]
 id: XPO:0115658
-name: abnormal(ly) edematous of dorsal fin (T)
+name: abnormally edematous dorsal fin
 def: "Abnormal(ly) edematous of dorsal fin (Temporary definition)." []
 
 [Term]
 id: XPO:0115659
-name: abnormal(ly) ruffled of dorsal fin (T)
+name: abnormally ruffled dorsal fin
 def: "Abnormal(ly) ruffled of dorsal fin (Temporary definition)." []
 
 [Term]
 id: XPO:0115660
-name: abnormal(ly) incomplete structure of ventral tail fin (T)
+name: abnormally incomplete structure of ventral tail fin
 def: "Abnormal(ly) incomplete structure of ventral tail fin (Temporary definition)." []
 
 [Term]
 id: XPO:0115661
-name: abnormal(ly) ruffled of ventral fin margin (T)
+name: abnormally ruffled ventral fin margin
 def: "Abnormal(ly) ruffled of ventral fin margin (Temporary definition)." []
 
 [Term]
 id: XPO:0115662
-name: abnormal(ly) incomplete structure of ventral fin margin (T)
+name: abnormally incomplete structure of ventral fin margin
 def: "Abnormal(ly) incomplete structure of ventral fin margin (Temporary definition)." []
 
 [Term]
-id: XPO:0115663
-name: abnormal(ly) disrupted of migratory neural crest cell (T)
-def: "Abnormal(ly) disrupted of migratory neural crest cell (Temporary definition)." []
-
-[Term]
 id: XPO:0115664
-name: abnormal(ly) decreased mobility of migratory neural crest cell (T)
+name: abnormally decreased mobility of migratory neural crest cell
 def: "Abnormal(ly) decreased mobility of migratory neural crest cell (Temporary definition)." []
 
 [Term]
 id: XPO:0115668
-name: abnormal(ly) increased mobility of non-neural ectoderm (T)
+name: abnormally increased mobility of non-neural ectoderm
 def: "Abnormal(ly) increased mobility of non-neural ectoderm (Temporary definition)." []
 
 [Term]
 id: XPO:0115669
-name: abnormal(ly) decreased mobility of non-neural ectoderm (T)
+name: abnormally decreased mobility of non-neural ectoderm
 def: "Abnormal(ly) decreased mobility of non-neural ectoderm (Temporary definition)." []
 
 [Term]
 id: XPO:0115671
-name: abnormal(ly) poorly differentiated of retinal ganglion cell (T)
+name: poorly differentiated retinal ganglion cell
 def: "Abnormal(ly) poorly differentiated of retinal ganglion cell (Temporary definition)." []
 
 [Term]
 id: XPO:0115675
-name: abnormal(ly) increased diameter of pronephric tubule (T)
+name: abnormally increased diameter of pronephric tubule
 def: "Abnormal(ly) increased diameter of pronephric tubule (Temporary definition)." []
 
 [Term]
 id: XPO:0115676
-name: abnormal(ly) shortened of pronephric tubule (T)
+name: abnormally shortened pronephric tubule
 def: "Abnormal(ly) shortened of pronephric tubule (Temporary definition)." []
 
 [Term]
-id: XPO:0115677
-name: abnormal(ly) shape of regenerating forelimb (T)
-def: "Abnormal(ly) shape of regenerating forelimb (Temporary definition)." []
-
-[Term]
 id: XPO:0115679
-name: abnormal(ly) edematous of regenerating hindlimb (T)
+name: abnormally edematous regenerating hindlimb
 def: "Abnormal(ly) edematous of regenerating hindlimb (Temporary definition)." []
 
 [Term]
-id: XPO:0115681
-name: abnormal(ly) hypermorphic growth of regenerating hindlimb (T)
-def: "Abnormal(ly) hypermorphic growth of regenerating hindlimb (Temporary definition)." []
-
-[Term]
-id: XPO:0115682
-name: abnormal(ly) has normal numbers of parts of type of regenerating hindlimb (T)
-def: "Abnormal(ly) has normal numbers of parts of type of regenerating hindlimb (Temporary definition)." []
-
-[Term]
 id: XPO:0115683
-name: abnormal(ly) increased branchiness of regenerating hindlimb (T)
+name: abnormally increased branchiness of regenerating hindlimb
 def: "Abnormal(ly) increased branchiness of regenerating hindlimb (Temporary definition)." []
 
 [Term]
 id: XPO:0115684
-name: abnormal(ly) shortened of regenerating hindlimb (T)
+name: abnormally shortened regenerating hindlimb
 def: "Abnormal(ly) shortened of regenerating hindlimb (Temporary definition)." []
 
 [Term]
 id: XPO:0115685
-name: abnormal(ly) incomplete structure of regenerating hindlimb (T)
+name: abnormally incomplete structure of regenerating hindlimb
 def: "Abnormal(ly) incomplete structure of regenerating hindlimb (Temporary definition)." []
 
 [Term]
 id: XPO:0115688
-name: abnormal(ly) aplastic growth of regenerating tail (T)
+name: abnormally aplastic growth of regenerating tail
 def: "Abnormal(ly) aplastic growth of regenerating tail (Temporary definition)." []
 
 [Term]
 id: XPO:0115689
-name: abnormal(ly) incomplete structure of regenerating tail (T)
+name: abnormally incomplete structure of regenerating tail
 def: "Abnormal(ly) incomplete structure of regenerating tail (Temporary definition)." []
 
 [Term]
 id: XPO:0115693
-name: abnormal(ly) decreased thickness of apical ectodermal ridge (T)
+name: abnormally decreased thickness of apical ectodermal ridge
 def: "Abnormal(ly) decreased thickness of apical ectodermal ridge (Temporary definition)." []
 
 [Term]
 id: XPO:0115698
-name: abnormal(ly) edematous of pericardium (T)
+name: abnormally edematous pericardium
 def: "Abnormal(ly) edematous of pericardium (Temporary definition)." []
 
 [Term]
 id: XPO:0115700
-name: abnormal(ly) split of primary heart field (T)
+name: abnormally split primary heart field
 def: "Abnormal(ly) split of primary heart field (Temporary definition)." []
 
 [Term]
 id: XPO:0115702
-name: abnormal(ly) decreased thickness of motor neuron (T)
+name: abnormally decreased thickness of motor neuron
 def: "Abnormal(ly) decreased thickness of motor neuron (Temporary definition)." []
 
 [Term]
 id: XPO:0115704
-name: abnormal(ly) defasciculated of motor neuron (T)
+name: abnormally defasciculated motor neuron
 def: "Abnormal(ly) defasciculated of motor neuron (Temporary definition)." []
 
 [Term]
 id: XPO:0115714
-name: abnormal(ly) edematous of pharyngeal region (T)
+name: abnormally edematous pharyngeal region
 def: "Abnormal(ly) edematous of pharyngeal region (Temporary definition)." []
 
 [Term]
 id: XPO:0115721
-name: abnormal(ly) inverted of hindlimb zeugopod (T)
+name: abnormally inverted hindlimb zeugopod
 def: "Abnormal(ly) inverted of hindlimb zeugopod (Temporary definition)." []
 
 [Term]
-id: XPO:0115722
-name: abnormal(ly) decreased amount of head mesenchyme (T)
-def: "Abnormal(ly) decreased amount of head mesenchyme (Temporary definition)." []
-
-[Term]
 id: XPO:0115723
-name: abnormal(ly) incomplete structure of cranial muscle (T)
+name: abnormally incomplete structure of cranial muscle
 def: "Abnormal(ly) incomplete structure of cranial muscle (Temporary definition)." []
 
 [Term]
 id: XPO:0115735
-name: abnormal(ly) delayed closure of branchial basket (T)
+name: abnormally delayed closure of branchial basket
 def: "Abnormal(ly) delayed closure of branchial basket (Temporary definition)." []
 
 [Term]
-id: XPO:0115741
-name: abnormal(ly) has fewer parts of type of hindlimb digit 2 (T)
-def: "Abnormal(ly) has fewer parts of type of hindlimb digit 2 (Temporary definition)." []
-
-[Term]
-id: XPO:0115742
-name: abnormal(ly) has fewer parts of type of hindlimb digit 3 (T)
-def: "Abnormal(ly) has fewer parts of type of hindlimb digit 3 (Temporary definition)." []
-
-[Term]
-id: XPO:0115744
-name: abnormal(ly) has fewer parts of type of hindlimb digit 4 (T)
-def: "Abnormal(ly) has fewer parts of type of hindlimb digit 4 (Temporary definition)." []
-
-[Term]
-id: XPO:0115746
-name: abnormal(ly) present of hindlimb digit 5 (T)
-def: "Abnormal(ly) present of hindlimb digit 5 (Temporary definition)." []
-
-[Term]
-id: XPO:0115748
-name: abnormal(ly) has fewer parts of type of hindlimb digit 5 (T)
-def: "Abnormal(ly) has fewer parts of type of hindlimb digit 5 (Temporary definition)." []
-
-[Term]
-id: XPO:0115750
-name: abnormal(ly) decreased amount of trunk vasculature (T)
-def: "Abnormal(ly) decreased amount of trunk vasculature (Temporary definition)." []
-
-[Term]
-id: XPO:0115751
-name: abnormal(ly) protruding into of myocyte (T)
-def: "Abnormal(ly) protruding into of myocyte (Temporary definition)." []
-
-[Term]
-id: XPO:0115752
-name: abnormal(ly) misaligned with of myocyte (T)
-def: "Abnormal(ly) misaligned with of myocyte (Temporary definition)." []
-
-[Term]
-id: XPO:0115753
-name: abnormal(ly) has fewer parts of type of forelimb digit 2 (T)
-def: "Abnormal(ly) has fewer parts of type of forelimb digit 2 (Temporary definition)." []
-
-[Term]
-id: XPO:0115755
-name: abnormal(ly) present of spike (T)
-def: "Abnormal(ly) present of spike (Temporary definition)." []
-
-[Term]
 id: XPO:0115758
-name: abnormal(ly) decreased mobility of melanoblast (T)
+name: abnormally decreased mobility of melanoblast
 def: "Abnormal(ly) decreased mobility of melanoblast (Temporary definition)." []
 
 [Term]
 id: XPO:0115760
-name: abnormal(ly) simple of proximal tubule (T)
+name: abnormally simple of proximal tubule
 def: "Abnormal(ly) simple of proximal tubule (Temporary definition)." []
 
 [Term]
 id: XPO:0115761
-name: abnormal(ly) decreased coiling of proximal tubule (T)
+name: abnormally decreased coiling of proximal tubule
 def: "Abnormal(ly) decreased coiling of proximal tubule (Temporary definition)." []
 
 [Term]
-id: XPO:0115762
-name: abnormal(ly) has fewer parts of type of proximal tubule (T)
-def: "Abnormal(ly) has fewer parts of type of proximal tubule (Temporary definition)." []
-
-[Term]
-id: XPO:0115763
-name: abnormal(ly) has extra parts of type of proximal tubule (T)
-def: "Abnormal(ly) has extra parts of type of proximal tubule (Temporary definition)." []
-
-[Term]
 id: XPO:0115766
-name: abnormal(ly) inverted of external coil of the small intestine (T)
+name: abnormally inverted external coil of the small intestine
 def: "Abnormal(ly) inverted of external coil of the small intestine (Temporary definition)." []
 
 [Term]
 id: XPO:0115768
-name: abnormal(ly) mislocalized abaxially of anterior foregut (T)
+name: abnormally abaxially mislocalized anterior foregut
 def: "Abnormal(ly) mislocalized abaxially of anterior foregut (Temporary definition)." []
 
 [Term]
@@ -22410,1339 +22056,34 @@ synonym: "abnormal duplication of dorsal trunk" EXACT []
 synonym: "abnormally duplicated dorsal trunk" EXACT []
 
 [Term]
-id: XPO:0115833
-name: abnormal(ly) shape of regenerating hindlimb in digit (T)
-def: "Abnormal(ly) shape of regenerating hindlimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0115834
-name: abnormal(ly) shape of regenerating hindlimb in autopod (T)
-def: "Abnormal(ly) shape of regenerating hindlimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0115835
-name: abnormal(ly) orientation of mesodermal cell in somite (T)
-def: "Abnormal(ly) orientation of mesodermal cell in somite (Temporary definition)." []
-
-[Term]
-id: XPO:0115836
-name: abnormal(ly) quality of regenerating forelimb in cartilage tissue (T)
-def: "Abnormal(ly) quality of regenerating forelimb in cartilage tissue (Temporary definition)." []
-
-[Term]
-id: XPO:0115837
-name: abnormal(ly) quality of regenerating hindlimb in cartilage tissue (T)
-def: "Abnormal(ly) quality of regenerating hindlimb in cartilage tissue (Temporary definition)." []
-
-[Term]
-id: XPO:0115838
-name: abnormal(ly) quality of tarsus in joint (T)
-def: "Abnormal(ly) quality of tarsus in joint (Temporary definition)." []
-
-[Term]
-id: XPO:0115839
-name: abnormal(ly) quality of hindlimb in nervous system (T)
-def: "Abnormal(ly) quality of hindlimb in nervous system (Temporary definition)." []
-
-[Term]
-id: XPO:0115840
-name: abnormal(ly) quality of hindlimb bud in iridophore (T)
-def: "Abnormal(ly) quality of hindlimb bud in iridophore (Temporary definition)." []
-
-[Term]
-id: XPO:0115841
-name: abnormal(ly) quality of regenerating hindlimb in blood vessel (T)
-def: "Abnormal(ly) quality of regenerating hindlimb in blood vessel (Temporary definition)." []
-
-[Term]
-id: XPO:0115842
-name: abnormal(ly) quality of epidermal cell in whole organism (T)
-def: "Abnormal(ly) quality of epidermal cell in whole organism (Temporary definition)." []
-
-[Term]
-id: XPO:0115843
-name: abnormal(ly) quality of regenerating tail in neuron (T)
-def: "Abnormal(ly) quality of regenerating tail in neuron (Temporary definition)." []
-
-[Term]
-id: XPO:0115844
-name: abnormal(ly) quality of forelimb in digit (T)
-def: "Abnormal(ly) quality of forelimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0115845
-name: abnormal(ly) quality of hindlimb in digit (T)
-def: "Abnormal(ly) quality of hindlimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0115846
-name: abnormal(ly) quality of regenerating forelimb in digit (T)
-def: "Abnormal(ly) quality of regenerating forelimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0115847
-name: abnormal(ly) quality of regenerating hindlimb in digit (T)
-def: "Abnormal(ly) quality of regenerating hindlimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0115848
-name: abnormal(ly) quality of forelimb in forelimb digit (T)
-def: "Abnormal(ly) quality of forelimb in forelimb digit (Temporary definition)." []
-
-[Term]
-id: XPO:0115849
-name: abnormal(ly) quality of regenerating hindlimb in pelvic girdle (T)
-def: "Abnormal(ly) quality of regenerating hindlimb in pelvic girdle (Temporary definition)." []
-
-[Term]
-id: XPO:0115850
-name: abnormal(ly) quality of regenerating hindlimb in claw (T)
-def: "Abnormal(ly) quality of regenerating hindlimb in claw (Temporary definition)." []
-
-[Term]
-id: XPO:0115853
-name: abnormal(ly) quality of forelimb in radio-ulna (T)
-def: "Abnormal(ly) quality of forelimb in radio-ulna (Temporary definition)." []
-
-[Term]
-id: XPO:0115854
-name: abnormal(ly) quality of hindlimb in tarsus (T)
-def: "Abnormal(ly) quality of hindlimb in tarsus (Temporary definition)." []
-
-[Term]
-id: XPO:0115855
-name: abnormal(ly) quality of regenerating hindlimb in tarsus (T)
-def: "Abnormal(ly) quality of regenerating hindlimb in tarsus (Temporary definition)." []
-
-[Term]
-id: XPO:0115856
-name: abnormal(ly) quality of autopod in tarsus (T)
-def: "Abnormal(ly) quality of autopod in tarsus (Temporary definition)." []
-
-[Term]
-id: XPO:0115857
-name: abnormal(ly) quality of regenerating limb in tarsus (T)
-def: "Abnormal(ly) quality of regenerating limb in tarsus (Temporary definition)." []
-
-[Term]
-id: XPO:0115858
-name: abnormal(ly) quality of hindlimb in metatarsus (T)
-def: "Abnormal(ly) quality of hindlimb in metatarsus (Temporary definition)." []
-
-[Term]
-id: XPO:0115859
-name: abnormal(ly) quality of regenerating hindlimb in metatarsus (T)
-def: "Abnormal(ly) quality of regenerating hindlimb in metatarsus (Temporary definition)." []
-
-[Term]
-id: XPO:0115860
-name: abnormal(ly) quality of hindlimb in tibia-fibula (T)
-def: "Abnormal(ly) quality of hindlimb in tibia-fibula (Temporary definition)." []
-
-[Term]
-id: XPO:0115861
-name: abnormal(ly) quality of regenerating hindlimb in tibia-fibula (T)
-def: "Abnormal(ly) quality of regenerating hindlimb in tibia-fibula (Temporary definition)." []
-
-[Term]
-id: XPO:0115862
-name: abnormal(ly) quality of regenerating hindlimb in femur (T)
-def: "Abnormal(ly) quality of regenerating hindlimb in femur (Temporary definition)." []
-
-[Term]
-id: XPO:0115863
-name: abnormal(ly) quality of regenerating hindlimb in cartilage element (T)
-def: "Abnormal(ly) quality of regenerating hindlimb in cartilage element (Temporary definition)." []
-
-[Term]
-id: XPO:0115864
-name: abnormal(ly) quality of hindlimb bud in apical ectodermal ridge (T)
-def: "Abnormal(ly) quality of hindlimb bud in apical ectodermal ridge (Temporary definition)." []
-
-[Term]
-id: XPO:0115865
-name: abnormal(ly) quality of heart in outflow tract (T)
-def: "Abnormal(ly) quality of heart in outflow tract (Temporary definition)." []
-
-[Term]
-id: XPO:0115866
-name: abnormal(ly) quality of hindlimb in stylopod (T)
-def: "Abnormal(ly) quality of hindlimb in stylopod (Temporary definition)." []
-
-[Term]
-id: XPO:0115867
-name: abnormal(ly) quality of regenerating hindlimb in stylopod (T)
-def: "Abnormal(ly) quality of regenerating hindlimb in stylopod (Temporary definition)." []
-
-[Term]
-id: XPO:0115868
-name: abnormal(ly) quality of hindlimb in zeugopod (T)
-def: "Abnormal(ly) quality of hindlimb in zeugopod (Temporary definition)." []
-
-[Term]
-id: XPO:0115869
-name: abnormal(ly) quality of hindlimb digit in zeugopod (T)
-def: "Abnormal(ly) quality of hindlimb digit in zeugopod (Temporary definition)." []
-
-[Term]
-id: XPO:0115870
-name: abnormal(ly) quality of forelimb in autopod (T)
-def: "Abnormal(ly) quality of forelimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0115871
-name: abnormal(ly) quality of hindlimb in autopod (T)
-def: "Abnormal(ly) quality of hindlimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0115872
-name: abnormal(ly) quality of hindlimb digit in autopod (T)
-def: "Abnormal(ly) quality of hindlimb digit in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0115873
-name: abnormal(ly) quality of regenerating forelimb in autopod (T)
-def: "Abnormal(ly) quality of regenerating forelimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0115874
-name: abnormal(ly) quality of regenerating hindlimb in autopod (T)
-def: "Abnormal(ly) quality of regenerating hindlimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0115875
-name: abnormal(ly) quality of regenerating limb in autopod (T)
-def: "Abnormal(ly) quality of regenerating limb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0115876
-name: abnormal(ly) quality of femur in joint region (T)
-def: "Abnormal(ly) quality of femur in joint region (Temporary definition)." []
-
-[Term]
-id: XPO:0115877
-name: abnormal(ly) quality of regenerating forelimb in digit-joint region (T)
-def: "Abnormal(ly) quality of regenerating forelimb in digit-joint region (Temporary definition)." []
-
-[Term]
-id: XPO:0115878
-name: abnormal(ly) quality of regenerating hindlimb in digit-joint region (T)
-def: "Abnormal(ly) quality of regenerating hindlimb in digit-joint region (Temporary definition)." []
-
-[Term]
-id: XPO:0115879
-name: abnormal(ly) quality of autopod in digit-joint region (T)
-def: "Abnormal(ly) quality of autopod in digit-joint region (Temporary definition)." []
-
-[Term]
-id: XPO:0115880
-name: abnormal(ly) quality of hindlimb in hindlimb digit 2 (T)
-def: "Abnormal(ly) quality of hindlimb in hindlimb digit 2 (Temporary definition)." []
-
-[Term]
-id: XPO:0115881
-name: abnormal(ly) quality of hindlimb in hindlimb digit 3 (T)
-def: "Abnormal(ly) quality of hindlimb in hindlimb digit 3 (Temporary definition)." []
-
-[Term]
-id: XPO:0115882
-name: abnormal(ly) quality of hindlimb in hindlimb digit 4 (T)
-def: "Abnormal(ly) quality of hindlimb in hindlimb digit 4 (Temporary definition)." []
-
-[Term]
-id: XPO:0115883
-name: abnormal(ly) quality of hindlimb in hindlimb digit 5 (T)
-def: "Abnormal(ly) quality of hindlimb in hindlimb digit 5 (Temporary definition)." []
-
-[Term]
-id: XPO:0115885
-name: abnormal(ly) quality of forelimb in forelimb digit 2 (T)
-def: "Abnormal(ly) quality of forelimb in forelimb digit 2 (Temporary definition)." []
-
-[Term]
-id: XPO:0115886
-name: abnormal(ly) quality of forelimb in forelimb digit 3 (T)
-def: "Abnormal(ly) quality of forelimb in forelimb digit 3 (Temporary definition)." []
-
-[Term]
-id: XPO:0115887
-name: abnormal(ly) quality of forelimb in forelimb digit 4 (T)
-def: "Abnormal(ly) quality of forelimb in forelimb digit 4 (Temporary definition)." []
-
-[Term]
-id: XPO:0115888
-name: abnormal(ly) quality of forelimb in forelimb digit 5 (T)
-def: "Abnormal(ly) quality of forelimb in forelimb digit 5 (Temporary definition)." []
-
-[Term]
-id: XPO:0115889
-name: abnormal(ly) quality of pelvic girdle in iliac process (T)
-def: "Abnormal(ly) quality of pelvic girdle in iliac process (Temporary definition)." []
-
-[Term]
-id: XPO:0115890
-name: abnormal(ly) quality of hindlimb zeugopod in dorsal-ventral axis (T)
-def: "Abnormal(ly) quality of hindlimb zeugopod in dorsal-ventral axis (Temporary definition)." []
-
-[Term]
-id: XPO:0115893
-name: abnormal(ly) quality of hindlimb in bone tissue (T)
-def: "Abnormal(ly) quality of hindlimb in bone tissue (Temporary definition)." []
-
-[Term]
-id: XPO:0115894
-name: abnormal(ly) quality of hindlimb in cartilage tissue (T)
-def: "Abnormal(ly) quality of hindlimb in cartilage tissue (Temporary definition)." []
-
-[Term]
-id: XPO:0115895
-name: abnormal(ly) quality of hindlimb in muscle (T)
-def: "Abnormal(ly) quality of hindlimb in muscle (Temporary definition)." []
-
-[Term]
-id: XPO:0115896
-name: abnormal(ly) quality of cell in foregut (T)
-def: "Abnormal(ly) quality of cell in foregut (Temporary definition)." []
-
-[Term]
-id: XPO:0115897
-name: abnormal(ly) quality of hindlimb bud in ventral (T)
-def: "Abnormal(ly) quality of hindlimb bud in ventral (Temporary definition)." []
-
-[Term]
-id: XPO:0115898
-name: abnormal(ly) quality of tibia-fibula in regenerating hindlimb (T)
-def: "Abnormal(ly) quality of tibia-fibula in regenerating hindlimb (Temporary definition)." []
-
-[Term]
-id: XPO:0115899
-name: abnormal(ly) quality of hindlimb in femur (T)
-def: "Abnormal(ly) quality of hindlimb in femur (Temporary definition)." []
-
-[Term]
-id: XPO:0115900
-name: abnormal(ly) quality of femur in regenerating hindlimb (T)
-def: "Abnormal(ly) quality of femur in regenerating hindlimb (Temporary definition)." []
-
-[Term]
-id: XPO:0115901
-name: abnormal(ly) quality of eye in retinal pigmented epithelium (T)
-def: "Abnormal(ly) quality of eye in retinal pigmented epithelium (Temporary definition)." []
-
-[Term]
-id: XPO:0115902
-name: abnormal(ly) quality of hindlimb in cartilage element (T)
-def: "Abnormal(ly) quality of hindlimb in cartilage element (Temporary definition)." []
-
-[Term]
-id: XPO:0115903
-name: abnormal(ly) quality of regenerating forelimb in cartilage element (T)
-def: "Abnormal(ly) quality of regenerating forelimb in cartilage element (Temporary definition)." []
-
-[Term]
-id: XPO:0115904
-name: abnormal(ly) quality of hindlimb bud in distal mesenchyme (T)
-def: "Abnormal(ly) quality of hindlimb bud in distal mesenchyme (Temporary definition)." []
-
-[Term]
-id: XPO:0115905
-name: abnormal(ly) quality of apical ectodermal ridge in hindlimb bud (T)
-def: "Abnormal(ly) quality of apical ectodermal ridge in hindlimb bud (Temporary definition)." []
-
-[Term]
-id: XPO:0115906
-name: abnormal(ly) quality of stylopod in hindlimb (T)
-def: "Abnormal(ly) quality of stylopod in hindlimb (Temporary definition)." []
-
-[Term]
-id: XPO:0115907
-name: abnormal(ly) quality of zeugopod in hindlimb (T)
-def: "Abnormal(ly) quality of zeugopod in hindlimb (Temporary definition)." []
-
-[Term]
-id: XPO:0115908
-name: abnormal(ly) quality of regenerating hindlimb in zeugopod (T)
-def: "Abnormal(ly) quality of regenerating hindlimb in zeugopod (Temporary definition)." []
-
-[Term]
-id: XPO:0115909
-name: abnormal(ly) quality of autopod in hindlimb (T)
-def: "Abnormal(ly) quality of autopod in hindlimb (Temporary definition)." []
-
-[Term]
-id: XPO:0115910
-name: abnormal(ly) quality of hindlimb in joint region (T)
-def: "Abnormal(ly) quality of hindlimb in joint region (Temporary definition)." []
-
-[Term]
-id: XPO:0115911
-name: abnormal(ly) quality of hindlimb zeugopod in joint region (T)
-def: "Abnormal(ly) quality of hindlimb zeugopod in joint region (Temporary definition)." []
-
-[Term]
-id: XPO:0115912
-name: abnormal(ly) quality of forelimb digit 2 in forelimb (T)
-def: "Abnormal(ly) quality of forelimb digit 2 in forelimb (Temporary definition)." []
-
-[Term]
-id: XPO:0115913
-name: abnormal(ly) quality of forelimb digit 5 in forelimb (T)
-def: "Abnormal(ly) quality of forelimb digit 5 in forelimb (Temporary definition)." []
-
-[Term]
-id: XPO:0115914
-name: abnormal(ly) quality of epithelium in foregut endoderm (T)
-def: "Abnormal(ly) quality of epithelium in foregut endoderm (Temporary definition)." []
-
-[Term]
-id: XPO:0115920
-name: abnormal(ly) absent of regenerating forelimb in skeletal muscle (T)
-def: "Abnormal(ly) absent of regenerating forelimb in skeletal muscle (Temporary definition)." []
-
-[Term]
-id: XPO:0115921
-name: abnormal(ly) absent of ventral in trigeminal nerve (T)
-def: "Abnormal(ly) absent of ventral in trigeminal nerve (Temporary definition)." []
-
-[Term]
-id: XPO:0115922
-name: abnormal(ly) absent of regenerating hindlimb in claw (T)
-def: "Abnormal(ly) absent of regenerating hindlimb in claw (Temporary definition)." []
-
-[Term]
-id: XPO:0115923
-name: abnormal(ly) absent of regenerating hindlimb in tarsus (T)
-def: "Abnormal(ly) absent of regenerating hindlimb in tarsus (Temporary definition)." []
-
-[Term]
-id: XPO:0115924
-name: abnormal(ly) absent of hindlimb in tibia-fibula (T)
-def: "Abnormal(ly) absent of hindlimb in tibia-fibula (Temporary definition)." []
-
-[Term]
-id: XPO:0115925
-name: abnormal(ly) absent of regenerating hindlimb in tibia-fibula (T)
-def: "Abnormal(ly) absent of regenerating hindlimb in tibia-fibula (Temporary definition)." []
-
-[Term]
-id: XPO:0115926
-name: abnormal(ly) absent of hindlimb zeugopod in tibia-fibula (T)
-def: "Abnormal(ly) absent of hindlimb zeugopod in tibia-fibula (Temporary definition)." []
-
-[Term]
-id: XPO:0115927
-name: abnormal(ly) absent of hindlimb in femur (T)
-def: "Abnormal(ly) absent of hindlimb in femur (Temporary definition)." []
-
-[Term]
-id: XPO:0115928
-name: abnormal(ly) absent of regenerating forelimb in perichondrium (T)
-def: "Abnormal(ly) absent of regenerating forelimb in perichondrium (Temporary definition)." []
-
-[Term]
-id: XPO:0115929
-name: abnormal(ly) absent of hindlimb in hindlimb digit 1 (T)
-def: "Abnormal(ly) absent of hindlimb in hindlimb digit 1 (Temporary definition)." []
-
-[Term]
-id: XPO:0115930
-name: abnormal(ly) absent of regenerating hindlimb in hindlimb digit 1 (T)
-def: "Abnormal(ly) absent of regenerating hindlimb in hindlimb digit 1 (Temporary definition)." []
-
-[Term]
-id: XPO:0115931
-name: abnormal(ly) absent of regenerating hindlimb in zeugopod (T)
-def: "Abnormal(ly) absent of regenerating hindlimb in zeugopod (Temporary definition)." []
-
-[Term]
-id: XPO:0115932
-name: abnormal(ly) absent of forelimb in autopod (T)
-def: "Abnormal(ly) absent of forelimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0115933
-name: abnormal(ly) absent of hindlimb in autopod (T)
-def: "Abnormal(ly) absent of hindlimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0115934
-name: abnormal(ly) absent of regenerating forelimb in autopod (T)
-def: "Abnormal(ly) absent of regenerating forelimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0115935
-name: abnormal(ly) absent of regenerating hindlimb in autopod (T)
-def: "Abnormal(ly) absent of regenerating hindlimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0115936
-name: abnormal(ly) absent of hindlimb digit 1 in digit-joint region (T)
-def: "Abnormal(ly) absent of hindlimb digit 1 in digit-joint region (Temporary definition)." []
-
-[Term]
-id: XPO:0115937
-name: abnormal(ly) absent of hindlimb digit 2 in digit-joint region (T)
-def: "Abnormal(ly) absent of hindlimb digit 2 in digit-joint region (Temporary definition)." []
-
-[Term]
-id: XPO:0115938
-name: abnormal(ly) absent of hindlimb digit 3 in digit-joint region (T)
-def: "Abnormal(ly) absent of hindlimb digit 3 in digit-joint region (Temporary definition)." []
-
-[Term]
-id: XPO:0115939
-name: abnormal(ly) absent of hindlimb digit 4 in digit-joint region (T)
-def: "Abnormal(ly) absent of hindlimb digit 4 in digit-joint region (Temporary definition)." []
-
-[Term]
-id: XPO:0115940
-name: abnormal(ly) absent of hindlimb digit 5 in digit-joint region (T)
-def: "Abnormal(ly) absent of hindlimb digit 5 in digit-joint region (Temporary definition)." []
-
-[Term]
-id: XPO:0115941
-name: abnormal(ly) absent of regenerating hindlimb in wound epidermis (T)
-def: "Abnormal(ly) absent of regenerating hindlimb in wound epidermis (Temporary definition)." []
-
-[Term]
-id: XPO:0115942
-name: abnormal(ly) absent of regenerating hindlimb in hindlimb digit 2 (T)
-def: "Abnormal(ly) absent of regenerating hindlimb in hindlimb digit 2 (Temporary definition)." []
-
-[Term]
-id: XPO:0115943
-name: abnormal(ly) absent of regenerating hindlimb in hindlimb digit 3 (T)
-def: "Abnormal(ly) absent of regenerating hindlimb in hindlimb digit 3 (Temporary definition)." []
-
-[Term]
-id: XPO:0115944
-name: abnormal(ly) absent of hindlimb in hindlimb digit 5 (T)
-def: "Abnormal(ly) absent of hindlimb in hindlimb digit 5 (Temporary definition)." []
-
-[Term]
-id: XPO:0115945
-name: abnormal(ly) absent of regenerating hindlimb in claw of hindlimb digit 4 (T)
-def: "Abnormal(ly) absent of regenerating hindlimb in claw of hindlimb digit 4 (Temporary definition)." []
-
-[Term]
-id: XPO:0115946
-name: abnormal(ly) absent of regenerating hindlimb in claw of hindlimb digit 5 (T)
-def: "Abnormal(ly) absent of regenerating hindlimb in claw of hindlimb digit 5 (Temporary definition)." []
-
-[Term]
-id: XPO:0115947
-name: abnormal(ly) absent of forelimb in forelimb digit 3 (T)
-def: "Abnormal(ly) absent of forelimb in forelimb digit 3 (Temporary definition)." []
-
-[Term]
-id: XPO:0115951
-name: abnormal(ly) absent of inner ear in right (T)
-def: "Abnormal(ly) absent of inner ear in right (Temporary definition)." []
-
-[Term]
-id: XPO:0115952
-name: abnormal(ly) present of posterior in whole organism (T)
-def: "Abnormal(ly) present of posterior in whole organism (Temporary definition)." []
-
-[Term]
-id: XPO:0115953
-name: abnormal(ly) present of regenerating hindlimb in claw (T)
-def: "Abnormal(ly) present of regenerating hindlimb in claw (Temporary definition)." []
-
-[Term]
-id: XPO:0115954
-name: abnormal(ly) present of regenerating hindlimb in tibia-fibula (T)
-def: "Abnormal(ly) present of regenerating hindlimb in tibia-fibula (Temporary definition)." []
-
-[Term]
-id: XPO:0115955
-name: abnormal(ly) present of hindlimb in femur (T)
-def: "Abnormal(ly) present of hindlimb in femur (Temporary definition)." []
-
-[Term]
-id: XPO:0115956
-name: abnormal(ly) present of claw of hindlimb digit 1 in regenerating tissue (T)
-def: "Abnormal(ly) present of claw of hindlimb digit 1 in regenerating tissue (Temporary definition)." []
-
-[Term]
-id: XPO:0115957
-name: abnormal(ly) present of claw of hindlimb digit 2 in regenerating tissue (T)
-def: "Abnormal(ly) present of claw of hindlimb digit 2 in regenerating tissue (Temporary definition)." []
-
-[Term]
-id: XPO:0115958
-name: abnormal(ly) present of claw of hindlimb digit 3 in regenerating tissue (T)
-def: "Abnormal(ly) present of claw of hindlimb digit 3 in regenerating tissue (Temporary definition)." []
-
-[Term]
-id: XPO:0115959
-name: abnormal(ly) present of regenerating hindlimb in claw of hindlimb digit 3 (T)
-def: "Abnormal(ly) present of regenerating hindlimb in claw of hindlimb digit 3 (Temporary definition)." []
-
-[Term]
-id: XPO:0115960
-name: abnormal(ly) present of regenerating hindlimb in interdigital webbing (T)
-def: "Abnormal(ly) present of regenerating hindlimb in interdigital webbing (Temporary definition)." []
-
-[Term]
-id: XPO:0115963
-name: abnormal(ly) increased amount of apoptotic cell in foregut (T)
-def: "Abnormal(ly) increased amount of apoptotic cell in foregut (Temporary definition)." []
-
-[Term]
-id: XPO:0115964
-name: abnormal(ly) increased amount of epidermis in iridophore (T)
-def: "Abnormal(ly) increased amount of epidermis in iridophore (Temporary definition)." []
-
-[Term]
-id: XPO:0115965
-name: abnormal(ly) increased amount of hindlimb bud in iridophore (T)
-def: "Abnormal(ly) increased amount of hindlimb bud in iridophore (Temporary definition)." []
-
-[Term]
-id: XPO:0115966
-name: abnormal(ly) increased amount of forelimb in digit (T)
-def: "Abnormal(ly) increased amount of forelimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0115967
-name: abnormal(ly) increased amount of hindlimb in digit (T)
-def: "Abnormal(ly) increased amount of hindlimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0115968
-name: abnormal(ly) increased amount of regenerating hindlimb in digit (T)
-def: "Abnormal(ly) increased amount of regenerating hindlimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0115969
-name: abnormal(ly) increased amount of autopod in digit (T)
-def: "Abnormal(ly) increased amount of autopod in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0115971
-name: abnormal(ly) increased amount of hindlimb in cartilage element (T)
-def: "Abnormal(ly) increased amount of hindlimb in cartilage element (Temporary definition)." []
-
-[Term]
-id: XPO:0115972
-name: abnormal(ly) increased amount of regenerating hindlimb in cartilage element (T)
-def: "Abnormal(ly) increased amount of regenerating hindlimb in cartilage element (Temporary definition)." []
-
-[Term]
-id: XPO:0115973
-name: abnormal(ly) increased amount of hindlimb in autopod (T)
-def: "Abnormal(ly) increased amount of hindlimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0115974
-name: abnormal(ly) increased amount of regenerating hindlimb in autopod (T)
-def: "Abnormal(ly) increased amount of regenerating hindlimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0115975
-name: abnormal(ly) increased amount of forelimb in bone element (T)
-def: "Abnormal(ly) increased amount of forelimb in bone element (Temporary definition)." []
-
-[Term]
-id: XPO:0115976
-name: abnormal(ly) increased amount of hindlimb in bone element (T)
-def: "Abnormal(ly) increased amount of hindlimb in bone element (Temporary definition)." []
-
-[Term]
-id: XPO:0115977
-name: abnormal(ly) increased amount of regenerating hindlimb in claw of hindlimb digit 1 (T)
-def: "Abnormal(ly) increased amount of regenerating hindlimb in claw of hindlimb digit 1 (Temporary definition)." []
-
-[Term]
-id: XPO:0115978
-name: abnormal(ly) increased amount of regenerating hindlimb in claw of hindlimb digit 2 (T)
-def: "Abnormal(ly) increased amount of regenerating hindlimb in claw of hindlimb digit 2 (Temporary definition)." []
-
-[Term]
-id: XPO:0115979
-name: abnormal(ly) increased amount of regenerating hindlimb in claw of hindlimb digit 3 (T)
-def: "Abnormal(ly) increased amount of regenerating hindlimb in claw of hindlimb digit 3 (Temporary definition)." []
-
-[Term]
-id: XPO:0115980
-name: abnormal(ly) increased amount of regenerating hindlimb in spike (T)
-def: "Abnormal(ly) increased amount of regenerating hindlimb in spike (Temporary definition)." []
-
-[Term]
-id: XPO:0115981
-name: abnormal(ly) decreased length of hindlimb in digit (T)
-def: "Abnormal(ly) decreased length of hindlimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0115982
-name: abnormal(ly) decreased length of regenerating hindlimb in digit (T)
-def: "Abnormal(ly) decreased length of regenerating hindlimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0115983
-name: abnormal(ly) decreased length of regenerating hindlimb in tarsus (T)
-def: "Abnormal(ly) decreased length of regenerating hindlimb in tarsus (Temporary definition)." []
-
-[Term]
-id: XPO:0115984
-name: abnormal(ly) decreased length of hindlimb in tibia-fibula (T)
-def: "Abnormal(ly) decreased length of hindlimb in tibia-fibula (Temporary definition)." []
-
-[Term]
-id: XPO:0115985
-name: abnormal(ly) decreased length of regenerating hindlimb in tibia-fibula (T)
-def: "Abnormal(ly) decreased length of regenerating hindlimb in tibia-fibula (Temporary definition)." []
-
-[Term]
-id: XPO:0115986
-name: abnormal(ly) decreased length of hindlimb in femur (T)
-def: "Abnormal(ly) decreased length of hindlimb in femur (Temporary definition)." []
-
-[Term]
-id: XPO:0115987
-name: abnormal(ly) decreased length of regenerating hindlimb in femur (T)
-def: "Abnormal(ly) decreased length of regenerating hindlimb in femur (Temporary definition)." []
-
-[Term]
 id: XPO:0115988
-name: abnormal(ly) decreased length of hindlimb digit 1 in regenerating tissue (T)
+name: abnormally decreased length of hindlimb digit 1 in regenerating tissue
 def: "Abnormal(ly) decreased length of hindlimb digit 1 in regenerating tissue (Temporary definition)." []
 
 [Term]
 id: XPO:0115989
-name: abnormal(ly) decreased length of hindlimb digit 2 in regenerating tissue (T)
+name: abnormally decreased length of hindlimb digit 2 in regenerating tissue
 def: "Abnormal(ly) decreased length of hindlimb digit 2 in regenerating tissue (Temporary definition)." []
 
 [Term]
 id: XPO:0115990
-name: abnormal(ly) decreased length of hindlimb digit 3 in regenerating tissue (T)
+name: abnormally decreased length of hindlimb digit 3 in regenerating tissue
 def: "Abnormal(ly) decreased length of hindlimb digit 3 in regenerating tissue (Temporary definition)." []
 
 [Term]
 id: XPO:0115991
-name: abnormal(ly) decreased length of hindlimb digit 4 in regenerating tissue (T)
+name: abnormally decreased length of hindlimb digit 4 in regenerating tissue
 def: "Abnormal(ly) decreased length of hindlimb digit 4 in regenerating tissue (Temporary definition)." []
 
 [Term]
 id: XPO:0115992
-name: abnormal(ly) decreased length of hindlimb digit 5 in regenerating tissue (T)
+name: abnormally decreased length of hindlimb digit 5 in regenerating tissue
 def: "Abnormal(ly) decreased length of hindlimb digit 5 in regenerating tissue (Temporary definition)." []
 
 [Term]
-id: XPO:0115994
-name: abnormal(ly) decreased length of cilium in multiciliated cell (T)
-def: "Abnormal(ly) decreased length of cilium in multiciliated cell (Temporary definition)." []
-
-[Term]
-id: XPO:0115995
-name: abnormal(ly) increased size of cell in foregut (T)
-def: "Abnormal(ly) increased size of cell in foregut (Temporary definition)." []
-
-[Term]
-id: XPO:0115998
-name: abnormal(ly) decreased size of regenerating limb in tarsus (T)
-def: "Abnormal(ly) decreased size of regenerating limb in tarsus (Temporary definition)." []
-
-[Term]
-id: XPO:0115999
-name: abnormal(ly) decreased size of hindlimb in tibia-fibula (T)
-def: "Abnormal(ly) decreased size of hindlimb in tibia-fibula (Temporary definition)." []
-
-[Term]
-id: XPO:0116001
-name: abnormal(ly) decreased size of pharyngeal arch in right (T)
-def: "Abnormal(ly) decreased size of pharyngeal arch in right (Temporary definition)." []
-
-[Term]
-id: XPO:0116002
-name: abnormal(ly) decreased size of branchial arch skeleton in right (T)
-def: "Abnormal(ly) decreased size of branchial arch skeleton in right (Temporary definition)." []
-
-[Term]
-id: XPO:0116003
-name: abnormal(ly) increased thickness of hindlimb bud in epidermis (T)
-def: "Abnormal(ly) increased thickness of hindlimb bud in epidermis (Temporary definition)." []
-
-[Term]
-id: XPO:0116004
-name: abnormal(ly) increased volume of regenerating forelimb in autopod (T)
-def: "Abnormal(ly) increased volume of regenerating forelimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116006
-name: abnormal(ly) increased width of regenerating hindlimb in spike (T)
-def: "Abnormal(ly) increased width of regenerating hindlimb in spike (Temporary definition)." []
-
-[Term]
-id: XPO:0116007
-name: abnormal(ly) open of retinal pigmented epithelium in ventral (T)
-def: "Abnormal(ly) open of retinal pigmented epithelium in ventral (Temporary definition)." []
-
-[Term]
-id: XPO:0116008
-name: abnormal(ly) disoriented of cell in foregut (T)
-def: "Abnormal(ly) disoriented of cell in foregut (Temporary definition)." []
-
-[Term]
-id: XPO:0116009
-name: abnormal(ly) inverted of hindlimb zeugopod in dorsal-ventral axis (T)
-def: "Abnormal(ly) inverted of hindlimb zeugopod in dorsal-ventral axis (Temporary definition)." []
-
-[Term]
-id: XPO:0116010
-name: abnormal(ly) inverted of hindlimb in joint region (T)
-def: "Abnormal(ly) inverted of hindlimb in joint region (Temporary definition)." []
-
-[Term]
-id: XPO:0116011
-name: abnormal(ly) mislocalised of gall bladder in right side (T)
-def: "Abnormal(ly) mislocalised of gall bladder in right side (Temporary definition)." []
-
-[Term]
-id: XPO:0116012
-name: abnormal(ly) mislocalised of outflow tract in right side (T)
-def: "Abnormal(ly) mislocalised of outflow tract in right side (Temporary definition)." []
-
-[Term]
-id: XPO:0116013
-name: abnormal(ly) mislocalised of melanophore in dorsal fin (T)
-def: "Abnormal(ly) mislocalised of melanophore in dorsal fin (Temporary definition)." []
-
-[Term]
-id: XPO:0116025
-name: abnormal(ly) hypoplastic of hindlimb in tibia-fibula (T)
-def: "Abnormal(ly) hypoplastic of hindlimb in tibia-fibula (Temporary definition)." []
-
-[Term]
-id: XPO:0116039
-name: abnormal(ly) paralysed of forelimb in muscle (T)
-def: "Abnormal(ly) paralysed of forelimb in muscle (Temporary definition)." []
-
-[Term]
-id: XPO:0116040
-name: abnormal(ly) paralysed of hindlimb in muscle (T)
-def: "Abnormal(ly) paralysed of hindlimb in muscle (Temporary definition)." []
-
-[Term]
-id: XPO:0116041
-name: abnormal(ly) increased rate of regenerating hindlimb in cell (T)
-def: "Abnormal(ly) increased rate of regenerating hindlimb in cell (Temporary definition)." []
-
-[Term]
-id: XPO:0116047
-name: abnormal(ly) Y-shaped of regenerating hindlimb in femur (T)
-def: "Abnormal(ly) Y-shaped of regenerating hindlimb in femur (Temporary definition)." []
-
-[Term]
-id: XPO:0116048
-name: abnormal(ly) Y-shaped of regenerating hindlimb in spike (T)
-def: "Abnormal(ly) Y-shaped of regenerating hindlimb in spike (Temporary definition)." []
-
-[Term]
-id: XPO:0116049
-name: abnormal(ly) edematous of embryo in ventral (T)
-def: "Abnormal(ly) edematous of embryo in ventral (Temporary definition)." []
-
-[Term]
-id: XPO:0116050
-name: abnormal(ly) edematous of ventral in trunk (T)
-def: "Abnormal(ly) edematous of ventral in trunk (Temporary definition)." []
-
-[Term]
-id: XPO:0116051
-name: abnormal(ly) duplicated of dorsal in trunk (T)
-def: "Abnormal(ly) duplicated of dorsal in trunk (Temporary definition)." []
-
-[Term]
-id: XPO:0116052
-name: abnormal(ly) duplicated of regenerating hindlimb in digit (T)
-def: "Abnormal(ly) duplicated of regenerating hindlimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0116053
-name: abnormal(ly) duplicated of regenerating hindlimb in pelvic girdle (T)
-def: "Abnormal(ly) duplicated of regenerating hindlimb in pelvic girdle (Temporary definition)." []
-
-[Term]
-id: XPO:0116054
-name: abnormal(ly) duplicated of regenerating hindlimb in tarsus (T)
-def: "Abnormal(ly) duplicated of regenerating hindlimb in tarsus (Temporary definition)." []
-
-[Term]
-id: XPO:0116055
-name: abnormal(ly) duplicated of regenerating hindlimb in tibia-fibula (T)
-def: "Abnormal(ly) duplicated of regenerating hindlimb in tibia-fibula (Temporary definition)." []
-
-[Term]
-id: XPO:0116056
-name: abnormal(ly) duplicated of regenerating hindlimb in femur (T)
-def: "Abnormal(ly) duplicated of regenerating hindlimb in femur (Temporary definition)." []
-
-[Term]
-id: XPO:0116057
-name: abnormal(ly) duplicated of hindlimb bud in apical ectodermal ridge (T)
-def: "Abnormal(ly) duplicated of hindlimb bud in apical ectodermal ridge (Temporary definition)." []
-
-[Term]
-id: XPO:0116058
-name: abnormal(ly) duplicated of forelimb in stylopod (T)
-def: "Abnormal(ly) duplicated of forelimb in stylopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116059
-name: abnormal(ly) duplicated of hindlimb in stylopod (T)
-def: "Abnormal(ly) duplicated of hindlimb in stylopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116060
-name: abnormal(ly) duplicated of forelimb in zeugopod (T)
-def: "Abnormal(ly) duplicated of forelimb in zeugopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116061
-name: abnormal(ly) duplicated of hindlimb in zeugopod (T)
-def: "Abnormal(ly) duplicated of hindlimb in zeugopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116062
-name: abnormal(ly) duplicated of regenerating hindlimb in zeugopod (T)
-def: "Abnormal(ly) duplicated of regenerating hindlimb in zeugopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116063
-name: abnormal(ly) duplicated of forelimb in autopod (T)
-def: "Abnormal(ly) duplicated of forelimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116064
-name: abnormal(ly) duplicated of hindlimb in autopod (T)
-def: "Abnormal(ly) duplicated of hindlimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116065
-name: abnormal(ly) duplicated of regenerating hindlimb in autopod (T)
-def: "Abnormal(ly) duplicated of regenerating hindlimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116066
-name: abnormal(ly) duplicated of claw of hindlimb digit 4 in bone element (T)
-def: "Abnormal(ly) duplicated of claw of hindlimb digit 4 in bone element (Temporary definition)." []
-
-[Term]
-id: XPO:0116067
-name: abnormal(ly) duplicated of regenerating hindlimb in hindlimb digit 3 (T)
-def: "Abnormal(ly) duplicated of regenerating hindlimb in hindlimb digit 3 (Temporary definition)." []
-
-[Term]
-id: XPO:0116068
-name: abnormal(ly) duplicated of regenerating hindlimb in hindlimb digit 4 (T)
-def: "Abnormal(ly) duplicated of regenerating hindlimb in hindlimb digit 4 (Temporary definition)." []
-
-[Term]
-id: XPO:0116069
-name: abnormal(ly) duplicated of regenerating hindlimb in hindlimb digit 5 (T)
-def: "Abnormal(ly) duplicated of regenerating hindlimb in hindlimb digit 5 (Temporary definition)." []
-
-[Term]
-id: XPO:0116073
-name: abnormal(ly) duplicated of eye in right (T)
-def: "Abnormal(ly) duplicated of eye in right (Temporary definition)." []
-
-[Term]
-id: XPO:0116074
-name: abnormal(ly) duplicated of forelimb in right (T)
-def: "Abnormal(ly) duplicated of forelimb in right (Temporary definition)." []
-
-[Term]
-id: XPO:0116075
-name: abnormal(ly) condensed of regenerating hindlimb in tarsus (T)
-def: "Abnormal(ly) condensed of regenerating hindlimb in tarsus (Temporary definition)." []
-
-[Term]
-id: XPO:0116076
-name: abnormal(ly) spherical of endodermal cell in archenteron floor (T)
-def: "Abnormal(ly) spherical of endodermal cell in archenteron floor (Temporary definition)." []
-
-[Term]
-id: XPO:0116077
-name: abnormal(ly) disrupted of epithelium in foregut endoderm (T)
-def: "Abnormal(ly) disrupted of epithelium in foregut endoderm (Temporary definition)." []
-
-[Term]
-id: XPO:0116078
-name: abnormal(ly) deformed of ventral in trunk (T)
-def: "Abnormal(ly) deformed of ventral in trunk (Temporary definition)." []
-
-[Term]
-id: XPO:0116079
-name: abnormal(ly) misaligned with of nucleus in myoblast (T)
-def: "Abnormal(ly) misaligned with of nucleus in myoblast (Temporary definition)." []
-
-[Term]
-id: XPO:0116080
-name: abnormal(ly) bifurcated of regenerating hindlimb in blood vessel (T)
-def: "Abnormal(ly) bifurcated of regenerating hindlimb in blood vessel (Temporary definition)." []
-
-[Term]
-id: XPO:0116081
-name: abnormal(ly) bifurcated of regenerating hindlimb in tarsus (T)
-def: "Abnormal(ly) bifurcated of regenerating hindlimb in tarsus (Temporary definition)." []
-
-[Term]
-id: XPO:0116083
-name: abnormal(ly) bifurcated of hindlimb in right (T)
-def: "Abnormal(ly) bifurcated of hindlimb in right (Temporary definition)." []
-
-[Term]
-id: XPO:0116084
-name: abnormal(ly) loose of endodermal cell in archenteron floor (T)
-def: "Abnormal(ly) loose of endodermal cell in archenteron floor (Temporary definition)." []
-
-[Term]
-id: XPO:0116085
-name: abnormal(ly) constricted of ventral in trunk (T)
-def: "Abnormal(ly) constricted of ventral in trunk (Temporary definition)." []
-
-[Term]
-id: XPO:0116086
-name: abnormal(ly) cylindrical of regenerating hindlimb in tibia-fibula (T)
-def: "Abnormal(ly) cylindrical of regenerating hindlimb in tibia-fibula (Temporary definition)." []
-
-[Term]
-id: XPO:0116087
-name: abnormal(ly) U-shaped of hindlimb in tibia-fibula (T)
-def: "Abnormal(ly) U-shaped of hindlimb in tibia-fibula (Temporary definition)." []
-
-[Term]
-id: XPO:0116088
-name: abnormal(ly) has normal numbers of parts of type of regenerating hindlimb in digit (T)
-def: "Abnormal(ly) has normal numbers of parts of type of regenerating hindlimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0116090
-name: abnormal(ly) variant shape of cell in neural plate (T)
-def: "Abnormal(ly) variant shape of cell in neural plate (Temporary definition)." []
-
-[Term]
 id: XPO:0116091
-name: abnormal(ly) increased variability of size of cell in endoderm (T)
+name: abnormally increased variability of size of cell in endoderm
 def: "Abnormal(ly) increased variability of size of cell in endoderm (Temporary definition)." []
-
-[Term]
-id: XPO:0116093
-name: abnormal(ly) decreased amount of melanophore in epidermis (T)
-def: "Abnormal(ly) decreased amount of melanophore in epidermis (Temporary definition)." []
-
-[Term]
-id: XPO:0116099
-name: abnormal(ly) decreased amount of forelimb in muscle (T)
-def: "Abnormal(ly) decreased amount of forelimb in muscle (Temporary definition)." []
-
-[Term]
-id: XPO:0116100
-name: abnormal(ly) decreased amount of hindlimb in muscle (T)
-def: "Abnormal(ly) decreased amount of hindlimb in muscle (Temporary definition)." []
-
-[Term]
-id: XPO:0116101
-name: abnormal(ly) decreased amount of pigment cell in eye (T)
-def: "Abnormal(ly) decreased amount of pigment cell in eye (Temporary definition)." []
-
-[Term]
-id: XPO:0116102
-name: abnormal(ly) decreased amount of forelimb in digit (T)
-def: "Abnormal(ly) decreased amount of forelimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0116103
-name: abnormal(ly) decreased amount of hindlimb in digit (T)
-def: "Abnormal(ly) decreased amount of hindlimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0116104
-name: abnormal(ly) decreased amount of regenerating hindlimb in digit (T)
-def: "Abnormal(ly) decreased amount of regenerating hindlimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0116105
-name: abnormal(ly) decreased amount of hindlimb in hindlimb digit (T)
-def: "Abnormal(ly) decreased amount of hindlimb in hindlimb digit (Temporary definition)." []
-
-[Term]
-id: XPO:0116106
-name: abnormal(ly) decreased amount of regenerating hindlimb in hindlimb digit (T)
-def: "Abnormal(ly) decreased amount of regenerating hindlimb in hindlimb digit (Temporary definition)." []
-
-[Term]
-id: XPO:0116107
-name: abnormal(ly) decreased amount of forelimb in forelimb digit (T)
-def: "Abnormal(ly) decreased amount of forelimb in forelimb digit (Temporary definition)." []
-
-[Term]
-id: XPO:0116108
-name: abnormal(ly) decreased amount of hindlimb in claw (T)
-def: "Abnormal(ly) decreased amount of hindlimb in claw (Temporary definition)." []
-
-[Term]
-id: XPO:0116109
-name: abnormal(ly) decreased amount of regenerating hindlimb in claw (T)
-def: "Abnormal(ly) decreased amount of regenerating hindlimb in claw (Temporary definition)." []
-
-[Term]
-id: XPO:0116110
-name: abnormal(ly) decreased amount of hindlimb in metatarsus (T)
-def: "Abnormal(ly) decreased amount of hindlimb in metatarsus (Temporary definition)." []
-
-[Term]
-id: XPO:0116111
-name: abnormal(ly) decreased amount of hindlimb in tibia-fibula (T)
-def: "Abnormal(ly) decreased amount of hindlimb in tibia-fibula (Temporary definition)." []
-
-[Term]
-id: XPO:0116113
-name: abnormal(ly) decreased amount of retinal inner plexiform layer in bipolar neuron (T)
-def: "Abnormal(ly) decreased amount of retinal inner plexiform layer in bipolar neuron (Temporary definition)." []
-
-[Term]
-id: XPO:0116114
-name: abnormal(ly) decreased amount of forelimb in autopod (T)
-def: "Abnormal(ly) decreased amount of forelimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116115
-name: abnormal(ly) decreased amount of hindlimb in autopod (T)
-def: "Abnormal(ly) decreased amount of hindlimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116116
-name: abnormal(ly) decreased amount of forelimb in bone element (T)
-def: "Abnormal(ly) decreased amount of forelimb in bone element (Temporary definition)." []
-
-[Term]
-id: XPO:0116117
-name: abnormal(ly) decreased amount of hindlimb in bone element (T)
-def: "Abnormal(ly) decreased amount of hindlimb in bone element (Temporary definition)." []
-
-[Term]
-id: XPO:0116118
-name: abnormal(ly) decreased amount of heart in trabecula (T)
-def: "Abnormal(ly) decreased amount of heart in trabecula (Temporary definition)." []
-
-[Term]
-id: XPO:0116120
-name: abnormal(ly) lacks parts or has fewer parts of type of hindlimb in autopod (T)
-def: "Abnormal(ly) lacks parts or has fewer parts of type of hindlimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116121
-name: abnormal(ly) lacks parts or has fewer parts of type of regenerating hindlimb in autopod (T)
-def: "Abnormal(ly) lacks parts or has fewer parts of type of regenerating hindlimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116122
-name: abnormal(ly) has fewer parts of type of forelimb in digit (T)
-def: "Abnormal(ly) has fewer parts of type of forelimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0116123
-name: abnormal(ly) has fewer parts of type of regenerating forelimb in digit (T)
-def: "Abnormal(ly) has fewer parts of type of regenerating forelimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0116124
-name: abnormal(ly) has fewer parts of type of regenerating hindlimb in digit (T)
-def: "Abnormal(ly) has fewer parts of type of regenerating hindlimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0116125
-name: abnormal(ly) has fewer parts of type of regenerating limb in digit (T)
-def: "Abnormal(ly) has fewer parts of type of regenerating limb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0116126
-name: abnormal(ly) has fewer parts of type of regenerating hindlimb in hindlimb digit (T)
-def: "Abnormal(ly) has fewer parts of type of regenerating hindlimb in hindlimb digit (Temporary definition)." []
-
-[Term]
-id: XPO:0116127
-name: abnormal(ly) has fewer parts of type of regenerating forelimb in metacarpus (T)
-def: "Abnormal(ly) has fewer parts of type of regenerating forelimb in metacarpus (Temporary definition)." []
-
-[Term]
-id: XPO:0116128
-name: abnormal(ly) has fewer parts of type of hindlimb in tibia-fibula (T)
-def: "Abnormal(ly) has fewer parts of type of hindlimb in tibia-fibula (Temporary definition)." []
-
-[Term]
-id: XPO:0116129
-name: abnormal(ly) has fewer parts of type of regenerating limb in skeletal element (T)
-def: "Abnormal(ly) has fewer parts of type of regenerating limb in skeletal element (Temporary definition)." []
-
-[Term]
-id: XPO:0116130
-name: abnormal(ly) has fewer parts of type of hindlimb in autopod (T)
-def: "Abnormal(ly) has fewer parts of type of hindlimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116131
-name: abnormal(ly) has fewer parts of type of regenerating hindlimb in autopod (T)
-def: "Abnormal(ly) has fewer parts of type of regenerating hindlimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116132
-name: abnormal(ly) has fewer parts of type of forelimb digit in bone element (T)
-def: "Abnormal(ly) has fewer parts of type of forelimb digit in bone element (Temporary definition)." []
-
-[Term]
-id: XPO:0116133
-name: abnormal(ly) has fewer parts of type of regenerating forelimb in digit-joint region (T)
-def: "Abnormal(ly) has fewer parts of type of regenerating forelimb in digit-joint region (Temporary definition)." []
-
-[Term]
-id: XPO:0116134
-name: abnormal(ly) has fewer parts of type of forelimb in forelimb digit 3 (T)
-def: "Abnormal(ly) has fewer parts of type of forelimb in forelimb digit 3 (Temporary definition)." []
-
-[Term]
-id: XPO:0116135
-name: abnormal(ly) has extra parts of type of regenerating hindlimb in digit (T)
-def: "Abnormal(ly) has extra parts of type of regenerating hindlimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0116136
-name: abnormal(ly) has extra parts of type of regenerating hindlimb in hindlimb digit (T)
-def: "Abnormal(ly) has extra parts of type of regenerating hindlimb in hindlimb digit (Temporary definition)." []
-
-[Term]
-id: XPO:0116137
-name: abnormal(ly) has extra parts of type of hindlimb in zeugopod (T)
-def: "Abnormal(ly) has extra parts of type of hindlimb in zeugopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116138
-name: abnormal(ly) has extra parts of type of hindlimb in autopod (T)
-def: "Abnormal(ly) has extra parts of type of hindlimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116139
-name: abnormal(ly) conical of regenerating forelimb in autopod (T)
-def: "Abnormal(ly) conical of regenerating forelimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116140
-name: abnormal(ly) conical of regenerating hindlimb in autopod (T)
-def: "Abnormal(ly) conical of regenerating hindlimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116144
-name: abnormal(ly) altered number of of forelimb in digit (T)
-def: "Abnormal(ly) altered number of of forelimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0116145
-name: abnormal(ly) altered number of of hindlimb in digit (T)
-def: "Abnormal(ly) altered number of of hindlimb in digit (Temporary definition)." []
-
-[Term]
-id: XPO:0116146
-name: abnormal(ly) altered number of of forelimb in metacarpus (T)
-def: "Abnormal(ly) altered number of of forelimb in metacarpus (Temporary definition)." []
-
-[Term]
-id: XPO:0116147
-name: abnormal(ly) altered number of of regenerating hindlimb in tibia-fibula (T)
-def: "Abnormal(ly) altered number of of regenerating hindlimb in tibia-fibula (Temporary definition)." []
-
-[Term]
-id: XPO:0116148
-name: abnormal(ly) altered number of of hindlimb in hindlimb digit 2 (T)
-def: "Abnormal(ly) altered number of of hindlimb in hindlimb digit 2 (Temporary definition)." []
-
-[Term]
-id: XPO:0116149
-name: abnormal(ly) altered number of of hindlimb in hindlimb digit 3 (T)
-def: "Abnormal(ly) altered number of of hindlimb in hindlimb digit 3 (Temporary definition)." []
-
-[Term]
-id: XPO:0116150
-name: abnormal(ly) altered number of of hindlimb in hindlimb digit 4 (T)
-def: "Abnormal(ly) altered number of of hindlimb in hindlimb digit 4 (Temporary definition)." []
-
-[Term]
-id: XPO:0116151
-name: abnormal(ly) altered number of of hindlimb in hindlimb digit 5 (T)
-def: "Abnormal(ly) altered number of of hindlimb in hindlimb digit 5 (Temporary definition)." []
-
-[Term]
-id: XPO:0116152
-name: abnormal(ly) multiple of regenerating forelimb in autopod (T)
-def: "Abnormal(ly) multiple of regenerating forelimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116153
-name: abnormal(ly) adjacent to of eye in left side (T)
-def: "Abnormal(ly) adjacent to of eye in left side (Temporary definition)." []
-
-[Term]
-id: XPO:0116154
-name: abnormal(ly) decreased mobility of cilium in ciliated epidermal cell (T)
-def: "Abnormal(ly) decreased mobility of cilium in ciliated epidermal cell (Temporary definition)." []
-
-[Term]
-id: XPO:0116155
-name: abnormal(ly) decreased mobility of cilium in multiciliated cell (T)
-def: "Abnormal(ly) decreased mobility of cilium in multiciliated cell (Temporary definition)." []
-
-[Term]
-id: XPO:0116156
-name: abnormal(ly) increased branchiness of regenerating forelimb in autopod (T)
-def: "Abnormal(ly) increased branchiness of regenerating forelimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116157
-name: abnormal(ly) segmented of regenerating forelimb in autopod (T)
-def: "Abnormal(ly) segmented of regenerating forelimb in autopod (Temporary definition)." []
-
-[Term]
-id: XPO:0116158
-name: abnormal(ly) decreased adhesivity of endodermal cell in archenteron floor (T)
-def: "Abnormal(ly) decreased adhesivity of endodermal cell in archenteron floor (Temporary definition)." []
-
-[Term]
-id: XPO:0116159
-name: abnormal(ly) decreased adhesivity of cell in foregut (T)
-def: "Abnormal(ly) decreased adhesivity of cell in foregut (Temporary definition)." []
-
-[Term]
-id: XPO:0116160
-name: abnormal(ly) shortened of regenerating tail in neuron (T)
-def: "Abnormal(ly) shortened of regenerating tail in neuron (Temporary definition)." []
-
-[Term]
-id: XPO:0116161
-name: abnormal(ly) extends to of axon in optic tract (T)
-def: "Abnormal(ly) extends to of axon in optic tract (Temporary definition)." []
-
-[Term]
-id: XPO:0116163
-name: abnormal(ly) oblique orientation of heart in right atrium (T)
-def: "Abnormal(ly) oblique orientation of heart in right atrium (Temporary definition)." []
-
-[Term]
-id: XPO:0116164
-name: abnormal(ly) oblique orientation of heart in cardiac ventricle (T)
-def: "Abnormal(ly) oblique orientation of heart in cardiac ventricle (Temporary definition)." []
-
-[Term]
-id: XPO:0116165
-name: abnormal(ly) oblique orientation of heart in outflow tract (T)
-def: "Abnormal(ly) oblique orientation of heart in outflow tract (Temporary definition)." []
-
-[Term]
-id: XPO:0116168
-name: abnormal(ly) irregularly shaped of epithelial cell in foregut endoderm (T)
-def: "Abnormal(ly) irregularly shaped of epithelial cell in foregut endoderm (Temporary definition)." []
 
 [Term]
 id: XPO:0116429
@@ -24591,12 +22932,6 @@ id: XPO:0124908
 name: absent lateral plate mesoderm
 def: "Absence of lateral plate mesoderm." []
 synonym: "missing lateral plate mesoderm" EXACT []
-
-[Term]
-id: XPO:0124909
-name: absent left optic vesicle
-def: "Absence of left optic vesicle." []
-synonym: "missing left optic vesicle" EXACT []
 
 [Term]
 id: XPO:0124910
@@ -28203,12 +26538,6 @@ id: XPO:0125552
 name: absent blastomere D2.2.1
 def: "Absence of blastomere D2.2.1." []
 synonym: "missing blastomere D2.2.1" EXACT []
-
-[Term]
-id: XPO:0125553
-name: absent right optic vesicle
-def: "Absence of right optic vesicle." []
-synonym: "missing right optic vesicle" EXACT []
 
 [Term]
 id: XPO:0125554
@@ -33473,12 +31802,6 @@ def: "An abnormally localised notochord." []
 synonym: "abnormal position of notochord" EXACT []
 
 [Term]
-id: XPO:0126523
-name: abnormally localised left optic vesicle
-def: "An abnormally localised left optic vesicle." []
-synonym: "abnormal position of left optic vesicle" EXACT []
-
-[Term]
 id: XPO:0126524
 name: abnormally localised fin margin
 def: "An abnormally localised fin margin." []
@@ -37221,12 +35544,6 @@ id: XPO:0127189
 name: abnormally localised blastomere D2.2.1
 def: "An abnormally localised blastomere D2.2.1." []
 synonym: "abnormal position of blastomere D2.2.1" EXACT []
-
-[Term]
-id: XPO:0127190
-name: abnormally localised right optic vesicle
-def: "An abnormally localised right optic vesicle." []
-synonym: "abnormal position of right optic vesicle" EXACT []
 
 [Term]
 id: XPO:0127191
@@ -43408,12 +41725,6 @@ def: "An abnormal reduction in the size of the m. rectus anterior primordium." [
 synonym: "abnormally small m. rectus anterior primordium" EXACT []
 
 [Term]
-id: XPO:0128280
-name: decreased size of the left optic vesicle
-def: "An abnormal reduction in the size of the left optic vesicle." []
-synonym: "abnormally small left optic vesicle" EXACT []
-
-[Term]
 id: XPO:0128281
 name: decreased size of the trigeminal placode
 def: "An abnormal reduction in the size of the trigeminal placode." []
@@ -46106,12 +44417,6 @@ id: XPO:0128734
 name: decreased size of the spermatocyte
 def: "An abnormal reduction in the size of the spermatocyte." []
 synonym: "abnormally small spermatocyte" EXACT []
-
-[Term]
-id: XPO:0128735
-name: decreased size of the right optic vesicle
-def: "An abnormal reduction in the size of the right optic vesicle." []
-synonym: "abnormally small right optic vesicle" EXACT []
 
 [Term]
 id: XPO:0128736
@@ -52180,12 +50485,6 @@ def: "An increase in the size of the m. rectus anterior primordium." []
 synonym: "enlarged m. rectus anterior primordium" EXACT []
 
 [Term]
-id: XPO:0129760
-name: increased size of the left optic vesicle
-def: "An increase in the size of the left optic vesicle." []
-synonym: "enlarged left optic vesicle" EXACT []
-
-[Term]
 id: XPO:0129761
 name: increased size of the trigeminal placode
 def: "An increase in the size of the trigeminal placode." []
@@ -54866,12 +53165,6 @@ id: XPO:0130212
 name: increased size of the spermatocyte
 def: "An increase in the size of the spermatocyte." []
 synonym: "enlarged spermatocyte" EXACT []
-
-[Term]
-id: XPO:0130213
-name: increased size of the right optic vesicle
-def: "An increase in the size of the right optic vesicle." []
-synonym: "enlarged right optic vesicle" EXACT []
 
 [Term]
 id: XPO:0130214
@@ -66935,11 +65228,6 @@ name: abnormal development of secretory epithelial cell
 def: "An abnormal development of the secretory epithelial cell." []
 
 [Term]
-id: XPO:0132350
-name: abnormal development of left optic vesicle
-def: "An abnormal development of the left optic vesicle." []
-
-[Term]
 id: XPO:0132351
 name: abnormal development of optic vesicle
 def: "An abnormal development of the optic vesicle." []
@@ -71668,11 +69956,6 @@ def: "An abnormal development of the centromere." []
 id: XPO:0133300
 name: abnormal development of skeletal muscle satellite cell
 def: "An abnormal development of the skeletal muscle satellite cell." []
-
-[Term]
-id: XPO:0133301
-name: abnormal development of right optic vesicle
-def: "An abnormal development of the right optic vesicle." []
 
 [Term]
 id: XPO:0133302
@@ -80154,16 +78437,6 @@ name: increased apoptosis in regenerating pelvic girdle
 def: "An increased occurrence of apoptotic process in regenerating pelvic girdle." []
 
 [Term]
-id: XPO:0135014
-name: increased apoptosis in left optic vesicle
-def: "An increased occurrence of apoptotic process in left optic vesicle." []
-
-[Term]
-id: XPO:0135015
-name: increased apoptosis in right optic vesicle
-def: "An increased occurrence of apoptotic process in right optic vesicle." []
-
-[Term]
 id: XPO:0135016
 name: increased apoptosis in ventro-lateral region
 def: "An increased occurrence of apoptotic process in ventro-lateral region." []
@@ -87672,16 +85945,6 @@ def: "An increased occurrence of cell population proliferation in adult thromboc
 id: XPO:0136564
 name: increased cell population proliferation in regenerating pelvic girdle
 def: "An increased occurrence of cell population proliferation in regenerating pelvic girdle." []
-
-[Term]
-id: XPO:0136565
-name: increased cell population proliferation in left optic vesicle
-def: "An increased occurrence of cell population proliferation in left optic vesicle." []
-
-[Term]
-id: XPO:0136566
-name: increased cell population proliferation in right optic vesicle
-def: "An increased occurrence of cell population proliferation in right optic vesicle." []
 
 [Term]
 id: XPO:0136567
@@ -95194,16 +93457,6 @@ name: decreased apoptosis in regenerating pelvic girdle
 def: "A decreased occurrence of apoptotic process in regenerating pelvic girdle." []
 
 [Term]
-id: XPO:0138116
-name: decreased apoptosis in left optic vesicle
-def: "A decreased occurrence of apoptotic process in left optic vesicle." []
-
-[Term]
-id: XPO:0138117
-name: decreased apoptosis in right optic vesicle
-def: "A decreased occurrence of apoptotic process in right optic vesicle." []
-
-[Term]
 id: XPO:0138118
 name: decreased apoptosis in ventro-lateral region
 def: "A decreased occurrence of apoptotic process in ventro-lateral region." []
@@ -102714,16 +100967,6 @@ name: decreased cell population proliferation in regenerating pelvic girdle
 def: "A decreased occurrence of cell population proliferation in regenerating pelvic girdle." []
 
 [Term]
-id: XPO:0139667
-name: decreased cell population proliferation in left optic vesicle
-def: "A decreased occurrence of cell population proliferation in left optic vesicle." []
-
-[Term]
-id: XPO:0139668
-name: decreased cell population proliferation in right optic vesicle
-def: "A decreased occurrence of cell population proliferation in right optic vesicle." []
-
-[Term]
 id: XPO:0139669
 name: decreased cell population proliferation in ventro-lateral region
 def: "A decreased occurrence of cell population proliferation in ventro-lateral region." []
@@ -103999,11 +102242,6 @@ def: "An abnormally necrotic sclerotome of tail somite 18." []
 id: XPO:0139940
 name: abnormally necrotic wound epidermis
 def: "An abnormally necrotic wound epidermis." []
-
-[Term]
-id: XPO:0139941
-name: abnormally necrotic left optic vesicle
-def: "An abnormally necrotic left optic vesicle." []
 
 [Term]
 id: XPO:0139942
@@ -109901,11 +108139,6 @@ name: abnormally necrotic posterior palatine artery
 def: "An abnormally necrotic posterior palatine artery." []
 
 [Term]
-id: XPO:0141160
-name: abnormally necrotic right optic vesicle
-def: "An abnormally necrotic right optic vesicle." []
-
-[Term]
 id: XPO:0141162
 name: abnormally necrotic ventrolateral thalamic nucleus
 def: "An abnormally necrotic ventrolateral thalamic nucleus." []
@@ -110714,4 +108947,1459 @@ synonym: "abnormal morphology of anatomical region" EXACT []
 id: XPO:0141317
 name: abnormal behavior process
 def: "An anomaly in behavior process." []
+
+[Term]
+id: XPO:0141318
+name: increased size of the hand in regenerating forelimb
+def: "An increase in the size of the hand in the regenerating forelimb." []
+synonym: "enlarged hand in regenerating forelimb" EXACT []
+
+[Term]
+id: XPO:0141319
+name: increased size of the foot in regenerating hindlimb
+def: "An increase in the size of the foot in the regenerating hindlimb." []
+synonym: "enlarged foot in regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141320
+name: edema in ventral trunk
+def: "An abnormal accumulation of fluid in the ventral trunk." []
+synonym: "abnormal accumulation of fluid in ventral trunk" EXACT []
+synonym: "ventral trunk edema" EXACT []
+
+[Term]
+id: XPO:0141321
+name: edema in hindlimb
+def: "An abnormal accumulation of fluid in the hindlimb." []
+synonym: "abnormal accumulation of fluid in hindlimb" EXACT []
+synonym: "hindlimb edema" EXACT []
+
+[Term]
+id: XPO:0141322
+name: edema in forelimb
+def: "An abnormal accumulation of fluid in the forelimb." []
+synonym: "abnormal accumulation of fluid in forelimb" EXACT []
+synonym: "forelimb edema" EXACT []
+
+[Term]
+id: XPO:0141323
+name: edema in eye
+def: "An abnormal accumulation of fluid in the eye." []
+synonym: "abnormal accumulation of fluid in eye" EXACT []
+synonym: "eye edema" EXACT []
+
+[Term]
+id: XPO:0141324
+name: edema in brain
+def: "An abnormal accumulation of fluid in the brain." []
+synonym: "abnormal accumulation of fluid in brain" EXACT []
+synonym: "brain edema" EXACT []
+
+[Term]
+id: XPO:0141325
+name: edema in spinal cord
+def: "An abnormal accumulation of fluid in the spinal cord." []
+synonym: "abnormal accumulation of fluid in spinal cord" EXACT []
+synonym: "spinal cord edema" EXACT []
+
+[Term]
+id: XPO:0141326
+name: edema in limb bud
+def: "An abnormal accumulation of fluid in the limb bud." []
+synonym: "abnormal accumulation of fluid in limb bud" EXACT []
+synonym: "limb bud edema" EXACT []
+
+[Term]
+id: XPO:0141327
+name: edema in tail
+def: "An abnormal accumulation of fluid in the tail." []
+synonym: "abnormal accumulation of fluid in tail" EXACT []
+synonym: "tail edema" EXACT []
+
+[Term]
+id: XPO:0141328
+name: edema in circulatory system
+def: "An abnormal accumulation of fluid in the circulatory system." []
+synonym: "abnormal accumulation of fluid in circulatory system" EXACT []
+synonym: "circulatory system edema" EXACT []
+
+[Term]
+id: XPO:0141329
+name: edema in coelom
+def: "An abnormal accumulation of fluid in the coelom." []
+synonym: "abnormal accumulation of fluid in coelom" EXACT []
+synonym: "coelom edema" EXACT []
+
+[Term]
+id: XPO:0141330
+name: edema in epidermis
+def: "An abnormal accumulation of fluid in the epidermis." []
+synonym: "abnormal accumulation of fluid in epidermis" EXACT []
+synonym: "epidermis edema" EXACT []
+
+[Term]
+id: XPO:0141331
+name: edema in embryo
+def: "An abnormal accumulation of fluid in the embryo." []
+synonym: "abnormal accumulation of fluid in embryo" EXACT []
+synonym: "embryo edema" EXACT []
+
+[Term]
+id: XPO:0141332
+name: decreased size of the tarsus in the regenerating hindlimb
+def: "An abnormal reduction in the size of the tarsus in the regenerating hindlimb." []
+synonym: "abnormally small tarsus in regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141333
+name: increased pigmentation in the retinal pigmented epithelium
+def: "Increased or increasing of pigmentation of retinal pigmented epithelium." []
+synonym: "increasing of pigment in the retinal pigmented epithelium" EXACT []
+synonym: "retinal pigmented epithelium hyperpigmentation" EXACT []
+
+[Term]
+id: XPO:0141334
+name: increased pigmentation in the whole organism
+def: "Increased or increasing of pigmentation of whole organism." []
+synonym: "increasing of pigment in the whole organism" EXACT []
+synonym: "whole organism hyperpigmentation" EXACT []
+
+[Term]
+id: XPO:0141335
+name: increased pigmentation in the dorsal fin
+def: "Increased or increasing of pigmentation of dorsal fin." []
+synonym: "dorsal fin hyperpigmentation" EXACT []
+synonym: "increasing of pigment in the dorsal fin" EXACT []
+
+[Term]
+id: XPO:0141336
+name: increased pigmentation in the epidermis
+def: "Increased or increasing of pigmentation of epidermis." []
+synonym: "epidermis hyperpigmentation" EXACT []
+synonym: "increasing of pigment in the epidermis" EXACT []
+
+[Term]
+id: XPO:0141337
+name: increased pigmentation in the eye
+def: "Increased or increasing of pigmentation of eye." []
+synonym: "eye hyperpigmentation" EXACT []
+synonym: "increasing of pigment in the eye" EXACT []
+
+[Term]
+id: XPO:0141338
+name: decreased pigmentation in the optic nerve
+def: "Decreased or loss of pigmentation of optic nerve." []
+synonym: "loss of pigment in the optic nerve" EXACT []
+synonym: "optic nerve hypopigmentation" EXACT []
+
+[Term]
+id: XPO:0141339
+name: decreased pigmentation in the head
+def: "Decreased or loss of pigmentation of head." []
+synonym: "head hypopigmentation" EXACT []
+synonym: "loss of pigment in the head" EXACT []
+
+[Term]
+id: XPO:0141340
+name: decreased pigmentation in the optic stalk
+def: "Decreased or loss of pigmentation of optic stalk." []
+synonym: "loss of pigment in the optic stalk" EXACT []
+synonym: "optic stalk hypopigmentation" EXACT []
+
+[Term]
+id: XPO:0141341
+name: decreased pigmentation in the dorsal fin
+def: "Decreased or loss of pigmentation of dorsal fin." []
+synonym: "dorsal fin hypopigmentation" EXACT []
+synonym: "loss of pigment in the dorsal fin" EXACT []
+
+[Term]
+id: XPO:0141342
+name: decreased pigmentation in the epidermis
+def: "Decreased or loss of pigmentation of epidermis." []
+synonym: "epidermis hypopigmentation" EXACT []
+synonym: "loss of pigment in the epidermis" EXACT []
+
+[Term]
+id: XPO:0141343
+name: decreased pigmentation in the eye
+def: "Decreased or loss of pigmentation of eye." []
+synonym: "eye hypopigmentation" EXACT []
+synonym: "loss of pigment in the eye" EXACT []
+
+[Term]
+id: XPO:0141344
+name: decreased cell adhesion in embryo
+def: "A decreased occurrence of cell adhesion in embryo." []
+
+[Term]
+id: XPO:0141345
+name: decreased cell adhesion in archenteron floor
+def: "A decreased occurrence of cell adhesion in archenteron floor." []
+
+[Term]
+id: XPO:0141346
+name: decreased cell adhesion in foregut
+def: "A decreased occurrence of cell adhesion in foregut." []
+
+[Term]
+id: XPO:0141347
+name: decreased cell adhesion in prechordal plate
+def: "A decreased occurrence of cell adhesion in prechordal plate." []
+
+[Term]
+id: XPO:0141348
+name: decreased cell adhesion in dorsal marginal zone
+def: "A decreased occurrence of cell adhesion in dorsal marginal zone." []
+
+[Term]
+id: XPO:0141349
+name: decreased cell adhesion in endodermal cell
+def: "A decreased occurrence of cell adhesion in endodermal cell." []
+
+[Term]
+id: XPO:0141350
+name: decreased cell adhesion in ectodermal cell
+def: "A decreased occurrence of cell adhesion in ectodermal cell." []
+
+[Term]
+id: XPO:0141351
+name: decreased cell adhesion in mesodermal cell
+def: "A decreased occurrence of cell adhesion in mesodermal cell." []
+
+[Term]
+id: XPO:0141352
+name: decreased cell adhesion in animal cap
+def: "A decreased occurrence of cell adhesion in animal cap." []
+
+[Term]
+id: XPO:0141353
+name: decreased cell adhesion in epithelium
+def: "A decreased occurrence of cell adhesion in epithelium." []
+
+[Term]
+id: XPO:0141354
+name: decreased cell adhesion in neural crest
+def: "A decreased occurrence of cell adhesion in neural crest." []
+
+[Term]
+id: XPO:0141355
+name: decreased cell adhesion in gastrula cell
+def: "A decreased occurrence of cell adhesion in gastrula cell." []
+
+[Term]
+id: XPO:0141356
+name: decreased cell adhesion in primordial germ cell
+def: "A decreased occurrence of cell adhesion in primordial germ cell." []
+
+[Term]
+id: XPO:0141357
+name: decreased cell adhesion in eye
+def: "A decreased occurrence of cell adhesion in eye." []
+
+[Term]
+id: XPO:0141358
+name: decreased cell adhesion in brain
+def: "A decreased occurrence of cell adhesion in brain." []
+
+[Term]
+id: XPO:0141359
+name: decreased cell adhesion in neuroectoderm
+def: "A decreased occurrence of cell adhesion in neuroectoderm." []
+
+[Term]
+id: XPO:0141360
+name: decreased cell adhesion in foregut endoderm
+def: "A decreased occurrence of cell adhesion in foregut endoderm." []
+
+[Term]
+id: XPO:0141361
+name: decreased cell adhesion in foregut epithelium
+def: "A decreased occurrence of cell adhesion in foregut epithelium." []
+
+[Term]
+id: XPO:0141362
+name: increased cell adhesion in embryo
+def: "An increased occurrence of cell adhesion in embryo." []
+
+[Term]
+id: XPO:0141363
+name: increased cell adhesion in archenteron floor
+def: "An increased occurrence of cell adhesion in archenteron floor." []
+
+[Term]
+id: XPO:0141364
+name: increased cell adhesion in foregut
+def: "An increased occurrence of cell adhesion in foregut." []
+
+[Term]
+id: XPO:0141365
+name: increased cell adhesion in prechordal plate
+def: "An increased occurrence of cell adhesion in prechordal plate." []
+
+[Term]
+id: XPO:0141366
+name: increased cell adhesion in dorsal marginal zone
+def: "An increased occurrence of cell adhesion in dorsal marginal zone." []
+
+[Term]
+id: XPO:0141367
+name: increased cell adhesion in endodermal cell
+def: "An increased occurrence of cell adhesion in endodermal cell." []
+
+[Term]
+id: XPO:0141368
+name: increased cell adhesion in ectodermal cell
+def: "An increased occurrence of cell adhesion in ectodermal cell." []
+
+[Term]
+id: XPO:0141369
+name: increased cell adhesion in mesodermal cell
+def: "An increased occurrence of cell adhesion in mesodermal cell." []
+
+[Term]
+id: XPO:0141370
+name: increased cell adhesion in animal cap
+def: "An increased occurrence of cell adhesion in animal cap." []
+
+[Term]
+id: XPO:0141371
+name: increased cell adhesion in epithelium
+def: "An increased occurrence of cell adhesion in epithelium." []
+
+[Term]
+id: XPO:0141372
+name: increased cell adhesion in neural crest
+def: "An increased occurrence of cell adhesion in neural crest." []
+
+[Term]
+id: XPO:0141373
+name: increased cell adhesion in gastrula cell
+def: "An increased occurrence of cell adhesion in gastrula cell." []
+
+[Term]
+id: XPO:0141374
+name: increased cell adhesion in primordial germ cell
+def: "An increased occurrence of cell adhesion in primordial germ cell." []
+
+[Term]
+id: XPO:0141375
+name: increased cell adhesion in eye
+def: "An increased occurrence of cell adhesion in eye." []
+
+[Term]
+id: XPO:0141376
+name: increased cell adhesion in brain
+def: "An increased occurrence of cell adhesion in brain." []
+
+[Term]
+id: XPO:0141377
+name: increased cell adhesion in neuroectoderm
+def: "An increased occurrence of cell adhesion in neuroectoderm." []
+
+[Term]
+id: XPO:0141378
+name: increased cell adhesion in foregut endoderm
+def: "An increased occurrence of cell adhesion in foregut endoderm." []
+
+[Term]
+id: XPO:0141379
+name: increased cell adhesion in foregut epithelium
+def: "An increased occurrence of cell adhesion in foregut epithelium." []
+
+[Term]
+id: XPO:0141380
+name: absent melanophore in the retinal pigmented epithelium
+def: "Absence of the melanophore in the retinal pigmented epithelium." []
+synonym: "Missing melanophore in the retinal pigmented epithelium" EXACT []
+
+[Term]
+id: XPO:0141381
+name: absent melanophore in the dorsal fin
+def: "Absence of the melanophore in the dorsal fin." []
+synonym: "Missing melanophore in the dorsal fin" EXACT []
+
+[Term]
+id: XPO:0141382
+name: absent melanophore in the epidermis
+def: "Absence of the melanophore in the epidermis." []
+synonym: "Missing melanophore in the epidermis" EXACT []
+
+[Term]
+id: XPO:0141383
+name: absent melanophore in the eye
+def: "Absence of the melanophore in the eye." []
+synonym: "Missing melanophore in the eye" EXACT []
+
+[Term]
+id: XPO:0141384
+name: absent melanophore in the optic nerve
+def: "Absence of the melanophore in the optic nerve." []
+synonym: "Missing melanophore in the optic nerve" EXACT []
+
+[Term]
+id: XPO:0141385
+name: absent melanophore in the head
+def: "Absence of the melanophore in the head." []
+synonym: "Missing melanophore in the head" EXACT []
+
+[Term]
+id: XPO:0141386
+name: absent melanophore in the optic stalk
+def: "Absence of the melanophore in the optic stalk." []
+synonym: "Missing melanophore in the optic stalk" EXACT []
+
+[Term]
+id: XPO:0141387
+name: abnormally increased number of melanophore in the retinal pigmented epithelium
+def: "The presence of an increased number of melanophore in the retinal pigmented epithelium." []
+synonym: "Extra melanophore in the retinal pigmented epithelium" EXACT []
+
+[Term]
+id: XPO:0141388
+name: abnormally increased number of melanophore in the dorsal fin
+def: "The presence of an increased number of melanophore in the dorsal fin." []
+synonym: "Extra melanophore in the dorsal fin" EXACT []
+
+[Term]
+id: XPO:0141389
+name: abnormally increased number of melanophore in the epidermis
+def: "The presence of an increased number of melanophore in the epidermis." []
+synonym: "Extra melanophore in the epidermis" EXACT []
+
+[Term]
+id: XPO:0141390
+name: abnormally increased number of melanophore in the eye
+def: "The presence of an increased number of melanophore in the eye." []
+synonym: "Extra melanophore in the eye" EXACT []
+
+[Term]
+id: XPO:0141391
+name: abnormally increased number of melanophore in the optic nerve
+def: "The presence of an increased number of melanophore in the optic nerve." []
+synonym: "Extra melanophore in the optic nerve" EXACT []
+
+[Term]
+id: XPO:0141392
+name: abnormally increased number of melanophore in the head
+def: "The presence of an increased number of melanophore in the head." []
+synonym: "Extra melanophore in the head" EXACT []
+
+[Term]
+id: XPO:0141393
+name: abnormally increased number of melanophore in the optic stalk
+def: "The presence of an increased number of melanophore in the optic stalk." []
+synonym: "Extra melanophore in the optic stalk" EXACT []
+
+[Term]
+id: XPO:0141394
+name: abnormally decreased number of melanophore in the retinal pigmented epithelium
+def: "The presence of a reduced number of melanophore in the retinal pigmented epithelium." []
+synonym: "Reduced number of melanophore in the retinal pigmented epithelium" EXACT []
+
+[Term]
+id: XPO:0141395
+name: abnormally decreased number of melanophore in the dorsal fin
+def: "The presence of a reduced number of melanophore in the dorsal fin." []
+synonym: "Reduced number of melanophore in the dorsal fin" EXACT []
+
+[Term]
+id: XPO:0141396
+name: abnormally decreased number of melanophore in the epidermis
+def: "The presence of a reduced number of melanophore in the epidermis." []
+synonym: "Reduced number of melanophore in the epidermis" EXACT []
+
+[Term]
+id: XPO:0141397
+name: abnormally decreased number of melanophore in the eye
+def: "The presence of a reduced number of melanophore in the eye." []
+synonym: "Reduced number of melanophore in the eye" EXACT []
+
+[Term]
+id: XPO:0141398
+name: abnormally decreased number of melanophore in the optic nerve
+def: "The presence of a reduced number of melanophore in the optic nerve." []
+synonym: "Reduced number of melanophore in the optic nerve" EXACT []
+
+[Term]
+id: XPO:0141399
+name: abnormally decreased number of melanophore in the head
+def: "The presence of a reduced number of melanophore in the head." []
+synonym: "Reduced number of melanophore in the head" EXACT []
+
+[Term]
+id: XPO:0141400
+name: abnormally decreased number of melanophore in the optic stalk
+def: "The presence of a reduced number of melanophore in the optic stalk." []
+synonym: "Reduced number of melanophore in the optic stalk" EXACT []
+
+[Term]
+id: XPO:0141408
+name: wholly dorsalized tadpole
+def: "A wholly dorsalized tadpole." []
+
+[Term]
+id: XPO:0141409
+name: partially dorsalized tadpole
+def: "A partially dorsalized tadpole." []
+
+[Term]
+id: XPO:0141410
+name: wholly ventralized tadpole
+def: "A wholly ventralized tadpole." []
+
+[Term]
+id: XPO:0141411
+name: partially ventralized tadpole
+def: "A partially ventralized tadpole." []
+
+[Term]
+id: XPO:0141412
+name: wholly anterioralized tadpole
+def: "A wholly anterioralized tadpole." []
+
+[Term]
+id: XPO:0141413
+name: partially anterioralized tadpole
+def: "A partially anterioralized tadpole." []
+
+[Term]
+id: XPO:0141414
+name: wholly posterioralized tadpole
+def: "A wholly posterioralized tadpole." []
+
+[Term]
+id: XPO:0141415
+name: partially posterioralized tadpole
+def: "A partially posterioralized tadpole." []
+
+[Term]
+id: XPO:0141416
+name: decreased apoptosis in tadpole
+def: "A decreased occurrence of apoptotic process in tadpole." []
+
+[Term]
+id: XPO:0141417
+name: decreased apoptosis in lymphoblast
+def: "A decreased occurrence of apoptotic process in lymphoblast." []
+
+[Term]
+id: XPO:0141418
+name: decreased apoptosis in anterior lateral line ganglion
+def: "A decreased occurrence of apoptotic process in anterior lateral line ganglion." []
+
+[Term]
+id: XPO:0141419
+name: decreased apoptosis in syndetome
+def: "A decreased occurrence of apoptotic process in syndetome." []
+
+[Term]
+id: XPO:0141420
+name: decreased apoptosis in chordal neural crest
+def: "A decreased occurrence of apoptotic process in chordal neural crest." []
+
+[Term]
+id: XPO:0141421
+name: decreased cell population proliferation in tadpole
+def: "A decreased occurrence of cell population proliferation in tadpole." []
+
+[Term]
+id: XPO:0141422
+name: decreased cell population proliferation in lymphoblast
+def: "A decreased occurrence of cell population proliferation in lymphoblast." []
+
+[Term]
+id: XPO:0141423
+name: decreased cell population proliferation in anterior lateral line ganglion
+def: "A decreased occurrence of cell population proliferation in anterior lateral line ganglion." []
+
+[Term]
+id: XPO:0141424
+name: decreased cell population proliferation in syndetome
+def: "A decreased occurrence of cell population proliferation in syndetome." []
+
+[Term]
+id: XPO:0141425
+name: decreased cell population proliferation in chordal neural crest
+def: "A decreased occurrence of cell population proliferation in chordal neural crest." []
+
+[Term]
+id: XPO:0141426
+name: abnormally localised melanophore in retinal pigmented epithelium
+def: "Abnormal location of the melanophore in the retinal pigmented epithelium." []
+synonym: "abnormal position of melanophore in retinal pigmented epithelium" EXACT []
+
+[Term]
+id: XPO:0141427
+name: abnormally localised melanophore in dorsal fin
+def: "Abnormal location of the melanophore in the dorsal fin." []
+synonym: "abnormal position of melanophore in dorsal fin" EXACT []
+
+[Term]
+id: XPO:0141428
+name: abnormally localised melanophore in epidermis
+def: "Abnormal location of the melanophore in the epidermis." []
+synonym: "abnormal position of melanophore in epidermis" EXACT []
+
+[Term]
+id: XPO:0141429
+name: abnormally localised melanophore in eye
+def: "Abnormal location of the melanophore in the eye." []
+synonym: "abnormal position of melanophore in eye" EXACT []
+
+[Term]
+id: XPO:0141430
+name: abnormally localised melanophore in optic nerve
+def: "Abnormal location of the melanophore in the optic nerve." []
+synonym: "abnormal position of melanophore in optic nerve" EXACT []
+
+[Term]
+id: XPO:0141431
+name: abnormally localised melanophore in head
+def: "Abnormal location of the melanophore in the head." []
+synonym: "abnormal position of melanophore in head" EXACT []
+
+[Term]
+id: XPO:0141432
+name: abnormally localised melanophore in optic stalk
+def: "Abnormal location of the melanophore in the optic stalk." []
+synonym: "abnormal position of melanophore in optic stalk" EXACT []
+
+[Term]
+id: XPO:0141433
+name: increased apoptosis in tadpole
+def: "An increased occurrence of apoptotic process in tadpole." []
+
+[Term]
+id: XPO:0141434
+name: increased apoptosis in lymphoblast
+def: "An increased occurrence of apoptotic process in lymphoblast." []
+
+[Term]
+id: XPO:0141435
+name: increased apoptosis in anterior lateral line ganglion
+def: "An increased occurrence of apoptotic process in anterior lateral line ganglion." []
+
+[Term]
+id: XPO:0141436
+name: increased apoptosis in syndetome
+def: "An increased occurrence of apoptotic process in syndetome." []
+
+[Term]
+id: XPO:0141437
+name: increased apoptosis in chordal neural crest
+def: "An increased occurrence of apoptotic process in chordal neural crest." []
+
+[Term]
+id: XPO:0141438
+name: increased cell population proliferation in tadpole
+def: "An increased occurrence of cell population proliferation in tadpole." []
+
+[Term]
+id: XPO:0141439
+name: increased cell population proliferation in lymphoblast
+def: "An increased occurrence of cell population proliferation in lymphoblast." []
+
+[Term]
+id: XPO:0141440
+name: increased cell population proliferation in anterior lateral line ganglion
+def: "An increased occurrence of cell population proliferation in anterior lateral line ganglion." []
+
+[Term]
+id: XPO:0141441
+name: increased cell population proliferation in syndetome
+def: "An increased occurrence of cell population proliferation in syndetome." []
+
+[Term]
+id: XPO:0141442
+name: increased cell population proliferation in chordal neural crest
+def: "An increased occurrence of cell population proliferation in chordal neural crest." []
+
+[Term]
+id: XPO:0141457
+name: abnormal development of chordal neural crest
+def: "An abnormal development of the chordal neural crest." []
+
+[Term]
+id: XPO:0141458
+name: abnormal development of syndetome
+def: "An abnormal development of the syndetome." []
+
+[Term]
+id: XPO:0141459
+name: abnormal development of anterior lateral line ganglion
+def: "An abnormal development of the anterior lateral line ganglion." []
+
+[Term]
+id: XPO:0141460
+name: abnormal development of lymphoblast
+def: "An abnormal development of the lymphoblast." []
+
+[Term]
+id: XPO:0141461
+name: abnormal development of axon microtubule bundle
+def: "An abnormal development of the axon microtubule bundle." []
+
+[Term]
+id: XPO:0141462
+name: abnormal development of tadpole
+def: "An abnormal development of the tadpole." []
+
+[Term]
+id: XPO:0141463
+name: absent chordal neural crest
+def: "Absence of chordal neural crest." []
+synonym: "missing chordal neural crest" EXACT []
+
+[Term]
+id: XPO:0141464
+name: absent syndetome
+def: "Absence of syndetome." []
+synonym: "missing syndetome" EXACT []
+
+[Term]
+id: XPO:0141465
+name: absent anterior lateral line ganglion
+def: "Absence of anterior lateral line ganglion." []
+synonym: "missing anterior lateral line ganglion" EXACT []
+
+[Term]
+id: XPO:0141466
+name: absent lymphoblast
+def: "Absence of lymphoblast." []
+synonym: "missing lymphoblast" EXACT []
+
+[Term]
+id: XPO:0141467
+name: absent axon microtubule bundle
+def: "Absence of axon microtubule bundle." []
+synonym: "missing axon microtubule bundle" EXACT []
+
+[Term]
+id: XPO:0141468
+name: absent tadpole
+def: "Absence of tadpole." []
+synonym: "missing tadpole" EXACT []
+
+[Term]
+id: XPO:0141469
+name: abnormally localised chordal neural crest
+def: "An abnormally localised chordal neural crest." []
+synonym: "abnormal position of chordal neural crest" EXACT []
+
+[Term]
+id: XPO:0141470
+name: abnormally localised syndetome
+def: "An abnormally localised syndetome." []
+synonym: "abnormal position of syndetome" EXACT []
+
+[Term]
+id: XPO:0141471
+name: abnormally localised anterior lateral line ganglion
+def: "An abnormally localised anterior lateral line ganglion." []
+synonym: "abnormal position of anterior lateral line ganglion" EXACT []
+
+[Term]
+id: XPO:0141472
+name: abnormally localised lymphoblast
+def: "An abnormally localised lymphoblast." []
+synonym: "abnormal position of lymphoblast" EXACT []
+
+[Term]
+id: XPO:0141473
+name: abnormally localised axon microtubule bundle
+def: "An abnormally localised axon microtubule bundle." []
+synonym: "abnormal position of axon microtubule bundle" EXACT []
+
+[Term]
+id: XPO:0141474
+name: abnormally localised tadpole
+def: "An abnormally localised tadpole." []
+synonym: "abnormal position of tadpole" EXACT []
+
+[Term]
+id: XPO:0141475
+name: abnormally necrotic chordal neural crest
+def: "An abnormally necrotic chordal neural crest." []
+
+[Term]
+id: XPO:0141476
+name: abnormally necrotic syndetome
+def: "An abnormally necrotic syndetome." []
+
+[Term]
+id: XPO:0141477
+name: abnormally necrotic anterior lateral line ganglion
+def: "An abnormally necrotic anterior lateral line ganglion." []
+
+[Term]
+id: XPO:0141478
+name: abnormally necrotic lymphoblast
+def: "An abnormally necrotic lymphoblast." []
+
+[Term]
+id: XPO:0141479
+name: abnormally necrotic tadpole
+def: "An abnormally necrotic tadpole." []
+
+[Term]
+id: XPO:0141480
+name: decreased size of the chordal neural crest
+def: "An abnormal reduction in the size of the chordal neural crest." []
+synonym: "abnormally small chordal neural crest" EXACT []
+
+[Term]
+id: XPO:0141481
+name: decreased size of the syndetome
+def: "An abnormal reduction in the size of the syndetome." []
+synonym: "abnormally small syndetome" EXACT []
+
+[Term]
+id: XPO:0141482
+name: decreased size of the anterior lateral line ganglion
+def: "An abnormal reduction in the size of the anterior lateral line ganglion." []
+synonym: "abnormally small anterior lateral line ganglion" EXACT []
+
+[Term]
+id: XPO:0141483
+name: decreased size of the lymphoblast
+def: "An abnormal reduction in the size of the lymphoblast." []
+synonym: "abnormally small lymphoblast" EXACT []
+
+[Term]
+id: XPO:0141484
+name: decreased size of the axon microtubule bundle
+def: "An abnormal reduction in the size of the axon microtubule bundle." []
+synonym: "abnormally small axon microtubule bundle" EXACT []
+
+[Term]
+id: XPO:0141485
+name: decreased size of the tadpole
+def: "An abnormal reduction in the size of the tadpole." []
+synonym: "abnormally small tadpole" EXACT []
+
+[Term]
+id: XPO:0141486
+name: increased size of the chordal neural crest
+def: "An increase in the size of the chordal neural crest." []
+synonym: "enlarged chordal neural crest" EXACT []
+
+[Term]
+id: XPO:0141487
+name: increased size of the syndetome
+def: "An increase in the size of the syndetome." []
+synonym: "enlarged syndetome" EXACT []
+
+[Term]
+id: XPO:0141488
+name: increased size of the anterior lateral line ganglion
+def: "An increase in the size of the anterior lateral line ganglion." []
+synonym: "enlarged anterior lateral line ganglion" EXACT []
+
+[Term]
+id: XPO:0141489
+name: increased size of the lymphoblast
+def: "An increase in the size of the lymphoblast." []
+synonym: "enlarged lymphoblast" EXACT []
+
+[Term]
+id: XPO:0141490
+name: increased size of the axon microtubule bundle
+def: "An increase in the size of the axon microtubule bundle." []
+synonym: "enlarged axon microtubule bundle" EXACT []
+
+[Term]
+id: XPO:0141491
+name: increased size of the tadpole
+def: "An increase in the size of the tadpole." []
+synonym: "enlarged tadpole" EXACT []
+
+[Term]
+id: XPO:0141492
+name: abnormally increased number of lymphoblast
+def: "The presence of an increased number of lymphoblast." []
+synonym: "Extra lymphoblast" EXACT []
+
+[Term]
+id: XPO:0141493
+name: abnormally decreased number of lymphoblast
+def: "The presence of a reduced number of lymphoblast." []
+synonym: "Reduced number of lymphoblast" EXACT []
+
+[Term]
+id: XPO:0141494
+name: abnormal chordal neural crest
+def: "Abnormality of chordal neural crest." []
+synonym: "abnormality of chordal neural crest" EXACT []
+
+[Term]
+id: XPO:0141495
+name: abnormal syndetome
+def: "Abnormality of syndetome." []
+synonym: "abnormality of syndetome" EXACT []
+
+[Term]
+id: XPO:0141496
+name: abnormal anterior lateral line ganglion
+def: "Abnormality of anterior lateral line ganglion." []
+synonym: "abnormality of anterior lateral line ganglion" EXACT []
+
+[Term]
+id: XPO:0141497
+name: abnormal lymphoblast
+def: "Abnormality of lymphoblast." []
+synonym: "abnormality of lymphoblast" EXACT []
+
+[Term]
+id: XPO:0141498
+name: abnormal axon microtubule bundle
+def: "Abnormality of axon microtubule bundle." []
+synonym: "abnormality of axon microtubule bundle" EXACT []
+
+[Term]
+id: XPO:0141499
+name: abnormal tadpole
+def: "Abnormality of tadpole." []
+synonym: "abnormality of tadpole" EXACT []
+
+[Term]
+id: XPO:0141500
+name: abnormal chordal neural crest morphology
+def: "Any unspecified morphological anomaly of the chordal neural crest, such as, for example, abnormal shape or colour." []
+synonym: "abnormal morphology of chordal neural crest" EXACT []
+
+[Term]
+id: XPO:0141501
+name: abnormal syndetome morphology
+def: "Any unspecified morphological anomaly of the syndetome, such as, for example, abnormal shape or colour." []
+synonym: "abnormal morphology of syndetome" EXACT []
+
+[Term]
+id: XPO:0141502
+name: abnormal anterior lateral line ganglion morphology
+def: "Any unspecified morphological anomaly of the anterior lateral line ganglion, such as, for example, abnormal shape or colour." []
+synonym: "abnormal morphology of anterior lateral line ganglion" EXACT []
+
+[Term]
+id: XPO:0141503
+name: abnormal lymphoblast morphology
+def: "Any unspecified morphological anomaly of the lymphoblast, such as, for example, abnormal shape or colour." []
+synonym: "abnormal morphology of lymphoblast" EXACT []
+
+[Term]
+id: XPO:0141504
+name: abnormal axon microtubule bundle morphology
+def: "Any unspecified morphological anomaly of the axon microtubule bundle, such as, for example, abnormal shape or colour." []
+synonym: "abnormal morphology of axon microtubule bundle" EXACT []
+
+[Term]
+id: XPO:0141505
+name: abnormal tadpole morphology
+def: "Any unspecified morphological anomaly of the tadpole, such as, for example, abnormal shape or colour." []
+synonym: "abnormal morphology of tadpole" EXACT []
+
+[Term]
+id: XPO:0141506
+name: abnormally decreased number of skeletal element in the regenerating limb
+def: "The presence of a reduced number of skeletal element in the regenerating limb." []
+synonym: "Reduced number of skeletal element in the regenerating limb" EXACT []
+
+[Term]
+id: XPO:0141507
+name: abnormal autopod morphology in the regenerating limb
+def: "A morphological abnormality of the autopod in the regenerating limb." []
+synonym: "Abnormal morphology of the autopod in the regenerating limb" EXACT []
+
+[Term]
+id: XPO:0141508
+name: abnormal stylopod morphology in the regenerating limb
+def: "A morphological abnormality of the stylopod in the regenerating limb." []
+synonym: "Abnormal morphology of the stylopod in the regenerating limb" EXACT []
+
+[Term]
+id: XPO:0141509
+name: abnormal zeugopod morphology in the regenerating limb
+def: "A morphological abnormality of the zeugopod in the regenerating limb." []
+synonym: "Abnormal morphology of the zeugopod in the regenerating limb" EXACT []
+
+[Term]
+id: XPO:0141510
+name: abnormal epithelial cell morphology in the foregut endoderm
+def: "A morphological abnormality of the epithelial cell in the foregut endoderm." []
+synonym: "Abnormal morphology of the epithelial cell in the foregut endoderm" EXACT []
+
+[Term]
+id: XPO:0141511
+name: abnormally localised nucleus in myoblast
+def: "Abnormal location of the nucleus in the myoblast." []
+synonym: "abnormal position of nucleus in myoblast" EXACT []
+
+[Term]
+id: XPO:0141512
+name: decreased length of hindlimb digit in regenerating tissue
+def: "Decreased length or shortening of the hindlimb digit in the regenerating tissue." []
+synonym: "short hindlimb digit in regenerating tissue" EXACT []
+
+[Term]
+id: XPO:0141513
+name: duplicated eye
+def: "Any abnormal duplication of the eye." []
+synonym: "abnormal duplication of eye" EXACT []
+synonym: "abnormally duplicated eye" EXACT []
+
+[Term]
+id: XPO:0141514
+name: duplicated tibia-fibula
+def: "Any abnormal duplication of the tibia-fibula." []
+synonym: "abnormal duplication of tibia-fibula" EXACT []
+synonym: "abnormally duplicated tibia-fibula" EXACT []
+
+[Term]
+id: XPO:0141515
+name: Y-shaped femur in regenerating hindlimb
+def: "Any structural anomaly that causes femur in the regenerating hindlimb to be Y-shaped shaped." []
+synonym: "abnormal Y-shaped shape of femur in regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141516
+name: Y-shaped spike in regenerating hindlimb
+def: "Any structural anomaly that causes spike in the regenerating hindlimb to be Y-shaped shaped." []
+synonym: "abnormal Y-shaped shape of spike in regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141517
+name: abnormal segmentation of hand in regenerating forelimb
+def: "Abnormal segmentation of the hand in regenerating forelimb." []
+synonym: "segmented hand in regenerating forelimb" EXACT []
+
+[Term]
+id: XPO:0141518
+name: bifurcated blood vessel in regenerating hindlimb
+def: "Bifurcation of the blood vessel in regenerating hindlimb." []
+synonym: "bifurcation of blood vessel in regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141519
+name: bifurcated tarsus in regenerating hindlimb
+def: "Bifurcation of the tarsus in regenerating hindlimb." []
+synonym: "bifurcation of tarsus in regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141520
+name: absent skeletal muscle in the regenerating forelimb
+def: "Absence of the skeletal muscle in the regenerating forelimb." []
+synonym: "Missing skeletal muscle in the regenerating forelimb" EXACT []
+
+[Term]
+id: XPO:0141521
+name: absent claw in the regenerating hindlimb
+def: "Absence of the claw in the regenerating hindlimb." []
+synonym: "Missing claw in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141522
+name: absent tarsus in the regenerating hindlimb
+def: "Absence of the tarsus in the regenerating hindlimb." []
+synonym: "Missing tarsus in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141523
+name: absent tibia-fibula in the regenerating hindlimb
+def: "Absence of the tibia-fibula in the regenerating hindlimb." []
+synonym: "Missing tibia-fibula in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141524
+name: absent hindlimb digit 1 in the regenerating hindlimb
+def: "Absence of the hindlimb digit 1 in the regenerating hindlimb." []
+synonym: "Missing hindlimb digit 1 in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141525
+name: absent hand in the regenerating forelimb
+def: "Absence of the hand in the regenerating forelimb." []
+synonym: "Missing hand in the regenerating forelimb" EXACT []
+
+[Term]
+id: XPO:0141526
+name: absent foot in the regenerating hindlimb
+def: "Absence of the foot in the regenerating hindlimb." []
+synonym: "Missing foot in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141527
+name: absent wound epidermis in the regenerating hindlimb
+def: "Absence of the wound epidermis in the regenerating hindlimb." []
+synonym: "Missing wound epidermis in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141528
+name: absent hindlimb digit 2 in the regenerating hindlimb
+def: "Absence of the hindlimb digit 2 in the regenerating hindlimb." []
+synonym: "Missing hindlimb digit 2 in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141529
+name: absent hindlimb digit 3 in the regenerating hindlimb
+def: "Absence of the hindlimb digit 3 in the regenerating hindlimb." []
+synonym: "Missing hindlimb digit 3 in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141530
+name: absent claw of hindlimb digit 4 in the regenerating hindlimb
+def: "Absence of the claw of hindlimb digit 4 in the regenerating hindlimb." []
+synonym: "Missing claw of hindlimb digit 4 in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141531
+name: absent claw of hindlimb digit 5 in the regenerating hindlimb
+def: "Absence of the claw of hindlimb digit 5 in the regenerating hindlimb." []
+synonym: "Missing claw of hindlimb digit 5 in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141532
+name: absent hindlimb zeugopod in the regenerating hindlimb
+def: "Absence of the hindlimb zeugopod in the regenerating hindlimb." []
+synonym: "Missing hindlimb zeugopod in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141533
+name: abnormally decreased number of muscle in the forelimb
+def: "The presence of a reduced number of muscle in the forelimb." []
+synonym: "Reduced number of muscle in the forelimb" EXACT []
+
+[Term]
+id: XPO:0141534
+name: abnormally decreased number of muscle in the hindlimb
+def: "The presence of a reduced number of muscle in the hindlimb." []
+synonym: "Reduced number of muscle in the hindlimb" EXACT []
+
+[Term]
+id: XPO:0141535
+name: abnormally decreased number of claw in the regenerating hindlimb
+def: "The presence of a reduced number of claw in the regenerating hindlimb." []
+synonym: "Reduced number of claw in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141537
+name: abnormally decreased number of bipolar neuron in the retinal inner plexiform layer
+def: "The presence of a reduced number of bipolar neuron in the retinal inner plexiform layer." []
+synonym: "Reduced number of bipolar neuron in the retinal inner plexiform layer" EXACT []
+
+[Term]
+id: XPO:0141538
+name: abnormally decreased number of bone element in the forelimb
+def: "The presence of a reduced number of bone element in the forelimb." []
+synonym: "Reduced number of bone element in the forelimb" EXACT []
+
+[Term]
+id: XPO:0141539
+name: abnormally decreased number of bone element in the hindlimb
+def: "The presence of a reduced number of bone element in the hindlimb." []
+synonym: "Reduced number of bone element in the hindlimb" EXACT []
+
+[Term]
+id: XPO:0141540
+name: inverted dorsal-ventral axis in hindlimb zeugopod
+def: "An abnormal configuration of the dorsal-ventral axis such that it is reversed in position, order, or condition in in hindlimb zeugopod." []
+synonym: "reversed dorsal-ventral axis in hindlimb zeugopod" EXACT []
+
+[Term]
+id: XPO:0141541
+name: inverted joint region in hindlimb
+def: "An abnormal configuration of the joint region such that it is reversed in position, order, or condition in in hindlimb." []
+synonym: "reversed joint region in hindlimb" EXACT []
+
+[Term]
+id: XPO:0141542
+name: U-shaped tibia-fibula
+def: "Any structural anomaly that causes tibia-fibula to be U-shaped shaped." []
+synonym: "abnormal U-shaped shape of tibia-fibula" EXACT []
+
+[Term]
+id: XPO:0141543
+name: conical regenerating forelimb
+def: "Any structural anomaly that causes regenerating forelimb to be conical shaped." []
+synonym: "abnormal conical shape of regenerating forelimb" EXACT []
+
+[Term]
+id: XPO:0141544
+name: increased branchiness of regenerating forelimb
+def: "Any structural anomaly that causes regenerating forelimb to be increased branchiness shaped." []
+synonym: "abnormal increased branchiness shape of regenerating forelimb" EXACT []
+
+[Term]
+id: XPO:0141545
+name: abnormally increased number of iridophore in the epidermis
+def: "The presence of an increased number of iridophore in the epidermis." []
+synonym: "Extra iridophore in the epidermis" EXACT []
+
+[Term]
+id: XPO:0141546
+name: abnormally increased number of spike in the regenerating hindlimb
+def: "The presence of an increased number of spike in the regenerating hindlimb." []
+synonym: "Extra spike in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141547
+name: abnormal hindlimb digit morphology in the regenerating hindlimb
+def: "A morphological abnormality of the hindlimb digit in the regenerating hindlimb." []
+synonym: "Abnormal morphology of the hindlimb digit in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141548
+name: abnormal foot morphology in the regenerating hindlimb
+def: "A morphological abnormality of the foot in the regenerating hindlimb." []
+synonym: "Abnormal morphology of the foot in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141549
+name: abnormal cartilage tissue morphology in the regenerating forelimb
+def: "A morphological abnormality of the cartilage tissue in the regenerating forelimb." []
+synonym: "Abnormal morphology of the cartilage tissue in the regenerating forelimb" EXACT []
+
+[Term]
+id: XPO:0141550
+name: abnormal cartilage tissue morphology in the regenerating hindlimb
+def: "A morphological abnormality of the cartilage tissue in the regenerating hindlimb." []
+synonym: "Abnormal morphology of the cartilage tissue in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141551
+name: abnormal joint morphology in the tarsus
+def: "A morphological abnormality of the joint in the tarsus." []
+synonym: "Abnormal morphology of the joint in the tarsus" EXACT []
+
+[Term]
+id: XPO:0141552
+name: abnormal nervous system morphology in the hindlimb
+def: "A morphological abnormality of the nervous system in the hindlimb." []
+synonym: "Abnormal morphology of the nervous system in the hindlimb" EXACT []
+
+[Term]
+id: XPO:0141553
+name: abnormal iridophore morphology in the hindlimb bud
+def: "A morphological abnormality of the iridophore in the hindlimb bud." []
+synonym: "Abnormal morphology of the iridophore in the hindlimb bud" EXACT []
+
+[Term]
+id: XPO:0141554
+name: abnormal blood vessel morphology in the regenerating hindlimb
+def: "A morphological abnormality of the blood vessel in the regenerating hindlimb." []
+synonym: "Abnormal morphology of the blood vessel in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141555
+name: abnormal neuron morphology in the regenerating tail
+def: "A morphological abnormality of the neuron in the regenerating tail." []
+synonym: "Abnormal morphology of the neuron in the regenerating tail" EXACT []
+
+[Term]
+id: XPO:0141556
+name: abnormal forelimb digit morphology in the regenerating forelimb
+def: "A morphological abnormality of the forelimb digit in the regenerating forelimb." []
+synonym: "Abnormal morphology of the forelimb digit in the regenerating forelimb" EXACT []
+
+[Term]
+id: XPO:0141557
+name: abnormal pelvic girdle morphology in the regenerating hindlimb
+def: "A morphological abnormality of the pelvic girdle in the regenerating hindlimb." []
+synonym: "Abnormal morphology of the pelvic girdle in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141558
+name: abnormal claw morphology in the regenerating hindlimb
+def: "A morphological abnormality of the claw in the regenerating hindlimb." []
+synonym: "Abnormal morphology of the claw in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141559
+name: abnormal tarsus morphology in the regenerating hindlimb
+def: "A morphological abnormality of the tarsus in the regenerating hindlimb." []
+synonym: "Abnormal morphology of the tarsus in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141560
+name: abnormal metatarsus morphology in the regenerating hindlimb
+def: "A morphological abnormality of the metatarsus in the regenerating hindlimb." []
+synonym: "Abnormal morphology of the metatarsus in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141561
+name: abnormal tibia-fibula morphology in the regenerating hindlimb
+def: "A morphological abnormality of the tibia-fibula in the regenerating hindlimb." []
+synonym: "Abnormal morphology of the tibia-fibula in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141562
+name: abnormal femur morphology in the regenerating hindlimb
+def: "A morphological abnormality of the femur in the regenerating hindlimb." []
+synonym: "Abnormal morphology of the femur in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141563
+name: abnormal cartilage element morphology in the regenerating hindlimb
+def: "A morphological abnormality of the cartilage element in the regenerating hindlimb." []
+synonym: "Abnormal morphology of the cartilage element in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141564
+name: abnormal apical ectodermal ridge morphology in the hindlimb bud
+def: "A morphological abnormality of the apical ectodermal ridge in the hindlimb bud." []
+synonym: "Abnormal morphology of the apical ectodermal ridge in the hindlimb bud" EXACT []
+
+[Term]
+id: XPO:0141565
+name: abnormal hindlimb stylopod morphology in the regenerating hindlimb
+def: "A morphological abnormality of the hindlimb stylopod in the regenerating hindlimb." []
+synonym: "Abnormal morphology of the hindlimb stylopod in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141566
+name: abnormal hand morphology in the regenerating forelimb
+def: "A morphological abnormality of the hand in the regenerating forelimb." []
+synonym: "Abnormal morphology of the hand in the regenerating forelimb" EXACT []
+
+[Term]
+id: XPO:0141567
+name: abnormal joint region morphology in the femur
+def: "A morphological abnormality of the joint region in the femur." []
+synonym: "Abnormal morphology of the joint region in the femur" EXACT []
+
+[Term]
+id: XPO:0141568
+name: abnormal digit-joint region morphology in the regenerating forelimb
+def: "A morphological abnormality of the digit-joint region in the regenerating forelimb." []
+synonym: "Abnormal morphology of the digit-joint region in the regenerating forelimb" EXACT []
+
+[Term]
+id: XPO:0141569
+name: abnormal digit-joint region morphology in the regenerating hindlimb
+def: "A morphological abnormality of the digit-joint region in the regenerating hindlimb." []
+synonym: "Abnormal morphology of the digit-joint region in the regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141571
+name: abnormal dorsal-ventral axis morphology in the hindlimb zeugopod
+def: "A morphological abnormality of the dorsal-ventral axis in the hindlimb zeugopod." []
+synonym: "Abnormal morphology of the dorsal-ventral axis in the hindlimb zeugopod" EXACT []
+
+[Term]
+id: XPO:0141572
+name: abnormal bone tissue morphology in the hindlimb
+def: "A morphological abnormality of the bone tissue in the hindlimb." []
+synonym: "Abnormal morphology of the bone tissue in the hindlimb" EXACT []
+
+[Term]
+id: XPO:0141573
+name: abnormal cartilage tissue morphology in the hindlimb
+def: "A morphological abnormality of the cartilage tissue in the hindlimb." []
+synonym: "Abnormal morphology of the cartilage tissue in the hindlimb" EXACT []
+
+[Term]
+id: XPO:0141574
+name: abnormal muscle morphology in the hindlimb
+def: "A morphological abnormality of the muscle in the hindlimb." []
+synonym: "Abnormal morphology of the muscle in the hindlimb" EXACT []
+
+[Term]
+id: XPO:0141575
+name: abnormal cartilage element morphology in the hindlimb
+def: "A morphological abnormality of the cartilage element in the hindlimb." []
+synonym: "Abnormal morphology of the cartilage element in the hindlimb" EXACT []
+
+[Term]
+id: XPO:0141576
+name: abnormal cartilage element morphology in the regenerating forelimb
+def: "A morphological abnormality of the cartilage element in the regenerating forelimb." []
+synonym: "Abnormal morphology of the cartilage element in the regenerating forelimb" EXACT []
+
+[Term]
+id: XPO:0141577
+name: abnormal distal mesenchyme morphology in the hindlimb bud
+def: "A morphological abnormality of the distal mesenchyme in the hindlimb bud." []
+synonym: "Abnormal morphology of the distal mesenchyme in the hindlimb bud" EXACT []
+
+[Term]
+id: XPO:0141578
+name: abnormal joint region morphology in the hindlimb
+def: "A morphological abnormality of the joint region in the hindlimb." []
+synonym: "Abnormal morphology of the joint region in the hindlimb" EXACT []
+
+[Term]
+id: XPO:0141579
+name: abnormal joint region morphology in the hindlimb zeugopod
+def: "A morphological abnormality of the joint region in the hindlimb zeugopod." []
+synonym: "Abnormal morphology of the joint region in the hindlimb zeugopod" EXACT []
+
+[Term]
+id: XPO:0141580
+name: increased width of the spike in regenerating hindlimb
+def: "Wide or increased width of the spike in regenerating hindlimb." []
+synonym: "wide spike in regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141581
+name: decreased length of tarsus in regenerating hindlimb
+def: "Decreased length or shortening of the tarsus in the regenerating hindlimb." []
+synonym: "short tarsus in regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141582
+name: decreased length of tibia-fibula in regenerating hindlimb
+def: "Decreased length or shortening of the tibia-fibula in the regenerating hindlimb." []
+synonym: "short tibia-fibula in regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141583
+name: decreased length of femur in regenerating hindlimb
+def: "Decreased length or shortening of the femur in the regenerating hindlimb." []
+synonym: "short femur in regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141584
+name: decreased length of neuron in regenerating tail
+def: "Decreased length or shortening of the neuron in the regenerating tail." []
+synonym: "short neuron in regenerating tail" EXACT []
+
+[Term]
+id: XPO:0141585
+name: absent behavior process
+def: "Absence of behavior process." []
+
+[Term]
+id: XPO:0141586
+name: abnormally localised nucleus in myotome
+def: "Abnormal location of the nucleus in the myotome." []
+synonym: "abnormal position of nucleus in myotome" EXACT []
+
+[Term]
+id: XPO:0141587
+name: abnormally localised mitotic spindle in epithelial cell
+def: "Abnormal location of the mitotic spindle in the epithelial cell." []
+synonym: "abnormal position of mitotic spindle in epithelial cell" EXACT []
+
+[Term]
+id: XPO:0141588
+name: abnormally localised microtubule in epithelial cell
+def: "Abnormal location of the microtubule in the epithelial cell." []
+synonym: "abnormal position of microtubule in epithelial cell" EXACT []
+
+[Term]
+id: XPO:0141589
+name: abnormally localised eye photoreceptor cell in retinal inner nuclear layer
+def: "Abnormal location of the eye photoreceptor cell in the retinal inner nuclear layer." []
+synonym: "abnormal position of eye photoreceptor cell in retinal inner nuclear layer" EXACT []
+
+[Term]
+id: XPO:0141590
+name: abnormally localised bipolar neuron in retinal ganglion cell layer
+def: "Abnormal location of the bipolar neuron in the retinal ganglion cell layer." []
+synonym: "abnormal position of bipolar neuron in retinal ganglion cell layer" EXACT []
+
+[Term]
+id: XPO:0141591
+name: abnormally localised cilium in gastrocoel roof plate
+def: "Abnormal location of the cilium in the gastrocoel roof plate." []
+synonym: "abnormal position of cilium in gastrocoel roof plate" EXACT []
 

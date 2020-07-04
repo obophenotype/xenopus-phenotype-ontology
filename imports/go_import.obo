@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: xpo/releases/2020-03-02/imports/go_import.owl
+data-version: xpo/releases/2020-06-29/imports/go_import.owl
 subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
 subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_agr "AGR slim"
@@ -76,7 +76,6 @@ synonym: "MAPK signalling" RELATED []
 synonym: "MAPKKK cascade" EXACT []
 synonym: "MAPKKK cascade during sporulation" NARROW []
 synonym: "mitogen-activated protein kinase cascade" EXACT [GOC:bf]
-xref: MIPS_funcat:30.01.05.01.03
 xref: Wikipedia:MAPK_cascade
 xref: Wikipedia:Mitogen-activated_protein_kinase
 is_a: GO:0023014 ! signal transduction by protein phosphorylation
@@ -107,7 +106,6 @@ subset: goslim_pombe
 synonym: "microtubule cytoskeleton organisation" EXACT [GOC:mah]
 synonym: "microtubule cytoskeleton organization and biogenesis" RELATED [GOC:mah]
 synonym: "microtubule dynamics" EXACT [GOC:dph, GOC:tb]
-xref: MIPS_funcat:42.04.05
 is_a: GO:0007010 ! cytoskeleton organization
 is_a: GO:0007017 ! microtubule-based process
 
@@ -159,8 +157,6 @@ subset: goslim_drosophila
 subset: goslim_generic
 subset: goslim_yeast
 synonym: "mitosis" RELATED []
-xref: MIPS_funcat:10.03.01
-xref: MIPS_funcat:10.03.01.01
 xref: Wikipedia:Mitosis
 is_a: GO:0007049 ! cell cycle
 intersection_of: GO:0007049 ! cell cycle
@@ -174,8 +170,6 @@ namespace: biological_process
 def: "The division of a cell nucleus into two nuclei, with DNA and other nuclear contents distributed between the daughter nuclei." [GOC:mah]
 subset: goslim_pir
 synonym: "karyokinesis" RELATED []
-xref: MIPS_funcat:10.03.04
-xref: MIPS_funcat:10.03.04.07
 is_a: GO:0048285 ! organelle fission
 
 [Term]
@@ -235,8 +229,7 @@ subset: goslim_drosophila
 subset: goslim_generic
 subset: goslim_yeast
 synonym: "cellular morphogenesis" EXACT []
-xref: MIPS_funcat:40.01
-is_a: GO:0032989 ! cellular component morphogenesis
+is_a: GO:0009653 ! anatomical structure morphogenesis
 
 [Term]
 id: GO:0000904
@@ -263,7 +256,6 @@ subset: goslim_candida
 subset: goslim_yeast
 synonym: "cell cycle cytokinesis" EXACT []
 synonym: "cytokinesis involved in cell cycle" EXACT [GOC:dph, GOC:tb]
-xref: MIPS_funcat:10.03.03
 xref: Wikipedia:Cytokinesis
 is_a: GO:0022402 ! cell cycle process
 relationship: has_part GO:0090148 ! membrane fission
@@ -282,7 +274,7 @@ intersection_of: GO:0003899 ! DNA-directed 5'-3' RNA polymerase activity
 intersection_of: part_of GO:0006366 ! transcription by RNA polymerase II
 relationship: occurs_in GO:0000790 ! nuclear chromatin
 relationship: part_of GO:0006366 ! transcription by RNA polymerase II
-created_by: kchris
+created_by: krc
 creation_date: 2010-09-23T03:44:23Z
 
 [Term]
@@ -291,7 +283,6 @@ name: action potential
 namespace: biological_process
 def: "A process in which membrane potential cycles through a depolarizing spike, triggered in response to depolarization above some threshold, followed by repolarization. This cycle is driven by the flow of ions through various voltage gated channels with different thresholds and ion specificities." [GOC:dph, GOC:go_curators, GOC:tb, ISBN:978-0-07-139011-8]
 comment: Action potentials typically propagate across excitable membranes. This class covers both action potentials that propagate and those that fail to do so.
-xref: MIPS_funcat:34.03.03
 is_a: GO:0042391 ! regulation of membrane potential
 property_value: RO:0002161 NCBITaxon:4895
 
@@ -320,7 +311,6 @@ name: eye development
 namespace: biological_process
 alt_id: GO:0042460
 def: "The process whose specific outcome is the progression of the eye over time, from its formation to the mature structure. The eye is the organ of sight." [GOC:jid, GOC:jl]
-xref: MIPS_funcat:47.03.02.02
 xref: Wikipedia:Eye_development
 is_a: GO:0007423 ! sensory organ development
 relationship: part_of GO:0150063 ! visual system development
@@ -412,7 +402,6 @@ name: kidney development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of the kidney over time, from its formation to the mature structure. The kidney is an organ that filters the blood and/or excretes the end products of body metabolism in the form of urine." [GOC:dph, GOC:mtg_kidney_jan10, ISBN:0124020607, ISBN:0721662544]
 synonym: "nephrogenesis" RELATED [GOC:rph]
-xref: MIPS_funcat:47.03.07.01
 xref: Wikipedia:Kidney_development
 is_a: GO:0048513 ! animal organ development
 relationship: part_of GO:0072001 ! renal system development
@@ -474,7 +463,6 @@ id: GO:0001889
 name: liver development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of the liver over time, from its formation to the mature structure. The liver is an exocrine gland which secretes bile and functions in metabolism of protein and carbohydrate and fat, synthesizes substances involved in the clotting of the blood, synthesizes vitamin A, detoxifies poisonous substances, stores glycogen, and breaks down worn-out erythrocytes." [GOC:add, ISBN:068340007X]
-xref: MIPS_funcat:47.03.11.07
 is_a: GO:0048732 ! gland development
 relationship: part_of GO:0061008 ! hepaticobiliary system development
 
@@ -540,7 +528,6 @@ name: morphogenesis of an epithelium
 namespace: biological_process
 def: "The process in which the anatomical structures of epithelia are generated and organized. An epithelium consists of closely packed cells arranged in one or more layers, that covers the outer surfaces of the body or lines any internal cavity or tube." [GOC:dph, GOC:jl, GOC:tb, ISBN:0198506732]
 synonym: "epithelium morphogenesis" EXACT []
-xref: MIPS_funcat:45.03.09
 is_a: GO:0048729 ! tissue morphogenesis
 relationship: part_of GO:0060429 ! epithelium development
 
@@ -701,7 +688,7 @@ namespace: biological_process
 def: "The series of events by which an endogenous stimulus is received by a cilium on a cell and converted to a molecular signal contributing to left/right asymmetry." [GOC:mtg_heart]
 is_a: GO:0009726 ! detection of endogenous stimulus
 relationship: part_of GO:0007368 ! determination of left/right symmetry
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-09-22T02:45:48Z
 
 [Term]
@@ -714,7 +701,7 @@ is_a: GO:0060562 ! epithelial tube morphogenesis
 relationship: part_of GO:0003007 ! heart morphogenesis
 relationship: part_of GO:0035050 ! embryonic heart tube development
 relationship: part_of GO:0048562 ! embryonic organ morphogenesis
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-09-22T04:21:17Z
 
 [Term]
@@ -725,10 +712,10 @@ def: "A series of molecular signals initiated by the binding of a member of the 
 synonym: "BMP signaling pathway involved in determination of left/right asymmetry" EXACT [GOC:dph]
 synonym: "BMP signalling pathway involved in determination of left/right symmetry" EXACT [GOC:mah]
 is_a: GO:0030509 ! BMP signaling pathway
-is_a: GO:1900094 ! regulation of transcription from RNA polymerase II promoter involved in determination of left/right symmetry
 intersection_of: GO:0030509 ! BMP signaling pathway
 intersection_of: part_of GO:0007368 ! determination of left/right symmetry
-created_by: tanyaberardini
+relationship: part_of GO:0007368 ! determination of left/right symmetry
+created_by: tb
 creation_date: 2009-09-24T05:34:57Z
 
 [Term]
@@ -933,7 +920,7 @@ name: molecular_function
 namespace: molecular_function
 alt_id: GO:0005554
 def: "A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs. These actions are described from two distinct but related perspectives: (1) biochemical activity, and (2) role as a component in a larger system/process." [GOC:pdt]
-comment: Note that, in addition to forming the root of the molecular function ontology, this term is recommended for use for the annotation of gene products whose molecular function is unknown. When this term is used for annotation, it indicates that no information was available about the molecular function of the gene product annotated as of the date the annotation was made; the evidence code "no data" (ND), is used to indicate this. Despite its name, this is not a type of 'function' in the sense typically defined by upper ontologies such as Basic Formal Ontology (BFO). It is instead a BFO:process carried out by a single gene product or complex.
+comment: Note that, in addition to forming the root of the molecular function ontology, this term is recommended for use for the annotation of gene products whose molecular function is unknown. When this term is used for annotation, it indicates that no information was available about the molecular function of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this. Despite its name, this is not a type of 'function' in the sense typically defined by upper ontologies such as Basic Formal Ontology (BFO). It is instead a BFO:process carried out by a single gene product or complex.
 subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
@@ -1199,7 +1186,7 @@ namespace: molecular_function
 alt_id: GO:0004695
 alt_id: GO:0004696
 alt_id: GO:0004700
-def: "Catalysis of the reactions: ATP + protein serine = ADP + protein serine phosphate, and ATP + protein threonine = ADP + protein threonine phosphate." [GOC:bf]
+def: "Catalysis of the reactions: ATP + protein serine = ADP + protein serine phosphate, and ATP + protein threonine = ADP + protein threonine phosphate." [GOC:bf, RHEA:17989, RHEA:46608]
 synonym: "protein kinase (phosphorylating) activity" NARROW [EC:2.7.11.1]
 synonym: "protein phosphokinase activity" NARROW [EC:2.7.11.1]
 synonym: "protein serine kinase activity" NARROW [EC:2.7.11.1]
@@ -1653,6 +1640,8 @@ xref: Reactome:R-HSA-975861 "Phosphorylation of IRAK2 bound to the activated IRA
 xref: Reactome:R-HSA-975865 "IRAK4 autophosphorylation within the complex activated TLR:MyD88"
 xref: Reactome:R-HSA-975874 "Second phosphorylation of IRAK1 by IRAK4 bound to MyD88:activated TLR complex"
 xref: Reactome:R-HSA-975878 "First phosphorylation of IRAK1 by IRAK4 bound to MyD88:activated TLR"
+xref: RHEA:17989
+xref: RHEA:46608
 is_a: GO:0004672 ! protein kinase activity
 
 [Term]
@@ -1662,38 +1651,25 @@ namespace: molecular_function
 alt_id: GO:0008338
 alt_id: GO:0008339
 alt_id: GO:0016908
+alt_id: GO:0016909
 def: "Catalysis of the reaction: protein + ATP = protein phosphate + ADP. This reaction is the phosphorylation of proteins. Mitogen-activated protein kinase; a family of protein kinases that perform a crucial step in relaying signals from the plasma membrane to the nucleus. They are activated by a wide range of proliferation- or differentiation-inducing signals; activation is strong with agonists such as polypeptide growth factors and tumor-promoting phorbol esters, but weak (in most cell backgrounds) by stress stimuli." [GOC:ma, ISBN:0198547684]
 synonym: "ATP:protein phosphotransferase (MAPKK-activated) activity" EXACT [EC:2.7.11.24]
-synonym: "Dp38" RELATED [EC:2.7.11.24]
 synonym: "ERK" RELATED [EC:2.7.11.24]
 synonym: "ERK1" EXACT []
 synonym: "ERK2" RELATED []
 synonym: "extracellular signal-regulated kinase activity" NARROW [EC:2.7.11.24]
-synonym: "LeMPK3" RELATED [EC:2.7.11.24]
 synonym: "MAP kinase 1 activity" NARROW []
 synonym: "MAP kinase 2 activity" NARROW []
-synonym: "MAP-2 kinase activity" NARROW [EC:2.7.11.24]
 synonym: "MAPK" RELATED [EC:2.7.11.24, PMID:20811974]
 synonym: "MBP kinase I activity" NARROW [EC:2.7.11.24]
 synonym: "MBP kinase II activity" NARROW [EC:2.7.11.24]
 synonym: "mitogen activated kinase activity" EXACT []
 synonym: "mitogen-activated protein kinase activity" EXACT [EC:2.7.11.24]
-synonym: "MP kinase activity" NARROW []
-synonym: "Mpk2" NARROW []
 synonym: "myelin basic protein kinase activity" NARROW [EC:2.7.11.24]
-synonym: "p38" NARROW []
-synonym: "p38-2" RELATED [EC:2.7.11.24]
-synonym: "p38delta" RELATED [EC:2.7.11.24]
-synonym: "p42 mitogen-activated protein kinase activity" NARROW [EC:2.7.11.24]
-synonym: "p42mapk" RELATED [EC:2.7.11.24]
-synonym: "p44mpk" RELATED [EC:2.7.11.24]
-synonym: "PMK-1" RELATED [EC:2.7.11.24]
-synonym: "PMK-2" RELATED [EC:2.7.11.24]
-synonym: "PMK-3" RELATED [EC:2.7.11.24]
-synonym: "pp42" RELATED [EC:2.7.11.24]
-synonym: "pp44mapk" RELATED [EC:2.7.11.24]
-synonym: "SAPK2" NARROW []
-synonym: "STK26" RELATED [EC:2.7.11.24]
+synonym: "SAP kinase activity" NARROW []
+synonym: "SAPK" NARROW []
+synonym: "stress-activated kinase activity" NARROW []
+synonym: "stress-activated protein kinase activity" NARROW []
 xref: EC:2.7.11.24
 xref: KEGG_REACTION:R00162
 xref: MetaCyc:2.7.11.24-RXN
@@ -1747,10 +1723,11 @@ alt_id: GO:0005062
 alt_id: GO:0009369
 alt_id: GO:0009370
 def: "OBSOLETE. Conveys a signal across a cell to trigger a change in cell function or state. A signal is a physical entity or change in state that is used to transfer information in order to trigger a response." [GOC:go_curators]
-comment: This term was obsoleted because it was not clearly defined and is not a useful grouping term, see https://github.com/geneontology/go-ontology/issues/14232.
+comment: This term was obsoleted because it was not clearly defined and is not a useful grouping term.
 synonym: "hematopoietin/interferon-class (D200-domain) cytokine receptor signal transducer activity" NARROW []
 synonym: "quorum sensing response regulator activity" NARROW []
 synonym: "quorum sensing signal generator activity" NARROW []
+property_value: term_tracker_item https://github.com/geneontology/go-ontology/issues/14232 xsd:anyURI
 is_obsolete: true
 
 [Term]
@@ -1798,8 +1775,6 @@ subset: goslim_pir
 subset: goslim_plant
 synonym: "glycoprotein binding" NARROW []
 synonym: "protein amino acid binding" EXACT []
-xref: MIPS_funcat:16.01
-xref: MIPS_funcat:18.01.07
 xref: Reactome:R-HSA-170835 "An anchoring protein, ZFYVE9 (SARA), recruits SMAD2/3"
 xref: Reactome:R-HSA-170846 "TGFBR2 recruits TGFBR1"
 is_a: GO:0005488 ! binding
@@ -1810,7 +1785,7 @@ name: cellular_component
 namespace: cellular_component
 alt_id: GO:0008372
 def: "A location, relative to cellular compartments and structures, occupied by a macromolecular machine when it carries out a molecular function. There are two ways in which the gene ontology describes locations of gene products: (1) relative to cellular structures (e.g., cytoplasmic side of plasma membrane) or compartments (e.g., mitochondrion), and (2) the stable macromolecular complexes of which they are parts (e.g., the ribosome)." [GOC:pdt, NIF_Subcellular:sao1337158144]
-comment: Note that, in addition to forming the root of the cellular component ontology, this term is recommended for use for the annotation of gene products whose cellular component is unknown. When this term is used for annotation, it indicates that no information was available about the cellular component of the gene product annotated as of the date the annotation was made; the evidence code "no data" (ND), is used to indicate this.
+comment: Note that, in addition to forming the root of the cellular component ontology, this term is recommended for use for the annotation of gene products whose cellular component is unknown. When this term is used for annotation, it indicates that no information was available about the cellular component of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.
 subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
@@ -1843,16 +1818,14 @@ is_a: GO:0005575 ! cellular_component
 
 [Term]
 id: GO:0005623
-name: cell
+name: obsolete cell
 namespace: cellular_component
-def: "The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope." [GOC:go_curators]
-subset: goslim_chembl
-subset: goslim_generic
-subset: goslim_plant
+def: "OBSOLETE. The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope." [GOC:go_curators]
+comment: This term was obsoleted because it was redundant with the root class of the cell ontology, CL:0000000.
 xref: NIF_Subcellular:sao1813327414
 xref: Wikipedia:Cell_(biology)
-is_a: GO:0005575 ! cellular_component
 property_value: IAO:0000589 "cell and encapsulating structures" xsd:string
+is_obsolete: true
 
 [Term]
 id: GO:0005634
@@ -1873,7 +1846,6 @@ subset: goslim_plant
 subset: goslim_yeast
 synonym: "cell nucleus" EXACT []
 synonym: "horsetail nucleus" NARROW [GOC:al, GOC:mah, GOC:vw, PMID:15030757]
-xref: MIPS_funcat:70.10
 xref: NIF_Subcellular:sao1702920020
 xref: Wikipedia:Cell_nucleus
 is_a: GO:0043231 ! intracellular membrane-bounded organelle
@@ -1897,7 +1869,6 @@ subset: goslim_yeast
 synonym: "chromatid" RELATED []
 synonym: "interphase chromosome" NARROW []
 synonym: "prophase chromosome" NARROW []
-xref: MIPS_funcat:70.10.03
 xref: Wikipedia:Chromosome
 is_a: GO:0043232 ! intracellular non-membrane-bounded organelle
 
@@ -1913,7 +1884,6 @@ subset: goslim_metagenomics
 subset: goslim_pir
 subset: goslim_plant
 subset: goslim_yeast
-xref: MIPS_funcat:70.03
 xref: Wikipedia:Cytoplasm
 is_a: GO:0110165 ! cellular anatomical entity
 relationship: part_of GO:0005622 ! intracellular
@@ -1935,7 +1905,6 @@ subset: goslim_pir
 subset: goslim_plant
 subset: goslim_yeast
 synonym: "vacuolar carboxypeptidase Y" RELATED []
-xref: MIPS_funcat:70.25
 xref: Wikipedia:Vacuole
 is_a: GO:0043231 ! intracellular membrane-bounded organelle
 relationship: part_of GO:0005737 ! cytoplasm
@@ -1984,7 +1953,6 @@ subset: goslim_mouse
 subset: goslim_pir
 subset: goslim_plant
 subset: goslim_yeast
-xref: MIPS_funcat:70.04
 xref: Wikipedia:Cytoskeleton
 is_a: GO:0043232 ! intracellular non-membrane-bounded organelle
 
@@ -2170,7 +2138,6 @@ synonym: "DNA-dependent transcription" EXACT []
 synonym: "transcription" BROAD []
 synonym: "transcription regulator activity" RELATED []
 synonym: "transcription, DNA-dependent" EXACT [GOC:txnOH]
-xref: MIPS_funcat:11.02
 xref: Wikipedia:Transcription_(genetics)
 is_a: GO:0034645 ! cellular macromolecule biosynthetic process
 is_a: GO:0097659 ! nucleic acid-templated transcription
@@ -2220,7 +2187,6 @@ namespace: biological_process
 alt_id: GO:0032568
 alt_id: GO:0032569
 def: "The synthesis of RNA from a DNA template by RNA polymerase II (RNAP II), originating at an RNA polymerase II promoter. Includes transcription of messenger RNA (mRNA) and certain small nuclear RNAs (snRNAs)." [GOC:jl, GOC:txnOH, ISBN:0321000382]
-comment: Changed class label as requested in https://github.com/geneontology/go-ontology/issues/14854
 subset: goslim_yeast
 synonym: "gene-specific transcription from RNA polymerase II promoter" RELATED []
 synonym: "general transcription from RNA polymerase II promoter" RELATED []
@@ -2229,6 +2195,7 @@ synonym: "specific transcription from RNA polymerase II promoter" RELATED [GOC:m
 synonym: "transcription from Pol II promoter" EXACT []
 synonym: "transcription from RNA polymerase II promoter" EXACT []
 is_a: GO:0006351 ! transcription, DNA-templated
+property_value: term_tracker_item https://github.com/geneontology/go-ontology/issues/14854 xsd:anyURI
 
 [Term]
 id: GO:0006457
@@ -2257,8 +2224,6 @@ synonym: "co-chaperonin activity" RELATED []
 synonym: "glycoprotein-specific chaperone activity" RELATED []
 synonym: "non-chaperonin molecular chaperone ATPase activity" RELATED []
 synonym: "protein complex assembly, multichaperone pathway" RELATED []
-xref: MIPS_funcat:14
-xref: MIPS_funcat:14.01
 xref: Wikipedia:Protein_folding
 is_a: GO:0009987 ! cellular process
 
@@ -2276,9 +2241,6 @@ subset: goslim_plant
 synonym: "process resulting in protein modification" RELATED []
 synonym: "protein modification process" BROAD [GOC:bf, GOC:jl]
 synonym: "protein tagging activity" RELATED []
-xref: MIPS_funcat:14
-xref: MIPS_funcat:14.07
-xref: MIPS_funcat:18.01.01
 is_a: GO:0036211 ! protein modification process
 is_a: GO:0044267 ! cellular protein metabolic process
 
@@ -2289,7 +2251,6 @@ namespace: biological_process
 def: "The process of introducing a phosphate group on to a protein." [GOC:hb]
 subset: goslim_yeast
 synonym: "protein amino acid phosphorylation" EXACT [GOC:bf]
-xref: MIPS_funcat:14.07.03
 is_a: GO:0006464 ! cellular protein modification process
 is_a: GO:0016310 ! phosphorylation
 
@@ -2315,7 +2276,6 @@ name: protein acetylation
 namespace: biological_process
 def: "The addition of an acetyl group to a protein amino acid. An acetyl group is CH3CO-, derived from acetic [ethanoic] acid." [GOC:ai]
 synonym: "protein amino acid acetylation" EXACT [GOC:bf]
-xref: MIPS_funcat:14.07.04
 is_a: GO:0043543 ! protein acylation
 
 [Term]
@@ -2331,7 +2291,6 @@ name: protein methylation
 namespace: biological_process
 def: "The addition of a methyl group to a protein amino acid. A methyl group is derived from methane by the removal of a hydrogen atom." [GOC:ai]
 synonym: "protein amino acid methylation" EXACT [GOC:bf]
-xref: MIPS_funcat:14.07.09
 is_a: GO:0008213 ! protein alkylation
 is_a: GO:0043414 ! macromolecule methylation
 
@@ -2398,7 +2357,6 @@ namespace: biological_process
 def: "The chemical reactions and pathways involving the phosphate group, the anion or salt of any phosphoric acid." [GOC:ai]
 synonym: "phosphate metabolic process" RELATED []
 synonym: "phosphate metabolism" EXACT []
-xref: MIPS_funcat:01.04
 is_a: GO:0006793 ! phosphorus metabolic process
 
 [Term]
@@ -2409,7 +2367,6 @@ def: "The chemical reactions and pathways involving organic or inorganic compoun
 subset: goslim_metagenomics
 subset: goslim_pir
 synonym: "nitrogen compound metabolism" EXACT []
-xref: MIPS_funcat:01.02
 is_a: GO:0008152 ! metabolic process
 
 [Term]
@@ -2432,9 +2389,8 @@ subset: goslim_plant
 synonym: "single-organism transport" RELATED []
 synonym: "small molecule transport" NARROW []
 synonym: "solute:solute exchange" NARROW []
-xref: MIPS_funcat:20
 is_a: GO:0051234 ! establishment of localization
-created_by: janelomax
+created_by: jl
 creation_date: 2012-12-13T16:25:32Z
 
 [Term]
@@ -2445,7 +2401,6 @@ def: "The directed movement of charged atoms or small charged molecules into, ou
 subset: goslim_drosophila
 subset: goslim_pir
 subset: goslim_yeast
-xref: MIPS_funcat:20.01.01
 is_a: GO:0006810 ! transport
 
 [Term]
@@ -2456,7 +2411,6 @@ alt_id: GO:0006819
 alt_id: GO:0015674
 def: "The directed movement of cations, atoms or small molecules with a net positive charge, into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore." [GOC:ai]
 synonym: "di-, tri-valent inorganic cation transport" NARROW [GOC:mah]
-xref: MIPS_funcat:20.01.01.01
 is_a: GO:0006811 ! ion transport
 
 [Term]
@@ -2513,7 +2467,6 @@ synonym: "induction of apoptosis by p53" RELATED []
 synonym: "programmed cell death by apoptosis" EXACT []
 synonym: "signaling (initiator) caspase activity" RELATED []
 synonym: "type I programmed cell death" NARROW []
-xref: MIPS_funcat:40.10.02
 xref: Wikipedia:Apoptosis
 is_a: GO:0012501 ! programmed cell death
 
@@ -2528,8 +2481,6 @@ subset: goslim_pir
 synonym: "cell movement" RELATED []
 synonym: "cellular component motion" EXACT [GOC:dph, GOC:jl]
 synonym: "cellular component movement" EXACT []
-xref: MIPS_funcat:02.45.11
-xref: MIPS_funcat:34.05
 is_a: GO:0009987 ! cellular process
 
 [Term]
@@ -2538,7 +2489,6 @@ name: chemotaxis
 namespace: biological_process
 def: "The directed movement of a motile cell or organism, or the directed growth of a cell guided by a specific chemical concentration gradient. Movement may be towards a higher concentration (positive chemotaxis) or towards a lower concentration (negative chemotaxis)." [ISBN:0198506732]
 synonym: "taxis in response to chemical stimulus" EXACT []
-xref: MIPS_funcat:34.11.03.03
 xref: Wikipedia:Chemotaxis
 is_a: GO:0042330 ! taxis
 relationship: part_of GO:0042221 ! response to chemical
@@ -2559,7 +2509,6 @@ subset: goslim_metagenomics
 subset: goslim_plant
 synonym: "response to abiotic stress" RELATED []
 synonym: "response to biotic stress" RELATED []
-xref: MIPS_funcat:32.01
 is_a: GO:0050896 ! response to stimulus
 
 [Term]
@@ -2593,7 +2542,6 @@ synonym: "cytoskeletal organization and biogenesis" RELATED [GOC:mah]
 synonym: "cytoskeletal regulator activity" RELATED []
 synonym: "cytoskeleton organisation" EXACT []
 synonym: "cytoskeleton organization and biogenesis" RELATED [GOC:mah]
-xref: MIPS_funcat:42.04
 is_a: GO:0006996 ! organelle organization
 
 [Term]
@@ -2609,7 +2557,6 @@ id: GO:0007018
 name: microtubule-based movement
 namespace: biological_process
 def: "A microtubule-based process that results in the movement of organelles, other microtubules, or other cellular components.  Examples include motor-driven movement along microtubules and movement driven by polymerization or depolymerization of microtubules." [GOC:cjm, ISBN:0815316194]
-xref: MIPS_funcat:20.09.14.01
 is_a: GO:0006928 ! movement of cell or subcellular component
 is_a: GO:0007017 ! microtubule-based process
 
@@ -2628,8 +2575,6 @@ subset: goslim_generic
 subset: goslim_pir
 subset: goslim_plant
 synonym: "cell-division cycle" EXACT []
-xref: MIPS_funcat:10
-xref: MIPS_funcat:10.03
 xref: Wikipedia:Cell_cycle
 is_a: GO:0009987 ! cellular process
 
@@ -2653,7 +2598,7 @@ alt_id: GO:0000071
 alt_id: GO:0030472
 alt_id: GO:0043148
 def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of the microtubule spindle during a mitotic cell cycle." [GOC:go_curators, GOC:mah]
-comment: In fission yeast most mitotic spindle organization occurs in the nucleus; see https://github.com/geneontology/go-ontology/issues/15341.
+comment: In fission yeast most mitotic spindle organization occurs in the nucleus.
 synonym: "mitotic spindle organisation" EXACT []
 synonym: "mitotic spindle organisation in nucleus" NARROW []
 synonym: "mitotic spindle organization and biogenesis" RELATED [GOC:mah]
@@ -2667,6 +2612,7 @@ is_a: GO:0007051 ! spindle organization
 is_a: GO:1902850 ! microtubule cytoskeleton organization involved in mitosis
 intersection_of: GO:0007051 ! spindle organization
 intersection_of: part_of GO:0000278 ! mitotic cell cycle
+property_value: term_tracker_item https://github.com/geneontology/go-ontology/issues/15341 xsd:anyURI
 
 [Term]
 id: GO:0007053
@@ -2746,10 +2692,10 @@ subset: goslim_pir
 subset: goslim_pombe
 synonym: "cell adhesion molecule activity" RELATED []
 synonym: "single organism cell adhesion" RELATED []
-xref: MIPS_funcat:34.07
 xref: Wikipedia:Cell_adhesion
+is_a: GO:0009987 ! cellular process
 is_a: GO:0022610 ! biological adhesion
-created_by: davidos
+created_by: dos
 creation_date: 2014-04-15T15:59:10Z
 
 [Term]
@@ -2806,7 +2752,6 @@ synonym: "signaling cascade" NARROW []
 synonym: "signaling pathway" RELATED []
 synonym: "signalling cascade" NARROW []
 synonym: "signalling pathway" RELATED [GOC:mah]
-xref: MIPS_funcat:30
 xref: Wikipedia:Signal_transduction
 is_a: GO:0009987 ! cellular process
 is_a: GO:0050794 ! regulation of cellular process
@@ -2823,7 +2768,6 @@ subset: goslim_drosophila
 synonym: "cell surface receptor linked signal transduction" EXACT []
 synonym: "cell surface receptor linked signaling pathway" EXACT [GOC:bf]
 synonym: "cell surface receptor linked signalling pathway" EXACT [GOC:mah]
-xref: MIPS_funcat:30.05
 is_a: GO:0007165 ! signal transduction
 
 [Term]
@@ -2832,7 +2776,6 @@ name: enzyme linked receptor protein signaling pathway
 namespace: biological_process
 def: "Any series of molecular signals initiated by the binding of an extracellular ligand to a receptor on the surface of the target cell, where the receptor possesses catalytic activity or is closely associated with an enzyme such as a protein kinase, and ending with regulation of a downstream cellular process, e.g. transcription." [GOC:mah, GOC:signaling, ISBN:0815316194]
 synonym: "enzyme linked receptor protein signalling pathway" EXACT []
-xref: MIPS_funcat:30.05.01
 is_a: GO:0007166 ! cell surface receptor signaling pathway
 
 [Term]
@@ -2841,7 +2784,6 @@ name: transmembrane receptor protein tyrosine kinase signaling pathway
 namespace: biological_process
 def: "A series of molecular signals initiated by the binding of an extracellular ligand to a receptor on the surface of the target cell where the receptor possesses tyrosine kinase activity, and ending with regulation of a downstream cellular process, e.g. transcription." [GOC:ceb, GOC:signaling]
 synonym: "transmembrane receptor protein tyrosine kinase signalling pathway" EXACT []
-xref: MIPS_funcat:30.05.01.12
 is_a: GO:0007167 ! enzyme linked receptor protein signaling pathway
 
 [Term]
@@ -2850,7 +2792,6 @@ name: transmembrane receptor protein serine/threonine kinase signaling pathway
 namespace: biological_process
 def: "A series of molecular signals initiated by the binding of an extracellular ligand to a receptor on the surface of the target cell where the receptor possesses serine/threonine kinase activity, and ending with regulation of a downstream cellular process, e.g. transcription." [GOC:mah, GOC:signaling]
 synonym: "transmembrane receptor protein serine/threonine kinase signalling pathway" EXACT []
-xref: MIPS_funcat:30.05.01.18
 is_a: GO:0007167 ! enzyme linked receptor protein signaling pathway
 
 [Term]
@@ -2867,7 +2808,6 @@ synonym: "MAPK8 cascade" NARROW [GOC:add]
 synonym: "MAPK9 cascade" NARROW [GOC:add]
 synonym: "SAPK cascade" BROAD []
 synonym: "stress-activated protein kinase cascade" BROAD []
-xref: MIPS_funcat:30.01.05.01.02
 is_a: GO:0051403 ! stress-activated MAPK cascade
 
 [Term]
@@ -2891,7 +2831,6 @@ subset: goslim_synapse
 synonym: "neurotransmission" RELATED [GOC:dph]
 synonym: "signal transmission across a synapse" BROAD []
 synonym: "synaptic transmission" BROAD []
-xref: MIPS_funcat:34.03.01
 xref: Wikipedia:Neurotransmission
 is_a: GO:0098916 ! anterograde trans-synaptic signaling
 
@@ -2903,7 +2842,6 @@ def: "The biological process whose specific outcome is the progression of a mult
 comment: Note that this term was 'developmental process'.
 subset: goslim_chembl
 subset: goslim_plant
-xref: MIPS_funcat:41
 is_a: GO:0032501 ! multicellular organismal process
 is_a: GO:0048856 ! anatomical structure development
 
@@ -2914,7 +2852,6 @@ namespace: biological_process
 alt_id: GO:0009552
 def: "The generation and maintenance of gametes in a multicellular organism. A gamete is a haploid reproductive cell." [GOC:ems, GOC:mtg_sensu]
 synonym: "gametogenesis" RELATED []
-xref: MIPS_funcat:41.05.25
 is_a: GO:0048609 ! multicellular organismal reproductive process
 relationship: part_of GO:0019953 ! sexual reproduction
 property_value: RO:0002161 NCBITaxon_Union:0000023
@@ -2970,7 +2907,6 @@ name: gastrulation
 namespace: biological_process
 def: "A complex and coordinated series of cellular movements that occurs at the end of cleavage during embryonic development of most animals. The details of gastrulation vary from species to species, but usually result in the formation of the three primary germ layers, ectoderm, mesoderm and endoderm." [GOC:curators, ISBN:9780878933846]
 subset: goslim_drosophila
-xref: MIPS_funcat:41.05.09
 xref: Wikipedia:Gastrulation
 is_a: GO:0048598 ! embryonic morphogenesis
 relationship: has_part GO:0001705 ! ectoderm formation
@@ -2985,7 +2921,6 @@ def: "Any developmental process that results in the creation of defined areas or
 subset: goslim_drosophila
 synonym: "pattern biosynthesis" RELATED []
 synonym: "pattern formation" RELATED []
-xref: MIPS_funcat:41.01.03
 is_a: GO:0032501 ! multicellular organismal process
 relationship: part_of GO:0007275 ! multicellular organism development
 
@@ -3003,8 +2938,6 @@ namespace: biological_process
 def: "The process whose specific outcome is the progression of nervous tissue over time, from its formation to its mature state." [GOC:dgh]
 subset: goslim_drosophila
 synonym: "pan-neural process" RELATED []
-xref: MIPS_funcat:45.03.17
-xref: MIPS_funcat:47.03.01
 is_a: GO:0048731 ! system development
 
 [Term]
@@ -3040,7 +2973,6 @@ name: central nervous system development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of the central nervous system over time, from its formation to the mature structure. The central nervous system is the core nervous system that serves an integrating and coordinating function. In vertebrates it consists of the brain and spinal cord. In those invertebrates with a central nervous system it typically consists of a brain, cerebral ganglia and a nerve cord." [GOC:bf, GOC:jid, ISBN:0582227089]
 synonym: "CNS development" EXACT []
-xref: MIPS_funcat:47.03.01.01
 xref: Wikipedia:Neural_development
 is_a: GO:0048731 ! system development
 relationship: part_of GO:0007399 ! nervous system development
@@ -3050,7 +2982,6 @@ id: GO:0007420
 name: brain development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of the brain over time, from its formation to the mature structure. Brain development begins with patterning events in the neural tube and ends with the mature structure that is the center of thought and emotion. The brain is responsible for the coordination and control of bodily activities and the interpretation of information from the senses (sight, hearing, smell, etc.)." [GOC:dph, GOC:jid, GOC:tb, UBERON:0000955]
-xref: MIPS_funcat:47.03.01.01.01
 is_a: GO:0048513 ! animal organ development
 relationship: part_of GO:0007417 ! central nervous system development
 relationship: part_of GO:0060322 ! head development
@@ -3085,7 +3016,6 @@ alt_id: GO:0007511
 def: "The process whose specific outcome is the progression of the heart over time, from its formation to the mature structure. The heart is a hollow, muscular organ, which, by contracting rhythmically, keeps up the circulation of the blood." [GOC:jid, UBERON:0000948]
 synonym: "cardiac development" RELATED []
 synonym: "dorsal vessel development" NARROW []
-xref: MIPS_funcat:47.03.03.01
 xref: Wikipedia:Heart_development
 is_a: GO:0048513 ! animal organ development
 relationship: part_of GO:0072359 ! circulatory system development
@@ -3095,7 +3025,6 @@ id: GO:0007517
 name: muscle organ development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of the muscle over time, from its formation to the mature structure. The muscle is an organ consisting of a tissue made up of various elongated cells that are specialized to contract and thus to produce movement and mechanical work." [GOC:jid, ISBN:0198506732]
-xref: MIPS_funcat:45.03.12
 is_a: GO:0048513 ! animal organ development
 is_a: GO:0061061 ! muscle structure development
 
@@ -3104,7 +3033,6 @@ id: GO:0007548
 name: sex differentiation
 namespace: biological_process
 def: "The establishment of the sex of an organism by physical differentiation." [GOC:ai]
-xref: MIPS_funcat:41.05.23
 xref: Wikipedia:Sexual_differentiation
 is_a: GO:0003006 ! developmental process involved in reproduction
 
@@ -3127,7 +3055,7 @@ synonym: "single-organism behavior" RELATED []
 xref: Wikipedia:Behavior
 is_a: GO:0008150 ! biological_process
 disjoint_from: GO:0032502 ! developmental process
-created_by: janelomax
+created_by: jl
 creation_date: 2012-09-20T14:06:08Z
 
 [Term]
@@ -3183,7 +3111,7 @@ alt_id: GO:0044370
 alt_id: GO:0044371
 alt_id: GO:0044372
 def: "Behavior associated with the intake of food." [GOC:mah]
-comment: See also the biological process term 'behavior ; GO:0007610'. Merged terms, see https://github.com/geneontology/go-ontology/issues/18547.
+comment: See also the biological process term 'behavior ; GO:0007610'.
 synonym: "behavioral response to food" EXACT []
 synonym: "behavioural response to food" EXACT []
 synonym: "eating" NARROW []
@@ -3201,7 +3129,8 @@ synonym: "injection of substance into other organism during feeding on blood of 
 synonym: "taking of blood meal" NARROW []
 xref: Wikipedia:List_of_feeding_behaviours
 is_a: GO:0007610 ! behavior
-created_by: janelomax
+property_value: term_tracker_item https://github.com/geneontology/go-ontology/issues/18547 xsd:anyURI
+created_by: jl
 creation_date: 2011-10-27T03:53:33Z
 
 [Term]
@@ -3254,7 +3183,6 @@ alt_id: GO:0070261
 def: "The flow of blood through the body of an animal, enabling the transport of nutrients to the tissues and the removal of waste products." [GOC:mtg_heart, ISBN:0192800825]
 subset: goslim_pir
 synonym: "hemolymph circulation" RELATED []
-xref: MIPS_funcat:36.07.07
 is_a: GO:0003013 ! circulatory system process
 
 [Term]
@@ -3279,7 +3207,6 @@ synonym: "asymmetric protein localization" RELATED []
 synonym: "establishment and maintenance of asymmetric protein localization" RELATED []
 synonym: "establishment and maintenance of protein localization" RELATED []
 synonym: "protein localisation" EXACT [GOC:mah]
-xref: MIPS_funcat:18.01.03
 is_a: GO:0033036 ! macromolecule localization
 
 [Term]
@@ -3290,7 +3217,7 @@ alt_id: GO:0000004
 alt_id: GO:0007582
 alt_id: GO:0044699
 def: "A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence." [GOC:pdt]
-comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code "no data" (ND), is used to indicate this.
+comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.
 subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
@@ -3305,7 +3232,7 @@ synonym: "physiological process" EXACT []
 synonym: "single organism process" RELATED []
 synonym: "single-organism process" RELATED []
 xref: Wikipedia:Biological_process
-created_by: janelomax
+created_by: jl
 creation_date: 2012-09-19T15:05:24Z
 
 [Term]
@@ -3326,10 +3253,9 @@ synonym: "metabolism" EXACT []
 synonym: "metabolism resulting in cell growth" NARROW []
 synonym: "multicellular organism metabolic process" NARROW []
 synonym: "single-organism metabolic process" RELATED []
-xref: MIPS_funcat:01
 xref: Wikipedia:Metabolism
 is_a: GO:0008150 ! biological_process
-created_by: janelomax
+created_by: jl
 creation_date: 2012-10-17T15:46:40Z
 
 [Term]
@@ -3355,7 +3281,6 @@ subset: goslim_mouse
 subset: goslim_plant
 synonym: "accidental cell death" RELATED []
 synonym: "necrosis" RELATED []
-xref: MIPS_funcat:40.10
 is_a: GO:0009987 ! cellular process
 
 [Term]
@@ -3417,7 +3342,7 @@ subset: goslim_generic
 subset: goslim_mouse
 subset: goslim_pir
 synonym: "cell proliferation" RELATED []
-is_a: GO:0008150 ! biological_process
+is_a: GO:0009987 ! cellular process
 property_value: RO:0002161 NCBITaxon:4751
 
 [Term]
@@ -3462,7 +3387,6 @@ namespace: biological_process
 def: "The series of molecular signals generated as a consequence of the insulin receptor binding to insulin." [GOC:ceb]
 synonym: "daf-2 receptor signaling pathway" NARROW []
 synonym: "insulin receptor signalling pathway" EXACT []
-xref: MIPS_funcat:30.05.01.12.05
 is_a: GO:0007169 ! transmembrane receptor protein tyrosine kinase signaling pathway
 relationship: part_of GO:0032869 ! cellular response to insulin stimulus
 
@@ -3472,7 +3396,6 @@ name: regulation of cell size
 namespace: biological_process
 def: "Any process that modulates the size of a cell." [GOC:go_curators]
 synonym: "cell size control" EXACT []
-xref: MIPS_funcat:40.01.05
 is_a: GO:0032535 ! regulation of cellular component size
 
 [Term]
@@ -3494,7 +3417,6 @@ synonym: "FGF receptor signaling pathway" EXACT []
 synonym: "FGF receptor signalling pathway" EXACT []
 synonym: "FGFR signaling pathway" EXACT []
 synonym: "fibroblast growth factor receptor signalling pathway" EXACT []
-xref: MIPS_funcat:30.05.01.12.03
 is_a: GO:0007169 ! transmembrane receptor protein tyrosine kinase signaling pathway
 relationship: part_of GO:0044344 ! cellular response to fibroblast growth factor stimulus
 
@@ -3526,7 +3448,7 @@ synonym: "single-organism biosynthetic process" RELATED []
 synonym: "synthesis" EXACT []
 xref: Wikipedia:Anabolism
 is_a: GO:0008152 ! metabolic process
-created_by: janelomax
+created_by: jl
 creation_date: 2012-10-17T15:52:18Z
 
 [Term]
@@ -3552,7 +3474,6 @@ def: "Any process that results in a change in state or activity of a cell or an 
 comment: Note that 'radiation' refers to electromagnetic radiation of any wavelength.
 synonym: "response to electromagnetic radiation stimulus" EXACT []
 synonym: "response to radiation stimulus" EXACT []
-xref: MIPS_funcat:32.01.13
 is_a: GO:0009628 ! response to abiotic stimulus
 
 [Term]
@@ -3561,9 +3482,6 @@ name: response to light stimulus
 namespace: biological_process
 def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a light stimulus, electromagnetic radiation of wavelengths classified as infrared, visible or ultraviolet light." [GOC:go_curators, ISBN:0582227089]
 subset: goslim_plant
-xref: MIPS_funcat:34.11.01
-xref: MIPS_funcat:34.11.01.01
-xref: MIPS_funcat:36.20.35.11
 is_a: GO:0009314 ! response to radiation
 
 [Term]
@@ -3576,7 +3494,6 @@ subset: gocheck_do_not_manually_annotate
 subset: goslim_drosophila
 subset: goslim_plant
 synonym: "response to environmental stimulus" EXACT []
-xref: MIPS_funcat:36.20.35
 is_a: GO:0050896 ! response to stimulus
 
 [Term]
@@ -3595,8 +3512,6 @@ namespace: biological_process
 def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a mechanical stimulus." [GOC:hb]
 synonym: "chemi-mechanical coupling" RELATED []
 synonym: "mechanical stimulus response" EXACT []
-xref: MIPS_funcat:34.11.05
-xref: MIPS_funcat:36.20.35.15
 is_a: GO:0009605 ! response to external stimulus
 is_a: GO:0009628 ! response to abiotic stimulus
 
@@ -3605,12 +3520,13 @@ id: GO:0009628
 name: response to abiotic stimulus
 namespace: biological_process
 def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an abiotic (not derived from living organisms) stimulus." [GOC:hb]
-comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC. Changed definition as requested in https://github.com/geneontology/go-ontology/issues/16572.
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
 subset: gocheck_do_not_manually_annotate
 subset: goslim_metagenomics
 subset: goslim_plant
 synonym: "response to abiotic stress" NARROW []
 is_a: GO:0050896 ! response to stimulus
+property_value: term_tracker_item https://github.com/geneontology/go-ontology/issues/16572 xsd:anyURI
 
 [Term]
 id: GO:0009653
@@ -3675,7 +3591,6 @@ name: embryo development ending in birth or egg hatching
 namespace: biological_process
 def: "The process whose specific outcome is the progression of an embryo over time, from zygote formation until the end of the embryonic life stage. The end of the embryonic life stage is organism-specific and may be somewhat arbitrary; for mammals it is usually considered to be birth, for insects the hatching of the first instar larva from the eggshell." [GOC:go_curators, GOC:isa_complete, GOC:mtg_sensu]
 synonym: "embryogenesis" BROAD []
-xref: MIPS_funcat:41.05.03
 is_a: GO:0009790 ! embryo development
 
 [Term]
@@ -3684,7 +3599,6 @@ name: axis specification
 namespace: biological_process
 def: "The establishment, maintenance and elaboration of a pattern along a line or around a point." [GOC:dph, GOC:go_curators, GOC:isa_complete]
 synonym: "axis determination" RELATED []
-xref: MIPS_funcat:41.05.19
 is_a: GO:0007389 ! pattern specification process
 
 [Term]
@@ -3838,7 +3752,6 @@ name: anterior/posterior axis specification
 namespace: biological_process
 def: "The establishment, maintenance and elaboration of the anterior/posterior axis. The anterior-posterior axis is defined by a line that runs from the head or mouth of an organism to the tail or opposite end of the organism." [GOC:dph, GOC:go_curators, GOC:tb]
 synonym: "anterior/posterior axis determination" RELATED [GOC:dph]
-xref: MIPS_funcat:41.05.19.05
 is_a: GO:0009798 ! axis specification
 relationship: part_of GO:0009952 ! anterior/posterior pattern specification
 
@@ -3850,7 +3763,6 @@ def: "The establishment, maintenance and elaboration of the dorsal/ventral axis.
 synonym: "dorsal-ventral axis specification" EXACT [GOC:mah]
 synonym: "dorsal/ventral axis determination" RELATED [GOC:dph]
 synonym: "dorsoventral axis specification" EXACT [GOC:mah]
-xref: MIPS_funcat:41.05.19.07
 is_a: GO:0009798 ! axis specification
 relationship: part_of GO:0009953 ! dorsal/ventral pattern formation
 
@@ -3950,14 +3862,16 @@ synonym: "cell physiology" EXACT []
 synonym: "cellular physiological process" EXACT []
 synonym: "single-organism cellular process" RELATED []
 is_a: GO:0008150 ! biological_process
-created_by: janelomax
+created_by: jl
 creation_date: 2012-12-11T16:56:55Z
 
 [Term]
 id: GO:0010033
 name: response to organic substance
 namespace: biological_process
-def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an organic substance stimulus." [GOC:sm]
+alt_id: GO:1990367
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an organic substance stimulus." [GOC:sm, PMID:23356676]
+synonym: "process resulting in tolerance to organic substance" NARROW []
 is_a: GO:0042221 ! response to chemical
 
 [Term]
@@ -4244,7 +4158,7 @@ is_a: GO:0045944 ! positive regulation of transcription by RNA polymerase II
 is_a: GO:0051039 ! positive regulation of transcription involved in meiotic cell cycle
 intersection_of: GO:0045944 ! positive regulation of transcription by RNA polymerase II
 intersection_of: part_of GO:0051321 ! meiotic cell cycle
-created_by: dianna.fisk
+created_by: dgf
 creation_date: 2012-05-01T08:40:11Z
 
 [Term]
@@ -4265,7 +4179,7 @@ is_a: GO:0010672 ! regulation of transcription from RNA polymerase II promoter i
 is_a: GO:0051038 ! negative regulation of transcription involved in meiotic cell cycle
 intersection_of: GO:0000122 ! negative regulation of transcription by RNA polymerase II
 intersection_of: part_of GO:0051321 ! meiotic cell cycle
-created_by: dianna.fisk
+created_by: dgf
 creation_date: 2012-05-01T08:39:58Z
 
 [Term]
@@ -4308,7 +4222,6 @@ namespace: biological_process
 def: "Any process that increases the frequency, rate or extent of cell morphogenesis contributing to cell differentiation. Cell morphogenesis involved in differentiation is the change in form (cell shape and size) that occurs when relatively unspecialized cells acquire specialized structural and/or functional features that characterize the cells, tissues, or organs of the mature organism or some other relatively stable phase of the organism's life history." [GOC:dph, GOC:tb]
 is_a: GO:0010720 ! positive regulation of cell development
 is_a: GO:0010769 ! regulation of cell morphogenesis involved in differentiation
-is_a: GO:0051130 ! positive regulation of cellular component organization
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0000904 ! cell morphogenesis involved in differentiation
 relationship: positively_regulates GO:0000904 ! cell morphogenesis involved in differentiation
@@ -4320,7 +4233,6 @@ namespace: biological_process
 def: "Any process that decreases the frequency, rate or extent of cell morphogenesis contributing to cell differentiation. Cell morphogenesis involved in differentiation is the change in form (cell shape and size) that occurs when relatively unspecialized cells acquire specialized structural and/or functional features that characterize the cells, tissues, or organs of the mature organism or some other relatively stable phase of the organism's life history." [GOC:dph, GOC:tb]
 is_a: GO:0010721 ! negative regulation of cell development
 is_a: GO:0010769 ! regulation of cell morphogenesis involved in differentiation
-is_a: GO:0051129 ! negative regulation of cellular component organization
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0000904 ! cell morphogenesis involved in differentiation
 relationship: negatively_regulates GO:0000904 ! cell morphogenesis involved in differentiation
@@ -4386,7 +4298,7 @@ is_a: GO:0045786 ! negative regulation of cell cycle
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0022402 ! cell cycle process
 relationship: negatively_regulates GO:0022402 ! cell cycle process
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-04-27T09:53:22Z
 
 [Term]
@@ -4399,7 +4311,7 @@ is_a: GO:0052548 ! regulation of endopeptidase activity
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0004175 ! endopeptidase activity
 relationship: positively_regulates GO:0004175 ! endopeptidase activity
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-04-27T11:45:39Z
 
 [Term]
@@ -4413,7 +4325,7 @@ is_a: GO:0052548 ! regulation of endopeptidase activity
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0004175 ! endopeptidase activity
 relationship: negatively_regulates GO:0004175 ! endopeptidase activity
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-04-27T11:47:01Z
 
 [Term]
@@ -4427,7 +4339,7 @@ is_a: GO:0052547 ! regulation of peptidase activity
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0008233 ! peptidase activity
 relationship: positively_regulates GO:0008233 ! peptidase activity
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-04-27T11:54:32Z
 
 [Term]
@@ -4439,7 +4351,7 @@ is_a: GO:0043269 ! regulation of ion transport
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0030001 ! metal ion transport
 relationship: regulates GO:0030001 ! metal ion transport
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-05-06T11:40:55Z
 
 [Term]
@@ -4452,7 +4364,7 @@ synonym: "microtubule-based transport" BROAD []
 synonym: "movement along microtubule" EXACT []
 is_a: GO:0030705 ! cytoskeleton-dependent intracellular transport
 is_a: GO:0099111 ! microtubule-based transport
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-05-27T10:56:08Z
 
 [Term]
@@ -4469,7 +4381,7 @@ is_a: GO:0120035 ! regulation of plasma membrane bounded cell projection organiz
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0031175 ! neuron projection development
 relationship: regulates GO:0031175 ! neuron projection development
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-06-01T10:44:45Z
 
 [Term]
@@ -4487,7 +4399,7 @@ is_a: GO:0045666 ! positive regulation of neuron differentiation
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0031175 ! neuron projection development
 relationship: positively_regulates GO:0031175 ! neuron projection development
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-06-01T10:46:44Z
 
 [Term]
@@ -4506,7 +4418,7 @@ is_a: GO:0045665 ! negative regulation of neuron differentiation
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0031175 ! neuron projection development
 relationship: negatively_regulates GO:0031175 ! neuron projection development
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-06-01T10:47:42Z
 
 [Term]
@@ -4606,9 +4518,6 @@ subset: goslim_generic
 subset: goslim_pir
 subset: goslim_yeast
 synonym: "enzyme transport" NARROW []
-xref: MIPS_funcat:14
-xref: MIPS_funcat:14.04
-xref: MIPS_funcat:20.01.10
 is_a: GO:0015833 ! peptide transport
 is_a: GO:0045184 ! establishment of protein localization
 
@@ -4618,7 +4527,6 @@ name: actin cytoskeleton
 namespace: cellular_component
 def: "The part of the cytoskeleton (the internal framework of a cell) composed of actin and associated proteins. Includes actin cytoskeleton-associated complexes." [GOC:jl, ISBN:0395825172, ISBN:0815316194]
 subset: goslim_aspergillus
-xref: MIPS_funcat:70.04.03
 is_a: GO:0005856 ! cytoskeleton
 
 [Term]
@@ -4627,7 +4535,6 @@ name: microtubule cytoskeleton
 namespace: cellular_component
 def: "The part of the cytoskeleton (the internal framework of a cell) composed of microtubules and associated proteins." [GOC:jl, ISBN:0395825172]
 subset: goslim_aspergillus
-xref: MIPS_funcat:70.04.05
 is_a: GO:0005856 ! cytoskeleton
 
 [Term]
@@ -4636,7 +4543,6 @@ name: peptide transport
 namespace: biological_process
 def: "The directed movement of peptides, compounds of two or more amino acids where the alpha carboxyl group of one is bound to the alpha amino group of another, into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore." [GOC:ai]
 subset: goslim_pir
-xref: MIPS_funcat:20.01.09
 is_a: GO:0042886 ! amide transport
 is_a: GO:0071702 ! organic substance transport
 
@@ -4673,8 +4579,6 @@ synonym: "cellular component organisation at cellular level" EXACT [GOC:mah]
 synonym: "cellular component organisation in other organism" EXACT [GOC:mah]
 synonym: "cellular component organization at cellular level" EXACT []
 synonym: "cellular component organization in other organism" EXACT []
-xref: MIPS_funcat:42
-is_a: GO:0009987 ! cellular process
 is_a: GO:0071840 ! cellular component organization or biogenesis
 
 [Term]
@@ -4694,7 +4598,6 @@ synonym: "metabolic process resulting in cell growth" RELATED []
 synonym: "metabolism resulting in cell growth" RELATED []
 synonym: "non-developmental cell growth" RELATED [GOC:mah]
 synonym: "non-developmental growth of a unicellular organism" RELATED [GOC:mah]
-xref: MIPS_funcat:40.01
 is_a: GO:0009987 ! cellular process
 is_a: GO:0040007 ! growth
 
@@ -4713,7 +4616,6 @@ synonym: "Wingless signalling pathway" EXACT [GOC:sart, PMID:8080429]
 synonym: "Wnt receptor signaling pathway" EXACT [GOC:signaling]
 synonym: "Wnt receptor signalling pathway" EXACT []
 synonym: "Wnt-activated signaling pathway" RELATED []
-xref: MIPS_funcat:30.05.02.20
 is_a: GO:1905114 ! cell surface receptor signaling pathway involved in cell-cell signaling
 relationship: part_of GO:0198738 ! cell-cell signaling by wnt
 
@@ -4748,8 +4650,8 @@ synonym: "protein sorting along secretory pathway" RELATED []
 synonym: "vesicle trafficking" RELATED []
 synonym: "vesicle transport" EXACT []
 synonym: "vesicular transport" EXACT [GOC:mah]
-xref: MIPS_funcat:20.09.07
 is_a: GO:0006810 ! transport
+is_a: GO:0009987 ! cellular process
 
 [Term]
 id: GO:0016301
@@ -4792,7 +4694,6 @@ id: GO:0016477
 name: cell migration
 namespace: biological_process
 def: "The controlled self-propelled movement of a cell from one site to a destination guided by molecular cues. Cell migration is a central process in the development and maintenance of multicellular organisms." [GOC:cjm, GOC:dph, GOC:ems, GOC:pf, Wikipedia:Cell_migration]
-xref: MIPS_funcat:34.05.01
 xref: Wikipedia:Cell_migration
 is_a: GO:0048870 ! cell motility
 
@@ -4801,7 +4702,6 @@ id: GO:0016491
 name: oxidoreductase activity
 namespace: molecular_function
 def: "Catalysis of an oxidation-reduction (redox) reaction, a reversible chemical reaction in which the oxidation state of an atom or atoms within a molecule is altered. One substrate acts as a hydrogen or electron donor and becomes oxidized, while the other acts as hydrogen or electron acceptor and becomes reduced." [GOC:go_curators]
-comment: Note that enzymes of class EC:1.97.-.- should also be annotated to this term.
 subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_chembl
@@ -4875,7 +4775,6 @@ id: GO:0016614
 name: oxidoreductase activity, acting on CH-OH group of donors
 namespace: molecular_function
 def: "Catalysis of an oxidation-reduction (redox) reaction in which a CH-OH group act as a hydrogen or electron donor and reduces a hydrogen or electron acceptor." [GOC:ai]
-comment: Note that enzymes of class EC:1.1.99.- should also be annotated to this term.
 synonym: "oxidoreductase activity, acting on the CH-OH group of donors, other acceptors" NARROW []
 xref: EC:1.1
 xref: Reactome:R-HSA-1500781 "Fgd1 reactivates F420"
@@ -5054,7 +4953,7 @@ is_a: GO:0007610 ! behavior
 is_a: GO:0048609 ! multicellular organismal reproductive process
 intersection_of: GO:0007610 ! behavior
 intersection_of: part_of GO:0000003 ! reproduction
-created_by: janelomax
+created_by: jl
 creation_date: 2012-09-19T16:01:37Z
 
 [Term]
@@ -5121,7 +5020,6 @@ synonym: "aromatic compound formation" EXACT []
 synonym: "aromatic compound synthesis" EXACT []
 synonym: "aromatic hydrocarbon biosynthesis" NARROW []
 synonym: "aromatic hydrocarbon biosynthetic process" NARROW []
-xref: MIPS_funcat:01.05.01.03.09
 is_a: GO:0006725 ! cellular aromatic compound metabolic process
 is_a: GO:0044249 ! cellular biosynthetic process
 
@@ -5251,7 +5149,7 @@ is_a: GO:0008150 ! biological_process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: part_of GO:0000003 ! reproduction
 relationship: part_of GO:0000003 ! reproduction
-created_by: janelomax
+created_by: jl
 creation_date: 2012-09-19T15:56:06Z
 
 [Term]
@@ -5274,7 +5172,6 @@ synonym: "negative regulation of cell shape and cell size" RELATED [GOC:dph, GOC
 synonym: "positive regulation of cell shape and cell size" RELATED [GOC:dph, GOC:tb]
 synonym: "regulation of cell shape and cell size" RELATED [GOC:dph, GOC:tb]
 is_a: GO:0022603 ! regulation of anatomical structure morphogenesis
-is_a: GO:0051128 ! regulation of cellular component organization
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0000902 ! cell morphogenesis
 relationship: regulates GO:0000902 ! cell morphogenesis
@@ -5356,7 +5253,7 @@ synonym: "signalling" EXACT []
 synonym: "signalling process" RELATED [GOC:mah]
 synonym: "single organism signaling" RELATED []
 is_a: GO:0008150 ! biological_process
-created_by: janelomax
+created_by: jl
 creation_date: 2010-02-16T09:30:50Z
 
 [Term]
@@ -5463,7 +5360,6 @@ subset: goslim_pombe
 synonym: "actin cytoskeleton organisation" EXACT []
 synonym: "actin cytoskeleton organization and biogenesis" RELATED [GOC:mah]
 synonym: "actin modulating activity" RELATED []
-xref: MIPS_funcat:42.04.03
 is_a: GO:0007010 ! cytoskeleton organization
 is_a: GO:0030029 ! actin filament-based process
 
@@ -5472,7 +5368,6 @@ id: GO:0030048
 name: actin filament-based movement
 namespace: biological_process
 def: "Movement of organelles or other particles along actin filaments, or sliding of actin filaments past each other, mediated by motor proteins." [GOC:BHF, GOC:mah]
-xref: MIPS_funcat:20.09.14.02
 is_a: GO:0006928 ! movement of cell or subcellular component
 is_a: GO:0030029 ! actin filament-based process
 
@@ -5484,7 +5379,6 @@ def: "A cellular component that forms a specialized region of connection between
 subset: goslim_agr
 subset: goslim_drosophila
 subset: goslim_flybase_ribbon
-xref: MIPS_funcat:70.06
 xref: Wikipedia:Cell_junction
 is_a: GO:0110165 ! cellular anatomical entity
 property_value: RO:0002161 NCBITaxon:4751
@@ -5527,7 +5421,6 @@ subset: goslim_drosophila
 subset: goslim_generic
 subset: goslim_mouse
 subset: goslim_plant
-xref: MIPS_funcat:40.02
 xref: Wikipedia:Cellular_differentiation
 is_a: GO:0048869 ! cellular developmental process
 
@@ -5537,7 +5430,7 @@ name: regulation of cell adhesion
 namespace: biological_process
 def: "Any process that modulates the frequency, rate or extent of attachment of a cell to another cell or to the extracellular matrix." [GOC:mah]
 synonym: "cell adhesion receptor regulator activity" RELATED []
-is_a: GO:0050789 ! regulation of biological process
+is_a: GO:0050794 ! regulation of cellular process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0007155 ! cell adhesion
 relationship: regulates GO:0007155 ! cell adhesion
@@ -5610,7 +5503,6 @@ id: GO:0030182
 name: neuron differentiation
 namespace: biological_process
 def: "The process in which a relatively unspecialized cell acquires specialized features of a neuron." [GOC:mah]
-xref: MIPS_funcat:43.03.13
 is_a: GO:0030154 ! cell differentiation
 relationship: part_of GO:0048699 ! generation of neurons
 
@@ -5671,7 +5563,6 @@ id: GO:0030324
 name: lung development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of the lung over time, from its formation to the mature structure. In all air-breathing vertebrates the lungs are developed from the ventral wall of the oesophagus as a pouch which divides into two sacs. In amphibians and many reptiles the lungs retain very nearly this primitive sac-like character, but in the higher forms the connection with the esophagus becomes elongated into the windpipe and the inner walls of the sacs become more and more divided, until, in the mammals, the air spaces become minutely divided into tubes ending in small air cells, in the walls of which the blood circulates in a fine network of capillaries. In mammals the lungs are more or less divided into lobes, and each lung occupies a separate cavity in the thorax." [GOC:jid, UBERON:0002048]
-xref: MIPS_funcat:47.03.09.01
 is_a: GO:0048513 ! animal organ development
 relationship: part_of GO:0030323 ! respiratory tube development
 relationship: part_of GO:0060541 ! respiratory system development
@@ -5682,7 +5573,6 @@ name: adrenal gland development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of the adrenal gland over time, from its formation to the mature structure. This gland can either be a discrete structure located bilaterally above each kidney, or a cluster of cells in the head kidney that perform the functions of the adrenal gland. In either case, this organ consists of two cells types, aminergic chromaffin cells and steroidogenic cortical cells." [GOC:dgh]
 synonym: "interrenal gland" RELATED []
-xref: MIPS_funcat:47.03.21.03.01
 is_a: GO:0048732 ! gland development
 relationship: part_of GO:0035270 ! endocrine system development
 
@@ -5743,7 +5633,6 @@ synonym: "decapentaplegic signaling pathway" NARROW []
 synonym: "dpp receptor signaling pathway" NARROW []
 synonym: "dpp receptor signalling pathway" NARROW []
 synonym: "dpp signaling pathway" NARROW [GOC:bf]
-is_a: GO:0006357 ! regulation of transcription by RNA polymerase II
 is_a: GO:0007178 ! transmembrane receptor protein serine/threonine kinase signaling pathway
 relationship: part_of GO:0071773 ! cellular response to BMP stimulus
 
@@ -5760,13 +5649,12 @@ synonym: "regulation of bone morphogenetic protein signalling pathway" EXACT []
 synonym: "regulation of decapentaplegic receptor signaling pathway" NARROW [GOC:bf]
 synonym: "regulation of decapentaplegic receptor signalling pathway" NARROW [GOC:mah]
 synonym: "regulation of decapentaplegic signaling pathway" NARROW []
-is_a: GO:0006357 ! regulation of transcription by RNA polymerase II
 is_a: GO:0090092 ! regulation of transmembrane receptor protein serine/threonine kinase signaling pathway
 is_a: GO:0090287 ! regulation of cellular response to growth factor stimulus
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0030509 ! BMP signaling pathway
 relationship: regulates GO:0030509 ! BMP signaling pathway
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-11-13T10:49:14Z
 
 [Term]
@@ -5792,7 +5680,7 @@ is_a: GO:0090100 ! positive regulation of transmembrane receptor protein serine/
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0030509 ! BMP signaling pathway
 relationship: positively_regulates GO:0030509 ! BMP signaling pathway
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-11-13T10:50:41Z
 
 [Term]
@@ -5818,7 +5706,7 @@ is_a: GO:0090288 ! negative regulation of cellular response to growth factor sti
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0030509 ! BMP signaling pathway
 relationship: negatively_regulates GO:0030509 ! BMP signaling pathway
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-11-13T10:51:30Z
 
 [Term]
@@ -5855,7 +5743,6 @@ id: GO:0030545
 name: receptor regulator activity
 namespace: molecular_function
 def: "The function of interacting (directly or indirectly) with receptors such that the proportion of receptors in the active form is changed." [GOC:ceb]
-xref: MIPS_funcat:18.02.07
 is_a: GO:0098772 ! molecular function regulator
 
 [Term]
@@ -5874,7 +5761,6 @@ def: "The directed movement of substances along cytoskeletal fibers such as micr
 subset: goslim_chembl
 subset: goslim_drosophila
 subset: goslim_generic
-xref: MIPS_funcat:20.09.14
 is_a: GO:0046907 ! intracellular transport
 
 [Term]
@@ -5932,7 +5818,6 @@ id: GO:0030878
 name: thyroid gland development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of the thyroid gland over time, from its formation to the mature structure. The thyroid gland is an endoderm-derived gland that produces thyroid hormone." [GOC:dgh]
-xref: MIPS_funcat:47.03.21.03.06
 is_a: GO:0048732 ! gland development
 relationship: part_of GO:0035270 ! endocrine system development
 
@@ -5960,7 +5845,6 @@ id: GO:0031016
 name: pancreas development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of the pancreas over time, from its formation to the mature structure. The pancreas is an endoderm derived structure that produces precursors of digestive enzymes and blood glucose regulating enzymes." [GOC:cvs]
-xref: MIPS_funcat:47.03.11.09
 xref: Wikipedia:Pancreas
 is_a: GO:0048513 ! animal organ development
 
@@ -6681,6 +6565,7 @@ synonym: "down-regulation of intracellular transport" EXACT []
 synonym: "downregulation of intracellular transport" EXACT []
 synonym: "inhibition of intracellular transport" NARROW []
 is_a: GO:0032386 ! regulation of intracellular transport
+is_a: GO:0048523 ! negative regulation of cellular process
 is_a: GO:0051051 ! negative regulation of transport
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0046907 ! intracellular transport
@@ -6697,6 +6582,7 @@ synonym: "up regulation of intracellular transport" EXACT []
 synonym: "up-regulation of intracellular transport" EXACT []
 synonym: "upregulation of intracellular transport" EXACT []
 is_a: GO:0032386 ! regulation of intracellular transport
+is_a: GO:0048522 ! positive regulation of cellular process
 is_a: GO:0051050 ! positive regulation of transport
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0046907 ! intracellular transport
@@ -6765,7 +6651,7 @@ synonym: "single-multicellular organism process" RELATED []
 is_a: GO:0008150 ! biological_process
 property_value: RO:0002161 NCBITaxon:4896
 property_value: RO:0002161 NCBITaxon:4932
-created_by: janelomax
+created_by: jl
 creation_date: 2012-09-19T16:07:47Z
 
 [Term]
@@ -6781,7 +6667,7 @@ subset: goslim_pir
 synonym: "development" NARROW []
 synonym: "single-organism developmental process" RELATED []
 is_a: GO:0008150 ! biological_process
-created_by: janelomax
+created_by: jl
 creation_date: 2012-12-19T12:21:31Z
 
 [Term]
@@ -7485,7 +7371,7 @@ is_a: GO:0048589 ! developmental growth
 id: GO:0035270
 name: endocrine system development
 namespace: biological_process
-def: "Progression of the endocrine system over time, from its formation to a mature structure. The endocrine system is a system of hormones and ductless glands, where the glands release hormones directly into the blood, lymph or other intercellular fluid, and the hormones circulate within the body to affect distant organs. The major glands that make up the human endocrine system are the hypothalamus, pituitary, thyroid, parathryoids, adrenals, pineal body, and the reproductive glands which include the ovaries and testes." [GOC:bf, http://encyclopedia.thefreedictionary.com/Endocrine+sytem, ISBN:0198506732]
+def: "Progression of the endocrine system over time, from its formation to a mature structure. The endocrine system is a system of hormones and ductless glands, where the glands release hormones directly into the blood, lymph or other intercellular fluid, and the hormones circulate within the body to affect distant organs. The major glands that make up the human endocrine system are the hypothalamus, pituitary, thyroid, parathryoids, adrenals, pineal body, and the reproductive glands which include the ovaries and testes." [GOC:bf, Wikipedia:Development_of_the_endocrine_system]
 is_a: GO:0048731 ! system development
 
 [Term]
@@ -7526,7 +7412,7 @@ is_a: GO:0007165 ! signal transduction
 intersection_of: GO:0007165 ! signal transduction
 intersection_of: occurs_in GO:0005622 ! intracellular
 relationship: occurs_in GO:0005622 ! intracellular
-created_by: rfoulger
+created_by: bf
 creation_date: 2010-05-14T01:14:37Z
 
 [Term]
@@ -7540,7 +7426,7 @@ synonym: "non-canonical Wnt receptor signaling pathway" EXACT []
 synonym: "non-canonical Wnt receptor signalling pathway" EXACT [GOC:mah]
 synonym: "non-canonical Wnt-activated signaling pathway" EXACT [GOC:signaling]
 is_a: GO:0016055 ! Wnt signaling pathway
-created_by: rfoulger
+created_by: bf
 creation_date: 2010-07-23T02:26:01Z
 
 [Term]
@@ -7551,7 +7437,7 @@ def: "The transfer of information occurring at the level of a multicellular orga
 synonym: "multicellular organismal signalling" EXACT [GOC:bf]
 is_a: GO:0023052 ! signaling
 is_a: GO:0032501 ! multicellular organismal process
-created_by: rfoulger
+created_by: bf
 creation_date: 2011-01-14T10:13:50Z
 
 [Term]
@@ -7567,7 +7453,7 @@ is_a: GO:0042073 ! intraciliary transport
 intersection_of: GO:0042073 ! intraciliary transport
 intersection_of: part_of GO:0060271 ! cilium assembly
 relationship: part_of GO:0060271 ! cilium assembly
-created_by: rfoulger
+created_by: bf
 creation_date: 2011-03-17T10:55:42Z
 
 [Term]
@@ -7579,7 +7465,7 @@ is_a: GO:0016477 ! cell migration
 intersection_of: GO:0016477 ! cell migration
 intersection_of: part_of GO:0001822 ! kidney development
 relationship: part_of GO:0001822 ! kidney development
-created_by: rfoulger
+created_by: bf
 creation_date: 2011-04-06T10:39:52Z
 
 [Term]
@@ -7591,7 +7477,7 @@ synonym: "cloacal development" EXACT [GOC:bf]
 is_a: GO:0048856 ! anatomical structure development
 relationship: part_of GO:0001655 ! urogenital system development
 relationship: part_of GO:0048546 ! digestive tract morphogenesis
-created_by: rfoulger
+created_by: bf
 creation_date: 2011-05-06T01:54:35Z
 
 [Term]
@@ -7603,7 +7489,7 @@ is_a: GO:0030855 ! epithelial cell differentiation
 is_a: GO:0061005 ! cell differentiation involved in kidney development
 intersection_of: GO:0030855 ! epithelial cell differentiation
 intersection_of: part_of GO:0001822 ! kidney development
-created_by: rfoulger
+created_by: bf
 creation_date: 2011-05-11T11:34:21Z
 
 [Term]
@@ -7612,7 +7498,7 @@ name: enteroendocrine cell differentiation
 namespace: biological_process
 def: "The process in which a relatively unspecialized cell acquires specialized structural and/or functional features of an enteroendocrine cell. Enteroendocrine cells are hormonally active epithelial cells in the gut that constitute the diffuse neuroendocrine system." [CL:0000164, GOC:bf]
 is_a: GO:0002067 ! glandular epithelial cell differentiation
-created_by: rfoulger
+created_by: bf
 creation_date: 2011-06-06T11:48:51Z
 
 [Term]
@@ -7623,7 +7509,7 @@ def: "The covalent alteration of one or more amino acids occurring in proteins, 
 synonym: "protein modification" EXACT [GOC:bf]
 is_a: GO:0019538 ! protein metabolic process
 is_a: GO:0043412 ! macromolecule modification
-created_by: rfoulger
+created_by: bf
 creation_date: 2012-04-26T01:47:12Z
 
 [Term]
@@ -7633,7 +7519,7 @@ namespace: biological_process
 def: "Self-propelled movement of an organism from one location to another through water, often by means of active fin movement." [GOC:cvs, PMID:22459995]
 comment: For behavioral aspects of swimming, consider instead annotating to 'swimming behavior ; GO:0036269'.
 is_a: GO:0040011 ! locomotion
-created_by: rfoulger
+created_by: bf
 creation_date: 2012-07-04T10:12:24Z
 
 [Term]
@@ -7643,7 +7529,7 @@ namespace: biological_process
 def: "The response to external or internal stimuli that results in the locomotory process of swimming. Swimming is the self-propelled movement of an organism through the water." [GOC:cvs, PMID:16764679]
 synonym: "swimming behaviour" EXACT [PMID:16764679]
 is_a: GO:0007626 ! locomotory behavior
-created_by: rfoulger
+created_by: bf
 creation_date: 2012-07-04T10:14:49Z
 
 [Term]
@@ -7652,7 +7538,7 @@ name: post-anal tail morphogenesis
 namespace: biological_process
 def: "The process in which a post-anal tail is generated and organized. A post-anal tail is a muscular region of the body that extends posterior to the anus. The post-anal tail may aid locomotion and balance." [GOC:bf, GOC:kmv, Wikipedia:Chordate]
 is_a: GO:0009653 ! anatomical structure morphogenesis
-created_by: rfoulger
+created_by: bf
 creation_date: 2012-09-11T13:54:49Z
 
 [Term]
@@ -7673,7 +7559,7 @@ subset: goslim_plant
 synonym: "receptor activity" BROAD []
 synonym: "receptor activity involved in signal transduction" EXACT [GOC:bf]
 is_a: GO:0060089 ! molecular transducer activity
-created_by: rfoulger
+created_by: bf
 creation_date: 2011-08-01T02:45:27Z
 
 [Term]
@@ -7684,7 +7570,7 @@ def: "A series of molecular signals initiated by the binding of a nodal protein 
 synonym: "nodal signaling" EXACT [GOC:bf]
 synonym: "nodal signalling pathway" EXACT [GOC:mah]
 is_a: GO:0032924 ! activin receptor signaling pathway
-created_by: rfoulger
+created_by: bf
 creation_date: 2012-02-16T02:44:02Z
 
 [Term]
@@ -7698,7 +7584,7 @@ is_a: GO:0038092 ! nodal signaling pathway
 is_a: GO:1900094 ! regulation of transcription from RNA polymerase II promoter involved in determination of left/right symmetry
 intersection_of: GO:0038092 ! nodal signaling pathway
 intersection_of: part_of GO:0007368 ! determination of left/right symmetry
-created_by: rfoulger
+created_by: bf
 creation_date: 2012-02-29T10:18:59Z
 
 [Term]
@@ -7711,7 +7597,7 @@ is_a: GO:0061005 ! cell differentiation involved in kidney development
 intersection_of: GO:0030154 ! cell differentiation
 intersection_of: part_of GO:0048793 ! pronephros development
 relationship: part_of GO:0048793 ! pronephros development
-created_by: rfoulger
+created_by: bf
 creation_date: 2010-07-02T09:59:25Z
 
 [Term]
@@ -7724,7 +7610,7 @@ is_a: GO:0072111 ! cell proliferation involved in kidney development
 intersection_of: GO:0008283 ! cell population proliferation
 intersection_of: part_of GO:0048793 ! pronephros development
 relationship: part_of GO:0048793 ! pronephros development
-created_by: rfoulger
+created_by: bf
 creation_date: 2010-07-02T10:01:49Z
 
 [Term]
@@ -7738,7 +7624,7 @@ is_a: GO:0060995 ! cell-cell signaling involved in kidney development
 intersection_of: GO:0007267 ! cell-cell signaling
 intersection_of: part_of GO:0048793 ! pronephros development
 relationship: part_of GO:0048793 ! pronephros development
-created_by: rfoulger
+created_by: bf
 creation_date: 2010-07-02T10:03:16Z
 
 [Term]
@@ -7751,7 +7637,7 @@ is_a: GO:0061004 ! pattern specification involved in kidney development
 intersection_of: GO:0007389 ! pattern specification process
 intersection_of: part_of GO:0048793 ! pronephros development
 relationship: part_of GO:0048793 ! pronephros development
-created_by: rfoulger
+created_by: bf
 creation_date: 2010-07-02T10:04:39Z
 
 [Term]
@@ -7796,7 +7682,6 @@ def: "Self-propelled movement of a cell or organism from one location to another
 subset: goslim_chembl
 subset: goslim_generic
 subset: goslim_pir
-xref: MIPS_funcat:02.45.11
 is_a: GO:0008150 ! biological_process
 property_value: RO:0002161 NCBITaxon:451864
 
@@ -7985,9 +7870,6 @@ subset: goslim_plant
 subset: goslim_yeast
 synonym: "response to chemical stimulus" EXACT [GOC:dos]
 synonym: "response to chemical substance" EXACT []
-xref: MIPS_funcat:34.11.03
-xref: MIPS_funcat:34.11.03.05
-xref: MIPS_funcat:36.20.35.09
 is_a: GO:0050896 ! response to stimulus
 
 [Term]
@@ -8243,7 +8125,6 @@ synonym: "up-regulation of enzyme activity" EXACT []
 synonym: "up-regulation of metalloenzyme activity" NARROW []
 synonym: "upregulation of enzyme activity" EXACT []
 synonym: "upregulation of metalloenzyme activity" NARROW []
-xref: MIPS_funcat:18.02.01.01
 is_a: GO:0044093 ! positive regulation of molecular function
 is_a: GO:0050790 ! regulation of catalytic activity
 intersection_of: GO:0008150 ! biological_process
@@ -8696,7 +8577,6 @@ name: ear development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of the ear over time, from its formation to the mature structure. The ear is the sense organ in vertebrates that is specialized for the detection of sound, and the maintenance of balance. Includes the outer ear and middle ear, which collect and transmit sound waves; and the inner ear, which contains the organs of balance and (except in fish) hearing. Also includes the pinna, the visible part of the outer ear, present in some mammals." [GOC:jl, ISBN:0192801023]
 synonym: "hearing organ development" EXACT []
-xref: MIPS_funcat:47.03.02.01
 is_a: GO:0007423 ! sensory organ development
 
 [Term]
@@ -8705,7 +8585,6 @@ name: nose development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of the nose over time, from its formation to the mature structure. The nose is the specialized structure of the face that serves as the organ of the sense of smell and as part of the respiratory system. Includes the nasi externus (external nose) and cavitas nasi (nasal cavity)." [GOC:jl, http://www.mercksource.com/]
 synonym: "nasus development" EXACT []
-xref: MIPS_funcat:47.03.02.03
 is_a: GO:0007423 ! sensory organ development
 relationship: part_of GO:0060541 ! respiratory system development
 
@@ -8766,7 +8645,7 @@ id: GO:0044087
 name: regulation of cellular component biogenesis
 namespace: biological_process
 def: "Any process that modulates the frequency, rate or extent of cellular component biogenesis, a process that results in the biosynthesis of constituent macromolecules, assembly, and arrangement of constituent parts of a cellular component." [GOC:jl]
-is_a: GO:0050789 ! regulation of biological process
+is_a: GO:0050794 ! regulation of cellular process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0044085 ! cellular component biogenesis
 relationship: regulates GO:0044085 ! cellular component biogenesis
@@ -8777,7 +8656,7 @@ name: positive regulation of cellular component biogenesis
 namespace: biological_process
 def: "Any process that activates or increases the frequency, rate or extent of cellular component biogenesis, a process that results in the biosynthesis of constituent macromolecules, assembly, and arrangement of constituent parts of a cellular component." [GOC:jl]
 is_a: GO:0044087 ! regulation of cellular component biogenesis
-is_a: GO:0048518 ! positive regulation of biological process
+is_a: GO:0048522 ! positive regulation of cellular process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0044085 ! cellular component biogenesis
 relationship: positively_regulates GO:0044085 ! cellular component biogenesis
@@ -8791,7 +8670,7 @@ is_a: GO:0065009 ! regulation of molecular function
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0003674 ! molecular_function
 relationship: negatively_regulates GO:0003674 ! molecular_function
-created_by: jane
+created_by: jl
 creation_date: 2009-04-21T04:07:27Z
 
 [Term]
@@ -8803,7 +8682,7 @@ is_a: GO:0065009 ! regulation of molecular function
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0003674 ! molecular_function
 relationship: positively_regulates GO:0003674 ! molecular_function
-created_by: jane
+created_by: jl
 creation_date: 2009-04-21T04:11:06Z
 
 [Term]
@@ -8820,7 +8699,7 @@ intersection_of: has_part GO:0005515 ! protein binding
 intersection_of: part_of GO:0006457 ! protein folding
 relationship: has_part GO:0005515 ! protein binding
 relationship: part_of GO:0006457 ! protein folding
-created_by: jane
+created_by: jl
 creation_date: 2009-09-25T11:33:48Z
 
 [Term]
@@ -8895,7 +8774,7 @@ is_a: GO:0006357 ! regulation of transcription by RNA polymerase II
 intersection_of: GO:0006357 ! regulation of transcription by RNA polymerase II
 intersection_of: part_of GO:0009948 ! anterior/posterior axis specification
 relationship: part_of GO:0009948 ! anterior/posterior axis specification
-created_by: janelomax
+created_by: jl
 creation_date: 2010-08-04T12:35:41Z
 
 [Term]
@@ -8910,7 +8789,7 @@ is_a: GO:0060070 ! canonical Wnt signaling pathway
 intersection_of: GO:0060070 ! canonical Wnt signaling pathway
 intersection_of: part_of GO:0090303 ! positive regulation of wound healing
 relationship: part_of GO:0090303 ! positive regulation of wound healing
-created_by: janelomax
+created_by: jl
 creation_date: 2010-08-18T04:21:21Z
 
 [Term]
@@ -8925,7 +8804,7 @@ is_a: GO:0016055 ! Wnt signaling pathway
 intersection_of: GO:0016055 ! Wnt signaling pathway
 intersection_of: part_of GO:0009950 ! dorsal/ventral axis specification
 relationship: part_of GO:0009950 ! dorsal/ventral axis specification
-created_by: janelomax
+created_by: jl
 creation_date: 2010-08-20T11:30:30Z
 
 [Term]
@@ -8940,7 +8819,7 @@ is_a: GO:0016055 ! Wnt signaling pathway
 intersection_of: GO:0016055 ! Wnt signaling pathway
 intersection_of: part_of GO:0048546 ! digestive tract morphogenesis
 relationship: part_of GO:0048546 ! digestive tract morphogenesis
-created_by: janelomax
+created_by: jl
 creation_date: 2010-08-20T11:36:23Z
 
 [Term]
@@ -8955,7 +8834,7 @@ is_a: GO:0060070 ! canonical Wnt signaling pathway
 intersection_of: GO:0060070 ! canonical Wnt signaling pathway
 intersection_of: part_of GO:0014033 ! neural crest cell differentiation
 relationship: part_of GO:0014033 ! neural crest cell differentiation
-created_by: janelomax
+created_by: jl
 creation_date: 2010-08-20T03:02:34Z
 
 [Term]
@@ -8970,7 +8849,7 @@ is_a: GO:0060070 ! canonical Wnt signaling pathway
 intersection_of: GO:0060070 ! canonical Wnt signaling pathway
 intersection_of: part_of GO:0043066 ! negative regulation of apoptotic process
 relationship: part_of GO:0043066 ! negative regulation of apoptotic process
-created_by: janelomax
+created_by: jl
 creation_date: 2010-08-20T03:07:53Z
 
 [Term]
@@ -8986,7 +8865,7 @@ is_a: GO:0060070 ! canonical Wnt signaling pathway
 intersection_of: GO:0060070 ! canonical Wnt signaling pathway
 intersection_of: part_of GO:0043065 ! positive regulation of apoptotic process
 relationship: part_of GO:0043065 ! positive regulation of apoptotic process
-created_by: janelomax
+created_by: jl
 creation_date: 2010-08-20T03:08:24Z
 
 [Term]
@@ -9002,7 +8881,7 @@ intersection_of: GO:0060070 ! canonical Wnt signaling pathway
 intersection_of: part_of GO:0008283 ! cell population proliferation
 relationship: part_of GO:0008283 ! cell population proliferation
 relationship: part_of GO:0042127 ! regulation of cell population proliferation
-created_by: janelomax
+created_by: jl
 creation_date: 2010-08-20T03:57:25Z
 
 [Term]
@@ -9014,7 +8893,7 @@ synonym: "cellular response to FGF stimulus" EXACT []
 is_a: GO:0071363 ! cellular response to growth factor stimulus
 is_a: GO:0071495 ! cellular response to endogenous stimulus
 is_a: GO:0071774 ! response to fibroblast growth factor
-created_by: janelomax
+created_by: jl
 creation_date: 2010-08-25T02:00:51Z
 
 [Term]
@@ -9159,7 +9038,7 @@ namespace: biological_process
 def: "A biological process that directly contributes to the process of producing new individuals, involving another organism." [GOC:jl]
 is_a: GO:0022414 ! reproductive process
 is_a: GO:0051704 ! multi-organism process
-created_by: janelomax
+created_by: jl
 creation_date: 2012-09-19T15:56:30Z
 
 [Term]
@@ -9172,7 +9051,7 @@ subset: goslim_drosophila
 synonym: "microtubule-based flagellum organization" EXACT []
 is_a: GO:0006996 ! organelle organization
 is_a: GO:0120036 ! plasma membrane bounded cell projection organization
-created_by: janelomax
+created_by: jl
 creation_date: 2013-03-27T15:09:58Z
 
 [Term]
@@ -9454,7 +9333,7 @@ synonym: "up regulation of cell adhesion" EXACT []
 synonym: "up-regulation of cell adhesion" EXACT []
 synonym: "upregulation of cell adhesion" EXACT []
 is_a: GO:0030155 ! regulation of cell adhesion
-is_a: GO:0048518 ! positive regulation of biological process
+is_a: GO:0048522 ! positive regulation of cellular process
 intersection_of: GO:0065007 ! biological regulation
 intersection_of: positively_regulates GO:0007155 ! cell adhesion
 relationship: positively_regulates GO:0007155 ! cell adhesion
@@ -10052,6 +9931,7 @@ synonym: "single organism intracellular transport" RELATED [GOC:TermGenie]
 synonym: "single-organism intracellular transport" RELATED []
 is_a: GO:0006810 ! transport
 is_a: GO:0051641 ! cellular localization
+is_a: GO:0051649 ! establishment of localization in cell
 intersection_of: GO:0006810 ! transport
 intersection_of: occurs_in GO:0005622 ! intracellular
 relationship: occurs_in GO:0005622 ! intracellular
@@ -10064,7 +9944,6 @@ name: receptor ligand activity
 namespace: molecular_function
 alt_id: GO:0071884
 def: "The activity of a gene product that interacts with a receptor to effect a change in the activity of the receptor. Ligands may be produced by the same, or different, cell that expresses the receptor. Ligands may diffuse extracellularly from their point of origin to the receiving cell, or remain attached to an adjacent cell surface (e.g. Notch ligands)." [GOC:kv, GOC:molecular_function_refactoring, GOC:pdt]
-comment: Definition discussed in https://github.com/geneontology/go-ontology/issues/14220
 subset: goslim_chembl
 subset: goslim_drosophila
 synonym: "receptor agonist activity" BROAD [GOC:molecular_function_refactoring]
@@ -10074,7 +9953,8 @@ synonym: "vitamin D receptor activator activity" NARROW []
 is_a: GO:0005102 ! signaling receptor binding
 is_a: GO:0030546 ! signaling receptor activator activity
 relationship: part_of GO:0007165 ! signal transduction
-created_by: midori
+property_value: term_tracker_item https://github.com/geneontology/go-ontology/issues/14220 xsd:anyURI
+created_by: mah
 creation_date: 2010-09-13T04:51:59Z
 
 [Term]
@@ -10290,7 +10170,6 @@ id: GO:0048536
 name: spleen development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of the spleen over time, from its formation to the mature structure. The spleen is a large vascular lymphatic organ composed of white and red pulp, involved both in hemopoietic and immune system functions." [GOC:add, ISBN:0781735149]
-xref: MIPS_funcat:47.03.05.02
 is_a: GO:0048534 ! hematopoietic or lymphoid organ development
 
 [Term]
@@ -10299,7 +10178,6 @@ name: thymus development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of the thymus over time, from its formation to the mature structure. The thymus is a symmetric bi-lobed organ involved primarily in the differentiation of immature to mature T cells, with unique vascular, nervous, epithelial, and lymphoid cell components." [GOC:add, ISBN:0781735149]
 comment: Note that this term is reserved for annotation of gene products involved in the formation of the thymus itself, not for gene products involved in T cell differentiation in the thymus or elsewhere.
-xref: MIPS_funcat:47.03.05.01
 is_a: GO:0048534 ! hematopoietic or lymphoid organ development
 is_a: GO:0048732 ! gland development
 
@@ -10334,7 +10212,6 @@ def: "The process whose specific outcome is the progression of the digestive tra
 synonym: "gut development" BROAD [GOC:dph]
 synonym: "intestinal development" NARROW []
 synonym: "intestine development" NARROW []
-xref: MIPS_funcat:47.03.11.05
 is_a: GO:0035295 ! tube development
 relationship: part_of GO:0055123 ! digestive system development
 
@@ -10435,7 +10312,6 @@ id: GO:0048608
 name: reproductive structure development
 namespace: biological_process
 def: "The reproductive developmental process whose specific outcome is the progression of structures that will be used in the process of creating new individuals from one or more parents, from their formation to the mature structures." [GOC:dph, GOC:isa_complete, GOC:jid]
-xref: MIPS_funcat:45.03.15
 is_a: GO:0003006 ! developmental process involved in reproduction
 is_a: GO:0048856 ! anatomical structure development
 relationship: part_of GO:0061458 ! reproductive system development
@@ -10749,7 +10625,6 @@ name: generation of neurons
 namespace: biological_process
 def: "The process in which nerve cells are generated. This includes the production of neuroblasts and their differentiation into neurons." [GOC:nln]
 synonym: "neuron generation" EXACT []
-xref: MIPS_funcat:41.05.13
 is_a: GO:0022008 ! neurogenesis
 
 [Term]
@@ -10774,8 +10649,6 @@ id: GO:0048732
 name: gland development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of a gland over time, from its formation to the mature structure. A gland is an organ specialised for secretion." [GOC:jid]
-xref: MIPS_funcat:45.03.19
-xref: MIPS_funcat:47.03.21
 is_a: GO:0048513 ! animal organ development
 
 [Term]
@@ -10783,7 +10656,6 @@ id: GO:0048736
 name: appendage development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of an appendage over time, from its formation to the mature structure. An appendage is an organ or part that is attached to the trunk of an organism, such as a limb or a branch." [GOC:jid, GOC:rc]
-xref: MIPS_funcat:41.05.21
 is_a: GO:0048856 ! anatomical structure development
 relationship: part_of GO:0007275 ! multicellular organism development
 
@@ -11068,7 +10940,6 @@ def: "Any process that modulates the activity of an enzyme." [GOC:ai, GOC:ebc, G
 subset: goslim_chembl
 synonym: "regulation of enzyme activity" EXACT []
 synonym: "regulation of metalloenzyme activity" NARROW []
-xref: MIPS_funcat:18.02.01
 is_a: GO:0065009 ! regulation of molecular function
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0003824 ! catalytic activity
@@ -11155,11 +11026,21 @@ intersection_of: positively_regulates GO:0007268 ! chemical synaptic transmissio
 relationship: positively_regulates GO:0007268 ! chemical synaptic transmission
 
 [Term]
+id: GO:0050839
+name: cell adhesion molecule binding
+namespace: molecular_function
+def: "Interacting selectively and non-covalently with a cell adhesion molecule." [GOC:ai]
+synonym: "adhesive extracellular matrix constituent" RELATED []
+synonym: "CAM binding" EXACT []
+synonym: "cell adhesion molecule activity" RELATED []
+synonym: "cell adhesion receptor activity" RELATED []
+is_a: GO:0005515 ! protein binding
+
+[Term]
 id: GO:0050877
 name: nervous system process
 namespace: biological_process
 def: "A organ system process carried out by any of the organs or tissues of neurological system." [GOC:ai, GOC:mtg_cardio]
-comment: Discussion of class label and synonyms: https://github.com/geneontology/go-ontology/issues/13824
 subset: goslim_agr
 subset: goslim_chembl
 subset: goslim_flybase_ribbon
@@ -11168,8 +11049,8 @@ subset: goslim_pir
 synonym: "neurological system process" EXACT []
 synonym: "neurophysiological process" EXACT []
 synonym: "pan-neural process" RELATED []
-xref: MIPS_funcat:36.25.03
 is_a: GO:0003008 ! system process
+property_value: term_tracker_item https://github.com/geneontology/go-ontology/issues/13824 xsd:anyURI
 
 [Term]
 id: GO:0050896
@@ -11184,7 +11065,6 @@ subset: goslim_flybase_ribbon
 subset: goslim_mouse
 subset: goslim_pir
 synonym: "physiological response to stimulus" EXACT []
-xref: MIPS_funcat:34.11
 is_a: GO:0008150 ! biological_process
 
 [Term]
@@ -11866,7 +11746,6 @@ synonym: "chromosome organisation" EXACT []
 synonym: "chromosome organization and biogenesis" RELATED [GOC:mah]
 synonym: "maintenance of genome integrity" RELATED []
 synonym: "nuclear genome maintenance" RELATED []
-xref: MIPS_funcat:42.10.03
 is_a: GO:0006996 ! organelle organization
 
 [Term]
@@ -12182,7 +12061,6 @@ subset: goslim_pir
 synonym: "perception of stimulus" RELATED []
 synonym: "stimulus detection" EXACT []
 synonym: "stimulus sensing" RELATED []
-xref: MIPS_funcat:34.11
 is_a: GO:0050896 ! response to stimulus
 
 [Term]
@@ -12209,6 +12087,7 @@ synonym: "intracellular localization" NARROW []
 synonym: "localization within cell" NARROW []
 synonym: "single organism cellular localization" EXACT [GOC:TermGenie]
 synonym: "single-organism cellular localization" RELATED []
+is_a: GO:0009987 ! cellular process
 is_a: GO:0051179 ! localization
 created_by: jl
 creation_date: 2013-12-18T14:04:32Z
@@ -12234,9 +12113,6 @@ synonym: "establishment of localisation in cell" EXACT [GOC:mah]
 synonym: "establishment of localization within cell" NARROW []
 synonym: "positioning within cell" NARROW []
 is_a: GO:0051234 ! establishment of localization
-intersection_of: GO:0051234 ! establishment of localization
-intersection_of: occurs_in GO:0005623 ! cell
-relationship: occurs_in GO:0005623 ! cell
 relationship: part_of GO:0051641 ! cellular localization
 
 [Term]
@@ -12283,6 +12159,7 @@ synonym: "cell localization" EXACT []
 synonym: "establishment and maintenance of cell localization" EXACT []
 synonym: "establishment and maintenance of localization of cell" EXACT []
 synonym: "localisation of cell" EXACT [GOC:mah]
+is_a: GO:0009987 ! cellular process
 is_a: GO:0051179 ! localization
 
 [Term]
@@ -12312,7 +12189,7 @@ id: GO:0051705
 name: obsolete multi-organism behavior
 namespace: biological_process
 def: "OBSOLETE. Any process in which an organism has a behavioral effect on another organism of the same or different species." [GOC:ai]
-comment: This term was obsoleted because it was an unnecessary grouping term, see https://github.com/geneontology/go-ontology/issues/18810.
+comment: This term was obsoleted because it was an unnecessary grouping term.
 subset: goslim_pir
 synonym: "behavioral interaction between organisms" EXACT []
 synonym: "behavioral interaction with other organism" EXACT []
@@ -12320,6 +12197,7 @@ synonym: "behavioral signaling" NARROW []
 synonym: "behavioral signalling" NARROW [GOC:mah]
 synonym: "behavioural interaction between organisms" EXACT []
 synonym: "behavioural interaction with other organism" EXACT []
+property_value: term_tracker_item https://github.com/geneontology/go-ontology/issues/18810 xsd:anyURI
 is_obsolete: true
 
 [Term]
@@ -12938,6 +12816,7 @@ namespace: biological_process
 def: "Any process that modulates the frequency, rate or extent of a process in which a cell, a substance, or a cellular entity is transported to, or maintained in a specific location within or in the membrane of a cell." [GOC:dph, GOC:tb]
 synonym: "regulation of cellular localisation" EXACT [GOC:mah]
 is_a: GO:0032879 ! regulation of localization
+is_a: GO:0050794 ! regulation of cellular process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0051641 ! cellular localization
 relationship: regulates GO:0051641 ! cellular localization
@@ -13176,7 +13055,6 @@ namespace: biological_process
 alt_id: GO:0035411
 alt_id: GO:0035412
 def: "Any process that modulates the rate, frequency, or extent of the Wnt signaling pathway through beta-catenin, the series of molecular signals initiated by binding of a Wnt protein to a frizzled family receptor on the surface of the target cell, followed by propagation of the signal via beta-catenin, and ending with a change in transcription of target genes." [GOC:dph, GOC:sdb_2009, GOC:tb]
-comment: Merged regulation of catenin import into nucleus into regulation of canonical Wnt signaling pathway, see https://github.com/geneontology/go-ontology/issues/15268 and catenin import into nucleus https://github.com/geneontology/go-ontology/issues/13686
 synonym: "catenin import into nucleus" NARROW []
 synonym: "regulation of canonical Wnt receptor signaling pathway" EXACT []
 synonym: "regulation of canonical Wnt receptor signalling pathway" EXACT [GOC:mah]
@@ -13188,6 +13066,8 @@ is_a: GO:0030111 ! regulation of Wnt signaling pathway
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0060070 ! canonical Wnt signaling pathway
 relationship: regulates GO:0060070 ! canonical Wnt signaling pathway
+property_value: term_tracker_item https://github.com/geneontology/go-ontology/issues/13686 xsd:anyURI
+property_value: term_tracker_item https://github.com/geneontology/go-ontology/issues/15268 xsd:anyURI
 created_by: dph
 creation_date: 2009-08-11T01:54:47Z
 
@@ -13315,7 +13195,7 @@ synonym: "membrane organisation" EXACT [GOC:mah]
 synonym: "membrane organization and biogenesis" RELATED [GOC:mah]
 synonym: "single-organism membrane organization" RELATED []
 is_a: GO:0016043 ! cellular component organization
-created_by: janelomax
+created_by: jl
 creation_date: 2010-02-08T02:43:11Z
 
 [Term]
@@ -13590,7 +13470,6 @@ def: "A series of molecular signals initiated by the binding of a member of the 
 synonym: "BMP signalling pathway involved in heart development" EXACT [GOC:mah]
 is_a: GO:0030509 ! BMP signaling pathway
 is_a: GO:0061311 ! cell surface receptor signaling pathway involved in heart development
-is_a: GO:1901213 ! regulation of transcription from RNA polymerase II promoter involved in heart development
 intersection_of: GO:0030509 ! BMP signaling pathway
 intersection_of: part_of GO:0007507 ! heart development
 created_by: dph
@@ -13939,7 +13818,7 @@ is_a: GO:0080135 ! regulation of cellular response to stress
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0031102 ! neuron projection regeneration
 relationship: regulates GO:0031102 ! neuron projection regeneration
-created_by: midori
+created_by: mah
 creation_date: 2009-04-15T01:23:48Z
 
 [Term]
@@ -13954,7 +13833,7 @@ is_a: GO:0070570 ! regulation of neuron projection regeneration
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0031102 ! neuron projection regeneration
 relationship: negatively_regulates GO:0031102 ! neuron projection regeneration
-created_by: midori
+created_by: mah
 creation_date: 2009-04-15T01:43:19Z
 
 [Term]
@@ -13968,7 +13847,7 @@ is_a: GO:0070570 ! regulation of neuron projection regeneration
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0031102 ! neuron projection regeneration
 relationship: positively_regulates GO:0031102 ! neuron projection regeneration
-created_by: midori
+created_by: mah
 creation_date: 2009-04-15T01:45:27Z
 
 [Term]
@@ -13979,7 +13858,7 @@ def: "Any process in which a macromolecule is transported to, and/or maintained 
 synonym: "cellular macromolecule localisation" EXACT [GOC:mah]
 is_a: GO:0033036 ! macromolecule localization
 is_a: GO:0051641 ! cellular localization
-created_by: midori
+created_by: mah
 creation_date: 2009-06-16T04:08:29Z
 
 [Term]
@@ -13994,7 +13873,7 @@ synonym: "generation of II(0) form of RNA polymerase II" EXACT [GOC:krc]
 synonym: "hyperphosphorylation of RNA polymerase II C-terminal domain" EXACT [GOC:krc]
 is_a: GO:0006357 ! regulation of transcription by RNA polymerase II
 is_a: GO:0006468 ! protein phosphorylation
-created_by: midori
+created_by: mah
 creation_date: 2009-07-13T04:01:19Z
 
 [Term]
@@ -14004,7 +13883,7 @@ namespace: biological_process
 def: "The directed movement of divalent metal cations, any metal ion with a +2 electric charge, into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore." [GOC:mah]
 is_a: GO:0030001 ! metal ion transport
 is_a: GO:0072511 ! divalent inorganic cation transport
-created_by: midori
+created_by: mah
 creation_date: 2009-07-31T01:02:39Z
 
 [Term]
@@ -14015,7 +13894,7 @@ def: "Any process that results in a change in state or activity of a cell or an 
 synonym: "response to growth factor stimulus" EXACT [GOC:dos]
 is_a: GO:0010033 ! response to organic substance
 property_value: RO:0002161 NCBITaxon_Union:0000023
-created_by: midori
+created_by: mah
 creation_date: 2009-08-04T04:24:18Z
 
 [Term]
@@ -14027,7 +13906,7 @@ comment: Note that this term is in the subset of terms that should not be used f
 subset: gocheck_do_not_manually_annotate
 is_a: GO:0042221 ! response to chemical
 is_a: GO:0051716 ! cellular response to stimulus
-created_by: midori
+created_by: mah
 creation_date: 2009-08-27T04:41:45Z
 
 [Term]
@@ -14038,7 +13917,7 @@ def: "The aggregation, arrangement and bonding together of a set of components t
 subset: goslim_yeast
 is_a: GO:0006996 ! organelle organization
 is_a: GO:0022607 ! cellular component assembly
-created_by: midori
+created_by: mah
 creation_date: 2009-09-15T03:00:51Z
 
 [Term]
@@ -14050,7 +13929,7 @@ synonym: "left-right axis specification" EXACT [GOC:mah]
 synonym: "left/right axis determination" RELATED [GOC:dph]
 is_a: GO:0009798 ! axis specification
 relationship: part_of GO:0060972 ! left/right pattern formation
-created_by: midori
+created_by: mah
 creation_date: 2009-10-29T01:43:34Z
 
 [Term]
@@ -14060,7 +13939,7 @@ namespace: biological_process
 def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an organic substance stimulus." [GOC:mah]
 is_a: GO:0010033 ! response to organic substance
 is_a: GO:0070887 ! cellular response to chemical stimulus
-created_by: midori
+created_by: mah
 creation_date: 2009-12-10T04:46:04Z
 
 [Term]
@@ -14070,7 +13949,7 @@ namespace: biological_process
 def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a growth factor stimulus." [GOC:mah]
 is_a: GO:0070848 ! response to growth factor
 is_a: GO:0071310 ! cellular response to organic substance
-created_by: midori
+created_by: mah
 creation_date: 2009-12-11T03:05:07Z
 
 [Term]
@@ -14082,7 +13961,7 @@ synonym: "cellular response to polypeptide hormone stimulus" EXACT [GOC:mah]
 is_a: GO:0032870 ! cellular response to hormone stimulus
 is_a: GO:0043434 ! response to peptide hormone
 is_a: GO:1901653 ! cellular response to peptide
-created_by: midori
+created_by: mah
 creation_date: 2009-12-11T03:24:18Z
 
 [Term]
@@ -14095,7 +13974,7 @@ is_a: GO:0010243 ! response to organonitrogen compound
 is_a: GO:0071310 ! cellular response to organic substance
 is_a: GO:0071495 ! cellular response to endogenous stimulus
 is_a: GO:1901699 ! cellular response to nitrogen compound
-created_by: midori
+created_by: mah
 creation_date: 2009-12-14T04:07:27Z
 
 [Term]
@@ -14106,7 +13985,7 @@ def: "Any process that results in a change in state or activity of a cell (in te
 comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
 subset: gocheck_do_not_manually_annotate
 is_a: GO:0009719 ! response to endogenous stimulus
-created_by: midori
+created_by: mah
 creation_date: 2009-12-18T02:25:40Z
 
 [Term]
@@ -14115,7 +13994,7 @@ name: cement gland development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of the cement gland over time, from its formation to the mature structure. The cement gland is a simple mucus-secreting organ positioned at the anterior of amphibious embryos. The cement gland attaches the newly hatched embryo to a support before the hatchling can swim well or feed." [GOC:bf]
 is_a: GO:0048732 ! gland development
-created_by: midori
+created_by: mah
 creation_date: 2010-01-20T04:31:04Z
 
 [Term]
@@ -14127,7 +14006,7 @@ is_a: GO:0007423 ! sensory organ development
 is_a: GO:0035295 ! tube development
 is_a: GO:0048839 ! inner ear development
 is_a: GO:0060429 ! epithelium development
-created_by: midori
+created_by: mah
 creation_date: 2010-02-04T04:07:17Z
 
 [Term]
@@ -14137,7 +14016,7 @@ namespace: biological_process
 def: "The behavior in which an organism produces sounds by a mechanism involving its respiratory system." [GOC:mah]
 synonym: "vocalisation behaviour" EXACT [GOC:mah]
 is_a: GO:0007610 ! behavior
-created_by: midori
+created_by: mah
 creation_date: 2010-02-10T11:02:58Z
 
 [Term]
@@ -14146,7 +14025,7 @@ name: organism emergence from protective structure
 namespace: biological_process
 def: "The developmental process in which an organism emerges from a surrounding protective structure such as an egg or pupa case." [GOC:mah]
 is_a: GO:0032501 ! multicellular organismal process
-created_by: midori
+created_by: mah
 creation_date: 2010-02-19T04:23:55Z
 
 [Term]
@@ -14155,7 +14034,7 @@ name: organic substance transport
 namespace: biological_process
 def: "The directed movement of organic substances into, out of or within a cell, or between cells, or within a multicellular organism by means of some agent such as a transporter or pore. An organic substance is a molecular entity that contains carbon." [GOC:mah]
 is_a: GO:0006810 ! transport
-created_by: midori
+created_by: mah
 creation_date: 2010-03-08T02:15:14Z
 
 [Term]
@@ -14167,7 +14046,7 @@ synonym: "organic molecular entity metabolic process" EXACT []
 synonym: "organic molecular entity metabolism" EXACT []
 synonym: "organic substance metabolism" EXACT []
 is_a: GO:0008152 ! metabolic process
-created_by: midori
+created_by: mah
 creation_date: 2010-03-08T03:32:18Z
 
 [Term]
@@ -14176,7 +14055,7 @@ name: nitrogen compound transport
 namespace: biological_process
 def: "The directed movement of nitrogen-containing compounds into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore." [GOC:mah]
 is_a: GO:0006810 ! transport
-created_by: midori
+created_by: mah
 creation_date: 2010-03-08T03:56:28Z
 
 [Term]
@@ -14188,7 +14067,7 @@ synonym: "response to BMP stimulus" EXACT [GOC:dos]
 synonym: "response to bone morphogenetic protein stimulus" EXACT [GOC:mah]
 is_a: GO:0009719 ! response to endogenous stimulus
 is_a: GO:0070848 ! response to growth factor
-created_by: midori
+created_by: mah
 creation_date: 2010-08-31T11:02:11Z
 
 [Term]
@@ -14200,7 +14079,7 @@ synonym: "cellular response to bone morphogenetic protein stimulus" EXACT [GOC:m
 is_a: GO:0071363 ! cellular response to growth factor stimulus
 is_a: GO:0071495 ! cellular response to endogenous stimulus
 is_a: GO:0071772 ! response to BMP
-created_by: midori
+created_by: mah
 creation_date: 2010-08-31T11:04:45Z
 
 [Term]
@@ -14212,7 +14091,7 @@ synonym: "response to FGF stimulus" EXACT [GOC:mah]
 synonym: "response to fibroblast growth factor stimulus" EXACT [GOC:dos]
 is_a: GO:0009719 ! response to endogenous stimulus
 is_a: GO:0070848 ! response to growth factor
-created_by: midori
+created_by: mah
 creation_date: 2010-08-31T11:06:32Z
 
 [Term]
@@ -14226,8 +14105,8 @@ subset: goslim_metagenomics
 synonym: "cellular component organisation or biogenesis" EXACT [GOC:mah]
 synonym: "cellular component organisation or biogenesis at cellular level" EXACT [GOC:mah]
 synonym: "cellular component organization or biogenesis at cellular level" EXACT []
-is_a: GO:0008150 ! biological_process
-created_by: midori
+is_a: GO:0009987 ! cellular process
+created_by: mah
 creation_date: 2010-09-10T01:39:16Z
 
 [Term]
@@ -14239,7 +14118,7 @@ is_a: GO:0045859 ! regulation of protein kinase activity
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0004674 ! protein serine/threonine kinase activity
 relationship: regulates GO:0004674 ! protein serine/threonine kinase activity
-created_by: midori
+created_by: mah
 creation_date: 2010-09-15T03:08:35Z
 
 [Term]
@@ -14252,7 +14131,7 @@ is_a: GO:0071900 ! regulation of protein serine/threonine kinase activity
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0004674 ! protein serine/threonine kinase activity
 relationship: negatively_regulates GO:0004674 ! protein serine/threonine kinase activity
-created_by: midori
+created_by: mah
 creation_date: 2010-09-15T03:09:43Z
 
 [Term]
@@ -14265,7 +14144,7 @@ is_a: GO:0071900 ! regulation of protein serine/threonine kinase activity
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0004674 ! protein serine/threonine kinase activity
 relationship: positively_regulates GO:0004674 ! protein serine/threonine kinase activity
-created_by: midori
+created_by: mah
 creation_date: 2010-09-15T03:09:57Z
 
 [Term]
@@ -14274,7 +14153,7 @@ name: alpha-tubulin acetylation
 namespace: biological_process
 def: "The addition of an acetyl group to the lysine 40 residue of alpha-tubulin." [GOC:kmv, PMID:17786050]
 is_a: GO:0018393 ! internal peptidyl-lysine acetylation
-created_by: midori
+created_by: mah
 creation_date: 2010-09-28T01:46:38Z
 
 [Term]
@@ -14284,7 +14163,7 @@ namespace: cellular_component
 def: "The part of a cell encompassing the cell cortex, the plasma membrane, and any external encapsulating structures." [GOC:mah]
 subset: goslim_flybase_ribbon
 is_a: GO:0110165 ! cellular anatomical entity
-created_by: midori
+created_by: mah
 creation_date: 2010-10-04T01:51:47Z
 
 [Term]
@@ -14297,7 +14176,7 @@ synonym: "urinary system development" BROAD [GOC:yaf]
 synonym: "urinary tract development" BROAD [GOC:yaf, PMID:17881463]
 is_a: GO:0048731 ! system development
 relationship: part_of GO:0001655 ! urogenital system development
-created_by: midori
+created_by: mah
 creation_date: 2010-01-25T10:31:00Z
 
 [Term]
@@ -14308,7 +14187,7 @@ def: "Any developmental process that results in the creation of defined areas or
 synonym: "renal system pattern formation" RELATED [GOC:mtg_kidney_jan10]
 is_a: GO:0007389 ! pattern specification process
 relationship: part_of GO:0072001 ! renal system development
-created_by: midori
+created_by: mah
 creation_date: 2010-01-25T03:31:51Z
 
 [Term]
@@ -14318,7 +14197,7 @@ namespace: biological_process
 def: "The biological process whose specific outcome is the progression of a kidney mesenchyme from an initial condition to its mature state. This process begins with the formation of kidney mesenchyme and ends with the mature structure. Kidney mesenchyme is the tissue made up of loosely connected mesenchymal cells in the kidney." [GOC:mtg_kidney_jan10]
 is_a: GO:0060485 ! mesenchyme development
 relationship: part_of GO:0001822 ! kidney development
-created_by: midori
+created_by: mah
 creation_date: 2010-01-25T04:39:04Z
 
 [Term]
@@ -14333,7 +14212,7 @@ is_a: GO:0009952 ! anterior/posterior pattern specification
 is_a: GO:0061004 ! pattern specification involved in kidney development
 intersection_of: GO:0009952 ! anterior/posterior pattern specification
 intersection_of: part_of GO:0001822 ! kidney development
-created_by: midori
+created_by: mah
 creation_date: 2010-02-10T02:06:24Z
 
 [Term]
@@ -14345,7 +14224,7 @@ is_a: GO:0008283 ! cell population proliferation
 intersection_of: GO:0008283 ! cell population proliferation
 intersection_of: part_of GO:0001822 ! kidney development
 relationship: part_of GO:0001822 ! kidney development
-created_by: midori
+created_by: mah
 creation_date: 2010-02-22T10:48:45Z
 
 [Term]
@@ -14358,7 +14237,7 @@ is_a: GO:2001012 ! mesenchymal cell differentiation involved in renal system dev
 intersection_of: GO:0048762 ! mesenchymal cell differentiation
 intersection_of: part_of GO:0001822 ! kidney development
 relationship: part_of GO:0072074 ! kidney mesenchyme development
-created_by: midori
+created_by: mah
 creation_date: 2010-02-26T01:31:49Z
 
 [Term]
@@ -14368,7 +14247,7 @@ namespace: biological_process
 def: "The developmental process pertaining to the initial formation of an epithelial tube." [GOC:mtg_kidney_jan10]
 is_a: GO:0035148 ! tube formation
 relationship: part_of GO:0060562 ! epithelial tube morphogenesis
-created_by: midori
+created_by: mah
 creation_date: 2010-02-26T02:15:40Z
 
 [Term]
@@ -14385,7 +14264,7 @@ is_a: GO:1905292 ! regulation of neural crest cell differentiation
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0044335 ! canonical Wnt signaling pathway involved in neural crest cell differentiation
 relationship: regulates GO:0044335 ! canonical Wnt signaling pathway involved in neural crest cell differentiation
-created_by: midori
+created_by: mah
 creation_date: 2010-11-03T03:12:38Z
 
 [Term]
@@ -14403,7 +14282,7 @@ is_a: GO:1905293 ! negative regulation of neural crest cell differentiation
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0044335 ! canonical Wnt signaling pathway involved in neural crest cell differentiation
 relationship: negatively_regulates GO:0044335 ! canonical Wnt signaling pathway involved in neural crest cell differentiation
-created_by: midori
+created_by: mah
 creation_date: 2010-11-03T03:16:10Z
 
 [Term]
@@ -14412,7 +14291,7 @@ name: circulatory system development
 namespace: biological_process
 def: "The process whose specific outcome is the progression of the circulatory system over time, from its formation to the mature structure. The circulatory system is the organ system that passes nutrients (such as amino acids and electrolytes), gases, hormones, blood cells, etc. to and from cells in the body to help fight diseases and help stabilize body temperature and pH to maintain homeostasis." [GOC:mah, UBERON:0001009]
 is_a: GO:0048731 ! system development
-created_by: midori
+created_by: mah
 creation_date: 2010-11-16T11:27:39Z
 
 [Term]
@@ -14430,7 +14309,7 @@ is_a: GO:1905294 ! positive regulation of neural crest cell differentiation
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0044335 ! canonical Wnt signaling pathway involved in neural crest cell differentiation
 relationship: positively_regulates GO:0044335 ! canonical Wnt signaling pathway involved in neural crest cell differentiation
-created_by: midori
+created_by: mah
 creation_date: 2010-11-24T03:10:15Z
 
 [Term]
@@ -14439,7 +14318,7 @@ name: divalent inorganic cation transport
 namespace: biological_process
 def: "The directed movement of inorganic cations with a valency of two into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore. Inorganic cations are atoms or small molecules with a positive charge which do not contain carbon in covalent linkage." [GOC:mah]
 is_a: GO:0006812 ! cation transport
-created_by: midori
+created_by: mah
 creation_date: 2010-12-16T04:11:02Z
 
 [Term]
@@ -14451,7 +14330,7 @@ is_a: GO:0019222 ! regulation of metabolic process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0044238 ! primary metabolic process
 relationship: regulates GO:0044238 ! primary metabolic process
-created_by: donghui
+created_by: dhl
 creation_date: 2009-04-22T04:30:52Z
 
 [Term]
@@ -14465,7 +14344,7 @@ is_a: GO:0048583 ! regulation of response to stimulus
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0006950 ! response to stress
 relationship: regulates GO:0006950 ! response to stress
-created_by: donghui
+created_by: dhl
 creation_date: 2009-05-06T04:51:28Z
 
 [Term]
@@ -14478,7 +14357,7 @@ is_a: GO:0080134 ! regulation of response to stress
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0033554 ! cellular response to stress
 relationship: regulates GO:0033554 ! cellular response to stress
-created_by: donghui
+created_by: dhl
 creation_date: 2009-05-06T05:02:52Z
 
 [Term]
@@ -14487,7 +14366,7 @@ name: regulation of anatomical structure size
 namespace: biological_process
 def: "Any process that modulates the size of an anatomical structure." [GOC:dph, GOC:tb]
 is_a: GO:0065008 ! regulation of biological quality
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-09-02T11:00:08Z
 
 [Term]
@@ -14500,7 +14379,7 @@ is_a: GO:0045787 ! positive regulation of cell cycle
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0022402 ! cell cycle process
 relationship: positively_regulates GO:0022402 ! cell cycle process
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-09-09T11:39:52Z
 
 [Term]
@@ -14513,7 +14392,7 @@ is_a: GO:0008543 ! fibroblast growth factor receptor signaling pathway
 is_a: GO:0043410 ! positive regulation of MAPK cascade
 intersection_of: GO:0008543 ! fibroblast growth factor receptor signaling pathway
 intersection_of: positively_regulates GO:0000165 ! MAPK cascade
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-10-19T11:30:22Z
 
 [Term]
@@ -14525,7 +14404,7 @@ is_a: GO:0051049 ! regulation of transport
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0015833 ! peptide transport
 relationship: regulates GO:0015833 ! peptide transport
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-10-23T11:21:38Z
 
 [Term]
@@ -14545,7 +14424,7 @@ is_a: GO:0060828 ! regulation of canonical Wnt signaling pathway
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0060070 ! canonical Wnt signaling pathway
 relationship: negatively_regulates GO:0060070 ! canonical Wnt signaling pathway
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-10-30T11:27:17Z
 
 [Term]
@@ -14558,7 +14437,7 @@ is_a: GO:0009966 ! regulation of signal transduction
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0007178 ! transmembrane receptor protein serine/threonine kinase signaling pathway
 relationship: regulates GO:0007178 ! transmembrane receptor protein serine/threonine kinase signaling pathway
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-11-04T11:46:40Z
 
 [Term]
@@ -14572,7 +14451,7 @@ is_a: GO:0090092 ! regulation of transmembrane receptor protein serine/threonine
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0007178 ! transmembrane receptor protein serine/threonine kinase signaling pathway
 relationship: positively_regulates GO:0007178 ! transmembrane receptor protein serine/threonine kinase signaling pathway
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-11-13T10:55:53Z
 
 [Term]
@@ -14586,7 +14465,7 @@ is_a: GO:0090092 ! regulation of transmembrane receptor protein serine/threonine
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0007178 ! transmembrane receptor protein serine/threonine kinase signaling pathway
 relationship: negatively_regulates GO:0007178 ! transmembrane receptor protein serine/threonine kinase signaling pathway
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-11-13T10:56:52Z
 
 [Term]
@@ -14596,7 +14475,7 @@ namespace: biological_process
 def: "A process that is carried out at the cellular level which results in the separation of a single continuous membrane into two membranes." [GOC:ascb_2009, GOC:dph, GOC:tb]
 synonym: "membrane scission" EXACT []
 is_a: GO:0061024 ! membrane organization
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-12-08T03:06:36Z
 
 [Term]
@@ -14605,7 +14484,7 @@ name: establishment of epithelial cell polarity
 namespace: biological_process
 def: "The specification and formation of anisotropic intracellular organization of an epithelial cell." [GOC:ascb_2009, GOC:dph, GOC:tb]
 is_a: GO:0030010 ! establishment of cell polarity
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-12-08T08:58:27Z
 
 [Term]
@@ -14614,7 +14493,7 @@ name: establishment of epithelial cell planar polarity
 namespace: biological_process
 def: "The specification and formation of the polarity of an epithelial cell along the plane of the epithelial tissue." [GOC:ascb_2009, GOC:dph, GOC:tb]
 is_a: GO:0090162 ! establishment of epithelial cell polarity
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-12-08T08:59:57Z
 
 [Term]
@@ -14628,7 +14507,7 @@ is_a: GO:1902115 ! regulation of organelle assembly
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0051225 ! spindle assembly
 relationship: regulates GO:0051225 ! spindle assembly
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-12-11T10:17:51Z
 
 [Term]
@@ -14641,7 +14520,7 @@ is_a: GO:2000027 ! regulation of animal organ morphogenesis
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0001736 ! establishment of planar polarity
 relationship: regulates GO:0001736 ! establishment of planar polarity
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-12-14T10:29:41Z
 
 [Term]
@@ -14654,7 +14533,7 @@ is_a: GO:0000226 ! microtubule cytoskeleton organization
 intersection_of: GO:0000226 ! microtubule cytoskeleton organization
 intersection_of: part_of GO:0001736 ! establishment of planar polarity
 relationship: part_of GO:0001736 ! establishment of planar polarity
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-12-14T10:34:25Z
 
 [Term]
@@ -14667,7 +14546,7 @@ is_a: GO:0048598 ! embryonic morphogenesis
 intersection_of: GO:0001736 ! establishment of planar polarity
 intersection_of: part_of GO:0001843 ! neural tube closure
 relationship: part_of GO:0001843 ! neural tube closure
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-12-14T10:38:46Z
 
 [Term]
@@ -14682,7 +14561,7 @@ is_a: GO:1905276 ! regulation of epithelial tube formation
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0090177 ! establishment of planar polarity involved in neural tube closure
 relationship: regulates GO:0090177 ! establishment of planar polarity involved in neural tube closure
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-12-14T11:14:27Z
 
 [Term]
@@ -14695,7 +14574,7 @@ is_a: GO:0090178 ! regulation of establishment of planar polarity involved in ne
 intersection_of: GO:0060071 ! Wnt signaling pathway, planar cell polarity pathway
 intersection_of: part_of GO:0001843 ! neural tube closure
 relationship: part_of GO:0001843 ! neural tube closure
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-12-14T11:20:27Z
 
 [Term]
@@ -14708,7 +14587,7 @@ is_a: GO:2000026 ! regulation of multicellular organismal development
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0001822 ! kidney development
 relationship: regulates GO:0001822 ! kidney development
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-12-18T10:50:56Z
 
 [Term]
@@ -14723,7 +14602,7 @@ is_a: GO:0090183 ! regulation of kidney development
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0001822 ! kidney development
 relationship: positively_regulates GO:0001822 ! kidney development
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-12-18T10:52:01Z
 
 [Term]
@@ -14738,7 +14617,7 @@ is_a: GO:0090183 ! regulation of kidney development
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0001822 ! kidney development
 relationship: negatively_regulates GO:0001822 ! kidney development
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2009-12-18T10:58:45Z
 
 [Term]
@@ -14752,7 +14631,7 @@ is_a: GO:0070507 ! regulation of microtubule cytoskeleton organization
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0007051 ! spindle organization
 relationship: regulates GO:0007051 ! spindle organization
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-01-13T11:04:53Z
 
 [Term]
@@ -14765,7 +14644,7 @@ is_a: GO:0008543 ! fibroblast growth factor receptor signaling pathway
 intersection_of: GO:0008543 ! fibroblast growth factor receptor signaling pathway
 intersection_of: part_of GO:0001756 ! somitogenesis
 relationship: part_of GO:0001756 ! somitogenesis
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-01-22T10:46:15Z
 
 [Term]
@@ -14780,7 +14659,7 @@ is_a: GO:0016055 ! Wnt signaling pathway
 intersection_of: GO:0016055 ! Wnt signaling pathway
 intersection_of: part_of GO:0001756 ! somitogenesis
 relationship: part_of GO:0001756 ! somitogenesis
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-01-22T10:47:59Z
 
 [Term]
@@ -14792,7 +14671,7 @@ is_a: GO:0003401 ! axis elongation
 intersection_of: GO:0003401 ! axis elongation
 intersection_of: part_of GO:0001756 ! somitogenesis
 relationship: part_of GO:0001756 ! somitogenesis
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-01-22T10:54:29Z
 
 [Term]
@@ -14805,7 +14684,7 @@ is_a: GO:0060028 ! convergent extension involved in axis elongation
 intersection_of: GO:0060026 ! convergent extension
 intersection_of: part_of GO:0001756 ! somitogenesis
 relationship: part_of GO:0090245 ! axis elongation involved in somitogenesis
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-01-22T10:59:06Z
 
 [Term]
@@ -14817,7 +14696,7 @@ is_a: GO:0048870 ! cell motility
 intersection_of: GO:0048870 ! cell motility
 intersection_of: part_of GO:0090245 ! axis elongation involved in somitogenesis
 relationship: part_of GO:0090245 ! axis elongation involved in somitogenesis
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-01-22T11:07:17Z
 
 [Term]
@@ -14829,7 +14708,7 @@ is_a: GO:0016477 ! cell migration
 is_a: GO:0090247 ! cell motility involved in somitogenic axis elongation
 intersection_of: GO:0016477 ! cell migration
 intersection_of: part_of GO:0090245 ! axis elongation involved in somitogenesis
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-01-22T11:13:59Z
 
 [Term]
@@ -14843,7 +14722,7 @@ is_a: GO:2000145 ! regulation of cell motility
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0090247 ! cell motility involved in somitogenic axis elongation
 relationship: regulates GO:0090247 ! cell motility involved in somitogenic axis elongation
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-01-22T11:20:05Z
 
 [Term]
@@ -14856,7 +14735,7 @@ is_a: GO:0034613 ! cellular protein localization
 intersection_of: GO:0008104 ! protein localization
 intersection_of: part_of GO:0001736 ! establishment of planar polarity
 relationship: part_of GO:0001736 ! establishment of planar polarity
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-01-22T11:31:32Z
 
 [Term]
@@ -14876,7 +14755,7 @@ is_a: GO:0060828 ! regulation of canonical Wnt signaling pathway
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0060070 ! canonical Wnt signaling pathway
 relationship: positively_regulates GO:0060070 ! canonical Wnt signaling pathway
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-02-03T04:32:16Z
 
 [Term]
@@ -14889,7 +14768,7 @@ is_a: GO:0050794 ! regulation of cellular process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0071363 ! cellular response to growth factor stimulus
 relationship: regulates GO:0071363 ! cellular response to growth factor stimulus
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-02-18T03:01:25Z
 
 [Term]
@@ -14903,7 +14782,7 @@ is_a: GO:0090287 ! regulation of cellular response to growth factor stimulus
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0071363 ! cellular response to growth factor stimulus
 relationship: negatively_regulates GO:0071363 ! cellular response to growth factor stimulus
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-02-18T03:01:25Z
 
 [Term]
@@ -14916,7 +14795,7 @@ is_a: GO:1903036 ! positive regulation of response to wounding
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0042060 ! wound healing
 relationship: positively_regulates GO:0042060 ! wound healing
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-03-22T02:12:03Z
 
 [Term]
@@ -14926,7 +14805,7 @@ namespace: biological_process
 def: "Any cellular metabolic process involving nucleic acids." [GOC:dph, GOC:tb]
 is_a: GO:0006139 ! nucleobase-containing compound metabolic process
 is_a: GO:0043170 ! macromolecule metabolic process
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-04-07T10:18:47Z
 
 [Term]
@@ -14940,7 +14819,7 @@ is_a: GO:0051225 ! spindle assembly
 intersection_of: GO:0051225 ! spindle assembly
 intersection_of: part_of GO:0140013 ! meiotic nuclear division
 relationship: part_of GO:0140013 ! meiotic nuclear division
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-04-09T11:21:56Z
 
 [Term]
@@ -14954,7 +14833,7 @@ is_a: GO:0051225 ! spindle assembly
 intersection_of: GO:0051225 ! spindle assembly
 intersection_of: part_of GO:0140014 ! mitotic nuclear division
 relationship: part_of GO:0140014 ! mitotic nuclear division
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-04-09T11:31:28Z
 
 [Term]
@@ -14969,7 +14848,7 @@ is_a: GO:1903829 ! positive regulation of cellular protein localization
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0006886 ! intracellular protein transport
 relationship: positively_regulates GO:0006886 ! intracellular protein transport
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-04-16T03:45:07Z
 
 [Term]
@@ -14984,7 +14863,7 @@ is_a: GO:1903828 ! negative regulation of cellular protein localization
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0006886 ! intracellular protein transport
 relationship: negatively_regulates GO:0006886 ! intracellular protein transport
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-04-16T03:45:07Z
 
 [Term]
@@ -14997,7 +14876,7 @@ is_a: GO:0050795 ! regulation of behavior
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0031987 ! locomotion involved in locomotory behavior
 relationship: regulates GO:0031987 ! locomotion involved in locomotory behavior
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-05-14T10:24:29Z
 
 [Term]
@@ -15011,7 +14890,7 @@ is_a: GO:0090325 ! regulation of locomotion involved in locomotory behavior
 intersection_of: GO:0050789 ! regulation of biological process
 intersection_of: positively_regulates GO:0031987 ! locomotion involved in locomotory behavior
 relationship: positively_regulates GO:0031987 ! locomotion involved in locomotory behavior
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-05-14T10:26:58Z
 
 [Term]
@@ -15025,7 +14904,7 @@ is_a: GO:0090325 ! regulation of locomotion involved in locomotory behavior
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0031987 ! locomotion involved in locomotory behavior
 relationship: negatively_regulates GO:0031987 ! locomotion involved in locomotory behavior
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-05-14T10:26:58Z
 
 [Term]
@@ -15034,7 +14913,7 @@ name: activation of meiosis
 namespace: biological_process
 def: "Any process that starts the inactive process of meiosis." [GOC:dph, GOC:tb]
 is_a: GO:0045836 ! positive regulation of meiotic nuclear division
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2012-05-04T09:50:19Z
 
 [Term]
@@ -15055,7 +14934,7 @@ is_a: GO:0032838 ! plasma membrane bounded cell projection cytoplasm
 intersection_of: GO:0005737 ! cytoplasm
 intersection_of: part_of GO:0005929 ! cilium
 relationship: part_of GO:0005929 ! cilium
-created_by: paola
+created_by: pr
 creation_date: 2011-03-23T01:52:31Z
 
 [Term]
@@ -15068,7 +14947,7 @@ is_a: GO:0098590 ! plasma membrane region
 intersection_of: GO:0098590 ! plasma membrane region
 intersection_of: part_of GO:0045202 ! synapse
 relationship: part_of GO:0045202 ! synapse
-created_by: paola
+created_by: pr
 creation_date: 2011-06-07T11:22:09Z
 
 [Term]
@@ -15083,7 +14962,7 @@ is_a: GO:0004197 ! cysteine-type endopeptidase activity
 intersection_of: GO:0004197 ! cysteine-type endopeptidase activity
 intersection_of: part_of GO:0006915 ! apoptotic process
 relationship: part_of GO:0006915 ! apoptotic process
-created_by: paola
+created_by: pr
 creation_date: 2011-09-09T10:21:56Z
 
 [Term]
@@ -15098,7 +14977,7 @@ synonym: "extracellular fibril organization and biogenesis" NARROW [GOC:mah]
 synonym: "fibril organisation" RELATED []
 synonym: "fibril organization" RELATED []
 is_a: GO:0016043 ! cellular component organization
-created_by: paola
+created_by: pr
 creation_date: 2012-11-27T15:46:25Z
 
 [Term]
@@ -15113,7 +14992,7 @@ synonym: "neuronal cell projection guidance" EXACT []
 is_a: GO:0006928 ! movement of cell or subcellular component
 relationship: part_of GO:0006935 ! chemotaxis
 relationship: part_of GO:0048812 ! neuron projection morphogenesis
-created_by: paola
+created_by: pr
 creation_date: 2013-07-08T13:32:37Z
 
 [Term]
@@ -15133,7 +15012,7 @@ is_a: GO:0034401 ! chromatin organization involved in regulation of transcriptio
 intersection_of: GO:0006325 ! chromatin organization
 intersection_of: part_of GO:0045892 ! negative regulation of transcription, DNA-templated
 relationship: part_of GO:0045892 ! negative regulation of transcription, DNA-templated
-created_by: paola
+created_by: pr
 creation_date: 2014-01-22T08:20:50Z
 
 [Term]
@@ -15145,7 +15024,7 @@ comment: Note that this term is in the subset of terms that should not be used f
 subset: gocheck_do_not_manually_annotate
 subset: goslim_mouse
 is_a: GO:0032774 ! RNA biosynthetic process
-created_by: paola
+created_by: pr
 creation_date: 2014-10-01T13:49:27Z
 
 [Term]
@@ -15157,7 +15036,7 @@ is_a: GO:0031982 ! vesicle
 is_a: GO:0043229 ! intracellular organelle
 intersection_of: GO:0031982 ! vesicle
 intersection_of: part_of GO:0005622 ! intracellular
-created_by: paola
+created_by: pr
 creation_date: 2016-03-29T17:39:45Z
 
 [Term]
@@ -15167,7 +15046,7 @@ namespace: biological_process
 def: "The process in which vesicles formed at the trans-Golgi network are directed to the plasma membrane surrounding the base of the cilium, including the ciliary pocket, mediated by molecules at the vesicle membrane and target membrane surfaces." [GOC:cilia, PMID:20106869, PMID:23351793, PMID:24814148, PMID:26485645, Reactome:R-HSA-5620920.1]
 is_a: GO:0048199 ! vesicle targeting, to, from or within Golgi
 relationship: part_of GO:0060271 ! cilium assembly
-created_by: paola
+created_by: pr
 creation_date: 2016-08-05T16:16:28Z
 
 [Term]
@@ -15177,7 +15056,7 @@ namespace: molecular_function
 def: "Catalysis of the reaction: nucleoside triphosphate + RNA(n) = diphosphate + RNA(n+1); the synthesis of RNA from ribonucleotide triphosphates in the presence of a nucleic acid template." [GOC:pf]
 is_a: GO:0016779 ! nucleotidyltransferase activity
 is_a: GO:0140098 ! catalytic activity, acting on RNA
-created_by: paola
+created_by: pr
 creation_date: 2016-12-02T11:48:55Z
 
 [Term]
@@ -15192,17 +15071,17 @@ is_a: GO:0016020 ! membrane
 intersection_of: GO:0016020 ! membrane
 intersection_of: part_of GO:0005886 ! plasma membrane
 relationship: part_of GO:0005886 ! plasma membrane
-created_by: davidos
+created_by: dos
 creation_date: 2014-03-06T11:55:32Z
 
 [Term]
 id: GO:0098631
 name: cell adhesion mediator activity
 namespace: molecular_function
-def: "The binding by a cell-adhesion protein on the cell surface to an extracellular matrix component, to mediate adhesion of the cell to the external substrate or to another cell." [Wikipedia:Cell_adhesion]
+def: "The binding by a cell-adhesion protein on a cell surface to an adhesion molecule on another cell surface, to mediate adhesion of the cell to the external substrate or to another cell." [GOC:vw, Wikipedia:Cell_adhesion]
 synonym: "cell adhesion molecule" EXACT []
 synonym: "protein binding involved in cell adhesion" EXACT []
-is_a: GO:0005488 ! binding
+is_a: GO:0050839 ! cell adhesion molecule binding
 intersection_of: GO:0005488 ! binding
 intersection_of: part_of GO:0007155 ! cell adhesion
 relationship: part_of GO:0007155 ! cell adhesion
@@ -15263,14 +15142,14 @@ relationship: regulates GO:0001508 ! action potential
 id: GO:0098916
 name: anterograde trans-synaptic signaling
 namespace: biological_process
-def: "Cell-cell signaling from pre to post-synapse, across the synaptic cleft" [GOC:dos]
+def: "Cell-cell signaling from pre to post-synapse, across the synaptic cleft." [GOC:dos]
 is_a: GO:0099537 ! trans-synaptic signaling
 
 [Term]
 id: GO:0099003
 name: vesicle-mediated transport in synapse
 namespace: biological_process
-def: "Any vesicle-mediated transport that occurs in a synapse" [GOC:dos]
+def: "Any vesicle-mediated transport that occurs in a synapse." [GOC:dos]
 subset: goslim_synapse
 is_a: GO:0016192 ! vesicle-mediated transport
 intersection_of: GO:0016192 ! vesicle-mediated transport
@@ -15379,7 +15258,7 @@ intersection_of: regulates GO:0007268 ! chemical synaptic transmission
 id: GO:0099568
 name: cytoplasmic region
 namespace: cellular_component
-def: "Any (proper) part of the cytoplasm of a single cell of sufficient size to still be considered cytoplasm\"" [GOC:dos]
+def: "Any (proper) part of the cytoplasm of a single cell of sufficient size to still be considered cytoplasm." [GOC:dos]
 is_a: GO:0005737 ! cytoplasm
 intersection_of: GO:0005737 ! cytoplasm
 intersection_of: part_of GO:0005737 ! cytoplasm
@@ -15389,7 +15268,7 @@ relationship: part_of GO:0005737 ! cytoplasm
 id: GO:0099738
 name: cell cortex region
 namespace: cellular_component
-def: "The complete extent of cell cortex that underlies some some region of the plasma membrane" [GOC:dos]
+def: "The complete extent of cell cortex that underlies some some region of the plasma membrane." [GOC:dos]
 synonym: "perimembrane region" EXACT []
 is_a: GO:0005938 ! cell cortex
 is_a: GO:0099568 ! cytoplasmic region
@@ -15401,7 +15280,7 @@ relationship: part_of GO:0005938 ! cell cortex
 id: GO:0100002
 name: negative regulation of protein kinase activity by protein phosphorylation
 namespace: biological_process
-def: "Any protein phosphorylation process that negatively_regulates protein kinase activity" [GOC:cjm, GOC:obol]
+def: "Any protein phosphorylation process that negatively regulates protein kinase activity." [GOC:cjm, GOC:obol]
 is_a: GO:0006468 ! protein phosphorylation
 is_a: GO:0006469 ! negative regulation of protein kinase activity
 intersection_of: GO:0006468 ! protein phosphorylation
@@ -15413,7 +15292,7 @@ creation_date: 2015-04-02T04:13:19Z
 id: GO:0100020
 name: obsolete regulation of transport by transcription from RNA polymerase II promoter
 namespace: biological_process
-def: "OBSOLETE. Any transcription from RNA polymerase II promoter process that regulates transport" [GOC:cjm, GOC:obol]
+def: "OBSOLETE. Any transcription from RNA polymerase II promoter process that regulates transport." [GOC:cjm, GOC:obol]
 comment: This term was obsoleted because it represents a GO-CAM model.
 is_obsolete: true
 created_by: cjm
@@ -15492,7 +15371,7 @@ is_a: GO:0042995 ! cell projection
 intersection_of: GO:0042995 ! cell projection
 intersection_of: has_part GO:0098590 ! plasma membrane region
 relationship: has_part GO:0098590 ! plasma membrane region
-created_by: kchris
+created_by: krc
 creation_date: 2017-03-21T17:26:07Z
 
 [Term]
@@ -15503,7 +15382,7 @@ def: "Formation of a prolongation or process extending and that is bounded by pl
 synonym: "eupodium" NARROW [GOC:krc, GOC:rjd, PMID:10328951, PMID:9096956]
 is_a: GO:0030031 ! cell projection assembly
 is_a: GO:0120036 ! plasma membrane bounded cell projection organization
-created_by: kchris
+created_by: krc
 creation_date: 2017-04-24T23:56:08Z
 
 [Term]
@@ -15516,7 +15395,7 @@ is_a: GO:0120035 ! regulation of plasma membrane bounded cell projection organiz
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0120031 ! plasma membrane bounded cell projection assembly
 relationship: regulates GO:0120031 ! plasma membrane bounded cell projection assembly
-created_by: kchris
+created_by: krc
 creation_date: 2017-04-26T04:27:04Z
 
 [Term]
@@ -15529,7 +15408,7 @@ is_a: GO:0120032 ! regulation of plasma membrane bounded cell projection assembl
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0120031 ! plasma membrane bounded cell projection assembly
 relationship: negatively_regulates GO:0120031 ! plasma membrane bounded cell projection assembly
-created_by: kchris
+created_by: krc
 creation_date: 2017-04-26T04:34:31Z
 
 [Term]
@@ -15543,7 +15422,7 @@ is_a: GO:0120032 ! regulation of plasma membrane bounded cell projection assembl
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0120031 ! plasma membrane bounded cell projection assembly
 relationship: positively_regulates GO:0120031 ! plasma membrane bounded cell projection assembly
-created_by: kchris
+created_by: krc
 creation_date: 2017-04-26T04:34:45Z
 
 [Term]
@@ -15555,7 +15434,7 @@ is_a: GO:0031344 ! regulation of cell projection organization
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0120036 ! plasma membrane bounded cell projection organization
 relationship: regulates GO:0120036 ! plasma membrane bounded cell projection organization
-created_by: kchris
+created_by: krc
 creation_date: 2017-04-26T16:02:06Z
 
 [Term]
@@ -15564,7 +15443,7 @@ name: plasma membrane bounded cell projection organization
 namespace: biological_process
 def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of a plasma membrane bounded prolongation or process extending from a cell, e.g. a cilium or axon." [GOC:krc]
 is_a: GO:0030030 ! cell projection organization
-created_by: kchris
+created_by: krc
 creation_date: 2017-04-26T16:07:02Z
 
 [Term]
@@ -15573,7 +15452,7 @@ name: plasma membrane bounded cell projection morphogenesis
 namespace: biological_process
 def: "The process in which the anatomical structures of a plasma membrane bounded cell projection are generated and organized." [GOC:krc]
 is_a: GO:0048858 ! cell projection morphogenesis
-created_by: kchris
+created_by: krc
 creation_date: 2017-04-28T23:39:37Z
 
 [Term]
@@ -15606,9 +15485,9 @@ creation_date: 2017-03-23T14:44:23Z
 id: GO:0140096
 name: catalytic activity, acting on a protein
 namespace: molecular_function
-def: "Catalytic activity that acts to modify a protein." [GOC:pdt]
-comment: https://github.com/geneontology/go-ontology/issues/14225
+def: "Catalytic activity that acts to modify a protein." [GOC:molecular_function_refactoring, GOC:pdt]
 is_a: GO:0003824 ! catalytic activity
+property_value: term_tracker_item https://github.com/geneontology/go-ontology/issues/14225 xsd:anyURI
 created_by: pg
 creation_date: 2017-09-14T10:32:59Z
 
@@ -15616,9 +15495,9 @@ creation_date: 2017-09-14T10:32:59Z
 id: GO:0140098
 name: catalytic activity, acting on RNA
 namespace: molecular_function
-def: "Catalytic activity that acts to modify RNA." [GOC:pdt]
-comment: https://github.com/geneontology/go-ontology/issues/14225
+def: "Catalytic activity that acts to modify RNA." [GOC:molecular_function_refactoring\,GOC\:pdt]
 is_a: GO:0003824 ! catalytic activity
+property_value: term_tracker_item https://github.com/geneontology/go-ontology/issues/14225 xsd:anyURI
 created_by: pg
 creation_date: 2017-09-14T12:05:21Z
 
@@ -15630,7 +15509,7 @@ def: "The process whose specific outcome is the progression of the visual system
 synonym: "optic pathway development" RELATED []
 synonym: "visual pathway development" RELATED []
 is_a: GO:0048880 ! sensory system development
-created_by: BarbaraCzub
+created_by: bc
 creation_date: 2018-07-23T10:31:58Z
 
 [Term]
@@ -17640,7 +17519,7 @@ synonym: "inhibition of cellular protein localization" NARROW [GOC:TermGenie]
 synonym: "inhibition of channel localizer activity" NARROW [GOC:TermGenie]
 synonym: "negative regulation of cellular protein localisation" EXACT [GOC:TermGenie]
 synonym: "negative regulation of channel localizer activity" NARROW [GOC:TermGenie]
-is_a: GO:0048519 ! negative regulation of biological process
+is_a: GO:0048523 ! negative regulation of cellular process
 is_a: GO:1903827 ! regulation of cellular protein localization
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0034613 ! cellular protein localization
@@ -17667,7 +17546,7 @@ synonym: "up-regulation of channel localizer activity" NARROW [GOC:TermGenie]
 synonym: "upregulation of cellular protein localisation" EXACT [GOC:TermGenie]
 synonym: "upregulation of cellular protein localization" EXACT [GOC:TermGenie]
 synonym: "upregulation of channel localizer activity" NARROW [GOC:TermGenie]
-is_a: GO:0048518 ! positive regulation of biological process
+is_a: GO:0048522 ! positive regulation of cellular process
 is_a: GO:1903827 ! regulation of cellular protein localization
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0034613 ! cellular protein localization
@@ -19219,7 +19098,7 @@ is_a: GO:2000380 ! regulation of mesoderm development
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0001707 ! mesoderm formation
 relationship: regulates GO:0001707 ! mesoderm formation
-created_by: rachhuntley
+created_by: rph
 creation_date: 2017-02-03T12:28:20Z
 
 [Term]
@@ -19237,7 +19116,7 @@ is_a: GO:2000542 ! negative regulation of gastrulation
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0001707 ! mesoderm formation
 relationship: negatively_regulates GO:0001707 ! mesoderm formation
-created_by: rachhuntley
+created_by: rph
 creation_date: 2017-02-03T12:28:29Z
 
 [Term]
@@ -19255,7 +19134,7 @@ is_a: GO:2000543 ! positive regulation of gastrulation
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0001707 ! mesoderm formation
 relationship: positively_regulates GO:0001707 ! mesoderm formation
-created_by: rachhuntley
+created_by: rph
 creation_date: 2017-02-03T12:28:38Z
 
 [Term]
@@ -19345,7 +19224,7 @@ is_a: GO:0051239 ! regulation of multicellular organismal process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0007275 ! multicellular organism development
 relationship: regulates GO:0007275 ! multicellular organism development
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-08-05T11:25:59Z
 
 [Term]
@@ -19359,7 +19238,7 @@ is_a: GO:2000026 ! regulation of multicellular organismal development
 intersection_of: GO:0065007 ! biological regulation
 intersection_of: regulates GO:0009887 ! animal organ morphogenesis
 relationship: regulates GO:0009887 ! animal organ morphogenesis
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-08-05T11:26:27Z
 
 [Term]
@@ -19372,7 +19251,7 @@ is_a: GO:0051302 ! regulation of cell division
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0017145 ! stem cell division
 relationship: regulates GO:0017145 ! stem cell division
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-08-05T11:34:53Z
 
 [Term]
@@ -19415,7 +19294,7 @@ is_a: GO:0030111 ! regulation of Wnt signaling pathway
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0035567 ! non-canonical Wnt signaling pathway
 relationship: regulates GO:0035567 ! non-canonical Wnt signaling pathway
-created_by: jane
+created_by: jl
 creation_date: 2010-08-20T01:04:12Z
 
 [Term]
@@ -19432,7 +19311,7 @@ is_a: GO:2000050 ! regulation of non-canonical Wnt signaling pathway
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0035567 ! non-canonical Wnt signaling pathway
 relationship: negatively_regulates GO:0035567 ! non-canonical Wnt signaling pathway
-created_by: jane
+created_by: jl
 creation_date: 2010-08-20T01:04:20Z
 
 [Term]
@@ -19449,7 +19328,7 @@ is_a: GO:2000050 ! regulation of non-canonical Wnt signaling pathway
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0035567 ! non-canonical Wnt signaling pathway
 relationship: positively_regulates GO:0035567 ! non-canonical Wnt signaling pathway
-created_by: jane
+created_by: jl
 creation_date: 2010-08-20T01:04:25Z
 
 [Term]
@@ -19465,7 +19344,7 @@ is_a: GO:2000026 ! regulation of multicellular organismal development
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0044332 ! Wnt signaling pathway involved in dorsal/ventral axis specification
 relationship: regulates GO:0044332 ! Wnt signaling pathway involved in dorsal/ventral axis specification
-created_by: jane
+created_by: jl
 creation_date: 2010-08-20T01:13:28Z
 
 [Term]
@@ -19483,7 +19362,7 @@ is_a: GO:2000053 ! regulation of Wnt signaling pathway involved in dorsal/ventra
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0044332 ! Wnt signaling pathway involved in dorsal/ventral axis specification
 relationship: negatively_regulates GO:0044332 ! Wnt signaling pathway involved in dorsal/ventral axis specification
-created_by: jane
+created_by: jl
 creation_date: 2010-08-20T01:13:35Z
 
 [Term]
@@ -19501,7 +19380,7 @@ is_a: GO:2000053 ! regulation of Wnt signaling pathway involved in dorsal/ventra
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0044332 ! Wnt signaling pathway involved in dorsal/ventral axis specification
 relationship: positively_regulates GO:0044332 ! Wnt signaling pathway involved in dorsal/ventral axis specification
-created_by: jane
+created_by: jl
 creation_date: 2010-08-20T01:13:40Z
 
 [Term]
@@ -19518,7 +19397,7 @@ is_a: GO:2000026 ! regulation of multicellular organismal development
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0044333 ! Wnt signaling pathway involved in digestive tract morphogenesis
 relationship: regulates GO:0044333 ! Wnt signaling pathway involved in digestive tract morphogenesis
-created_by: jane
+created_by: jl
 creation_date: 2010-08-20T01:17:27Z
 
 [Term]
@@ -19536,7 +19415,7 @@ is_a: GO:2000056 ! regulation of Wnt signaling pathway involved in digestive tra
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0044333 ! Wnt signaling pathway involved in digestive tract morphogenesis
 relationship: negatively_regulates GO:0044333 ! Wnt signaling pathway involved in digestive tract morphogenesis
-created_by: jane
+created_by: jl
 creation_date: 2010-08-20T01:17:35Z
 
 [Term]
@@ -19556,7 +19435,7 @@ is_a: GO:2000050 ! regulation of non-canonical Wnt signaling pathway
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0060071 ! Wnt signaling pathway, planar cell polarity pathway
 relationship: regulates GO:0060071 ! Wnt signaling pathway, planar cell polarity pathway
-created_by: jane
+created_by: jl
 creation_date: 2010-09-08T01:07:39Z
 
 [Term]
@@ -19576,7 +19455,7 @@ is_a: GO:2000095 ! regulation of Wnt signaling pathway, planar cell polarity pat
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0060071 ! Wnt signaling pathway, planar cell polarity pathway
 relationship: positively_regulates GO:0060071 ! Wnt signaling pathway, planar cell polarity pathway
-created_by: jane
+created_by: jl
 creation_date: 2010-09-08T01:07:42Z
 
 [Term]
@@ -19606,7 +19485,7 @@ is_a: GO:0031326 ! regulation of cellular biosynthetic process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0034645 ! cellular macromolecule biosynthetic process
 relationship: regulates GO:0034645 ! cellular macromolecule biosynthetic process
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-09-15T08:55:45Z
 
 [Term]
@@ -19625,7 +19504,7 @@ is_a: GO:2000112 ! regulation of cellular macromolecule biosynthetic process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0034645 ! cellular macromolecule biosynthetic process
 relationship: negatively_regulates GO:0034645 ! cellular macromolecule biosynthetic process
-created_by: tanyaberardini
+created_by: tb
 creation_date: 2010-09-15T08:55:48Z
 
 [Term]
@@ -19653,7 +19532,7 @@ is_a: GO:0052548 ! regulation of endopeptidase activity
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0004197 ! cysteine-type endopeptidase activity
 relationship: regulates GO:0004197 ! cysteine-type endopeptidase activity
-created_by: jane
+created_by: jl
 creation_date: 2010-09-23T10:24:33Z
 
 [Term]
@@ -19668,7 +19547,7 @@ is_a: GO:2000116 ! regulation of cysteine-type endopeptidase activity
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0004197 ! cysteine-type endopeptidase activity
 relationship: negatively_regulates GO:0004197 ! cysteine-type endopeptidase activity
-created_by: jane
+created_by: jl
 creation_date: 2010-09-23T10:24:35Z
 
 [Term]
@@ -19725,7 +19604,7 @@ is_a: GO:0051270 ! regulation of cellular component movement
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0048870 ! cell motility
 relationship: regulates GO:0048870 ! cell motility
-created_by: midori
+created_by: mah
 creation_date: 2010-10-01T09:41:21Z
 
 [Term]
@@ -19742,7 +19621,7 @@ is_a: GO:2000145 ! regulation of cell motility
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0048870 ! cell motility
 relationship: negatively_regulates GO:0048870 ! cell motility
-created_by: midori
+created_by: mah
 creation_date: 2010-10-01T09:41:26Z
 
 [Term]
@@ -19759,7 +19638,7 @@ is_a: GO:2000145 ! regulation of cell motility
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0048870 ! cell motility
 relationship: positively_regulates GO:0048870 ! cell motility
-created_by: midori
+created_by: mah
 creation_date: 2010-10-01T09:41:30Z
 
 [Term]
@@ -19838,7 +19717,7 @@ is_a: GO:0050789 ! regulation of biological process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0022414 ! reproductive process
 relationship: regulates GO:0022414 ! reproductive process
-created_by: midori
+created_by: mah
 creation_date: 2010-11-10T02:44:02Z
 
 [Term]
@@ -19851,7 +19730,7 @@ is_a: GO:2000241 ! regulation of reproductive process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0022414 ! reproductive process
 relationship: negatively_regulates GO:0022414 ! reproductive process
-created_by: midori
+created_by: mah
 creation_date: 2010-11-10T02:44:05Z
 
 [Term]
@@ -19864,7 +19743,7 @@ is_a: GO:2000241 ! regulation of reproductive process
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0022414 ! reproductive process
 relationship: positively_regulates GO:0022414 ! reproductive process
-created_by: midori
+created_by: mah
 creation_date: 2010-11-10T02:44:08Z
 
 [Term]
@@ -19914,7 +19793,7 @@ is_a: GO:0044092 ! negative regulation of molecular function
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0038023 ! signaling receptor activity
 relationship: negatively_regulates GO:0038023 ! signaling receptor activity
-created_by: rfoulger
+created_by: bf
 creation_date: 2010-12-02T09:28:47Z
 
 [Term]
@@ -19927,7 +19806,7 @@ is_a: GO:0044093 ! positive regulation of molecular function
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0038023 ! signaling receptor activity
 relationship: positively_regulates GO:0038023 ! signaling receptor activity
-created_by: rfoulger
+created_by: bf
 creation_date: 2010-12-02T09:28:50Z
 
 [Term]
@@ -20127,7 +20006,7 @@ is_a: GO:0090183 ! regulation of kidney development
 intersection_of: GO:0008150 ! biological_process
 intersection_of: regulates GO:0035850 ! epithelial cell differentiation involved in kidney development
 relationship: regulates GO:0035850 ! epithelial cell differentiation involved in kidney development
-created_by: rfoulger
+created_by: bf
 creation_date: 2011-05-16T04:23:52Z
 
 [Term]
@@ -20141,7 +20020,7 @@ is_a: GO:2000696 ! regulation of epithelial cell differentiation involved in kid
 intersection_of: GO:0008150 ! biological_process
 intersection_of: negatively_regulates GO:0035850 ! epithelial cell differentiation involved in kidney development
 relationship: negatively_regulates GO:0035850 ! epithelial cell differentiation involved in kidney development
-created_by: rfoulger
+created_by: bf
 creation_date: 2011-05-16T04:23:55Z
 
 [Term]
@@ -20155,7 +20034,7 @@ is_a: GO:2000696 ! regulation of epithelial cell differentiation involved in kid
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0035850 ! epithelial cell differentiation involved in kidney development
 relationship: positively_regulates GO:0035850 ! epithelial cell differentiation involved in kidney development
-created_by: rfoulger
+created_by: bf
 creation_date: 2011-05-16T04:23:57Z
 
 [Term]
@@ -20371,4 +20250,12 @@ name: regulates
 namespace: external
 xref: RO:0002211
 is_transitive: true
+
+[Typedef]
+id: term_tracker_item
+name: term tracker item
+namespace: external
+xref: IAO:0000233
+is_metadata_tag: true
+is_class_level: true
 

@@ -7,19 +7,19 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/xpo.owl>
+Import(<http://purl.obolibrary.org/obo/xpo/imports/bfo_import.owl>)
+Import(<http://purl.obolibrary.org/obo/xpo/imports/xao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/xpo/patterns/templates/xpo-xrefs.owl>)
 Import(<http://purl.obolibrary.org/obo/xpo/patterns/templates/xpo-obsolete.owl>)
-Import(<http://purl.obolibrary.org/obo/xpo/patterns/templates/xpo-replaced.owl>)
-Import(<http://purl.obolibrary.org/obo/xpo/imports/bfo_import.owl>)
-Import(<http://purl.obolibrary.org/obo/xpo/imports/chebi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/xpo/imports/go_import.owl>)
 Import(<http://purl.obolibrary.org/obo/xpo/imports/iao_import.owl>)
-Import(<http://purl.obolibrary.org/obo/xpo/imports/nbo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/xpo/imports/pato_import.owl>)
+Import(<http://purl.obolibrary.org/obo/xpo/imports/chebi_import.owl>)
+Import(<http://purl.obolibrary.org/obo/xpo/patterns/templates/xpo-replaced.owl>)
+Import(<http://purl.obolibrary.org/obo/xpo/imports/nbo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/xpo/imports/ro_import.owl>)
-Import(<http://purl.obolibrary.org/obo/xpo/imports/xao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/xpo/patterns/definitions.owl>)
-Annotation(<http://purl.org/dc/elements/1.1/description> "The XPO represents phenotypes occurring throughout the development of the African frogs Xenopus laevis and tropicalis."^^xsd:string)
+Annotation(<http://purl.org/dc/elements/1.1/description> "XPO represents anatomical, cellular, and gene function phenotypes occurring throughout the development of the African frogs Xenopus laevis and tropicalis."^^xsd:string)
 Annotation(<http://purl.org/dc/elements/1.1/title> "Xenopus Phenotype Ontology"^^xsd:string)
 Annotation(<http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/3.0/>)
 
@@ -34,10 +34,10 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/XPO_00000000> (Xenopus Phenotype)
+# Class: <http://purl.obolibrary.org/obo/XPO_00000000> (Xenopus phenotype)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_00000000> "Phenotype of the Xenopus African clawed frog."^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_00000000> "Xenopus Phenotype"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/XPO_00000000> "A phenotype observed in Xenopus."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/XPO_00000000> "Xenopus phenotype"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/XPO_00000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002314> owl:Thing))))
 
 
