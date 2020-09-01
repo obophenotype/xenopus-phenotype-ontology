@@ -31,3 +31,9 @@ xpo-xenbase.owl: $(SIMPLESEEDPLUS) #$(SRC) $(OTHER_SRC)
 xpo-xenbase.obo: xpo-xenbase.owl
 	$(ROBOT) merge -i xpo-xenbase.owl \
 		convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
+		
+SPARQL_VALIDATION_CHECKS := equivalent-classes trailing-whitespace owldef-self-reference xref-syntax two-labels
+SPARQL_VALIDATION_QUERIES = $(foreach V,$(SPARQL_VALIDATION_CHECKS),$(SPARQLDIR)/$V-violation.sparql)
+
+sparql_test: $(SRCMERGED)
+	$(ROBOT) verify  --catalog catalog-v001.xml -i $< --queries $(SPARQL_VALIDATION_QUERIES) -O reports/
