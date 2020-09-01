@@ -1,0 +1,11 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?x ?lab1 ?lab2 WHERE {
+	?x rdf:type owl:Class .
+	?x rdfs:label ?lab1 .
+	?x rdfs:label ?lab2 .
+	FILTER(?lab1 != ?lab2)
+}
+ORDER BY ?x
