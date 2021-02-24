@@ -10,12 +10,14 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/xpo/imports/iao_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/xpo/releases/2021-01-03/imports/iao_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/xpo/releases/2021-02-21/imports/iao_import.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-02-21</owl:versionInfo>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -23,37 +25,37 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179"/>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000180 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180"/>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
@@ -62,7 +64,7 @@
         <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">2012-04-05: 
+        <obo:IAO_0000116 xml:lang="en">2012-04-05:
 Barry Smith
 
 The official OBI definition, explaining the meaning of a class or property: &apos;Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions&apos;  is terrible.
@@ -73,13 +75,13 @@ A statement of necessary and sufficient conditions explaining the meaning of an 
 
 Alan Ruttenberg
 
-Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can&apos;t be evaluated by those criteria. 
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can&apos;t be evaluated by those criteria.
 
 On the specifics of the proposed definition:
 
-We don&apos;t have definitions of &apos;meaning&apos; or &apos;expression&apos; or &apos;property&apos;. For &apos;reference&apos; in the intended sense I think we use the term &apos;denotation&apos;. For &apos;expression&apos;, I think we you mean symbol, or identifier. For &apos;meaning&apos; it differs for class and property. For class we want documentation that let&apos;s the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let&apos;s the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The &apos;intended reader&apos; part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+We don&apos;t have definitions of &apos;meaning&apos; or &apos;expression&apos; or &apos;property&apos;. For &apos;reference&apos; in the intended sense I think we use the term &apos;denotation&apos;. For &apos;expression&apos;, I think we you mean symbol, or identifier. For &apos;meaning&apos; it differs for class and property. For class we want documentation that let&apos;s the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let&apos;s the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The &apos;intended reader&apos; part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition.
 
-Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable.
 
 We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  </obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
@@ -87,61 +89,61 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">definition</rdfs:label>
     </owl:AnnotationProperty>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000601 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601"/>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000602 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602"/>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0010000 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0010000"/>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
@@ -155,34 +157,34 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:comment xml:lang="en">Add as annotation triples in the granting ontology</rdfs:comment>
         <rdfs:label xml:lang="en">term replaced by</rdfs:label>
     </owl:AnnotationProperty>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -190,7 +192,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
@@ -213,7 +215,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <rdfs:label xml:lang="en">part of</rdfs:label>
         <rdfs:seeAlso>http://www.obofoundry.org/ro/#OBO_REL:part_of</rdfs:seeAlso>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
@@ -234,7 +236,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <rdfs:label xml:lang="en">has part</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000066 -->
@@ -260,7 +262,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">occurs in</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000067 -->
@@ -272,7 +274,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">contains process</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
@@ -282,7 +284,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000112 xml:lang="en">This document is about information artifacts and their representations</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of &quot;mentions&quot; relation. Weaken the is_about relationship to be primitive. 
+        <obo:IAO_0000116 xml:lang="en">7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of &quot;mentions&quot; relation. Weaken the is_about relationship to be primitive.
 
 We will try to build it back up by elaborating the various subproperties that are more precisely defined.
 
@@ -291,7 +293,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000119 xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
         <rdfs:label xml:lang="en">is about</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
@@ -307,7 +309,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <rdfs:label xml:lang="en">inheres in</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
@@ -324,10 +326,10 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <rdfs:label xml:lang="en">bearer of</rdfs:label>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -335,7 +337,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
@@ -367,7 +369,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <owl:annotatedTarget xml:lang="en">An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/001-001"/>
     </owl:Axiom>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
@@ -451,7 +453,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <owl:annotatedTarget xml:lang="en">A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/008-002"/>
     </owl:Axiom>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
@@ -522,7 +524,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <owl:annotatedTarget>(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/079-001"/>
     </owl:Axiom>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
@@ -589,7 +591,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <owl:annotatedTarget>(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/017-002"/>
     </owl:Axiom>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
@@ -635,7 +637,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <owl:annotatedTarget>(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/105-001"/>
     </owl:Axiom>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
@@ -682,7 +684,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <owl:annotatedTarget>(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/050-003"/>
     </owl:Axiom>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
@@ -712,7 +714,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <owl:annotatedTarget>(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/074-001"/>
     </owl:Axiom>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
@@ -727,10 +729,10 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000116 xml:lang="en">2009-03-16: data item deliberatly ambiguous: we merged data set and datum to be one entity, not knowing how to define singular versus plural. So data item is more general than datum.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: removed datum as alternative term as datum specifically refers to singular form, and is thus not an exact synonym.</obo:IAO_0000116>
         <obo:IAO_0000116>2014-03-31: See discussion at http://odontomachus.wordpress.com/2014/03/30/aboutness-objects-propositions/</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">JAR: datum     -- well, this will be very tricky to define, but maybe some 
-information-like stuff that might be put into a computer and that is 
-meant, by someone, to denote and/or to be interpreted by some 
-process... I would include lists, tables, sentences... I think I might 
+        <obo:IAO_0000116 xml:lang="en">JAR: datum     -- well, this will be very tricky to define, but maybe some
+information-like stuff that might be put into a computer and that is
+meant, by someone, to denote and/or to be interpreted by some
+process... I would include lists, tables, sentences... I think I might
 defer to Barry, or to Brian Cantwell Smith
 
 JAR: A data item is an approximately justified approximately true approximate belief</obo:IAO_0000116>
@@ -740,7 +742,7 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000118 xml:lang="en">data</obo:IAO_0000118>
         <rdfs:label xml:lang="en">data item</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
@@ -765,7 +767,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
         <rdfs:label xml:lang="en">information content entity</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000078 -->
@@ -796,7 +798,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000119 xml:lang="en">OBI_0000266</obo:IAO_0000119>
         <rdfs:label xml:lang="en">curation status specification</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000102 -->
@@ -808,7 +810,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
         <rdfs:label xml:lang="en">data about an ontology part</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000225 -->
@@ -834,7 +836,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <rdfs:label xml:lang="en">obsolescence reason specification</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000409 -->
@@ -857,7 +859,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000119 xml:lang="en">Barry Smith, Werner Ceusters</obo:IAO_0000119>
         <rdfs:label xml:lang="en">denotator type</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000051 -->
@@ -869,7 +871,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
         <rdfs:label>morphology</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001241 -->
@@ -881,10 +883,10 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
         <rdfs:label>physical object quality</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -892,7 +894,7 @@ Previous. An information content entity is a non-realizable information entity t
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000002 -->
@@ -902,7 +904,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000111 xml:lang="en">example to be eventually removed</obo:IAO_0000111>
         <rdfs:label xml:lang="en">example to be eventually removed</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000103 -->
@@ -914,7 +916,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
         <rdfs:label xml:lang="en">failed exploratory term</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000120 -->
@@ -925,7 +927,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000115 xml:lang="en">Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">metadata complete</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000121 -->
@@ -936,7 +938,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000115 xml:lang="en">Term created to ease viewing/sort terms for development purpose, and will not be included in a release</obo:IAO_0000115>
         <rdfs:label xml:lang="en">organizational term</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000122 -->
@@ -947,7 +949,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000115 xml:lang="en">Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking &quot;ready_for_release&quot; should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed &quot;ready_for_release&quot; will also derived from a chain of ancestor classes that are also &quot;ready_for_release.&quot;</obo:IAO_0000115>
         <rdfs:label xml:lang="en">ready for release</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000123 -->
@@ -958,7 +960,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000115 xml:lang="en">Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">metadata incomplete</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000124 -->
@@ -969,7 +971,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000115 xml:lang="en">Nothing done yet beyond assigning a unique class ID and proposing a preferred term.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">uncurated</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000125 -->
@@ -980,7 +982,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000115 xml:lang="en">All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pending final vetting</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000226 -->
@@ -990,7 +992,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000111 xml:lang="en">placeholder removed</obo:IAO_0000111>
         <rdfs:label xml:lang="en">placeholder removed</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000227 -->
@@ -1001,7 +1003,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000116 xml:lang="en">An editor note should explain what were the merged terms and the reason for the merge.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">terms merged</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000228 -->
@@ -1012,7 +1014,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000116 xml:lang="en">This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">term imported</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000229 -->
@@ -1023,7 +1025,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000116 xml:lang="en">This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">term split</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000410 -->
@@ -1036,7 +1038,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000119 xml:lang="en">A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf</obo:IAO_0000119>
         <rdfs:label xml:lang="en">universal</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000420 -->
@@ -1049,7 +1051,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <rdfs:label xml:lang="en">defined class</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000421 -->
@@ -1062,7 +1064,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <rdfs:label xml:lang="en">named class expression</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000423 -->
@@ -1075,7 +1077,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
         <rdfs:label xml:lang="en">to be replaced with external ontology term</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000428 -->
@@ -1088,10 +1090,10 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
         <rdfs:label xml:lang="en">requires discussion</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // General axioms
@@ -1126,4 +1128,3 @@ Previous. An information content entity is a non-realizable information entity t
 
 
 <!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
-
