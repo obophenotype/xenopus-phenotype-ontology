@@ -18,14 +18,14 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/xpo/imports/pato_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/xpo/releases/2021-02-21/imports/pato_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/xpo/releases/2021-02-24/imports/pato_import.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2020-08-02/pato.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-02-21</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-02-24</owl:versionInfo>
     </owl:Ontology>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -33,25 +33,25 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
@@ -60,55 +60,55 @@
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:label>definition</rdfs:label>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000424 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000424"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000589 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000589"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
@@ -116,13 +116,13 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
         <rdfs:label>term replaced by</rdfs:label>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002259 -->
@@ -130,13 +130,13 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002259">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002575 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002575"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002581 -->
@@ -145,7 +145,7 @@
         <obo:IAO_0000115>If R &lt;- P o Q is a defining property chain axiom, then it also holds that R -&gt; P o Q. Note that this cannot be expressed directly in OWL</obo:IAO_0000115>
         <rdfs:label>is a defining property chain axiom</rdfs:label>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002582 -->
@@ -154,31 +154,31 @@
         <obo:IAO_0000115>If R &lt;- P o Q is a defining property chain axiom, then (1) R -&gt; P o Q holds and (2) Q is either reflexive or locally reflexive. A corollary of this is that P SubPropertyOf R.</obo:IAO_0000115>
         <rdfs:label>is a defining property chain axiom where second argument is reflexive</rdfs:label>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002604 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002604"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0004049 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0004049"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0004050 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0004050"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0040042 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0040042"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/go#goslim_aspergillus -->
@@ -186,7 +186,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_aspergillus">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/go#goslim_candida -->
@@ -194,7 +194,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_candida">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/go#goslim_chembl -->
@@ -202,7 +202,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_chembl">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/go#goslim_generic -->
@@ -210,7 +210,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_generic">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/go#goslim_metagenomics -->
@@ -218,7 +218,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_metagenomics">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/go#goslim_pir -->
@@ -226,7 +226,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_pir">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/go#goslim_plant -->
@@ -234,7 +234,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_plant">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/go#goslim_pombe -->
@@ -242,7 +242,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_pombe">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/go#goslim_yeast -->
@@ -250,7 +250,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_yeast">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/pato#abnormal_slim -->
@@ -258,7 +258,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#abnormal_slim">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/pato#absent_slim -->
@@ -266,7 +266,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#absent_slim">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/pato#attribute_slim -->
@@ -274,7 +274,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#attribute_slim">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/pato#cell_quality -->
@@ -282,7 +282,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#cell_quality">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/pato#disposition_slim -->
@@ -290,7 +290,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#disposition_slim">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/pato#hpo_slim -->
@@ -298,7 +298,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#hpo_slim">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/pato#mpath_slim -->
@@ -306,7 +306,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#mpath_slim">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/pato#relational_slim -->
@@ -314,7 +314,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#relational_slim">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/pato#scalar_slim -->
@@ -322,7 +322,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#scalar_slim">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/pato#value_slim -->
@@ -330,7 +330,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#value_slim">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/ro/subsets#ro-eco -->
@@ -338,67 +338,67 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ro/subsets#ro-eco">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.org/dc/elements/1.1/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
-
+    
 
 
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-
+    
 
 
     <!-- http://purl.org/dc/terms/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
-
+    
 
 
     <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
 
     <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-
+    
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-
+    
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-
+    
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-
+    
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
-
+    
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
-
+    
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-
+    
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
@@ -406,64 +406,64 @@
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
         <rdfs:label>has_exact_synonym</rdfs:label>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
-
+    
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
-
+    
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-
+    
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
-
+    
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-
+    
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
-
+    
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
-
+    
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
-
+    
 
 
     <!-- http://xmlns.com/foaf/0.1/page -->
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/page"/>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -471,7 +471,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
@@ -511,7 +511,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
         <rdfs:seeAlso>http://www.obofoundry.org/ro/#OBO_REL:part_of</rdfs:seeAlso>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
@@ -548,7 +548,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedTarget>Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000062 -->
@@ -572,7 +572,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:label xml:lang="en">preceded by</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000063 -->
@@ -591,7 +591,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:label xml:lang="en">precedes</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000066 -->
@@ -617,7 +617,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">occurs in</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000067 -->
@@ -629,7 +629,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">contains process</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
@@ -646,7 +646,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <rdfs:label xml:lang="en">inheres in</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
@@ -663,7 +663,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <rdfs:label xml:lang="en">bearer of</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
@@ -680,7 +680,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000118 xml:lang="en">participates_in</obo:IAO_0000118>
         <rdfs:label xml:lang="en">participates in</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
@@ -702,7 +702,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <dc:source>http://www.obofoundry.org/ro/#OBO_REL:has_participant</dc:source>
         <rdfs:label xml:lang="en">has participant</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002013 -->
@@ -715,7 +715,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-24T09:30:46Z</oboInOwl:creation_date>
         <rdfs:label>has regulatory component activity</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002014 -->
@@ -729,7 +729,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:comment>By convention GO molecular functions are classified by their effector function.  Internal regulatory functions are treated as components.  For example, NMDA glutmate receptor activity is a cation channel activity with positive regulatory component &apos;glutamate binding&apos; and negative regulatory components including &apos;zinc binding&apos; and &apos;magnesium binding&apos;.</rdfs:comment>
         <rdfs:label>has negative regulatory component activity</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002015 -->
@@ -743,7 +743,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:comment>By convention GO molecular functions are classified by their effector function and internal regulatory functions are treated as components.  So, for example calmodulin has a protein binding activity that has positive regulatory component activity calcium binding activity. Receptor tyrosine kinase activity is a tyrosine kinase activity that has positive regulatory component &apos;ligand binding&apos;.</rdfs:comment>
         <rdfs:label>has positive regulatory component activity</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002017 -->
@@ -755,7 +755,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:comment>A &apos;has component activity&apos; B if A is A and B are molecular functions (GO_0003674) and A has_component B.</rdfs:comment>
         <rdfs:label>has component activity</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002018 -->
@@ -769,7 +769,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-24T09:49:21Z</oboInOwl:creation_date>
         <rdfs:label>has component process</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002022 -->
@@ -788,7 +788,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedTarget>Process(P2) is directly regulated by process(P1) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dos</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002023 -->
@@ -807,7 +807,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedTarget>Process(P2) is directly negatively regulated by process(P1) iff: P1 negatively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  negatively regulates the kinase activity (P2) of protein B then P2 directly negatively regulated by P1.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dos</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002024 -->
@@ -826,7 +826,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedTarget>Process(P2) is directly postively regulated by process(P1) iff: P1 positively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding positively regulates the kinase activity (P2) of protein B then P2 is directly postively regulated by P1.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dos</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002025 -->
@@ -847,7 +847,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedTarget>A &apos;has effector activity&apos; B if A and B are GO molecular functions (GO_0003674),  A &apos;has component activity&apos; B and B is the effector (output function) of B.  Each compound function has only one effector activity.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dos</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002086 -->
@@ -860,7 +860,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:comment xml:lang="en">X ends_after Y iff: end(Y) before_or_simultaneous_with end(X)</rdfs:comment>
         <rdfs:label xml:lang="en">ends after</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002087 -->
@@ -873,7 +873,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:comment xml:lang="en">X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)</rdfs:comment>
         <rdfs:label xml:lang="en">immediately preceded by</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002090 -->
@@ -888,7 +888,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:comment xml:lang="en">X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)</rdfs:comment>
         <rdfs:label xml:lang="en">immediately precedes</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002131 -->
@@ -927,7 +927,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         </owl:annotatedTarget>
         <obo:RO_0002582 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obo:RO_0002582>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002180 -->
@@ -943,7 +943,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:label xml:lang="en">has component</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Componency"/>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002211 -->
@@ -971,7 +971,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000600 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obo:IAO_0000600>
         <rdfs:label xml:lang="en">regulates</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002212 -->
@@ -987,7 +987,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:RO_0004050 rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
         <rdfs:label xml:lang="en">negatively regulates</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002213 -->
@@ -1008,7 +1008,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:RO_0004049 rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
         <rdfs:label xml:lang="en">positively regulates</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002215 -->
@@ -1029,7 +1029,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:label xml:lang="en">capable of</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002216 -->
@@ -1057,7 +1057,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         </owl:annotatedTarget>
         <obo:RO_0002582 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obo:RO_0002582>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002222 -->
@@ -1074,7 +1074,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:comment>A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.</rdfs:comment>
         <rdfs:label xml:lang="en">temporally related to</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002233 -->
@@ -1091,7 +1091,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:label xml:lang="en">has input</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002263 -->
@@ -1107,7 +1107,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:label>acts upstream of</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://wiki.geneontology.org/index.php/Acts_upstream_of"/>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002264 -->
@@ -1124,7 +1124,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:label>acts upstream of or within</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://wiki.geneontology.org/index.php/Acts_upstream_of_or_within"/>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002304 -->
@@ -1137,7 +1137,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:comment>holds between x and y if and only if x is causally upstream of y and the progression of x increases the frequency, rate or extent of y</rdfs:comment>
         <rdfs:label>causally upstream of, positive effect</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002305 -->
@@ -1150,7 +1150,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:comment>holds between x and y if and only if x is causally upstream of y and the progression of x decreases the frequency, rate or extent of y</rdfs:comment>
         <rdfs:label>causally upstream of, negative effect</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002314 -->
@@ -1182,7 +1182,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         </owl:annotatedTarget>
         <obo:RO_0002582 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obo:RO_0002582>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002323 -->
@@ -1194,7 +1194,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <rdfs:label xml:lang="en">mereotopologically related to</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002327 -->
@@ -1221,7 +1221,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000232>This relation is currently used experimentally by the Gene Ontology Consortium. It may not be stable and may be obsoleted at some future time.</obo:IAO_0000232>
         <rdfs:label xml:lang="en">enables</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002328 -->
@@ -1232,7 +1232,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000232>This is a grouping relation that collects relations used for the purpose of connecting structure and function</obo:IAO_0000232>
         <rdfs:label xml:lang="en">functionally related to</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002329 -->
@@ -1257,7 +1257,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         </owl:annotatedTarget>
         <obo:RO_0002581 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obo:RO_0002581>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002331 -->
@@ -1280,7 +1280,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:label xml:lang="en">involved in</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://wiki.geneontology.org/index.php/Involved_in"/>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002333 -->
@@ -1292,7 +1292,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <rdfs:label xml:lang="en">enabled by</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002334 -->
@@ -1308,7 +1308,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <rdfs:label xml:lang="en">regulated by</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002335 -->
@@ -1320,7 +1320,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <rdfs:label xml:lang="en">negatively regulated by</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002336 -->
@@ -1332,7 +1332,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <rdfs:label xml:lang="en">positively regulated by</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002352 -->
@@ -1346,7 +1346,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:label xml:lang="en">input of</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002404 -->
@@ -1360,7 +1360,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <rdfs:label xml:lang="en">causally downstream of</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002405 -->
@@ -1373,7 +1373,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <rdfs:label xml:lang="en">immediately causally downstream of</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002410 -->
@@ -1385,7 +1385,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
 To define causal relations in an activity-flow type network, we make use of 3 primitives:
 
- * Temporal: how do the intervals of the two occurrents relate?
+ * Temporal: how do the intervals of the two occurrents relate? 
  * Is the causal relation regulatory?
  * Is the influence positive or negative
 
@@ -1400,7 +1400,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000232>Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect.</obo:IAO_0000232>
         <rdfs:label xml:lang="en">causally related to</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002411 -->
@@ -1414,7 +1414,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <rdfs:label xml:lang="en">causally upstream of</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002412 -->
@@ -1428,7 +1428,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:RO_0002575 rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
         <rdfs:label xml:lang="en">immediately causally upstream of</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002418 -->
@@ -1444,7 +1444,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasRelatedSynonym>affects</oboInOwl:hasRelatedSynonym>
         <rdfs:label>causally upstream of or within</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002427 -->
@@ -1458,7 +1458,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <rdfs:label>causally downstream of or within</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002428 -->
@@ -1478,7 +1478,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <rdfs:label>involved in regulation of</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002429 -->
@@ -1498,7 +1498,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:RO_0004049 rdf:resource="http://purl.obolibrary.org/obo/RO_0002428"/>
         <rdfs:label>involved in positive regulation of</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002430 -->
@@ -1518,7 +1518,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:RO_0004050 rdf:resource="http://purl.obolibrary.org/obo/RO_0002428"/>
         <rdfs:label>involved in negative regulation of</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002431 -->
@@ -1533,7 +1533,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000118>involved in or reguates</obo:IAO_0000118>
         <rdfs:label>involved in or involved in regulation of</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002432 -->
@@ -1569,7 +1569,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref>GOC:cjm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dos</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002434 -->
@@ -1589,7 +1589,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MI_0914</rdfs:seeAlso>
         <foaf:page rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/oborel/obo-relations/wiki/InteractionRelations</foaf:page>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002436 -->
@@ -1605,7 +1605,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/ECO_0000353"/>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MI_0915</rdfs:seeAlso>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002447 -->
@@ -1617,7 +1617,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000118>An interaction relation between x and y in which x catalyzes a reaction in which a phosphate group is added to y.</obo:IAO_0000118>
         <rdfs:label>phosphorylates</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002448 -->
@@ -1640,7 +1640,7 @@ A and B can be physically interacting but not necessarily. Immediately upstream 
         <oboInOwl:hasExactSynonym>molecularly controls</oboInOwl:hasExactSynonym>
         <rdfs:label>directly regulates activity of</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002449 -->
@@ -1654,7 +1654,7 @@ A and B can be physically interacting but not necessarily. Immediately upstream 
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002630"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002333"/>
         </owl:propertyChainAxiom>
-        <obo:IAO_0000115>The entity A, immediately upstream of the entity B, has an activity that negatively regulates an activity performed by B.
+        <obo:IAO_0000115>The entity A, immediately upstream of the entity B, has an activity that negatively regulates an activity performed by B. 
 For example, A and B may be gene products and binding of B by A negatively regulates the kinase activity of B.</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <obo:IAO_0000117>Vasundra Touré</obo:IAO_0000117>
@@ -1662,7 +1662,7 @@ For example, A and B may be gene products and binding of B by A negatively regul
         <oboInOwl:hasExactSynonym>molecularly decreases activity of</oboInOwl:hasExactSynonym>
         <rdfs:label>directly negatively regulates activity of</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002450 -->
@@ -1676,7 +1676,7 @@ For example, A and B may be gene products and binding of B by A negatively regul
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002629"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002333"/>
         </owl:propertyChainAxiom>
-        <obo:IAO_0000115>The entity A, immediately upstream of the entity B, has an activity that positively regulates an activity performed by B.
+        <obo:IAO_0000115>The entity A, immediately upstream of the entity B, has an activity that positively regulates an activity performed by B. 
 For example, A and B may be gene products and binding of B by A positively regulates the kinase activity of B.</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <obo:IAO_0000117>Vasundra Touré</obo:IAO_0000117>
@@ -1684,7 +1684,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <oboInOwl:hasExactSynonym>molecularly increases activity of</oboInOwl:hasExactSynonym>
         <rdfs:label>directly positively regulates activity of</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002464 -->
@@ -1694,7 +1694,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000232>This property or its subproperties is not to be used directly. These properties exist as helper properties that are used to support OWL reasoning.</obo:IAO_0000232>
         <rdfs:label>helper property (not for use in curation)</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002479 -->
@@ -1720,7 +1720,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         </owl:annotatedTarget>
         <obo:RO_0002581 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obo:RO_0002581>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002481 -->
@@ -1730,7 +1730,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <rdfs:label>is kinase activity</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002500 -->
@@ -1742,7 +1742,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
         <rdfs:label>causal agent in process</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002501 -->
@@ -1757,7 +1757,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000232>Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect.</obo:IAO_0000232>
         <rdfs:label>causal relation between processes</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002502 -->
@@ -1767,7 +1767,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <rdfs:label>depends on</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000169"/>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002506 -->
@@ -1782,7 +1782,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000232>Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect.</obo:IAO_0000232>
         <rdfs:label>causal relation between entities</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002559 -->
@@ -1795,7 +1795,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000589>causally influenced by (entity-centric)</obo:IAO_0000589>
         <rdfs:label>causally influenced by</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002563 -->
@@ -1807,7 +1807,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:N-Ary_Relation_Pattern_%28OWL_2%29"/>
         <foaf:page rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/oborel/obo-relations/wiki/InteractionRelations</foaf:page>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002564 -->
@@ -1817,7 +1817,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <rdfs:label>molecular interaction relation helper property</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002566 -->
@@ -1843,7 +1843,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000589>causally influences (entity-centric)</obo:IAO_0000589>
         <rdfs:label>causally influences</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002578 -->
@@ -1858,7 +1858,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:RO_0002575 rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
         <rdfs:label>directly regulates</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002584 -->
@@ -1875,7 +1875,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <rdfs:label>has part structure that is capable of</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002595 -->
@@ -1890,7 +1890,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
         <rdfs:label>causal relation between material entity and a process</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002596 -->
@@ -1906,7 +1906,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
         <rdfs:label>capable of regulating</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002597 -->
@@ -1921,7 +1921,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
         <rdfs:label>capable of negatively regulating</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002598 -->
@@ -1937,7 +1937,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
         <rdfs:label>capable of positively regulating</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002608 -->
@@ -1948,7 +1948,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
         <rdfs:label>process has causal agent</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002629 -->
@@ -1962,7 +1962,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:RO_0004049 rdf:resource="http://purl.obolibrary.org/obo/RO_0002578"/>
         <rdfs:label>directly positively regulates</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002630 -->
@@ -1976,7 +1976,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:RO_0004050 rdf:resource="http://purl.obolibrary.org/obo/RO_0002578"/>
         <rdfs:label>directly negatively regulates</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0004031 -->
@@ -1992,7 +1992,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-25T23:20:13Z</oboInOwl:creation_date>
         <rdfs:label>enables subfunction</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0004032 -->
@@ -2009,7 +2009,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <rdfs:label>acts upstream of or within, positive effect</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://wiki.geneontology.org/index.php/Acts_upstream_of_or_within,_positive_effect"/>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0004033 -->
@@ -2025,7 +2025,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-26T23:49:51Z</oboInOwl:creation_date>
         <rdfs:label>acts upstream of or within, negative effect</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0004034 -->
@@ -2044,7 +2044,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <rdfs:label>acts upstream of, positive effect</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://wiki.geneontology.org/index.php/Acts_upstream_of,_positive_effect"/>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0004035 -->
@@ -2063,7 +2063,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <rdfs:label>acts upstream of, negative effect</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://wiki.geneontology.org/index.php/Acts_upstream_of,_negative_effect"/>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0004046 -->
@@ -2075,7 +2075,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-03-13T23:55:05Z</oboInOwl:creation_date>
         <rdfs:label>causally upstream of or within, negative effect</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0004047 -->
@@ -2087,7 +2087,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-03-13T23:55:19Z</oboInOwl:creation_date>
         <rdfs:label>causally upstream of or within, positive effect</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0011002 -->
@@ -2100,7 +2100,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000117>Vasundra Touré</obo:IAO_0000117>
         <rdfs:label>regulates activity of</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/pato#correlates_with -->
@@ -2110,7 +2110,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <oboInOwl:id>correlates_with</oboInOwl:id>
         <rdfs:label>correlates_with</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to -->
@@ -2132,7 +2132,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>q1 decreased_in_magnitude_relative_to q2 if and only if magnitude(q1) &lt; magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/pato#different_in_magnitude_relative_to -->
@@ -2151,7 +2151,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>q1 different_in_magnitude_relative_to q2 if and only if magnitude(q1) NOT =~ magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/pato#has_cross_section -->
@@ -2169,7 +2169,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>s3 has_cross_section s3 if and only if : there exists some 2d plane that intersects the bearer of s3, and the impression of s3 upon that plane has shape quality s2.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to -->
@@ -2191,7 +2191,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>q1 increased_in_magnitude_relative_to q2 if and only if magnitude(q1) &gt; magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/pato#reciprocal_of -->
@@ -2209,7 +2209,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>q1 reciprocal_of q2 if and only if : q1 and q2 are relational qualities and a phenotype e q1 e2 mutually implies a phenotype e2 q2 e.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/pato#towards -->
@@ -2220,10 +2220,10 @@ For example, A and B may be gene products and binding of B by A positively regul
         <rdfs:comment>Relation binding a relational quality or disposition to the relevant type of entity.</rdfs:comment>
         <rdfs:label>towards</rdfs:label>
     </owl:ObjectProperty>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -2231,7 +2231,7 @@ For example, A and B may be gene products and binding of B by A positively regul
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
@@ -2253,7 +2253,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000115 xml:lang="en">An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">continuant</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
@@ -2274,7 +2274,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000115 xml:lang="en">An entity that has temporal parts and that happens, unfolds or develops through time.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">occurrent</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
@@ -2291,7 +2291,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000115 xml:lang="en">A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">independent continuant</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
@@ -2301,7 +2301,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000115 xml:lang="en">An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">process</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
@@ -2316,7 +2316,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">quality</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
@@ -2332,7 +2332,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000115 xml:lang="en">A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">specifically dependent continuant</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
@@ -2342,7 +2342,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000115 xml:lang="en">An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">material entity</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0003674 -->
@@ -2352,7 +2352,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000589>molecular process</obo:IAO_0000589>
         <rdfs:label>molecular_function</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0003824 -->
@@ -2361,7 +2361,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003674"/>
         <rdfs:label>catalytic activity</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0005575 -->
@@ -2399,7 +2399,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>subcellular entity</owl:annotatedTarget>
         <oboInOwl:hasDbXref>NIF_Subcellular:nlx_subcell_100315</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
@@ -2437,7 +2437,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:pdt</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0016301 -->
@@ -2452,7 +2452,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         </rdfs:subClassOf>
         <rdfs:label>kinase activity</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0016740 -->
@@ -2461,7 +2461,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003824"/>
         <rdfs:label>transferase activity</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0016772 -->
@@ -2470,7 +2470,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0016740"/>
         <rdfs:label>transferase activity, transferring phosphorus-containing groups</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
@@ -2490,7 +2490,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000004 -->
@@ -2512,7 +2512,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality of inhering in a bearer by virtue of the bearer&apos;s disposition to move freely.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000014 -->
@@ -2535,7 +2535,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A composite chromatic quality composed of hue, saturation and intensity parts.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000025 -->
@@ -2561,7 +2561,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A single physical entity inhering in an bearer by virtue of the bearer&apos;s quantities or relative ratios of subparts.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000051 -->
@@ -2581,7 +2581,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality of a single physical entity inhering in the bearer by virtue of the bearer&apos;s size or shape or structure.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000052 -->
@@ -2603,7 +2603,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A morphological quality inhering in a bearer by virtue of the bearer&apos;s ratios of distances between its features (points, edges, surfaces and also holes etc).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000057 -->
@@ -2627,7 +2627,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality of a single process inhering in a bearer by virtue of the bearer&apos;s occurrence.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000060 -->
@@ -2651,7 +2651,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A spatial quality inhering in a bearer by virtue of the bearer&apos;s exhibiting repetition of placement of its parts.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000068 -->
@@ -2663,7 +2663,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <rdfs:comment>TODO: define this or obsolete it and move children somewhere else.</rdfs:comment>
         <rdfs:label>qualitative</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000069 -->
@@ -2682,7 +2682,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality inhering in a bearer by virtue of the whether the bearer differs from normal or average.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000070 -->
@@ -2717,7 +2717,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>The number of entities of this type that are part of the whole organism.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000083 -->
@@ -2736,7 +2736,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality that exists by virtue of being a particular point in the time of a cycle.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000117 -->
@@ -2756,7 +2756,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A morphology quality inhering in a bearer by virtue of the bearer&apos;s physical magnitude.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000119 -->
@@ -2776,7 +2776,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A 1-D extent quality inhering in a bearer by virtue of the bearer&apos;s vertical dimension of extension.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000122 -->
@@ -2797,7 +2797,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A 1-D extent quality which is equal to the distance between two points.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000125 -->
@@ -2818,7 +2818,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A physical quality that inheres in a bearer by virtue of the proportion of the bearer&apos;s amount of matter.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000133 -->
@@ -2844,7 +2844,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A spatial quality inhering in a bearer by virtue of the bearer&apos;s placement which is defined by the angle between the bearer and an axis, or the angle between the bearer and another object.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:JE</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000136 -->
@@ -2864,7 +2864,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000140 -->
@@ -2888,7 +2888,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A spatial quality inhering in a bearer by virtue of the bearer&apos;s spatial location relative to other objects in the vicinity.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000141 -->
@@ -2916,7 +2916,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>conformation</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:1000738</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000150 -->
@@ -2935,7 +2935,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A morphologic quality inhering in a bearer by virtue of the bearer&apos;s relative size, organization and distribution of its surface elements or the representation or invention of the appearance of its surface; visual and tactile surface characteristics.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000161 -->
@@ -2955,7 +2955,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality of a single process inhering in a bearer by virtue of the bearer&apos;s occurrence per unit time.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:melissa</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000169 -->
@@ -2975,7 +2975,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>An organismal quality inhering in a bearer or a population by virtue of the bearer&apos;s disposition to survive and develop normally or the number of surviving individuals in a given population.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000186 -->
@@ -2995,7 +2995,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>An organismal quality inhering in a bearer by virtue of the bearer&apos;s behavior aggregate of the responses or reactions or movements in a given situation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000297 -->
@@ -3019,7 +3019,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality of a process which ends earlier than the natural end time or reference process.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:LC</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000299 -->
@@ -3040,7 +3040,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A mobility quality of inhering in a bearer by virtue of the bearer&apos;s disposition to move freely.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000330 -->
@@ -3062,7 +3062,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A spatial pattern inhering in a bearer by virtue of the bearer&apos;s magnitude of or the relationships between its repeated parts lack consistency.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000402 -->
@@ -3086,7 +3086,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A branchiness quality inhering in a bearer by virtue of the bearer&apos;s having branches.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000404 -->
@@ -3114,7 +3114,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A shape quality inhering in a bearer by virtue of the bearer&apos;s being curled or wound (especially in concentric rings or spirals).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000406 -->
@@ -3136,7 +3136,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A curvature quality inhering in a bearer by virtue of the bearer&apos;s having or being marked by a curve or smoothly rounded bend.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000440 -->
@@ -3158,7 +3158,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A pattern quality inhering in a bearer by virtue of the bearer&apos;s having a repeatable or predictable placement.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000460 -->
@@ -3184,7 +3184,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality inhering in a bearer by virtue of the bearer&apos;s deviation from normal or average.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000461 -->
@@ -3207,7 +3207,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality inhering in a bearer by virtue of the bearer&apos;s exhibiting no deviation from normal or average.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000462 -->
@@ -3246,7 +3246,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality denoting the lack of an entity.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thefreedictionary.:thefreedictionary.</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000467 -->
@@ -3268,7 +3268,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality inhering in a bearer by virtue of the bearer&apos;s existence.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000470 -->
@@ -3307,7 +3307,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>An amount which is relatively high.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000502 -->
@@ -3327,7 +3327,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality of a process which starts later than the natural start time or the reference process.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:LC</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000569 -->
@@ -3360,7 +3360,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A height which is relatively low.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000570 -->
@@ -3393,7 +3393,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A height which is relatively high.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000573 -->
@@ -3426,7 +3426,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A length quality which is relatively large.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000574 -->
@@ -3461,7 +3461,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A length quality which is relatively small.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000586 -->
@@ -3499,7 +3499,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A size quality which is relatively high.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000587 -->
@@ -3536,7 +3536,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A size quality which is relatively low.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000591 -->
@@ -3573,7 +3573,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A thickness which is relatively high.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000592 -->
@@ -3609,7 +3609,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A thickness which is relatively low.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000595 -->
@@ -3644,7 +3644,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A volume which is relatively high.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000596 -->
@@ -3679,7 +3679,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A volume which is relatively low.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000599 -->
@@ -3712,7 +3712,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A width which is relatively small.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000600 -->
@@ -3747,7 +3747,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A width which is relatively large.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000608 -->
@@ -3769,7 +3769,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A morphological quality inhering in a bearer by virtue of the bearer&apos;s affording blocked passage or view.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">answers.com:answers.com</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000609 -->
@@ -3788,7 +3788,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A morphological quality inhering in a bearer by virtue of the bearer&apos;s affording not completed blocked passage or view.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000610 -->
@@ -3808,7 +3808,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A morphological quality inhering in a bearer by virtue of the bearer&apos;s affording unobstructed passage or view.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">answers.com:answers.com</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000614 -->
@@ -3828,7 +3828,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A pattern where all the repeated elements are oriented in the same direction.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:MAH</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000615 -->
@@ -3848,7 +3848,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>An anterioralized quality inhering in a bearer by virtue of the bearer&apos;s gross morphology containing only what are normally anterior structures.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000617 -->
@@ -3869,7 +3869,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A shape quality inhering in a bearer by virtue of the bearer&apos;s having one or more angle(s) in its length.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:MAH</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000620 -->
@@ -3890,7 +3890,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A dorsalized quality inhering in a bearer by virtue of the bearer&apos;s gross morphology containing only what are normally dorsal structures.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:melissa</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000622 -->
@@ -3910,7 +3910,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A positional quality inhering in a bearer by virtue of the bearer&apos;s being upright in position or posture.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000625 -->
@@ -3932,7 +3932,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>An oriented quality inhering in a bearer by virtue of the bearer&apos;s being reversed in position, order, or condition.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000628 -->
@@ -3955,7 +3955,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A positional quality inhering in a bearer by virtue the bearer&apos;s being changed in abnormal position.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000630 -->
@@ -3976,7 +3976,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A posterioralized quality inhering in a bearer by virtue of the bearer&apos;s gross morphology containing only what are normally posterior structures.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000636 -->
@@ -3997,7 +3997,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A ventralized quality inhering in a bearer by virtue of the bearer&apos;s gross morphology containing only what are normally ventral structures.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000642 -->
@@ -4024,7 +4024,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A structural quality inhering in a bearer by virtue of the bearer&apos;s being merged with another entity.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000646 -->
@@ -4045,7 +4045,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A morphological quality inhering in a bearer by virtue of the bearer&apos;s being distorted during formation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:MAH</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000647 -->
@@ -4065,7 +4065,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A structural quality inhering in a bearer by virtue of the bearer&apos;s undergoing unprogrammed cell death.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Necrotic</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000694 -->
@@ -4089,7 +4089,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality of a process which starts earlier than the natural start time or the reference process.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:LC</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000763 -->
@@ -4109,7 +4109,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A behavioral quality inhering in a bearer by virtue of the bearer&apos;s being affected by loss of the ability to move a body part.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000911 -->
@@ -4143,7 +4143,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A rate which is relatively low.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000912 -->
@@ -4178,7 +4178,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A rate which is relatively high.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000915 -->
@@ -4198,7 +4198,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A 1-D extent quality which is equal to the dimension through an object as opposed to its length or width.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000918 -->
@@ -4219,7 +4219,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A 3-D extent quality inhering in a bearer by virtue of the bearer&apos;s amount of 3-dimensional space it occupies.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000921 -->
@@ -4240,7 +4240,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A 1-D extent quality which is equal to the distance from one side of an object to another side which is opposite.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000937 -->
@@ -4261,7 +4261,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A structural quality inhering in a bearer by virtue of the bearer&apos;s lacking organisation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001018 -->
@@ -4283,7 +4283,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001201 -->
@@ -4303,7 +4303,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A concave 3-D shape quality inhering in a bearer by virtue of the bearer&apos;s being shaped in the form of the letter Y.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001236 -->
@@ -4329,7 +4329,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality which inheres in an process.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001241 -->
@@ -4359,7 +4359,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality which inheres in a continuant.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001291 -->
@@ -4378,7 +4378,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A physical quality that inheres in an bearer by virtue of how that bearer interacts with electromagnetic radiation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Electromagnetic_radiation</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001300 -->
@@ -4397,7 +4397,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>An EM radiation quality in which the EM radiation is within the fiat range of the spectrum visible deemed to be light.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001303 -->
@@ -4417,7 +4417,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality inhering in a bearer by virtue of the bearer&apos;s disposition to varying or changing.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dictionary:http://dictionary.reference.com/</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001323 -->
@@ -4436,9 +4436,9 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001323"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A 2-D extent quality inhering in a bearer by virtue of the bearer&apos;s two dimensional extent.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Area</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:http://en.wikipedia.org/wiki/Area</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001334 -->
@@ -4457,9 +4457,9 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001334"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A length quality which is equal to the length of any straight line segment that passes through the center of a circle and whose endpoints are on the circular boundary.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Diameter</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:http://en.wikipedia.org/wiki/Diameter</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001396 -->
@@ -4477,7 +4477,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A monadic quality of continuant that exists at the cellular level of organisation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001397 -->
@@ -4497,7 +4497,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A cellular quality that arises by virtue of whether the bearer&apos;s disposition to differentiate into one or more mature cell types.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001422 -->
@@ -4516,7 +4516,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A viability quality inhering in a bearer by virtue of the cessation of the bearer&apos;s life.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001431 -->
@@ -4540,7 +4540,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>An emergent molecular quality that arises by virtue of the bearer&apos;s disposition to exhibit molecular attraction to another entity in contact.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001433 -->
@@ -4562,7 +4562,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality of a single process which describes the growth of an organism, structure, or group of organisms.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:MAH</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001450 -->
@@ -4587,7 +4587,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A structural quality which is held by a bearer when the latter exhibits an excessive accumulation of extracellular fluid.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thefreedictionary.com:thefreedictionary.com</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001468 -->
@@ -4608,7 +4608,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A curvature quality inhering in a bearer by virtue of the bearer&apos;s being curved towards the back or upper surface of an organism.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001469 -->
@@ -4629,7 +4629,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A curvature quality inhering in a bearer by virtue of the bearer&apos;s being curved towards the abdomen of an organism.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001473 -->
@@ -4650,7 +4650,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality inhering in a bearer by virtue of the bearer&apos;s being present in two copies.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dictionary.com:Dictionary.com</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001475 -->
@@ -4683,7 +4683,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A position which is relatively high.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001476 -->
@@ -4716,7 +4716,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A positional which is relatively low.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001490 -->
@@ -4735,7 +4735,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A growth quality of a process inhering in an organism, structure, or group of organisms by virtue of the bearer&apos;s reduced or increased growth.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:MAH</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001502 -->
@@ -4755,7 +4755,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A monadic quality of continuant inhering in a bearer by virtue of the bearer&apos;s being intricate and compounded.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001503 -->
@@ -4775,7 +4775,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A complexity quality in a bearer by virtue of the bearer&apos;s having few parts or being complicated or compound.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001542 -->
@@ -4794,7 +4794,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A phase which starts later than natural start point.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001555 -->
@@ -4827,7 +4827,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>The number of parts of a particular type that the bearer entity has. This is a relational quality, and thus holds between two entities: the bearer of the quality, and the type of parts.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001558 -->
@@ -4853,7 +4853,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality of a process inhering in a bearer by virtue of the bearer&apos;s lacking a processual part as specified by the additional entity.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001562 -->
@@ -4888,7 +4888,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A mass which is lower than normal or average.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001563 -->
@@ -4923,7 +4923,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A mass which is higher than normal or average.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001564 -->
@@ -4942,7 +4942,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality of a process inhering in a bearer by virtue of the bearer&apos;s processual parts.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001566 -->
@@ -4966,7 +4966,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A spatial pattern inhering in a bearer by virtue of the bearer&apos;s being spread out or scattered about or divided up.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001571 -->
@@ -4986,7 +4986,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A size quality inhering in a bearer by virtue of the bearer&apos;s being made wider or larger in all dimensions.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001591 -->
@@ -5005,7 +5005,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A surface shape quality inhering in a bearer by virtue of the bearer&apos;s exhibiting a degree of bending.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001592 -->
@@ -5037,7 +5037,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A curvature which is relatively high.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001593 -->
@@ -5069,7 +5069,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A curvature which is relatively low.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001598 -->
@@ -5091,7 +5091,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality inhering in a bearer by virtue of the bearer&apos;s extending out above or beyond a surface or boundary.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001617 -->
@@ -5112,7 +5112,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A morphological quality inhering in a bearer by virtue of the bearer&apos;s being distorted in form.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thefreedictionary.com:thefreedictionary.com</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001646 -->
@@ -5133,9 +5133,9 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001646"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A quality inhering into a bearer by virtue of the bearer&apos;s extending out above or beyond its surface or boundary and outwards in relation to the physical space occupied by another entity.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:nc</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PATOC:nc</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001649 -->
@@ -5154,7 +5154,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A curvature quality inhering in a bearer by virtue of the bearer&apos;s being curved towards the side.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001671 -->
@@ -5187,7 +5187,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A distribution which is relatively high.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001672 -->
@@ -5220,7 +5220,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A distribution which is relatively low.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001708 -->
@@ -5240,7 +5240,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A size quality inhering in an bearer by virtue of the bearer&apos;s extension in one dimension.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001709 -->
@@ -5260,7 +5260,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A size quality inhering in an bearer by virtue of the bearer&apos;s extension in two dimensions.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001710 -->
@@ -5280,7 +5280,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A size quality inhering in an bearer by virtue of the bearer&apos;s extension in three dimensions.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001714 -->
@@ -5312,7 +5312,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A diameter which is relatively large.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001715 -->
@@ -5344,7 +5344,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A diameter which is relatively small.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001739 -->
@@ -5363,7 +5363,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality that inheres in an bearer by virtue of how that bearer interacts with radiation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001752 -->
@@ -5384,7 +5384,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A heterochronic growth quality inhering in an organism, structure, or group of organisms by virtue of the bearer&apos;s increased growth.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:mh</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001770 -->
@@ -5404,7 +5404,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A viability quality inhering in a population by virtue of some of it&apos;s members&apos; ability to survive.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CVC</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001784 -->
@@ -5429,7 +5429,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A branched quality inhering in a bearer by virtue of the bearer&apos;s being divided into two branches.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thefreedictionary.com:thefreedictionary.com</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001786 -->
@@ -5455,7 +5455,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A shape quality inhering in a bearer by virtue of the bearer&apos;s being divided or broken up into parts or divisions.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">die.net:die.net</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001794 -->
@@ -5474,7 +5474,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A shape quality inhering in a bearer by virtue of the bearer&apos;s being wound in a continuous series of loops.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>Online_Dictionary:Online_Dictionary</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001795 -->
@@ -5508,7 +5508,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A coiling which is relatively high.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001796 -->
@@ -5542,7 +5542,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A coiling which is relatively low.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001799 -->
@@ -5562,7 +5562,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A shape quality inhering in a bearer by virtue of the bearer&apos;s exhibiting disturbance of its smoothness or regularity.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>.thefreedictionary.com:.thefreedictionary.com</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001802 -->
@@ -5581,7 +5581,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A pattern quality inhering in a bearer by virtue of the bearer&apos;s not being compact or dense in arrangement.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">answers.com:answers.com</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001857 -->
@@ -5602,7 +5602,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A shape quality in a bearer by virtue of the bearer&apos;s curving inward.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001875 -->
@@ -5626,7 +5626,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A shape quality inhering in a bearer by virtue of the bearer&apos;s having three angles.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wordreference:wordreference</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001879 -->
@@ -5648,7 +5648,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A concave 3-D shape quality inhering in a bearer by virtue of the bearer&apos;s being shaped in the form of the letter U.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001890 -->
@@ -5668,9 +5668,9 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001890"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A concave 3-D shape quality inhering in a bearer by virtue of the bearer&apos;s being divided into three branches.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InfoVisual:InfoVisual</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>InfoVisual:InfoVisual</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001920 -->
@@ -5689,7 +5689,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A positional quality inhering in a bearer by virtue of the bearer&apos;s being positioned towards the abdomen of an organism.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:mb</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001921 -->
@@ -5708,7 +5708,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A positional quality inhering in a bearer by virtue of the bearer&apos;s being positioned towards the front of an organism.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:mb</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001922 -->
@@ -5727,7 +5727,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A positional quality inhering in a bearer by virtue of the bearer&apos;s being positioned towards the rear of an organism.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:mb</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001924 -->
@@ -5746,7 +5746,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A positional quality inhering in a bearer by virtue of the bearer&apos;s being positioned towards the middle of an organism.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:mb</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001928 -->
@@ -5767,7 +5767,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A texture quality inhering in a bearer by virtue of a local accumulation of fluid underneath the surface of the bearer.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001956 -->
@@ -5792,7 +5792,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A variability quality inhering in a bearer by virtue of whether the bearer exhibits size variation or change.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001957 -->
@@ -5825,7 +5825,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A variability of size which is relatively low.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001958 -->
@@ -5858,7 +5858,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A variability of size which is relatively high.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001959 -->
@@ -5878,7 +5878,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A structural quality inhering in a bearer by virtue of the bearer&apos;s in which bundles of aligned anatomical fibers have become separated.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PATOC:mw</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001995 -->
@@ -5896,7 +5896,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality that inheres in an entire organism or part of an organism.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001997 -->
@@ -5935,7 +5935,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>An amount which is relatively low.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001999 -->
@@ -5955,7 +5955,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>The bearer of this quality has_part &lt; n of the indicated entity type, where n is the normal amount for a comparable organism. Note that the bearer of the quality is the whole, not the part. Formally: If a bearer entity e has fewer parts of type X at time t, then the number of instances x of X at t such that x part_of e is &lt; n, where n is either the normal number for comparable entities, or n is stated explicitly. This case includes the limit case, where the bearer lacks all parts of the specified type.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002000 -->
@@ -5984,7 +5984,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality of physical entities inhering in a bearer by virtue of the bearer&apos;s lacking a physical part as specified by the additional entity.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002001 -->
@@ -6021,7 +6021,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>The bearer of this quality has_part &lt; n AND has_part &gt; 0 of the indicated entity type, where n is the normal amount for a comparable organism. Note that the bearer of the quality is the whole, not the part. Formally: If a bearer entity e has fewer parts of type X at time t, then the number of instances x of X at t such that x part_of e is &lt; n, where n is either the normal number for comparable entities, or n is stated explicitly.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002002 -->
@@ -6060,7 +6060,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>The bearer of this quality has_part &gt; n of the indicated entity type, where n is the normal amount for a comparable organism. Note that the bearer of the quality is the whole, not the part.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002005 -->
@@ -6079,7 +6079,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>Surface shape that refers to the inward or outward curvature of the surface.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:MAH</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002006 -->
@@ -6100,7 +6100,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A shape that inheres in a 2 dimensional entity, such as a cross section or projection of a 3 dimensional entity.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002007 -->
@@ -6128,7 +6128,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A complete three dimensional shape in which for every line connecting pair of points on the object is within the object. Or: a shape lacking cavities. Contrast: concave.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002008 -->
@@ -6155,7 +6155,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A complete three dimensional shape in which there is a line connecting pair of points on the object that lies outside the object. Or: a shape with cavities. Contrast: concave.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002009 -->
@@ -6175,7 +6175,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A shape quality inhering in a bearer by virtue of the degree to which there are subdivisions or offshoots in a bearer entity.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:MAH</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002011 -->
@@ -6197,7 +6197,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A structural quality which is held by a bearer when the latter&apos;s disposition the presence of abnormally proliferating masses of cells.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:MAH</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002013 -->
@@ -6216,7 +6216,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A structural quality inhering in a bearer by virtue of whether the bearer forms a bundle of anatomical fibers, as of muscle or nerve.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>answers.com:http://www.answers.com/</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002019 -->
@@ -6235,7 +6235,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A growth quality of occurrent in which the growth of an organism, structure or group of organisms does not occur.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:MAH</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002021 -->
@@ -6256,7 +6256,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A convex 3-D shape quality inhering in a bearer by virtue of the bearer&apos;s resembling a cone (a 3-D shape with a round cross section that tapers).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Cone_(geometry)</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002034 -->
@@ -6278,7 +6278,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A shape quality inhering in a bearer by virtue of the bearer&apos;s being unseparated into parts or divisions.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002037 -->
@@ -6300,7 +6300,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A structural quality inhering in a bearer by virtue of the bearer exhibiting deterioration of its structure.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002051 -->
@@ -6334,7 +6334,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>An occurrence which is relatively high.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002052 -->
@@ -6368,7 +6368,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>An occurrence which is relatively low.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002057 -->
@@ -6402,7 +6402,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>An area which is relatively high.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002058 -->
@@ -6436,7 +6436,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>An area which is relatively low.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002062 -->
@@ -6450,7 +6450,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
         <rdfs:label>physical quality of a process</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002076 -->
@@ -6472,7 +6472,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A behavioral quality inhering in a bearer by virtue of the bearer&apos;s movement.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002083 -->
@@ -6494,7 +6494,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>Having extra or fewer parts.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002099 -->
@@ -6517,7 +6517,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A cellular quality inhering in a bearer by virtue of its stable specialization to a particular cell type.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002100 -->
@@ -6540,7 +6540,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A cellular quality inhering in a bearer by virtue of having not yet acquired a special structure of function.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002101 -->
@@ -6563,7 +6563,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A cellular quality inhering in a bearer by virtue of having changed from one fully differentiated state into another.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002106 -->
@@ -6585,7 +6585,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A cellular quality inhering in a bearer by virtue of its lacking most of the cellular characteristics which would allow it to be fully differentiated.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002118 -->
@@ -6607,7 +6607,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality inhering in a bearer by virtue of the bearer&apos;s being present in more than two copies.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002125 -->
@@ -6629,7 +6629,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality inhering in a bearer by virtue of the bearer&apos;s consisting a knot-like mass.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002135 -->
@@ -6649,7 +6649,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A duration quality of a process inhering in a bearer by virtue of the bearer&apos;s delay to complete the closure of the opening of an anatomical entity.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002181 -->
@@ -6670,7 +6670,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A positional quality inhering in a bearer by virtue the bearer&apos;s being changed in position.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002247 -->
@@ -6698,7 +6698,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality inhering in a bearer by virtue of the bearer&apos;s having or lacking of substances produced by living organisms that have a color resulting from selective color absorption.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:http://en.wikipedia.org/wiki/Biological_pigment</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002248 -->
@@ -6721,7 +6721,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A degree of pigmentation quality inhering in a bearer by virtue of the bearer&apos;s having substances produced by living organisms that have a color resulting from selective color absorption.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002250 -->
@@ -6757,7 +6757,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A degree of pigmentation quality that is relatively high.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002251 -->
@@ -6793,7 +6793,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A degree of pigmentation quality that is relative low.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002260 -->
@@ -6814,7 +6814,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality inhering in a bearer by virtue of the bearer&apos;s being partially upright in position or posture.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002264 -->
@@ -6835,7 +6835,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A structural quality inhering in a bearer by virtue of the bearer&apos;s being arranged in a systematic fashion.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002266 -->
@@ -6855,7 +6855,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A shape that inheres in a 3 dimensional entity.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:OREGON</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002282 -->
@@ -6889,7 +6889,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A mobility which is relative high.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002283 -->
@@ -6923,7 +6923,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A mobility which is relative low.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002285 -->
@@ -6945,7 +6945,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>Branchiness quality inhering in a bearer by virtue of increasing the degree to which there are subdivisions or offshoots in a bearer entity.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CVS</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002291 -->
@@ -6965,7 +6965,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>Absence of a tissue or organ due to failure to develop.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002300 -->
@@ -7003,7 +7003,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality that has a value that is increased compared to normal or average.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002301 -->
@@ -7041,7 +7041,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality that has a value that is decreased compared to normal or average.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002302 -->
@@ -7074,7 +7074,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality of a process that has a value that is decreased compared to normal or average.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002303 -->
@@ -7107,7 +7107,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality of an object that has a value that is decreased compared to normal or average.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002304 -->
@@ -7140,7 +7140,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality of a process that has a value that is increased compared to normal or average.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002305 -->
@@ -7173,7 +7173,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality of an object that has a value that is increased compared to normal or average.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002312 -->
@@ -7195,7 +7195,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>Consisting of segments or similar parts arranged in a longitudinal series.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>OED:</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002323 -->
@@ -7216,7 +7216,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A temporal distribution pattern of process occurrences within a regulation/reference process.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:LC</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002324 -->
@@ -7251,7 +7251,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>extent</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002325 -->
@@ -7273,7 +7273,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>The temporal relation between the start of the process with respect to a reference process.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:LC</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002331 -->
@@ -7296,7 +7296,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A physical quality inhering in a bearer by virtue of the bearer exhibiting molecular attraction to another entity in contact.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002333 -->
@@ -7330,7 +7330,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A adhesivity which is relatively high.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002334 -->
@@ -7363,7 +7363,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A adhesivity which is relatively low.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002364 -->
@@ -7385,7 +7385,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A quality inhering in a bearer by virtue of the bearer&apos;s length being notably lower than its width.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002395 -->
@@ -7406,7 +7406,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A positional quality inhering in a bearer by virtue of the bearer&apos;s being positioned away from the axis of an organism.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:EH</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002481 -->
@@ -7425,9 +7425,9 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0002481"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An orientation quality inhering in a bearer by virtue of the bearer having a slanting direction or position : neither perpendicular nor parallel.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">merriam-wester:http://www.merriam-webster.com/dictionary/oblique</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>merriam-wester:http://www.merriam-webster.com/dictionary/oblique</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0005013 -->
@@ -7449,7 +7449,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A structural quality inhering in a bearer by virtue of the bearer&apos;s lacking parts or having a reduced form compared to fully formed entities.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:WD</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0030000 -->
@@ -7468,7 +7468,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A malformed quality inhering in a bearer by virtue of the bearer&apos;s gross morphology containing what are normally anterior structures and missing some or all of what are normally posterior structures.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:EJS</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0030001 -->
@@ -7487,7 +7487,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A malformed quality inhering in a bearer by virtue of the bearer&apos;s gross morphology containing what are normally dorsal structures and missing some or all of what are normally ventral structures.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:EJS</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0030002 -->
@@ -7506,7 +7506,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A malformed quality inhering in a bearer by virtue of the bearer&apos;s gross morphology containing what are normally posterior structures and missing some or all of what are normally anterior structures.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:EJS</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0030003 -->
@@ -7525,7 +7525,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A malformed quality inhering in a bearer by virtue of the bearer&apos;s gross morphology containing what are normally ventral structures and missing some or all of what are normally dorsal structures.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:EJS</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0030004 -->
@@ -7544,7 +7544,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>An anterioralized quality inhering in a bearer by virtue of the bearer&apos;s gross morphology containing what are normally anterior structures and missing some but not all of what are normally posterior structures.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:EJS</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0030005 -->
@@ -7563,7 +7563,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A dorsalized quality inhering in a bearer by virtue of the bearer&apos;s gross morphology containing what are normally dorsal structures and missing some but not all of what are normally ventral structures.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:EJS</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0030006 -->
@@ -7582,7 +7582,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A posterioralized quality inhering in a bearer by virtue of the bearer&apos;s gross morphology containing what are normally posterior structures and missing some but not all of what are normally anterior structures.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:EJS</oboInOwl:hasDbXref>
     </owl:Axiom>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0030007 -->
@@ -7601,10 +7601,10 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>A ventralized quality inhering in a bearer by virtue of the bearer&apos;s gross morphology containing what are normally ventral structures and missing some but not all of what are normally dorsal structures.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:EJS</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // General axioms
@@ -7645,10 +7645,10 @@ For example, A and B may be gene products and binding of B by A positively regul
             </owl:Class>
         </rdfs:subClassOf>
     </owl:Restriction>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Rules
@@ -7903,8 +7903,8 @@ e.g.  if GP X enables ATPase coupled transporter activity&apos; and &apos;ATPase
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment>GP(X)-enables-&gt;MF(Y)-part_of-&gt;BP(Z) =&gt; GP(X) involved_in BP(Z) e.g. if X enables &apos;protein kinase activity&apos; and Y &apos;part of&apos; &apos;signal tranduction&apos; then X involved in &apos;signal transduction&apos;</rdfs:comment>
-        <rdfs:label>involved in BP</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GP(X)-enables-&gt;MF(Y)-part_of-&gt;BP(Z) =&gt; GP(X) involved_in BP(Z) e.g. if X enables &apos;protein kinase activity&apos; and Y &apos;part of&apos; &apos;signal tranduction&apos; then X involved in &apos;signal transduction&apos;</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">involved in BP</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -8567,3 +8567,4 @@ e.g.  if GP X enables ATPase coupled transporter activity&apos; and &apos;ATPase
 
 
 <!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
