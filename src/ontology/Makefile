@@ -30,8 +30,8 @@ SPARQLDIR =                 ../sparql
 COMPONENTSDIR =             components
 REPORT_FAIL_ON =            None
 REPORT_LABEL =              -l true
-REPORT_PROFILE_OPTS =       
-OBO_FORMAT_OPTIONS =        
+REPORT_PROFILE_OPTS =
+OBO_FORMAT_OPTIONS =
 SPARQL_VALIDATION_CHECKS =   equivalent-classes owldef-self-reference
 SPARQL_EXPORTS =             basic-report class-count-by-prefix edges xrefs obsoletes synonyms
 ODK_VERSION_MAKEFILE =      v1.2.27
@@ -40,7 +40,7 @@ TODAY ?=                    $(shell date +%Y-%m-%d)
 OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
-OTHER_SRC =                 $(PATTERNDIR)/definitions.owl 
+OTHER_SRC =                 $(PATTERNDIR)/definitions.owl
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 PATTERNDIR=                 ../patterns
 DOSDP_SCHEMA=                http:// # change to PURL when ready.
@@ -80,7 +80,7 @@ $(TMPDIR) $(REPORTDIR) :
 ## By default this is the cross-product of {ont, ont-base} x FORMATS
 
 MAIN_PRODUCTS = $(sort $(foreach r,$(RELEASE_ARTEFACTS), $(ONT)-$(r)) $(ONT))
-MAIN_GZIPPED = 
+MAIN_GZIPPED =
 MAIN_FILES = $(foreach n,$(MAIN_PRODUCTS), $(foreach f,$(FORMATS), $(n).$(f))) $(MAIN_GZIPPED)
 
 .PHONY: all_main
@@ -107,7 +107,7 @@ all_imports: $(IMPORT_FILES)
 ## Note we also include TSV as a format
 
 
-SUBSETS = 
+SUBSETS =
 
 SUBSET_ROOTS = $(patsubst %, subsets/%, $(SUBSETS))
 SUBSET_FILES = $(foreach n,$(SUBSET_ROOTS), $(foreach f,$(FORMATS_INCL_TSV), $(n).$(f)))
@@ -171,7 +171,7 @@ prepare_initial_release: prepare_release
 # These live in the imports/ folder
 
 # ------------------------
-# Imports: Seeding system 
+# Imports: Seeding system
 # ------------------------
 
 # seed.txt contains all referenced entities
@@ -196,11 +196,11 @@ $(SIMPLESEED): $(SRCMERGED) $(ONTOLOGYTERMS)
 	echo "http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty" >> $@
 
 # Ugly hack which should be replaced by the dynamic import revision pipeline
-$(IMPORTSEED): $(PRESEED) prepare_patterns $(PATTERNDIR)/all_pattern_terms.txt 
+$(IMPORTSEED): $(PRESEED) prepare_patterns $(PATTERNDIR)/all_pattern_terms.txt
 	if [ $(IMP) = true ]; then cat $(PRESEED) $(PATTERNDIR)/all_pattern_terms.txt | sort | uniq > $@; fi
 
 
-ANNOTATION_PROPERTIES=rdfs:label IAO:0000115 
+ANNOTATION_PROPERTIES=rdfs:label IAO:0000115
 
 # -- Generate Import Modules --
 #
