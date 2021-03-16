@@ -6,7 +6,7 @@
 
 The Xenopus Phenotype Ontology represents and standardizes phenotypes occurring throughout the development of the African frogs Xenopus laevis and tropicalis. It supports the annotation of phenotypes in Xenbase and is designed to integrate Xenopus data with genotype, phenotype, and disease data across species.
 
-Browse XPO at the [Ontology Lookup Service](http://www.ebi.ac.uk/ols/ontologies/xpo).
+Browse and search XPO at the [Ontology Lookup Service](http://www.ebi.ac.uk/ols/ontologies/xpo).
 
 ## Versions
 
