@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: xpo/releases/2021-09-07/xpo-base.owl
+data-version: xpo/releases/2021-10-14/xpo-base.owl
 ontology: xpo/xpo-base
 property_value: http://purl.org/dc/elements/1.1/description "XPO represents anatomical, cellular, and gene function phenotypes occurring throughout the development of the African frogs Xenopus laevis and tropicalis." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Xenopus Phenotype Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/3.0/
-property_value: owl:versionInfo "2021-09-07" xsd:string
+property_value: owl:versionInfo "2021-10-14" xsd:string
 
 [Term]
 id: XPO:00000000
@@ -111492,4 +111492,26 @@ name: edema in pharyngeal region
 def: "An abnormal accumulation of fluid in the pharyngeal region." []
 synonym: "abnormal accumulation of fluid in pharyngeal region" EXACT []
 synonym: "pharyngeal region edema" EXACT []
+
+[Term]
+id: XPO:0141840
+name: decreased whole organism mass
+def: "An abnormal decrease in mass in the whole organism." []
+synonym: "decreased whole organism weight" NARROW []
+synonym: "low whole organism mass" EXACT []
+synonym: "small whole organism mass" EXACT []
+
+[Term]
+id: XPO:0141841
+name: abnormality of whole organism mass
+def: "An abnormality of mass in the whole organism." []
+synonym: "abnormality of whole organism weight" NARROW []
+
+[Term]
+id: XPO:0141842
+name: increased whole organism mass
+def: "An abnormal increase in mass in the whole organism." []
+synonym: "high whole organism mass" EXACT []
+synonym: "increased whole organism weight" NARROW []
+synonym: "large whole organism mass" EXACT []
 
