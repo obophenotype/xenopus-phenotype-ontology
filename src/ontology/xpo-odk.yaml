@@ -5,9 +5,9 @@ repo: xenopus-phenotype-ontology
 report_fail_on: ERROR
 use_dosdps: TRUE
 dosdp_tools_options: "--obo-prefixes=true"
-namespaces: 
+namespaces:
   - http://purl.obolibrary.org/obo/XPO_
-release_artefacts: 
+release_artefacts:
   - base
   - full
   - simple
@@ -35,4 +35,4 @@ pattern_pipelines_group:
     - id: anatomy
       dosdp_tools_options: "--obo-prefixes=true"
 robot_java_args: '-Xmx8G'
-allow_equivalents: none
+allow_equivalents: "asserted-only"
