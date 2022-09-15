@@ -1,11 +1,12 @@
 format-version: 1.2
-data-version: xpo/releases/2021-03-05/xpo-base.owl
+data-version: xpo/releases/2022-09-15/xpo-base.owl
+remark: Citation: Fisher ME, Segerdell E, Matentzoglu N, Nenni MJ, Fortriede JD, Chu S, Pells TJ, Osumi-Sutherland D, Chaturvedi P, James-Zorn C, Sundararaj N, Lotay VS, Ponferrada V, Wang DZ, Kim E, Agalakov S, Arshinoff BI, Karimi K, Vize PD, Zorn AM. The Xenopus phenotype ontology: bridging model organism phenotype data to human health and development. BMC Bioinformatics. 2022 Mar 22;23(1):99. doi: 10.1186/s12859-022-04636-8.
 ontology: xpo/xpo-base
 property_value: http://purl.org/dc/elements/1.1/description "XPO represents anatomical, cellular, and gene function phenotypes occurring throughout the development of the African frogs Xenopus laevis and tropicalis." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Xenopus Phenotype Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/3.0/
-property_value: owl:versionInfo "2021-03-05" xsd:string
+property_value: owl:versionInfo "2022-09-15" xsd:string
 
 [Term]
 id: XPO:00000000
@@ -20027,12 +20028,6 @@ def: "Decreased length or shortening of the axon in the retinal ganglion cell." 
 synonym: "short axon in retinal ganglion cell" EXACT []
 
 [Term]
-id: XPO:0103815
-name: decreased length of cilium in gastrocoel roof plate
-def: "Decreased length or shortening of the cilium in the gastrocoel roof plate." []
-synonym: "short cilium in gastrocoel roof plate" EXACT []
-
-[Term]
 id: XPO:0103816
 name: decreased length of hindlimb digit 1 in regenerating hindlimb
 def: "Decreased length or shortening of the hindlimb digit 1 in the regenerating hindlimb." []
@@ -21151,7 +21146,7 @@ def: "Abnormal(ly) decreased length of hindgut (Temporary definition)." []
 [Term]
 id: XPO:0115383
 name: abnormally anterioralized embryo
-def: "Abnormal(ly) anterioralized of embryo (Temporary definition)." []
+def: "Abnormal(ly) anteriorized of embryo (Temporary definition)." []
 
 [Term]
 id: XPO:0115384
@@ -21161,7 +21156,7 @@ def: "Abnormal(ly) dorsalized of embryo (Temporary definition)." []
 [Term]
 id: XPO:0115385
 name: abnormally posterioralized embryo
-def: "Abnormal(ly) posterioralized of embryo (Temporary definition)." []
+def: "Abnormal(ly) posteriorized of embryo (Temporary definition)." []
 
 [Term]
 id: XPO:0115386
@@ -21177,11 +21172,6 @@ def: "Abnormal(ly) agenesis of trachea (Temporary definition)." []
 id: XPO:0115388
 name: abnormally decreased length of alimentary system
 def: "Abnormal(ly) decreased length of alimentary system (Temporary definition)." []
-
-[Term]
-id: XPO:0115390
-name: abnormally edematous alimentary system
-def: "Abnormal(ly) edematous of alimentary system (Temporary definition)." []
 
 [Term]
 id: XPO:0115391
@@ -21252,11 +21242,6 @@ def: "Abnormal(ly) increased area of blastopore (Temporary definition)." []
 id: XPO:0115436
 name: abnormally delayed closure of blastopore
 def: "Abnormal(ly) delayed closure of blastopore (Temporary definition)." []
-
-[Term]
-id: XPO:0115444
-name: abnormally edematous foregut
-def: "Abnormal(ly) edematous of foregut (Temporary definition)." []
 
 [Term]
 id: XPO:0115445
@@ -21364,11 +21349,6 @@ name: abnormally semi-erect whole organism
 def: "Abnormal(ly) semi erect of whole organism (Temporary definition)." []
 
 [Term]
-id: XPO:0115520
-name: abnormally edematous head
-def: "Abnormal(ly) edematous of head (Temporary definition)." []
-
-[Term]
 id: XPO:0115526
 name: abnormally incomplete structure of head
 def: "Abnormal(ly) incomplete structure of head (Temporary definition)." []
@@ -21441,7 +21421,7 @@ def: "Abnormal(ly) mislocalised posteriorly of primordial germ cell (Temporary d
 [Term]
 id: XPO:0115617
 name: abnormally posterioralized primordial germ cell
-def: "Abnormal(ly) posterioralized of primordial germ cell (Temporary definition)." []
+def: "Abnormal(ly) posteriorized of primordial germ cell (Temporary definition)." []
 
 [Term]
 id: XPO:0115624
@@ -21494,11 +21474,6 @@ name: abnormally wholly dorsalized epaxial muscle
 def: "Abnormal(ly) wholly dorsalized of epaxial muscle (Temporary definition)." []
 
 [Term]
-id: XPO:0115658
-name: abnormally edematous dorsal fin
-def: "Abnormal(ly) edematous of dorsal fin (Temporary definition)." []
-
-[Term]
 id: XPO:0115659
 name: abnormally ruffled dorsal fin
 def: "Abnormal(ly) ruffled of dorsal fin (Temporary definition)." []
@@ -21549,11 +21524,6 @@ name: abnormally shortened pronephric tubule
 def: "Abnormal(ly) shortened of pronephric tubule (Temporary definition)." []
 
 [Term]
-id: XPO:0115679
-name: abnormally edematous regenerating hindlimb
-def: "Abnormal(ly) edematous of regenerating hindlimb (Temporary definition)." []
-
-[Term]
 id: XPO:0115683
 name: abnormally increased branchiness of regenerating hindlimb
 def: "Abnormal(ly) increased branchiness of regenerating hindlimb (Temporary definition)." []
@@ -21584,11 +21554,6 @@ name: abnormally decreased thickness of apical ectodermal ridge
 def: "Abnormal(ly) decreased thickness of apical ectodermal ridge (Temporary definition)." []
 
 [Term]
-id: XPO:0115698
-name: abnormally edematous pericardium
-def: "Abnormal(ly) edematous of pericardium (Temporary definition)." []
-
-[Term]
 id: XPO:0115700
 name: abnormally split primary heart field
 def: "Abnormal(ly) split of primary heart field (Temporary definition)." []
@@ -21602,11 +21567,6 @@ def: "Abnormal(ly) decreased thickness of motor neuron (Temporary definition)." 
 id: XPO:0115704
 name: abnormally defasciculated motor neuron
 def: "Abnormal(ly) defasciculated of motor neuron (Temporary definition)." []
-
-[Term]
-id: XPO:0115714
-name: abnormally edematous pharyngeal region
-def: "Abnormal(ly) edematous of pharyngeal region (Temporary definition)." []
 
 [Term]
 id: XPO:0115721
@@ -21946,27 +21906,6 @@ name: duplicated utricle
 def: "Any abnormal duplication of the utricle." []
 synonym: "abnormal duplication of utricle" EXACT []
 synonym: "abnormally duplicated utricle" EXACT []
-
-[Term]
-id: XPO:0115823
-name: duplicated anatomical axis
-def: "Any abnormal duplication of the anatomical axis." []
-synonym: "abnormal duplication of anatomical axis" EXACT []
-synonym: "abnormally duplicated anatomical axis" EXACT []
-
-[Term]
-id: XPO:0115824
-name: duplicated anterior-posterior axis
-def: "Any abnormal duplication of the anterior-posterior axis." []
-synonym: "abnormal duplication of anterior-posterior axis" EXACT []
-synonym: "abnormally duplicated anterior-posterior axis" EXACT []
-
-[Term]
-id: XPO:0115825
-name: duplicated dorsal-ventral axis
-def: "Any abnormal duplication of the dorsal-ventral axis." []
-synonym: "abnormal duplication of dorsal-ventral axis" EXACT []
-synonym: "abnormally duplicated dorsal-ventral axis" EXACT []
 
 [Term]
 id: XPO:0115826
@@ -61825,8 +61764,8 @@ def: "Abnormal MAP kinase activity." []
 
 [Term]
 id: XPO:0131693
-name: abnormal retinol dehydrogenase activity
-def: "Abnormal retinol dehydrogenase activity." []
+name: abnormal NAD-retinol dehydrogenase activity
+def: "Abnormal NAD-retinol dehydrogenase activity." []
 
 [Term]
 id: XPO:0131694
@@ -61942,11 +61881,6 @@ def: "Abnormal fibroblast growth factor receptor signaling pathway." []
 id: XPO:0131716
 name: abnormal histone methylation
 def: "Abnormal histone methylation." []
-
-[Term]
-id: XPO:0131717
-name: abnormal histone phosphorylation
-def: "Abnormal histone phosphorylation." []
 
 [Term]
 id: XPO:0131718
@@ -70056,23 +69990,23 @@ def: "A partially ventralized embryo." []
 
 [Term]
 id: XPO:0133346
-name: wholly anterioralized embryo
-def: "A wholly anterioralized embryo." []
+name: wholly anteriorized embryo
+def: "A wholly anteriorized embryo." []
 
 [Term]
 id: XPO:0133347
-name: partially anterioralized embryo
-def: "A partially anterioralized embryo." []
+name: partially anteriorized embryo
+def: "A partially anteriorized embryo." []
 
 [Term]
 id: XPO:0133348
-name: wholly posterioralized embryo
-def: "A wholly posterioralized embryo." []
+name: wholly posteriorized embryo
+def: "A wholly posteriorized embryo." []
 
 [Term]
 id: XPO:0133349
-name: partially posterioralized embryo
-def: "A partially posterioralized embryo." []
+name: partially posteriorized embryo
+def: "A partially posteriorized embryo." []
 
 [Term]
 id: XPO:0133350
@@ -70371,91 +70305,6 @@ name: abnormal developmental process
 def: "Abnormal developmental process." []
 
 [Term]
-id: XPO:0133404
-name: increased cilium motility in left-right organizer
-def: "Increased ability to move cilium in left-right organizer." []
-
-[Term]
-id: XPO:0133405
-name: increased cilium motility in floor plate
-def: "Increased ability to move cilium in floor plate." []
-
-[Term]
-id: XPO:0133406
-name: increased cilium motility in brain
-def: "Increased ability to move cilium in brain." []
-
-[Term]
-id: XPO:0133407
-name: increased cilium motility in mucociliary epithelium
-def: "Increased ability to move cilium in mucociliary epithelium." []
-
-[Term]
-id: XPO:0133408
-name: increased cilium motility in pronephric kidney
-def: "Increased ability to move cilium in pronephric kidney." []
-
-[Term]
-id: XPO:0133409
-name: increased cilium motility in pronephric nephrostome
-def: "Increased ability to move cilium in pronephric nephrostome." []
-
-[Term]
-id: XPO:0133410
-name: increased cilium motility in olfactory pit
-def: "Increased ability to move cilium in olfactory pit." []
-
-[Term]
-id: XPO:0133411
-name: increased cilium motility in alimentary system
-def: "Increased ability to move cilium in alimentary system." []
-
-[Term]
-id: XPO:0133412
-name: increased cilium motility in stomach
-def: "Increased ability to move cilium in stomach." []
-
-[Term]
-id: XPO:0133413
-name: increased cilium motility in esophagus
-def: "Increased ability to move cilium in esophagus." []
-
-[Term]
-id: XPO:0133414
-name: increased cilium motility in ciliated cell
-def: "Increased ability to move cilium in ciliated cell." []
-
-[Term]
-id: XPO:0133415
-name: increased cilium motility in monociliated cell
-def: "Increased ability to move cilium in monociliated cell." []
-
-[Term]
-id: XPO:0133416
-name: increased cilium motility in multiciliated cell
-def: "Increased ability to move cilium in multiciliated cell." []
-
-[Term]
-id: XPO:0133417
-name: increased cilium motility in ciliated epidermal cell
-def: "Increased ability to move cilium in ciliated epidermal cell." []
-
-[Term]
-id: XPO:0133418
-name: increased cilium motility in ciliated non-epidermal cell
-def: "Increased ability to move cilium in ciliated non-epidermal cell." []
-
-[Term]
-id: XPO:0133419
-name: increased cilium motility in monociliated epidermal cell
-def: "Increased ability to move cilium in monociliated epidermal cell." []
-
-[Term]
-id: XPO:0133420
-name: increased cilium motility in multiciliated epidermal cell
-def: "Increased ability to move cilium in multiciliated epidermal cell." []
-
-[Term]
 id: XPO:0133421
 name: abnormal cilium morphology in the left-right organizer
 def: "A morphological abnormality of the cilium in the left-right organizer." []
@@ -70654,108 +70503,6 @@ def: "An abnormal reduction in the size of the cilium in the multiciliated epide
 synonym: "abnormally small cilium in multiciliated epidermal cell" EXACT []
 
 [Term]
-id: XPO:0133454
-name: absent cilium motility in left-right organizer
-def: "Inability to move cilium in left-right organizer." []
-synonym: "immotile cilium in left-right organizer" EXACT []
-
-[Term]
-id: XPO:0133455
-name: absent cilium motility in floor plate
-def: "Inability to move cilium in floor plate." []
-synonym: "immotile cilium in floor plate" EXACT []
-
-[Term]
-id: XPO:0133456
-name: absent cilium motility in brain
-def: "Inability to move cilium in brain." []
-synonym: "immotile cilium in brain" EXACT []
-
-[Term]
-id: XPO:0133457
-name: absent cilium motility in mucociliary epithelium
-def: "Inability to move cilium in mucociliary epithelium." []
-synonym: "immotile cilium in mucociliary epithelium" EXACT []
-
-[Term]
-id: XPO:0133458
-name: absent cilium motility in pronephric kidney
-def: "Inability to move cilium in pronephric kidney." []
-synonym: "immotile cilium in pronephric kidney" EXACT []
-
-[Term]
-id: XPO:0133459
-name: absent cilium motility in pronephric nephrostome
-def: "Inability to move cilium in pronephric nephrostome." []
-synonym: "immotile cilium in pronephric nephrostome" EXACT []
-
-[Term]
-id: XPO:0133460
-name: absent cilium motility in olfactory pit
-def: "Inability to move cilium in olfactory pit." []
-synonym: "immotile cilium in olfactory pit" EXACT []
-
-[Term]
-id: XPO:0133461
-name: absent cilium motility in alimentary system
-def: "Inability to move cilium in alimentary system." []
-synonym: "immotile cilium in alimentary system" EXACT []
-
-[Term]
-id: XPO:0133462
-name: absent cilium motility in stomach
-def: "Inability to move cilium in stomach." []
-synonym: "immotile cilium in stomach" EXACT []
-
-[Term]
-id: XPO:0133463
-name: absent cilium motility in esophagus
-def: "Inability to move cilium in esophagus." []
-synonym: "immotile cilium in esophagus" EXACT []
-
-[Term]
-id: XPO:0133464
-name: absent cilium motility in ciliated cell
-def: "Inability to move cilium in ciliated cell." []
-synonym: "immotile cilium in ciliated cell" EXACT []
-
-[Term]
-id: XPO:0133465
-name: absent cilium motility in monociliated cell
-def: "Inability to move cilium in monociliated cell." []
-synonym: "immotile cilium in monociliated cell" EXACT []
-
-[Term]
-id: XPO:0133466
-name: absent cilium motility in multiciliated cell
-def: "Inability to move cilium in multiciliated cell." []
-synonym: "immotile cilium in multiciliated cell" EXACT []
-
-[Term]
-id: XPO:0133467
-name: absent cilium motility in ciliated epidermal cell
-def: "Inability to move cilium in ciliated epidermal cell." []
-synonym: "immotile cilium in ciliated epidermal cell" EXACT []
-
-[Term]
-id: XPO:0133468
-name: absent cilium motility in ciliated non-epidermal cell
-def: "Inability to move cilium in ciliated non-epidermal cell." []
-synonym: "immotile cilium in ciliated non-epidermal cell" EXACT []
-
-[Term]
-id: XPO:0133469
-name: absent cilium motility in monociliated epidermal cell
-def: "Inability to move cilium in monociliated epidermal cell." []
-synonym: "immotile cilium in monociliated epidermal cell" EXACT []
-
-[Term]
-id: XPO:0133470
-name: absent cilium motility in multiciliated epidermal cell
-def: "Inability to move cilium in multiciliated epidermal cell." []
-synonym: "immotile cilium in multiciliated epidermal cell" EXACT []
-
-[Term]
 id: XPO:0133471
 name: abnormally decreased number of cilium in the ciliated cell
 def: "The presence of a reduced number of cilium in the ciliated cell." []
@@ -70856,96 +70603,6 @@ id: XPO:0133487
 name: increased size of the cilium in multiciliated epidermal cell
 def: "An increase in the size of the cilium in the multiciliated epidermal cell." []
 synonym: "enlarged cilium in multiciliated epidermal cell" EXACT []
-
-[Term]
-id: XPO:0133488
-name: decreased cilium motility in left-right organizer
-def: "Decreased ability to move cilium in left-right organizer." []
-
-[Term]
-id: XPO:0133489
-name: decreased cilium motility in floor plate
-def: "Decreased ability to move cilium in floor plate." []
-
-[Term]
-id: XPO:0133490
-name: decreased cilium motility in brain
-def: "Decreased ability to move cilium in brain." []
-
-[Term]
-id: XPO:0133491
-name: decreased cilium motility in mucociliary epithelium
-def: "Decreased ability to move cilium in mucociliary epithelium." []
-
-[Term]
-id: XPO:0133492
-name: decreased cilium motility in pronephric kidney
-def: "Decreased ability to move cilium in pronephric kidney." []
-
-[Term]
-id: XPO:0133493
-name: decreased cilium motility in pronephric nephrostome
-def: "Decreased ability to move cilium in pronephric nephrostome." []
-
-[Term]
-id: XPO:0133494
-name: decreased cilium motility in olfactory pit
-def: "Decreased ability to move cilium in olfactory pit." []
-
-[Term]
-id: XPO:0133495
-name: decreased cilium motility in alimentary system
-def: "Decreased ability to move cilium in alimentary system." []
-
-[Term]
-id: XPO:0133496
-name: decreased cilium motility in stomach
-def: "Decreased ability to move cilium in stomach." []
-
-[Term]
-id: XPO:0133497
-name: decreased cilium motility in esophagus
-def: "Decreased ability to move cilium in esophagus." []
-
-[Term]
-id: XPO:0133498
-name: decreased cilium motility in ciliated cell
-def: "Decreased ability to move cilium in ciliated cell." []
-
-[Term]
-id: XPO:0133499
-name: decreased cilium motility in monociliated cell
-def: "Decreased ability to move cilium in monociliated cell." []
-
-[Term]
-id: XPO:0133500
-name: decreased cilium motility in multiciliated cell
-def: "Decreased ability to move cilium in multiciliated cell." []
-
-[Term]
-id: XPO:0133501
-name: decreased cilium motility in ciliated epidermal cell
-def: "Decreased ability to move cilium in ciliated epidermal cell." []
-
-[Term]
-id: XPO:0133502
-name: decreased cilium motility in ciliated non-epidermal cell
-def: "Decreased ability to move cilium in ciliated non-epidermal cell." []
-
-[Term]
-id: XPO:0133503
-name: decreased cilium motility in monociliated epidermal cell
-def: "Decreased ability to move cilium in monociliated epidermal cell." []
-
-[Term]
-id: XPO:0133504
-name: decreased cilium motility in multiciliated epidermal cell
-def: "Decreased ability to move cilium in multiciliated epidermal cell." []
-
-[Term]
-id: XPO:0133505
-name: abnormal cilium motility
-def: "Abnormal ability to move cilium." []
 
 [Term]
 id: XPO:0133506
@@ -108758,87 +108415,87 @@ synonym: "enlarged foot in regenerating hindlimb" EXACT []
 
 [Term]
 id: XPO:0141320
-name: edema in ventral trunk
-def: "An abnormal accumulation of fluid in the ventral trunk." []
-synonym: "abnormal accumulation of fluid in ventral trunk" EXACT []
-synonym: "ventral trunk edema" EXACT []
+name: edematous ventral trunk
+def: "Abnormal accumulation of fluid in ventral trunk." []
+synonym: "edema in ventral trunk" EXACT []
+synonym: "oedema in ventral trunk" EXACT []
 
 [Term]
 id: XPO:0141321
-name: edema in hindlimb
-def: "An abnormal accumulation of fluid in the hindlimb." []
-synonym: "abnormal accumulation of fluid in hindlimb" EXACT []
-synonym: "hindlimb edema" EXACT []
+name: edematous hindlimb
+def: "Abnormal accumulation of fluid in hindlimb." []
+synonym: "edema in hindlimb" EXACT []
+synonym: "oedema in hindlimb" EXACT []
 
 [Term]
 id: XPO:0141322
-name: edema in forelimb
-def: "An abnormal accumulation of fluid in the forelimb." []
-synonym: "abnormal accumulation of fluid in forelimb" EXACT []
-synonym: "forelimb edema" EXACT []
+name: edematous forelimb
+def: "Abnormal accumulation of fluid in forelimb." []
+synonym: "edema in forelimb" EXACT []
+synonym: "oedema in forelimb" EXACT []
 
 [Term]
 id: XPO:0141323
-name: edema in eye
-def: "An abnormal accumulation of fluid in the eye." []
-synonym: "abnormal accumulation of fluid in eye" EXACT []
-synonym: "eye edema" EXACT []
+name: edematous eye
+def: "Abnormal accumulation of fluid in eye." []
+synonym: "edema in eye" EXACT []
+synonym: "oedema in eye" EXACT []
 
 [Term]
 id: XPO:0141324
-name: edema in brain
-def: "An abnormal accumulation of fluid in the brain." []
-synonym: "abnormal accumulation of fluid in brain" EXACT []
-synonym: "brain edema" EXACT []
+name: edematous brain
+def: "Abnormal accumulation of fluid in brain." []
+synonym: "edema in brain" EXACT []
+synonym: "oedema in brain" EXACT []
 
 [Term]
 id: XPO:0141325
-name: edema in spinal cord
-def: "An abnormal accumulation of fluid in the spinal cord." []
-synonym: "abnormal accumulation of fluid in spinal cord" EXACT []
-synonym: "spinal cord edema" EXACT []
+name: edematous spinal cord
+def: "Abnormal accumulation of fluid in spinal cord." []
+synonym: "edema in spinal cord" EXACT []
+synonym: "oedema in spinal cord" EXACT []
 
 [Term]
 id: XPO:0141326
-name: edema in limb bud
-def: "An abnormal accumulation of fluid in the limb bud." []
-synonym: "abnormal accumulation of fluid in limb bud" EXACT []
-synonym: "limb bud edema" EXACT []
+name: edematous limb bud
+def: "Abnormal accumulation of fluid in limb bud." []
+synonym: "edema in limb bud" EXACT []
+synonym: "oedema in limb bud" EXACT []
 
 [Term]
 id: XPO:0141327
-name: edema in tail
-def: "An abnormal accumulation of fluid in the tail." []
-synonym: "abnormal accumulation of fluid in tail" EXACT []
-synonym: "tail edema" EXACT []
+name: edematous tail
+def: "Abnormal accumulation of fluid in tail." []
+synonym: "edema in tail" EXACT []
+synonym: "oedema in tail" EXACT []
 
 [Term]
 id: XPO:0141328
-name: edema in circulatory system
-def: "An abnormal accumulation of fluid in the circulatory system." []
-synonym: "abnormal accumulation of fluid in circulatory system" EXACT []
-synonym: "circulatory system edema" EXACT []
+name: edematous circulatory system
+def: "Abnormal accumulation of fluid in circulatory system." []
+synonym: "edema in circulatory system" EXACT []
+synonym: "oedema in circulatory system" EXACT []
 
 [Term]
 id: XPO:0141329
-name: edema in coelom
-def: "An abnormal accumulation of fluid in the coelom." []
-synonym: "abnormal accumulation of fluid in coelom" EXACT []
-synonym: "coelom edema" EXACT []
+name: edematous coelom
+def: "Abnormal accumulation of fluid in coelom." []
+synonym: "edema in coelom" EXACT []
+synonym: "oedema in coelom" EXACT []
 
 [Term]
 id: XPO:0141330
-name: edema in epidermis
-def: "An abnormal accumulation of fluid in the epidermis." []
-synonym: "abnormal accumulation of fluid in epidermis" EXACT []
-synonym: "epidermis edema" EXACT []
+name: edematous epidermis
+def: "Abnormal accumulation of fluid in epidermis." []
+synonym: "edema in epidermis" EXACT []
+synonym: "oedema in epidermis" EXACT []
 
 [Term]
 id: XPO:0141331
-name: edema in embryo
-def: "An abnormal accumulation of fluid in the embryo." []
-synonym: "abnormal accumulation of fluid in embryo" EXACT []
-synonym: "embryo edema" EXACT []
+name: edematous embryo
+def: "Abnormal accumulation of fluid in embryo." []
+synonym: "edema in embryo" EXACT []
+synonym: "oedema in embryo" EXACT []
 
 [Term]
 id: XPO:0141332
@@ -109251,23 +108908,23 @@ def: "A partially ventralized tadpole." []
 
 [Term]
 id: XPO:0141412
-name: wholly anterioralized tadpole
-def: "A wholly anterioralized tadpole." []
+name: wholly anteriorized tadpole
+def: "A wholly anteriorized tadpole." []
 
 [Term]
 id: XPO:0141413
-name: partially anterioralized tadpole
-def: "A partially anterioralized tadpole." []
+name: partially anteriorized tadpole
+def: "A partially anteriorized tadpole." []
 
 [Term]
 id: XPO:0141414
-name: wholly posterioralized tadpole
-def: "A wholly posterioralized tadpole." []
+name: wholly posteriorized tadpole
+def: "A wholly posteriorized tadpole." []
 
 [Term]
 id: XPO:0141415
-name: partially posterioralized tadpole
-def: "A partially posterioralized tadpole." []
+name: partially posteriorized tadpole
+def: "A partially posteriorized tadpole." []
 
 [Term]
 id: XPO:0141416
@@ -110196,17 +109853,17 @@ synonym: "abnormal position of cilium in gastrocoel roof plate" EXACT []
 
 [Term]
 id: XPO:0141592
-name: edema in heart
-def: "An abnormal accumulation of fluid in the heart." []
-synonym: "abnormal accumulation of fluid in heart" EXACT []
-synonym: "heart edema" EXACT []
+name: edematous heart
+def: "Abnormal accumulation of fluid in heart." []
+synonym: "edema in heart" EXACT []
+synonym: "oedema in heart" EXACT []
 
 [Term]
 id: XPO:0141593
-name: edema in lung
-def: "An abnormal accumulation of fluid in the lung." []
-synonym: "abnormal accumulation of fluid in lung" EXACT []
-synonym: "lung edema" EXACT []
+name: edematous lung
+def: "Abnormal accumulation of fluid in lung." []
+synonym: "edema in lung" EXACT []
+synonym: "oedema in lung" EXACT []
 
 [Term]
 id: XPO:0141594
@@ -110932,4 +110589,1798 @@ synonym: "abnormal morphology of posterior notochord" EXACT []
 id: XPO:0141724
 name: abnormal prevention of polyspermy
 def: "Abnormal prevention of polyspermy." []
+
+[Term]
+id: XPO:0141725
+name: increased catalytic activity
+def: "Increased catalytic activity." []
+
+[Term]
+id: XPO:0141726
+name: increased cyclase activity
+def: "Increased cyclase activity." []
+
+[Term]
+id: XPO:0141727
+name: increased oxidoreductase activity
+def: "Increased oxidoreductase activity." []
+
+[Term]
+id: XPO:0141728
+name: increased transferase activity
+def: "Increased transferase activity." []
+
+[Term]
+id: XPO:0141729
+name: increased hydrolase activity
+def: "Increased hydrolase activity." []
+
+[Term]
+id: XPO:0141730
+name: increased lyase activity
+def: "Increased lyase activity." []
+
+[Term]
+id: XPO:0141731
+name: increased isomerase activity
+def: "Increased isomerase activity." []
+
+[Term]
+id: XPO:0141732
+name: increased ligase activity
+def: "Increased ligase activity." []
+
+[Term]
+id: XPO:0141733
+name: increased demethylase activity
+def: "Increased demethylase activity." []
+
+[Term]
+id: XPO:0141734
+name: increased peptidoglycan muralytic activity
+def: "Increased peptidoglycan muralytic activity." []
+
+[Term]
+id: XPO:0141735
+name: abnormal amino acid homeostasis
+def: "Abnormal amino acid homeostasis." []
+
+[Term]
+id: XPO:0141736
+name: abnormal anatomical structure homeostasis
+def: "Abnormal anatomical structure homeostasis." []
+
+[Term]
+id: XPO:0141737
+name: abnormal carbohydrate homeostasis
+def: "Abnormal carbohydrate homeostasis." []
+
+[Term]
+id: XPO:0141738
+name: abnormal carbon dioxide homeostasis
+def: "Abnormal carbon dioxide homeostasis." []
+
+[Term]
+id: XPO:0141739
+name: abnormal cell redox homeostasis
+def: "Abnormal cell redox homeostasis." []
+
+[Term]
+id: XPO:0141740
+name: abnormal cell volume homeostasis
+def: "Abnormal cell volume homeostasis." []
+
+[Term]
+id: XPO:0141741
+name: abnormal cellular chemical homeostasis
+def: "Abnormal cellular chemical homeostasis." []
+
+[Term]
+id: XPO:0141742
+name: abnormal cellular homeostasis
+def: "Abnormal cellular homeostasis." []
+
+[Term]
+id: XPO:0141743
+name: abnormal chemical homeostasis within a tissue
+def: "Abnormal chemical homeostasis within a tissue." []
+
+[Term]
+id: XPO:0141744
+name: abnormal chemical homeostasis
+def: "Abnormal chemical homeostasis." []
+
+[Term]
+id: XPO:0141745
+name: abnormal creatinine homeostasis
+def: "Abnormal creatinine homeostasis." []
+
+[Term]
+id: XPO:0141746
+name: abnormal energy homeostasis
+def: "Abnormal energy homeostasis." []
+
+[Term]
+id: XPO:0141747
+name: abnormal epidermal stem cell homeostasis
+def: "Abnormal epidermal stem cell homeostasis." []
+
+[Term]
+id: XPO:0141748
+name: abnormal gas homeostasis
+def: "Abnormal gas homeostasis." []
+
+[Term]
+id: XPO:0141749
+name: abnormal germ-line stem-cell niche homeostasis
+def: "Abnormal germ-line stem-cell niche homeostasis." []
+
+[Term]
+id: XPO:0141750
+name: abnormal hematopoietic stem cell homeostasis
+def: "Abnormal hematopoietic stem cell homeostasis." []
+
+[Term]
+id: XPO:0141751
+name: abnormal hepatocyte homeostasis
+def: "Abnormal hepatocyte homeostasis." []
+
+[Term]
+id: XPO:0141752
+name: abnormal homeostasis of number of cells within a tissue
+def: "Abnormal homeostasis of number of cells within a tissue." []
+
+[Term]
+id: XPO:0141753
+name: abnormal homeostasis of number of cells
+def: "Abnormal homeostasis of number of cells." []
+
+[Term]
+id: XPO:0141754
+name: abnormal homeostatic process
+def: "Abnormal homeostatic process." []
+
+[Term]
+id: XPO:0141755
+name: abnormal intestinal stem cell homeostasis
+def: "Abnormal intestinal stem cell homeostasis." []
+
+[Term]
+id: XPO:0141756
+name: abnormal intracellular accumulation of glycerol
+def: "Abnormal intracellular accumulation of glycerol." []
+
+[Term]
+id: XPO:0141757
+name: abnormal ion homeostasis
+def: "Abnormal ion homeostasis." []
+
+[Term]
+id: XPO:0141758
+name: abnormal leukocyte homeostasis
+def: "Abnormal leukocyte homeostasis." []
+
+[Term]
+id: XPO:0141759
+name: abnormal lipid homeostasis
+def: "Abnormal lipid homeostasis." []
+
+[Term]
+id: XPO:0141760
+name: abnormal multicellular organismal homeostasis
+def: "Abnormal multicellular organismal homeostasis." []
+
+[Term]
+id: XPO:0141761
+name: abnormal multicellular organismal iron ion homeostasis
+def: "Abnormal multicellular organismal iron ion homeostasis." []
+
+[Term]
+id: XPO:0141762
+name: abnormal multicellular organismal water homeostasis
+def: "Abnormal multicellular organismal water homeostasis." []
+
+[Term]
+id: XPO:0141763
+name: abnormal muscle cell cellular homeostasis
+def: "Abnormal muscle cell cellular homeostasis." []
+
+[Term]
+id: XPO:0141764
+name: abnormal myeloid cell homeostasis
+def: "Abnormal myeloid cell homeostasis." []
+
+[Term]
+id: XPO:0141765
+name: abnormal neuron cellular homeostasis
+def: "Abnormal neuron cellular homeostasis." []
+
+[Term]
+id: XPO:0141766
+name: abnormal polyamine homeostasis
+def: "Abnormal polyamine homeostasis." []
+
+[Term]
+id: XPO:0141767
+name: abnormal temperature homeostasis
+def: "Abnormal temperature homeostasis." []
+
+[Term]
+id: XPO:0141768
+name: abnormal tissue homeostasis
+def: "Abnormal tissue homeostasis." []
+
+[Term]
+id: XPO:0141769
+name: abnormal ubiquitin recycling
+def: "Abnormal ubiquitin recycling." []
+
+[Term]
+id: XPO:0141770
+name: abnormal urate homeostasis
+def: "Abnormal urate homeostasis." []
+
+[Term]
+id: XPO:0141771
+name: abnormal urea homeostasis
+def: "Abnormal urea homeostasis." []
+
+[Term]
+id: XPO:0141772
+name: abnormal water homeostasis
+def: "Abnormal water homeostasis." []
+
+[Term]
+id: XPO:0141773
+name: abnormal NADH metabolic process
+def: "Abnormal NADH metabolic process." []
+
+[Term]
+id: XPO:0141774
+name: abnormal NADP metabolic process
+def: "Abnormal NADP metabolic process." []
+
+[Term]
+id: XPO:0141775
+name: abnormal nitrogen compound metabolic process
+def: "Abnormal nitrogen compound metabolic process." []
+
+[Term]
+id: XPO:0141776
+name: abnormal metabolic process
+def: "Abnormal metabolic process." []
+
+[Term]
+id: XPO:0141777
+name: abnormal catabolic process
+def: "Abnormal catabolic process." []
+
+[Term]
+id: XPO:0141778
+name: abnormal biosynthetic process
+def: "Abnormal biosynthetic process." []
+
+[Term]
+id: XPO:0141779
+name: abnormal peptide hormone processing
+def: "Abnormal peptide hormone processing." []
+
+[Term]
+id: XPO:0141780
+name: abnormal NAD metabolic process
+def: "Abnormal NAD metabolic process." []
+
+[Term]
+id: XPO:0141781
+name: abnormal secondary metabolic process
+def: "Abnormal secondary metabolic process." []
+
+[Term]
+id: XPO:0141782
+name: abnormal methylation
+def: "Abnormal methylation." []
+
+[Term]
+id: XPO:0141783
+name: abnormal collagen metabolic process
+def: "Abnormal collagen metabolic process." []
+
+[Term]
+id: XPO:0141784
+name: abnormal cellular hormone metabolic process
+def: "Abnormal cellular hormone metabolic process." []
+
+[Term]
+id: XPO:0141785
+name: abnormal thyroid hormone metabolic process
+def: "Abnormal thyroid hormone metabolic process." []
+
+[Term]
+id: XPO:0141786
+name: abnormal pigment metabolic process
+def: "Abnormal pigment metabolic process." []
+
+[Term]
+id: XPO:0141787
+name: abnormal hormone metabolic process
+def: "Abnormal hormone metabolic process." []
+
+[Term]
+id: XPO:0141788
+name: abnormal hormone biosynthetic process
+def: "Abnormal hormone biosynthetic process." []
+
+[Term]
+id: XPO:0141789
+name: abnormal hormone catabolic process
+def: "Abnormal hormone catabolic process." []
+
+[Term]
+id: XPO:0141790
+name: abnormal cellular metabolic process
+def: "Abnormal cellular metabolic process." []
+
+[Term]
+id: XPO:0141791
+name: abnormal primary metabolic process
+def: "Abnormal primary metabolic process." []
+
+[Term]
+id: XPO:0141792
+name: abnormal small molecule metabolic process
+def: "Abnormal small molecule metabolic process." []
+
+[Term]
+id: XPO:0141793
+name: abnormal ATP metabolic process
+def: "Abnormal ATP metabolic process." []
+
+[Term]
+id: XPO:0141794
+name: abnormal prosthetic group metabolic process
+def: "Abnormal prosthetic group metabolic process." []
+
+[Term]
+id: XPO:0141795
+name: abnormal glycosylation
+def: "Abnormal glycosylation." []
+
+[Term]
+id: XPO:0141796
+name: abnormal demethylation
+def: "Abnormal demethylation." []
+
+[Term]
+id: XPO:0141797
+name: abnormal hydrogen metabolic process
+def: "Abnormal hydrogen metabolic process." []
+
+[Term]
+id: XPO:0141798
+name: abnormal lipid metabolic process
+def: "Abnormal lipid metabolic process." []
+
+[Term]
+id: XPO:0141799
+name: decreased catalytic activity
+def: "Abnormally reduced functionality of catalytic activity." []
+
+[Term]
+id: XPO:0141800
+name: decreased cyclase activity
+def: "Abnormally reduced functionality of cyclase activity." []
+
+[Term]
+id: XPO:0141801
+name: decreased oxidoreductase activity
+def: "Abnormally reduced functionality of oxidoreductase activity." []
+
+[Term]
+id: XPO:0141802
+name: decreased transferase activity
+def: "Abnormally reduced functionality of transferase activity." []
+
+[Term]
+id: XPO:0141803
+name: decreased hydrolase activity
+def: "Abnormally reduced functionality of hydrolase activity." []
+
+[Term]
+id: XPO:0141804
+name: decreased lyase activity
+def: "Abnormally reduced functionality of lyase activity." []
+
+[Term]
+id: XPO:0141805
+name: decreased isomerase activity
+def: "Abnormally reduced functionality of isomerase activity." []
+
+[Term]
+id: XPO:0141806
+name: decreased ligase activity
+def: "Abnormally reduced functionality of ligase activity." []
+
+[Term]
+id: XPO:0141807
+name: decreased demethylase activity
+def: "Abnormally reduced functionality of demethylase activity." []
+
+[Term]
+id: XPO:0141808
+name: decreased peptidoglycan muralytic activity
+def: "Abnormally reduced functionality of peptidoglycan muralytic activity." []
+
+[Term]
+id: XPO:0141809
+name: abnormal catalytic activity
+def: "Abnormal catalytic activity." []
+
+[Term]
+id: XPO:0141810
+name: abnormal cyclase activity
+def: "Abnormal cyclase activity." []
+
+[Term]
+id: XPO:0141811
+name: abnormal oxidoreductase activity
+def: "Abnormal oxidoreductase activity." []
+
+[Term]
+id: XPO:0141812
+name: abnormal transferase activity
+def: "Abnormal transferase activity." []
+
+[Term]
+id: XPO:0141813
+name: abnormal hydrolase activity
+def: "Abnormal hydrolase activity." []
+
+[Term]
+id: XPO:0141814
+name: abnormal lyase activity
+def: "Abnormal lyase activity." []
+
+[Term]
+id: XPO:0141815
+name: abnormal isomerase activity
+def: "Abnormal isomerase activity." []
+
+[Term]
+id: XPO:0141816
+name: abnormal ligase activity
+def: "Abnormal ligase activity." []
+
+[Term]
+id: XPO:0141817
+name: abnormal demethylase activity
+def: "Abnormal demethylase activity." []
+
+[Term]
+id: XPO:0141818
+name: abnormal peptidoglycan muralytic activity
+def: "Abnormal peptidoglycan muralytic activity." []
+
+[Term]
+id: XPO:0141819
+name: neoplastic esophagus
+def: "The presence of abnormally proliferating masses of cells in esophagus." []
+synonym: "tumorous esophagus" EXACT []
+
+[Term]
+id: XPO:0141820
+name: neoplastic epithelium
+def: "The presence of abnormally proliferating masses of cells in epithelium." []
+synonym: "tumorous epithelium" EXACT []
+
+[Term]
+id: XPO:0141821
+name: metaplastic esophagus
+def: "Abnormal change from one fully differentiated cellular state into another in esophagus." []
+
+[Term]
+id: XPO:0141822
+name: metaplastic epithelium
+def: "Abnormal change from one fully differentiated cellular state into another in epithelium." []
+
+[Term]
+id: XPO:0141823
+name: decreased width of the hindlimb bud
+def: "skinny or decreased width of the hindlimb bud." []
+synonym: "skinny hindlimb bud" EXACT []
+
+[Term]
+id: XPO:0141824
+name: decreased width of the pronephric tubule
+def: "skinny or decreased width of the pronephric tubule." []
+synonym: "skinny pronephric tubule" EXACT []
+
+[Term]
+id: XPO:0141825
+name: increased width of the cartilage element in head
+def: "Wide or increased width of the cartilage element in head." []
+synonym: "wide cartilage element in head" EXACT []
+
+[Term]
+id: XPO:0141826
+name: decreased width of the spike in regenerating hindlimb
+def: "skinny or decreased width of the spike in regenerating hindlimb." []
+synonym: "skinny spike in regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141827
+name: increased width of cement gland
+def: "Increased width of cement gland." []
+synonym: "wider cement gland" EXACT []
+
+[Term]
+id: XPO:0141828
+name: increased width of craniofacial region
+def: "Increased width of craniofacial region." []
+synonym: "wider craniofacial region" EXACT []
+
+[Term]
+id: XPO:0141829
+name: increased width of head
+def: "Increased width of head." []
+synonym: "wider head" EXACT []
+
+[Term]
+id: XPO:0141830
+name: increased width of mouth
+def: "Increased width of mouth." []
+synonym: "wider mouth" EXACT []
+
+[Term]
+id: XPO:0141831
+name: increased size of the cilium in gastrocoel roof plate
+def: "An increase in the size of the cilium in the gastrocoel roof plate." []
+synonym: "enlarged cilium in gastrocoel roof plate" EXACT []
+
+[Term]
+id: XPO:0141832
+name: decreased size of the cilium in the gastrocoel roof plate
+def: "An abnormal reduction in the size of the cilium in the gastrocoel roof plate." []
+synonym: "abnormally small cilium in gastrocoel roof plate" EXACT []
+
+[Term]
+id: XPO:0141833
+name: edematous alimentary system
+def: "Abnormal accumulation of fluid in alimentary system." []
+synonym: "edema in alimentary system" EXACT []
+synonym: "oedema in alimentary system" EXACT []
+
+[Term]
+id: XPO:0141834
+name: edematous foregut
+def: "Abnormal accumulation of fluid in foregut." []
+synonym: "edema in foregut" EXACT []
+synonym: "oedema in foregut" EXACT []
+
+[Term]
+id: XPO:0141835
+name: edematous head
+def: "Abnormal accumulation of fluid in head." []
+synonym: "edema in head" EXACT []
+synonym: "oedema in head" EXACT []
+
+[Term]
+id: XPO:0141836
+name: edematous dorsal fin
+def: "Abnormal accumulation of fluid in dorsal fin." []
+synonym: "edema in dorsal fin" EXACT []
+synonym: "oedema in dorsal fin" EXACT []
+
+[Term]
+id: XPO:0141837
+name: edematous regenerating hindlimb
+def: "Abnormal accumulation of fluid in regenerating hindlimb." []
+synonym: "edema in regenerating hindlimb" EXACT []
+synonym: "oedema in regenerating hindlimb" EXACT []
+
+[Term]
+id: XPO:0141838
+name: edematous pericardium
+def: "Abnormal accumulation of fluid in pericardium." []
+synonym: "edema in pericardium" EXACT []
+synonym: "oedema in pericardium" EXACT []
+
+[Term]
+id: XPO:0141839
+name: edematous pharyngeal region
+def: "Abnormal accumulation of fluid in pharyngeal region." []
+synonym: "edema in pharyngeal region" EXACT []
+synonym: "oedema in pharyngeal region" EXACT []
+
+[Term]
+id: XPO:0141840
+name: decreased whole organism mass
+def: "An abnormal decrease in mass in the whole organism." []
+synonym: "decreased whole organism weight" NARROW []
+synonym: "low whole organism mass" EXACT []
+synonym: "small whole organism mass" EXACT []
+
+[Term]
+id: XPO:0141841
+name: abnormality of whole organism mass
+def: "An abnormality of mass in the whole organism." []
+synonym: "abnormality of whole organism weight" NARROW []
+
+[Term]
+id: XPO:0141842
+name: increased whole organism mass
+def: "An abnormal increase in mass in the whole organism." []
+synonym: "high whole organism mass" EXACT []
+synonym: "increased whole organism weight" NARROW []
+synonym: "large whole organism mass" EXACT []
+
+[Term]
+id: XPO:0141843
+name: abnormal alanine metabolic process
+def: "Abnormal alanine metabolic process." []
+
+[Term]
+id: XPO:0141844
+name: abnormal long-chain fatty acid metabolic process
+def: "Abnormal long-chain fatty acid metabolic process." []
+
+[Term]
+id: XPO:0141845
+name: abnormal alpha-linolenic acid metabolic process
+def: "Abnormal alpha-linolenic acid metabolic process." []
+
+[Term]
+id: XPO:0141846
+name: abnormal linoleic acid metabolic process
+def: "Abnormal linoleic acid metabolic process." []
+
+[Term]
+id: XPO:0141847
+name: abnormal arginine metabolic process
+def: "Abnormal arginine metabolic process." []
+
+[Term]
+id: XPO:0141848
+name: abnormal proline metabolic process
+def: "Abnormal proline metabolic process." []
+
+[Term]
+id: XPO:0141849
+name: abnormal fatty acid biosynthetic process
+def: "Abnormal fatty acid biosynthetic process." []
+
+[Term]
+id: XPO:0141850
+name: abnormal galactose metabolic process
+def: "Abnormal galactose metabolic process." []
+
+[Term]
+id: XPO:0141851
+name: abnormal gluconeogenesis
+def: "Abnormal gluconeogenesis." []
+
+[Term]
+id: XPO:0141852
+name: abnormal glucose metabolic process
+def: "Abnormal glucose metabolic process." []
+
+[Term]
+id: XPO:0141853
+name: abnormal glutamate metabolic process
+def: "Abnormal glutamate metabolic process." []
+
+[Term]
+id: XPO:0141854
+name: abnormal glutathione metabolic process
+def: "Abnormal glutathione metabolic process." []
+
+[Term]
+id: XPO:0141855
+name: abnormal glycerophosphate shuttle
+def: "Abnormal glycerophosphate shuttle." []
+
+[Term]
+id: XPO:0141856
+name: abnormal glycerolipid metabolic process
+def: "Abnormal glycerolipid metabolic process." []
+
+[Term]
+id: XPO:0141857
+name: abnormal glycine metabolic process
+def: "Abnormal glycine metabolic process." []
+
+[Term]
+id: XPO:0141858
+name: abnormal serine family amino acid metabolic process
+def: "Abnormal serine family amino acid metabolic process." []
+
+[Term]
+id: XPO:0141859
+name: abnormal lactose catabolic process
+def: "Abnormal lactose catabolic process." []
+
+[Term]
+id: XPO:0141860
+name: abnormal malate-aspartate shuttle
+def: "Abnormal malate-aspartate shuttle." []
+
+[Term]
+id: XPO:0141861
+name: abnormal purine nucleoside metabolic process
+def: "Abnormal purine nucleoside metabolic process." []
+
+[Term]
+id: XPO:0141862
+name: abnormal urea cycle
+def: "Abnormal urea cycle." []
+
+[Term]
+id: XPO:0141863
+name: abnormal lactate metabolic process
+def: "Abnormal lactate metabolic process." []
+
+[Term]
+id: XPO:0141864
+name: abnormal 5-methylcytosine metabolic process
+def: "Abnormal 5-methylcytosine metabolic process." []
+
+[Term]
+id: XPO:0141865
+name: abnormal adenine metabolic process
+def: "Abnormal adenine metabolic process." []
+
+[Term]
+id: XPO:0141866
+name: abnormal dicarboxylic acid metabolic process
+def: "Abnormal dicarboxylic acid metabolic process." []
+
+[Term]
+id: XPO:0141867
+name: abnormal arachidonic acid metabolic process
+def: "Abnormal arachidonic acid metabolic process." []
+
+[Term]
+id: XPO:0141868
+name: abnormal asparagine metabolic process
+def: "Abnormal asparagine metabolic process." []
+
+[Term]
+id: XPO:0141869
+name: abnormal alpha-amino acid metabolic process
+def: "Abnormal alpha-amino acid metabolic process." []
+
+[Term]
+id: XPO:0141870
+name: abnormal fatty acid metabolic process
+def: "Abnormal fatty acid metabolic process." []
+
+[Term]
+id: XPO:0141871
+name: abnormal cadaverine transport
+def: "Abnormal cadaverine transport." []
+
+[Term]
+id: XPO:0141872
+name: abnormal cholesterol metabolic process
+def: "Abnormal cholesterol metabolic process." []
+
+[Term]
+id: XPO:0141873
+name: abnormal tricarboxylic acid metabolic process
+def: "Abnormal tricarboxylic acid metabolic process." []
+
+[Term]
+id: XPO:0141874
+name: abnormal creatinine metabolic process
+def: "Abnormal creatinine metabolic process." []
+
+[Term]
+id: XPO:0141875
+name: abnormal cytosine metabolic process
+def: "Abnormal cytosine metabolic process." []
+
+[Term]
+id: XPO:0141876
+name: abnormal deoxyinosine metabolic process
+def: "Abnormal deoxyinosine metabolic process." []
+
+[Term]
+id: XPO:0141877
+name: abnormal 2-deoxyribose 1-phosphate metabolic process
+def: "Abnormal 2-deoxyribose 1-phosphate metabolic process." []
+
+[Term]
+id: XPO:0141878
+name: abnormal histamine oxidase activity
+def: "Abnormal histamine oxidase activity." []
+
+[Term]
+id: XPO:0141879
+name: abnormal oxalate metabolic process
+def: "Abnormal oxalate metabolic process." []
+
+[Term]
+id: XPO:0141880
+name: abnormal ethanolamine metabolic process
+def: "Abnormal ethanolamine metabolic process." []
+
+[Term]
+id: XPO:0141881
+name: abnormal fructose metabolic process
+def: "Abnormal fructose metabolic process." []
+
+[Term]
+id: XPO:0141882
+name: abnormal gamma-aminobutyric acid metabolic process
+def: "Abnormal gamma-aminobutyric acid metabolic process." []
+
+[Term]
+id: XPO:0141883
+name: abnormal glycerol metabolic process
+def: "Abnormal glycerol metabolic process." []
+
+[Term]
+id: XPO:0141884
+name: abnormal phosphagen metabolic process
+def: "Abnormal phosphagen metabolic process." []
+
+[Term]
+id: XPO:0141885
+name: abnormal guanine metabolic process
+def: "Abnormal guanine metabolic process." []
+
+[Term]
+id: XPO:0141886
+name: abnormal guanosine metabolic process
+def: "Abnormal guanosine metabolic process." []
+
+[Term]
+id: XPO:0141887
+name: abnormal histidine metabolic process
+def: "Abnormal histidine metabolic process." []
+
+[Term]
+id: XPO:0141888
+name: abnormal threonine metabolic process
+def: "Abnormal threonine metabolic process." []
+
+[Term]
+id: XPO:0141889
+name: abnormal homoserine metabolic process
+def: "Abnormal homoserine metabolic process." []
+
+[Term]
+id: XPO:0141890
+name: abnormal hypoxanthine metabolic process
+def: "Abnormal hypoxanthine metabolic process." []
+
+[Term]
+id: XPO:0141891
+name: abnormal inosine metabolic process
+def: "Abnormal inosine metabolic process." []
+
+[Term]
+id: XPO:0141892
+name: abnormal inositol metabolic process
+def: "Abnormal inositol metabolic process." []
+
+[Term]
+id: XPO:0141893
+name: abnormal isoleucine metabolic process
+def: "Abnormal isoleucine metabolic process." []
+
+[Term]
+id: XPO:0141894
+name: abnormal dicarboxylic acid transport
+def: "Abnormal dicarboxylic acid transport." []
+
+[Term]
+id: XPO:0141895
+name: abnormal leucine metabolic process
+def: "Abnormal leucine metabolic process." []
+
+[Term]
+id: XPO:0141896
+name: abnormal lysine metabolic process
+def: "Abnormal lysine metabolic process." []
+
+[Term]
+id: XPO:0141897
+name: abnormal malonic acid transport
+def: "Abnormal malonic acid transport." []
+
+[Term]
+id: XPO:0141898
+name: abnormal maltose metabolic process
+def: "Abnormal maltose metabolic process." []
+
+[Term]
+id: XPO:0141899
+name: abnormal mandelate metabolic process
+def: "Abnormal mandelate metabolic process." []
+
+[Term]
+id: XPO:0141900
+name: abnormal mannose metabolic process
+def: "Abnormal mannose metabolic process." []
+
+[Term]
+id: XPO:0141901
+name: abnormal mannose to fructose-6-phosphate metabolic process
+def: "Abnormal mannose to fructose-6-phosphate metabolic process." []
+
+[Term]
+id: XPO:0141902
+name: abnormal D-methionine transport
+def: "Abnormal D-methionine transport." []
+
+[Term]
+id: XPO:0141903
+name: abnormal inositol phosphate metabolic process
+def: "Abnormal inositol phosphate metabolic process." []
+
+[Term]
+id: XPO:0141904
+name: abnormal glucosamine metabolic process
+def: "Abnormal glucosamine metabolic process." []
+
+[Term]
+id: XPO:0141905
+name: abnormal ornithine metabolic process
+def: "Abnormal ornithine metabolic process." []
+
+[Term]
+id: XPO:0141906
+name: abnormal palmitic acid metabolic process
+def: "Abnormal palmitic acid metabolic process." []
+
+[Term]
+id: XPO:0141907
+name: abnormal putrescine metabolic process
+def: "Abnormal putrescine metabolic process." []
+
+[Term]
+id: XPO:0141908
+name: abnormal pyridine metabolic process
+def: "Abnormal pyridine metabolic process." []
+
+[Term]
+id: XPO:0141909
+name: abnormal ribonucleoside metabolic process
+def: "Abnormal ribonucleoside metabolic process." []
+
+[Term]
+id: XPO:0141910
+name: abnormal D-ribose metabolic process
+def: "Abnormal D-ribose metabolic process." []
+
+[Term]
+id: XPO:0141911
+name: abnormal ribose phosphate metabolic process
+def: "Abnormal ribose phosphate metabolic process." []
+
+[Term]
+id: XPO:0141912
+name: abnormal D-serine metabolic process
+def: "Abnormal D-serine metabolic process." []
+
+[Term]
+id: XPO:0141913
+name: abnormal L-serine metabolic process
+def: "Abnormal L-serine metabolic process." []
+
+[Term]
+id: XPO:0141914
+name: abnormal succinate metabolic process
+def: "Abnormal succinate metabolic process." []
+
+[Term]
+id: XPO:0141915
+name: abnormal taurine metabolic process
+def: "Abnormal taurine metabolic process." []
+
+[Term]
+id: XPO:0141916
+name: abnormal thymine metabolic process
+def: "Abnormal thymine metabolic process." []
+
+[Term]
+id: XPO:0141917
+name: abnormal tryptophan metabolic process
+def: "Abnormal tryptophan metabolic process." []
+
+[Term]
+id: XPO:0141918
+name: abnormal tyrosine metabolic process
+def: "Abnormal tyrosine metabolic process." []
+
+[Term]
+id: XPO:0141919
+name: abnormal uracil metabolic process
+def: "Abnormal uracil metabolic process." []
+
+[Term]
+id: XPO:0141920
+name: abnormal urea metabolic process
+def: "Abnormal urea metabolic process." []
+
+[Term]
+id: XPO:0141921
+name: abnormal uridine metabolic process
+def: "Abnormal uridine metabolic process." []
+
+[Term]
+id: XPO:0141922
+name: abnormal valine metabolic process
+def: "Abnormal valine metabolic process." []
+
+[Term]
+id: XPO:0141923
+name: abnormal xanthine metabolic process
+def: "Abnormal xanthine metabolic process." []
+
+[Term]
+id: XPO:0141924
+name: duplicated main body axis
+def: "Any abnormal duplication of the main body axis." []
+synonym: "abnormal duplication of main body axis" EXACT []
+synonym: "abnormally duplicated main body axis" EXACT []
+
+[Term]
+id: XPO:0141925
+name: wholly dorso-anteriorized embryo
+def: "A wholly dorso-anteriorized embryo." []
+
+[Term]
+id: XPO:0141926
+name: partially dorso-anteriorized embryo
+def: "A partially dorso-anteriorized embryo." []
+
+[Term]
+id: XPO:0141927
+name: wholly ventro-posteriorized embryo
+def: "A wholly ventro-posteriorized embryo." []
+
+[Term]
+id: XPO:0141928
+name: partially ventro-posteriorized embryo
+def: "A partially ventro-posteriorized embryo." []
+
+[Term]
+id: XPO:0141929
+name: wholly dorso-anteriorized tadpole
+def: "A wholly dorso-anteriorized tadpole." []
+
+[Term]
+id: XPO:0141930
+name: partially dorso-anteriorized tadpole
+def: "A partially dorso-anteriorized tadpole." []
+
+[Term]
+id: XPO:0141931
+name: wholly ventro-posteriorized tadpole
+def: "A wholly ventro-posteriorized tadpole." []
+
+[Term]
+id: XPO:0141932
+name: partially ventro-posteriorized tadpole
+def: "A partially ventro-posteriorized tadpole." []
+
+[Term]
+id: XPO:0141933
+name: decreased apoptosis in desmosome
+def: "A decreased occurrence of apoptotic process in desmosome." []
+
+[Term]
+id: XPO:0141934
+name: decreased apoptosis in digestive tract
+def: "A decreased occurrence of apoptotic process in digestive tract." []
+
+[Term]
+id: XPO:0141935
+name: decreased apoptosis in main body axis
+def: "A decreased occurrence of apoptotic process in main body axis." []
+
+[Term]
+id: XPO:0141936
+name: decreased apoptosis in tracheoesophageal septum
+def: "A decreased occurrence of apoptotic process in tracheoesophageal septum." []
+
+[Term]
+id: XPO:0141937
+name: decreased apoptosis in abdominal wall
+def: "A decreased occurrence of apoptotic process in abdominal wall." []
+
+[Term]
+id: XPO:0141938
+name: decreased apoptosis in nasal region
+def: "A decreased occurrence of apoptotic process in nasal region." []
+
+[Term]
+id: XPO:0141939
+name: decreased cell population proliferation in desmosome
+def: "A decreased occurrence of cell population proliferation in desmosome." []
+
+[Term]
+id: XPO:0141940
+name: decreased cell population proliferation in digestive tract
+def: "A decreased occurrence of cell population proliferation in digestive tract." []
+
+[Term]
+id: XPO:0141941
+name: decreased cell population proliferation in main body axis
+def: "A decreased occurrence of cell population proliferation in main body axis." []
+
+[Term]
+id: XPO:0141942
+name: decreased cell population proliferation in tracheoesophageal septum
+def: "A decreased occurrence of cell population proliferation in tracheoesophageal septum." []
+
+[Term]
+id: XPO:0141943
+name: decreased cell population proliferation in abdominal wall
+def: "A decreased occurrence of cell population proliferation in abdominal wall." []
+
+[Term]
+id: XPO:0141944
+name: decreased cell population proliferation in nasal region
+def: "A decreased occurrence of cell population proliferation in nasal region." []
+
+[Term]
+id: XPO:0141945
+name: increased apoptosis in desmosome
+def: "An increased occurrence of apoptotic process in desmosome." []
+
+[Term]
+id: XPO:0141946
+name: increased apoptosis in digestive tract
+def: "An increased occurrence of apoptotic process in digestive tract." []
+
+[Term]
+id: XPO:0141947
+name: increased apoptosis in main body axis
+def: "An increased occurrence of apoptotic process in main body axis." []
+
+[Term]
+id: XPO:0141948
+name: increased apoptosis in tracheoesophageal septum
+def: "An increased occurrence of apoptotic process in tracheoesophageal septum." []
+
+[Term]
+id: XPO:0141949
+name: increased apoptosis in abdominal wall
+def: "An increased occurrence of apoptotic process in abdominal wall." []
+
+[Term]
+id: XPO:0141950
+name: increased apoptosis in nasal region
+def: "An increased occurrence of apoptotic process in nasal region." []
+
+[Term]
+id: XPO:0141951
+name: increased cell population proliferation in desmosome
+def: "An increased occurrence of cell population proliferation in desmosome." []
+
+[Term]
+id: XPO:0141952
+name: increased cell population proliferation in digestive tract
+def: "An increased occurrence of cell population proliferation in digestive tract." []
+
+[Term]
+id: XPO:0141953
+name: increased cell population proliferation in main body axis
+def: "An increased occurrence of cell population proliferation in main body axis." []
+
+[Term]
+id: XPO:0141954
+name: increased cell population proliferation in tracheoesophageal septum
+def: "An increased occurrence of cell population proliferation in tracheoesophageal septum." []
+
+[Term]
+id: XPO:0141955
+name: increased cell population proliferation in abdominal wall
+def: "An increased occurrence of cell population proliferation in abdominal wall." []
+
+[Term]
+id: XPO:0141956
+name: increased cell population proliferation in nasal region
+def: "An increased occurrence of cell population proliferation in nasal region." []
+
+[Term]
+id: XPO:0141957
+name: abnormal histone kinase activity
+def: "Abnormal histone kinase activity." []
+
+[Term]
+id: XPO:0141958
+name: absent cilium motility in left-right organizer
+def: "Absent or undetectable cilium movement in left-right organizer." []
+
+[Term]
+id: XPO:0141959
+name: absent cilium motility in floor plate
+def: "Absent or undetectable cilium movement in floor plate." []
+
+[Term]
+id: XPO:0141960
+name: absent cilium motility in brain
+def: "Absent or undetectable cilium movement in brain." []
+
+[Term]
+id: XPO:0141961
+name: absent cilium motility in mucociliary epithelium
+def: "Absent or undetectable cilium movement in mucociliary epithelium." []
+
+[Term]
+id: XPO:0141962
+name: absent cilium motility in pronephric kidney
+def: "Absent or undetectable cilium movement in pronephric kidney." []
+
+[Term]
+id: XPO:0141963
+name: absent cilium motility in pronephric nephrostome
+def: "Absent or undetectable cilium movement in pronephric nephrostome." []
+
+[Term]
+id: XPO:0141964
+name: absent cilium motility in olfactory pit
+def: "Absent or undetectable cilium movement in olfactory pit." []
+
+[Term]
+id: XPO:0141965
+name: absent cilium motility in alimentary system
+def: "Absent or undetectable cilium movement in alimentary system." []
+
+[Term]
+id: XPO:0141966
+name: absent cilium motility in stomach
+def: "Absent or undetectable cilium movement in stomach." []
+
+[Term]
+id: XPO:0141967
+name: absent cilium motility in esophagus
+def: "Absent or undetectable cilium movement in esophagus." []
+
+[Term]
+id: XPO:0141968
+name: absent cilium motility in ciliated cell
+def: "Absent or undetectable cilium movement in ciliated cell." []
+
+[Term]
+id: XPO:0141969
+name: absent cilium motility in monociliated cell
+def: "Absent or undetectable cilium movement in monociliated cell." []
+
+[Term]
+id: XPO:0141970
+name: absent cilium motility in multiciliated cell
+def: "Absent or undetectable cilium movement in multiciliated cell." []
+
+[Term]
+id: XPO:0141971
+name: absent cilium motility in ciliated epidermal cell
+def: "Absent or undetectable cilium movement in ciliated epidermal cell." []
+
+[Term]
+id: XPO:0141972
+name: absent cilium motility in ciliated non-epidermal cell
+def: "Absent or undetectable cilium movement in ciliated non-epidermal cell." []
+
+[Term]
+id: XPO:0141973
+name: absent cilium motility in monociliated epidermal cell
+def: "Absent or undetectable cilium movement in monociliated epidermal cell." []
+
+[Term]
+id: XPO:0141974
+name: absent cilium motility in multiciliated epidermal cell
+def: "Absent or undetectable cilium movement in multiciliated epidermal cell." []
+
+[Term]
+id: XPO:0141975
+name: abnormal cilium motility
+def: "Abnormal cilium movement." []
+
+[Term]
+id: XPO:0141976
+name: decreased cilium motility in left-right organizer
+def: "decreased cilium movement in left-right organizer." []
+
+[Term]
+id: XPO:0141977
+name: decreased cilium motility in floor plate
+def: "decreased cilium movement in floor plate." []
+
+[Term]
+id: XPO:0141978
+name: decreased cilium motility in brain
+def: "decreased cilium movement in brain." []
+
+[Term]
+id: XPO:0141979
+name: decreased cilium motility in mucociliary epithelium
+def: "decreased cilium movement in mucociliary epithelium." []
+
+[Term]
+id: XPO:0141980
+name: decreased cilium motility in pronephric kidney
+def: "decreased cilium movement in pronephric kidney." []
+
+[Term]
+id: XPO:0141981
+name: decreased cilium motility in pronephric nephrostome
+def: "decreased cilium movement in pronephric nephrostome." []
+
+[Term]
+id: XPO:0141982
+name: decreased cilium motility in olfactory pit
+def: "decreased cilium movement in olfactory pit." []
+
+[Term]
+id: XPO:0141983
+name: decreased cilium motility in alimentary system
+def: "decreased cilium movement in alimentary system." []
+
+[Term]
+id: XPO:0141984
+name: decreased cilium motility in stomach
+def: "decreased cilium movement in stomach." []
+
+[Term]
+id: XPO:0141985
+name: decreased cilium motility in esophagus
+def: "decreased cilium movement in esophagus." []
+
+[Term]
+id: XPO:0141986
+name: decreased cilium motility in ciliated cell
+def: "decreased cilium movement in ciliated cell." []
+
+[Term]
+id: XPO:0141987
+name: decreased cilium motility in monociliated cell
+def: "decreased cilium movement in monociliated cell." []
+
+[Term]
+id: XPO:0141988
+name: decreased cilium motility in multiciliated cell
+def: "decreased cilium movement in multiciliated cell." []
+
+[Term]
+id: XPO:0141989
+name: decreased cilium motility in ciliated epidermal cell
+def: "decreased cilium movement in ciliated epidermal cell." []
+
+[Term]
+id: XPO:0141990
+name: decreased cilium motility in ciliated non-epidermal cell
+def: "decreased cilium movement in ciliated non-epidermal cell." []
+
+[Term]
+id: XPO:0141991
+name: decreased cilium motility in monociliated epidermal cell
+def: "decreased cilium movement in monociliated epidermal cell." []
+
+[Term]
+id: XPO:0141992
+name: decreased cilium motility in multiciliated epidermal cell
+def: "decreased cilium movement in multiciliated epidermal cell." []
+
+[Term]
+id: XPO:0141993
+name: increased cilium motility in left-right organizer
+def: "Increased cilium movement in left-right organizer." []
+
+[Term]
+id: XPO:0141994
+name: increased cilium motility in floor plate
+def: "Increased cilium movement in floor plate." []
+
+[Term]
+id: XPO:0141995
+name: increased cilium motility in brain
+def: "Increased cilium movement in brain." []
+
+[Term]
+id: XPO:0141996
+name: increased cilium motility in mucociliary epithelium
+def: "Increased cilium movement in mucociliary epithelium." []
+
+[Term]
+id: XPO:0141997
+name: increased cilium motility in pronephric kidney
+def: "Increased cilium movement in pronephric kidney." []
+
+[Term]
+id: XPO:0141998
+name: increased cilium motility in pronephric nephrostome
+def: "Increased cilium movement in pronephric nephrostome." []
+
+[Term]
+id: XPO:0141999
+name: increased cilium motility in olfactory pit
+def: "Increased cilium movement in olfactory pit." []
+
+[Term]
+id: XPO:0142000
+name: increased cilium motility in alimentary system
+def: "Increased cilium movement in alimentary system." []
+
+[Term]
+id: XPO:0142001
+name: increased cilium motility in stomach
+def: "Increased cilium movement in stomach." []
+
+[Term]
+id: XPO:0142002
+name: increased cilium motility in esophagus
+def: "Increased cilium movement in esophagus." []
+
+[Term]
+id: XPO:0142003
+name: increased cilium motility in ciliated cell
+def: "Increased cilium movement in ciliated cell." []
+
+[Term]
+id: XPO:0142004
+name: increased cilium motility in monociliated cell
+def: "Increased cilium movement in monociliated cell." []
+
+[Term]
+id: XPO:0142005
+name: increased cilium motility in multiciliated cell
+def: "Increased cilium movement in multiciliated cell." []
+
+[Term]
+id: XPO:0142006
+name: increased cilium motility in ciliated epidermal cell
+def: "Increased cilium movement in ciliated epidermal cell." []
+
+[Term]
+id: XPO:0142007
+name: increased cilium motility in ciliated non-epidermal cell
+def: "Increased cilium movement in ciliated non-epidermal cell." []
+
+[Term]
+id: XPO:0142008
+name: increased cilium motility in monociliated epidermal cell
+def: "Increased cilium movement in monociliated epidermal cell." []
+
+[Term]
+id: XPO:0142009
+name: increased cilium motility in multiciliated epidermal cell
+def: "Increased cilium movement in multiciliated epidermal cell." []
+
+[Term]
+id: XPO:0142010
+name: abnormal development of cerebrospinal fluid
+def: "An abnormal development of the cerebrospinal fluid." []
+
+[Term]
+id: XPO:0142011
+name: abnormal development of nasal region
+def: "An abnormal development of the nasal region." []
+
+[Term]
+id: XPO:0142012
+name: abnormal development of abdominal wall
+def: "An abnormal development of the abdominal wall." []
+
+[Term]
+id: XPO:0142013
+name: abnormal development of digestive tract
+def: "An abnormal development of the digestive tract." []
+
+[Term]
+id: XPO:0142014
+name: abnormal development of tracheoesophageal septum
+def: "An abnormal development of the tracheoesophageal septum." []
+
+[Term]
+id: XPO:0142015
+name: abnormal development of main body axis
+def: "An abnormal development of the main body axis." []
+
+[Term]
+id: XPO:0142016
+name: abnormal development of desmosome
+def: "An abnormal development of the desmosome." []
+
+[Term]
+id: XPO:0142017
+name: absent cerebrospinal fluid
+def: "Absence of cerebrospinal fluid." []
+synonym: "missing cerebrospinal fluid" EXACT []
+
+[Term]
+id: XPO:0142018
+name: absent nasal region
+def: "Absence of nasal region." []
+synonym: "missing nasal region" EXACT []
+
+[Term]
+id: XPO:0142019
+name: absent abdominal wall
+def: "Absence of abdominal wall." []
+synonym: "missing abdominal wall" EXACT []
+
+[Term]
+id: XPO:0142020
+name: absent digestive tract
+def: "Absence of digestive tract." []
+synonym: "missing digestive tract" EXACT []
+
+[Term]
+id: XPO:0142021
+name: absent tracheoesophageal septum
+def: "Absence of tracheoesophageal septum." []
+synonym: "missing tracheoesophageal septum" EXACT []
+
+[Term]
+id: XPO:0142022
+name: absent main body axis
+def: "Absence of main body axis." []
+synonym: "missing main body axis" EXACT []
+
+[Term]
+id: XPO:0142023
+name: absent desmosome
+def: "Absence of desmosome." []
+synonym: "missing desmosome" EXACT []
+
+[Term]
+id: XPO:0142024
+name: abnormally localised cerebrospinal fluid
+def: "An abnormally localised cerebrospinal fluid." []
+synonym: "abnormal position of cerebrospinal fluid" EXACT []
+
+[Term]
+id: XPO:0142025
+name: abnormally localised nasal region
+def: "An abnormally localised nasal region." []
+synonym: "abnormal position of nasal region" EXACT []
+
+[Term]
+id: XPO:0142026
+name: abnormally localised abdominal wall
+def: "An abnormally localised abdominal wall." []
+synonym: "abnormal position of abdominal wall" EXACT []
+
+[Term]
+id: XPO:0142027
+name: abnormally localised digestive tract
+def: "An abnormally localised digestive tract." []
+synonym: "abnormal position of digestive tract" EXACT []
+
+[Term]
+id: XPO:0142028
+name: abnormally localised tracheoesophageal septum
+def: "An abnormally localised tracheoesophageal septum." []
+synonym: "abnormal position of tracheoesophageal septum" EXACT []
+
+[Term]
+id: XPO:0142029
+name: abnormally localised main body axis
+def: "An abnormally localised main body axis." []
+synonym: "abnormal position of main body axis" EXACT []
+
+[Term]
+id: XPO:0142030
+name: abnormally localised desmosome
+def: "An abnormally localised desmosome." []
+synonym: "abnormal position of desmosome" EXACT []
+
+[Term]
+id: XPO:0142031
+name: abnormally necrotic cerebrospinal fluid
+def: "An abnormally necrotic cerebrospinal fluid." []
+
+[Term]
+id: XPO:0142032
+name: abnormally necrotic nasal region
+def: "An abnormally necrotic nasal region." []
+
+[Term]
+id: XPO:0142033
+name: abnormally necrotic abdominal wall
+def: "An abnormally necrotic abdominal wall." []
+
+[Term]
+id: XPO:0142034
+name: abnormally necrotic digestive tract
+def: "An abnormally necrotic digestive tract." []
+
+[Term]
+id: XPO:0142035
+name: abnormally necrotic tracheoesophageal septum
+def: "An abnormally necrotic tracheoesophageal septum." []
+
+[Term]
+id: XPO:0142036
+name: abnormally necrotic main body axis
+def: "An abnormally necrotic main body axis." []
+
+[Term]
+id: XPO:0142037
+name: decreased size of the cerebrospinal fluid
+def: "An abnormal reduction in the size of the cerebrospinal fluid." []
+synonym: "abnormally small cerebrospinal fluid" EXACT []
+
+[Term]
+id: XPO:0142038
+name: decreased size of the nasal region
+def: "An abnormal reduction in the size of the nasal region." []
+synonym: "abnormally small nasal region" EXACT []
+
+[Term]
+id: XPO:0142039
+name: decreased size of the abdominal wall
+def: "An abnormal reduction in the size of the abdominal wall." []
+synonym: "abnormally small abdominal wall" EXACT []
+
+[Term]
+id: XPO:0142040
+name: decreased size of the digestive tract
+def: "An abnormal reduction in the size of the digestive tract." []
+synonym: "abnormally small digestive tract" EXACT []
+
+[Term]
+id: XPO:0142041
+name: decreased size of the tracheoesophageal septum
+def: "An abnormal reduction in the size of the tracheoesophageal septum." []
+synonym: "abnormally small tracheoesophageal septum" EXACT []
+
+[Term]
+id: XPO:0142042
+name: decreased size of the main body axis
+def: "An abnormal reduction in the size of the main body axis." []
+synonym: "abnormally small main body axis" EXACT []
+
+[Term]
+id: XPO:0142043
+name: decreased size of the desmosome
+def: "An abnormal reduction in the size of the desmosome." []
+synonym: "abnormally small desmosome" EXACT []
+
+[Term]
+id: XPO:0142044
+name: increased size of the cerebrospinal fluid
+def: "An increase in the size of the cerebrospinal fluid." []
+synonym: "enlarged cerebrospinal fluid" EXACT []
+
+[Term]
+id: XPO:0142045
+name: increased size of the nasal region
+def: "An increase in the size of the nasal region." []
+synonym: "enlarged nasal region" EXACT []
+
+[Term]
+id: XPO:0142046
+name: increased size of the abdominal wall
+def: "An increase in the size of the abdominal wall." []
+synonym: "enlarged abdominal wall" EXACT []
+
+[Term]
+id: XPO:0142047
+name: increased size of the digestive tract
+def: "An increase in the size of the digestive tract." []
+synonym: "enlarged digestive tract" EXACT []
+
+[Term]
+id: XPO:0142048
+name: increased size of the tracheoesophageal septum
+def: "An increase in the size of the tracheoesophageal septum." []
+synonym: "enlarged tracheoesophageal septum" EXACT []
+
+[Term]
+id: XPO:0142049
+name: increased size of the main body axis
+def: "An increase in the size of the main body axis." []
+synonym: "enlarged main body axis" EXACT []
+
+[Term]
+id: XPO:0142050
+name: increased size of the desmosome
+def: "An increase in the size of the desmosome." []
+synonym: "enlarged desmosome" EXACT []
+
+[Term]
+id: XPO:0142051
+name: abnormal cerebrospinal fluid
+def: "Abnormality of cerebrospinal fluid." []
+synonym: "abnormality of cerebrospinal fluid" EXACT []
+
+[Term]
+id: XPO:0142052
+name: abnormal nasal region
+def: "Abnormality of nasal region." []
+synonym: "abnormality of nasal region" EXACT []
+
+[Term]
+id: XPO:0142053
+name: abnormal abdominal wall
+def: "Abnormality of abdominal wall." []
+synonym: "abnormality of abdominal wall" EXACT []
+
+[Term]
+id: XPO:0142054
+name: abnormal digestive tract
+def: "Abnormality of digestive tract." []
+synonym: "abnormality of digestive tract" EXACT []
+
+[Term]
+id: XPO:0142055
+name: abnormal tracheoesophageal septum
+def: "Abnormality of tracheoesophageal septum." []
+synonym: "abnormality of tracheoesophageal septum" EXACT []
+
+[Term]
+id: XPO:0142056
+name: abnormal main body axis
+def: "Abnormality of main body axis." []
+synonym: "abnormality of main body axis" EXACT []
+
+[Term]
+id: XPO:0142057
+name: abnormal desmosome
+def: "Abnormality of desmosome." []
+synonym: "abnormality of desmosome" EXACT []
+
+[Term]
+id: XPO:0142058
+name: abnormal cerebrospinal fluid morphology
+def: "Any unspecified morphological anomaly of the cerebrospinal fluid, such as, for example, abnormal shape or colour." []
+synonym: "abnormal morphology of cerebrospinal fluid" EXACT []
+
+[Term]
+id: XPO:0142059
+name: abnormal nasal region morphology
+def: "Any unspecified morphological anomaly of the nasal region, such as, for example, abnormal shape or colour." []
+synonym: "abnormal morphology of nasal region" EXACT []
+
+[Term]
+id: XPO:0142060
+name: abnormal abdominal wall morphology
+def: "Any unspecified morphological anomaly of the abdominal wall, such as, for example, abnormal shape or colour." []
+synonym: "abnormal morphology of abdominal wall" EXACT []
+
+[Term]
+id: XPO:0142061
+name: abnormal digestive tract morphology
+def: "Any unspecified morphological anomaly of the digestive tract, such as, for example, abnormal shape or colour." []
+synonym: "abnormal morphology of digestive tract" EXACT []
+
+[Term]
+id: XPO:0142062
+name: abnormal tracheoesophageal septum morphology
+def: "Any unspecified morphological anomaly of the tracheoesophageal septum, such as, for example, abnormal shape or colour." []
+synonym: "abnormal morphology of tracheoesophageal septum" EXACT []
+
+[Term]
+id: XPO:0142063
+name: abnormal main body axis morphology
+def: "Any unspecified morphological anomaly of the main body axis, such as, for example, abnormal shape or colour." []
+synonym: "abnormal morphology of main body axis" EXACT []
+
+[Term]
+id: XPO:0142064
+name: abnormal desmosome morphology
+def: "Any unspecified morphological anomaly of the desmosome, such as, for example, abnormal shape or colour." []
+synonym: "abnormal morphology of desmosome" EXACT []
+
+[Term]
+id: XPO:0142065
+name: abnormally decreased number of desmosome
+def: "The presence of a reduced number of desmosome." []
+synonym: "Reduced number of desmosome" EXACT []
+
+[Term]
+id: XPO:0142066
+name: abnormally increased number of desmosome
+def: "The presence of an increased number of desmosome." []
+synonym: "Extra desmosome" EXACT []
+
+[Term]
+id: XPO:0142067
+name: abnormally necrotic desmosome
+def: "An abnormally necrotic desmosome." []
 
