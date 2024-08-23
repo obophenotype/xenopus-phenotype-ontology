@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/xpo/imports/nbo_import.owl>
-<http://purl.obolibrary.org/obo/xpo/releases/2024-04-18/imports/nbo_import.owl>
+<http://purl.obolibrary.org/obo/xpo/releases/2024-08-18/imports/nbo_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/nbo/releases/2023-07-04/nbo.owl>)
-Annotation(owl:versionInfo "2024-04-18")
+Annotation(owl:versionInfo "2024-08-18")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -136,7 +136,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0040004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0040005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000051>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000068>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000069>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000070>))
@@ -174,7 +173,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002302>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002303>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002304>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002305>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001062>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000062>))
@@ -310,7 +308,6 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0010000>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0100001>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0001900>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002161>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002175>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002575>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002579>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002581>))
@@ -2533,12 +2530,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000001> ObjectAllValuesFrom(<ht
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000051> "morphology")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000051> <http://purl.obolibrary.org/obo/PATO_0001241>)
 
-# Class: <http://purl.obolibrary.org/obo/PATO_0000052> (shape)
-
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PATO_0000052> "Shapes are invariant on size transformations. Shapes can be subdivided into 2D and 3D shapes, We can also make a distinction between shapes of complete self-connected objects, and shapes of parts of objects.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000052> "shape")
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000052> <http://purl.obolibrary.org/obo/PATO_0000051>)
-
 # Class: <http://purl.obolibrary.org/obo/PATO_0000068> (qualitative)
 
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PATO_0000068> "TODO: define this or obsolete it and move children somewhere else.")
@@ -2796,14 +2787,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002305> "in
 EquivalentClasses(<http://purl.obolibrary.org/obo/PATO_0002305> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001241> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0015007> <http://purl.obolibrary.org/obo/PATO_0000461>)))
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002305> <http://purl.obolibrary.org/obo/PATO_0001241>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002305> <http://purl.obolibrary.org/obo/PATO_0002300>)
-
-# Class: <http://purl.obolibrary.org/obo/UBERON_0001062> (anatomical entity)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0001062> <http://purl.obolibrary.org/obo/NCBITaxon_33090>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0001062> <http://purl.obolibrary.org/obo/NCBITaxon_33208>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0001062> <http://purl.obolibrary.org/obo/NCBITaxon_4751>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0001062> "anatomical entity")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001062> <http://purl.obolibrary.org/obo/BFO_0000004>)
 
 
 SubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002566> <http://purl.obolibrary.org/obo/BFO_0000040>) ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002418> <http://purl.obolibrary.org/obo/BFO_0000015>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002418> <http://purl.obolibrary.org/obo/BFO_0000015>)))))
