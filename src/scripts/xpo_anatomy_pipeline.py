@@ -22,7 +22,7 @@ configf = os.path.join(sys.argv[7])
 
 class xpoconfig:
     def __init__(self, config_file):
-        self.config = yaml.load(open(config_file, 'r'))
+        self.config = yaml.load(open(config_file, 'r'), Loader=yaml.FullLoader)
 
     def get_iri_accession(self):
         return int(self.config.get("anatomy_config").get("iri_accession"))
