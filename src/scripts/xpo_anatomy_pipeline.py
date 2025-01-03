@@ -1,5 +1,6 @@
 import sys
 import pandas as pd
+import numpy as np
 import yaml
 import os
 import collections
@@ -140,12 +141,12 @@ def add_id_column(df,idcolumns,pattern):
     else:
         df = pd.merge(df, df_ids, on='id', how='left')
 
-    df = df.replace(pd.np.nan, '', regex=True)
+    df = df.replace(np.nan, '', regex=True)
     #df.loc[(df['defined_class'] != '') & (df['iritemp001'] == ''), 'iritemp001'] = df['']
-    broken = pd.np.where((df['defined_class'] != '') & (df['iritemp001'] != '' )& (df['iritemp001'] != df['defined_class']), df[['defined_class','iritemp001']].apply('-'.join, axis=1),"OK")
+    broken = np.where((df['defined_class'] != '') & (df['iritemp001'] != '' )& (df['iritemp001'] != df['defined_class']), df[['defined_class','iritemp001']].apply('-'.join, axis=1),"OK")
     print(broken)
 
-    df['iritemp001'] = pd.np.where(df['defined_class'] != '', df['defined_class'], df['iritemp001'])
+    df['iritemp001'] = np.where(df['defined_class'] != '', df['defined_class'], df['iritemp001'])
 
     df['defined_class'] = [generate_id(i) for i in df['iritemp001']]
     x = df[['defined_class','id']]
