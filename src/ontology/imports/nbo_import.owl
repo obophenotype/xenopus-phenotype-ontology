@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/xpo/imports/nbo_import.owl>
-<http://purl.obolibrary.org/obo/xpo/releases/2024-08-18/imports/nbo_import.owl>
+<http://purl.obolibrary.org/obo/xpo/releases/2025-07-23/imports/nbo_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/nbo/releases/2023-07-04/nbo.owl>)
-Annotation(owl:versionInfo "2024-08-18")
+Annotation(owl:versionInfo "2025-07-23")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -23,6 +23,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000034>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_24431>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33252>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33253>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_36339>))
@@ -45,6 +46,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0001707>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003014>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003674>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003824>))
@@ -53,6 +55,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0005975>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0005996>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0006006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0006629>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0006810>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0006869>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007275>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007369>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007398>))
@@ -80,6 +84,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0009653>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0009790>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0009888>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0009987>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0010876>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0015711>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0015718>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0015721>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0015849>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0015850>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0016301>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0016477>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0016740>))
@@ -92,12 +102,14 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0032501>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0032502>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0032504>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0032991>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0033036>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0035176>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0042074>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0042592>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0044237>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0044238>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0044281>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0046942>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0048332>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0048598>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0048646>))
@@ -106,15 +118,21 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0048856>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0048870>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0048871>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050896>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0051179>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0051234>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0051301>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0051703>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0060047>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0071702>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0071704>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000022>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000087>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000121>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000170>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000233>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000308>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000313>))
@@ -136,6 +154,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0040004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0040005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000068>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000069>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000070>))
@@ -173,6 +192,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002302>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002303>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002304>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002305>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001062>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000062>))
@@ -308,6 +328,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0010000>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0100001>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0001900>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002161>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002175>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002575>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002579>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002581>))
@@ -1732,6 +1753,11 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000040
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000004>)
 
+# Class: <http://purl.obolibrary.org/obo/CHEBI_24431> (chemical entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_24431> "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_24431> "chemical entity")
+
 # Class: <http://purl.obolibrary.org/obo/CHEBI_33252> (atomic nucleus)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_33252> "A nucleus is the positively charged central portion of an atom, excluding the orbital electrons.")
@@ -1876,6 +1902,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0003008> <http://purl.obolibrary.o
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0003013> "circulatory system process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0003013> <http://purl.obolibrary.org/obo/GO_0003008>)
 
+# Class: <http://purl.obolibrary.org/obo/GO_0003014> (renal system process)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0003014> "renal system process")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0003014> <http://purl.obolibrary.org/obo/GO_0003008>)
+
 # Class: <http://purl.obolibrary.org/obo/GO_0003015> (heart process)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0003015> "heart process")
@@ -1924,6 +1955,19 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0006006> <http://purl.obolibrary.o
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0006629> "lipid metabolic process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0006629> <http://purl.obolibrary.org/obo/GO_0044238>)
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0006629> <http://purl.obolibrary.org/obo/GO_0071704>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0006810> (transport)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/GO_0006810> "https://github.com/geneontology/go-ontology/issues/20292"^^xsd:anyURI)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0006810> "Note that this term should not be used for direct annotation. It should be possible to make a more specific annotation to one of the children of this term, for e.g. to transmembrane transport, to microtubule-based transport or to vesicle-mediated transport.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0006810> "transport")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0006810> <http://purl.obolibrary.org/obo/GO_0051234>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0006869> (lipid transport)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0006869> "lipid transport")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0006869> <http://purl.obolibrary.org/obo/GO_0071702>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0006869> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0010876>))
 
 # Class: <http://purl.obolibrary.org/obo/GO_0007275> (multicellular organism development)
 
@@ -2019,6 +2063,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0008150> ObjectSomeValuesFrom(<htt
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0008152> "Note that metabolic processes do not include single functions or processes such as protein-protein interactions, protein-nucleic acids, nor receptor-ligand interactions.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0008152> "metabolic process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0008152> <http://purl.obolibrary.org/obo/GO_0008150>)
+DisjointClasses(<http://purl.obolibrary.org/obo/GO_0008152> <http://purl.obolibrary.org/obo/GO_0051179>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0008283> (cell population proliferation)
 
@@ -2093,6 +2138,38 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0009888> <http://purl.obolibrary.o
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0009987> "This term should not be used for direct annotation. It should be possible to make a more specific annotation to one of the children of this term.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0009987> "cellular process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0009987> <http://purl.obolibrary.org/obo/GO_0008150>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0010876> (lipid localization)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0010876> "lipid localization")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0010876> <http://purl.obolibrary.org/obo/GO_0033036>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0015711> (organic anion transport)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0015711> "organic anion transport")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0015711> <http://purl.obolibrary.org/obo/GO_0071702>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0015718> (monocarboxylic acid transport)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0015718> "monocarboxylic acid transport")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0015718> <http://purl.obolibrary.org/obo/GO_0046942>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0015721> (bile acid and bile salt transport)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0015721> "bile acid and bile salt transport")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0015721> <http://purl.obolibrary.org/obo/GO_0006869>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0015721> <http://purl.obolibrary.org/obo/GO_0015718>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0015721> <http://purl.obolibrary.org/obo/GO_0015850>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0015849> (organic acid transport)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0015849> "organic acid transport")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0015849> <http://purl.obolibrary.org/obo/GO_0071702>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0015850> (organic hydroxy compound transport)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0015850> "organic hydroxy compound transport")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0015850> <http://purl.obolibrary.org/obo/GO_0071702>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0016301> (kinase activity)
 
@@ -2177,6 +2254,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0032991> <http://purl.obolibrary.o
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0032991> <http://purl.obolibrary.org/obo/GO_0005575>)
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0032991> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/COB_0000073>))
 
+# Class: <http://purl.obolibrary.org/obo/GO_0033036> (macromolecule localization)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0033036> "macromolecule localization")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0033036> <http://purl.obolibrary.org/obo/GO_0051179>)
+
 # Class: <http://purl.obolibrary.org/obo/GO_0035176> (social behavior)
 
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0035176> "Behavior such as predation which involves members of different species is not social. Communication between members of different species is also not social behavior.")
@@ -2213,6 +2295,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0044238> <http://purl.obolibrary.o
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0044281> "Small molecules in GO include monosaccharides but exclude disaccharides and polysaccharides.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0044281> "small molecule metabolic process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0044281> <http://purl.obolibrary.org/obo/GO_0008152>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0046942> (carboxylic acid transport)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0046942> "carboxylic acid transport")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0046942> <http://purl.obolibrary.org/obo/GO_0015711>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0046942> <http://purl.obolibrary.org/obo/GO_0015849>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0048332> (mesoderm morphogenesis)
 
@@ -2262,6 +2350,16 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0050896> "No
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050896> "response to stimulus")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0050896> <http://purl.obolibrary.org/obo/GO_0008150>)
 
+# Class: <http://purl.obolibrary.org/obo/GO_0051179> (localization)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0051179> "localization")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0051179> <http://purl.obolibrary.org/obo/GO_0008150>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0051234> (establishment of localization)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0051234> "establishment of localization")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0051234> <http://purl.obolibrary.org/obo/GO_0051179>)
+
 # Class: <http://purl.obolibrary.org/obo/GO_0051301> (cell division)
 
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0051301> "Note that this term differs from 'cytokinesis ; GO:0000910' in that cytokinesis does not include nuclear division.")
@@ -2280,6 +2378,11 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0060047> "hear
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0060047> <http://purl.obolibrary.org/obo/GO_0003015>)
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0060047> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0008015>))
 
+# Class: <http://purl.obolibrary.org/obo/GO_0071702> (organic substance transport)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0071702> "organic substance transport")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0071702> <http://purl.obolibrary.org/obo/GO_0006810>)
+
 # Class: <http://purl.obolibrary.org/obo/GO_0071704> (organic substance metabolic process)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0071704> "organic substance metabolic process")
@@ -2295,6 +2398,17 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/NBO_0000003> "behavior_ontology")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NBO_0000003> "emotional behavior")
 SubClassOf(<http://purl.obolibrary.org/obo/NBO_0000003> <http://purl.obolibrary.org/obo/NBO_0000313>)
+
+# Class: <http://purl.obolibrary.org/obo/NBO_0000006> (learning and/or memory behavior)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "GO:jic") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NBO_0000006> "Behavior related to the acquisition and processing of information and/or the storage and retrieval of this information over time.")
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/date> <http://purl.obolibrary.org/obo/NBO_0000006> "2011-04-14T01:03:39Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/NBO_0000006> "George Gkoutos")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NBO_0000006> "learning and/or memory behaviour")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/NBO_0000006> "behavior_ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#xref> <http://purl.obolibrary.org/obo/NBO_0000006> "GO:0007611")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NBO_0000006> "learning and/or memory behavior")
+SubClassOf(<http://purl.obolibrary.org/obo/NBO_0000006> <http://purl.obolibrary.org/obo/NBO_0000607>)
 
 # Class: <http://purl.obolibrary.org/obo/NBO_0000008> (rhythmic behavior)
 
@@ -2316,6 +2430,17 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#xref> <http://
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NBO_0000011> "social behavior")
 SubClassOf(<http://purl.obolibrary.org/obo/NBO_0000011> <http://purl.obolibrary.org/obo/NBO_0000313>)
 
+# Class: <http://purl.obolibrary.org/obo/NBO_0000022> (learning behavior)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "wikipedia:Learning") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NBO_0000022> "Behavior associated with any process in an organism in which a relatively long-lasting adaptive behavioral change occurs as the result of experience.")
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/date> <http://purl.obolibrary.org/obo/NBO_0000022> "2011-04-14T01:03:39Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/NBO_0000022> "George Gkoutos")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NBO_0000022> "learning behaviour")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/NBO_0000022> "behavior_ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#xref> <http://purl.obolibrary.org/obo/NBO_0000022> "GO:0007612")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NBO_0000022> "learning behavior")
+SubClassOf(<http://purl.obolibrary.org/obo/NBO_0000022> <http://purl.obolibrary.org/obo/NBO_0000006>)
+
 # Class: <http://purl.obolibrary.org/obo/NBO_0000087> (antipredation behavior)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "NBO:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NBO_0000087> "Behavior related to defence against predation or predators.")
@@ -2335,6 +2460,17 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespac
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NBO_0000121> "agonistic behavior")
 SubClassOf(<http://purl.obolibrary.org/obo/NBO_0000121> <http://purl.obolibrary.org/obo/NBO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/NBO_0000121> <http://purl.obolibrary.org/obo/NBO_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/NBO_0000170> (memory behavior)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "NBO:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NBO_0000170> "Behavior related with the ability of an organism's ability to store, retain, and recall information and experiences.")
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/date> <http://purl.obolibrary.org/obo/NBO_0000170> "2011-04-01T01:49:03Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/NBO_0000170> "George Gkoutos")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NBO_0000170> "memory behaviour")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/NBO_0000170> "behavior_ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#xref> <http://purl.obolibrary.org/obo/NBO_0000170> "GO:0007613")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NBO_0000170> "memory behavior")
+SubClassOf(<http://purl.obolibrary.org/obo/NBO_0000170> <http://purl.obolibrary.org/obo/NBO_0000006>)
 
 # Class: <http://purl.obolibrary.org/obo/NBO_0000233> (motivation behavior)
 
@@ -2529,6 +2665,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000001> ObjectAllValuesFrom(<ht
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000051> "morphology")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000051> <http://purl.obolibrary.org/obo/PATO_0001241>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000052> (shape)
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PATO_0000052> "Shapes are invariant on size transformations. Shapes can be subdivided into 2D and 3D shapes, We can also make a distinction between shapes of complete self-connected objects, and shapes of parts of objects.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000052> "shape")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000052> <http://purl.obolibrary.org/obo/PATO_0000051>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000068> (qualitative)
 
@@ -2787,6 +2929,14 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002305> "in
 EquivalentClasses(<http://purl.obolibrary.org/obo/PATO_0002305> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001241> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0015007> <http://purl.obolibrary.org/obo/PATO_0000461>)))
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002305> <http://purl.obolibrary.org/obo/PATO_0001241>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002305> <http://purl.obolibrary.org/obo/PATO_0002300>)
+
+# Class: <http://purl.obolibrary.org/obo/UBERON_0001062> (anatomical entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0001062> <http://purl.obolibrary.org/obo/NCBITaxon_33090>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0001062> <http://purl.obolibrary.org/obo/NCBITaxon_33208>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002175> <http://purl.obolibrary.org/obo/UBERON_0001062> <http://purl.obolibrary.org/obo/NCBITaxon_4751>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0001062> "anatomical entity")
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001062> <http://purl.obolibrary.org/obo/BFO_0000004>)
 
 
 SubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002566> <http://purl.obolibrary.org/obo/BFO_0000040>) ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002418> <http://purl.obolibrary.org/obo/BFO_0000015>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002418> <http://purl.obolibrary.org/obo/BFO_0000015>)))))
